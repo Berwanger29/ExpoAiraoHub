@@ -11,6 +11,7 @@ import Login from './src/screens/Login';
 import SignUp from './src/screens/SignUp';
 import Home from './src/screens/Home';
 import User from './src/screens/User';
+import Accommodation from './src/screens/Accommodation';
 
 
 

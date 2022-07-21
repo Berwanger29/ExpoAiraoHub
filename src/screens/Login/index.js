@@ -4,7 +4,9 @@ import {
     Container,
     InputContainer,
     LabelInput,
-    SignUpButtonText,
+    RecoveryContainer,
+    RecoveryText,
+    ButtonText,
     SignUpContainer,
     SignUpText,
     Title,
@@ -58,6 +60,10 @@ const Login = () => {
         navigation.navigate('SignUp')
     }
 
+    function moveToRecovery() {
+        navigation.navigate('RecoveryPassword')
+    }
+
 
     return (
         <Container>
@@ -84,6 +90,23 @@ const Login = () => {
                     onChangeText={(e) => setPassword(e)}
                 />
 
+                <RecoveryContainer>
+                    <RecoveryText>
+                        Esqueceu sua senha ?
+                    </RecoveryText>
+                    <ButtonText
+                        onPress={() => moveToRecovery()}
+                    >
+                        <RecoveryText
+                            style={{
+                                color: theme.colors.green
+                            }}
+                        >
+                            {' '} Recuperar.
+                        </RecoveryText>
+                    </ButtonText>
+                </RecoveryContainer>
+
                 <LoginAreaButton
                     label='Entrar'
                     onPress={() => handleLogin()}
@@ -94,7 +117,7 @@ const Login = () => {
                 <SignUpText>
                     É novo no aplicativo ?
                 </SignUpText>
-                <SignUpButtonText
+                <ButtonText
                     onPress={() => moveToSignUp()}
                 >
                     <SignUpText
@@ -102,7 +125,7 @@ const Login = () => {
                             color: theme.colors.green
                         }}
                     >{' '}Cadastre-se</SignUpText>
-                </SignUpButtonText>
+                </ButtonText>
             </SignUpContainer>
         </Container>
     )

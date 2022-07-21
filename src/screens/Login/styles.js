@@ -50,6 +50,18 @@ export const UserInput = styled.TextInput`
     color: ${(props) => props.theme.colors.light};
 `
 
+export const RecoveryContainer = styled.View`
+    margin-top: -10px;
+    margin-bottom: 15px;
+    flex-direction: row;
+`
+export const RecoveryText = styled.Text`
+    font-family: ${props => props.theme.fonts.light};
+    font-size: ${RFValue(14)}px;
+
+    color: ${props => props.theme.colors.black};
+`
+
 export const SignUpContainer = styled.View`
     flex-direction: row;
 `
@@ -59,7 +71,7 @@ export const SignUpText = styled.Text`
     font-family: ${(props) => props.theme.fonts.light};
 `
 
-export const SignUpButtonText = styled.TouchableOpacity`
+export const ButtonText = styled.TouchableOpacity`
 
 `
 

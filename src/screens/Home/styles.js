@@ -16,3 +16,15 @@ export const Greetings = styled.Text`
     margin-top: 10px;
     margin-bottom: 25px;
 `
+
+export const Main = styled.View`
+    flex:1;
+    border-bottom-color:red ;
+    border-bottom-width:1px ;
+
+    margin-top: 10px;
+`
+
+export const CarrousselContainer = styled.ScrollView`
+    margin-bottom: ${RFValue(10)}px;
+`

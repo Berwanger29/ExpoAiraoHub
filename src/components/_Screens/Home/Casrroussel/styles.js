@@ -1,13 +1,19 @@
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
+export const Container = styled.View`
+    
+`
 
-export const TextTitle = styled.Text`
+export const HorizontalView = styled.ScrollView`
+
+`
+
+export const Title = styled.Text`
     font-family: ${props => props.theme.fonts.black};
     font-size: ${RFValue(22)}px;
 
     color: ${props => props.theme.colors.darkGreen};
 
-    margin-top: ${RFValue(10)}px;
-    margin-bottom: ${RFValue(20)}px;
+    margin: ${17}px 0px;
 `

@@ -5,8 +5,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Login from "../../screens/Login";
 import SignUp from "../../screens/SignUp";
-import Home from "../../screens/Home";
 import User from "../../screens/User";
+import Home from "../../screens/Home";
+import Accommodation from "../../screens/Accommodation";
+import Scripts from "../../screens/Scripts";
+import RecoveryPassword from "../../screens/RecoveryPassword";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +20,7 @@ const LoginStack = () => {
                 screenOptions={{
                     headerShown: false
                 }}
+                initialRouteName="Login"
             >
                 <Stack.Screen
                     name="Login"
@@ -27,12 +31,24 @@ const LoginStack = () => {
                     component={SignUp}
                 />
                 <Stack.Screen
+                    name="User"
+                    component={User}
+                />
+                <Stack.Screen
                     name="Home"
                     component={Home}
                 />
                 <Stack.Screen
-                    name="User"
-                    component={User}
+                    name="Accommodation"
+                    component={Accommodation}
+                />
+                <Stack.Screen
+                    name="Scripts"
+                    component={Scripts}
+                />
+                <Stack.Screen
+                    name="RecoveryPassword"
+                    component={RecoveryPassword}
                 />
             </Stack.Navigator>
         </NavigationContainer>

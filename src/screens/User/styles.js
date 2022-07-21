@@ -44,7 +44,7 @@ export const LogoutButton = styled.TouchableOpacity`
     width: ${RFValue(70)}px;
 `
 export const LogOutText = styled.Text`
-    font-family: ${props => props.theme.fonts.thin};
+    font-family: ${props => props.theme.fonts.light};
     font-size: ${RFValue(14)}px;
 
     color: red;
