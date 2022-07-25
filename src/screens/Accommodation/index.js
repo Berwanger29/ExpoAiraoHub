@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 
 import {
     Container,
@@ -12,7 +13,10 @@ import Title from '../../components/Title'
 import SearchBar from '../../components/SearchBar'
 import Card from '../../components/_Screens/Accommodation/Card'
 
+import data from '../../../data'
+
 const Accommodation = () => {
+
     return (
         <Container>
             <Header>
@@ -27,27 +31,19 @@ const Accommodation = () => {
             <Main>
                 <List
                     showsVerticalScrollIndicator={false}
+                    data={data}
+                    keyExtractor={item => item.id}
+                    renderItem={({ item }) =>
+                    (
+                        <Card
+                            title={item.title}
+                            value={item.content.prices[3]}
+                            image={item.content.image}
+                        />
+                    )
+                    }
                 >
-                    <Card
-                        title='Mirante do Gavião'
-                        isOpen={true}
-                        value='1.370,00'
-                    />
-                    <Card
-                        title='Pousada Bela Vista'
-                        isOpen={false}
-                        value='500,00'
-                    />
-                    <Card
-                        title='Anavilhanas jungle lodge'
-                        isOpen={true}
-                        value='2.500,00'
-                    />
-                    <Card
-                        title='Pousada Novo Airão'
-                        isOpen={true}
-                        value='220,00'
-                    />
+
 
                 </List>
             </Main>

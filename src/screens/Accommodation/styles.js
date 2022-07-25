@@ -16,7 +16,6 @@ export const Main = styled.View`
     margin-top: ${RFValue(50)}px;
 `
 
-export const List = styled.ScrollView`
-
+export const List = styled.FlatList`
 
 `

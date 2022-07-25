@@ -2,9 +2,9 @@ import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-margin-bottom: 20px;
+    margin-bottom: 40px;
 `
-export const Image = styled.View`
+export const Image = styled.Image`
     height: ${RFValue(221)}px;
     width: 100%;
 

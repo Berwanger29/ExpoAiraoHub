@@ -10,25 +10,23 @@ import {
     Title
 } from './styles'
 
-const Card = ({ title, isOpen, value }) => {
+const Card = ({ title, isOpen, value, image }) => {
     return (
         <Container>
-            <Image />
+            <Image
+                source={{
+                    uri: image
+                }}
+            />
             <Title>
                 {title}
             </Title>
-            <IsOpen>
-                <IsOpenDot isOpen={isOpen} />
-                <IsOpenText>
-                    {isOpen ? "Aberto" : "Fechado"}
-                </IsOpenText>
-            </IsOpen>
             <PriceContainer>
                 <PriceText>
-                    R${value}
+                    {value}
                 </PriceText>
                 <PricePeriod>
-                    {' /'} diária
+
                 </PricePeriod>
             </PriceContainer>
         </Container>
