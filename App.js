@@ -6,7 +6,7 @@ import { useFonts } from 'expo-font';
 import theme from './src/global/styles/theme';
 
 
-import LoginStack from './src/navigation/LoginStack';
+import Navigation from './src/Navigation';
 import Login from './src/screens/Login';
 import SignUp from './src/screens/SignUp';
 import Home from './src/screens/Home';
@@ -31,7 +31,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <LoginStack />
+      <Navigation />
     </ThemeProvider>
   );
 }

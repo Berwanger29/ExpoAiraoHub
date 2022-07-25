@@ -36,7 +36,7 @@ const Home = () => {
                     showsVerticalScrollIndicator={false}
                 >
                     <Carroussel
-                        title="Onde ir"
+                        title="O que visitar ?"
                     >
                         <Card title='Restaurante Flor do Luar' />
                         <Card title='Restaurante Flor do Luar' />
@@ -44,15 +44,43 @@ const Home = () => {
                     </Carroussel>
 
                     <Carroussel
-                        title="Atividades"
+                        title="Atrações dentro da cidade"
                     >
                         <Card title='Restaurante Flor do Luar' />
                         <Card title='Restaurante Flor do Luar' />
                         <Card title='Restaurante Flor do Luar' />
                     </Carroussel>
 
+                    <Carroussel
+                        title="Pelo Parna Anavilhanas"
+                    >
+                        <Card title='Restaurante Flor do Luar' />
+                        <Card title='Restaurante Flor do Luar' />
+                        <Card title='Restaurante Flor do Luar' />
+                    </Carroussel>
+                    <Carroussel
+                        title="Pelo Parna Jaú"
+                    >
+                        <Card title='Restaurante Flor do Luar' />
+                        <Card title='Restaurante Flor do Luar' />
+                        <Card title='Restaurante Flor do Luar' />
+                    </Carroussel>
+                    <Carroussel
+                        title="Onde Comer"
+                    >
+                        <Card title='Restaurante Flor do Luar' />
+                        <Card title='Restaurante Flor do Luar' />
+                        <Card title='Restaurante Flor do Luar' />
+                    </Carroussel>
                     <Carroussel
                         title="Meios de hospedagem"
+                    >
+                        <Card title='Restaurante Flor do Luar' />
+                        <Card title='Restaurante Flor do Luar' />
+                        <Card title='Restaurante Flor do Luar' />
+                    </Carroussel>
+                    <Carroussel
+                        title="Pelo Parna Jaú"
                     >
                         <Card title='Restaurante Flor do Luar' />
                         <Card title='Restaurante Flor do Luar' />

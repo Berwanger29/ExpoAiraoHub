@@ -18,11 +18,7 @@ export const Greetings = styled.Text`
 `
 
 export const Main = styled.View`
-    flex:1;
-    border-bottom-color:red ;
-    border-bottom-width:1px ;
-
-    margin-top: 10px;
+    flex:1; 
 `
 
 export const CarrousselContainer = styled.ScrollView`
