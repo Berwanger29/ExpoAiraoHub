@@ -6,19 +6,21 @@ export const Container = styled.View`
     width: 100%;
     max-width: ${RFValue(400)}px;
     height: ${RFValue(208)}px;
-    background-color: blue;
+    
+    margin-bottom: ${RFValue(20)}px;
     border-radius: 5px;
-
-    margin-right: ${RFValue(20)}px;
 `
-export const ImageBackground = styled.Image`
-    width: 100%;
-    height: 100%;
+export const ImageBackground = styled.ImageBackground`
+    flex: 1;
 `
 
 export const ShadowFilter = styled.View`
-    width: 100%;
-    height: 100%;
+    flex: 1;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
 `
 
 export const Title = styled.Text`
@@ -26,8 +28,4 @@ export const Title = styled.Text`
     font-size: ${RFValue(16)}px;
 
     color: ${props => props.theme.colors.light};
-
-    position: absolute;
-    bottom: ${RFValue(30)}px;
-    left: ${RFValue(10)}px;
 `

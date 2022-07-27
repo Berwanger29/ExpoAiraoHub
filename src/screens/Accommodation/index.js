@@ -37,7 +37,7 @@ const Accommodation = () => {
                     (
                         <Card
                             title={item.title}
-                            value={item.content.prices[3]}
+                            value={item.content.prices}
                             image={item.content.image}
                         />
                     )

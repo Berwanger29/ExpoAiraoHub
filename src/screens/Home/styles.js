@@ -8,7 +8,7 @@ export const Container = styled.View`
     padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
 `
 export const Header = styled.View`
-
+    margin-bottom: 20px;
 `
 export const Greetings = styled.Text`
     font-family: ${(props) => props.theme.fonts.black};

@@ -25,9 +25,6 @@ const Card = ({ title, isOpen, value, image }) => {
                 <PriceText>
                     {value}
                 </PriceText>
-                <PricePeriod>
-
-                </PricePeriod>
             </PriceContainer>
         </Container>
     )

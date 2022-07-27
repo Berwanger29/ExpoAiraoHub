@@ -27,7 +27,7 @@ const Home = () => {
                     <UserButton />
                 </UserButtonContainer>
                 <Greetings>
-                    Olá, Caio
+                    Olá
                 </Greetings>
                 <SearchBar />
             </Header>
@@ -74,13 +74,6 @@ const Home = () => {
                     </Carroussel>
                     <Carroussel
                         title="Meios de hospedagem"
-                    >
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
-                    </Carroussel>
-                    <Carroussel
-                        title="Pelo Parna Jaú"
                     >
                         <Card title='Restaurante Flor do Luar' />
                         <Card title='Restaurante Flor do Luar' />

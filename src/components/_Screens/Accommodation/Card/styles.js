@@ -8,7 +8,7 @@ export const Image = styled.Image`
     height: ${RFValue(221)}px;
     width: 100%;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     border-radius: 5px;
     background-color: blue;
