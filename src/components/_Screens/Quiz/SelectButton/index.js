@@ -5,7 +5,9 @@ import {
 
 const SelectButton = ({ text }) => {
     return (
-        <Container>
+        <Container
+            activeOpacity={0.7}
+        >
             <LabelOption>
                 {text}
             </LabelOption>

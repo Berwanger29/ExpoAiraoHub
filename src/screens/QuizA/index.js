@@ -2,42 +2,75 @@ import {
     Container,
     Header,
     Main,
-    Button
+    TextContainer,
+    Button,
+    LabelCountText,
+    QuestionText,
+    ButtonsContainer
 } from './styles';
 
-import Lottie from 'lottie-react-native';
-
-import boating from '../../../assets/animations/boating.json'
 import SelectButton from '../../components/_Screens/Quiz/SelectButton';
-import { RFPercentage } from 'react-native-responsive-fontsize';
 
+import { Entypo } from '@expo/vector-icons';
+import Lottie from 'lottie-react-native';
+import { StatusBar } from 'expo-status-bar';
+
+import theme from '../../global/styles/theme'
+import { RFPercentage } from 'react-native-responsive-fontsize';
+import boating from '../../../assets/animations/boating.json'
+
+import { useNavigation } from '@react-navigation/native';
 
 const QuizA = () => {
+
+    const navigation = useNavigation()
+
     return (
         <Container>
+            <StatusBar
+                backgroundColor='#76CFE5'
+                style='auto'
+            />
             <Header>
                 <Lottie
                     autoPlay
                     loop
                     source={boating}
                     style={{
-                        width: RFPercentage(50)
+                        width: '100%'
                     }}
                 />
             </Header>
             <Main>
-                <SelectButton
-                    text="Opção 1"
-                />
-                <SelectButton
-                    text="Opção 2"
-                />
-                <SelectButton
-                    text="Opção 3"
-                />
-            </Main>
-            <Button>
 
+                <TextContainer>
+                    <LabelCountText>
+                        Questão 1 de 3
+                    </LabelCountText>
+                    <QuestionText>
+                        Qual das atividades abaixo você tem mais interesse ?
+                    </QuestionText>
+                </TextContainer>
+
+                <ButtonsContainer>
+                    <SelectButton
+                        text="Caiaque"
+                    />
+                    <SelectButton
+                        text="Passeio de barco"
+                    />
+                    <SelectButton
+                        text="Passeio na praça"
+                    />
+                </ButtonsContainer>
+            </Main>
+            <Button
+                style={{
+                    elevation: 2
+                }}
+                onPress={()=>navigation.navigate('QuizB')}
+            >
+                <Entypo name="chevron-right" size={24} color={theme.colors.green} />
             </Button>
         </Container>
     )

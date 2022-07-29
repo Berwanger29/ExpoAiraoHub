@@ -11,7 +11,13 @@ export const Container = styled.View`
     margin-right: ${RFValue(20)}px;
 `
 
-export const ShadowFilter = styled.View`
+export const Shadow = styled.View`
+    background-color: rgba(0,0,0,0.4);
+    width:100%;
+    height:100%;
+`
+
+export const Image = styled.ImageBackground`
     width: 100%;
     height: 100%;
 `

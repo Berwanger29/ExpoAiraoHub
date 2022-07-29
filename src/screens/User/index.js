@@ -19,13 +19,13 @@ import { auth } from '../../../firebase';
 import { useNavigation } from '@react-navigation/native';
 
 
+
 const User = () => {
 
     const navigation = useNavigation()
 
 
     function handleLogOut() {
-
         Alert.alert(
             "Sair",
             "Deseja mesmo sair ?",
@@ -38,8 +38,7 @@ const User = () => {
                 {
                     text: "Sair",
                     onPress: () => {
-                        auth
-                            .signOut()
+                        auth.signOut()
                             .then(() => {
                                 navigation.replace('Login')
                             })

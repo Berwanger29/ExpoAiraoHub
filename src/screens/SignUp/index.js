@@ -22,7 +22,6 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('')
 
     function handleSignUp() {
-
         if (password === confirmPassword) {
             auth.createUserWithEmailAndPassword(email, password)
                 .then(userCredentials => {
@@ -70,12 +69,6 @@ const SignUp = () => {
                     onChangeText={(e) => setEmail(e)}
                     returnKeyType='done'
                     keyboardType='email-address'
-                />
-                <Input
-                    placeholder='digite seu nome'
-                    onChangeText={(e) => setName(e)}
-                    returnKeyType='done'
-                    keyboardType='default'
                 />
                 <Input
                     placeholder='senha'

@@ -1,10 +1,9 @@
 import React from "react";
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
-import theme from "../global/styles/theme";
+import theme from "../../global/styles/theme";
 import { RFValue } from "react-native-responsive-fontsize";
 
 import {
@@ -15,25 +14,37 @@ import {
     FontAwesome5
 } from '@expo/vector-icons';
 
-import Login from "../screens/Login";
-import SignUp from "../screens/SignUp";
-import User from "../screens/User";
-import RecoveryPassword from "../screens/RecoveryPassword";
+import Home from "../../screens/Home";
+import Accommodation from "../../screens/Accommodation";
+import Scripts from "../../screens/Scripts";
+import Activities from "../../screens/Activities";
+import Map from "../../screens/Map";
 
-import QuizA from "../screens/QuizA";
-import QuizB from "../screens/QuizB";
-import QuizC from "../screens/QuizC";
-
-import Home from "../screens/Home";
-import Accommodation from "../screens/Accommodation";
-import Scripts from "../screens/Scripts";
-import Activities from "../screens/Activities";
-import Map from "../screens/Map";
-
+import User from '../../screens/User'
 
 
 const Tab = createBottomTabNavigator()
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator()
+
+const UserStack = () => {
+    return (
+        <Stack.Navigator
+            screenOptions={{
+                headerShown:false
+            }}
+        >
+            <Stack.Screen
+                name="TabNavigator"
+                component={TabNavigator}
+            />
+            <Stack.Screen 
+                name="User"
+                component={User}
+            />
+
+        </Stack.Navigator>
+    )
+}
 
 function TabNavigator() {
     return (
@@ -125,72 +136,4 @@ function TabNavigator() {
     )
 }
 
-function QuizStack() {
-    return (
-        <Stack.Navigator
-            screenOptions={{
-                headerShown: false
-            }}
-            initialRouteName="QuizA"
-        >
-            <Stack.Screen
-                name="QuizA"
-                component={QuizA}
-            />
-            <Stack.Screen
-                name="QuizB"
-                component={QuizB}
-            />
-            <Stack.Screen
-                name="QuizC"
-                component={QuizC}
-            />
-
-        </Stack.Navigator>
-    )
-}
-
-
-const Navigation = () => {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator
-                screenOptions={{
-                    headerShown: false
-                }}
-                initialRouteName="Login"
-            >
-                <Stack.Screen
-                    name="Login"
-                    component={Login}
-                />
-                <Stack.Screen
-                    name="SignUp"
-                    component={SignUp}
-                />
-                <Stack.Screen
-                    name="RecoveryPassword"
-                    component={RecoveryPassword}
-                />
-
-                <Stack.Screen
-                    name="QuizStack"
-                    component={QuizStack}
-                />
-
-
-                <Stack.Screen
-                    name="TabNavigator"
-                    component={TabNavigator}
-                />
-
-                <Stack.Screen
-                    name="User"
-                    component={User}
-                />
-            </Stack.Navigator>
-        </NavigationContainer>
-    )
-}
-
-export default Navigation
+export default UserStack

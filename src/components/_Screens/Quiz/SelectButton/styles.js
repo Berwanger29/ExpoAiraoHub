@@ -2,7 +2,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
     background-color: ${(props) => props.theme.colors.green};
     width: 60%;
     height: ${RFValue(50)}px;
@@ -11,6 +11,7 @@ export const Container = styled.View`
 
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
 `
 
 export const LabelOption = styled.Text`

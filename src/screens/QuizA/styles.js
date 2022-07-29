@@ -10,16 +10,54 @@ export const Container = styled.View`
 `
 
 export const Header = styled.View`
-    flex: 0.25;
-    background-color: blue;
+    width: 110%;
+    height: ${RFPercentage(35)}px;
+
+    background-color: #76CFE5;
     align-items: center;
     padding-left: ${RFPercentage(5)}px;
+    margin-left: -5%;
 `
 
 export const Main = styled.View`
+    
+`
+
+export const TextContainer = styled.View`
+    margin-top: ${RFValue(10)}px;
+`
+
+export const LabelCountText = styled.Text`
+    font-family: ${props => props.theme.fonts.light};
+    font-size:${RFValue(14)}px;
+
+    color: ${props => props.theme.colors.black};
+`
+
+export const QuestionText = styled.Text`
+    font-family: ${props => props.theme.fonts.regular};
+    font-size:${RFValue(18)}px;
+
+    color: ${props => props.theme.colors.black};
+    margin: ${RFValue(10)}px 0px;
+`
+
+export const ButtonsContainer = styled.View`
     align-items: center;
+    margin-top: ${RFValue(35)}px;
 `
 
 export const Button = styled.TouchableOpacity`
+    background-color: ${props => props.theme.colors.semiLight};
 
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    width:${RFValue(50)}px;
+    height: ${RFValue(50)}px;
+
+    border-radius: 5px;
 `

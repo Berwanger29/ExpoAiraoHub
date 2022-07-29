@@ -1,21 +1,22 @@
-import { ActivityIndicator } from 'react-native';
-import { ThemeProvider } from 'styled-components';
+import { useEffect, useState } from 'react';
 import { useFonts } from 'expo-font';
+import { ThemeProvider } from 'styled-components';
+import { ActivityIndicator } from 'react-native';
+
+import Navigation from './src/Navigation';
 
 
 import theme from './src/global/styles/theme';
+import AuthProvider from './src/contexts/auth';
 
 
-import Navigation from './src/Navigation';
-import Login from './src/screens/Login';
-import SignUp from './src/screens/SignUp';
-import Home from './src/screens/Home';
-import User from './src/screens/User';
-import Accommodation from './src/screens/Accommodation';
+
 
 
 
 export default function App() {
+
+
 
   let [fontsLoaded, error] = useFonts({
     'ExtraBold': require('./assets/fonts/Lato-Black.ttf'),
@@ -29,9 +30,12 @@ export default function App() {
     return <ActivityIndicator size='large' color={theme.colors.green} />
   }
 
+
   return (
-    <ThemeProvider theme={theme}>
-      <Navigation />
-    </ThemeProvider>
+    <AuthProvider>
+      <ThemeProvider theme={theme}>
+        <Navigation />
+      </ThemeProvider>
+    </AuthProvider>
   );
 }

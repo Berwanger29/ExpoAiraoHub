@@ -1,17 +1,24 @@
 import {
     Container,
-    ShadowFilter,
+    Image,
+    Shadow,
     Title
 } from './styles'
 
-const Card = ({title}) => {
+
+const Card = ({ title, image }) => {
     return (
         <Container>
-            <ShadowFilter>
-                <Title>
-                    {title}
-                </Title>
-            </ShadowFilter>
+            <Image
+                source={{uri: image}}
+                imageStyle={{borderRadius: 5}}
+            >
+                <Shadow>
+                    <Title>
+                        {title}
+                    </Title>
+                </Shadow>
+            </Image>
         </Container>
     )
 }

@@ -1,8 +1,26 @@
 import React from "react";
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+//import LoginNavigation from "./LoginNavigation";
+//import QuizStack from "./QuizStack";
+//import UserStack from "./UserStack";
+
+import Login from "../screens/Login";
+import SignUp from "../screens/SignUp";
+import RecoveryPassword from "../screens/RecoveryPassword";
+
+import QuizA from "../screens/QuizA";
+import QuizB from "../screens/QuizB";
+import QuizC from "../screens/QuizC";
+
+import User from "../screens/User";
+import Home from "../screens/Home";
+import Scripts from "../screens/Scripts";
+import Accommodation from "../screens/Accommodation";
+import Activities from "../screens/Activities";
+import Map from "../screens/Map";
 
 import theme from "../global/styles/theme";
 import { RFValue } from "react-native-responsive-fontsize";
@@ -15,25 +33,52 @@ import {
     FontAwesome5
 } from '@expo/vector-icons';
 
-import Login from "../screens/Login";
-import SignUp from "../screens/SignUp";
-import User from "../screens/User";
-import RecoveryPassword from "../screens/RecoveryPassword";
-
-import QuizA from "../screens/QuizA";
-import QuizB from "../screens/QuizB";
-import QuizC from "../screens/QuizC";
-
-import Home from "../screens/Home";
-import Accommodation from "../screens/Accommodation";
-import Scripts from "../screens/Scripts";
-import Activities from "../screens/Activities";
-import Map from "../screens/Map";
+const Stack = createNativeStackNavigator
+const Tab = createBottomTabNavigator
 
 
+function QuizStack() {
+    return (
+        <>
+            <Stack.Screen
+                name="QuizA"
+                component={QuizA}
+            />
+            <Stack.Screen
+                name="QuizB"
+                component={QuizB}
+            />
+            <Stack.Screen
+                name="QuizC"
+                component={QuizC}
+            />
 
-const Tab = createBottomTabNavigator()
-const Stack = createNativeStackNavigator();
+            <Stack.Screen
+                name="UserStack"
+                component={UserStack}
+            />
+        </>
+    )
+}
+
+function UserStack() {
+    return (
+        <Stack.Navigator
+            screenOptions={{
+                headerShown: false
+            }}
+        >
+            <Stack.Screen
+                name="TabNavigator"
+                component={TabNavigator}
+            />
+            <Stack.Screen
+                name="User"
+                component={User}
+            />
+        </Stack.Navigator>
+    )
+}
 
 function TabNavigator() {
     return (
@@ -125,32 +170,6 @@ function TabNavigator() {
     )
 }
 
-function QuizStack() {
-    return (
-        <Stack.Navigator
-            screenOptions={{
-                headerShown: false
-            }}
-            initialRouteName="QuizA"
-        >
-            <Stack.Screen
-                name="QuizA"
-                component={QuizA}
-            />
-            <Stack.Screen
-                name="QuizB"
-                component={QuizB}
-            />
-            <Stack.Screen
-                name="QuizC"
-                component={QuizC}
-            />
-
-        </Stack.Navigator>
-    )
-}
-
-
 const Navigation = () => {
     return (
         <NavigationContainer>
@@ -172,23 +191,21 @@ const Navigation = () => {
                     name="RecoveryPassword"
                     component={RecoveryPassword}
                 />
+                <Stack.Screen
+                    name='QuizStack'
+                    component={QuizStack}
+                />
 
                 <Stack.Screen
                     name="QuizStack"
                     component={QuizStack}
                 />
 
-
                 <Stack.Screen
                     name="TabNavigator"
                     component={TabNavigator}
                 />
-
-                <Stack.Screen
-                    name="User"
-                    component={User}
-                />
-            </Stack.Navigator>
+            </ Stack.Navigator>
         </NavigationContainer>
     )
 }

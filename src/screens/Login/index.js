@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
-import { Alert } from 'react-native';
+import { useState, useEffect, useContext } from 'react'
+import { ActivityIndicator, Alert } from 'react-native';
 import {
     Container,
     InputContainer,
@@ -11,7 +11,8 @@ import {
     SignUpText,
     Title,
     TitleContainer,
-    UserInput
+    UserInput,
+    LoadingContainer
 } from './styles'
 
 import { auth } from '../../../firebase'
@@ -19,6 +20,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import theme from '../../global/styles/theme'
 import LoginAreaButton from '../../components/LoginAreaButton';
+import { AuthContext } from '../../contexts/auth';
 
 const Login = () => {
 
@@ -26,11 +28,15 @@ const Login = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [loading, setLoading] = useState(true)
+
 
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(user => {
             if (user) {
-                navigation.navigate('TabNavigator')
+                navigation.navigate('QuizStack')
+            } else {
+                setLoading(false)
             }
         })
         return unsubscribe
@@ -65,69 +71,84 @@ const Login = () => {
     }
 
 
+
+
+
     return (
-        <Container>
-            <TitleContainer>
-                <Title>
-                    AiraoHUB
-                </Title>
-            </TitleContainer>
+        <>
+            {
+                loading === true ?
+                    <LoadingContainer>
+                        <ActivityIndicator
+                            size="large"
+                        />
+                    </LoadingContainer>
+                    :
+                    <Container>
+                        <TitleContainer>
+                            <Title>
+                                AiraoHUB
+                            </Title>
+                        </TitleContainer>
 
 
-            <InputContainer>
-                <LabelInput>
-                    Login
-                </LabelInput>
-                <UserInput
-                    placeholder='Email'
-                    placeholderTextColor={theme.colors.light}
-                    onChangeText={(e) => setEmail(e)}
-                />
+                        <InputContainer>
+                            <LabelInput>
+                                Login
+                            </LabelInput>
+                            <UserInput
+                                placeholder='Email'
+                                placeholderTextColor={theme.colors.light}
+                                onChangeText={(e) => setEmail(e)}
+                            />
 
-                <UserInput
-                    placeholder='Senha'
-                    placeholderTextColor={theme.colors.light}
-                    onChangeText={(e) => setPassword(e)}
-                />
+                            <UserInput
+                                placeholder='Senha'
+                                placeholderTextColor={theme.colors.light}
+                                onChangeText={(e) => setPassword(e)}
+                            />
 
-                <RecoveryContainer>
-                    <RecoveryText>
-                        Esqueceu sua senha ?
-                    </RecoveryText>
-                    <ButtonText
-                        onPress={() => moveToRecovery()}
-                    >
-                        <RecoveryText
-                            style={{
-                                color: theme.colors.green
-                            }}
-                        >
-                            {' '} Recuperar.
-                        </RecoveryText>
-                    </ButtonText>
-                </RecoveryContainer>
+                            <RecoveryContainer>
+                                <RecoveryText>
+                                    Esqueceu sua senha ?
+                                </RecoveryText>
+                                <ButtonText
+                                    onPress={() => moveToRecovery()}
+                                >
+                                    <RecoveryText
+                                        style={{
+                                            color: theme.colors.green
+                                        }}
+                                    >
+                                        {' '} Recuperar.
+                                    </RecoveryText>
+                                </ButtonText>
+                            </RecoveryContainer>
 
-                <LoginAreaButton
-                    label='Entrar'
-                    onPress={() => handleLogin()}
-                />
-            </InputContainer>
+                            <LoginAreaButton
+                                label='Entrar'
+                                onPress={() => handleLogin()}
+                            />
+                        </InputContainer>
 
-            <SignUpContainer>
-                <SignUpText>
-                    É novo no aplicativo ?
-                </SignUpText>
-                <ButtonText
-                    onPress={() => moveToSignUp()}
-                >
-                    <SignUpText
-                        style={{
-                            color: theme.colors.green
-                        }}
-                    >{' '}Cadastre-se</SignUpText>
-                </ButtonText>
-            </SignUpContainer>
-        </Container>
+                        <SignUpContainer>
+                            <SignUpText>
+                                É novo no aplicativo ?
+                            </SignUpText>
+                            <ButtonText
+                                onPress={() => moveToSignUp()}
+                            >
+                                <SignUpText
+                                    style={{
+                                        color: theme.colors.green
+                                    }}
+                                >{' '}Cadastre-se</SignUpText>
+                            </ButtonText>
+                        </SignUpContainer>
+                    </Container>
+            }
+        </>
+
     )
 }
 

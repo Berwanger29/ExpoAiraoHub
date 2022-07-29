@@ -12,7 +12,6 @@ export const Carroussel = ({ children, title }) => {
     return (
         <Container
             horizontal
-
         >
 
             <TopContainer>

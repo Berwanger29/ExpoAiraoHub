@@ -75,3 +75,8 @@ export const ButtonText = styled.TouchableOpacity`
 
 `
 
+export const LoadingContainer = styled.View`
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+`
