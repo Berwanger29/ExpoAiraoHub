@@ -11,3 +11,8 @@ export const Container = styled.View`
 export const Header = styled.View`
 
 `
+
+export const Main = styled.View`
+    flex: 1;
+    padding-top: 10px;
+`

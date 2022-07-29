@@ -17,6 +17,10 @@ import data from '../../../data'
 
 const Accommodation = () => {
 
+    const accommodationData = data.filter((item) => {
+        return item.type == 'hotels'
+    })
+
     return (
         <Container>
             <Header>
@@ -31,7 +35,7 @@ const Accommodation = () => {
             <Main>
                 <List
                     showsVerticalScrollIndicator={false}
-                    data={data}
+                    data={accommodationData}
                     keyExtractor={item => item.id}
                     renderItem={({ item }) =>
                     (

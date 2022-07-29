@@ -15,6 +15,7 @@ export const Shadow = styled.View`
     background-color: rgba(0,0,0,0.4);
     width:100%;
     height:100%;
+    border-radius: 5px;
 `
 
 export const Image = styled.ImageBackground`

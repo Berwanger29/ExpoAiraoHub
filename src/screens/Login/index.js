@@ -21,17 +21,35 @@ import { useNavigation } from '@react-navigation/native';
 import theme from '../../global/styles/theme'
 import LoginAreaButton from '../../components/LoginAreaButton';
 import { AuthContext } from '../../contexts/auth';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Login = () => {
 
     const navigation = useNavigation()
 
+    const { isFirstTime, setIsFirstTime } = useContext(AuthContext)
+
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [loading, setLoading] = useState(true)
 
+    async function getFirstLogin() {
+        try {
+            const jsonValue = await AsyncStorage.getItem('@AiraoHubFirstLogin_key')
+            if (jsonValue != null) {
+                setIsFirstTime(JSON.parse(jsonValue))
+                console.log(jsonValue)
+                console.log('success')
+            } else {
+                return null
+            }
+        } catch (e) {
+            console.log('login screen')
+            console.log(e)
+        }
+    }
 
-    useEffect(() => {
+    function autoLogin() {
         const unsubscribe = auth.onAuthStateChanged(user => {
             if (user) {
                 navigation.navigate('QuizStack')
@@ -40,11 +58,13 @@ const Login = () => {
             }
         })
         return unsubscribe
-    }, [])
+    }
+
 
     function handleLogin() {
         auth.signInWithEmailAndPassword(email, password)
             .then(userCredentials => {
+                autoLogin()
                 const user = userCredentials.user
                 console.log('Logged in with' + ' ' + user.email)
             })
@@ -70,6 +90,10 @@ const Login = () => {
         navigation.navigate('RecoveryPassword')
     }
 
+
+    useEffect(()=>{
+        autoLogin()
+    },[])
 
 
 

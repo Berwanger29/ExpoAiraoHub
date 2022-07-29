@@ -24,8 +24,8 @@ export const ShadowFilter = styled.View`
 `
 
 export const Title = styled.Text`
-    font-family: ${props => props.theme.fonts.regular};
-    font-size: ${RFValue(16)}px;
+    font-family: ${props => props.theme.fonts.black};
+    font-size: ${RFValue(20)}px;
 
     color: ${props => props.theme.colors.light};
 `

@@ -10,13 +10,11 @@ import {
     Title
 } from './styles'
 
-const Card = ({ title, isOpen, value, image }) => {
+const Card = ({ title, value, image }) => {
     return (
         <Container>
             <Image
-                source={{
-                    uri: image
-                }}
+                source={image}
             />
             <Title>
                 {title}

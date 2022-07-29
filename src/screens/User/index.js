@@ -17,12 +17,17 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { auth } from '../../../firebase';
 import { useNavigation } from '@react-navigation/native';
+import { useContext } from 'react';
+import { AuthContext } from '../../contexts/auth';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 
 
 const User = () => {
 
     const navigation = useNavigation()
+    const { isFirstTime, setIsFirstTime } = useContext(AuthContext)
 
 
     function handleLogOut() {

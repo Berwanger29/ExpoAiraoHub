@@ -4,10 +4,10 @@ export const AuthContext = createContext({})
 
 function AuthProvider({ children }) {
 
-    const [hasLogin, setHasLogin] = useState(false)
+    const [isFirstTime, setIsFirstTime] = useState(false)
 
     return (
-        <AuthContext.Provider value={{hasLogin, setHasLogin}}>
+        <AuthContext.Provider value={{ isFirstTime, setIsFirstTime }}>
             {children}
         </AuthContext.Provider>
     )

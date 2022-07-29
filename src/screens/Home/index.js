@@ -19,15 +19,16 @@ import Card from '../../components/_Screens/Home/Card'
 import Carroussel from '../../components/_Screens/Home/Casrroussel'
 
 import { StatusBar } from 'expo-status-bar'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+
 
 import theme from '../../global/styles/theme'
-
 import { AuthContext } from '../../contexts/auth'
 
 
 
 const Home = () => {
+
+    const { isFirstTime, setIsFirstTime } = useContext(AuthContext)
 
     const backAction = () => {
         Alert.alert("Oops", "Você tem certeza de que deseja sair do aplicativo?", [
@@ -41,11 +42,13 @@ const Home = () => {
         return true;
     };
 
-    useEffect(() => {
-        BackHandler.addEventListener("hardwareBackPress", backAction);
-        return () =>
-            BackHandler.removeEventListener("hardwareBackPress", backAction);
-    }, []);
+    // useEffect(() => {
+    //     BackHandler.addEventListener("hardwareBackPress", backAction);
+    //     return () =>
+    //         BackHandler.removeEventListener("hardwareBackPress", backAction);
+    // }, []);
+
+
 
 
     return (
