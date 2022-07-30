@@ -29,6 +29,7 @@ import Accommodation from "../screens/Accommodation";
 import Scripts from "../screens/Scripts";
 import Activities from "../screens/Activities";
 import Map from "../screens/Map";
+import ItemSelected from "../screens/ItemSelected";
 
 
 
@@ -182,6 +183,11 @@ const Navigation = () => {
                 <Stack.Screen
                     name="TabNavigator"
                     component={TabNavigator}
+                />
+
+                <Stack.Screen
+                    name="ItemSelected"
+                    component={ItemSelected}
                 />
 
                 <Stack.Screen

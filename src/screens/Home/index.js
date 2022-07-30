@@ -20,7 +20,7 @@ import Carroussel from '../../components/_Screens/Home/Casrroussel'
 
 import { StatusBar } from 'expo-status-bar'
 
-
+import { useNavigation } from '@react-navigation/native'
 import theme from '../../global/styles/theme'
 import { AuthContext } from '../../contexts/auth'
 
@@ -31,6 +31,7 @@ import data from '../../../data'
 const Home = () => {
 
     const { isFirstTime, setIsFirstTime } = useContext(AuthContext)
+    const navigation = useNavigation()
 
     const backAction = () => {
         Alert.alert("Oops", "Você tem certeza de que deseja sair do aplicativo?", [
@@ -79,6 +80,13 @@ const Home = () => {
         return item.type == 'hotels'
     })
 
+    function NavigateToItemSelected(data) {
+        console.log('++++++++++++++++')
+        console.log(data)
+        navigation.navigate('ItemSelected', {
+            itemId: data,
+        });
+    }
 
     return (
         <Container>
@@ -138,7 +146,19 @@ const Home = () => {
                     <Carroussel
                         title="Meios de hospedagem"
                     >
-                        <Card title={hotelsData[0].title} image={hotelsData[0].content.image} />
+                        <Card
+                            title={hotelsData[0].title}
+                            image={hotelsData[0].content.image}
+                            data={hotelsData[0]}
+                            // onPress={() => {
+                            //     NavigateToItemSelected(
+                            //         hotelsData[0].title,
+                            //         hotelsData[0].content.image,
+                            //         hotelsData[0].content.
+                            //     )
+                            // }}
+                            onPress={() => NavigateToItemSelected(hotelsData[0].id)}
+                        />
                         <Card title={hotelsData[1].title} image={hotelsData[1].content.image} />
                         <Card title={hotelsData[2].title} image={hotelsData[2].content.image} />
                     </Carroussel>

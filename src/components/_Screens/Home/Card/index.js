@@ -6,9 +6,13 @@ import {
 } from './styles'
 
 
-const Card = ({ title, image }) => {
+const Card = ({ title, image, onPress }) => {
+
     return (
-        <Container>
+        <Container
+            activeOpacity={0.7}
+            onPress={onPress}
+        >
             <Image
                 source={image}
                 imageStyle={{ borderRadius: 5 }}

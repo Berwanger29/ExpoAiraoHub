@@ -2,10 +2,9 @@ import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
 
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
     width: ${RFValue(270)}px;
     height: ${RFValue(208)}px;
-    background-color: green;
     border-radius: 5px;
 
     margin-right: ${RFValue(20)}px;

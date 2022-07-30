@@ -9,9 +9,11 @@ import Navigation from './src/Navigation';
 import theme from './src/global/styles/theme';
 import AuthProvider from './src/contexts/auth';
 
+import { LogBox } from 'react-native';
 
 
 
+LogBox.ignoreAllLogs()
 
 
 export default function App() {
