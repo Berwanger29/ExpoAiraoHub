@@ -24,6 +24,8 @@ import { StatusBar } from 'expo-status-bar'
 import theme from '../../global/styles/theme'
 import { AuthContext } from '../../contexts/auth'
 
+import data from '../../../data'
+
 
 
 const Home = () => {
@@ -49,6 +51,33 @@ const Home = () => {
     // }, []);
 
 
+    let roadData = data.filter((item) => {
+        return item.type == 'road'
+    })
+
+    let inCityData = data.filter((item) => {
+        return item.type == 'inCity'
+    })
+
+    let anavilhanasData = data.filter((item) => {
+        return item.type == 'anavilhanas'
+    })
+
+    let jauData = data.filter((item) => {
+        return item.type == 'jau'
+    })
+
+    let riverData = data.filter((item) => {
+        return item.type == 'river'
+    })
+
+    let toEatData = data.filter((item) => {
+        return item.type == 'toEat'
+    })
+
+    let hotelsData = data.filter((item) => {
+        return item.type == 'hotels'
+    })
 
 
     return (
@@ -72,49 +101,46 @@ const Home = () => {
                     <Carroussel
                         title="O que visitar ?"
                     >
-                        <Card
-                            title='Restaurante Flor do Luar'
-                            image={'https://images.unsplash.com/photo-1527679124583-9208be990bb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80'}
-                        />
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
+                        <Card title={jauData[2].title} image={jauData[2].content.image} />
+                        <Card title={toEatData[2].title} image={toEatData[2].content.image} />
+                        <Card title={anavilhanasData[2].title} image={anavilhanasData[2].content.image} />
                     </Carroussel>
 
                     <Carroussel
                         title="Atrações dentro da cidade"
                     >
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
+                        <Card title={inCityData[0].title} image={inCityData[0].content.image} />
+                        <Card title={inCityData[1].title} image={inCityData[1].content.image} />
+                        <Card title={inCityData[2].title} image={inCityData[2].content.image} />
                     </Carroussel>
 
                     <Carroussel
                         title="Pelo Parna Anavilhanas"
                     >
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
+                        <Card title={anavilhanasData[0].title} image={anavilhanasData[0].content.image} />
+                        <Card title={anavilhanasData[1].title} image={anavilhanasData[1].content.image} />
+                        <Card title={anavilhanasData[2].title} image={anavilhanasData[2].content.image} />
                     </Carroussel>
                     <Carroussel
                         title="Pelo Parna Jaú"
                     >
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
+                        <Card title={jauData[0].title} image={jauData[0].content.image} />
+                        <Card title={jauData[1].title} image={jauData[1].content.image} />
+                        <Card title={jauData[2].title} image={jauData[2].content.image} />
                     </Carroussel>
                     <Carroussel
                         title="Onde Comer"
                     >
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
+                        <Card title={toEatData[0].title} image={toEatData[0].content.image} />
+                        <Card title={toEatData[1].title} image={toEatData[1].content.image} />
+                        <Card title={toEatData[2].title} image={toEatData[2].content.image} />
                     </Carroussel>
                     <Carroussel
                         title="Meios de hospedagem"
                     >
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
-                        <Card title='Restaurante Flor do Luar' />
+                        <Card title={hotelsData[0].title} image={hotelsData[0].content.image} />
+                        <Card title={hotelsData[1].title} image={hotelsData[1].content.image} />
+                        <Card title={hotelsData[2].title} image={hotelsData[2].content.image} />
                     </Carroussel>
                 </CarrousselContainer>
             </Main>

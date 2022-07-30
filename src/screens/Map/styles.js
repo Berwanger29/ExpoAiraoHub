@@ -11,3 +11,25 @@ export const Container = styled.View`
 export const Header = styled.View`
 
 `
+export const ButtonsContainer = styled.View`
+    height: ${RFValue(60)}px;
+
+    flex-direction: row;
+    justify-content: space-between;
+`
+
+export const ButtonsList = styled.ScrollView`
+    flex-direction: row;
+`
+
+export const Main = styled.ScrollView`
+    flex: 1;
+    margin-top: 20px;
+`
+export const ImageContainer = styled.View`
+    width: 100%;
+`
+
+export const ImageMap = styled.Image`
+    width: 100%;
+`

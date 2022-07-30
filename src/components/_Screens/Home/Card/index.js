@@ -10,8 +10,8 @@ const Card = ({ title, image }) => {
     return (
         <Container>
             <Image
-                source={{uri: image}}
-                imageStyle={{borderRadius: 5}}
+                source={image}
+                imageStyle={{ borderRadius: 5 }}
             >
                 <Shadow>
                     <Title>
