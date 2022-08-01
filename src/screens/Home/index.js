@@ -109,39 +109,101 @@ const Home = () => {
                     <Carroussel
                         title="O que visitar ?"
                     >
-                        <Card title={jauData[2].title} image={jauData[2].content.image} />
-                        <Card title={toEatData[2].title} image={toEatData[2].content.image} />
-                        <Card title={anavilhanasData[2].title} image={anavilhanasData[2].content.image} />
+                        <Card
+                            title={jauData[2].title}
+                            image={jauData[2].content.image}
+                            onPress={() => NavigateToItemSelected(jauData[2].id)}
+                        />
+                        <Card
+                            title={toEatData[2].title}
+                            image={toEatData[2].content.image}
+                            onPress={() => NavigateToItemSelected(toEatData[2].id)}
+                        />
+                        <Card
+                            title={anavilhanasData[2].title}
+                            image={anavilhanasData[2].content.image}
+                            onPress={() => NavigateToItemSelected(anavilhanasData[2].id)}
+                        />
                     </Carroussel>
 
                     <Carroussel
                         title="Atrações dentro da cidade"
                     >
-                        <Card title={inCityData[0].title} image={inCityData[0].content.image} />
-                        <Card title={inCityData[1].title} image={inCityData[1].content.image} />
-                        <Card title={inCityData[2].title} image={inCityData[2].content.image} />
+                        <Card
+                            title={inCityData[0].title}
+                            image={inCityData[0].content.image}
+                            onPress={() => NavigateToItemSelected(inCityData[0].id)}
+                        />
+                        <Card
+                            title={inCityData[1].title}
+                            image={inCityData[1].content.image}
+                            onPress={() => NavigateToItemSelected(inCityData[1].id)}
+                        />
+
+                        <Card
+                            title={inCityData[2].title}
+                            image={inCityData[2].content.image}
+                            onPress={() => NavigateToItemSelected(inCityData[2].id)}
+                        />
                     </Carroussel>
 
                     <Carroussel
                         title="Pelo Parna Anavilhanas"
                     >
-                        <Card title={anavilhanasData[0].title} image={anavilhanasData[0].content.image} />
-                        <Card title={anavilhanasData[1].title} image={anavilhanasData[1].content.image} />
-                        <Card title={anavilhanasData[2].title} image={anavilhanasData[2].content.image} />
+                        <Card
+                            title={anavilhanasData[0].title}
+                            image={anavilhanasData[0].content.image}
+                            onPress={() => NavigateToItemSelected(anavilhanasData[0].id)}
+                        />
+                        <Card
+                            title={anavilhanasData[1].title}
+                            image={anavilhanasData[1].content.image}
+                            onPress={() => NavigateToItemSelected(anavilhanasData[1].id)}
+                        />
+                        <Card
+                            title={anavilhanasData[2].title}
+
+                            image={anavilhanasData[2].content.image}
+                            onPress={() => NavigateToItemSelected(anavilhanasData[2].id)}
+                        />
                     </Carroussel>
                     <Carroussel
                         title="Pelo Parna Jaú"
                     >
-                        <Card title={jauData[0].title} image={jauData[0].content.image} />
-                        <Card title={jauData[1].title} image={jauData[1].content.image} />
-                        <Card title={jauData[2].title} image={jauData[2].content.image} />
+                        <Card
+                            title={jauData[0].title}
+                            image={jauData[0].content.image}
+                            onPress={() => NavigateToItemSelected(jauData[0].id)}
+                        />
+                        <Card
+                            title={jauData[1].title}
+                            image={jauData[1].content.image}
+                            onPress={() => NavigateToItemSelected(jauData[1].id)}
+                        />
+                        <Card
+                            title={jauData[2].title}
+                            image={jauData[2].content.image}
+                            onPress={() => NavigateToItemSelected(jauData[2].id)}
+                        />
                     </Carroussel>
                     <Carroussel
                         title="Onde Comer"
                     >
-                        <Card title={toEatData[0].title} image={toEatData[0].content.image} />
-                        <Card title={toEatData[1].title} image={toEatData[1].content.image} />
-                        <Card title={toEatData[2].title} image={toEatData[2].content.image} />
+                        <Card
+                            title={toEatData[0].title}
+                            image={toEatData[0].content.image}
+                            onPress={() => NavigateToItemSelected(toEatData[0].id)}
+                        />
+                        <Card
+                            title={toEatData[1].title}
+                            image={toEatData[1].content.image}
+                            onPress={() => NavigateToItemSelected(toEatData[1].id)}
+                        />
+                        <Card
+                            title={toEatData[2].title}
+                            image={toEatData[2].content.image}
+                            onPress={() => NavigateToItemSelected(toEatData[2].id)}
+                        />
                     </Carroussel>
                     <Carroussel
                         title="Meios de hospedagem"
@@ -149,18 +211,18 @@ const Home = () => {
                         <Card
                             title={hotelsData[0].title}
                             image={hotelsData[0].content.image}
-                            data={hotelsData[0]}
-                            // onPress={() => {
-                            //     NavigateToItemSelected(
-                            //         hotelsData[0].title,
-                            //         hotelsData[0].content.image,
-                            //         hotelsData[0].content.
-                            //     )
-                            // }}
                             onPress={() => NavigateToItemSelected(hotelsData[0].id)}
                         />
-                        <Card title={hotelsData[1].title} image={hotelsData[1].content.image} />
-                        <Card title={hotelsData[2].title} image={hotelsData[2].content.image} />
+                        <Card
+                            title={hotelsData[1].title}
+                            image={hotelsData[1].content.image}
+                            onPress={() => NavigateToItemSelected(hotelsData[1].id)}
+                        />
+                        <Card
+                            title={hotelsData[2].title}
+                            image={hotelsData[2].content.image}
+                            onPress={() => NavigateToItemSelected(hotelsData[2].id)}
+                        />
                     </Carroussel>
                 </CarrousselContainer>
             </Main>

@@ -1,5 +1,3 @@
-import { useEffect } from "react"
-import data from "../../../data";
 import {
     Container,
     Image,
@@ -7,9 +5,13 @@ import {
     TextContentContainer,
     Title,
     Line,
-    MainText
+    MainText,
+    ContainerBackButton
 } from "./styles"
 
+import BackButton from "../../components/BackButton";
+
+import data from "../../../data";
 
 const ItemSelected = ({ route }) => {
 
@@ -25,6 +27,10 @@ const ItemSelected = ({ route }) => {
                 <Image
                     source={itemData[0].content.image}
                 />
+
+                <ContainerBackButton>
+                    <BackButton />
+                </ContainerBackButton>
             </ImageContainer>
 
             <TextContentContainer>

@@ -5,9 +5,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 export const Container = styled.ScrollView`
     flex: 1;
     background-color: ${props => props.theme.colors.light};
-    padding-top:${StatusBar.currentHeight}px ;
-
-    /* padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px; */
+    padding-top:${StatusBar.currentHeight}px ; 
 `
 export const ImageContainer = styled.View`
     width: 100%;
@@ -15,6 +13,13 @@ export const ImageContainer = styled.View`
 
     background-color: red;
 `
+
+export const ContainerBackButton = styled.View`
+    position: absolute;
+    top: 20px;
+    left: 15px;
+`
+
 export const Image = styled.Image`
     width: 100%;
     height: 100%;
