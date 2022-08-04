@@ -1,18 +1,17 @@
 import {
     Container,
     Image,
-    IsOpen,
-    IsOpenDot,
-    IsOpenText,
     PriceContainer,
-    PricePeriod,
     PriceText,
     Title
 } from './styles'
 
-const Card = ({ title, value, image }) => {
+const Card = ({ title, value, image, onPress }) => {
     return (
-        <Container>
+        <Container
+            activeOpacity={0.7}
+            onPress={onPress}
+        >
             <Image
                 source={image}
             />

@@ -15,21 +15,21 @@ import {
     FontAwesome5
 } from '@expo/vector-icons';
 
-import Login from "../screens/Login";
-import SignUp from "../screens/SignUp";
-import User from "../screens/User";
-import RecoveryPassword from "../screens/RecoveryPassword";
+import Login from "../screens/LoginGroup/Login"
+import SignUp from "../screens/LoginGroup/SignUp";
+import RecoveryPassword from "../screens/LoginGroup/RecoveryPassword";
 
-import QuizA from "../screens/QuizA";
-import QuizB from "../screens/QuizB";
-import QuizC from "../screens/QuizC";
+import QuizA from "../screens/QuizGroup/QuizA";
+import QuizB from "../screens/QuizGroup/QuizB";
+import QuizC from "../screens/QuizGroup/QuizC";
 
-import Home from "../screens/Home";
-import Accommodation from "../screens/Accommodation";
-import Scripts from "../screens/Scripts";
-import Activities from "../screens/Activities";
-import Map from "../screens/Map";
-import ItemSelected from "../screens/ItemSelected";
+import Home from "../screens/TabGroup/Home";
+import Accommodation from "../screens/TabGroup/Accommodation";
+import Scripts from "../screens/TabGroup/Scripts";
+import Activities from "../screens/TabGroup/Activities";
+import Map from "../screens/TabGroup/Map";
+import ItemSelected from "../screens/TabGroup/ItemSelected";
+import User from "../screens/TabGroup/User";
 
 
 

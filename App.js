@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react';
 import { useFonts } from 'expo-font';
 import { ThemeProvider } from 'styled-components';
 import { ActivityIndicator } from 'react-native';
 
 import Navigation from './src/Navigation';
-
 
 import theme from './src/global/styles/theme';
 import AuthProvider from './src/contexts/auth';
