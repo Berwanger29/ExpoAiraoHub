@@ -1,5 +1,5 @@
-import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
     margin-bottom: ${RFValue(20)}px;
@@ -21,6 +21,6 @@ export const Title = styled.Text`
 `
 
 
-export const HorizontalView = styled.ScrollView`
+export const HorizontalView = styled.FlatList`
 
 `

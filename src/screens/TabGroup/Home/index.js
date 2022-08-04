@@ -70,35 +70,29 @@ const Home = () => {
                 >
                     <Carroussel
                         title="O que visitar ?"
-                    >
-                    </Carroussel>
+                    />
 
                     <Carroussel
                         title="Atrações dentro da cidade"
-                    >
-
-                    </Carroussel>
+                        data={inCityData}
+                    />
 
                     <Carroussel
                         title="Pelo Parna Anavilhanas"
-                    >
-
-                    </Carroussel>
+                        data={anavilhanasData}
+                    />
                     <Carroussel
                         title="Pelo Parna Jaú"
-                    >
-
-                    </Carroussel>
+                        data={jauData}
+                    />
                     <Carroussel
                         title="Onde Comer"
-                    >
-
-                    </Carroussel>
+                        data={toEatData}
+                    />
                     <Carroussel
                         title="Meios de hospedagem"
-                    >
-
-                    </Carroussel>
+                        data={hotelsData}
+                    />
                 </CarrousselContainer>
             </Main>
         </Container>
