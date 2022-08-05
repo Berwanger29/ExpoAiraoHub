@@ -1,24 +1,25 @@
 import {
     Container,
-    ImageBackground,
-    ShadowFilter,
-    Title
-} from './styles'
+    ImageButton,
+    Label
+} from "./styles"
 
-const ScriptCard = ({ image, label }) => {
+
+
+const ScriptCard = ({ onPress, label, image }) => {
     return (
-        <Container>
-            <ImageBackground
-                source={{ uri: image }}
-                resizeMode="cover"
+        <Container
+            onPress={onPress}
+            activeOpacity={0.7}
+        >
+            <ImageButton
+                source={image}
                 imageStyle={{ borderRadius: 5 }}
             >
-                <ShadowFilter>
-                    <Title>
-                        {label}
-                    </Title>
-                </ShadowFilter>
-            </ImageBackground>
+                <Label>
+                    {label}
+                </Label>
+            </ImageButton>
         </Container>
     )
 }

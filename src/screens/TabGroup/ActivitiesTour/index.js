@@ -24,9 +24,10 @@ const ActivitiesTour = () => {
                 data={adventureData}
                 renderItem={({ item }) => (
                     <Card
-                        image={item.content.image}
-                        title={item.title}
-                        price={item.content.prices}
+                    image={item.content.image}
+                    title={item.title}
+                    price={item.content.prices}
+                    type={item.content.type}
                     />
                 )}
             />

@@ -27,7 +27,7 @@ const Accommodation = () => {
         console.log('===================')
         console.log(id)
 
-        
+
     }
 
     return (
@@ -52,6 +52,7 @@ const Accommodation = () => {
                             title={item.title}
                             value={item.content.prices}
                             image={item.content.image}
+                            type={item.content.type}
                             onPress={() => navigateToSelected(item.id)}
                         />
                     )

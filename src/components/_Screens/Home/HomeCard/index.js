@@ -1,15 +1,27 @@
 import {
-    Container,
+    ButtonContainer,
     ImageCard,
     Title
 } from './styles'
 
 import { LinearGradient } from 'expo-linear-gradient'
-
+import { useNavigation } from '@react-navigation/native'
 
 const HomeCard = ({ id, title, image }) => {
+
+    const navigation = useNavigation()
+
+    function navigateTo(id) {
+        navigation.navigate('ItemSelected', {
+            itemId: id
+        })
+    }
+
     return (
-        <Container>
+        <ButtonContainer
+            activeOpacity={0.7}
+            onPress={() => navigateTo(id)}
+        >
             <ImageCard
                 source={image}
                 imageStyle={{ borderRadius: 5 }}
@@ -24,7 +36,7 @@ const HomeCard = ({ id, title, image }) => {
                     </Title>
                 </LinearGradient>
             </ImageCard>
-        </Container >
+        </ButtonContainer >
     )
 }
 

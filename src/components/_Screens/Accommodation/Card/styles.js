@@ -20,11 +20,6 @@ export const Title = styled.Text`
     color: ${props => props.theme.colors.darkGreen};
 `
 
-
-
-export const PriceContainer = styled.View`
-    flex-direction: row;
-`
 export const PriceText = styled.Text`
     font-family: ${props => props.theme.fonts.regular};
     font-size: ${RFValue(14)}px;

@@ -3,13 +3,13 @@ import {
     Container,
     ImageCard,
     ImageContainer,
-    PriceContainer,
-    PriceLabel,
     Title,
 } from "./styles"
 
+import PriceLabel from "../../../PriceLabel"
 
-const Card = ({ title, image, price }) => {
+
+const Card = ({ title, image, price, type }) => {
     return (
         <Container>
             <ImageContainer>
@@ -23,14 +23,19 @@ const Card = ({ title, image, price }) => {
             <Title>
                 {title}
             </Title>
-            <PriceContainer>
+
+            <PriceLabel
+                price={price}
+                label={type}
+            />
+            {/* <PriceContainer>
                 <PriceLabel
                     style={{
                         fontFamily: theme.fonts.bold
                     }}
                 >R${' '}{price} </PriceLabel>
                 <PriceLabel>/ pessoa</PriceLabel>
-            </PriceContainer>
+            </PriceContainer> */}
 
         </Container>
     )

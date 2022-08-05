@@ -1,12 +1,13 @@
 import {
     Container,
     Image,
-    PriceContainer,
-    PriceText,
     Title
 } from './styles'
+import PriceLabel from '../../../PriceLabel'
 
-const Card = ({ title, value, image, onPress }) => {
+
+
+const Card = ({ title, value, type, image, onPress }) => {
     return (
         <Container
             activeOpacity={0.7}
@@ -18,11 +19,10 @@ const Card = ({ title, value, image, onPress }) => {
             <Title>
                 {title}
             </Title>
-            <PriceContainer>
-                <PriceText>
-                    {value}
-                </PriceText>
-            </PriceContainer>
+            <PriceLabel
+                price={value}
+                label={type}
+            />
         </Container>
     )
 }
