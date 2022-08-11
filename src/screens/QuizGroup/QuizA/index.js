@@ -19,10 +19,27 @@ import theme from '../../../global/styles/theme'
 import boating from '../../../../assets/animations/boating.json'
 
 import { useNavigation } from '@react-navigation/native';
+import { useState } from 'react';
 
 const QuizA = () => {
 
     const navigation = useNavigation()
+
+    const [isFocused, setIsFocused] = useState(false)
+    const [changeColor, setChangeColor] = useState(false)
+
+    function handleSelected(param) {
+        console.log(param)
+        if (isFocused && param == 'a') {
+            setChangeColor(true)
+        }
+        if (isFocused && param == 'b') {
+            setChangeColor(true)
+        }
+        if (isFocused && param == 'c') {
+            setChangeColor(true)
+        }
+    }
 
     return (
         <Container>
@@ -54,12 +71,18 @@ const QuizA = () => {
                 <ButtonsContainer>
                     <SelectButton
                         text="Caiaque"
+                        onPress={() => handleSelected('a')}
+                        changeColor={isFocused}
                     />
                     <SelectButton
                         text="Passeio de barco"
+                        onPress={() => handleSelected('b')}
+                        changeColor={isFocused}
                     />
                     <SelectButton
                         text="Passeio na praça"
+                        onPress={() => handleSelected('c')}
+                        changeColor={isFocused}
                     />
                 </ButtonsContainer>
             </Main>

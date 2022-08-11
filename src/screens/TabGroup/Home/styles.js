@@ -9,8 +9,8 @@ export const Container = styled.View`
 `
 export const Header = styled.View`
     margin-bottom: 20px;
-    
 `
+
 export const Greetings = styled.Text`
     font-family: ${(props) => props.theme.fonts.black};
     font-size: ${RFValue(26)}px;

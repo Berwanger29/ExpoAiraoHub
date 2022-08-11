@@ -6,12 +6,12 @@ export const Container = styled.ScrollView`
     flex: 1;
     background-color: ${props => props.theme.colors.light};
     padding-top:${StatusBar.currentHeight}px ; 
+    
 `
+
 export const ImageContainer = styled.View`
     width: 100%;
     height: ${RFValue(300)}px;
-
-    background-color: red;
 `
 
 export const ContainerBackButton = styled.View`
@@ -45,4 +45,18 @@ export const Line = styled.View`
 export const MainText = styled.Text`
     font-family: ${props => props.theme.fonts.regular};
     font-size: ${RFValue(18)}px;
+`
+
+export const OptionalText = styled.Text`
+
+`
+
+export const ContainerLinks = styled.View`
+    flex-direction: row;
+    padding-bottom: 20px;
+`
+
+export const LinkButton = styled.View`
+    width: ${RFValue(50)}px;
+    height: ${RFValue(50)}px;
 `

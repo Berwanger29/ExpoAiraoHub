@@ -55,7 +55,7 @@ function TabNavigator() {
                         return (
                             <Entypo
                                 name="home"
-                                size={RFValue(20)}
+                                size={20}
                                 color={focused ? theme.colors.light : theme.colors.semiLight}
                             />)
                     }
@@ -69,7 +69,7 @@ function TabNavigator() {
                         return (
                             <MaterialCommunityIcons
                                 name="sign-direction"
-                                size={RFValue(20)}
+                                size={22}
                                 color={focused ? theme.colors.light : theme.colors.semiLight}
                             />
                         )
@@ -84,7 +84,7 @@ function TabNavigator() {
                         return (
                             <FontAwesome
                                 name="hotel"
-                                size={RFValue(20)}
+                                size={20}
                                 color={focused ? theme.colors.light : theme.colors.semiLight}
                             />
                         )
@@ -99,7 +99,7 @@ function TabNavigator() {
                         return (
                             <Ionicons
                                 name="compass"
-                                size={RFValue(20)}
+                                size={20}
                                 color={focused ? theme.colors.light : theme.colors.semiLight}
                             />
                         )
@@ -114,7 +114,7 @@ function TabNavigator() {
                         return (
                             <FontAwesome5
                                 name="map-marked-alt"
-                                size={RFValue(20)}
+                                size={20}
                                 color={focused ? theme.colors.light : theme.colors.semiLight}
                             />
                         )

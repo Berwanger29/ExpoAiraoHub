@@ -3,7 +3,7 @@ import {
     Container,
     Greetings,
     Header,
-    Main
+    Main,
 } from './styles'
 
 import { StatusBar } from 'expo-status-bar'
@@ -13,8 +13,6 @@ import UserButtonContainer from '../../../components/UserButtonContiner'
 import SearchBar from '../../../components/SearchBar'
 import Carroussel from '../../../components/_Screens/Home/Carrousel'
 
-
-import { useNavigation } from '@react-navigation/native'
 import theme from '../../../global/styles/theme'
 
 import data from '../../../../data'
@@ -22,7 +20,6 @@ import data from '../../../../data'
 
 
 const Home = () => {
-    const navigation = useNavigation()
 
     let inCityData = data.filter((item) => {
         return item.type == 'inCity'
@@ -44,11 +41,6 @@ const Home = () => {
         return item.type == 'hotels'
     })
 
-    function NavigateToItemSelected(data) {
-        navigation.navigate('ItemSelected', {
-            itemId: data,
-        });
-    }
 
     return (
         <Container>
@@ -59,9 +51,9 @@ const Home = () => {
                 <UserButtonContainer>
                     <UserButton />
                 </UserButtonContainer>
-                <Greetings>
-                    Olá
-                </Greetings>
+                    <Greetings>
+                        Olá
+                    </Greetings>
                 <SearchBar />
             </Header>
             <Main>

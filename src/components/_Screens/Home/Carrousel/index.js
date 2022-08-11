@@ -13,11 +13,6 @@ import { useEffect } from "react";
 
 export const Carroussel = ({ children, title, data }) => {
 
-    // useEffect(() => {
-    //     console.log('=========')
-    //     console.log(data)
-    // }, [])
-
     return (
         <Container
             horizontal

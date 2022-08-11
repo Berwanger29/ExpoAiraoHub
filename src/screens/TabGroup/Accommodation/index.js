@@ -25,9 +25,10 @@ const Accommodation = () => {
 
     function navigateToSelected(id) {
         console.log('===================')
-        console.log(id)
 
-
+        navigation.navigate('ItemSelected', {
+            itemId: id
+        })
     }
 
     return (

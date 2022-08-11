@@ -114,7 +114,6 @@ const Map = () => {
                 <MapLinkContainer>
                     <MapButton
                         onPress={() => {
-                            console.log('funciona')
                             Linking.openURL('https://goo.gl/maps/q1HGYamtj4RF1Fy8A')
                         }}
                     >

@@ -8,6 +8,8 @@ export const Container = styled.TouchableOpacity`
     height: ${RFValue(50)}px;
 
     border-radius: 5px;
+    border-width: 1px;
+    border-color: ${props => props.isFocused ? 'green' : 'red'};
 
     align-items: center;
     justify-content: center;

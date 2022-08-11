@@ -3,10 +3,12 @@ import {
     LabelOption
 } from './styles'
 
-const SelectButton = ({ text }) => {
+const SelectButton = ({ text, onPress, changeColor }) => {
     return (
         <Container
             activeOpacity={0.7}
+            onPress={onPress}
+            isFocused={changeColor}
         >
             <LabelOption>
                 {text}
