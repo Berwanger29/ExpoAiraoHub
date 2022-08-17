@@ -14,6 +14,7 @@ import LoginAreaButton from '../../../components/LoginAreaButton'
 import BackButton from '../../../components/BackButton'
 
 import { auth } from '../../../../firebase'
+import Keyboard from '../../../components/KeyBoard'
 
 
 const SignUp = () => {
@@ -51,43 +52,44 @@ const SignUp = () => {
     }
 
     return (
-        <Container>
+        <Keyboard>
+            <Container>
+                <TitleContainer>
+                    <BackButtonContainer>
+                        <BackButton
 
-            <TitleContainer>
-                <BackButtonContainer>
-                    <BackButton
-
+                        />
+                    </BackButtonContainer>
+                    <Title>
+                        AiraoHub
+                    </Title>
+                </TitleContainer>
+                <FormContainer>
+                    <Input
+                        placeholder='email'
+                        onChangeText={(e) => setEmail(e)}
+                        returnKeyType='done'
+                        keyboardType='email-address'
                     />
-                </BackButtonContainer>
-                <Title>
-                    AiraoHub
-                </Title>
-            </TitleContainer>
-            <FormContainer>
-                <Input
-                    placeholder='email'
-                    onChangeText={(e) => setEmail(e)}
-                    returnKeyType='done'
-                    keyboardType='email-address'
+                    <Input
+                        placeholder='senha'
+                        onChangeText={(e) => setPassword(e)}
+                        returnKeyType='done'
+                        secureTextEntry
+                    />
+                    <Input
+                        placeholder='confirme sua senha'
+                        onChangeText={(e) => setConfirmPassword(e)}
+                        returnKeyType='done'
+                        secureTextEntry
+                    />
+                </FormContainer>
+                <LoginAreaButton
+                    label='Criar conta'
+                    onPress={handleSignUp}
                 />
-                <Input
-                    placeholder='senha'
-                    onChangeText={(e) => setPassword(e)}
-                    returnKeyType='done'
-                    secureTextEntry
-                />
-                <Input
-                    placeholder='confirme sua senha'
-                    onChangeText={(e) => setConfirmPassword(e)}
-                    returnKeyType='done'
-                    secureTextEntry
-                />
-            </FormContainer>
-            <LoginAreaButton
-                label='Criar conta'
-                onPress={handleSignUp}
-            />
-        </Container>
+            </Container>
+        </Keyboard>
     )
 }
 

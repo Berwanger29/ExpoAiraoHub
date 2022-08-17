@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Linking } from "react-native";
 import {
     Container,
@@ -10,18 +10,25 @@ import {
     MainText,
     ContainerBackButton,
     ContainerLinks,
-    OptionalText,
+    ScrollContainer,
+    OptionalsContainer,
 } from "./styles"
 
 import BackButton from "../../../components/BackButton";
 import ButtonLink from "../../../components/_Screens/ItemSelected/ButtonLink";
+import TabBottomBar from "../../../components/_Screens/ItemSelected/TabBottomBar";
+import OptionalText from "../../../components/_Screens/ItemSelected/OptionalText";
 
+import SystemNavigationBar from "react-native-system-navigation-bar";
 
 import data from "../../../../data";
-import { ScreenContainer } from "react-native-screens";
 
 
 const ItemSelected = ({ route }) => {
+
+    useEffect(() => {
+        SystemNavigationBar.navigationHide()
+    }, [])
 
     const { itemId } = route.params;
 
@@ -31,72 +38,82 @@ const ItemSelected = ({ route }) => {
     let itemData = arrayData[0]
     let optionals = itemData.content.offering
 
-    let instagramLink = itemData.content.social.instagram
-    let facebookLink = itemData.content.social.facebook
-    let siteLink = itemData.content.social.site
+    let instagramLink = itemData.content.social?.instagram
+    let facebookLink = itemData.content.social?.facebook
+    let siteLink = itemData.content.social?.site
 
-    useEffect(() => {
-        console.log(optionals)
-    }, [])
-
-    function handleLink(link) {
+    function handleLinkURL(link) {
         Linking.openURL(link)
     }
 
     return (
         <Container>
-            <ImageContainer>
-                <Image
-                    source={itemData.content.image}
-                />
+            <ScrollContainer
+                showsVerticalScrollIndicator={false}
+            >
+                <ImageContainer>
+                    <Image
+                        source={itemData.content.image}
+                    />
 
-                <ContainerBackButton>
-                    <BackButton />
-                </ContainerBackButton>
-            </ImageContainer>
+                    <ContainerBackButton>
+                        <BackButton />
+                    </ContainerBackButton>
+                </ImageContainer>
 
-            <TextContentContainer>
-                <Title>
-                    {itemData.title}
-                </Title>
-                <Line />
-                <MainText>
-                    {itemData.content.description}
-                </MainText>
-                <Line />
-                {
-                    optionals.map((e) => {
-                        return (
-                            <OptionalText>
-                                {e}
-                            </OptionalText>
-                        )
-                    })
-                }
-                <Line />
-                <ContainerLinks>
+                <TextContentContainer>
+                    <Title>
+                        {itemData.title}
+                    </Title>
+                    <Line />
+                    <MainText>
+                        {itemData.content.description}
+                    </MainText>
+                    <Line />
+                    <OptionalsContainer>
+                        {
+                            optionals.map((e) => {
+                                return (
+                                    <OptionalText
+                                        text={e}
+                                    />
+                                )
+                            })
+                        }
+                    </OptionalsContainer>
+                    <Line />
+                    <ContainerLinks>
 
-                    {itemData.content.social.instagram !== '' &&
-                        <ButtonLink
-                            onPress={() => handleLink(instagramLink)}
-                            nameIcon={"instagram-with-circle"}
-                        />
-                    }
-                    {itemData.content.social.facebook !== '' &&
-                        <ButtonLink
-                            onPress={() => handleLink(facebookLink)}
-                            nameIcon={"facebook-with-circle"}
-                        />
-                    }
-                    {itemData.content.social.site !== '' &&
-                        <ButtonLink
-                            onPress={() => handleLink(siteLink)}
-                            nameIcon="globe"
-                        />
-                    }
+                        {instagramLink !== '' &&
+                            <ButtonLink
+                                onPress={() => handleLinkURL(instagramLink)}
+                                nameIcon={"instagram-with-circle"}
+                            />
+                        }
+                        {facebookLink !== '' &&
+                            <ButtonLink
+                                onPress={() => handleLinkURL(facebookLink)}
+                                nameIcon={"facebook-with-circle"}
+                            />
+                        }
+                        {siteLink !== '' &&
+                            <ButtonLink
+                                onPress={() => handleLinkURL(siteLink)}
+                                nameIcon="globe"
+                            />
+                        }
+                        {itemData.content.contacts !== '' &&
+                            <ButtonLink
+                                onPress={() => handleLinkURL(itemData.content?.contacts)}
+                                nameIcon="phone"
+                            />
+                        }
 
-                </ContainerLinks>
-            </TextContentContainer>
+                    </ContainerLinks>
+                </TextContentContainer>
+
+            </ScrollContainer>
+
         </Container >
     )
 }

@@ -6,7 +6,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import theme from '../../../../global/styles/theme';
 
 
-const ButtonLink = ({ children, onPress, nameIcon }) => {
+const ButtonLink = ({ onPress, nameIcon }) => {
     return (
         <Container
             onPress={onPress}

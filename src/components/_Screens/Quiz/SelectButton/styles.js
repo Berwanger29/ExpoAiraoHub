@@ -9,7 +9,8 @@ export const Container = styled.TouchableOpacity`
 
     border-radius: 5px;
     border-width: 1px;
-    border-color: ${props => props.isFocused ? 'green' : 'red'};
+    border-color: green;
+    /* border-color: ${props => props.isFocused ? 'green' : 'red'}; */
 
     align-items: center;
     justify-content: center;

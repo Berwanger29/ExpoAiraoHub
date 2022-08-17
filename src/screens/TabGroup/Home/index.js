@@ -78,7 +78,7 @@ const Home = () => {
                         data={jauData}
                     />
                     <Carroussel
-                        title="Onde Comer"
+                        title="Gastronomia"
                         data={toEatData}
                     />
                     <Carroussel

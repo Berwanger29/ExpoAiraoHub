@@ -7612,6 +7612,11 @@
     "react-freeze" "^1.0.0"
     "warn-once" "^0.1.0"
 
+"react-native-system-navigation-bar@^1.0.5":
+  "integrity" "sha512-Xfp/S1lIIQODEmMe84vlGIMaQROhiMDM9TrhrgpTLAmjWLkCvjRHcjwpk3De2JNWObS+o3DVBvSNUUaVnFj8cg=="
+  "resolved" "https://registry.npmjs.org/react-native-system-navigation-bar/-/react-native-system-navigation-bar-1.0.5.tgz"
+  "version" "1.0.5"
+
 "react-native-tab-view@^3.1.1", "react-native-tab-view@>= 3.0.0":
   "integrity" "sha512-M5pRN6utQfytKWoKlKVzg5NbkYu308qNoW1khGTtEOTs1k14p2dHJ/BWOJoJYHKbPVUyZldbG9MFT7gUl4YHnw=="
   "resolved" "https://registry.npmjs.org/react-native-tab-view/-/react-native-tab-view-3.1.1.tgz"

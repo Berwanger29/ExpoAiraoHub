@@ -7,7 +7,7 @@ import {
 import { AntDesign } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 
-const SearchBar = () => {
+const SearchBar = ({}) => {
     return (
         <Container
             style={{

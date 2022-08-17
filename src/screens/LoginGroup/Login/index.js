@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ActivityIndicator, Alert } from 'react-native';
+import { ActivityIndicator, Alert, KeyboardAvoidingView, ScrollView } from 'react-native';
 import {
     Container,
     InputContainer,
@@ -12,14 +12,15 @@ import {
     Title,
     TitleContainer,
     UserInput,
-    LoadingContainer
+    LoadingContainer,
 } from './styles'
 
 import { auth } from '../../../../firebase'
 import { useNavigation } from '@react-navigation/native';
-
 import theme from '../../../global/styles/theme'
+
 import LoginAreaButton from '../../../components/LoginAreaButton';
+import Keyboard from '../../../components/KeyBoard';
 
 const Login = () => {
 
@@ -72,9 +73,9 @@ const Login = () => {
     }
 
 
-    useEffect(()=>{
+    useEffect(() => {
         autoLogin()
-    },[])
+    }, [])
 
 
 
@@ -89,68 +90,71 @@ const Login = () => {
                         />
                     </LoadingContainer>
                     :
-                    <Container>
-                        <TitleContainer>
-                            <Title>
-                                AiraoHUB
-                            </Title>
-                        </TitleContainer>
+
+                    <Keyboard>
+                        <Container>
+                            <TitleContainer>
+                                <Title>
+                                    AiraoHUB
+                                </Title>
+                            </TitleContainer>
 
 
-                        <InputContainer>
-                            <LabelInput>
-                                Login
-                            </LabelInput>
-                            <UserInput
-                                placeholder='Email'
-                                placeholderTextColor={theme.colors.light}
-                                onChangeText={(e) => setEmail(e)}
-                            />
+                            <InputContainer>
+                                <LabelInput>
+                                    Login
+                                </LabelInput>
+                                <UserInput
+                                    placeholder='Email'
+                                    placeholderTextColor={theme.colors.light}
+                                    onChangeText={(e) => setEmail(e)}
+                                />
 
-                            <UserInput
-                                placeholder='Senha'
-                                placeholderTextColor={theme.colors.light}
-                                onChangeText={(e) => setPassword(e)}
-                            />
+                                <UserInput
+                                    placeholder='Senha'
+                                    placeholderTextColor={theme.colors.light}
+                                    onChangeText={(e) => setPassword(e)}
+                                />
 
-                            <RecoveryContainer>
-                                <RecoveryText>
-                                    Esqueceu sua senha ?
-                                </RecoveryText>
+                                <RecoveryContainer>
+                                    <RecoveryText>
+                                        Esqueceu sua senha ?
+                                    </RecoveryText>
+                                    <ButtonText
+                                        onPress={() => moveToRecovery()}
+                                    >
+                                        <RecoveryText
+                                            style={{
+                                                color: theme.colors.green
+                                            }}
+                                        >
+                                            {' '} Recuperar.
+                                        </RecoveryText>
+                                    </ButtonText>
+                                </RecoveryContainer>
+
+                                <LoginAreaButton
+                                    label='Entrar'
+                                    onPress={() => handleLogin()}
+                                />
+                            </InputContainer>
+
+                            <SignUpContainer>
+                                <SignUpText>
+                                    É novo no aplicativo ?
+                                </SignUpText>
                                 <ButtonText
-                                    onPress={() => moveToRecovery()}
+                                    onPress={() => moveToSignUp()}
                                 >
-                                    <RecoveryText
+                                    <SignUpText
                                         style={{
                                             color: theme.colors.green
                                         }}
-                                    >
-                                        {' '} Recuperar.
-                                    </RecoveryText>
+                                    >{' '}Cadastre-se</SignUpText>
                                 </ButtonText>
-                            </RecoveryContainer>
-
-                            <LoginAreaButton
-                                label='Entrar'
-                                onPress={() => handleLogin()}
-                            />
-                        </InputContainer>
-
-                        <SignUpContainer>
-                            <SignUpText>
-                                É novo no aplicativo ?
-                            </SignUpText>
-                            <ButtonText
-                                onPress={() => moveToSignUp()}
-                            >
-                                <SignUpText
-                                    style={{
-                                        color: theme.colors.green
-                                    }}
-                                >{' '}Cadastre-se</SignUpText>
-                            </ButtonText>
-                        </SignUpContainer>
-                    </Container>
+                            </SignUpContainer>
+                        </Container>
+                    </Keyboard>
             }
         </>
 

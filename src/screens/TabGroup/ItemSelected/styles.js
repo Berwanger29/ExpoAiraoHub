@@ -2,11 +2,15 @@ import styled from "styled-components/native";
 import { StatusBar } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 
-export const Container = styled.ScrollView`
+export const Container = styled.View`
     flex: 1;
-    background-color: ${props => props.theme.colors.light};
-    padding-top:${StatusBar.currentHeight}px ; 
-    
+`
+
+export const ScrollContainer = styled.ScrollView`
+flex: 1;
+background-color: ${props => props.theme.colors.light};
+padding-top:${StatusBar.currentHeight}px;
+
 `
 
 export const ImageContainer = styled.View`
@@ -47,8 +51,12 @@ export const MainText = styled.Text`
     font-size: ${RFValue(18)}px;
 `
 
-export const OptionalText = styled.Text`
-
+export const OptionalsContainer = styled.View`
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 `
 
 export const ContainerLinks = styled.View`

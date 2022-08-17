@@ -6,9 +6,11 @@ export const Container = styled.View`
     flex: 1;
     background-color: ${(props) => props.theme.colors.light};
     align-items: center;
-    justify-content: space-between;
     padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
 `
+
+
+
 
 
 export const TitleContainer = styled.View`
@@ -64,6 +66,8 @@ export const RecoveryText = styled.Text`
 
 export const SignUpContainer = styled.View`
     flex-direction: row;
+    position: absolute;
+    bottom: 10;
 `
 
 export const SignUpText = styled.Text`
