@@ -4,20 +4,16 @@ import {
     Container,
     Header,
     Main,
-    MapButton,
-    MapLinkContainer,
 } from "./styles"
 
-import * as Linking from 'expo-linking'
+
 
 import Title from '../../../components/Title'
-import TitleMap from "../../../components/_Screens/Map/TitleMap"
 import UserButton from "../../../components/UserButton"
 import UserButtonContainer from "../../../components/UserButtonContiner"
 import Buttons from "../../../components/_Screens/Map/Buttons"
 
 import {
-    Feather,
     MaterialCommunityIcons,
     Ionicons
 } from '@expo/vector-icons';
@@ -25,16 +21,20 @@ import {
 
 import { RFValue } from "react-native-responsive-fontsize";
 import theme from '../../../global/styles/theme'
-import TextMap from "../../../components/_Screens/Map/TextMap"
 
-const mapLink = 'https://goo.gl/maps/q1HGYamtj4RF1Fy8A'
+
+import _Car from "../../../components/_Screens/Map/_Car"
+import _Taxi from "../../../components/_Screens/Map/_Taxi"
+import _Bus from "../../../components/_Screens/Map/_Bus"
+import _Airplane from "../../../components/_Screens/Map/_Airplane"
+import _Boat from "../../../components/_Screens/Map/_Boat"
+
 
 
 const Map = () => {
 
     const [isFocused, setIsFocused] = useState(true)
     const [name, setName] = useState('carro')
-    const [title, setTitle] = useState('Veículo pessoal')
 
     function handleFocuesd(param) {
         setName(param)
@@ -103,23 +103,23 @@ const Map = () => {
             <Main
                 showsVerticalScrollIndicator={false}
             >
-                <TitleMap
-                    title={title}
-                />
+                {isFocused && (name === 'carro') &&
+                    <_Car />
+                }
 
-                <TextMap
-                    text={'Para chegar em Novo Airão é necessário pegar  rodovia AM-070, que passa pela ponte Phelippe Daou e após passar pelo banho do Miriti, entrar na primeira saída para a AM-352 e seguir até o final. A viagem tem uma duração média de duas horas e meia.'}
-                />
+                {isFocused && (name === 'taxi') &&
+                    <_Taxi />
+                }
+                {isFocused && (name === 'onibus') &&
+                    <_Bus />
+                }
+                {isFocused && (name === 'aviao') &&
+                    <_Airplane />
+                }
+                {isFocused && (name === 'barco') &&
+                    <_Boat />
+                }
 
-                <MapLinkContainer>
-                    <MapButton
-                        onPress={() => {
-                            Linking.openURL('https://goo.gl/maps/q1HGYamtj4RF1Fy8A')
-                        }}
-                    >
-                        <Feather name="map" size={24} color="black" />
-                    </MapButton>
-                </MapLinkContainer>
             </Main>
         </Container>
     )
