@@ -119,7 +119,6 @@ const Map = () => {
                 {isFocused && (name === 'barco') &&
                     <_Boat />
                 }
-
             </Main>
         </Container>
     )

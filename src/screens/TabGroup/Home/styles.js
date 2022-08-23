@@ -10,6 +10,28 @@ export const Container = styled.View`
 export const Header = styled.View`
     margin-bottom: 20px;
 `
+export const SearchConatainer = styled.View`
+    flex-direction: row;
+    height: ${RFValue(40)}px;
+    align-items: flex-start;
+    background-color: ${props => props.theme.colors.light};
+    border-radius: 6px;
+`
+
+export const Input = styled.TextInput`
+    width: 85%;
+    height: 100%;
+
+    padding-left: 10px;
+`
+
+export const SearchButton = styled.TouchableOpacity`
+    width: 15%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+`
 
 export const Greetings = styled.Text`
     font-family: ${(props) => props.theme.fonts.black};
@@ -24,4 +46,8 @@ export const Main = styled.View`
 
 export const CarrousselContainer = styled.ScrollView`
     margin-bottom: ${RFValue(10)}px;
+`
+
+export const HomeList = styled.FlatList`
+    
 `

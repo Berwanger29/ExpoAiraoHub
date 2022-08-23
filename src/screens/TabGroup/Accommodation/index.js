@@ -7,7 +7,6 @@ import {
     SearchConatainer,
     Input,
     SearchButton,
-    Text
 } from './styles'
 
 import UserButton from '../../../components/UserButton'
@@ -31,7 +30,8 @@ const Accommodation = () => {
         })
     }
 
-    const [ hotel, setHotel ] = useState('')
+    const [hotel, setHotel] = useState('')
+    const [input, setInput] = useState([])
 
 
     const accommodationData = data.filter((item) => {
@@ -40,8 +40,14 @@ const Accommodation = () => {
 
 
     function handleInput(e) {
-        console.log(e)
         setHotel(e)
+        let arr = []
+        accommodationData.filter((item) => {
+            if (item.title.includes(e)) {
+                arr.push(item)
+            }
+        })
+        setInput(arr)
     }
 
     return (
@@ -88,17 +94,31 @@ const Accommodation = () => {
                         )
                         }
                     >
-
-
                     </List>
                 </Main>
             }
 
             {
                 hotel !== '' &&
-                <Text>
-                    {hotel}
-                </Text>
+                <Main>
+                    <List
+                        showsVerticalScrollIndicator={false}
+                        data={input}
+                        keyExtractor={item => item.id}
+                        renderItem={({ item }) =>
+                        (
+                            <Card
+                                title={item.title}
+                                value={item.content.prices}
+                                image={item.content.image}
+                                type={item.content.type}
+                                onPress={() => navigateToSelected(item.id)}
+                            />
+                        )
+                        }
+                    >
+                    </List>
+                </Main>
             }
         </Container>
     )
