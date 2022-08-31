@@ -1,19 +1,26 @@
 import {
     Container,
     Header,
-    Main
+    Main,
+    Input,
+    SearchButton,
+    ContainerSearch,
+    SearchList
 } from './styles'
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-import SearchBar from '../../../components/SearchBar'
 import Title from '../../../components/Title'
 import UserButton from '../../../components/UserButton'
 import UserButtonContainer from '../../../components/UserButtonContiner'
-
+import Card from '../../../components/_Screens/Activities/Card';
 
 import ActivitiesAdventure from '../ActivitiesAdventure'
 import ActivitiesTour from '../ActivitiesTour';
+
+import { AntDesign } from '@expo/vector-icons';
+import {  useState } from 'react';
+import data from '../../../../data';
 
 
 
@@ -25,8 +32,8 @@ function ActivitiesTopTabs() {
         <TopTab.Navigator
             initialRouteName='Aventura'
             screenOptions={{
-                tabBarStyle: { backgroundColor: '#FAFAFA'},
-                tabBarIndicatorStyle: { backgroundColor: 'green'}
+                tabBarStyle: { backgroundColor: '#FAFAFA' },
+                tabBarIndicatorStyle: { backgroundColor: 'green' }
             }}
         >
             <TopTab.Screen
@@ -42,6 +49,26 @@ function ActivitiesTopTabs() {
 }
 
 const Activities = () => {
+
+    const [input, setInput] = useState('')
+    const [arrSearch, setArrSearch] = useState([])
+
+    let activitiesData = data.filter((item) => {
+        return item.type == 'adventure' || item.type == 'tour'
+    })
+
+
+    function handleInput(e) {
+        setInput(e)
+        let arr = []
+        activitiesData.filter((item) => {
+            if (item.title.includes(e)) {
+                arr.push(item)
+            }
+        })
+        setArrSearch(arr)
+    }
+
     return (
         <Container>
             <Header>
@@ -51,11 +78,44 @@ const Activities = () => {
                 <Title
                     text="Atividades"
                 />
-                <SearchBar />
+                <ContainerSearch
+                    style={{
+                        elevation: 5
+                    }}
+                >
+                    <Input
+                        placeholder="Procure uma atividade"
+                        value={input}
+                        onChangeText={(e) => handleInput(e)}
+                    />
+                    <SearchButton>
+                        <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
+                    </SearchButton>
+                </ContainerSearch>
             </Header>
-            <Main>
-                <ActivitiesTopTabs />
-            </Main>
+            {input === '' &&
+                <Main>
+                    <ActivitiesTopTabs />
+                </Main>
+            }
+            
+            {
+                input !== '' &&
+                <Main>
+                    <SearchList
+                        data={arrSearch}
+                        renderItem={({ item }) => (
+                            <Card
+                                id={item.id}
+                                image={item.content.image}
+                                title={item.title}
+                                price={item.content.prices}
+                                type={item.content.type}
+                            />
+                        )}
+                    />
+                </Main>
+            }
         </Container>
     )
 }

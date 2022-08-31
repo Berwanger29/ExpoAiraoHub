@@ -8,7 +8,7 @@ import theme from "../../global/styles/theme";
 
 
 
-const BackButton = ({ onPress }) => {
+const BackButton = () => {
 
     const navigation = useNavigation()
 

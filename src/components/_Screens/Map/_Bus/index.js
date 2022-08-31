@@ -8,7 +8,10 @@ const _Bus = () => {
                 title='Ônibus'
             />
             <TextMap
-                text='Lorem ipsum'
+                text='Para chegar em Novo Airão por meio de ônibus, é necessário comprar um bilhete no terminal rodoviário de Manaus
+                localizado na avenida Djalma Batista. A viagem de ônibus passa por Manacapuru e tem uma duração média de três horas e meia
+                até chegar em Novo Airão.
+            '
             />
         </>
     )

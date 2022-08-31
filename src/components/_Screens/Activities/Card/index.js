@@ -8,10 +8,26 @@ import {
 
 import PriceLabel from "../../../PriceLabel"
 
+import { useNavigation } from "@react-navigation/native"
 
-const Card = ({ title, image, price, type }) => {
+
+const Card = ({ id, title, image, price, type }) => {
+
+    const navigation = useNavigation()
+
+    function handleNavigation(id) {
+        navigation.navigate('ItemSelected', {
+            itemId: id
+        })
+        console.log(id)
+    }
+
+
     return (
-        <Container>
+        <Container
+            activeOpacity={0.5}
+            onPress={() => handleNavigation(id)}
+        >
             <ImageContainer>
                 <ImageCard
                     source={image}
@@ -28,15 +44,6 @@ const Card = ({ title, image, price, type }) => {
                 price={price}
                 label={type}
             />
-            {/* <PriceContainer>
-                <PriceLabel
-                    style={{
-                        fontFamily: theme.fonts.bold
-                    }}
-                >R${' '}{price} </PriceLabel>
-                <PriceLabel>/ pessoa</PriceLabel>
-            </PriceContainer> */}
-
         </Container>
     )
 }

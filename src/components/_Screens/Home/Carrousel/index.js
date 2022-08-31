@@ -9,9 +9,8 @@ import HomeCard from "../HomeCard";
 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RFValue } from "react-native-responsive-fontsize";
-import { useEffect } from "react";
 
-export const Carroussel = ({ children, title, data }) => {
+export const Carroussel = ({ title, data }) => {
 
     return (
         <Container

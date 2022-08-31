@@ -30,6 +30,10 @@ export const Main = styled.View`
     
 `
 
+export const OptionsContainer = styled.View`
+
+`
+
 export const Footer = styled.View`
     align-self: center;
     align-items: center;

@@ -30,6 +30,9 @@ import Activities from "../screens/TabGroup/Activities";
 import Map from "../screens/TabGroup/Map";
 import ItemSelected from "../screens/TabGroup/ItemSelected";
 import User from "../screens/TabGroup/User";
+import UserAbout from "../screens/TabGroup/UserAbout";
+import UserPrivacy from "../screens/TabGroup/UserPrivacy";
+import UserInfo from "../screens/TabGroup/UserInfo";
 
 
 
@@ -193,6 +196,21 @@ const Navigation = () => {
                 <Stack.Screen
                     name="User"
                     component={User}
+                />
+
+                <Stack.Screen
+                    name='UserAbout'
+                    component={UserAbout}
+                />
+
+                <Stack.Screen
+                    name='UserPrivacy'
+                    component={UserPrivacy}
+                />
+
+                <Stack.Screen
+                    name="UserInfo"
+                    component={UserInfo}
                 />
             </Stack.Navigator>
         </NavigationContainer>

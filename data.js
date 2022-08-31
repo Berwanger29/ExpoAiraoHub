@@ -500,7 +500,6 @@ export default [
             description: "\"A tranquilidade depende de suas escolhas.\" Nosso Hotel está localizado na Avenida João Paulo II, Centro, n 21. Ambiente familiar e confortável para melhor atender nossos clientes. Temos 22 quartos todos com suítes e wifi.",
             image: require('./exceptionalImage/hotels/hotelJosely.jpg'),
             contacts: "tel://+5592992268191",
-            socials:[" Instagram: hotel.josely","Facebook: hotel.josely","Site: www.hoteljoselynovoairao.com.br"],
             social:{
                 instagram:'https://www.instagram.com/hotel.josely/',
                 facebook:'',
@@ -512,10 +511,51 @@ export default [
             profile: ["adventure", "soft", "calm"],
             prices: '100',
         },
+        
+    },
+    {
+        type: "hotels",
+        id: 607,
+        title: "Recanto da Naza",
+        content: {
+            description: "Pousada familiar no coração da Amazônia. Conforto e preço acessível garantido, conheça Novo Airão, nossas belezas naturais e um atendimento de excelência. Vai ser um prazer fazer parte desta experiência.",
+            image: require('./exceptionalImage/hotels/pousadaNaza.jpg'),
+            contacts: "tel://+5592991308787",
+            social:{
+                instagram:'https://instagram.com/recantodanaza/',
+                facebook:'',
+                site:''
+            },
+            offering: ["Internet", "estacionamento"],
+            address: "",
+            type: 'diária',
+            profile: ["adventure", "soft", "calm"],
+            prices: '1317',
+        },
+    },
+    {
+        type: "hotels",
+        id: 608,
+        title: "Hotel Jandira",
+        content: {
+            description: "Hotel Jandira, o cantinho do sossego. Venha conhecer e aproveitar com sua família no local ideal. Preço acessível que cabe no seu bolso. Venha conhecer Novo Airão no lugar mais aconchegante da cidade!",
+            image: require('./exceptionalImage/hotels/hotelJandira.jpg'),
+            contacts: "tel://+5592992040315",
+            social:{
+                instagram:'https://www.instagram.com/hotel_jandira/',
+                facebook:'',
+                site:''
+            },
+            offering: ["Internet", "estacionamento"],
+            address: "",
+            type: 'diária',
+            profile: ["adventure", "soft", "calm"],
+            prices: '1317',
+        },
     },
     {
         type: "adventure",
-        id: 70,
+        id: 700,
         title: "Arborismo",
         content: {
             title: "Arborismo",
@@ -537,7 +577,7 @@ export default [
     },
     {
         type: "adventure",
-        id: 71,
+        id: 701,
         title: "Bike aquática",
         content: {
             title: "Bike aquática",
@@ -559,7 +599,7 @@ export default [
     },
     {
         type: "adventure",
-        id: 72,
+        id: 702,
         title: "SUP",
         content: {
             title: "SUP",
@@ -581,7 +621,7 @@ export default [
     },
     {
         type: "adventure",
-        id: 73,
+        id: 703,
         title: "Trilha",
         content: {
             title: "Trilha",
@@ -603,7 +643,7 @@ export default [
     },
     {
         type: "tour",
-        id: 80,
+        id: 704,
         title: "Parque Anavilhanas",
         content: {
             title: "Trilha",
@@ -624,7 +664,7 @@ export default [
         },
     }, {
         type: "tour",
-        id: 81,
+        id: 705,
         title: "Parque Jáu",
         content: {
             title: "Trilha",
@@ -645,7 +685,7 @@ export default [
         },
     }, {
         type: "tour",
-        id: 82,
+        id: 706,
         title: "Reserva Unini",
         content: {
             title: "Trilha",

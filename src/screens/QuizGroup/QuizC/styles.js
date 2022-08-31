@@ -58,8 +58,6 @@ export const Button = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
 
-    margin-top: 20px;
-
     width:${RFValue(50)}px;
     height: ${RFValue(50)}px;
 

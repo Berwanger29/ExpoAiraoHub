@@ -1,14 +1,11 @@
 import {
     Container,
-    Label,
     List,
-
 } from './styles'
 
 import Card from '../../../components/_Screens/Activities/Card'
 
 import data from '../../../../data'
-
 
 
 const ActivitiesTour = () => {
@@ -17,6 +14,8 @@ const ActivitiesTour = () => {
         return item.type == "tour"
     })
 
+
+
     return (
         <Container>
             <List
@@ -24,11 +23,13 @@ const ActivitiesTour = () => {
                 data={adventureData}
                 renderItem={({ item }) => (
                     <Card
-                    image={item.content.image}
-                    title={item.title}
-                    price={item.content.prices}
-                    type={item.content.type}
+                        id={item.id}
+                        image={item.content.image}
+                        title={item.title}
+                        price={item.content.prices}
+                        type={item.content.type}
                     />
+                  
                 )}
             />
         </Container>

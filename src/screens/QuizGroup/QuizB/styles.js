@@ -10,15 +10,12 @@ export const Container = styled.View`
 `
 
 export const Header = styled.View`
-    width: 110%;
-    position: relative;
-    left: ${RFValue(-15)}px;
-    `
+    width: 100%;    
+    align-self: center;
+`
 
 export const ButtonBackContainer = styled.View`
     position: absolute;
-    top: 2px;
-    left: ${RFValue(15)}px;
     `
 
 export const AnimationContainer = styled.View`

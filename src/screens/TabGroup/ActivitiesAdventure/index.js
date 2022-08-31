@@ -20,6 +20,7 @@ const ActivitiesAdventure = () => {
                 data={adventureData}
                 renderItem={({ item }) => (
                     <Card
+                        id={item.id}
                         image={item.content.image}
                         title={item.title}
                         price={item.content.prices}

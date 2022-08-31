@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
     Container,
     Header,
@@ -26,6 +27,29 @@ import BackButton from '../../../components/BackButton';
 const QuizB = () => {
 
     const navigation = useNavigation()
+
+    const isFocused = true
+    const [changeColorA, setChangeColorA] = useState(false)
+    const [changeColorB, setChangeColorB] = useState(false)
+    const [changeColorC, setChangeColorC] = useState(false)
+
+    function handleSelected(param) {
+        if (isFocused && param == 30) {
+            setChangeColorA(true)
+            setChangeColorB(false)
+            setChangeColorC(false)
+        }
+        if (isFocused && param == 20) {
+            setChangeColorB(true)
+            setChangeColorA(false)
+            setChangeColorC(false)
+        }
+        if (isFocused && param == 10) {
+            setChangeColorC(true)
+            setChangeColorA(false)
+            setChangeColorB(false)
+        }
+    }
 
     return (
         <Container>
@@ -62,12 +86,18 @@ const QuizB = () => {
                 <ButtonsContainer>
                     <SelectButton
                         text="Açaí gelado"
+                        onPress={() => handleSelected(30)}
+                        changeColor={changeColorA}
                     />
                     <SelectButton
                         text="Limonada"
+                        onPress={() => handleSelected(20)}
+                        changeColor={changeColorB}
                     />
                     <SelectButton
                         text="Sorvete"
+                        onPress={() => handleSelected(10)}
+                        changeColor={changeColorC}
                     />
                 </ButtonsContainer>
             </Main>

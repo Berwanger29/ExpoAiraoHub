@@ -15,29 +15,39 @@ import { Entypo } from '@expo/vector-icons';
 import Lottie from 'lottie-react-native';
 import { StatusBar } from 'expo-status-bar';
 
+import ContexProfile from '../../../global/ContextProfile';
 import theme from '../../../global/styles/theme'
 import boating from '../../../../assets/animations/boating.json'
 
+
 import { useNavigation } from '@react-navigation/native';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 
 const QuizA = () => {
 
     const navigation = useNavigation()
+    // const [pointsProfile, setPointsProfile] = useContext(ContexProfile)
 
-    const [isFocused, setIsFocused] = useState(false)
-    const [changeColor, setChangeColor] = useState(false)
+    const isFocused = true
+    const [changeColorA, setChangeColorA] = useState(false)
+    const [changeColorB, setChangeColorB] = useState(false)
+    const [changeColorC, setChangeColorC] = useState(false)
 
     function handleSelected(param) {
-        console.log(param)
-        if (isFocused && param == 'a') {
-            setChangeColor(true)
+        if (isFocused && param == 30) {
+            setChangeColorA(true)
+            setChangeColorB(false)
+            setChangeColorC(false)
         }
-        if (isFocused && param == 'b') {
-            setChangeColor(true)
+        if (isFocused && param == 20) {
+            setChangeColorB(true)
+            setChangeColorA(false)
+            setChangeColorC(false)
         }
-        if (isFocused && param == 'c') {
-            setChangeColor(true)
+        if (isFocused && param == 10) {
+            setChangeColorC(true)
+            setChangeColorA(false)
+            setChangeColorB(false)
         }
     }
 
@@ -47,6 +57,9 @@ const QuizA = () => {
                 backgroundColor='#76CFE5'
                 style='auto'
             />
+
+
+
             <Header>
                 <Lottie
                     autoPlay
@@ -71,18 +84,18 @@ const QuizA = () => {
                 <ButtonsContainer>
                     <SelectButton
                         text="Caiaque"
-                        onPress={() => handleSelected('a')}
-                        changeColor={isFocused}
+                        onPress={() => handleSelected(30)}
+                        changeColor={changeColorA}
                     />
                     <SelectButton
                         text="Passeio de barco"
-                        onPress={() => handleSelected('b')}
-                        changeColor={isFocused}
+                        onPress={() => handleSelected(20)}
+                        changeColor={changeColorB}
                     />
                     <SelectButton
                         text="Passeio na praça"
-                        onPress={() => handleSelected('c')}
-                        changeColor={isFocused}
+                        onPress={() => handleSelected(10)}
+                        changeColor={changeColorC}
                     />
                 </ButtonsContainer>
             </Main>

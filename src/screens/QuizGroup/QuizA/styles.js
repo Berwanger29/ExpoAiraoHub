@@ -5,13 +5,13 @@ import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
     flex: 1;
-    padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    padding: ${StatusBar.currentHeight}px 15px 20px 15px;
     background-color: ${props => props.theme.colors.light};
 `
 
 export const Header = styled.View`
     width: 110%;
-    height: ${RFPercentage(35)}px;
+    flex: 1;
 
     background-color: #76CFE5;
     align-items: center;

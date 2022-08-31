@@ -6,8 +6,6 @@ import {
     Main,
 } from "./styles"
 
-
-
 import Title from '../../../components/Title'
 import UserButton from "../../../components/UserButton"
 import UserButtonContainer from "../../../components/UserButtonContiner"

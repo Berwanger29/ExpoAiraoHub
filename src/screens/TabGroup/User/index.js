@@ -6,9 +6,11 @@ import {
     Main,
     Footer,
     LogoutButton,
-    LogOutText
+    LogOutText,
+    OptionsContainer
 } from './styles'
 
+import Options from '../../../components/_Screens/User/Options';
 import BackButton from '../../../components/BackButton';
 import Title from '../../../components/Title';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -66,6 +68,24 @@ const User = () => {
                 <Title
                     text="Configurações da conta"
                 />
+                <OptionsContainer>
+                    <Options
+                        text='Informações do usuário'
+                        nameIcon="account-outline"
+                        onPress={() => navigation.navigate('UserInfo')}
+                    />
+                    <Options
+                        text='Privacidade'
+                        nameIcon='shield-account-outline'
+                        onPress={() => navigation.navigate('UserPrivacy')}
+                    />
+                    <Options
+                        text='Sobre'
+                        nameIcon='information-variant'
+                        onPress={() => navigation.navigate('UserAbout')}
+                    />
+
+                </OptionsContainer>
             </Main>
 
             <Footer>

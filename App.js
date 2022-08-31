@@ -6,6 +6,7 @@ import Navigation from './src/Navigation';
 
 import theme from './src/global/styles/theme';
 import AuthProvider from './src/contexts/auth';
+import ContexProfile from './src/global/ContextProfile';
 
 import { LogBox } from 'react-native';
 
@@ -33,9 +34,11 @@ export default function App() {
 
   return (
     <AuthProvider>
+      {/* <ContexProfile.Provider> */}
       <ThemeProvider theme={theme}>
         <Navigation />
       </ThemeProvider>
+      {/* </ContexProfile.Provider> */}
     </AuthProvider>
   );
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ActivityIndicator, Alert, KeyboardAvoidingView, ScrollView } from 'react-native';
+import { ActivityIndicator, Alert } from 'react-native';
 import {
     Container,
     InputContainer,
