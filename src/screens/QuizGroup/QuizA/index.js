@@ -15,39 +15,50 @@ import { Entypo } from '@expo/vector-icons';
 import Lottie from 'lottie-react-native';
 import { StatusBar } from 'expo-status-bar';
 
-import ContexProfile from '../../../global/ContextProfile';
 import theme from '../../../global/styles/theme'
 import boating from '../../../../assets/animations/boating.json'
 
 
 import { useNavigation } from '@react-navigation/native';
 import { useContext, useState } from 'react';
+import { QuizContext } from '../../../contexts/QuizContext';
 
 const QuizA = () => {
 
     const navigation = useNavigation()
-    // const [pointsProfile, setPointsProfile] = useContext(ContexProfile)
+    const { quizCount, setQuizCount } = useContext(QuizContext)
 
     const isFocused = true
     const [changeColorA, setChangeColorA] = useState(false)
     const [changeColorB, setChangeColorB] = useState(false)
     const [changeColorC, setChangeColorC] = useState(false)
 
+    const [temp, setTemp] = useState(0)
+
     function handleSelected(param) {
         if (isFocused && param == 30) {
             setChangeColorA(true)
             setChangeColorB(false)
             setChangeColorC(false)
+
+            setTemp(param)
+            console.log(quizCount)
         }
         if (isFocused && param == 20) {
             setChangeColorB(true)
             setChangeColorA(false)
             setChangeColorC(false)
+
+            setTemp(param)
+            console.log(quizCount)
         }
         if (isFocused && param == 10) {
             setChangeColorC(true)
             setChangeColorA(false)
             setChangeColorB(false)
+
+            setTemp(param)
+            console.log(quizCount)
         }
     }
 
@@ -57,9 +68,6 @@ const QuizA = () => {
                 backgroundColor='#76CFE5'
                 style='auto'
             />
-
-
-
             <Header>
                 <Lottie
                     autoPlay
@@ -103,7 +111,10 @@ const QuizA = () => {
                 style={{
                     elevation: 2
                 }}
-                onPress={() => navigation.navigate('QuizB')}
+                onPress={() => {
+                    setQuizCount(quizCount + temp)
+                    navigation.navigate('QuizB')
+                }}
             >
                 <Entypo name="chevron-right" size={24} color={theme.colors.green} />
             </Button>

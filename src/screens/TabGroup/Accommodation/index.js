@@ -116,8 +116,7 @@ const Accommodation = () => {
                             />
                         )
                         }
-                    >
-                    </List>
+                    />
                 </Main>
             }
         </Container>

@@ -19,6 +19,7 @@ import { FontAwesome5 } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { auth } from '../../../../firebase';
 import { useNavigation } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 const User = () => {
@@ -41,6 +42,16 @@ const User = () => {
                         auth.signOut()
                             .then(() => {
                                 navigation.replace('Login')
+                                async function removeData() {
+                                    try {
+                                        await AsyncStorage.removeItem('@airaoHub_infoProfile')
+                                    } catch (e) {
+                                        console.log(e)
+                                    }
+
+                                    console.log('Done.')
+                                }
+                                removeData()
                             })
                             .catch((e) => console.log(e))
                     }

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import {
     Container,
     Header,
@@ -24,40 +24,56 @@ import duet from '../../../../assets/animations/duet.json'
 
 import { RFPercentage } from 'react-native-responsive-fontsize';
 import { StackActions, useNavigation } from '@react-navigation/native';
+import { QuizContext } from '../../../contexts/QuizContext';
 
 const QuizC = () => {
 
     const navigation = useNavigation()
 
-    // async function storeData(value) {
-    //     try {
-    //         const jsonValue = JSON.stringify(value)
-    //         await AsyncStorage.setItem('@airaoHub_infoProfile', jsonValue)
-    //     } catch (e) {
-    //         console.log(e)
-    //     }
-    // }
+    async function storeData(value) {
+        try {
+            const jsonValue = JSON.stringify(value)
+            setQuizCount(0)
+            await AsyncStorage.setItem('@airaoHub_infoProfile', jsonValue)
+        } catch (e) {
+            console.log(e)
+        }
+    }
+
+    const { quizCount, setQuizCount } = useContext(QuizContext)
 
     const isFocused = true
     const [changeColorA, setChangeColorA] = useState(false)
     const [changeColorB, setChangeColorB] = useState(false)
     const [changeColorC, setChangeColorC] = useState(false)
 
+    const [temp, setTemp] = useState(0)
+
+
     function handleSelected(param) {
         if (isFocused && param == 30) {
             setChangeColorA(true)
             setChangeColorB(false)
             setChangeColorC(false)
+
+            setTemp(param)
+            console.log(quizCount)
         }
         if (isFocused && param == 20) {
             setChangeColorB(true)
             setChangeColorA(false)
             setChangeColorC(false)
+
+            setTemp(param)
+            console.log(quizCount)
         }
         if (isFocused && param == 10) {
             setChangeColorC(true)
             setChangeColorA(false)
             setChangeColorB(false)
+
+            setTemp(param)
+            console.log(quizCount)
         }
     }
 
@@ -115,7 +131,7 @@ const QuizC = () => {
                     elevation: 2
                 }}
                 onPress={() => {
-                   // storeData(55)
+                    storeData(quizCount + temp)
                     navigation.dispatch(
                         StackActions.replace('TabNavigator')
                     )

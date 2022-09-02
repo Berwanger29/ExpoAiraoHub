@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import {
     Container,
     Header,
@@ -13,6 +13,7 @@ import {
 } from './styles';
 
 import SelectButton from '../../../components/_Screens/Quiz/SelectButton';
+import BackButton from '../../../components/BackButton';
 
 import { Entypo } from '@expo/vector-icons';
 import Lottie from 'lottie-react-native';
@@ -22,32 +23,46 @@ import theme from '../../../global/styles/theme'
 import drink from '../../../../assets/animations/drink.json'
 
 import { useNavigation } from '@react-navigation/native';
-import BackButton from '../../../components/BackButton';
+import { QuizContext } from '../../../contexts/QuizContext';
 
 const QuizB = () => {
 
     const navigation = useNavigation()
+    const { quizCount, setQuizCount } = useContext(QuizContext)
+
 
     const isFocused = true
     const [changeColorA, setChangeColorA] = useState(false)
     const [changeColorB, setChangeColorB] = useState(false)
     const [changeColorC, setChangeColorC] = useState(false)
 
+    const [temp, setTemp] = useState(0)
+
+
     function handleSelected(param) {
         if (isFocused && param == 30) {
             setChangeColorA(true)
             setChangeColorB(false)
             setChangeColorC(false)
+
+            setTemp(param)
+            console.log(quizCount)
         }
         if (isFocused && param == 20) {
             setChangeColorB(true)
             setChangeColorA(false)
             setChangeColorC(false)
+
+            setTemp(param)
+            console.log(quizCount)
         }
         if (isFocused && param == 10) {
             setChangeColorC(true)
             setChangeColorA(false)
             setChangeColorB(false)
+
+            setTemp(param)
+            console.log(quizCount)
         }
     }
 
@@ -105,7 +120,10 @@ const QuizB = () => {
                 style={{
                     elevation: 2
                 }}
-                onPress={() => navigation.navigate('QuizC')}
+                onPress={() => {
+                    setQuizCount(quizCount + temp)
+                    navigation.navigate('QuizC')
+                }}
             >
                 <Entypo name="chevron-right" size={24} color={theme.colors.green} />
             </Button>

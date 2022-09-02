@@ -4,6 +4,7 @@ import {
     Container,
     ContainerBackButton,
     Header,
+    Title,
     UserProfile
 } from './styles'
 
@@ -18,10 +19,19 @@ const UserInfo = () => {
     async function getData() {
         try {
             const jsonValue = await AsyncStorage.getItem('@airaoHub_infoProfile')
-            //return jsonValue != null ? JSON.parse(jsonValue) : null;
             if (jsonValue !== null) {
                 let asyncData = JSON.parse(jsonValue)
-                setInfoProfile(asyncData)
+                // 90 - 75: Aventureiro
+                // 75 - 45: Moderado
+                // 45 - 30: Normal
+                if (asyncData >= 75) {
+                    setInfoProfile('aventureiro')
+                } else if ((asyncData < 75) && (asyncData >= 45)) {
+                    setInfoProfile('moderado')
+                } else {
+                    setInfoProfile('normal')
+                }
+
             } else {
                 return null
             }
@@ -41,10 +51,12 @@ const UserInfo = () => {
                 <BackButton />
             </ContainerBackButton>
             <Header>
-
+                <Title>
+                    Informações do usuário
+                </Title>
             </Header>
             <UserProfile>
-                {infoProfile}
+                Você tem um perfil {infoProfile}
             </UserProfile>
         </Container>
     )

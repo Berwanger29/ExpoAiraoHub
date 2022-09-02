@@ -67,7 +67,7 @@ export const RecoveryText = styled.Text`
 export const SignUpContainer = styled.View`
     flex-direction: row;
     position: absolute;
-    bottom: 10;
+    bottom: 11px;
 `
 
 export const SignUpText = styled.Text`

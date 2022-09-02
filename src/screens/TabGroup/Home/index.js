@@ -100,9 +100,9 @@ const Home = () => {
                     <CarrousselContainer
                         showsVerticalScrollIndicator={false}
                     >
-                        <Carroussel
+                        {/* <Carroussel
                             title="O que visitar ?"
-                        />
+                        /> */}
 
                         <Carroussel
                             title="Atrações dentro da cidade"

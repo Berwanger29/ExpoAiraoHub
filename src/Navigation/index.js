@@ -24,6 +24,7 @@ import QuizB from "../screens/QuizGroup/QuizB";
 import QuizC from "../screens/QuizGroup/QuizC";
 
 import Home from "../screens/TabGroup/Home";
+import IndividualList from "../screens/TabGroup/IndividualList";
 import Accommodation from "../screens/TabGroup/Accommodation";
 import Scripts from "../screens/TabGroup/Scripts";
 import Activities from "../screens/TabGroup/Activities";
@@ -186,6 +187,11 @@ const Navigation = () => {
                 <Stack.Screen
                     name="TabNavigator"
                     component={TabNavigator}
+                />
+
+                <Stack.Screen
+                    name="IndividualList"
+                    component={IndividualList}
                 />
 
                 <Stack.Screen

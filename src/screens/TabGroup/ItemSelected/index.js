@@ -16,19 +16,12 @@ import {
 
 import BackButton from "../../../components/BackButton";
 import ButtonLink from "../../../components/_Screens/ItemSelected/ButtonLink";
-import TabBottomBar from "../../../components/_Screens/ItemSelected/TabBottomBar";
 import OptionalText from "../../../components/_Screens/ItemSelected/OptionalText";
-
-import SystemNavigationBar from "react-native-system-navigation-bar";
 
 import data from "../../../../data";
 
 
 const ItemSelected = ({ route }) => {
-
-    useEffect(() => {
-        SystemNavigationBar.navigationHide()
-    }, [])
 
     const { itemId } = route.params;
 
@@ -72,9 +65,10 @@ const ItemSelected = ({ route }) => {
                     <Line />
                     <OptionalsContainer>
                         {
-                            optionals.map((e) => {
+                            optionals.map((e, id) => {
                                 return (
                                     <OptionalText
+                                        key={id}
                                         text={e}
                                     />
                                 )

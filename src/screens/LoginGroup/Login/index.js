@@ -16,8 +16,9 @@ import {
 } from './styles'
 
 import { auth } from '../../../../firebase'
-import { useNavigation } from '@react-navigation/native';
 import theme from '../../../global/styles/theme'
+import { StackActions, useNavigation } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import LoginAreaButton from '../../../components/LoginAreaButton';
 import Keyboard from '../../../components/KeyBoard';
@@ -34,7 +35,23 @@ const Login = () => {
     function autoLogin() {
         const unsubscribe = auth.onAuthStateChanged(user => {
             if (user) {
-                navigation.navigate('QuizStack')
+                async function getData() {
+                    try {
+                        const jsonValue = await AsyncStorage.getItem('@airaoHub_infoProfile')
+                        if (jsonValue !== null) {
+                            navigation.dispatch(
+                                StackActions.replace('TabNavigator')
+                            )
+                            //navigation.navigate('TabNavigator')
+                        } else {
+                            navigation.navigate('QuizStack')
+                        }
+                    } catch (e) {
+                        console.log(e)
+                    }
+                }
+                getData()
+
             } else {
                 setLoading(false)
             }

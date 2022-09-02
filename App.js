@@ -6,9 +6,9 @@ import Navigation from './src/Navigation';
 
 import theme from './src/global/styles/theme';
 import AuthProvider from './src/contexts/auth';
-import ContexProfile from './src/global/ContextProfile';
 
 import { LogBox } from 'react-native';
+import QuizProvider from './src/contexts/QuizContext';
 
 
 
@@ -34,11 +34,11 @@ export default function App() {
 
   return (
     <AuthProvider>
-      {/* <ContexProfile.Provider> */}
-      <ThemeProvider theme={theme}>
-        <Navigation />
-      </ThemeProvider>
-      {/* </ContexProfile.Provider> */}
+      <QuizProvider>
+        <ThemeProvider theme={theme}>
+          <Navigation />
+        </ThemeProvider>
+      </QuizProvider>
     </AuthProvider>
   );
 }

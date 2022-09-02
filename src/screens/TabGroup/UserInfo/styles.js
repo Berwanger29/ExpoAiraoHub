@@ -7,8 +7,6 @@ export const Container = styled.View`
     padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px ;
     background-color: ${props => props.theme.colors.light};
     align-items: center;
-
-    justify-content: center;
 `
 
 export const Header = styled.View`
@@ -23,6 +21,13 @@ export const ContainerBackButton = styled.View`
     left: 15px;
 `
 
+export const Title = styled.Text`
+    font-family: ${(props) => props.theme.fonts.bold};
+    font-size: ${RFValue(28)}px;
+    color: ${(props) => props.theme.colors.black};
+    margin: 10px 0px 15px 0px;
+
+`
 export const UserProfile = styled.Text`
 
 `
