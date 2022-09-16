@@ -65,7 +65,7 @@ function TabNavigator() {
                     }
                 }}
             />
-            <Tab.Screen
+            {/* <Tab.Screen
                 name="Scripts"
                 component={Scripts}
                 options={{
@@ -79,7 +79,7 @@ function TabNavigator() {
                         )
                     }
                 }}
-            />
+            /> */}
             <Tab.Screen
                 name="Accommodation"
                 component={Accommodation}

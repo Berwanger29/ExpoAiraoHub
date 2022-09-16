@@ -10,22 +10,17 @@ export const Container = styled.View`
 
 export const ContainerBackButton = styled.View`
     position: absolute;
-    top: 20px;
+    top: 45px;
     left: 15px;
 `
-
-
 export const Header = styled.View`
     padding-top: 70px;
 `
-
 export const Title = styled.Text`
     font-family: ${(props) => props.theme.fonts.black};
     font-size: ${RFValue(24)}px;
     color: ${(props) => props.theme.colors.darkGreen};
 `
-
-
 export const SearchConatainer = styled.View`
     flex-direction: row;
     height: ${RFValue(40)}px;

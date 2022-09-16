@@ -59,7 +59,8 @@ const Home = () => {
     })
 
     let hotelsData = data.filter((item) => {
-        return item.type == 'hotels'
+            return item.type == 'hotels'
+        
     })
 
 
@@ -83,7 +84,7 @@ const Home = () => {
                     }}
                 >
                     <Input
-                        placeholder="Procure um local de hospedagem"
+                        placeholder="Digite alguma coisa"
                         value={input}
                         onChangeText={(e) => handleInput(e)}
                     />
@@ -105,16 +106,16 @@ const Home = () => {
                         /> */}
 
                         <Carroussel
-                            title="Atrações dentro da cidade"
+                            title="Dentro da cidade"
                             data={inCityData}
                         />
 
                         <Carroussel
-                            title="Pelo Parna Anavilhanas"
+                            title="Pelo Anavilhanas"
                             data={anavilhanasData}
                         />
                         <Carroussel
-                            title="Pelo Parna Jaú"
+                            title="Pelo Jaú"
                             data={jauData}
                         />
                         <Carroussel

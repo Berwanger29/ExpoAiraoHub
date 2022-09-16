@@ -23,8 +23,22 @@ const IndividualList = ({ route }) => {
 
     const { title, data } = route.params
     const [searchInput, setSearchInput] = useState('')
+    const [arrSearch, setArrSearch] = useState([])
 
     const navigation = useNavigation()
+
+
+    function handleInput(e) {
+        setSearchInput(e)
+        let arr = []
+        data.filter((item) => {
+            if (item.title.includes(e)) {
+                arr.push(item)
+            }
+        })
+        setArrSearch(arr)
+    }
+
     function navigateToSelected(id) {
         navigation.navigate('ItemSelected', {
             itemId: id
@@ -47,9 +61,9 @@ const IndividualList = ({ route }) => {
                     }}
                 >
                     <Input
-                        placeholder="Procure um local de hospedagem"
+                        placeholder="Dentro da cidade"
                         value={searchInput}
-                        onChangeText={(e) => setSearchInput(e)}
+                        onChangeText={(e) => handleInput(e)}
                     />
                     <SearchButton
                         activeOpacity={0.6}
@@ -58,24 +72,48 @@ const IndividualList = ({ route }) => {
                     </SearchButton>
                 </SearchConatainer>
             </Header>
-            <Main>
-                <List
-                    showsVerticalScrollIndicator={false}
-                    data={data}
-                    keyExtractor={item => item.id}
-                    renderItem={({ item }) =>
-                    (
-                        <Card
-                            title={item.title}
-                            value={item.content.prices}
-                            image={item.content.image}
-                            type={item.content.type}
-                            onPress={() => navigateToSelected(item.id)}
-                        />
-                    )
-                    }
-                />
-            </Main>
+            {searchInput == '' &&
+                <Main>
+                    <List
+                        showsVerticalScrollIndicator={false}
+                        data={data}
+                        keyExtractor={item => item.id}
+                        renderItem={({ item }) =>
+                        (
+                            <Card
+                                title={item.title}
+                                value={item.content.prices}
+                                image={item.content.image}
+                                type={item.content.type}
+                                onPress={() => navigateToSelected(item.id)}
+                            />
+                        )
+                        }
+                    />
+                </Main>
+            }
+
+            {
+                searchInput !== '' &&
+                <Main>
+                    <List
+                        showsVerticalScrollIndicator={false}
+                        data={arrSearch}
+                        keyExtractor={item => item.id}
+                        renderItem={({ item }) =>
+                        (
+                            <Card
+                                title={item.title}
+                                value={item.content.prices}
+                                image={item.content.image}
+                                type={item.content.type}
+                                onPress={() => navigateToSelected(item.id)}
+                            />
+                        )
+                        }
+                    />
+                </Main>
+            }
         </Container>
     )
 }
