@@ -316,59 +316,444 @@ export default [
     },
     {
         type: "toEat",
-        id: 50,
-        title: "Matupá Bar",
+        id: 5000,
+        title: "Taperebar",
         content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/toEat/matupa.png'),
-            prices: '$$$$',
+            description: "Bar Temático com estilo Musical: Rock Pop, Reggae, SpeedBack e outros. Servimos Hambúrguer e Chopp Artesanal, Petiscos e Refeições.",
+            image: require('./exceptionalImage/toEat/taperebar.jpg'),
+            prices: '',
             social: {
-                instagram: '',
-                facebook: '',
+                instagram: 'https://www.instagram.com/taperebarr/',
+                facebook: 'https://www.facebook.com/pages/Taperebar-NA/102776121153779',
                 site: ''
             },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+            contacts: "tel://+5592985044376",
+            address: "Av. João Paulo, Centro N°53",
+            addressLink: 'https://goo.gl/maps/mXqA7xAEgUEJWxxj9',
+            type: ["bar"],
+            offering: ["Cartão", "Pix", "Internet"],
             duration: "",
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "toEat",
-        id: 51,
-        title: "Restaurante Sabor do Sul",
+        id: 5001,
+        title: "Cantinho Caseiro",
         content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/toEat/saborDoSul.png'),
-            prices: '$$$$',
+            description: "Especialista em sopas e doces preparado com o gostinho de casa, usamos produtos de primeira linha",
+            image: require('./exceptionalImage/toEat/cantinhoCaseiro.jpeg'),
             social: {
-                instagram: '',
-                facebook: '',
+                instagram: 'https://www.instagram.com/cantinho_caseiro_novoairao/',
+                facebook: 'https://www.facebook.com/Cantinho-Caseiro-NOVO-AIR%C3%83O-2339386406344365',
                 site: ''
             },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+            contacts: "tel://+5592982751578",
+            address: "Rua Luís Carlos de Mattos Areosa n° 17, Nova Esperança",
+            addressLink: '',
+            type: ["Soparia", "Doceria"],
+            offering: ["Pix", "Entrega grátis"],
             duration: "",
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "toEat",
-        id: 52,
-        title: "Restaurante Flor do Luar",
+        id: 5002,
+        title: "Espetos do Rafinha",
         content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/toEat/florDoLuar.png'),
-            prices: '$$$$',
-            workingHour: "",
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+            description: "Variedades de Espetinhos, com o melhor atendimento.",
+            image: require('./exceptionalImage/toEat/espetosDoRafinha.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/cantinho_caseiro_novoairao/',
+                facebook: 'https://www.facebook.com/Cantinho-Caseiro-NOVO-AIR%C3%83O-2339386406344365',
+                site: ''
+            },
+            contacts: "tel://+5592994730833",
+            address: "Av. João Paulo II, N. °29, Centro",
+            addressLink: 'https://goo.gl/maps/fS8abtJi25TrDeZ77',
+            type: ["Restaurante"],
+            offering: ["Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5003,
+        title: "JC Lanche e Pizzaria",
+        content: {
+            description: "Nós trabalhamos no período da tarde com merendas, e a noite com pizzas, salgados, lanches, bebidas, em um local próprio e apto para o nosso serviço, localizado em nossa propriedade.",
+            image: require('./exceptionalImage/toEat/JCLancheEPizzaria.jpg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592985834702",
+            address: "Rua Francisca Cardoso",
+            addressLink: 'https://goo.gl/maps/Cju7M3Qsz92L1iGq7',
+            type: ["Lanchonete"],
+            offering: ["Pix", "Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5004,
+        title: "Café da Preta",
+        content: {
+            description: "Funcionamos de terça-feira a domingo, com o melhor café regional da Região.",
+            image: require('./exceptionalImage/toEat/cafeDaPreta.jpeg'),
+            social: {
+                instagram: 'https://www.instagram.com/caferegionaldapreta/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592985601864",
+            address: "Av. Ajuricaba, N° 31",
+            addressLink: 'https://goo.gl/maps/K8fdcQpEyyRDo34C6',
+            type: ["Café regional"],
+            offering: ["Pix", "Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5005,
+        title: "Helicônia Ornamentações",
+        content: {
+            description: "Somos uma empresa que visa tornar o seu momento único, quer seja casamento, aniversário ou eventos especiais. Nosso objetivo é tornar o melhor ambiente para sua festa.",
+            image: require('./exceptionalImage/toEat/heliconia.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/heliconiaornamentacoes/',
+                facebook: 'https://www.facebook.com/dina.brito.5686',
+                site: ''
+            },
+            contacts: "tel://+5592984025884",
+            address: "Avenida Presidente Getúlio Vargas",
+            addressLink: '',
+            type: ["Ornamentações"],
+            offering: ["Débito"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5006,
+        title: "Flor do luar Peixaria",
+        content: {
+            description: "Restaurantes flutuante servimos variedades de peixes e carnes, temos variados drinks regionais, temos espaço de banho no Rio Negro, sendo que a família poderão ficar a tarde toda aproveitando a natureza e degustando dos nossos drinks e petiscos deliciosos.",
+            image: require('./exceptionalImage/toEat/florDoLuar.jpeg'),
+            social: {
+                instagram: 'https://www.instagram.com/flutuanteflordoluar/',
+                facebook: 'https://www.facebook.com/flor.luar.75',
+                site: ''
+            },
+            contacts: "tel://+5592994180865",
+            address: "Av Presidente Getúlio Vargas",
+            addressLink: "https://goo.gl/maps/Dg93yC3pAasqC1jT9",
+            type: ["Restaurante"],
+            offering: ["Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5007,
+        title: "Ponto da Comida Caseira",
+        content: {
+            description: "Local simples e acolhedor com uma maravilhosa vista panorâmica para o Rio Negro. Fornecemos o famoso PF prato feito, de sabor caseiro, feito no fogão do barro.",
+            image: require('./exceptionalImage/toEat/pontoDaComidaCaseira.jpeg'),
+            social: {
+                instagram: 'https://www.instagram.com/comidacaseiraremanso/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984287510",
+            address: "Rua Ivo de Almeida N° 11, bairro Remanso, por trás da quadra municipal",
+            addressLink: 'https://goo.gl/maps/Jf4ih8wFPTpoamp69',
+            type: ["Restaurante"],
+            offering: ["Pix", "Débito", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5008,
+        title: "Maranata restaurante",
+        content: {
+            description: "Temos a melhor comida regional",
+            image: require('./exceptionalImage/toEat/cafeDaPreta.jpeg'),
+            social: {
+                instagram: 'https://www.instagram.com/maranata.restaurante0/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592992323111",
+            address: "Comunidade do Sobrado, igarapé do Curuçá",
+            addressLink: '',
+            type: ["Restaurante"],
+            offering: ["Pix", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5009,
+        title: "Pastel do Paulo Cintura",
+        content: {
+            description: "Nosso estabelecimento fica localizado na Praça Municipal, ambiente ventilado e bem acolhedor, temos uma equipe de excelência com bom atendimento !",
+            image: require('./exceptionalImage/toEat/pastelDoPauloCintura.jpeg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592991555552",
+            address: "",
+            addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
+            type: ["Lanchonete"],
+            offering: ["Pix"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5010,
+        title: "Pizzaria e Boteco do Lucas",
+        content: {
+            description: "Nosso espaço é o melhor lugar pra assistir jogo de futebol em algumas ocasiões com 2 TVs. Cerveja bem gelada e várias marcas de cerveja e vários petiscos.",
+            image: require('./exceptionalImage/toEat/pizzariaEBotecoDoLucas.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/pizzaria_e_boteco_do_lucas/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592992330843",
+            address: "Rua ademar de barros",
+            addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
+            type: ["Lanchonete", "Bar"],
+            offering: ["Pix", "Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5011,
+        title: "Kaká Refeições",
+        content: {
+            description: "Restaurante self-service, localizado em frente à praça municipal. Funcionamos para almoço e jantar.",
+            image: require('./exceptionalImage/toEat/kakaRefeicoes.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/kakarefeicoesairao/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592991285595",
+            address: "Avenida Ajuricaba, S/N. Centro.",
+            addressLink: 'https://goo.gl/maps/mmPVtywjhjA7gBYs8',
+            type: ["Restaurante"],
+            offering: ["Pix", "Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5012,
+        title: "Lanche Tira Larica",
+        content: {
+            description: "Lanche tradicional do município há 5 anos trabalhando sempre em busca de novidades e novos sabores e conforto pra nossos clientes",
+            image: require('./exceptionalImage/toEat/tiraLarica.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/bar_lanche_refeicoes_larica/',
+                facebook: 'https://www.facebook.com/Bar-Lanche-e-refei%C3%A7%C3%A3o-tira-lar%C3%ADca-886063928218191',
+                site: ''
+            },
+            contacts: "tel://+5592993077380",
+            address: "Av. Santos Dumont,SN quiosque 03 centro ",
+            addressLink: 'https://goo.gl/maps/ttzQBDfEiPxrYf7k7',
+            type: ["Lanchonete"],
+            offering: ["Pix", "Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5013,
+        title: "Ponto Do Açaí Frozen",
+        content: {
+            description: "Trabalhamos com venda de açaí frozen, com variedades de acompanhamentos.",
+            image: require('./exceptionalImage/toEat/pontoDoAcai.jpg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984126957",
+            address: "",
+            addressLink: "https://goo.gl/maps/ttzQBDfEiPxrYf7k7",
+            type: ["Açaíteria"],
+            offering: ["Pix", "Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5014,
+        title: "Sorvete da praça",
+        content: {
+            description: "Trabalhamos com sorvete expresso, casquinha , cascāo ,  sundae  é  + de 30 sabores de milk shake, guaraná tradicional da Amazônia,  também servimos sorvete Glacial.",
+            image: require('./exceptionalImage/toEat/sorveteriaDaPraca.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/sorveteda_praca/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592993934602",
+            address: "",
+            addressLink: 'https://goo.gl/maps/2vrY4p2veLgH7bDj9',
+            type: ["Sorveteria"],
+            offering: ["Cartão"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5015,
+        title: "Cafe Regional De Bubuia",
+        content: {
+            description: "Estabelecimento familiar com ambiente aconchegante, oferecemos um cardápio com  tapiocas variadas e outros produtos regionais. ",
+            image: require('./exceptionalImage/toEat/deBubuia.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/debubuia2022/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592992282394",
+            address: "",
+            addressLink: "https://goo.gl/maps/DCfw6dzL9AMK6Ueu6",
+            type: ["Café regional"],
+            offering: ["Pix", "Estacionamento"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5016,
+        title: "Restaurante Pousada Bela Vista",
+        content: {
+            description: "Nossa pousada é localizada ao centro do município de Novo Airão nas margens do Rio Negro, com uma vista privilegiada, temos uma piscina, um auditório para reuniões, um deck e uma flutuante com serviço de bar e restaurante e um redário para descansar.",
+            image: require('./exceptionalImage/toEat/belaVistaRestaurante.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/belavistalodge/',
+                facebook: 'https://www.facebook.com/pousada.belavista.amazonas',
+                site: 'https://pousada-belavista.com/'
+            },
+            contacts: "tel://+559292296667",
+            address: "Avenida Presidente Getúlio vargas número 47",
+            addressLink: 'https://goo.gl/maps/3k6RpwmPtZ6cbnvj9',
+            type: ["Restaurante"],
+            offering: ["Crédito", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5017,
+        title: "Dino's Pizzaria e Restaurante",
+        content: {
+            description: "Trabalhamos com diversos sabores de pizza, da brotinho à família, uma diversidade de sanduíches e um pouco mais.",
+            image: require('./exceptionalImage/toEat/dinosLanchePizzaria.jpg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592985864591",
+            address: "Av.Presidente Castelo Branco N51 A",
+            addressLink: 'https://goo.gl/maps/Ja6erfz6M9AzJRhr5',
+            type: ["Lanchonete"],
+            offering: ["Pix", "Cartão"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5018,
+        title: "Restaurante Marupiara",
+        content: {
+            description: "O restaurante marupiara é um estabelecimento novo no município de novo Airão, e presa sempre pelo bem estar do cliente, trabalhamos com agilidade temos um salão receptivo e com ótimo atendimento, nosso tempero é de paladar caseiro regional.",
+            image: require('./exceptionalImage/toEat/marupiara.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/marupiara_restaurant/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984671854",
+            address: "Rua Pedro Bezerra, 18, bairro jardim primavera",
+            addressLink: 'https://goo.gl/maps/2BjFvZV97f5Bkw9w8',
+            type: ["Restaurante"],
+            offering: ["Pix", "Cartão", "Delivery"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5019,
+        title: "Conveniência Lanchonete Natureza",
+        content: {
+            description: "Lanchonete ou conveniência -bar é um estabelecimento comercial popular especializado em pequenas refeições rápidas, tais como petiscos, lanches e sanduíches mesmo fora do horário normal das refeições.",
+            image: require('./exceptionalImage/toEat/postoJau.jpeg'),
+            social: {
+                instagram: 'https://www.instagram.com/posto_jau/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592994664501",
+            address: "Avenida Ajuricaba, n59 , Centro",
+            addressLink: 'https://goo.gl/maps/sWHZWbJ2u8DvSxVx8',
+            type: ["Bar", "Lanchonete"],
+            offering: ["Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5020,
+        title: "Kikão da praça",
+        content: {
+            description: "",
+            image: require('./exceptionalImage/toEat/kikaoDaPraca.jpg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984366995",
+            address: "",
+            addressLink: 'https://goo.gl/maps/ddrhx3ZuDJiEgyTT7',
+            type: ["Lanchonete"],
+            offering: ["Pix", "Cartão"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5021,
+        title: "Editar",
+        content: {
+            description: "",
+            image: require('./exceptionalImage/toEat/cafeDaPreta.jpeg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+55",
+            address: "",
+            addressLink: '',
+            type: [""],
+            offering: ["Pix", "Cartão", "Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -500,10 +885,10 @@ export default [
             description: "\"A tranquilidade depende de suas escolhas.\" Nosso Hotel está localizado na Avenida João Paulo II, Centro, n 21. Ambiente familiar e confortável para melhor atender nossos clientes. Temos 22 quartos todos com suítes e wifi.",
             image: require('./exceptionalImage/hotels/hotelJosely.jpg'),
             contacts: "tel://+5592992268191",
-            social:{
-                instagram:'https://www.instagram.com/hotel.josely/',
-                facebook:'',
-                site:''
+            social: {
+                instagram: 'https://www.instagram.com/hotel.josely/',
+                facebook: '',
+                site: ''
             },
             offering: ["Internet", "estacionamento", "pacotes com refeições"],
             address: "",
@@ -511,7 +896,7 @@ export default [
             profile: ["adventure", "soft", "calm"],
             prices: '100',
         },
-        
+
     },
     {
         type: "hotels",
@@ -521,10 +906,10 @@ export default [
             description: "Pousada familiar no coração da Amazônia. Conforto e preço acessível garantido, conheça Novo Airão, nossas belezas naturais e um atendimento de excelência. Vai ser um prazer fazer parte desta experiência.",
             image: require('./exceptionalImage/hotels/pousadaNaza.jpg'),
             contacts: "tel://+5592991308787",
-            social:{
-                instagram:'https://instagram.com/recantodanaza/',
-                facebook:'',
-                site:''
+            social: {
+                instagram: 'https://instagram.com/recantodanaza/',
+                facebook: '',
+                site: ''
             },
             offering: ["Internet", "estacionamento"],
             address: "",
@@ -541,10 +926,10 @@ export default [
             description: "Hotel Jandira, o cantinho do sossego. Venha conhecer e aproveitar com sua família no local ideal. Preço acessível que cabe no seu bolso. Venha conhecer Novo Airão no lugar mais aconchegante da cidade!",
             image: require('./exceptionalImage/hotels/hotelJandira.jpg'),
             contacts: "tel://+5592992040315",
-            social:{
-                instagram:'https://www.instagram.com/hotel_jandira/',
-                facebook:'',
-                site:''
+            social: {
+                instagram: 'https://www.instagram.com/hotel_jandira/',
+                facebook: '',
+                site: ''
             },
             offering: ["Internet", "estacionamento"],
             address: "",
@@ -662,7 +1047,8 @@ export default [
             duration: "",
             profile: ["adventure", "soft", "calm"]
         },
-    }, {
+    },
+    {
         type: "tour",
         id: 705,
         title: "Parque Jáu",
@@ -683,7 +1069,8 @@ export default [
             duration: "",
             profile: ["adventure", "soft", "calm"]
         },
-    }, {
+    },
+    {
         type: "tour",
         id: 706,
         title: "Reserva Unini",
@@ -705,4 +1092,68 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
+    {
+        type: "bathhouse",
+        id: 7000,
+        title: "Balneário mato grosso",
+        content: {
+            description: "Funcionando todos os dias , entrada carro R$10 reais moto R$5 reais, pedestre R$2 reais.\nKm 22 - AM 352",
+            image: require("./exceptionalImage/bathhouse/matoGrosso.jpg"),
+            contacts: "tel://+5592993073131",
+            social: {
+                instagram: 'https://www.instagram.com/hotel_jandira/',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Alimentos e bebidas", "Estacionamento", "Cartão", "Pix"],
+            address: "",
+            addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
+            type: 'diária',
+            profile: ["adventure", "soft", "calm"],
+            prices: '1317',
+        },
+    },
+    {
+        type: "bathhouse",
+        id: 7001,
+        title: "Psicultura anavilhanas",
+        content: {
+            description: "Atividades rurais, com hospedagem, pesque pague e restaurante \nkm 8 - AM 352 ",
+            image: require("./exceptionalImage/bathhouse/psiculturaAnavilhanas.jpg"),
+            contacts: "tel://+5592984055269",
+            social: {
+                instagram: 'https://www.instagram.com/arnaldolimada.s/',
+                facebook: 'https://www.facebook.com/arnaldo.lima.94651774',
+                site: ''
+            },
+            offering: ["Alimentos", "Cartão", "Pix"],
+            address: "",
+            addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
+            type: 'diária',
+            profile: ["adventure", "soft", "calm"],
+            prices: '1317',
+        },
+    },
+    {
+        type: "attractions",
+        id: 8001,
+        title: "Flutuante dos Botos",
+        content: {
+            description: "O Flutuante dos Botos, onde se realiza todos os dias um ritual da natureza, ganhou tanta importância para o turismo do Amazonas.",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592984370540",
+            social: {
+                instagram: 'https://www.instagram.com/flutuantedosbotos/',
+                facebook: 'https://www.facebook.com/pages/Flutuante-Dos-Botos/174584819340050',
+                site: ''
+            },
+            offering: ["Interação com botos"],
+            address: "",
+            addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
+            type: 'diária',
+            profile: ["adventure", "soft", "calm"],
+            prices: '1317',
+        },
+    },
 ]
+

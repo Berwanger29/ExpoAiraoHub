@@ -104,9 +104,7 @@ const IndividualList = ({ route }) => {
                         (
                             <Card
                                 title={item.title}
-                                value={item.content.prices}
                                 image={item.content.image}
-                                type={item.content.type}
                                 onPress={() => navigateToSelected(item.id)}
                             />
                         )

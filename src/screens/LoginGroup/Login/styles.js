@@ -9,10 +9,6 @@ export const Container = styled.View`
     padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
 `
 
-
-
-
-
 export const TitleContainer = styled.View`
     height: 30%;
     width: 100%;
@@ -39,6 +35,7 @@ export const InputContainer = styled.View`
     align-items: center;
 `
 
+
 export const UserInput = styled.TextInput`
     background-color: gray;
     
@@ -50,6 +47,20 @@ export const UserInput = styled.TextInput`
     border-radius: 5px;
 
     color: ${(props) => props.theme.colors.light};
+`
+export const EyeInputContainer = styled.View`
+    width: 100%;
+`
+
+export const EyeContainer = styled.TouchableOpacity`
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    height: 40px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
 `
 
 export const RecoveryContainer = styled.View`

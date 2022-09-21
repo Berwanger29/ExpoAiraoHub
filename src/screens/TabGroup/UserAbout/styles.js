@@ -17,7 +17,7 @@ export const Header = styled.View`
 `
 export const ContainerBackButton = styled.View`
     position: absolute;
-    top: 30px;
+    top: 45px;
     left: 15px;
 `
 

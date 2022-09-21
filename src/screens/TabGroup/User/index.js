@@ -7,7 +7,8 @@ import {
     Footer,
     LogoutButton,
     LogOutText,
-    OptionsContainer
+    OptionsContainer,
+    ContainerBackButton
 } from './styles'
 
 import Options from '../../../components/_Screens/User/Options';
@@ -64,9 +65,9 @@ const User = () => {
     return (
         <Container>
             <Header>
-
-                <BackButton />
-
+                
+                    <BackButton />
+                
                 <UserIcon>
                     <FontAwesome5
                         name="user-alt"

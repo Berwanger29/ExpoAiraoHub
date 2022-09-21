@@ -15,7 +15,7 @@ export const ButtonsContainer = styled.View`
     height: ${RFValue(60)}px;
 
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 `
 
 export const ButtonsList = styled.ScrollView`

@@ -76,7 +76,7 @@ const Map = () => {
                         color={isFocused && name === 'onibus' ? theme.colors.light : theme.colors.semiLight}
                     />
                 </Buttons>
-                <Buttons
+                {/* <Buttons
                     onPress={() => handleFocuesd('aviao')}
                 >
                     <MaterialCommunityIcons
@@ -84,7 +84,7 @@ const Map = () => {
                         size={RFValue(28)}
                         color={isFocused && name === 'aviao' ? theme.colors.light : theme.colors.semiLight}
                     />
-                </Buttons>
+                </Buttons> */}
                 <Buttons
                     onPress={() => handleFocuesd('barco')}
                 >

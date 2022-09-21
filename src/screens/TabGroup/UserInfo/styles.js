@@ -12,12 +12,11 @@ export const Container = styled.View`
 export const Header = styled.View`
     width: 100%;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    margin-top:80px;
 `
 export const ContainerBackButton = styled.View`
     position: absolute;
-    top: 30px;
+    top: 45px;
     left: 15px;
 `
 

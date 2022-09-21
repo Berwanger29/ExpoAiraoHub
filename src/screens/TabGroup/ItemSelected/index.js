@@ -102,6 +102,13 @@ const ItemSelected = ({ route }) => {
                                 nameIcon="phone"
                             />
                         }
+                        {
+                            itemData.content.addressLink !== '' &&
+                            <ButtonLink
+                                onPress={() => handleLinkURL(itemData.content?.addressLink)}
+                                nameIcon="map"
+                            />
+                        }
 
                     </ContainerLinks>
                 </TextContentContainer>

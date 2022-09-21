@@ -49,6 +49,7 @@ export const Line = styled.View`
 export const MainText = styled.Text`
     font-family: ${props => props.theme.fonts.regular};
     font-size: ${RFValue(18)}px;
+    text-align: justify;
 `
 
 export const OptionalsContainer = styled.View`
