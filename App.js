@@ -11,13 +11,10 @@ import { LogBox } from 'react-native';
 import QuizProvider from './src/contexts/QuizContext';
 
 
-
 LogBox.ignoreAllLogs()
 
 
 export default function App() {
-
-
 
   let [fontsLoaded, error] = useFonts({
     'ExtraBold': require('./assets/fonts/Lato-Black.ttf'),

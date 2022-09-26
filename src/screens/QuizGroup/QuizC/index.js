@@ -25,6 +25,9 @@ import duet from '../../../../assets/animations/duet.json'
 import { RFPercentage } from 'react-native-responsive-fontsize';
 import { StackActions, useNavigation } from '@react-navigation/native';
 import { QuizContext } from '../../../contexts/QuizContext';
+import TextThin from '../../../components/TextThin';
+import TextRegular from '../../../components/TextRegular';
+import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
 
 const QuizC = () => {
 
@@ -100,12 +103,14 @@ const QuizC = () => {
             <Main>
 
                 <TextContainer>
-                    <LabelCountText>
-                        Questão 3 de 3
-                    </LabelCountText>
-                    <QuestionText>
-                        Última pergunta, qual estilo de música você prefere ?
-                    </QuestionText>
+                    <SpaceText>
+                        <TextThin
+                            text='Questão 3 de 3'
+                        />
+                    </SpaceText>
+                    <TextRegular
+                        text='Última pergunta, qual estilo de música você prefere ?'
+                    />
                 </TextContainer>
 
                 <ButtonsContainer>

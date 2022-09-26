@@ -46,8 +46,12 @@ const Home = () => {
         return item.type == 'inCity'
     })
 
-    let attractions = data.filter((item)=>{
+    let attractions = data.filter((item) => {
         return item.type == 'attractions'
+    })
+
+    let craftsmanship = data.filter((item) => {
+        return item.type == 'craftsmanship'
     })
 
     let anavilhanasData = data.filter((item) => {
@@ -56,6 +60,10 @@ const Home = () => {
 
     let jauData = data.filter((item) => {
         return item.type == 'jau'
+    })
+
+    let agenciesData = data.filter((item) => {
+        return item.type == 'agencies'
     })
 
     let toEatData = data.filter((item) => {
@@ -68,7 +76,6 @@ const Home = () => {
 
     let hotelsData = data.filter((item) => {
         return item.type == 'hotels'
-
     })
 
 
@@ -118,7 +125,12 @@ const Home = () => {
                             data={inCityData}
                         />
 
-                        <Carroussel 
+                        <Carroussel
+                            title="Artesanato"
+                            data={craftsmanship}
+                        />
+
+                        <Carroussel
                             title='Atrações'
                             data={attractions}
                         />
@@ -130,6 +142,11 @@ const Home = () => {
                         <Carroussel
                             title="Pelo Jaú"
                             data={jauData}
+                        />
+
+                        <Carroussel
+                            title="Agências e operadores"
+                            data={agenciesData}
                         />
 
                         <Carroussel

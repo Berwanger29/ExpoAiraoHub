@@ -1,7 +1,7 @@
 export default [
     {
         type: "road",
-        id: 0,
+        id: 1,
         title: "Centro Ecológico Ekobé",
         content: {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -14,6 +14,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -22,7 +23,7 @@ export default [
     },
     {
         type: "road",
-        id: 1,
+        id: 2,
         title: "Pesque-pague Anavilhanas",
         content: {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -35,6 +36,7 @@ export default [
             },
             contacts: ["92912345678"],
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -43,7 +45,7 @@ export default [
     },
     {
         type: "road",
-        id: 2,
+        id: 3,
         title: "Balneário do Mator Grosso",
         content: {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -56,6 +58,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -64,7 +67,7 @@ export default [
     },
     {
         type: "inCity",
-        id: 10,
+        id: 1000,
         title: "Artesanato da FAM",
         content: {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -77,6 +80,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -127,7 +131,7 @@ export default [
     },
     {
         type: "anavilhanas",
-        id: 20,
+        id: 2000,
         title: "Árvores gigantes",
         content: {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -140,6 +144,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -161,6 +166,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -182,6 +188,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -190,7 +197,7 @@ export default [
     },
     {
         type: "jau",
-        id: 30,
+        id: 3000,
         title: "Petroglifos",
         content: {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -203,6 +210,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -224,6 +232,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -245,15 +254,15 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
+            offering: [],
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "river",
-        id: 40,
+        id: 4000,
         title: "Ruínas de Velho Airão",
         content: {
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -266,6 +275,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -287,6 +297,7 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
             offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
             duration: "",
@@ -308,8 +319,9 @@ export default [
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
+            addressLink: "",
             type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+            offering: [],
             duration: "",
             profile: ["adventure", "soft", "calm"]
         },
@@ -759,8 +771,8 @@ export default [
     },
     {
         type: "hotels",
-        id: 600,
-        title: "Pousada Novo Airâo",
+        id: 6000,
+        title: "Pousada Novo Airão",
         content: {
             description: "Somos uma pousada aconchegante, sossegada, ambiente familiar, com ótimas instalações pra receber você e sua família!",
             image: require('./exceptionalImage/hotels/pousadaNovoAirao.jpg'),
@@ -772,14 +784,13 @@ export default [
             },
             offering: ["Internet", "Estacionamento", "Piscina", "Café da Manhã"],
             address: "R. Naíde Batista, 35, Horizonte",
-            type: 'diária',
+            addressLink: "https://goo.gl/maps/xF8pWwFFsTi4mtSH6",
             profile: ["adventure", "soft", "calm"],
-            prices: '150',
         },
     },
     {
         type: "hotels",
-        id: 601,
+        id: 6001,
         title: "Pousada Paraíso",
         content: {
             description: "Nós oferecemos uma segunda casa para as pessoas, com uma hospedagem segura e confortável, servindo à todos que quiserem se hospedar com segurança e tranquilidade. Damos aos viajantes a garantia de que podem andar pela cidade com tranquilidade, que terão onde descansar e relaxar.",
@@ -792,6 +803,7 @@ export default [
             },
             offering: ["Internet", "Estacionamento"],
             address: "",
+            addressLink: "",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '80',
@@ -799,11 +811,11 @@ export default [
     },
     {
         type: "hotels",
-        id: 602,
+        id: 6002,
         title: "Bela Vista",
         content: {
-            description: "Estamos localizados num sítio por volta de 11mil m² na margem do majestoso Rio Negro no centro do paraíso ecológico Novo Airão, que fica a aproximadamente 190km de Manaus. Com as melhores acomodações em um local charmoso e aconchegante, bem à frente do rio com uma vista, encantamos todos que por aqui se hospedam.",
-            image: require('./exceptionalImage/hotels/pousadaBelaVista.jpg'),
+            description: "Beleza, luxo e tranquilidade na melhor localização de Novo Airão, situado á 115,01 km da capital, Manaus, sua estrutura conta com acomodações, wi-fe gratuito, estacionamento, sala de convenções, redário, restaurante,Café da manhã, bar, piscina, jardim, playground, deck e um flutuante, casa por temporada, passeios e expedições, para desfrutar das belezas da nossa Amazônia.",
+            image: require('./exceptionalImage/hotels/belaVista.png'),
             contacts: "tel://+559233651023",
             social: {
                 instagram: 'https://www.instagram.com/belavistalodge/',
@@ -812,6 +824,7 @@ export default [
             },
             offering: ["internet", "vista para o rio", "estacionamento", "piscina", "café da manhã", "flutuante", "deck com acesso ao rio", "passeios e expedições", "casas de temporada", "restaurante", "bar", "área de lazer."],
             address: "",
+            addressLink: "",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '500',
@@ -819,7 +832,7 @@ export default [
     },
     {
         type: "hotels",
-        id: 603,
+        id: 6003,
         title: "Pousada Cabloca",
         content: {
             description: "Pousada Cabocla, fica localizada na Rua Rui Barbosa, centro n° 52, cidade de Novo Airão, próximo a praça do dinossauro, restaurantes, café da manhã, supermercado, drogarias e fórum. Contempla uma área ampla para os clientes ficarem a vontade, os apartamentos são equipados com ar condicionado e TVs a cabo.",
@@ -832,6 +845,7 @@ export default [
             },
             offering: ["Internet", "estacionamento."],
             address: "",
+            addEventListener: "",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '100',
@@ -839,7 +853,7 @@ export default [
     },
     {
         type: "hotels",
-        id: 604,
+        id: 6004,
         title: "Lodge Mirante do Gavião",
         content: {
             description: "É um Hotel Luxo Designer, com área de lazer (piscina, salão de jogos, mirantes, etc), restaurante, passeios. Sua arquitetura é exclusiva, voltada para homenagear a cultura local. Às estruturas das suítes parecem casco do barco invertido. ",
@@ -852,6 +866,7 @@ export default [
             },
             offering: ["Internet, estacionamento."],
             address: "",
+            addressLink: "",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '1370',
@@ -859,8 +874,8 @@ export default [
     },
     {
         type: "hotels",
-        id: 605,
-        title: "Amazon Park Suítes",
+        id: 6005,
+        title: "Amazônia Park Suítes",
         content: {
             description: " Somos uma pousada de charme  situada no município de Novo Airão, à 2h30 de Manaus. A estrutura dispõe de 20 apartamentos com vista panorâmica, restaurante com pratos regionais, área para eventos, piscina e trilha, além de uma vasta área verde, cenário perfeito para quem visita à região.",
             image: require('./exceptionalImage/hotels/amazonParkSuite.jpg'),
@@ -872,6 +887,7 @@ export default [
             },
             offering: ["internet", "vista para o rio", "estacionamento", "piscina", "café da manhã", "passeios"],
             address: "",
+            addressLink: "",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '310',
@@ -879,7 +895,7 @@ export default [
     },
     {
         type: "hotels",
-        id: 606,
+        id: 6006,
         title: "Hotel Josély",
         content: {
             description: "\"A tranquilidade depende de suas escolhas.\" Nosso Hotel está localizado na Avenida João Paulo II, Centro, n 21. Ambiente familiar e confortável para melhor atender nossos clientes. Temos 22 quartos todos com suítes e wifi.",
@@ -892,6 +908,7 @@ export default [
             },
             offering: ["Internet", "estacionamento", "pacotes com refeições"],
             address: "",
+            addressLink: "",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '100',
@@ -900,11 +917,11 @@ export default [
     },
     {
         type: "hotels",
-        id: 607,
+        id: 6007,
         title: "Recanto da Naza",
         content: {
-            description: "Pousada familiar no coração da Amazônia. Conforto e preço acessível garantido, conheça Novo Airão, nossas belezas naturais e um atendimento de excelência. Vai ser um prazer fazer parte desta experiência.",
-            image: require('./exceptionalImage/hotels/pousadaNaza.jpg'),
+            description: "Com acomodações climatizadas, a pousada da Naza está localizada em Novo Airão, á 2h30 de Manaus. Disponibiliza cozinha compartilhada, estacionamento privado e acesso Wi-Fi gratuito. E possui 12 unidades habitacionais.",
+            image: require('./exceptionalImage/hotels/pousadaNaza.png'),
             contacts: "tel://+5592991308787",
             social: {
                 instagram: 'https://instagram.com/recantodanaza/',
@@ -913,6 +930,7 @@ export default [
             },
             offering: ["Internet", "estacionamento"],
             address: "",
+            addressLink: "",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '1317',
@@ -920,7 +938,7 @@ export default [
     },
     {
         type: "hotels",
-        id: 608,
+        id: 6008,
         title: "Hotel Jandira",
         content: {
             description: "Hotel Jandira, o cantinho do sossego. Venha conhecer e aproveitar com sua família no local ideal. Preço acessível que cabe no seu bolso. Venha conhecer Novo Airão no lugar mais aconchegante da cidade!",
@@ -933,6 +951,7 @@ export default [
             },
             offering: ["Internet", "estacionamento"],
             address: "",
+            addressLink: "",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '1317',
@@ -940,7 +959,7 @@ export default [
     },
     {
         type: "adventure",
-        id: 700,
+        id: 7000,
         title: "Arborismo",
         content: {
             title: "Arborismo",
@@ -955,14 +974,13 @@ export default [
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
             type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
+            offering: [],
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "adventure",
-        id: 701,
+        id: 7001,
         title: "Bike aquática",
         content: {
             title: "Bike aquática",
@@ -984,7 +1002,7 @@ export default [
     },
     {
         type: "adventure",
-        id: 702,
+        id: 7002,
         title: "SUP",
         content: {
             title: "SUP",
@@ -1006,7 +1024,7 @@ export default [
     },
     {
         type: "adventure",
-        id: 703,
+        id: 7003,
         title: "Trilha",
         content: {
             title: "Trilha",
@@ -1028,7 +1046,7 @@ export default [
     },
     {
         type: "tour",
-        id: 704,
+        id: 7004,
         title: "Parque Anavilhanas",
         content: {
             title: "Trilha",
@@ -1050,7 +1068,7 @@ export default [
     },
     {
         type: "tour",
-        id: 705,
+        id: 7005,
         title: "Parque Jáu",
         content: {
             title: "Trilha",
@@ -1072,7 +1090,7 @@ export default [
     },
     {
         type: "tour",
-        id: 706,
+        id: 7006,
         title: "Reserva Unini",
         content: {
             title: "Trilha",
@@ -1094,7 +1112,7 @@ export default [
     },
     {
         type: "bathhouse",
-        id: 7000,
+        id: 8000,
         title: "Balneário mato grosso",
         content: {
             description: "Funcionando todos os dias , entrada carro R$10 reais moto R$5 reais, pedestre R$2 reais.\nKm 22 - AM 352",
@@ -1115,7 +1133,7 @@ export default [
     },
     {
         type: "bathhouse",
-        id: 7001,
+        id: 8001,
         title: "Psicultura anavilhanas",
         content: {
             description: "Atividades rurais, com hospedagem, pesque pague e restaurante \nkm 8 - AM 352 ",
@@ -1136,7 +1154,7 @@ export default [
     },
     {
         type: "attractions",
-        id: 8001,
+        id: 9000,
         title: "Flutuante dos Botos",
         content: {
             description: "O Flutuante dos Botos, onde se realiza todos os dias um ritual da natureza, ganhou tanta importância para o turismo do Amazonas.",
@@ -1153,6 +1171,274 @@ export default [
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '1317',
+        },
+    },
+    {
+        type: "attractions",
+        id: 9001,
+        title: "Sítio providência de Deus",
+        content: {
+            description: "Centro de reabilitação de animais silvestre e mantenedouro de animais silvestre e suas biografias.",
+            image: require("./exceptionalImage/attractions/maluco.jpg"),
+            contacts: "tel://+5592992931203",
+            social: {
+                instagram: 'https://www.instagram.com/sitio_providencia_de_deus/',
+                facebook: '',
+                site: ''
+            },
+            offering: [""],
+            address: "",
+            addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
+            type: 'diária',
+            profile: ["adventure", "soft", "calm"],
+            prices: '1317',
+        },
+    },
+    {
+        type: "craftsmanship",
+        id: 10000,
+        title: "Associação dos artesãos de Novo Airão",
+        content: {
+            description: "Uma central de artesanato, sem fins lucrativo onde se trabalha 22 familias sendo a maioria mulhres.",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592984591290",
+            social: {
+                instagram: 'https://www.instagram.com/aana_associacao_dos_artesaos_/',
+                facebook: 'https://www.facebook.com/profile.php?id=100069638858086',
+                site: ''
+            },
+            offering: ["Cartão"],
+            address: "Av.ajuricaba N 55 centro ",
+            addressLink: "https://goo.gl/maps/TGwtVKZNREGDNsjZA",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "craftsmanship",
+        id: 10001,
+        title: "Francivalda Barreto Costa",
+        content: {
+            description: "Fica em frente ao município, atravessando o rio, cerca de 5 minutos.",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592986196983",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Pix"],
+            address: "Comunidade Indígena maku Ita",
+            addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "craftsmanship",
+        id: 10002,
+        title: "Adriane Santos",
+        content: {
+            description: "Comunidade indígena makuita. Temos chirinbado,trilha terrestre e trilha aquática.",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592985978810",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Pix"],
+            address: "Comunidade Indígena maku Ita",
+            addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "craftsmanship",
+        id: 10003,
+        title: "Artesanato da Eliane",
+        content: {
+            description: "Aqui você pode conhecer artesanato de diversas variedades, todos feitos com obra-prima da natureza.",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592985854641",
+            social: {
+                instagram: 'https://www.instagram.com/aana_associacao_dos_artesaos_/',
+                facebook: 'https://www.facebook.com/profile.php?id=100069638858086',
+                site: ''
+            },
+            offering: ["Pix"],
+            address: "Comunidade Indígena maku Ita",
+            addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "craftsmanship",
+        id: 10004,
+        title: "Lili Encantos",
+        content: {
+            description: "Trabalho com artesanatos em geral, madeira, acessórios com penas e  etc",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592984810171",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Cartão", "Internet"],
+            address: "Travessa José Bonifácio",
+            addressLink: "https://goo.gl/maps/Q7RbLuGau7FU8A829",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "craftsmanship",
+        id: 10005,
+        title: "Amanã Art's",
+        content: {
+            description: "Trabalho com artesanato regional diretamente das comunidades de Novo Airão.",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592991130538",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Cartão", "Pix"],
+            address: "Rua Presidente Vargas, 14, centro ",
+            addressLink: "https://goo.gl/maps/RjWCUYVMJkUpRvuT8",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "craftsmanship",
+        id: 10006,
+        title: "Lojinha da Eliane Lili",
+        content: {
+            description: "Uma central de artesanato, sem fins lucrativo onde se trabalha 22 familias sendo a maioria mulhres.",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592985854641",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Dinheiro"],
+            address: "Comunidade Indígena maku Ita",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "craftsmanship",
+        id: 10007,
+        title: "",
+        content: {
+            description: "",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592984591290",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: [""],
+            address: "Av.ajuricaba N 55 centro ",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "agencies",
+        id: 11000,
+        title: "Tauá tour",
+        content: {
+            description: "A proposta da Tauá Tour é uma imersão profunda nos ambientes do rio Negro com passeios fluviais num barco regional confortável. O foco importante para a Tauá Tour é explicar todos os aspectos e desafios de desenvolvimento sócio – econômicos da região alinhado com a preservação do meio ambiente.",
+            image: require('./exceptionalImage/agencies/karugua.jpg'),
+            contacts: "tel://+5592992591548",
+            social: {
+                instagram: 'https://www.instagram.com/tauatour/',
+                facebook: 'https://www.facebook.com/tauatour.amazonia/',
+                site: ''
+            },
+            offering: ["passeios de canoa", "trilhas", "safaris fotografia"],
+            address: "Avenida Presidente Vargas n°107",
+            addressLink: '',
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "agencies",
+        id: 11001,
+        title: "Reco turismo",
+        content: {
+            description: "Fazemos viagens fluviais, com conforto e segurança. Capacidade de 15 pessoas.",
+            image: require('./exceptionalImage/agencies/reco.jpg'),
+            contacts: "tel://+5592991599272",
+            social: {
+                instagram: 'https://www.instagram.com/recoturismo_46/',
+                facebook: 'https://www.facebook.com/reco.nunes.9',
+                site: ''
+            },
+            offering: ["Anavilhanas", "Jaú", "Comunidades"],
+            address: "Avenida Presidente Vargas n°107",
+            addressLink: '',
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "agencies",
+        id: 11002,
+        title: "RM turismo",
+        content: {
+            description: "Trabalhamos com passeios no Jaú e no Anavilhanas. Fazemos trilhas, observação de pássaros, passeios de barco e muito mais.",
+            image: require('./exceptionalImage/agencies/reco.jpg'),
+            contacts: "tel://+5592993721155",
+            social: {
+                instagram: 'https://www.instagram.com/rmturismo_ofc/',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Trilha", "Grutas do Madadá", "Airão Velho", "Focagem noturna", "Observação de pássaros", "pesca esportiva", "Jaú", "Anavilhanas"],
+            address: "Avenida rui barbosa n 59",
+            addressLink: "https://goo.gl/maps/znZZ3bJRpUUVFgJh6",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "agencies",
+        id: 11003,
+        title: "Associação Anavilhanas de transporte Aquaviário de Novo Airão",
+        content: {
+            description: "AATRA. E uma associação de transporte Aquaviário, pronto a atender o público que queira conhecer as nossas belezas naturais, no parque nacional de anavilhanas e Jaú em Novo Airão.",
+            image: require('./exceptionalImage/agencies/eulerAATRA.jpg'),
+            contacts: "tel://+5592991314469",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Anavilhanas", "Jaú"],
+            address: "Rua Josefa savedra 92",
+            addressLink: "https://goo.gl/maps/Pfa1X2R2TJ2SN8vUA",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "agencies",
+        id: 11004,
+        title: "Jailton Melo Turismo",
+        content: {
+            description: "Meu trabalho é levar o conhecimento, mostrando aos meus clientes as belezas naturais do arquipélago Anavilhanas, do nosso município Novo Airão e etc.",
+            image: require('./exceptionalImage/agencies/reco.jpg'),
+            contacts: "tel://+5592993721155",
+            social: {
+                instagram: 'https://www.instagram.com/jailton_melo_turismo/',
+                facebook: 'https://www.facebook.com/jailton.melo.7127',
+                site: ''
+            },
+            offering: ["Trilhas aquáticas", "Árvore gigante", "Comunidades do Tiririca", "Comunidades do Santo Antônio", "Grutas do Madadá", "Airão vVelho"],
+            address: "Rua  Almerinda Malaquias n123, Bairro Santo Elias",
+            addressLink: "https://goo.gl/maps/znZZ3bJRpUUVFgJh6",
+            profile: ["adventure", "soft", "calm"],
         },
     },
 ]

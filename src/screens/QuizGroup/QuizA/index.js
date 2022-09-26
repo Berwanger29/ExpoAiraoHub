@@ -4,12 +4,13 @@ import {
     Main,
     TextContainer,
     Button,
-    LabelCountText,
-    QuestionText,
-    ButtonsContainer
+    ButtonsContainer,
 } from './styles';
 
 import SelectButton from '../../../components/_Screens/Quiz/SelectButton';
+import TextThin from '../../../components/TextThin'
+import TextRegular from '../../../components/TextRegular'
+import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
 
 import { Entypo } from '@expo/vector-icons';
 import Lottie from 'lottie-react-native';
@@ -81,12 +82,14 @@ const QuizA = () => {
             <Main>
 
                 <TextContainer>
-                    <LabelCountText>
-                        Questão 1 de 3
-                    </LabelCountText>
-                    <QuestionText>
-                        Qual das atividades abaixo você tem mais interesse ?
-                    </QuestionText>
+                    <SpaceText>
+                        <TextThin
+                            text='Questão 1 de 3'
+                        />
+                    </SpaceText>
+                    <TextRegular
+                        text='Qual das atividades abaixo você tem mais interesse ?'
+                    />
                 </TextContainer>
 
                 <ButtonsContainer>

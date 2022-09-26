@@ -3,12 +3,10 @@ import { ActivityIndicator, Alert } from 'react-native';
 import {
     Container,
     InputContainer,
-    LabelInput,
+    LabelContainer,
     RecoveryContainer,
-    RecoveryText,
     ButtonText,
     SignUpContainer,
-    SignUpText,
     Title,
     TitleContainer,
     UserInput,
@@ -26,6 +24,9 @@ import LoginAreaButton from '../../../components/LoginAreaButton';
 import Keyboard from '../../../components/KeyBoard';
 import { Entypo } from '@expo/vector-icons';
 
+import { TextTitle, TextSubTitle, TextThin } from '../../../components/Texts';
+
+
 const Login = () => {
 
     const navigation = useNavigation()
@@ -35,7 +36,6 @@ const Login = () => {
     const [password, setPassword] = useState('')
     const [showPassword, setShowPassword] = useState(true)
     const [iconEyeName, setIconEyeName] = useState('eye-with-line')
-
 
     function autoLogin() {
         const unsubscribe = auth.onAuthStateChanged(user => {
@@ -84,7 +84,6 @@ const Login = () => {
             })
     }
 
-
     function moveToSignUp() {
         navigation.navigate('SignUp')
     }
@@ -108,8 +107,6 @@ const Login = () => {
     }, [])
 
 
-
-
     return (
         <>
             {
@@ -124,16 +121,18 @@ const Login = () => {
                     <Keyboard>
                         <Container>
                             <TitleContainer>
-                                <Title>
-                                    Airão HUB
-                                </Title>
+                                <TextTitle
+                                    text='Airão Hub'
+                                />
                             </TitleContainer>
 
 
                             <InputContainer>
-                                <LabelInput>
-                                    Login
-                                </LabelInput>
+                                <LabelContainer>
+                                    <TextSubTitle
+                                        text='Login'
+                                    />
+                                </LabelContainer>
                                 <UserInput
                                     placeholder='Email'
                                     placeholderTextColor={theme.colors.light}
@@ -156,19 +155,16 @@ const Login = () => {
                                 </EyeInputContainer>
 
                                 <RecoveryContainer>
-                                    <RecoveryText>
-                                        Esqueceu sua senha ?
-                                    </RecoveryText>
+                                    <TextThin
+                                        text='É novo no aplicativo ?'
+                                    />
                                     <ButtonText
-                                        onPress={() => moveToRecovery()}
+                                        onPress={() => moveToSignUp()}
                                     >
-                                        <RecoveryText
-                                            style={{
-                                                color: theme.colors.green
-                                            }}
-                                        >
-                                            {' '} Recuperar.
-                                        </RecoveryText>
+                                        <TextThin
+                                            color={theme.colors.green}
+                                            text=' Cadastre-se'
+                                        />
                                     </ButtonText>
                                 </RecoveryContainer>
 
@@ -179,17 +175,16 @@ const Login = () => {
                             </InputContainer>
 
                             <SignUpContainer>
-                                <SignUpText>
-                                    É novo no aplicativo ?
-                                </SignUpText>
+                                <TextThin
+                                    text='Esqueceu sua senha ?'
+                                />
                                 <ButtonText
-                                    onPress={() => moveToSignUp()}
+                                    onPress={() => moveToRecovery()}
                                 >
-                                    <SignUpText
-                                        style={{
-                                            color: theme.colors.green
-                                        }}
-                                    >{' '}Cadastre-se</SignUpText>
+                                    <TextThin
+                                        color={theme.colors.green}
+                                        text=' Recuperar'
+                                    />
                                 </ButtonText>
                             </SignUpContainer>
                         </Container>

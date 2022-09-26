@@ -9,7 +9,7 @@ export const Container = styled.View`
 `
 
 export const Header = styled.View`
-
+    
 `
 
 export const SearchConatainer = styled.View`
@@ -37,7 +37,7 @@ export const SearchButton = styled.TouchableOpacity`
 
 export const Main = styled.View`
     flex: 1;
-    margin-top: ${RFValue(40)}px;
+    margin-top: ${RFValue(20)}px;
 `
 
 export const List = styled.FlatList`

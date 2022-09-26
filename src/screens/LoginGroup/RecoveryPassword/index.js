@@ -1,11 +1,11 @@
 import {
     Container,
-    TitleContainer,
-    Title,
+    Header,
     FormContainer,
     Input,
     ButtonContainer,
-    Text
+    BackButtonContainer,
+    TitleContainer
 } from "./styles"
 
 import { useState } from "react"
@@ -13,6 +13,8 @@ import BackButton from "../../../components/BackButton"
 import LoginAreaButton from "../../../components/LoginAreaButton"
 
 import { auth } from "../../../../firebase"
+import { Alert } from "react-native"
+import { TextTitle, TextRegular } from "../../../components/Texts"
 
 
 const RecoveryPassword = () => {
@@ -24,6 +26,10 @@ const RecoveryPassword = () => {
             .then(() => {
                 console.log(email)
                 console.log('email enviado')
+                Alert.alert(
+                    "Sucesso",
+                    "E-mail enviado. Verifique sua caixa de spam"
+                )
             })
             .catch((e) => {
                 console.log(e)
@@ -32,17 +38,21 @@ const RecoveryPassword = () => {
 
     return (
         <Container>
-            <TitleContainer>
-                <BackButton />
-                <Title>
-                    Recuperar senha
-                </Title>
-            </TitleContainer>
+            <Header>
+                <TitleContainer>
+                    <TextTitle
+                        text='Recuperar senha'
+                    />
+                </TitleContainer>
+                <BackButtonContainer>
+                    <BackButton />
+                </BackButtonContainer>
+            </Header>
 
             <FormContainer>
-                <Text>
-                    Digite o e-mail de recuperação de senha:
-                </Text>
+                <TextRegular
+                    text='Digite o e-mail de recuperação de senha:'
+                />
                 <Input
                     placeholder='email'
                     value={email}

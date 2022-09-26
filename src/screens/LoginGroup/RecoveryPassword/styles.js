@@ -7,30 +7,33 @@ export const Container = styled.View`
     background-color: ${(props) => props.theme.colors.light};
     padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
 `
-export const TitleContainer = styled.View`
+export const Header = styled.View`
     width: 100%;
+    padding-top: 70px;
+`
+export const TitleContainer = styled.View`
+    align-items: center;
+`
+
+
+export const BackButtonContainer = styled.View`
+    position: absolute;
 `
 export const Title = styled.Text`
     font-size:${RFValue(30)}px ;
     font-family: ${(props) => props.theme.fonts.black};
     align-self: center;
-    margin-top: 20px;
+    margin-top:60px;
 `
 export const FormContainer = styled.View`
     flex: 0.5;
     padding-top: 30px;
 `
-
-export const Text = styled.Text`
-    font-family: ${(props) => props.theme.fonts.regular};
-    font-size: ${RFValue(18)}px;
-    padding-bottom: 10px;
-`
 export const Input = styled.TextInput`
     background-color: ${(props) => props.theme.colors.gray};
     width: 100%;
     height: ${RFValue(50)}px;
-    margin-bottom: 10px;
+    margin-top: 20px;
     padding-left: 10px;
     border-radius: 5px;
 `

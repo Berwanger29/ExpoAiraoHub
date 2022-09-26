@@ -6,11 +6,10 @@ import {
     Container,
     Input,
     FormContainer,
-    Title,
     TitleContainer,
-    Text,
     EyeInputContainer,
-    EyeContainer
+    EyeContainer,
+    ButtonContainer
 } from './styles'
 
 import LoginAreaButton from '../../../components/LoginAreaButton'
@@ -20,6 +19,8 @@ import { auth } from '../../../../firebase'
 import Keyboard from '../../../components/KeyBoard'
 import { Entypo } from '@expo/vector-icons';
 import theme from '../../../global/styles/theme'
+import TextRegular from '../../../components/TextRegular'
+import TextTitle from '../../../components/TextTitle'
 
 
 const SignUp = () => {
@@ -69,23 +70,26 @@ const SignUp = () => {
     return (
         <Keyboard>
             <Container>
+
                 <TitleContainer>
-                    <BackButtonContainer>
-                        <BackButton />
-                    </BackButtonContainer>
-                    <Title>
-                        AiraoHub
-                    </Title>
+
+                    <TextTitle
+                        text='Airão Hub'
+                    />
                 </TitleContainer>
+                <BackButtonContainer>
+                    <BackButton />
+                </BackButtonContainer>
                 <FormContainer>
-                    <Text>
-                        Crie uma conta com e-mail e senha.
-                    </Text>
+                    <TextRegular
+                        text='Crie uma conta com e-mail e senha.'
+                    />
                     <Input
                         placeholder='email'
                         onChangeText={(e) => setEmail(e)}
                         returnKeyType='done'
                         keyboardType='email-address'
+                        style={{ marginTop: 15 }}
                     />
                     <EyeInputContainer>
                         <Input
@@ -107,10 +111,12 @@ const SignUp = () => {
                         secureTextEntry={showPassword}
                     />
                 </FormContainer>
-                <LoginAreaButton
-                    label='Criar conta'
-                    onPress={handleSignUp}
-                />
+                <ButtonContainer>
+                    <LoginAreaButton
+                        label='Criar conta'
+                        onPress={handleSignUp}
+                    />
+                </ButtonContainer>
             </Container>
         </Keyboard>
     )

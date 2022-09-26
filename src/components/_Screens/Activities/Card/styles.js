@@ -19,6 +19,9 @@ export const ImageCard = styled.Image`
 `
 
 export const Title = styled.Text`
+    font-family: ${props => props.theme.fonts.regular};
+    font-size:  ${RFValue(18)}px;
+    color: ${props => props.theme.colors.darkGreen};
     margin-top: 10px;
 `
 

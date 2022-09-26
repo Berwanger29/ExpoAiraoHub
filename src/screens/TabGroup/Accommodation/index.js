@@ -20,6 +20,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import data from '../../../../data'
 
 import { useNavigation } from '@react-navigation/native'
+import CardExternalPlatform from '../../../components/_Screens/Accommodation/CardExternalPlatform'
 
 const Accommodation = () => {
 
@@ -77,7 +78,9 @@ const Accommodation = () => {
                 </SearchConatainer>
             </Header>
             {hotel == '' &&
+
                 <Main>
+                    <CardExternalPlatform />
                     <List
                         showsVerticalScrollIndicator={false}
                         data={accommodationData}

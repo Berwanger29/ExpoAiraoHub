@@ -1,6 +1,7 @@
+import theme from "../../global/styles/theme"
+import TextRegular from "../TextRegular"
 import {
     Container,
-    Label
 } from "./styles"
 
 
@@ -12,7 +13,11 @@ const LoginAreaButton = ({ label, onPress }) => {
                 elevation: 5
             }}
         >
-            <Label>{label}</Label>
+
+            <TextRegular
+                color={theme.colors.light}
+                text={label}
+            />
         </Container>
     )
 }

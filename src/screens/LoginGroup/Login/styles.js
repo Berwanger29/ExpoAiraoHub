@@ -16,16 +16,8 @@ export const TitleContainer = styled.View`
     align-items: center;
     justify-content: center;
 `
-export const Title = styled.Text`
-    font-size:${RFValue(30)}px ;
-    font-family: ${(props) => props.theme.fonts.black};
-`
 
-export const LabelInput = styled.Text`
-    font-size: ${RFValue(28)}px;
-    font-family: ${(props) => props.theme.fonts.bold};
-
-
+export const LabelContainer = styled.View`
     align-self: flex-start;
     margin-bottom: 10px;
 `
@@ -68,22 +60,11 @@ export const RecoveryContainer = styled.View`
     margin-bottom: 15px;
     flex-direction: row;
 `
-export const RecoveryText = styled.Text`
-    font-family: ${props => props.theme.fonts.light};
-    font-size: ${RFValue(14)}px;
-
-    color: ${props => props.theme.colors.black};
-`
 
 export const SignUpContainer = styled.View`
     flex-direction: row;
     position: absolute;
     bottom: 11px;
-`
-
-export const SignUpText = styled.Text`
-    font-size: ${RFValue(14)}px;
-    font-family: ${(props) => props.theme.fonts.light};
 `
 
 export const ButtonText = styled.TouchableOpacity`

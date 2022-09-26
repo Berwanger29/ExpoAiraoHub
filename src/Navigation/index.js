@@ -5,7 +5,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
 import theme from "../global/styles/theme";
-import { RFValue } from "react-native-responsive-fontsize";
 
 import {
     Entypo,
@@ -30,6 +29,7 @@ import Scripts from "../screens/TabGroup/Scripts";
 import Activities from "../screens/TabGroup/Activities";
 import Map from "../screens/TabGroup/Map";
 import ItemSelected from "../screens/TabGroup/ItemSelected";
+import AccomodationExternal from "../screens/TabGroup/AccomodationExternal";
 import User from "../screens/TabGroup/User";
 import UserAbout from "../screens/TabGroup/UserAbout";
 import UserPrivacy from "../screens/TabGroup/UserPrivacy";
@@ -183,7 +183,6 @@ const Navigation = () => {
                     component={QuizStack}
                 />
 
-
                 <Stack.Screen
                     name="TabNavigator"
                     component={TabNavigator}
@@ -197,6 +196,11 @@ const Navigation = () => {
                 <Stack.Screen
                     name="ItemSelected"
                     component={ItemSelected}
+                />
+
+                <Stack.Screen
+                    name="AccomodationExternal"
+                    component={AccomodationExternal}
                 />
 
                 <Stack.Screen

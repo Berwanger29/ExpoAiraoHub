@@ -7,35 +7,26 @@ export const Container = styled.View`
     background-color: ${(props) => props.theme.colors.light};
     padding: ${StatusBar.currentHeight + 5}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
     align-items: center;
-    justify-content: space-between;
 `
 export const TitleContainer = styled.View`
-    height: 25%;
+    align-items: center;
     width: 100%;
+    padding-top: 80px;
+    margin-bottom: 30px;
 `
 
 export const BackButtonContainer = styled.View`
-    align-self: flex-start;
-    
-`
-export const Title = styled.Text`
-    font-size:${RFValue(30)}px ;
-    font-family: ${(props) => props.theme.fonts.black};
-    align-self: center;
+    position: absolute;
+    top: ${StatusBar.currentHeight + 10}px;
+    left: 15px;
 `
 
-export const Text = styled.Text`
-    font-family: ${(props) => props.theme.fonts.regular};
-    font-size: ${RFValue(18)}px;
-    margin-bottom: 20px;
-`
 export const FormContainer = styled.View`
     width: 100%;
     height: 50%;
 `
 export const Input = styled.TextInput`
     background-color: ${(props) => props.theme.colors.gray};
-
     width: 100%;
     height: ${RFValue(50)}px;
     margin-bottom: 10px;
@@ -54,4 +45,10 @@ export const EyeContainer = styled.TouchableOpacity`
     width: 30px;
     align-items: center;
     justify-content: center;
+`
+export const ButtonContainer = styled.View`
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
 `

@@ -39,11 +39,6 @@ const Card = ({ id, title, image, price, type }) => {
             <Title>
                 {title}
             </Title>
-
-            <PriceLabel
-                price={price}
-                label={type}
-            />
         </Container>
     )
 }

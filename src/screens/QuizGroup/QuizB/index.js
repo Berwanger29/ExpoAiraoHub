@@ -5,8 +5,6 @@ import {
     Main,
     TextContainer,
     Button,
-    LabelCountText,
-    QuestionText,
     ButtonsContainer,
     ButtonBackContainer,
     AnimationContainer
@@ -24,6 +22,9 @@ import drink from '../../../../assets/animations/drink.json'
 
 import { useNavigation } from '@react-navigation/native';
 import { QuizContext } from '../../../contexts/QuizContext';
+import TextThin from '../../../components/TextThin';
+import TextRegular from '../../../components/TextRegular';
+import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
 
 const QuizB = () => {
 
@@ -90,12 +91,14 @@ const QuizB = () => {
             <Main>
 
                 <TextContainer>
-                    <LabelCountText>
-                        Questão 2 de 3
-                    </LabelCountText>
-                    <QuestionText>
-                        Em um dia de sol, o que você prefere ?
-                    </QuestionText>
+                    <SpaceText>
+                        <TextThin
+                            text='Questão 2 de 3'
+                        />
+                    </SpaceText>
+                    <TextRegular
+                        text='Em um dia de sol, o que você prefere ?'
+                    />
                 </TextContainer>
 
                 <ButtonsContainer>

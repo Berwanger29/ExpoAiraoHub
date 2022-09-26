@@ -13,8 +13,3 @@ export const Container = styled.TouchableOpacity`
     border-radius: 5px;
     align-self: center;
 `
-
-export const Label = styled.Text`
-    color: ${(props) => props.theme.colors.light};
-    font-family: ${(props) => props.theme.fonts.regular};
-`

@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import theme from '../../../../global/styles/theme'
+import TextRegular from '../../../TextRegular'
 import {
     Container,
     LabelOption
@@ -16,9 +18,10 @@ const SelectButton = ({ text, onPress, changeColor }) => {
             onPress={onPress}
             isFocused={changeColor}
         >
-            <LabelOption>
-                {text}
-            </LabelOption>
+            <TextRegular
+                color={theme.colors.light}
+                text={text}
+            />
         </Container>
     )
 }
