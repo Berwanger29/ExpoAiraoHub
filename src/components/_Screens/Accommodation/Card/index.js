@@ -1,3 +1,5 @@
+import theme from '../../../../global/styles/theme'
+import { TextRegular } from '../../../Texts'
 import {
     Container,
     Image,
@@ -13,9 +15,10 @@ const Card = ({ title, image, onPress }) => {
             <Image
                 source={image}
             />
-            <Title>
-                {title}
-            </Title>
+            <TextRegular
+                text={title}
+                color={theme.colors.darkGreen}
+            />
 
         </Container>
     )

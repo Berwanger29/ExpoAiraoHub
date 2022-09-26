@@ -1,11 +1,13 @@
 import {
     ButtonContainer,
     ImageCard,
-    Title
+    TitleContainer
 } from './styles'
 
 import { LinearGradient } from 'expo-linear-gradient'
 import { useNavigation } from '@react-navigation/native'
+import { TextRegular } from '../../../Texts'
+import theme from '../../../../global/styles/theme'
 
 const HomeCard = ({ id, title, image }) => {
 
@@ -31,9 +33,12 @@ const HomeCard = ({ id, title, image }) => {
                     locations={[0.2, 1]}
                     style={{ borderRadius: 5, flex: 1, justifyContent: 'center' }}
                 >
-                    <Title>
-                        {title}
-                    </Title>
+                    <TitleContainer>
+                        <TextRegular
+                            text={title}
+                            color={theme.colors.light}
+                        />
+                    </TitleContainer>
                 </LinearGradient>
             </ImageCard>
         </ButtonContainer >

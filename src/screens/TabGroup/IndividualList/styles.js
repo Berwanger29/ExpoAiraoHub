@@ -21,12 +21,13 @@ export const Title = styled.Text`
     font-size: ${RFValue(24)}px;
     color: ${(props) => props.theme.colors.darkGreen};
 `
-export const SearchConatainer = styled.View`
+export const SearchContainer = styled.View`
     flex-direction: row;
     height: ${RFValue(40)}px;
     align-items: flex-start;
     background-color: ${props => props.theme.colors.light};
     border-radius: 6px;
+    margin-top: 20px;
 `
 
 export const Input = styled.TextInput`

@@ -3,7 +3,7 @@ import {
     HorizontalView,
     LabelButton,
     NewListButton,
-    Title,
+    TitleContainer,
     TopContainer
 } from "./styles";
 
@@ -13,6 +13,8 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { RFValue } from "react-native-responsive-fontsize";
 
 import { useNavigation } from '@react-navigation/native'
+import { TextSubTitle, TextThin } from "../../../Texts";
+import theme from "../../../../global/styles/theme";
 
 export const Carroussel = ({ title, data }) => {
 
@@ -23,19 +25,21 @@ export const Carroussel = ({ title, data }) => {
             horizontal
         >
             <TopContainer>
-                <Title>
-                    {title}
-                </Title>
-
+                <TitleContainer>
+                    <TextSubTitle
+                        text={title}
+                        color={theme.colors.darkGreen}
+                    />
+                </TitleContainer>
                 <NewListButton
-                    onPress={() => navigation.navigate('IndividualList',{
+                    onPress={() => navigation.navigate('IndividualList', {
                         title,
                         data
                     })}
                 >
-                    <LabelButton>
-                        ver mais
-                    </LabelButton>
+                    <TextThin
+                        text='ver mais'
+                    />
                     <MaterialCommunityIcons name="arrow-right-thin" size={RFValue(18)} color="black" />
                 </NewListButton>
             </TopContainer>

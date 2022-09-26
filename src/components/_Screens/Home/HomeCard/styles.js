@@ -4,10 +4,8 @@ import { RFValue } from "react-native-responsive-fontsize"
 export const ButtonContainer = styled.TouchableOpacity`
     width: ${RFValue(270)}px;
     height: ${RFValue(208)}px;
-
     margin-right: 20px;
     border-radius: 5px;
-    
 `
 
 export const ImageCard = styled.ImageBackground`
@@ -15,12 +13,7 @@ export const ImageCard = styled.ImageBackground`
     height: 100%;
     flex: 1;
 `
-
-export const Title = styled.Text`
-    font-family: ${props => props.theme.fonts.regular};
-    font-size: ${RFValue(20)}px;
-    color: ${props => props.theme.colors.light};
-
+export const TitleContainer = styled.View`
     position: absolute;
     bottom: 20;
     left: 20;

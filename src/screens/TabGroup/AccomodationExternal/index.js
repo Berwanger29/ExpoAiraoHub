@@ -28,7 +28,7 @@ const AccomodationExternal = () => {
             <Main>
                 <TextContainer>
                     <Text>
-                        As casas de temporada em Novo Airão estão disponíveis por meio de plataformas especializadas neste tipo de servicço.
+                        As casas de temporada em Novo Airão estão disponíveis por meio de plataformas especializadas neste tipo de serviço.
                     </Text>
                 </TextContainer>
                 <IconsContainer>

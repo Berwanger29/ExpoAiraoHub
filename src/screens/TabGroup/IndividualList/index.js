@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import {
     Container,
     ContainerBackButton,
@@ -7,16 +7,17 @@ import {
     Input,
     Main,
     SearchButton,
-    SearchConatainer,
+    SearchContainer,
 } from './styles'
 
 
-import Title from '../../../components/Title'
+import { TextTitle } from '../../../components/Texts'
 import BackButton from '../../../components/BackButton'
 import Card from '../../../components/_Screens/Accommodation/Card'
 import { AntDesign } from '@expo/vector-icons';
 
 import { useNavigation } from '@react-navigation/native'
+import theme from '../../../global/styles/theme'
 
 
 const IndividualList = ({ route }) => {
@@ -52,10 +53,11 @@ const IndividualList = ({ route }) => {
                 <BackButton />
             </ContainerBackButton>
             <Header>
-                <Title
+                <TextTitle
                     text={title}
+                    color={theme.colors.darkGreen}
                 />
-                <SearchConatainer
+                <SearchContainer
                     style={{
                         elevation: 5
                     }}
@@ -70,7 +72,7 @@ const IndividualList = ({ route }) => {
                     >
                         <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
                     </SearchButton>
-                </SearchConatainer>
+                </SearchContainer>
             </Header>
             {searchInput == '' &&
                 <Main>

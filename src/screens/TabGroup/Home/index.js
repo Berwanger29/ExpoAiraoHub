@@ -2,7 +2,6 @@ import { useState } from 'react'
 import {
     CarrousselContainer,
     Container,
-    Greetings,
     Header,
     Main,
     SearchConatainer,
@@ -21,6 +20,7 @@ import Carroussel from '../../../components/_Screens/Home/Carrousel'
 import theme from '../../../global/styles/theme'
 import data from '../../../../data'
 import HomeSearchCard from '../../../components/_Screens/Home/HomeSearchCard';
+import { TextTitle } from '../../../components/Texts';
 
 
 
@@ -90,9 +90,9 @@ const Home = () => {
                 <UserButtonContainer>
                     <UserButton />
                 </UserButtonContainer>
-                <Greetings>
-                    Olá
-                </Greetings>
+                <TextTitle
+                    text='Olá'
+                />
                 <SearchConatainer
                     style={{
                         elevation: 5
@@ -116,10 +116,6 @@ const Home = () => {
                     <CarrousselContainer
                         showsVerticalScrollIndicator={false}
                     >
-                        {/* <Carroussel
-                            title="O que visitar ?"
-                        /> */}
-
                         <Carroussel
                             title="Dentro da cidade"
                             data={inCityData}

@@ -16,6 +16,7 @@ export const SearchConatainer = styled.View`
     align-items: flex-start;
     background-color: ${props => props.theme.colors.light};
     border-radius: 6px;
+    margin-top: 25px;
 `
 
 export const Input = styled.TextInput`
@@ -31,13 +32,6 @@ export const SearchButton = styled.TouchableOpacity`
 
     align-items: center;
     justify-content: center;
-`
-
-export const Greetings = styled.Text`
-    font-family: ${(props) => props.theme.fonts.black};
-    font-size: ${RFValue(26)}px;
-    margin-top: 10px;
-    margin-bottom: 25px;
 `
 
 export const Main = styled.View`
