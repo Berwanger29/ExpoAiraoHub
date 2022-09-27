@@ -775,7 +775,7 @@ export default [
         title: "Pousada Novo Airão",
         content: {
             description: "Somos uma pousada aconchegante, sossegada, ambiente familiar, com ótimas instalações pra receber você e sua família!",
-            image: require('./exceptionalImage/hotels/pousadaNovoAirao.jpg'),
+            image: require('./exceptionalImage/hotels/pousadaNovoAirao.png'),
             contacts: "tel://+5592984689749",
             social: {
                 instagram: 'https://www.instagram.com/pousadanovoairao/',
@@ -793,9 +793,9 @@ export default [
         id: 6001,
         title: "Pousada Paraíso",
         content: {
-            description: "Nós oferecemos uma segunda casa para as pessoas, com uma hospedagem segura e confortável, servindo à todos que quiserem se hospedar com segurança e tranquilidade. Damos aos viajantes a garantia de que podem andar pela cidade com tranquilidade, que terão onde descansar e relaxar.",
-            image: require('./exceptionalImage/hotels/pousadaParaiso.jpg'),
-            contacts: "tel://+559298412-1122",
+            description: "Com quartos climatizados, a pousada Paraiso está localizado em Novo Airão, á 115,01 km de Manaus. Disponibiliza quartos com acesso Wi-Fi gratuito e garagem privativa. A cidade está situada numa paisagem natural única, e para quem não sabe a pousada é mais especial, por ser lugar de reprodução da espécie arbórea rosa do deserto. E para o amante da espécie oferece uma verdadeira experiência.",
+            image: require('./exceptionalImage/hotels/pousadaParaiso.jpeg'),
+            contacts: "tel://+5592984121122",
             social: {
                 instagram: "https://instagram.com/pousadaparaisoairao?igshid=YmMyMTA2M2Y=",
                 facebook: '',
@@ -803,10 +803,8 @@ export default [
             },
             offering: ["Internet", "Estacionamento"],
             address: "",
-            addressLink: "",
-            type: 'diária',
+            addressLink: "https://goo.gl/maps/MMoy9RruEdax8uBaA",
             profile: ["adventure", "soft", "calm"],
-            prices: '80',
         },
     },
     {
@@ -824,10 +822,8 @@ export default [
             },
             offering: ["internet", "vista para o rio", "estacionamento", "piscina", "café da manhã", "flutuante", "deck com acesso ao rio", "passeios e expedições", "casas de temporada", "restaurante", "bar", "área de lazer."],
             address: "",
-            addressLink: "",
-            type: 'diária',
+            addressLink: "https://goo.gl/maps/xbCDvQHBsnwCwYxx9",
             profile: ["adventure", "soft", "calm"],
-            prices: '500',
         },
     },
     {
@@ -837,18 +833,16 @@ export default [
         content: {
             description: "Pousada Cabocla, fica localizada na Rua Rui Barbosa, centro n° 52, cidade de Novo Airão, próximo a praça do dinossauro, restaurantes, café da manhã, supermercado, drogarias e fórum. Contempla uma área ampla para os clientes ficarem a vontade, os apartamentos são equipados com ar condicionado e TVs a cabo.",
             image: require('./exceptionalImage/hotels/pousadaCabocla.jpg'),
-            contacts: "tel://+559299235-7141",
+            contacts: "tel://+5592992357141",
             social: {
                 instagram: '',
-                facebook: '"https://web.facebook.com/caboclapousada"',
+                facebook: 'https://web.facebook.com/caboclapousada',
                 site: ''
             },
             offering: ["Internet", "estacionamento."],
             address: "",
-            addEventListener: "",
-            type: 'diária',
+            addressLink: 'https://goo.gl/maps/Gzf3uxVo69P9Tcpc9',
             profile: ["adventure", "soft", "calm"],
-            prices: '100',
         },
     },
     {
@@ -866,10 +860,8 @@ export default [
             },
             offering: ["Internet, estacionamento."],
             address: "",
-            addressLink: "",
-            type: 'diária',
+            addressLink: "https://goo.gl/maps/6t3VA1UFCgWb5DdZ8",
             profile: ["adventure", "soft", "calm"],
-            prices: '1370',
         },
     },
     {
@@ -879,7 +871,7 @@ export default [
         content: {
             description: " Somos uma pousada de charme  situada no município de Novo Airão, à 2h30 de Manaus. A estrutura dispõe de 20 apartamentos com vista panorâmica, restaurante com pratos regionais, área para eventos, piscina e trilha, além de uma vasta área verde, cenário perfeito para quem visita à região.",
             image: require('./exceptionalImage/hotels/amazonParkSuite.jpg'),
-            contacts: "tel://+559299159-1082",
+            contacts: "tel://+5592991591082",
             social: {
                 instagram: 'https://www.instagram.com/amazonia.parksuites/',
                 facebook: '',
@@ -908,10 +900,8 @@ export default [
             },
             offering: ["Internet", "estacionamento", "pacotes com refeições"],
             address: "",
-            addressLink: "",
-            type: 'diária',
+            addressLink: "https://goo.gl/maps/gT2c5rNvZt3fTj5j6",
             profile: ["adventure", "soft", "calm"],
-            prices: '100',
         },
 
     },
@@ -930,10 +920,8 @@ export default [
             },
             offering: ["Internet", "estacionamento"],
             address: "",
-            addressLink: "",
-            type: 'diária',
+            addressLink: "https://goo.gl/maps/4R6AhxTNdZN5UZkt9",
             profile: ["adventure", "soft", "calm"],
-            prices: '1317',
         },
     },
     {
@@ -951,10 +939,30 @@ export default [
             },
             offering: ["Internet", "estacionamento"],
             address: "",
-            addressLink: "",
+            addressLink: "https://goo.gl/maps/cyDSJcYhAY1xY3xN9",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '1317',
+        },
+    },
+    {
+        type: "hotels",
+        id: 6009,
+        title: "Lanna Pousada",
+        content: {
+            description: "Uma pousada simples mais  bem aconchegante.",
+            image: require('./exceptionalImage/hotels/pousadaLanna.png'),
+            contacts: "tel://+5592991600526",
+            social: {
+                instagram: 'https://www.instagram.com/hotel_jandira/',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Internet", "estacionamento"],
+            address: "",
+            addressLink: "https://goo.gl/maps/ctSrKB19BQC5k18f8",
+            type: 'diária',
+            profile: ["adventure", "soft", "calm"],
         },
     },
     {

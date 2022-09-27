@@ -15,10 +15,12 @@ export const SubTitle = styled.Text`
 export const Regular = styled.Text`
     font-family: ${(props) => props.theme.fonts.regular};
     font-size: ${RFValue(18)}px;
+    text-align: ${(props) => props.format ? props.format : 'left'};
     color: ${(props) => props.color ? props.color : 'black'};
 `
 export const Thin = styled.Text`
     font-family: ${(props) => props.theme.fonts.light};
     font-size: ${RFValue(14)}px;
     color: ${(props) => props.color ? props.color : 'black'};
+    
 `

@@ -18,6 +18,7 @@ export const SearchConatainer = styled.View`
     align-items: flex-start;
     background-color: ${props => props.theme.colors.light};
     border-radius: 6px;
+    margin-top: 25px;
 `
 
 export const Input = styled.TextInput`

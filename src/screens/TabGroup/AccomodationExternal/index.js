@@ -6,13 +6,13 @@ import {
     IconsContainer,
     ImageIcon,
     Main,
-    Text,
     TextContainer,
-    Title,
 } from "./styles"
 
 import BackButton from "../../../components/BackButton"
 import * as Linking from 'expo-linking'
+import { TextRegular, TextSubTitle } from "../../../components/Texts"
+import theme from "../../../global/styles/theme"
 
 const AccomodationExternal = () => {
     return (
@@ -21,15 +21,18 @@ const AccomodationExternal = () => {
                 <ContainerBackButton>
                     <BackButton />
                 </ContainerBackButton>
-                <Title>
-                    Casas de temporada
-                </Title>
+
+                <TextSubTitle
+                    text='Casas de temporada'
+                    color={theme.colors.darkGreen}
+                />
             </Header>
             <Main>
                 <TextContainer>
-                    <Text>
-                        As casas de temporada em Novo Airão estão disponíveis por meio de plataformas especializadas neste tipo de serviço.
-                    </Text>
+                    <TextRegular
+                        text='As casas de temporada em Novo Airão estão disponíveis por meio de plataformas especializadas neste tipo de serviço.'
+                        format='justify'
+                    />
                 </TextContainer>
                 <IconsContainer>
                     <IconButton

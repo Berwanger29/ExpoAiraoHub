@@ -1,15 +1,20 @@
 import {
-    OptionsText,
-    Dot
+    Container,
+    Dot, SpaceItem
 } from './styles'
+import { TextThin } from '../../../Texts'
 
 const OptionalText = ({ text }) => {
     return (
         <>
-            <Dot />
-            <OptionsText>
-                {text}
-            </OptionsText>
+            <Container>
+                <Dot />
+                <SpaceItem>
+                    <TextThin
+                        text={text}
+                    />
+                </SpaceItem>
+            </Container>
         </>
     )
 }

@@ -20,17 +20,7 @@ export const ContainerBackButton = styled.View`
     top: 10px;
     left: 5px;
 `
-export const Title = styled.Text`
-    font-family: ${(props) => props.theme.fonts.bold};
-    font-size: ${RFValue(22)}px;
-    color: ${(props) => props.theme.colors.green};
-`
 
-export const Text = styled.Text`
-    font-family: ${props => props.theme.fonts.regular};
-    font-size: ${RFValue(18)}px;
-    text-align: justify;
-`
 export const TextContainer = styled.View`
     margin-top: 30px;
     margin-bottom: 30px;

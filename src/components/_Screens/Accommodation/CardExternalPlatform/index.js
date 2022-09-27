@@ -1,9 +1,10 @@
 import {
     Container,
-    Title,
 } from "./styles"
 
 import { useNavigation } from '@react-navigation/native';
+import { TextRegular } from "../../../Texts";
+import theme from "../../../../global/styles/theme";
 
 const CardExternalPlatform = () => {
 
@@ -17,9 +18,11 @@ const CardExternalPlatform = () => {
                 elevation: 2
             }}
         >
-            <Title>
-                Casas de temporada
-            </Title>
+            <TextRegular
+                text='Casas de temporada'
+                color={theme.colors.darkGreen}
+                format='justify'
+            />
         </Container>
     )
 }

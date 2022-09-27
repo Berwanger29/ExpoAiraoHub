@@ -19,6 +19,7 @@ import ButtonLink from "../../../components/_Screens/ItemSelected/ButtonLink";
 import OptionalText from "../../../components/_Screens/ItemSelected/OptionalText";
 
 import data from "../../../../data";
+import { TextSubTitle } from "../../../components/Texts";
 
 
 const ItemSelected = ({ route }) => {
@@ -55,9 +56,9 @@ const ItemSelected = ({ route }) => {
                 </ImageContainer>
 
                 <TextContentContainer>
-                    <Title>
-                        {itemData.title}
-                    </Title>
+                    <TextSubTitle
+                        text={itemData.title}
+                    />
                     <Line />
                     <MainText>
                         {itemData.content.description}

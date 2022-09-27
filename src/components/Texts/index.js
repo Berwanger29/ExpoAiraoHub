@@ -25,10 +25,11 @@ export function TextSubTitle({ text, color }) {
     )
 }
 
-export function TextRegular({ text, color }) {
+export function TextRegular({ text, color, format }) {
     return (
         <Regular
             color={color}
+            format={format}
         >
             {text}
         </Regular>

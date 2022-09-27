@@ -11,7 +11,6 @@ import {
 
 import UserButton from '../../../components/UserButton'
 import UserButtonContainer from '../../../components/UserButtonContiner'
-import Title from '../../../components/Title'
 import Card from '../../../components/_Screens/Accommodation/Card'
 import { AntDesign } from '@expo/vector-icons';
 
@@ -21,6 +20,8 @@ import data from '../../../../data'
 
 import { useNavigation } from '@react-navigation/native'
 import CardExternalPlatform from '../../../components/_Screens/Accommodation/CardExternalPlatform'
+import { TextSubTitle } from '../../../components/Texts'
+import theme from '../../../global/styles/theme'
 
 const Accommodation = () => {
 
@@ -57,8 +58,10 @@ const Accommodation = () => {
                 <UserButtonContainer>
                     <UserButton />
                 </UserButtonContainer>
-                <Title
-                    text="Hospedagem"
+
+                <TextSubTitle
+                    text='Hospedagem'
+                    color={theme.colors.darkGreen}
                 />
                 <SearchConatainer
                     style={{
