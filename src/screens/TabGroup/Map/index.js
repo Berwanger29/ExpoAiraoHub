@@ -6,10 +6,10 @@ import {
     Main,
 } from "./styles"
 
-import Title from '../../../components/Title'
 import UserButton from "../../../components/UserButton"
 import UserButtonContainer from "../../../components/UserButtonContiner"
 import Buttons from "../../../components/_Screens/Map/Buttons"
+import { TextSubTitle } from "../../../components/Texts"
 
 import {
     MaterialCommunityIcons,
@@ -28,7 +28,6 @@ import _Airplane from "../../../components/_Screens/Map/_Airplane"
 import _Boat from "../../../components/_Screens/Map/_Boat"
 
 
-
 const Map = () => {
 
     const [isFocused, setIsFocused] = useState(true)
@@ -44,10 +43,13 @@ const Map = () => {
                 <UserButtonContainer>
                     <UserButton />
                 </UserButtonContainer>
+                <TextSubTitle
+                    text='Como chegar'
+                    color={theme.colors.darkGreen}
+                />
             </Header>
-            <Title
-                text="Como chegar"
-            />
+
+
             <ButtonsContainer>
                 <Buttons
                     onPress={() => handleFocuesd('carro')}

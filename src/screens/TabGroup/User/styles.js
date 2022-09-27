@@ -23,6 +23,8 @@ export const UserIcon = styled.View`
     align-items: center;
     justify-content: center;
     align-self: center;
+
+    margin-bottom: 30px;
 `
 
 export const ContainerBackButton = styled.View`

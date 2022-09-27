@@ -3,7 +3,6 @@ import { TextRegular } from '../../../Texts'
 import {
     Container,
     Image,
-    Title
 } from './styles'
 
 const Card = ({ title, image, onPress }) => {

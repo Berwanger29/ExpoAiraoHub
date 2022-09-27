@@ -46,7 +46,6 @@ const AccomodationExternal = () => {
                             style={{
                                 backgroundColor: '#E21A5F',
                                 borderRadius: 5,
-                                elevation: 3
                             }}
                         />
                     </IconButton>

@@ -5,12 +5,10 @@ import {
     TextContent
 } from './styles'
 
-import TextMap from "../TextMap";
 import TitleMap from "../TitleMap";
-import { Feather } from '@expo/vector-icons'
+import { Feather } from '@expo/vector-icons';
 import theme from '../../../../global/styles/theme';
-
-const mapLink = 'https://goo.gl/maps/q1HGYamtj4RF1Fy8A'
+import { TextRegular } from '../../../Texts';
 
 
 const _Car = () => {
@@ -21,8 +19,8 @@ const _Car = () => {
                 title={'Veículo pessoal'}
             />
 
-            <TextMap
-                text={'Para chegar em Novo Airão é necessário pegar  rodovia AM-070, que passa pela ponte Phelippe Daou e após passar pelo banho do Miriti, entrar na primeira saída para a AM-352 e seguir até o final. A viagem tem uma duração média de duas horas e meia.'}
+            <TextRegular
+                text='Para chegar em Novo Airão é necessário pegar  rodovia AM-070, que passa pela ponte Phelippe Daou e após passar pelo banho do Miriti, entrar na primeira saída para a AM-352 e seguir até o final. A viagem tem uma duração média de duas horas e meia.'
             />
 
             <MapLinkContainer

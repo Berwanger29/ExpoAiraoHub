@@ -10,13 +10,6 @@ export const Image = styled.Image`
     margin-bottom: 15px;
     border-radius: 5px;
 `
-
-export const Title = styled.Text`
-    font-family: ${props => props.theme.fonts.regular};
-    font-size:  ${RFValue(18)}px;
-    color: ${props => props.theme.colors.darkGreen};
-`
-
 export const PriceText = styled.Text`
     font-family: ${props => props.theme.fonts.regular};
     font-size: ${RFValue(14)}px;

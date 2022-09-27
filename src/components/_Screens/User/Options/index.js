@@ -1,12 +1,12 @@
 import {
     Container,
-    TextOption,
     Line,
     Circle,
     SubContainer,
     Button
 } from './styles'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { TextRegular } from '../../../Texts';
 
 const Options = ({ text, nameIcon, onPress }) => {
     return (
@@ -19,9 +19,9 @@ const Options = ({ text, nameIcon, onPress }) => {
                     <Circle>
                         <MaterialCommunityIcons name={nameIcon} size={20} color="black" />
                     </Circle>
-                    <TextOption>
-                        {text}
-                    </TextOption>
+                    <TextRegular
+                        text={text}
+                    />
                 </SubContainer>
                 <Button
                     activeOpacity={0.6}

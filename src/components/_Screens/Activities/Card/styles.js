@@ -10,6 +10,7 @@ export const Container = styled.TouchableOpacity`
 export const ImageContainer = styled.View`
     width: 100%;
     height: ${RFValue(221)}px;
+    margin-bottom: 10px;
 `
 
 export const ImageCard = styled.Image`
@@ -18,12 +19,7 @@ export const ImageCard = styled.Image`
     border-radius: 5px;
 `
 
-export const Title = styled.Text`
-    font-family: ${props => props.theme.fonts.regular};
-    font-size:  ${RFValue(18)}px;
-    color: ${props => props.theme.colors.darkGreen};
-    margin-top: 10px;
-`
+
 
 export const PriceContainer = styled.View`
     flex-direction: row;

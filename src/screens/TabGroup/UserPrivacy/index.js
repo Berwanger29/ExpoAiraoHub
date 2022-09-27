@@ -1,35 +1,32 @@
 import BackButton from "../../../components/BackButton";
+import { TextRegular, TextSubTitle } from "../../../components/Texts";
 import {
-    AboutTitle,
     Container,
-    ContainerBackButton,
     Header,
     Main,
     Scroll,
-    Text,
+    TitleContainer,
 } from "./styles";
 
 
 const UserPrivacy = () => {
-
-    
-
     return (
         <Container>
-            <ContainerBackButton>
-                <BackButton />
-            </ContainerBackButton>
             <Header>
-
-                <AboutTitle>
-                    Privacidade
-                </AboutTitle>
+                
+                    <BackButton />
+                
+                <TitleContainer>
+                    <TextSubTitle
+                        text='Privacidade'
+                    />
+                </TitleContainer>
             </Header>
             <Main>
                 <Scroll>
-
-                    <Text>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <TextRegular
+                        format='justify'
+                        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec molestie luctus ex, id maximus enim pellentesque
                         vitae. Cras vel imperdiet ipsum, sit amet tempor mi.
                         Curabitur in arcu justo. Donec auctor ante semper dictum
@@ -60,9 +57,8 @@ const UserPrivacy = () => {
                         Sed et volutpat sapien. Class aptent taciti sociosqu ad
                         litora torquent per conubia nostra, per inceptos himenaeos.
                         Nulla condimentum, enim eget egestas volutpat, metus justo
-                        ullamcorper ipsum, id mattis lacus leo nec risus.
-                    </Text>
-
+                        ullamcorper ipsum, id mattis lacus leo nec risus.'
+                    />
                 </Scroll>
             </Main>
         </Container>

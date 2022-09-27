@@ -21,6 +21,8 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import { auth } from '../../../../firebase';
 import { useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { TextSubTitle } from '../../../components/Texts';
+import theme from '../../../global/styles/theme';
 
 
 const User = () => {
@@ -65,9 +67,9 @@ const User = () => {
     return (
         <Container>
             <Header>
-                
-                    <BackButton />
-                
+
+                <BackButton />
+
                 <UserIcon>
                     <FontAwesome5
                         name="user-alt"
@@ -75,11 +77,12 @@ const User = () => {
                         color="black"
                     />
                 </UserIcon>
+                <TextSubTitle
+                    text="Configurações da conta"
+                    color={theme.colors.darkGreen}
+                />
             </Header>
             <Main>
-                <Title
-                    text="Configurações da conta"
-                />
                 <OptionsContainer>
                     <Options
                         text='Informações do usuário'

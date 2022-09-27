@@ -11,34 +11,18 @@ export const Container = styled.View`
 
 export const Header = styled.View`
     width: 100%;
-    align-items: center;
     justify-content: center;
-    margin-top: 50px;
 `
-export const ContainerBackButton = styled.View`
-    position: absolute;
-    top: 45px;
-    left: 15px;
+export const TitleContainer = styled.View`
+    padding-top: 20px;
+    align-self: center;
 `
 
 export const Main = styled.View`
     flex: 1;
-`
-
-export const AboutTitle = styled.Text`
-     font-family: ${(props) => props.theme.fonts.bold};
-     font-size: ${RFValue(28)}px;
-     color: ${(props) => props.theme.colors.black};
-     margin: 10px 0px 15px 0px;
+    margin-top: 30px;
 `
 
 export const Scroll = styled.ScrollView`
     margin-bottom: 20px;
-`
-export const Text = styled.Text`
-    text-align: justify;
-    padding: 10px;
-    font-family: ${(props) => props.theme.fonts.regular};
-    font-size: ${RFValue(18)}px;
-    color: ${(props) => props.theme.colors.black};
 `

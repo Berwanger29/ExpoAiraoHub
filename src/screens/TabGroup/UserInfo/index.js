@@ -4,11 +4,11 @@ import {
     Container,
     ContainerBackButton,
     Header,
-    Title,
-    UserProfile
+    Main,
 } from './styles'
 
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import { TextRegular, TextSubTitle } from '../../../components/Texts'
 
 
 const UserInfo = () => {
@@ -47,17 +47,19 @@ const UserInfo = () => {
 
     return (
         <Container>
-            <ContainerBackButton>
-                <BackButton />
-            </ContainerBackButton>
             <Header>
-                <Title>
-                    Informações do usuário
-                </Title>
+                <ContainerBackButton>
+                    <BackButton />
+                </ContainerBackButton>
+                <TextSubTitle
+                    text='Informações do usuário'
+                />
             </Header>
-            <UserProfile>
-                Você tem um perfil {infoProfile}
-            </UserProfile>
+            <Main>
+                <TextRegular
+                    text={`Você tem um perfil: ${infoProfile}`}
+                />
+            </Main>
         </Container>
     )
 }

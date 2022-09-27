@@ -20,12 +20,7 @@ export const Circle = styled.View`
     border-color: black;
     align-items: center;
     justify-content: center;
-`
-
-export const TextOption = styled.Text`
-    font-size: ${RFValue(20)}px;
-    font-family: ${(props) => props.theme.fonts.regular};
-    margin-left: 6px;
+    margin-right: 10px;
 `
 
 export const Button = styled.TouchableOpacity`

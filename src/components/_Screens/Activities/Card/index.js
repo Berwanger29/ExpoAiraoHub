@@ -3,15 +3,14 @@ import {
     Container,
     ImageCard,
     ImageContainer,
-    Title,
 } from "./styles"
 
-import PriceLabel from "../../../PriceLabel"
 
 import { useNavigation } from "@react-navigation/native"
+import { TextRegular } from "../../../Texts"
 
 
-const Card = ({ id, title, image, price, type }) => {
+const Card = ({ id, title, image }) => {
 
     const navigation = useNavigation()
 
@@ -36,9 +35,10 @@ const Card = ({ id, title, image, price, type }) => {
                     }}
                 />
             </ImageContainer>
-            <Title>
-                {title}
-            </Title>
+            <TextRegular
+                text={title}
+                color={theme.colors.darkGreen}
+            />
         </Container>
     )
 }

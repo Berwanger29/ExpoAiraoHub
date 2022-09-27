@@ -11,22 +11,17 @@ export const Container = styled.View`
 
 export const Header = styled.View`
     width: 100%;
+    flex: 0.17;
     align-items: center;
-    margin-top:80px;
+    justify-content: flex-end;
 `
+
 export const ContainerBackButton = styled.View`
     position: absolute;
-    top: 45px;
-    left: 15px;
+    left: 1px;
+    top: 15px;
 `
-
-export const Title = styled.Text`
-    font-family: ${(props) => props.theme.fonts.bold};
-    font-size: ${RFValue(28)}px;
-    color: ${(props) => props.theme.colors.black};
-    margin: 10px 0px 15px 0px;
-
-`
-export const UserProfile = styled.Text`
-
+export const Main = styled.View`
+    margin-top: 30px;
+    flex: 0.83;
 `

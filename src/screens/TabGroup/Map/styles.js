@@ -9,7 +9,7 @@ export const Container = styled.View`
 `
 
 export const Header = styled.View`
-
+    margin-bottom: 20px;
 `
 export const ButtonsContainer = styled.View`
     height: ${RFValue(60)}px;

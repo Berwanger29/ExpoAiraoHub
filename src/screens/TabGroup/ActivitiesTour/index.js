@@ -26,10 +26,8 @@ const ActivitiesTour = () => {
                         id={item.id}
                         image={item.content.image}
                         title={item.title}
-                        price={item.content.prices}
-                        type={item.content.type}
                     />
-                  
+
                 )}
             />
         </Container>
