@@ -13,6 +13,7 @@ const Card = ({ title, image, onPress }) => {
         >
             <Image
                 source={image}
+                
             />
             <TextRegular
                 text={title}

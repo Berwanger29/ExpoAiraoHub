@@ -1,331 +1,329 @@
 export default [
-    {
-        type: "road",
-        id: 1,
-        title: "Centro Ecológico Ekobé",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/hotels/mirante.png'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ""
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "road",
-        id: 2,
-        title: "Pesque-pague Anavilhanas",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/hotels/mirante.png'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ""
-            },
-            contacts: ["92912345678"],
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "road",
-        id: 3,
-        title: "Balneário do Mator Grosso",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/hotels/mirante.png'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ""
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "inCity",
-        id: 1000,
-        title: "Artesanato da FAM",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/inCity/fam.jpg'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ""
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "inCity",
-        id: 11,
-        title: "Casa Ateliê",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/inCity/buy.jpg'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ""
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "inCity",
-        id: 12,
-        title: "Flutuante dos Botos",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/inCity/botos.jpg'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "anavilhanas",
-        id: 2000,
-        title: "Árvores gigantes",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/anavilhanas/tree.jpg'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "anavilhanas",
-        id: 21,
-        title: "Focagem Noturna",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/anavilhanas/nightFocus.jpg'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "anavilhanas",
-        id: 22,
-        title: "Observações de aves",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/anavilhanas/bird.jpg'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "jau",
-        id: 3000,
-        title: "Petroglifos",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/jau/petroglifo.jpg'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "jau",
-        id: 31,
-        title: "Cachoeira do Jáu",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/jau/cachoeira.jpg'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "jau",
-        id: 32,
-        title: "Trilhas da mata",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/jau/trilha.jpg'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: [],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "river",
-        id: 4000,
-        title: "Ruínas de Velho Airão",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/hotels/mirante.png'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "river",
-        id: 41,
-        title: "Trilha e gruta do Madadá",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/hotels/mirante.png'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "river",
-        id: 42,
-        title: "Trilhas e pernoites na selva",
-        content: {
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require('./exceptionalImage/hotels/mirante.png'),
-            prices: '$$$$',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: "",
-            type: ["", ""],
-            offering: [],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "road",
+    //     id: 1,
+    //     title: "Centro Ecológico Ekobé",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/hotels/mirante.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ""
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "road",
+    //     id: 2,
+    //     title: "Pesque-pague Anavilhanas",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/hotels/mirante.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ""
+    //         },
+    //         contacts: ["92912345678"],
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "road",
+    //     id: 3,
+    //     title: "Balneário do Mator Grosso",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/hotels/mirante.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ""
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "inCity",
+    //     id: 1000,
+    //     title: "Artesanato da FAM",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/inCity/fam.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ""
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "inCity",
+    //     id: 11,
+    //     title: "Casa Ateliê",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/inCity/buy.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ""
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "inCity",
+    //     id: 12,
+    //     title: "Flutuante dos Botos",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/inCity/botos.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "anavilhanas",
+    //     id: 2000,
+    //     title: "Árvores gigantes",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/anavilhanas/tree.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "anavilhanas",
+    //     id: 21,
+    //     title: "Focagem Noturna",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/anavilhanas/nightFocus.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "anavilhanas",
+    //     id: 22,
+    //     title: "Observações de aves",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/anavilhanas/bird.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "jau",
+    //     id: 3000,
+    //     title: "Petroglifos",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/jau/petroglifo.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "jau",
+    //     id: 31,
+    //     title: "Cachoeira do Jáu",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/jau/cachoeira.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "jau",
+    //     id: 32,
+    //     title: "Trilhas da mata",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/jau/trilha.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: [],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "river",
+    //     id: 4000,
+    //     title: "Ruínas de Velho Airão",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/hotels/mirante.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "river",
+    //     id: 41,
+    //     title: "Trilha e gruta do Madadá",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/hotels/mirante.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "river",
+    //     id: 42,
+    //     title: "Trilhas e pernoites na selva",
+    //     content: {
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require('./exceptionalImage/hotels/mirante.jpg'),
+    //         prices: '$$$$',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         addressLink: "",
+    //         type: ["", ""],
+    //         offering: [],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "toEat",
         id: 5000,
@@ -426,26 +424,6 @@ export default [
             addressLink: 'https://goo.gl/maps/K8fdcQpEyyRDo34C6',
             type: ["Café regional"],
             offering: ["Pix", "Cartão", "Internet"],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "toEat",
-        id: 5005,
-        title: "Helicônia Ornamentações",
-        content: {
-            description: "Somos uma empresa que visa tornar o seu momento único, quer seja casamento, aniversário ou eventos especiais. Nosso objetivo é tornar o melhor ambiente para sua festa.",
-            image: require('./exceptionalImage/toEat/heliconia.jpg'),
-            social: {
-                instagram: 'https://www.instagram.com/heliconiaornamentacoes/',
-                facebook: 'https://www.facebook.com/dina.brito.5686',
-                site: ''
-            },
-            contacts: "tel://+5592984025884",
-            address: "Avenida Presidente Getúlio Vargas",
-            addressLink: '',
-            type: ["Ornamentações"],
-            offering: ["Débito"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -774,7 +752,7 @@ export default [
         id: 6000,
         title: "Pousada Novo Airão",
         content: {
-            description: "Somos uma pousada aconchegante, sossegada, ambiente familiar, com ótimas instalações pra receber você e sua família!",
+            description: "A Pousada Novo Airão apresenta acomodações aconchegantes, ofertando aos seus clientes um maravilhoso café da manhã, piscina e até campo de futebol. Propício para quem procura conciliar lazer, privacidade e descanso em meio a uma bela paisagem.",
             image: require('./exceptionalImage/hotels/pousadaNovoAirao.png'),
             contacts: "tel://+5592984689749",
             social: {
@@ -782,7 +760,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Internet", "Estacionamento", "Piscina", "Café da Manhã"],
+            offering: ["Internet", "Estacionamento", "Piscina", "Café da Manhã", "Churrasqueira"],
             address: "R. Naíde Batista, 35, Horizonte",
             addressLink: "https://goo.gl/maps/xF8pWwFFsTi4mtSH6",
             profile: ["adventure", "soft", "calm"],
@@ -793,7 +771,7 @@ export default [
         id: 6001,
         title: "Pousada Paraíso",
         content: {
-            description: "Com quartos climatizados, a pousada Paraiso está localizado em Novo Airão, á 115,01 km de Manaus. Disponibiliza quartos com acesso Wi-Fi gratuito e garagem privativa. A cidade está situada numa paisagem natural única, e para quem não sabe a pousada é mais especial, por ser lugar de reprodução da espécie arbórea rosa do deserto. E para o amante da espécie oferece uma verdadeira experiência.",
+            description: "A Pousada Paraíso possui uma ótima localização, que permite a visitação a vários atrativos da cidade, por meio de uma caminhada. Disponibiliza aos seus clientes, quartos climatizados, acesso Wi-Fi gratuito e garagem privativa. Seu diferencial está num ambiente especial para se conectar com a natureza, trata-se de uma estufa de reprodução de belas flores que se adaptam muito bem ao clima amazônico, uma das mais apreciadas pelos visitantes e a espécie arbórea rosa do deserto.",
             image: require('./exceptionalImage/hotels/pousadaParaiso.jpeg'),
             contacts: "tel://+5592984121122",
             social: {
@@ -810,9 +788,9 @@ export default [
     {
         type: "hotels",
         id: 6002,
-        title: "Bela Vista",
+        title: "Pousada Bela Vista Lodge & Ecotours",
         content: {
-            description: "Beleza, luxo e tranquilidade na melhor localização de Novo Airão, situado á 115,01 km da capital, Manaus, sua estrutura conta com acomodações, wi-fe gratuito, estacionamento, sala de convenções, redário, restaurante,Café da manhã, bar, piscina, jardim, playground, deck e um flutuante, casa por temporada, passeios e expedições, para desfrutar das belezas da nossa Amazônia.",
+            description: "A Pousada Bela Vista está localizada em uma área privilegiada do município de Novo Airão, no centro da Cidade e de frente para o Parque Nacional de Anavilhanas. O local é perfeito para viagens em família, pois dispõe de um belo café da manhã, playground, wi-fi, estacionamento, bar, piscina, sala de convenções, redário, restaurante, jardim, acesso particular ao rio (com deck), pequena academia, aluguel de prancha para a prática de SUP e caiaque. Na Pousada, é comum avistar nas copas das árvores as famosas iguanas, que desperta a curiosidade dos visitantes sobre a forma de vida desta espécie da fauna amazônica.",
             image: require('./exceptionalImage/hotels/belaVista.png'),
             contacts: "tel://+559233651023",
             social: {
@@ -831,7 +809,7 @@ export default [
         id: 6003,
         title: "Pousada Cabloca",
         content: {
-            description: "Pousada Cabocla, fica localizada na Rua Rui Barbosa, centro n° 52, cidade de Novo Airão, próximo a praça do dinossauro, restaurantes, café da manhã, supermercado, drogarias e fórum. Contempla uma área ampla para os clientes ficarem a vontade, os apartamentos são equipados com ar condicionado e TVs a cabo.",
+            description: "A Pousada Cabocla, é uma pousada que concilia simplicidade e chame rústico em um único lugar, localizada no centro da cidade de Novo Airão, disponibiliza acomodações confortáveis, com acesso Wi-fi e estacionamento privado. Comtempla uma área ampla, agradável, e a tranquilidade que você procura para seus dias de férias.",
             image: require('./exceptionalImage/hotels/pousadaCabocla.jpg'),
             contacts: "tel://+5592992357141",
             social: {
@@ -850,15 +828,15 @@ export default [
         id: 6004,
         title: "Lodge Mirante do Gavião",
         content: {
-            description: "É um Hotel Luxo Designer, com área de lazer (piscina, salão de jogos, mirantes, etc), restaurante, passeios. Sua arquitetura é exclusiva, voltada para homenagear a cultura local. Às estruturas das suítes parecem casco do barco invertido. ",
-            image: require('./exceptionalImage/hotels/miranteGaviao.jpg'),
+            description: "O Mirante do Gavião faz parte do roteiro de charme da Amazônia, localizado no município de Novo Airão, de frente para o Parque Nacional de Anavilhanas, o lodge se destaca pelos seus serviços de alta qualidade, requinte, design e imponência, baseada nas técnicas amazônicas da construção naval. O Hotel disponibiliza aos seus clientes, a imersão de saberes sobre o modo de vida das nossas comunidades tradicionais, promovendo experiências integradas à selva e aos seus povos. Os pacotes do hotel atendem a diferentes viajantes, proporcionando conforto, segurança e aventura na medida certa.",
+            image: require('./exceptionalImage/hotels/mirante.jpg'),
             contacts: "tel://+5592991146038",
             social: {
                 instagram: "https://instagram.com/mirantedogaviao?igshid=YmMyMTA2M2Y=",
                 facebook: "https://www.facebook.com/mirantedogaviao/",
                 site: "https://mirantedogaviao.com.br/br/"
             },
-            offering: ["Internet, estacionamento."],
+            offering: ["Internet", "Estacionamento", "Café da manhã", "Piscina", "Transfer", "Restaurante", "SUP", ""],
             address: "",
             addressLink: "https://goo.gl/maps/6t3VA1UFCgWb5DdZ8",
             profile: ["adventure", "soft", "calm"],
@@ -890,7 +868,7 @@ export default [
         id: 6006,
         title: "Hotel Josély",
         content: {
-            description: "\"A tranquilidade depende de suas escolhas.\" Nosso Hotel está localizado na Avenida João Paulo II, Centro, n 21. Ambiente familiar e confortável para melhor atender nossos clientes. Temos 22 quartos todos com suítes e wifi.",
+            description: "O hotel Josely está localizado no centro da cidade de Novo Airão, o que facilita o fácil deslocamento para os atrativos turísticos da cidade. Disponibiliza aos seus clientes acomodações climatizadas com acesso a Wi-fi e estacionamento. Dispõe de ambiente familiar com 22 unidades habitacionais e pacotes com refeições (sob a consulta prévia com os proprietários). ",
             image: require('./exceptionalImage/hotels/hotelJosely.jpg'),
             contacts: "tel://+5592992268191",
             social: {
@@ -910,7 +888,7 @@ export default [
         id: 6007,
         title: "Recanto da Naza",
         content: {
-            description: "Com acomodações climatizadas, a pousada da Naza está localizada em Novo Airão, á 2h30 de Manaus. Disponibiliza cozinha compartilhada, estacionamento privado e acesso Wi-Fi gratuito. E possui 12 unidades habitacionais.",
+            description: "A Pousada da Naza está localizada próxima ao Centro de Atendimento ao Turista. Conhecida por ser um ambiente familiar e aconchegante, disponibiliza aos seus clientes acomodações climatizadas, estacionamento privado, acesso a Wi-fi, além de uma cozinha compartilhada.",
             image: require('./exceptionalImage/hotels/pousadaNaza.png'),
             contacts: "tel://+5592991308787",
             social: {
@@ -929,7 +907,7 @@ export default [
         id: 6008,
         title: "Hotel Jandira",
         content: {
-            description: "Hotel Jandira, o cantinho do sossego. Venha conhecer e aproveitar com sua família no local ideal. Preço acessível que cabe no seu bolso. Venha conhecer Novo Airão no lugar mais aconchegante da cidade!",
+            description: "A Pousada Jandira, localizada no centro da cidade de Novo Airão, disponibiliza acomodações climatizadas, aconchegantes com acesso a Wi-fi gratuito e estacionamento. Comtempla uma área ampla e um cantinho denominado pelos visitantes de cantinho do sossego. Apresenta 25 unidades habitacionais.",
             image: require('./exceptionalImage/hotels/hotelJandira.jpg'),
             contacts: "tel://+5592992040315",
             social: {
@@ -965,159 +943,159 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
-    {
-        type: "adventure",
-        id: 7000,
-        title: "Arborismo",
-        content: {
-            title: "Arborismo",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require("./exceptionalImage/adventure/arborismo.png"),
-            prices: '400',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: [],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "adventure",
-        id: 7001,
-        title: "Bike aquática",
-        content: {
-            title: "Bike aquática",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require("./exceptionalImage/adventure/BikeAquatica.png"),
-            prices: '150',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "adventure",
-        id: 7002,
-        title: "SUP",
-        content: {
-            title: "SUP",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require("./exceptionalImage/adventure/SUP.png"),
-            prices: '150',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "adventure",
-        id: 7003,
-        title: "Trilha",
-        content: {
-            title: "Trilha",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require("./exceptionalImage/adventure/trilha.png"),
-            prices: '150',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "tour",
-        id: 7004,
-        title: "Parque Anavilhanas",
-        content: {
-            title: "Trilha",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require("./exceptionalImage/tour/Anavilhanas.png"),
-            prices: '150',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "tour",
-        id: 7005,
-        title: "Parque Jáu",
-        content: {
-            title: "Trilha",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: require("./exceptionalImage/tour/jau.png"),
-            prices: '150',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "tour",
-        id: 7006,
-        title: "Reserva Unini",
-        content: {
-            title: "Trilha",
-            description: "",
-            image: require("./exceptionalImage/tour/unini.png"),
-            prices: '150',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "adventure",
+    //     id: 7000,
+    //     title: "Arborismo",
+    //     content: {
+    //         title: "Arborismo",
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require("./exceptionalImage/adventure/arborismo.png"),
+    //         prices: '400',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: "pessoa",
+    //         offering: [],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "adventure",
+    //     id: 7001,
+    //     title: "Bike aquática",
+    //     content: {
+    //         title: "Bike aquática",
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require("./exceptionalImage/adventure/BikeAquatica.png"),
+    //         prices: '150',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: "pessoa",
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "adventure",
+    //     id: 7002,
+    //     title: "SUP",
+    //     content: {
+    //         title: "SUP",
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require("./exceptionalImage/adventure/SUP.png"),
+    //         prices: '150',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: "pessoa",
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "adventure",
+    //     id: 7003,
+    //     title: "Trilha",
+    //     content: {
+    //         title: "Trilha",
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require("./exceptionalImage/adventure/trilha.png"),
+    //         prices: '150',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: "pessoa",
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "tour",
+    //     id: 7004,
+    //     title: "Parque Anavilhanas",
+    //     content: {
+    //         title: "Trilha",
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require("./exceptionalImage/tour/Anavilhanas.png"),
+    //         prices: '150',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: "pessoa",
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "tour",
+    //     id: 7005,
+    //     title: "Parque Jáu",
+    //     content: {
+    //         title: "Trilha",
+    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    //         image: require("./exceptionalImage/tour/jau.png"),
+    //         prices: '150',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: "pessoa",
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "tour",
+    //     id: 7006,
+    //     title: "Reserva Unini",
+    //     content: {
+    //         title: "Trilha",
+    //         description: "",
+    //         image: require("./exceptionalImage/tour/unini.png"),
+    //         prices: '150',
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "92912345678",
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: "pessoa",
+    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+    //         duration: "",
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "bathhouse",
         id: 8000,
@@ -1186,7 +1164,7 @@ export default [
         id: 9001,
         title: "Sítio providência de Deus",
         content: {
-            description: "Centro de reabilitação de animais silvestre e mantenedouro de animais silvestre e suas biografias.",
+            description: "Centro de reabilitação de animais silvestre,mantenedouro de animais silvestre e suas biografias.",
             image: require("./exceptionalImage/attractions/maluco.jpg"),
             contacts: "tel://+5592992931203",
             social: {
@@ -1194,12 +1172,10 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: [""],
+            offering: ["Balneário", ""],
             address: "",
-            addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
-            type: 'diária',
+            addressLink: "",
             profile: ["adventure", "soft", "calm"],
-            prices: '1317',
         },
     },
     {
@@ -1398,7 +1374,7 @@ export default [
         title: "RM turismo",
         content: {
             description: "Trabalhamos com passeios no Jaú e no Anavilhanas. Fazemos trilhas, observação de pássaros, passeios de barco e muito mais.",
-            image: require('./exceptionalImage/agencies/reco.jpg'),
+            image: require('./exceptionalImage/agencies/rmTurismo.jpeg'),
             contacts: "tel://+5592993721155",
             social: {
                 instagram: 'https://www.instagram.com/rmturismo_ofc/',
@@ -1436,7 +1412,7 @@ export default [
         title: "Jailton Melo Turismo",
         content: {
             description: "Meu trabalho é levar o conhecimento, mostrando aos meus clientes as belezas naturais do arquipélago Anavilhanas, do nosso município Novo Airão e etc.",
-            image: require('./exceptionalImage/agencies/reco.jpg'),
+            image: require('./exceptionalImage/agencies/jailtonMelo.jpeg'),
             contacts: "tel://+5592993721155",
             social: {
                 instagram: 'https://www.instagram.com/jailton_melo_turismo/',
@@ -1446,6 +1422,44 @@ export default [
             offering: ["Trilhas aquáticas", "Árvore gigante", "Comunidades do Tiririca", "Comunidades do Santo Antônio", "Grutas do Madadá", "Airão vVelho"],
             address: "Rua  Almerinda Malaquias n123, Bairro Santo Elias",
             addressLink: "https://goo.gl/maps/znZZ3bJRpUUVFgJh6",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "agencies",
+        id: 11005,
+        title: "Em cantos da Amazônia",
+        content: {
+            description: "Somos uma agência de passeios na qual oferecemos diversos tipos de passeios, conforto e segurança para nossos clientes, nossas lanchas são todas equipadas com GPS, e equipagem de segurança, temos dois barcos de passeios para família que querem mais comodidade.",
+            image: require('./exceptionalImage/agencies/emCantosDaAmazonia.jpg'),
+            contacts: "tel://+5592992296667",
+            social: {
+                instagram: 'https://www.instagram.com/em.cantos.da.amazonia/',
+                facebook: 'https://www.facebook.com/emcantosdaamazonia',
+                site: 'https://pousada-belavista.com/'
+            },
+            offering: ["Passeios na Anavilhanas e Jaú"],
+            address: "",
+            addressLink: "https://goo.gl/maps/Uk5Tk7Dtw8amiLKn9",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "agencies",
+        id: 11006,
+        title: "Ayraotaxitur",
+        content: {
+            description: "A Ayraotaxitur está localizado no município de Novo Airão AM, atuando a 10 anos com transporte turístico e a 7 anos com passeios e expedições nos principais pontos dos Parques Nacionais de Anavilhanas e Jaú,  cuidamos de tudo desde sua chegada a Manaus.",
+            image: require('./exceptionalImage/agencies/ayraoTaxiTur.png'),
+            contacts: "tel://+5592995088436",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Serviços de Transporte e Agenciamento de ecoturismo nos Parques Nacionais de Anavilhanas e Jaú."],
+            address: "Rua Francisco Bezerra N 113 Santo Elias",
+            addressLink: "https://goo.gl/maps/UBUZFEP6WVDCfPYf6",
             profile: ["adventure", "soft", "calm"],
         },
     },

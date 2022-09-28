@@ -28,7 +28,6 @@ export default function App() {
     return <ActivityIndicator size='large' color={theme.colors.green} />
   }
 
-
   return (
     <AuthProvider>
       <QuizProvider>

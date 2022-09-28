@@ -22,9 +22,8 @@ import drink from '../../../../assets/animations/drink.json'
 
 import { useNavigation } from '@react-navigation/native';
 import { QuizContext } from '../../../contexts/QuizContext';
-import TextThin from '../../../components/TextThin';
-import TextRegular from '../../../components/TextRegular';
 import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
+import { TextRegular, TextThin } from '../../../components/Texts';
 
 const QuizB = () => {
 

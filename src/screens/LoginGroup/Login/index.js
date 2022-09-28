@@ -7,12 +7,13 @@ import {
     RecoveryContainer,
     ButtonText,
     SignUpContainer,
-    Title,
-    TitleContainer,
     UserInput,
     LoadingContainer,
     EyeContainer,
     EyeInputContainer,
+    LogoContainer,
+    Logo,
+    ImageContainer,
 } from './styles'
 
 import { auth } from '../../../../firebase'
@@ -24,7 +25,7 @@ import LoginAreaButton from '../../../components/LoginAreaButton';
 import Keyboard from '../../../components/KeyBoard';
 import { Entypo } from '@expo/vector-icons';
 
-import { TextTitle, TextSubTitle, TextThin } from '../../../components/Texts';
+import { TextSubTitle, TextThin } from '../../../components/Texts';
 
 
 const Login = () => {
@@ -117,77 +118,80 @@ const Login = () => {
                         />
                     </LoadingContainer>
                     :
-
                     <Keyboard>
-                        <Container>
-                            <TitleContainer>
-                                <TextTitle
-                                    text='Airão Hub'
-                                />
-                            </TitleContainer>
-
-
-                            <InputContainer>
-                                <LabelContainer>
-                                    <TextSubTitle
-                                        text='Login'
+                        <ImageContainer
+                            source={require('../../../../assets/images/plantBackground.jpg')}
+                        >
+                            <Container>
+                                <LogoContainer>
+                                    <Logo
+                                        source={require('../../../../assets/icons/LogoHomeScreen.png')}
+                                        resizeMode='contain'
                                     />
-                                </LabelContainer>
-                                <UserInput
-                                    placeholder='Email'
-                                    placeholderTextColor={theme.colors.light}
-                                    onChangeText={(e) => setEmail(e)}
-                                    keyboardType='email-address'
-                                />
+                                </LogoContainer>
 
-                                <EyeInputContainer>
+                                <InputContainer>
+                                    <LabelContainer>
+                                        <TextSubTitle
+                                            text='Login'
+                                        />
+                                    </LabelContainer>
                                     <UserInput
-                                        placeholder='Senha'
+                                        placeholder='Email'
                                         placeholderTextColor={theme.colors.light}
-                                        onChangeText={(e) => setPassword(e)}
-                                        secureTextEntry={showPassword}
+                                        onChangeText={(e) => setEmail(e)}
+                                        keyboardType='email-address'
                                     />
-                                    <EyeContainer
-                                        onPress={() => toggleShowPassword()}
-                                    >
-                                        <Entypo name={iconEyeName} size={24} color={theme.colors.light} />
-                                    </EyeContainer>
-                                </EyeInputContainer>
 
-                                <RecoveryContainer>
+                                    <EyeInputContainer>
+                                        <UserInput
+                                            placeholder='Senha'
+                                            placeholderTextColor={theme.colors.light}
+                                            onChangeText={(e) => setPassword(e)}
+                                            secureTextEntry={showPassword}
+                                        />
+                                        <EyeContainer
+                                            onPress={() => toggleShowPassword()}
+                                        >
+                                            <Entypo name={iconEyeName} size={24} color={theme.colors.light} />
+                                        </EyeContainer>
+                                    </EyeInputContainer>
+
+                                    <RecoveryContainer>
+                                        <TextThin
+                                            text='É novo no aplicativo ?'
+                                        />
+                                        <ButtonText
+                                            onPress={() => moveToSignUp()}
+                                        >
+                                            <TextThin
+                                                color={theme.colors.green}
+                                                text=' Cadastre-se'
+                                            />
+                                        </ButtonText>
+                                    </RecoveryContainer>
+
+                                    <LoginAreaButton
+                                        label='Entrar'
+                                        onPress={() => handleLogin()}
+                                    />
+                                </InputContainer>
+
+                                <SignUpContainer>
                                     <TextThin
-                                        text='É novo no aplicativo ?'
+                                        text='Esqueceu sua senha ?'
                                     />
                                     <ButtonText
-                                        onPress={() => moveToSignUp()}
+                                        onPress={() => moveToRecovery()}
                                     >
                                         <TextThin
                                             color={theme.colors.green}
-                                            text=' Cadastre-se'
+                                            text=' Recuperar'
                                         />
                                     </ButtonText>
-                                </RecoveryContainer>
-
-                                <LoginAreaButton
-                                    label='Entrar'
-                                    onPress={() => handleLogin()}
-                                />
-                            </InputContainer>
-
-                            <SignUpContainer>
-                                <TextThin
-                                    text='Esqueceu sua senha ?'
-                                />
-                                <ButtonText
-                                    onPress={() => moveToRecovery()}
-                                >
-                                    <TextThin
-                                        color={theme.colors.green}
-                                        text=' Recuperar'
-                                    />
-                                </ButtonText>
-                            </SignUpContainer>
-                        </Container>
+                                </SignUpContainer>
+                            </Container>
+                        </ImageContainer>
                     </Keyboard>
             }
         </>

@@ -14,9 +14,3 @@ export const Container = styled.TouchableOpacity`
     justify-content: center;
     margin-bottom: 15px;
 `
-
-export const LabelOption = styled.Text`
-    font-family: ${props => props.theme.fonts.light};
-    font-size: ${RFValue(16)}px;
-    color: ${props => props.theme.colors.light};
-`

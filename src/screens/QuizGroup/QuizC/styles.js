@@ -31,20 +31,6 @@ export const TextContainer = styled.View`
     margin-top: ${RFValue(10)}px;
 `
 
-export const LabelCountText = styled.Text`
-    font-family: ${props => props.theme.fonts.light};
-    font-size:${RFValue(14)}px;
-
-    color: ${props => props.theme.colors.black};
-`
-
-export const QuestionText = styled.Text`
-    font-family: ${props => props.theme.fonts.regular};
-    font-size:${RFValue(18)}px;
-
-    color: ${props => props.theme.colors.black};
-    margin: ${RFValue(10)}px 0px;
-`
 
 export const ButtonsContainer = styled.View`
     align-items: center;

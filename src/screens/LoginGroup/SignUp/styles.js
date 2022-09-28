@@ -48,7 +48,7 @@ export const EyeContainer = styled.TouchableOpacity`
 `
 export const ButtonContainer = styled.View`
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
     left: 20px;
     right: 20px;
 `

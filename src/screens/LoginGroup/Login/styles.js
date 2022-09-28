@@ -2,19 +2,30 @@ import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
 import { StatusBar } from "react-native";
 
-export const Container = styled.View`
+export const ImageContainer = styled.ImageBackground`
     flex: 1;
-    background-color: ${(props) => props.theme.colors.light};
-    align-items: center;
-    padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    background-color: red;
 `
 
-export const TitleContainer = styled.View`
+export const Container = styled.View`
+    flex: 1;
+    background-color: rgba(255,255,255,0.6);
+    align-items: center;
+    padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    
+`
+
+export const LogoContainer = styled.View`
     height: 30%;
     width: 100%;
 
     align-items: center;
     justify-content: center;
+`
+
+export const Logo = styled.Image`
+    width: 100%;
+    height: 100%;
 `
 
 export const LabelContainer = styled.View`
@@ -56,15 +67,14 @@ export const EyeContainer = styled.TouchableOpacity`
 `
 
 export const RecoveryContainer = styled.View`
-    margin-top: -10px;
-    margin-bottom: 15px;
+    margin-bottom:20px;
     flex-direction: row;
 `
 
 export const SignUpContainer = styled.View`
     flex-direction: row;
     position: absolute;
-    bottom: 11px;
+    bottom: 30px;
 `
 
 export const ButtonText = styled.TouchableOpacity`

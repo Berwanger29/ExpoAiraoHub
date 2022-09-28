@@ -1,5 +1,4 @@
 import TitleMap from "../TitleMap";
-import TextMap from "../TextMap";
 
 const _Airplane = () => {
     return (

@@ -41,5 +41,5 @@ export const ButtonContainer = styled.View`
     position: absolute;
     left: 1px;
     right: 1px;
-    bottom: 11px;
+    bottom: 30px;
 `

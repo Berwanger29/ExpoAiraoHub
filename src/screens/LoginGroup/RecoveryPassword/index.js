@@ -14,7 +14,7 @@ import LoginAreaButton from "../../../components/LoginAreaButton"
 
 import { auth } from "../../../../firebase"
 import { Alert } from "react-native"
-import { TextTitle, TextRegular } from "../../../components/Texts"
+import { TextRegular, TextSubTitle } from "../../../components/Texts"
 
 
 const RecoveryPassword = () => {
@@ -40,7 +40,7 @@ const RecoveryPassword = () => {
         <Container>
             <Header>
                 <TitleContainer>
-                    <TextTitle
+                    <TextSubTitle
                         text='Recuperar senha'
                     />
                 </TitleContainer>

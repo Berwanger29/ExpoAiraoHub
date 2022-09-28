@@ -8,8 +8,7 @@ import {
 } from './styles';
 
 import SelectButton from '../../../components/_Screens/Quiz/SelectButton';
-import TextThin from '../../../components/TextThin'
-import TextRegular from '../../../components/TextRegular'
+import { TextRegular, TextThin } from '../../../components/Texts'
 import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
 
 import { Entypo } from '@expo/vector-icons';

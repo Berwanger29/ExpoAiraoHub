@@ -1,5 +1,5 @@
 import theme from "../../global/styles/theme"
-import TextRegular from "../TextRegular"
+import { TextRegular } from "../Texts"
 import {
     Container,
 } from "./styles"

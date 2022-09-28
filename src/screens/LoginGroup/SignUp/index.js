@@ -19,8 +19,7 @@ import { auth } from '../../../../firebase'
 import Keyboard from '../../../components/KeyBoard'
 import { Entypo } from '@expo/vector-icons';
 import theme from '../../../global/styles/theme'
-import TextRegular from '../../../components/TextRegular'
-import TextTitle from '../../../components/TextTitle'
+import { TextTitle, TextRegular } from '../../../components/Texts'
 
 
 const SignUp = () => {

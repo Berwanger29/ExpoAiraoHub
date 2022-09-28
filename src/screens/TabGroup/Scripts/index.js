@@ -10,7 +10,7 @@ import {
     ScriptsList,
 } from './styles'
 
-import Title from '../../../components/Title'
+import { TextTitle } from '../../../components/Texts'
 import UserButtonContainer from '../../../components/UserButtonContiner'
 import UserButton from '../../../components/UserButton'
 
@@ -54,7 +54,7 @@ const Scripts = () => {
                 <UserButtonContainer>
                     <UserButton />
                 </UserButtonContainer>
-                <Title
+                <TextTitle
                     text="Roteiros"
                 />
 

@@ -6,8 +6,6 @@ import {
     Main,
     TextContainer,
     Button,
-    LabelCountText,
-    QuestionText,
     ButtonsContainer
 } from './styles';
 
@@ -25,9 +23,8 @@ import duet from '../../../../assets/animations/duet.json'
 import { RFPercentage } from 'react-native-responsive-fontsize';
 import { StackActions, useNavigation } from '@react-navigation/native';
 import { QuizContext } from '../../../contexts/QuizContext';
-import TextThin from '../../../components/TextThin';
-import TextRegular from '../../../components/TextRegular';
 import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
+import { TextRegular, TextThin } from '../../../components/Texts';
 
 const QuizC = () => {
 

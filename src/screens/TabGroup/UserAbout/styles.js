@@ -13,7 +13,9 @@ export const Header = styled.View`
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 25px;
+
 `
 export const ContainerBackButton = styled.View`
     position: absolute;

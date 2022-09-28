@@ -21,8 +21,8 @@ const ActivitiesAdventure = () => {
                 renderItem={({ item }) => (
                     <Card
                         id={item.id}
-                        image={item.content.image}
                         title={item.title}
+                        image={item.content.image}
                     />
                 )}
             />

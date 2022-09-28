@@ -1,9 +1,8 @@
 import { useEffect } from 'react'
 import theme from '../../../../global/styles/theme'
-import TextRegular from '../../../TextRegular'
+import { TextRegular } from '../../../Texts'
 import {
     Container,
-    LabelOption
 } from './styles'
 
 const SelectButton = ({ text, onPress, changeColor }) => {

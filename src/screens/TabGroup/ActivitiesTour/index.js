@@ -4,7 +4,6 @@ import {
 } from './styles'
 
 import Card from '../../../components/_Screens/Activities/Card'
-
 import data from '../../../../data'
 
 
@@ -14,8 +13,6 @@ const ActivitiesTour = () => {
         return item.type == "tour"
     })
 
-
-
     return (
         <Container>
             <List
@@ -24,8 +21,8 @@ const ActivitiesTour = () => {
                 renderItem={({ item }) => (
                     <Card
                         id={item.id}
-                        image={item.content.image}
                         title={item.title}
+                        image={item.content.image}
                     />
 
                 )}

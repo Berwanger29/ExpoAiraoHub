@@ -8,12 +8,11 @@ import {
     LogoutButton,
     LogOutText,
     OptionsContainer,
-    ContainerBackButton
+    ContainerBackButton,
 } from './styles'
 
 import Options from '../../../components/_Screens/User/Options';
 import BackButton from '../../../components/BackButton';
-import Title from '../../../components/Title';
 import { FontAwesome5 } from '@expo/vector-icons';
 
 
@@ -32,7 +31,7 @@ const User = () => {
     function handleLogOut() {
         Alert.alert(
             "Sair",
-            "Deseja mesmo sair ?",
+            "Ao sair do aplicativo, suas informações serão apagadas do seu celular",
             [
                 {
                     text: "Cancelar",
@@ -67,9 +66,9 @@ const User = () => {
     return (
         <Container>
             <Header>
-
-                <BackButton />
-
+                <ContainerBackButton>
+                    <BackButton />
+                </ContainerBackButton>
                 <UserIcon>
                     <FontAwesome5
                         name="user-alt"
@@ -108,7 +107,7 @@ const User = () => {
                     onPress={() => handleLogOut()}
                 >
                     <LogOutText>
-                        Sair do app
+                        Logout
                     </LogOutText>
                 </LogoutButton>
             </Footer>

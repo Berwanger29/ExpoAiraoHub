@@ -10,7 +10,7 @@ import {
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-import Title from '../../../components/Title'
+import { TextSubTitle } from '../../../components/Texts'
 import UserButton from '../../../components/UserButton'
 import UserButtonContainer from '../../../components/UserButtonContiner'
 import Card from '../../../components/_Screens/Activities/Card';
@@ -19,11 +19,9 @@ import ActivitiesAdventure from '../ActivitiesAdventure'
 import ActivitiesTour from '../ActivitiesTour';
 
 import { AntDesign } from '@expo/vector-icons';
-import {  useState } from 'react';
+import { useState } from 'react';
 import data from '../../../../data';
-
-
-
+import theme from '../../../global/styles/theme';
 
 const TopTab = createMaterialTopTabNavigator()
 
@@ -32,7 +30,7 @@ function ActivitiesTopTabs() {
         <TopTab.Navigator
             initialRouteName='Aventura'
             screenOptions={{
-                tabBarStyle: { backgroundColor: '#FAFAFA' },
+                tabBarStyle: { backgroundColor: theme.colors.light },
                 tabBarIndicatorStyle: { backgroundColor: 'green' }
             }}
         >
@@ -75,8 +73,9 @@ const Activities = () => {
                 <UserButtonContainer>
                     <UserButton />
                 </UserButtonContainer>
-                <Title
+                <TextSubTitle
                     text="Atividades"
+                    color={theme.colors.darkGreen}
                 />
                 <ContainerSearch
                     style={{
@@ -98,7 +97,7 @@ const Activities = () => {
                     <ActivitiesTopTabs />
                 </Main>
             }
-            
+
             {
                 input !== '' &&
                 <Main>
@@ -107,10 +106,8 @@ const Activities = () => {
                         renderItem={({ item }) => (
                             <Card
                                 id={item.id}
-                                image={item.content.image}
                                 title={item.title}
-                                price={item.content.prices}
-                                type={item.content.type}
+                                image={item.content.image}
                             />
                         )}
                     />

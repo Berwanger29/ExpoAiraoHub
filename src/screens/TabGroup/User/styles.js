@@ -9,8 +9,15 @@ export const Container = styled.View`
 `
 
 export const Header = styled.View`
-        margin-bottom: 40px;
-        padding-top: 5px;
+    margin-bottom: 40px;
+    padding-top: 70px;
+    align-items: center;
+`
+export const ContainerBackButton = styled.View`
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    
 `
 
 export const UserIcon = styled.View`
@@ -26,13 +33,6 @@ export const UserIcon = styled.View`
 
     margin-bottom: 30px;
 `
-
-export const ContainerBackButton = styled.View`
-    position: absolute;
-    top: 45px;
-    left: 15px;
-`
-
 export const Main = styled.View`
     
 `

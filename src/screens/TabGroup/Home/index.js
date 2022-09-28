@@ -116,10 +116,10 @@ const Home = () => {
                     <CarrousselContainer
                         showsVerticalScrollIndicator={false}
                     >
-                        <Carroussel
+                        {/* <Carroussel
                             title="Dentro da cidade"
                             data={inCityData}
-                        />
+                        /> */}
 
                         <Carroussel
                             title="Artesanato"
@@ -131,14 +131,14 @@ const Home = () => {
                             data={attractions}
                         />
 
-                        <Carroussel
+                        {/* <Carroussel
                             title="Pelo Anavilhanas"
                             data={anavilhanasData}
                         />
                         <Carroussel
                             title="Pelo Jaú"
                             data={jauData}
-                        />
+                        /> */}
 
                         <Carroussel
                             title="Agências e operadores"

@@ -18,7 +18,6 @@ const Card = ({ id, title, image }) => {
         navigation.navigate('ItemSelected', {
             itemId: id
         })
-        console.log(id)
     }
 
 
