@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Linking } from "react-native";
+import { Linking, StatusBar } from "react-native";
 import {
     Container,
     Image,
@@ -42,6 +42,10 @@ const ItemSelected = ({ route }) => {
 
     return (
         <Container>
+            <StatusBar
+                backgroundColor='transparent'
+                translucent
+            />
             <ScrollContainer
                 showsVerticalScrollIndicator={false}
             >

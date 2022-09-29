@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ActivityIndicator, Alert } from 'react-native';
+import { ActivityIndicator, Alert, StatusBar, Animated } from 'react-native';
 import {
     Container,
     InputContainer,
@@ -122,6 +122,11 @@ const Login = () => {
                         <ImageContainer
                             source={require('../../../../assets/images/plantBackground.jpg')}
                         >
+                            <StatusBar
+                                barStyle='dark-content'
+                                backgroundColor="transparent"
+                                translucent
+                            />
                             <Container>
                                 <LogoContainer>
                                     <Logo
@@ -136,24 +141,26 @@ const Login = () => {
                                             text='Login'
                                         />
                                     </LabelContainer>
+
                                     <UserInput
                                         placeholder='Email'
-                                        placeholderTextColor={theme.colors.light}
+                                        placeholderTextColor={theme.colors.gray}
                                         onChangeText={(e) => setEmail(e)}
                                         keyboardType='email-address'
                                     />
 
+
                                     <EyeInputContainer>
                                         <UserInput
                                             placeholder='Senha'
-                                            placeholderTextColor={theme.colors.light}
+                                            placeholderTextColor={theme.colors.gray}
                                             onChangeText={(e) => setPassword(e)}
                                             secureTextEntry={showPassword}
                                         />
                                         <EyeContainer
                                             onPress={() => toggleShowPassword()}
                                         >
-                                            <Entypo name={iconEyeName} size={24} color={theme.colors.light} />
+                                            <Entypo name={iconEyeName} size={24} color={theme.colors.darkGreen} />
                                         </EyeContainer>
                                     </EyeInputContainer>
 

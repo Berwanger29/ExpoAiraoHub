@@ -9,7 +9,8 @@ import {
     TitleContainer,
     EyeInputContainer,
     EyeContainer,
-    ButtonContainer
+    ButtonContainer,
+    ImageContainer
 } from './styles'
 
 import LoginAreaButton from '../../../components/LoginAreaButton'
@@ -68,55 +69,62 @@ const SignUp = () => {
 
     return (
         <Keyboard>
-            <Container>
+            <ImageContainer
+                source={require('../../../../assets/images/plantBackground.jpg')}
+            >
+                <Container>
 
-                <TitleContainer>
+                    <TitleContainer>
 
-                    <TextTitle
-                        text='Airão Hub'
-                    />
-                </TitleContainer>
-                <BackButtonContainer>
-                    <BackButton />
-                </BackButtonContainer>
-                <FormContainer>
-                    <TextRegular
-                        text='Crie uma conta com e-mail e senha.'
-                    />
-                    <Input
-                        placeholder='email'
-                        onChangeText={(e) => setEmail(e)}
-                        returnKeyType='done'
-                        keyboardType='email-address'
-                        style={{ marginTop: 15 }}
-                    />
-                    <EyeInputContainer>
+                        <TextTitle
+                            text='Airão Hub'
+                        />
+                    </TitleContainer>
+                    <BackButtonContainer>
+                        <BackButton />
+                    </BackButtonContainer>
+                    <FormContainer>
+                        <TextRegular
+                            text='Crie uma conta com e-mail e senha.'
+                        />
                         <Input
-                            placeholder='senha'
-                            onChangeText={(e) => setPassword(e)}
+                            placeholder='e-mail'
+                            placeholderTextColor={theme.colors.darkGreen}
+                            onChangeText={(e) => setEmail(e)}
+                            returnKeyType='done'
+                            keyboardType='email-address'
+                            style={{ marginTop: 15 }}
+                        />
+                        <EyeInputContainer>
+                            <Input
+                                placeholder='senha'
+                                placeholderTextColor={theme.colors.darkGreen}
+                                onChangeText={(e) => setPassword(e)}
+                                returnKeyType='done'
+                                secureTextEntry={showPassword}
+                            />
+                            <EyeContainer
+                                onPress={() => toggleShowPassword()}
+                            >
+                                <Entypo name={iconEyeName} size={24} color={theme.colors.light} />
+                            </EyeContainer>
+                        </EyeInputContainer>
+                        <Input
+                            placeholder='confirme sua senha'
+                            placeholderTextColor={theme.colors.darkGreen}
+                            onChangeText={(e) => setConfirmPassword(e)}
                             returnKeyType='done'
                             secureTextEntry={showPassword}
                         />
-                        <EyeContainer
-                            onPress={() => toggleShowPassword()}
-                        >
-                            <Entypo name={iconEyeName} size={24} color={theme.colors.light} />
-                        </EyeContainer>
-                    </EyeInputContainer>
-                    <Input
-                        placeholder='confirme sua senha'
-                        onChangeText={(e) => setConfirmPassword(e)}
-                        returnKeyType='done'
-                        secureTextEntry={showPassword}
-                    />
-                </FormContainer>
-                <ButtonContainer>
-                    <LoginAreaButton
-                        label='Criar conta'
-                        onPress={handleSignUp}
-                    />
-                </ButtonContainer>
-            </Container>
+                    </FormContainer>
+                    <ButtonContainer>
+                        <LoginAreaButton
+                            label='Criar conta'
+                            onPress={handleSignUp}
+                        />
+                    </ButtonContainer>
+                </Container>
+            </ImageContainer>
         </Keyboard>
     )
 }

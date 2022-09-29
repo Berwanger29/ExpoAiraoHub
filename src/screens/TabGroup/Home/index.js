@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
     CarrousselContainer,
     Container,
@@ -31,16 +31,6 @@ const Home = () => {
     const [input, setInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
 
-    function handleInput(e) {
-        setInput(e)
-        let arr = []
-        data.filter((item) => {
-            if (item.title.includes(e)) {
-                arr.push(item)
-            }
-        })
-        setArrSearch(arr)
-    }
 
     let inCityData = data.filter((item) => {
         return item.type == 'inCity'
@@ -79,6 +69,17 @@ const Home = () => {
     })
 
 
+
+    function handleInput(e) {
+        setInput(e)
+        let arr = []
+        data.filter((item) => {
+            if (item.title.includes(e)) {
+                arr.push(item)
+            }
+        })
+        setArrSearch(arr)
+    }
 
 
     return (

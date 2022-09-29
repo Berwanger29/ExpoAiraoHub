@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
     Container,
     Header,
@@ -26,20 +26,21 @@ import theme from '../../../global/styles/theme'
 const Accommodation = () => {
 
     const navigation = useNavigation()
-    function navigateToSelected(id) {
-        navigation.navigate('ItemSelected', {
-            itemId: id
-        })
-    }
 
     const [hotel, setHotel] = useState('')
     const [input, setInput] = useState([])
-
+    const [hotelsData, setHotelsData] = useState([])
 
     const accommodationData = data.filter((item) => {
         return item.type == 'hotels'
     })
 
+
+    function navigateToSelected(id) {
+        navigation.navigate('ItemSelected', {
+            itemId: id
+        })
+    }
 
     function handleInput(e) {
         setHotel(e)
@@ -51,6 +52,19 @@ const Accommodation = () => {
         })
         setInput(arr)
     }
+
+    useEffect(() => {
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                let temp = array[i];
+                array[i] = array[j]
+                array[j] = temp
+            }
+            setHotelsData(array)
+        }
+        shuffle(accommodationData)
+    }, [])
 
     return (
         <Container>
@@ -86,7 +100,7 @@ const Accommodation = () => {
                     <CardExternalPlatform />
                     <List
                         showsVerticalScrollIndicator={false}
-                        data={accommodationData}
+                        data={hotelsData}
                         keyExtractor={item => item.id}
                         renderItem={({ item }) =>
                         (

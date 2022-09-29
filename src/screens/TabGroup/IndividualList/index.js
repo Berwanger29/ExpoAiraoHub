@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
     Container,
     ContainerBackButton,
@@ -25,14 +25,12 @@ const IndividualList = ({ route }) => {
     const { title, data } = route.params
     const [searchInput, setSearchInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
-
     const navigation = useNavigation()
-
 
     function handleInput(e) {
         setSearchInput(e)
         let arr = []
-        data.filter((item) => {
+        data.sort().filter((item) => {
             if (item.title.includes(e)) {
                 arr.push(item)
             }
@@ -45,6 +43,18 @@ const IndividualList = ({ route }) => {
             itemId: id
         })
     }
+
+    useEffect(() => {
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                let temp = array[i];
+                array[i] = array[j]
+                array[j] = temp
+            }
+        }
+        shuffle(data)
+    }, [])
 
 
     return (
@@ -99,8 +109,8 @@ const IndividualList = ({ route }) => {
                 searchInput !== '' &&
                 <Main>
                     <List
-                        showsVerticalScrollIndicator={false}
                         data={arrSearch}
+                        showsVerticalScrollIndicator={false}
                         keyExtractor={item => item.id}
                         renderItem={({ item }) =>
                         (
@@ -109,8 +119,7 @@ const IndividualList = ({ route }) => {
                                 image={item.content.image}
                                 onPress={() => navigateToSelected(item.id)}
                             />
-                        )
-                        }
+                        )}
                     />
                 </Main>
             }

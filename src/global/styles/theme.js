@@ -1,10 +1,10 @@
 export default {
     colors: {
         light: "#FAFAFA",
-        semiLight: "#CCD391",
+        semiLight: "#DEEAE9",
         green: "#167672 ",
-        semiDarkGreen: "#606C38",
-        darkGreen: "#48512A",
+        semiDarkGreen: "#0B3B39",
+        darkGreen: "#0B3B39",
 
         black: "#000000",
         gray: "#CACACA"

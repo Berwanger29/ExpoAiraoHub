@@ -4,8 +4,12 @@ import { StatusBar } from "react-native";
 
 export const Container = styled.View`
     flex: 1;
-    background-color: ${(props) => props.theme.colors.light};
+    background-color: rgba(255,255,255,0.6);
     padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+`
+
+export const ImageContainer = styled.ImageBackground`
+    flex: 1;
 `
 export const Header = styled.View`
     width: 100%;
@@ -30,7 +34,9 @@ export const FormContainer = styled.View`
     padding-top: 30px;
 `
 export const Input = styled.TextInput`
-    background-color: ${(props) => props.theme.colors.gray};
+    background-color: ${(props) => props.theme.colors.light};
+    color: ${(props) => props.theme.colors.darkGreen};
+    border: 1px solid ${props => props.theme.darkGreen};
     width: 100%;
     height: ${RFValue(50)}px;
     margin-top: 20px;

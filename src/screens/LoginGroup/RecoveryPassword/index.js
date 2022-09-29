@@ -5,7 +5,8 @@ import {
     Input,
     ButtonContainer,
     BackButtonContainer,
-    TitleContainer
+    TitleContainer,
+    ImageContainer
 } from "./styles"
 
 import { useState } from "react"
@@ -15,6 +16,7 @@ import LoginAreaButton from "../../../components/LoginAreaButton"
 import { auth } from "../../../../firebase"
 import { Alert } from "react-native"
 import { TextRegular, TextSubTitle } from "../../../components/Texts"
+import theme from "../../../global/styles/theme"
 
 
 const RecoveryPassword = () => {
@@ -37,35 +39,40 @@ const RecoveryPassword = () => {
     }
 
     return (
-        <Container>
-            <Header>
-                <TitleContainer>
-                    <TextSubTitle
-                        text='Recuperar senha'
-                    />
-                </TitleContainer>
-                <BackButtonContainer>
-                    <BackButton />
-                </BackButtonContainer>
-            </Header>
+        <ImageContainer
+            source={require('../../../../assets/images/plantBackground.jpg')}
+        >
+            <Container>
+                <Header>
+                    <TitleContainer>
+                        <TextSubTitle
+                            text='Recuperar senha'
+                        />
+                    </TitleContainer>
+                    <BackButtonContainer>
+                        <BackButton />
+                    </BackButtonContainer>
+                </Header>
 
-            <FormContainer>
-                <TextRegular
-                    text='Digite o e-mail de recuperação de senha:'
-                />
-                <Input
-                    placeholder='email'
-                    value={email}
-                    onChangeText={(e) => setResetEmail(e)}
-                />
-            </FormContainer>
-            <ButtonContainer>
-                <LoginAreaButton
-                    label='Enviar email'
-                    onPress={handleResetEmail}
-                />
-            </ButtonContainer>
-        </Container>
+                <FormContainer>
+                    <TextRegular
+                        text='Digite o e-mail de recuperação de senha:'
+                    />
+                    <Input
+                        placeholder='e-mail'
+                        placeholderTextColor={theme.colors.darkGreen}
+                        value={email}
+                        onChangeText={(e) => setResetEmail(e)}
+                    />
+                </FormContainer>
+                <ButtonContainer>
+                    <LoginAreaButton
+                        label='Enviar email'
+                        onPress={handleResetEmail}
+                    />
+                </ButtonContainer>
+            </Container>
+        </ImageContainer>
     )
 }
 

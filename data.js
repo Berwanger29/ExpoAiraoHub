@@ -943,6 +943,26 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
+    {
+        type: "hotels",
+        id: 6010,
+        title: "Anavilhanas Jungle Lodge",
+        content: {
+            description: "O Anavilhanas Jungle Lodge tem como missão oferecer, com excelência, experiências únicas e inesquecíveis que conectem pessoas com a Amazônia, como forma de valorizar e sensibilizar a importância da floresta em pé. Desde 2006 na região amazônica, o hotel atua para promover vivências profundas que estimulem o desenvolvimento local sustentável e uma relação de impacto positivo com as comunidades do entorno.",
+            image: require('./exceptionalImage/hotels/anavihanasJungleLodge.jpg'),
+            contacts: "tel://+5592988331947",
+            social: {
+                instagram: 'https://www.instagram.com/anavilhanaslodge/',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Internet", "estacionamento", "Restaurante", "Passeios guiados", "Loja de artesanatos", "Transfer"],
+            address: "",
+            addressLink: "https://goo.gl/maps/aGr4M43x8oqgHPbH7",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+
     // {
     //     type: "adventure",
     //     id: 7000,

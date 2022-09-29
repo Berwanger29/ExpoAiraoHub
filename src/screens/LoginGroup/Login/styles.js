@@ -4,7 +4,6 @@ import { StatusBar } from "react-native";
 
 export const ImageContainer = styled.ImageBackground`
     flex: 1;
-    background-color: red;
 `
 
 export const Container = styled.View`
@@ -38,10 +37,12 @@ export const InputContainer = styled.View`
     align-items: center;
 `
 
-
 export const UserInput = styled.TextInput`
-    background-color: gray;
-    
+    background-color: ${props => props.theme.colors.light};
+    color: ${(props) => props.theme.colors.darkGreen};
+
+    border: 1px solid ${props => props.theme.darkGreen};
+
     width: 100%;
     height: ${RFValue(50)}px;
     
@@ -49,7 +50,6 @@ export const UserInput = styled.TextInput`
     padding-left: 10px;
     border-radius: 5px;
 
-    color: ${(props) => props.theme.colors.light};
 `
 export const EyeInputContainer = styled.View`
     width: 100%;

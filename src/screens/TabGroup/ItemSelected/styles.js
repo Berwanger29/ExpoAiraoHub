@@ -7,10 +7,9 @@ export const Container = styled.View`
 `
 
 export const ScrollContainer = styled.ScrollView`
-flex: 1;
-background-color: ${props => props.theme.colors.light};
-padding-top:${StatusBar.currentHeight}px;
-
+    flex: 1;
+    background-color: ${props => props.theme.colors.light};
+    padding-top:${StatusBar.currentHeight}px;
 `
 
 export const ImageContainer = styled.View`
