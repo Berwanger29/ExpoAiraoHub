@@ -29,7 +29,7 @@ const Options = ({ text, nameIcon, onPress }) => {
                     <MaterialCommunityIcons name="chevron-right" size={24} color="black" />
                 </Button>
             </Container>
-            <Line />
+            
         </>
     )
 }

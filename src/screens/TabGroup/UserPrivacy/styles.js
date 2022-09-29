@@ -25,4 +25,5 @@ export const Main = styled.View`
 
 export const Scroll = styled.ScrollView`
     margin-bottom: 20px;
+    padding: 7px;
 `

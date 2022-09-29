@@ -11,6 +11,7 @@ import {
     ContainerBackButton,
 } from './styles'
 
+import BackgroundImage from '../../../components/BackgroundImage';
 import Options from '../../../components/_Screens/User/Options';
 import BackButton from '../../../components/BackButton';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -64,54 +65,60 @@ const User = () => {
     }
 
     return (
-        <Container>
-            <Header>
-                <ContainerBackButton>
-                    <BackButton />
-                </ContainerBackButton>
-                <UserIcon>
-                    <FontAwesome5
-                        name="user-alt"
-                        size={RFValue(38)}
-                        color="black"
+        <BackgroundImage
+            image={require('../../../../assets/images/plantBackground.jpg')}
+            filter={0.5}
+        >
+            <Container>
+                <Header>
+                    <ContainerBackButton>
+                        <BackButton />
+                    </ContainerBackButton>
+                    <UserIcon>
+                        <FontAwesome5
+                            name="user-alt"
+                            size={RFValue(38)}
+                            color="black"
+                        />
+                    </UserIcon>
+                    <TextSubTitle
+                        text="Configurações da conta"
+                        color={theme.colors.darkGreen}
                     />
-                </UserIcon>
-                <TextSubTitle
-                    text="Configurações da conta"
-                    color={theme.colors.darkGreen}
-                />
-            </Header>
-            <Main>
-                <OptionsContainer>
-                    <Options
-                        text='Informações do usuário'
-                        nameIcon="account-outline"
-                        onPress={() => navigation.navigate('UserInfo')}
-                    />
-                    <Options
-                        text='Privacidade'
-                        nameIcon='shield-account-outline'
-                        onPress={() => navigation.navigate('UserPrivacy')}
-                    />
-                    <Options
-                        text='Sobre'
-                        nameIcon='information-variant'
-                        onPress={() => navigation.navigate('UserAbout')}
-                    />
+                </Header>
+                <Main>
+                    <OptionsContainer>
+                        <Options
+                            text='Perfil'
+                            nameIcon="account-outline"
+                            onPress={() => navigation.navigate('UserInfo')}
+                        />
+                        <Options
+                            text='Privacidade'
+                            nameIcon='shield-account-outline'
+                            onPress={() => navigation.navigate('UserPrivacy')}
+                        />
+                        <Options
+                            text='Sobre'
+                            nameIcon='information-variant'
+                            onPress={() => navigation.navigate('UserAbout')}
+                        />
+                        
 
-                </OptionsContainer>
-            </Main>
+                    </OptionsContainer>
+                </Main>
 
-            <Footer>
-                <LogoutButton
-                    onPress={() => handleLogOut()}
-                >
-                    <LogOutText>
-                        Logout
-                    </LogOutText>
-                </LogoutButton>
-            </Footer>
-        </Container>
+                <Footer>
+                    <LogoutButton
+                        onPress={() => handleLogOut()}
+                    >
+                        <LogOutText>
+                            Logout
+                        </LogOutText>
+                    </LogoutButton>
+                </Footer>
+            </Container>
+        </BackgroundImage>
     )
 }
 

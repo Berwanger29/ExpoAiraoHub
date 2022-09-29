@@ -36,6 +36,7 @@ export const AboutTitle = styled.Text`
 
 export const Scroll = styled.ScrollView`
     margin-bottom: 20px;
+    padding: 7px;
 `
 export const Text = styled.Text`
     text-align: justify;

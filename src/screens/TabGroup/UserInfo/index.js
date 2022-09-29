@@ -52,7 +52,7 @@ const UserInfo = () => {
                     <BackButton />
                 </ContainerBackButton>
                 <TextSubTitle
-                    text='Informações do usuário'
+                    text='Perfil'
                 />
             </Header>
             <Main>

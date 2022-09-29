@@ -17,7 +17,6 @@ import UserButton from '../../../components/UserButton'
 import UserButtonContainer from '../../../components/UserButtonContiner'
 import Carroussel from '../../../components/_Screens/Home/Carrousel'
 
-import theme from '../../../global/styles/theme'
 import data from '../../../../data'
 import HomeSearchCard from '../../../components/_Screens/Home/HomeSearchCard';
 import { TextTitle } from '../../../components/Texts';
@@ -68,8 +67,6 @@ const Home = () => {
         return item.type == 'hotels'
     })
 
-
-
     function handleInput(e) {
         setInput(e)
         let arr = []
@@ -85,7 +82,8 @@ const Home = () => {
     return (
         <Container>
             <StatusBar
-                backgroundColor={theme.colors.light}
+                backgroundColor='transparent'
+                translucent
             />
             <Header>
                 <UserButtonContainer>
@@ -122,10 +120,10 @@ const Home = () => {
                             data={inCityData}
                         /> */}
 
-                        <Carroussel
+                        {/* <Carroussel
                             title="Artesanato"
                             data={craftsmanship}
-                        />
+                        /> */}
 
                         <Carroussel
                             title='Atrações'

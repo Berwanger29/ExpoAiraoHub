@@ -352,7 +352,7 @@ export default [
         title: "Cantinho Caseiro",
         content: {
             description: "Especialista em sopas e doces preparado com o gostinho de casa, usamos produtos de primeira linha",
-            image: require('./exceptionalImage/toEat/cantinhoCaseiro.jpeg'),
+            image: require('./exceptionalImage/toEat/cantinhoCaseiro.png'),
             social: {
                 instagram: 'https://www.instagram.com/cantinho_caseiro_novoairao/',
                 facebook: 'https://www.facebook.com/Cantinho-Caseiro-NOVO-AIR%C3%83O-2339386406344365',
@@ -362,7 +362,7 @@ export default [
             address: "Rua Luís Carlos de Mattos Areosa n° 17, Nova Esperança",
             addressLink: '',
             type: ["Soparia", "Doceria"],
-            offering: ["Pix", "Entrega grátis"],
+            offering: ["Entrega grátis"],
             duration: "",
             profile: ["adventure", "soft", "calm"]
         },
@@ -373,7 +373,7 @@ export default [
         title: "Espetos do Rafinha",
         content: {
             description: "Variedades de Espetinhos, com o melhor atendimento.",
-            image: require('./exceptionalImage/toEat/espetosDoRafinha.jpg'),
+            image: require('./exceptionalImage/toEat/espetosDoRafinha.png'),
             social: {
                 instagram: 'https://www.instagram.com/cantinho_caseiro_novoairao/',
                 facebook: 'https://www.facebook.com/Cantinho-Caseiro-NOVO-AIR%C3%83O-2339386406344365',
@@ -387,26 +387,26 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    {
-        type: "toEat",
-        id: 5003,
-        title: "JC Lanche e Pizzaria",
-        content: {
-            description: "Nós trabalhamos no período da tarde com merendas, e a noite com pizzas, salgados, lanches, bebidas, em um local próprio e apto para o nosso serviço, localizado em nossa propriedade.",
-            image: require('./exceptionalImage/toEat/JCLancheEPizzaria.jpg'),
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "tel://+5592985834702",
-            address: "Rua Francisca Cardoso",
-            addressLink: 'https://goo.gl/maps/Cju7M3Qsz92L1iGq7',
-            type: ["Lanchonete"],
-            offering: ["Pix", "Cartão", "Internet"],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "toEat",
+    //     id: 5003,
+    //     title: "JC Lanche e Pizzaria",
+    //     content: {
+    //         description: "Nós trabalhamos no período da tarde com merendas, e a noite com pizzas, salgados, lanches, bebidas, em um local próprio e apto para o nosso serviço, localizado em nossa propriedade.",
+    //         image: require('./exceptionalImage/toEat/JCLancheEPizzaria.jpg'),
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592985834702",
+    //         address: "Rua Francisca Cardoso",
+    //         addressLink: 'https://goo.gl/maps/Cju7M3Qsz92L1iGq7',
+    //         type: ["Lanchonete"],
+    //         offering: ["Pix", "Cartão", "Internet"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "toEat",
         id: 5004,

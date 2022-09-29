@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.TouchableOpacity`
-    
+    margin-bottom: 15px;
     flex-direction: row;
     justify-content: space-between;
 `

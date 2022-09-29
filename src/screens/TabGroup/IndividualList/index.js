@@ -18,14 +18,18 @@ import { AntDesign } from '@expo/vector-icons';
 
 import { useNavigation } from '@react-navigation/native'
 import theme from '../../../global/styles/theme'
+import { ActivityIndicator } from 'react-native'
 
 
 const IndividualList = ({ route }) => {
 
     const { title, data } = route.params
+    const navigation = useNavigation()
+
     const [searchInput, setSearchInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
-    const navigation = useNavigation()
+    const [dataLoaded, setDataLoaded] = useState(false)
+
 
     function handleInput(e) {
         setSearchInput(e)
@@ -54,8 +58,15 @@ const IndividualList = ({ route }) => {
             }
         }
         shuffle(data)
+        setDataLoaded(true)
     }, [])
 
+    if (!dataLoaded) {
+        <ActivityIndicator
+            size='large'
+            color={theme.colors.green}
+        />
+    }
 
     return (
         <Container>
@@ -108,21 +119,39 @@ const IndividualList = ({ route }) => {
             {
                 searchInput !== '' &&
                 <Main>
-                    <List
-                        data={arrSearch}
-                        showsVerticalScrollIndicator={false}
-                        keyExtractor={item => item.id}
-                        renderItem={({ item }) =>
-                        (
-                            <Card
-                                title={item.title}
-                                image={item.content.image}
-                                onPress={() => navigateToSelected(item.id)}
-                            />
-                        )}
-                    />
+                    {
+                        dataLoaded ?
+                            (
+                                <List
+                                    data={arrSearch}
+                                    showsVerticalScrollIndicator={false}
+                                    keyExtractor={item => item.id}
+                                    renderItem={({ item }) =>
+                                    (
+                                        <Card
+                                            title={item.title}
+                                            image={item.content.image}
+                                            onPress={() => navigateToSelected(item.id)}
+                                        />
+                                    )}
+                                />
+                            )
+                            :
+                            (
+
+                                dataLoaded &&
+                                <ActivityIndicator
+                                    size='large'
+                                    color={theme.colors.green}
+                                />
+
+                            )
+                    }
+
                 </Main>
             }
+
+
         </Container>
     )
 }

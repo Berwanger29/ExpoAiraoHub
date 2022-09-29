@@ -4,7 +4,6 @@ import { StatusBar } from "react-native";
 
 export const Container = styled.View`
     flex: 1;
-    background-color: ${props => props.theme.colors.light};
     padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
 `
 
