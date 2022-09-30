@@ -24,7 +24,7 @@ const HomeSearchCard = ({ id, title, image }) => {
         >
             <ImageCard
                 source={image}
-                imageStyle={{ borderRadius: 5 }}
+                imageStyle={{ borderRadius: 15 }}
             >
                 <LinearGradient
                     colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0.3)']}

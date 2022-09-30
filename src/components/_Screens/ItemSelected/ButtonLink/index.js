@@ -15,7 +15,7 @@ const ButtonLink = ({ onPress, nameIcon }) => {
             <Entypo
                 name={nameIcon}
                 size={RFValue(40)}
-                color={theme.colors.black}
+                color={theme.colors.green}
             />
         </Container>
     )

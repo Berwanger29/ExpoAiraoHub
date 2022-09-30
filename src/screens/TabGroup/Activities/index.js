@@ -31,7 +31,7 @@ function ActivitiesTopTabs() {
             initialRouteName='Aventura'
             screenOptions={{
                 tabBarStyle: { backgroundColor: theme.colors.light },
-                tabBarIndicatorStyle: { backgroundColor: 'green' }
+                tabBarIndicatorStyle: { backgroundColor: theme.colors.green }
             }}
         >
             <TopTab.Screen

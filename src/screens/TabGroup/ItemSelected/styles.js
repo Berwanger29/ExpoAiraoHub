@@ -1,25 +1,26 @@
 import styled from "styled-components/native";
-import { StatusBar } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
+import { StatusBar } from "react-native";
 
 export const Container = styled.View`
     flex: 1;
+    background-color: white;
 `
 
 export const ScrollContainer = styled.ScrollView`
     flex: 1;
-    background-color: ${props => props.theme.colors.light};
-    padding-top:${StatusBar.currentHeight}px;
+    background-color: ${props => props.theme.colors.semiLight};
+    
 `
 
 export const ImageContainer = styled.View`
     width: 100%;
-    height: ${RFValue(300)}px;
+    height: ${RFValue(300) + StatusBar.currentHeight}px;
 `
 
 export const ContainerBackButton = styled.View`
     position: absolute;
-    top: 20px;
+    top: ${StatusBar.currentHeight + 1}px;
     left: 15px;
 `
 
@@ -30,17 +31,16 @@ export const Image = styled.Image`
 export const TextContentContainer = styled.View`
     padding: ${RFValue(25)}px ${RFValue(15)}px ${RFValue(25)}px ${RFValue(15)}px;
     align-items: center;
-`
-
-export const Title = styled.Text`
-    font-family: ${props => props.theme.fonts.black};
-    font-size: ${RFValue(22)}px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: ${props => props.theme.colors.semiLight};
+    margin-top: -30px;
 `
 
 export const Line = styled.View`
-    height: 1px;
-    width: 80%;
-    background-color: rgba(0,0,0,0.5);
+    height: 0.5px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
     border-radius: 5px;
     margin: 20px 0px;
 `

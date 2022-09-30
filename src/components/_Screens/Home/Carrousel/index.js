@@ -44,7 +44,6 @@ export const Carroussel = ({ title, data }) => {
                 </NewListButton>
             </TopContainer>
 
-
             <HorizontalView
                 data={data}
                 renderItem={({ item }) => (
@@ -56,9 +55,7 @@ export const Carroussel = ({ title, data }) => {
                 )}
                 horizontal={true}
                 showsHorizontalScrollIndicator={false}
-
             />
-
         </Container>
     )
 }

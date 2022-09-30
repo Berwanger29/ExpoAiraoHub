@@ -1,11 +1,9 @@
-import { useEffect } from "react";
 import { Linking, StatusBar } from "react-native";
 import {
     Container,
     Image,
     ImageContainer,
     TextContentContainer,
-    Title,
     Line,
     MainText,
     ContainerBackButton,

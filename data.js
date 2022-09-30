@@ -387,26 +387,26 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    // {
-    //     type: "toEat",
-    //     id: 5003,
-    //     title: "JC Lanche e Pizzaria",
-    //     content: {
-    //         description: "Nós trabalhamos no período da tarde com merendas, e a noite com pizzas, salgados, lanches, bebidas, em um local próprio e apto para o nosso serviço, localizado em nossa propriedade.",
-    //         image: require('./exceptionalImage/toEat/JCLancheEPizzaria.jpg'),
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "tel://+5592985834702",
-    //         address: "Rua Francisca Cardoso",
-    //         addressLink: 'https://goo.gl/maps/Cju7M3Qsz92L1iGq7',
-    //         type: ["Lanchonete"],
-    //         offering: ["Pix", "Cartão", "Internet"],
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
+    {
+        type: "toEat",
+        id: 5003,
+        title: "JC Lanche e Pizzaria",
+        content: {
+            description: "Nós trabalhamos no período da tarde com merendas, e a noite com pizzas, salgados, lanches, bebidas, em um local próprio e apto para o nosso serviço, localizado em nossa propriedade.",
+            image: require('./exceptionalImage/toEat/JCLancheEPizzaria.png'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592985834702",
+            address: "Rua Francisca Cardoso",
+            addressLink: 'https://goo.gl/maps/Cju7M3Qsz92L1iGq7',
+            type: ["Lanchonete"],
+            offering: ["Pix", "Cartão", "Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
     {
         type: "toEat",
         id: 5004,
@@ -433,7 +433,7 @@ export default [
         title: "Flor do luar Peixaria",
         content: {
             description: "Restaurantes flutuante servimos variedades de peixes e carnes, temos variados drinks regionais, temos espaço de banho no Rio Negro, sendo que a família poderão ficar a tarde toda aproveitando a natureza e degustando dos nossos drinks e petiscos deliciosos.",
-            image: require('./exceptionalImage/toEat/florDoLuar.jpeg'),
+            image: require('./exceptionalImage/toEat/florDoLuar.png'),
             social: {
                 instagram: 'https://www.instagram.com/flutuanteflordoluar/',
                 facebook: 'https://www.facebook.com/flor.luar.75',
@@ -473,7 +473,7 @@ export default [
         title: "Maranata restaurante",
         content: {
             description: "Temos a melhor comida regional",
-            image: require('./exceptionalImage/toEat/cafeDaPreta.jpeg'),
+            image: require('./exceptionalImage/toEat/maranata.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/maranata.restaurante0/',
                 facebook: '',
@@ -836,7 +836,7 @@ export default [
                 facebook: "https://www.facebook.com/mirantedogaviao/",
                 site: "https://mirantedogaviao.com.br/br/"
             },
-            offering: ["Internet", "Estacionamento", "Café da manhã", "Piscina", "Transfer", "Restaurante", "SUP", ""],
+            offering: ["Internet", "Estacionamento", "Café da manhã", "Piscina", "Transfer", "Restaurante", "SUP", "Ponto de recarga para carros elétricos"],
             address: "",
             addressLink: "https://goo.gl/maps/6t3VA1UFCgWb5DdZ8",
             profile: ["adventure", "soft", "calm"],

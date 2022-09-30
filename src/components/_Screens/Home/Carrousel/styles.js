@@ -20,7 +20,6 @@ export const NewListButton = styled.TouchableOpacity`
     justify-content: space-between;
 `
 
-
 export const HorizontalView = styled.FlatList`
 
 `

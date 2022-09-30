@@ -8,7 +8,7 @@ export const Image = styled.Image`
     height: ${RFValue(221)}px;
     width: 100%;
     margin-bottom: 15px;
-    border-radius: 5px;
+    border-radius: 20px;
 `
 export const PriceText = styled.Text`
     font-family: ${props => props.theme.fonts.regular};
