@@ -6,13 +6,12 @@ import * as firebase from "firebase";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBwMymltjFe82jQc4XvujFe-5ANT3IqbWY",
-    authDomain: "testeairaohub.firebaseapp.com",
-    projectId: "testeairaohub",
-    storageBucket: "testeairaohub.appspot.com",
-    messagingSenderId: "260943659942",
-    appId: "1:260943659942:web:330bfbb71c333e97afc567",
-    measurementId: "G-DKKNPXP5EE"
+    apiKey: "AIzaSyCyJtRHMYx_bBSIm84mxHF-QLuvti3JffQ",
+    authDomain: "airaohubturismo.firebaseapp.com",
+    projectId: "airaohubturismo",
+    storageBucket: "airaohubturismo.appspot.com",
+    messagingSenderId: "850181910469",
+    appId: "1:850181910469:web:203c43c9bf4e493e32a5ac"
 };
 
 // Initialize Firebase
