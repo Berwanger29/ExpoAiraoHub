@@ -1,32 +1,34 @@
 import BackButton from "../../../components/BackButton";
 import {
-    AboutTitle,
     Container,
     ContainerBackButton,
     Header,
     Main,
     Scroll,
-    Text,
 } from "./styles";
 
 import { TextRegular, TextSubTitle } from '../../../components/Texts'
+import BackgroundImage from "../../../components/BackgroundImage";
 
 const UserAbout = () => {
     return (
-        <Container>
-            <ContainerBackButton>
-                <BackButton />
-            </ContainerBackButton>
-            <Header>
-                <TextSubTitle
-                    text='Sobre'
-                />
-            </Header>
-            <Main>
-                <Scroll>
-                    <TextRegular
-                        format='justify'
-                        text='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        <BackgroundImage
+            filter={1}
+        >
+            <Container>
+                <ContainerBackButton>
+                    <BackButton />
+                </ContainerBackButton>
+                <Header>
+                    <TextSubTitle
+                        text='Sobre'
+                    />
+                </Header>
+                <Main>
+                    <Scroll>
+                        <TextRegular
+                            format='justify'
+                            text='Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Donec molestie luctus ex, id maximus enim pellentesque
                         vitae. Cras vel imperdiet ipsum, sit amet tempor mi.
                         Curabitur in arcu justo. Donec auctor ante semper dictum
@@ -58,10 +60,11 @@ const UserAbout = () => {
                         litora torquent per conubia nostra, per inceptos himenaeos.
                         Nulla condimentum, enim eget egestas volutpat, metus justo
                         ullamcorper ipsum, id mattis lacus leo nec risus.'
-                    />
-                </Scroll>
-            </Main>
-        </Container>
+                        />
+                    </Scroll>
+                </Main>
+            </Container>
+        </BackgroundImage>
     )
 }
 

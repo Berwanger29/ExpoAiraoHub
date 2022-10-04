@@ -3,6 +3,7 @@ import { TextRegular } from '../../../Texts'
 import {
     Container,
     Image,
+    TextContainer,
 } from './styles'
 
 const Card = ({ title, image, onPress }) => {
@@ -13,13 +14,15 @@ const Card = ({ title, image, onPress }) => {
         >
             <Image
                 source={image}
-                
-            />
-            <TextRegular
-                text={title}
-                color={theme.colors.darkGreen}
+
             />
 
+            <TextContainer>
+                <TextRegular
+                    text={title}
+                    color={theme.colors.darkGreen}
+                />
+            </TextContainer>
         </Container>
     )
 }

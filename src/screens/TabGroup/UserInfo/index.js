@@ -9,6 +9,7 @@ import {
 
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { TextRegular, TextSubTitle } from '../../../components/Texts'
+import BackgroundImage from '../../../components/BackgroundImage'
 
 
 const UserInfo = () => {
@@ -46,21 +47,26 @@ const UserInfo = () => {
 
 
     return (
-        <Container>
-            <Header>
-                <ContainerBackButton>
-                    <BackButton />
-                </ContainerBackButton>
-                <TextSubTitle
-                    text='Perfil'
-                />
-            </Header>
-            <Main>
-                <TextRegular
-                    text={`Você tem um perfil: ${infoProfile}`}
-                />
-            </Main>
-        </Container>
+        <BackgroundImage
+            image={require('../../../../assets/images/plantBackground.jpg')}
+            filter
+        >
+            <Container>
+                <Header>
+                    <ContainerBackButton>
+                        <BackButton />
+                    </ContainerBackButton>
+                    <TextSubTitle
+                        text='Perfil'
+                    />
+                </Header>
+                <Main>
+                    <TextRegular
+                        text={`Você tem um perfil: ${infoProfile}`}
+                    />
+                </Main>
+            </Container>
+        </BackgroundImage>
     )
 }
 

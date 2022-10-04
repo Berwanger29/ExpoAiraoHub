@@ -98,9 +98,11 @@ const IndividualList = ({ route }) => {
             {searchInput == '' &&
                 <Main>
                     <List
-                        showsVerticalScrollIndicator={false}
                         data={data}
                         keyExtractor={item => item.id}
+                        showsVerticalScrollIndicator={false}
+                        removeCLippedSubviews={true}
+                        maxToRenderPerBatch={6}
                         renderItem={({ item }) =>
                         (
                             <Card

@@ -67,7 +67,7 @@ const User = () => {
     return (
         <BackgroundImage
             image={require('../../../../assets/images/plantBackground.jpg')}
-            filter={0.5}
+            filter
         >
             <Container>
                 <Header>

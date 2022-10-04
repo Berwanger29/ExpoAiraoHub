@@ -962,6 +962,26 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
+    {
+        type: "hotels",
+        id: 6011,
+        title: "Pousada Fortaleza",
+        content: {
+            description: "A Pousada Fortaleza, localizada nas proximidades da entrada de Novo Airão, disponibiliza acomodações climatizadas e estacionamento gratuito. Uma pousada simples, mas que investe na limpeza e no bem-estar dos seus clientes. ",
+            image: require('./exceptionalImage/hotels/pousadaFortaleza.jpg'),
+            contacts: "",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Internet", "estacionamento"],
+            address: "",
+            addressLink: "https://goo.gl/maps/qcztmKkC4UANdpQT7",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+
 
     // {
     //     type: "adventure",
