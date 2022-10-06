@@ -981,31 +981,34 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
-
-
+    {
+        type: "tourism",
+        id: 7000,
+        title: "Arborismo",
+        content: {
+            title: "Arborismo",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: require("./exceptionalImage/adventure/arborismo.jpg"),
+            contacts: "92912345678",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            activities: {
+                height: 27,
+                distance: 1970,
+                duration: 180,
+                effort: "Difícil"
+            },
+            address: "Rua Antenor Carlos Francisco",
+            type: "pessoa",
+            offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
     // {
-    //     type: "adventure",
-    //     id: 7000,
-    //     title: "Arborismo",
-    //     content: {
-    //         title: "Arborismo",
-    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    //         image: require("./exceptionalImage/adventure/arborismo.png"),
-    //         prices: '400',
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "92912345678",
-    //         address: "Rua Antenor Carlos Francisco",
-    //         type: "pessoa",
-    //         offering: [],
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
-    // {
-    //     type: "adventure",
+    //     type: "tourism",
     //     id: 7001,
     //     title: "Bike aquática",
     //     content: {
@@ -1026,116 +1029,142 @@ export default [
     //         profile: ["adventure", "soft", "calm"]
     //     },
     // },
-    // {
-    //     type: "adventure",
-    //     id: 7002,
-    //     title: "SUP",
-    //     content: {
-    //         title: "SUP",
-    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    //         image: require("./exceptionalImage/adventure/SUP.png"),
-    //         prices: '150',
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "92912345678",
-    //         address: "Rua Antenor Carlos Francisco",
-    //         type: "pessoa",
-    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-    //         duration: "",
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
-    // {
-    //     type: "adventure",
-    //     id: 7003,
-    //     title: "Trilha",
-    //     content: {
-    //         title: "Trilha",
-    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    //         image: require("./exceptionalImage/adventure/trilha.png"),
-    //         prices: '150',
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "92912345678",
-    //         address: "Rua Antenor Carlos Francisco",
-    //         type: "pessoa",
-    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-    //         duration: "",
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
-    // {
-    //     type: "tour",
-    //     id: 7004,
-    //     title: "Parque Anavilhanas",
-    //     content: {
-    //         title: "Trilha",
-    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    //         image: require("./exceptionalImage/tour/Anavilhanas.png"),
-    //         prices: '150',
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "92912345678",
-    //         address: "Rua Antenor Carlos Francisco",
-    //         type: "pessoa",
-    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-    //         duration: "",
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
-    // {
-    //     type: "tour",
-    //     id: 7005,
-    //     title: "Parque Jáu",
-    //     content: {
-    //         title: "Trilha",
-    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    //         image: require("./exceptionalImage/tour/jau.png"),
-    //         prices: '150',
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "92912345678",
-    //         address: "Rua Antenor Carlos Francisco",
-    //         type: "pessoa",
-    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-    //         duration: "",
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
-    // {
-    //     type: "tour",
-    //     id: 7006,
-    //     title: "Reserva Unini",
-    //     content: {
-    //         title: "Trilha",
-    //         description: "",
-    //         image: require("./exceptionalImage/tour/unini.png"),
-    //         prices: '150',
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "92912345678",
-    //         address: "Rua Antenor Carlos Francisco",
-    //         type: "pessoa",
-    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-    //         duration: "",
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
+    {
+        type: "tourism",
+        id: 7002,
+        title: "SUP",
+        content: {
+            title: "SUP",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: require("./exceptionalImage/adventure/SUP.jpg"),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            activities: {
+                height: 0,
+                distance: 1100,
+                duration: 60,
+                effort: "Difícil"
+            },
+            contacts: "92912345678",
+            address: "Rua Antenor Carlos Francisco",
+            type: "pessoa",
+            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+            duration: "",
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "tourism",
+        id: 7003,
+        title: "Trilha",
+        content: {
+            title: "Trilha",
+            description: "",
+            image: require("./exceptionalImage/adventure/trilha.jpg"),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            activities: {
+                height: 18,
+                distance: 1800,
+                duration: 90,
+                effort: "Médio"
+            },
+            contacts: "tel://",
+            address: "Rua Antenor Carlos Francisco",
+            offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "tourism",
+        id: 7004,
+        title: "Praia do Camaleão",
+        content: {
+            title: "Trilha",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: require("./exceptionalImage/adventure/praiaDoCamaleao.jpg"),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            activities: {
+                height: 0,
+                distance: 3000,
+                duration: 120,
+                effort: "médio"
+            },
+            contacts: '',
+            address: "Rua Antenor Carlos Francisco",
+            addressLink: '',
+            type: "pessoa",
+            offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "tourism",
+        id: 7005,
+        title: "Velho Airão",
+        content: {
+            title: "Trilha",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: require("./exceptionalImage/adventure/velhoAirao.jpg"),
+            prices: '150',
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            activities: {
+                height: 20,
+                distance: 1930,
+                duration: 60,
+                effort: "médio"
+            },
+            contacts: "92912345678",
+            address: "Rua Antenor Carlos Francisco",
+            type: "pessoa",
+            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+            duration: "",
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "tourism",
+        id: 7006,
+        title: "Cachoeira Mirapinima",
+        content: {
+            title: "Trilha",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            image: require("./exceptionalImage/adventure/cahoeiraMirapinima.jpg"),
+            prices: '150',
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            activities: {
+                height: 20,
+                distance: 1930,
+                duration: 240,
+                effort: "médio"
+            },
+            contacts: "92912345678",
+            address: "Rua Antenor Carlos Francisco",
+            type: "pessoa",
+            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
+            duration: "",
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+
     {
         type: "bathhouse",
         id: 8000,
@@ -1501,6 +1530,26 @@ export default [
             address: "Rua Francisco Bezerra N 113 Santo Elias",
             addressLink: "https://goo.gl/maps/UBUZFEP6WVDCfPYf6",
             profile: ["adventure", "soft", "calm"],
+        },
+    },
+
+    {
+        type: "public",
+        id: 12000,
+        title: "Hospital",
+        content: {
+            description: "",
+            image: require('./exceptionalImage/agencies/ayraoTaxiTur.png'),
+            contacts: "tel://+55",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: [],
+            address: "",
+            addressLink: "",
+            profile: [],
         },
     },
 ]

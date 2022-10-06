@@ -1,4 +1,4 @@
-import { RFValue, RFPercentage } from "react-native-responsive-fontsize";
+import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
 
 
@@ -16,10 +16,8 @@ export const ImageContainer = styled.View`
 export const ImageCard = styled.Image`
     height: 100%;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 15px;
 `
-
-
 
 export const PriceContainer = styled.View`
     flex-direction: row;

@@ -5,7 +5,8 @@ import {
     Input,
     SearchButton,
     ContainerSearch,
-    SearchList
+    SearchList,
+    MainList
 } from './styles'
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
@@ -52,7 +53,7 @@ const Activities = () => {
     const [arrSearch, setArrSearch] = useState([])
 
     let activitiesData = data.filter((item) => {
-        return item.type == 'adventure' || item.type == 'tour'
+        return item.type == 'tourism'
     })
 
 
@@ -94,7 +95,17 @@ const Activities = () => {
             </Header>
             {input === '' &&
                 <Main>
-                    <ActivitiesTopTabs />
+                    <MainList
+                        data={activitiesData}
+                        showsVerticalScrollIndicator={false}
+                        renderItem={({ item }) => (
+                            <Card
+                                id={item.id}
+                                image={item.content.image}
+                                title={item.title}
+                            />
+                        )}
+                    />
                 </Main>
             }
 

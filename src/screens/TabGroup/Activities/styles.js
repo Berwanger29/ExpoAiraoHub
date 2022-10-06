@@ -44,3 +44,7 @@ export const SearchButton = styled.View`
 export const SearchList = styled.FlatList`
     flex: 1;
 `
+
+export const MainList = styled.FlatList`
+    flex: 1;
+`

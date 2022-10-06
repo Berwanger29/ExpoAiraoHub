@@ -68,3 +68,25 @@ export const LinkButton = styled.View`
     width: ${RFValue(50)}px;
     height: ${RFValue(50)}px;
 `
+
+export const AdventureIconsContainer = styled.View`
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+`
+export const InfoContainer = styled.View`
+    flex-direction: column;
+    align-items: center;
+`
+
+export const IconCircle = styled.View`
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    background-color: ${props => props.theme.colors.semiLight};
+    border: 3px solid ${props => props.theme.colors.green};
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+`

@@ -10,7 +10,7 @@ import data from '../../../../data'
 const ActivitiesTour = () => {
 
     const adventureData = data.filter((item) => {
-        return item.type == "tour"
+        return item.type == "tourism"
     })
 
     return (

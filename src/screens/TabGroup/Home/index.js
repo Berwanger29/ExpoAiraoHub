@@ -140,7 +140,7 @@ const Home = () => {
                         /> */}
 
                         <Carroussel
-                            title="Agências e operadores"
+                            title="Pacotes e passeios"
                             data={agenciesData}
                         />
 

@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "ExpoAiraoHub",
-    "slug": "AiraoHub",
-    "version": "2.1.0",
+    "slug": "ExpoAiraoHub",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -25,7 +25,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#fafafa"
       },
-      "package": "com.berwanger29.ExpoAiraoHub",
+      "package": "com.berwanger29.AiraoHub",
+      "permissions": [],
       "softwareKeyboardLayoutMode": "pan"
     },
     "web": {
