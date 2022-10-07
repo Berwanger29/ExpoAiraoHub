@@ -14,6 +14,6 @@ export const ImageCard = styled.ImageBackground`
 `
 export const TitleContainer = styled.View`
     position: absolute;
-    bottom: 20;
-    left: 20;
+    bottom: 20px;
+    left: 20px;
 `

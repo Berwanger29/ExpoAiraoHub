@@ -6,9 +6,7 @@ export const ButtonContainer = styled.TouchableOpacity`
     height: 270px;
 
     margin-top: 20px;
-    margin-bottom: 20px;
-
-    
+    margin-bottom: 20px;    
 `
 
 export const ImageCard = styled.ImageBackground`

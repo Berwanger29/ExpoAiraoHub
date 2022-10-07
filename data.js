@@ -987,7 +987,7 @@ export default [
         title: "Arborismo",
         content: {
             title: "Arborismo",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            description: "O arborismo é uma experiência de aventura ao ar livre inigualável. Cheia de adrenalina, leva as pessoas para fora da sua zona de conforto e é uma ótima atividade outdoor para pequenos e grandes aventureiros.",
             image: require("./exceptionalImage/adventure/arborismo.jpg"),
             contacts: "92912345678",
             social: {
@@ -1035,7 +1035,7 @@ export default [
         title: "SUP",
         content: {
             title: "SUP",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            description: "Todas as pessoas podem praticar esse esporte, incluindo homens, mulheres e crianças. É um esporte para todas as idades e níveis, indo do mais iniciante aos avançados em surf e outros esportes aquáticos com prancha.",
             image: require("./exceptionalImage/adventure/SUP.jpg"),
             social: {
                 instagram: '',
@@ -1059,10 +1059,10 @@ export default [
     {
         type: "tourism",
         id: 7003,
-        title: "Trilha",
+        title: "Trilha do Apuaú",
         content: {
             title: "Trilha",
-            description: "",
+            description: "A trilha do Apuaú apresenta dificuldade moderada, devido à extensão e declividade em alguns trechos, embora seja possível percorrer trajetos mais curtos, se o visitante assim desejar. Localiza-se na base 2 do ICMBio, que serve de posto de vigilância na confluência dos rios Negro e Apuaú, que faz limite com o parque. A área é acessível somente de barco, o ano todo.",
             image: require("./exceptionalImage/adventure/trilha.jpg"),
             social: {
                 instagram: '',
@@ -1086,8 +1086,7 @@ export default [
         id: 7004,
         title: "Praia do Camaleão",
         content: {
-            title: "Trilha",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            description: "No meio do arquipélago das Anavilhanas e cercada por uma floresta a perder de vista, a extensa faixa de areia contrasta com as águas escuras do rio Negro. Sem nenhuma infraestrutura, a praia é pouco frequentada. Se tiver sorte, será só você e as aves que gorjeiam num dos cantos da praia.",
             image: require("./exceptionalImage/adventure/praiaDoCamaleao.jpg"),
             social: {
                 instagram: '',
@@ -1114,7 +1113,7 @@ export default [
         title: "Velho Airão",
         content: {
             title: "Trilha",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            description: "Airão Velho ou Velho Airão, antiga sede do município de Novo Airão, no Amazonas, é uma vila que foi abandonada no meio da floresta amazônica e que, aparentemente, ficou assim após um ataque de formigas de fogo.",
             image: require("./exceptionalImage/adventure/velhoAirao.jpg"),
             prices: '150',
             social: {
@@ -1142,7 +1141,7 @@ export default [
         title: "Cachoeira Mirapinima",
         content: {
             title: "Trilha",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            description: "O passeio pela cachoeira Mirapinima está disponível durante todo o ano e é preciso atravessar uma trilha incrível pela Floresta Amazônica para chegar. O banho é refrescante recompensador.",
             image: require("./exceptionalImage/adventure/cahoeiraMirapinima.jpg"),
             prices: '150',
             social: {

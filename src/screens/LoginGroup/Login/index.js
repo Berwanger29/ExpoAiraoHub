@@ -65,7 +65,10 @@ const Login = () => {
         return unsubscribe
     }
 
+
     function handleLogin() {
+
+
         auth.signInWithEmailAndPassword(email, password)
             .then(userCredentials => {
                 autoLogin()
@@ -83,6 +86,8 @@ const Login = () => {
                     ]
                 )
             })
+
+
     }
 
     function moveToSignUp() {
@@ -181,6 +186,13 @@ const Login = () => {
                                     <LoginAreaButton
                                         label='Entrar'
                                         onPress={() => handleLogin()}
+                                    />
+                                    <LoginAreaButton
+                                        label='Login anônimo'
+                                        onPress={() => {
+                                            console.log('login anonimo')
+                                            navigation.navigate('QuizStack')
+                                        }}
                                     />
                                 </InputContainer>
 

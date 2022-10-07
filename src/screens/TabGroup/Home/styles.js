@@ -5,10 +5,12 @@ import { RFValue } from "react-native-responsive-fontsize";
 export const Container = styled.View`
     flex: 1;
     background-color: ${(props) => props.theme.colors.light};
-    padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    padding-top: ${StatusBar.currentHeight}px;
+    padding-left: ${RFValue(15)}px;
 `
 export const Header = styled.View`
     margin-bottom: 20px;
+    padding-right: ${RFValue(15)}px;
 `
 export const SearchConatainer = styled.View`
     flex-direction: row;
@@ -18,14 +20,11 @@ export const SearchConatainer = styled.View`
     border-radius: 6px;
     margin-top: 25px;
 `
-
 export const Input = styled.TextInput`
     width: 85%;
     height: 100%;
-
     padding-left: 10px;
 `
-
 export const SearchButton = styled.TouchableOpacity`
     width: 15%;
     height: 100%;
@@ -35,7 +34,8 @@ export const SearchButton = styled.TouchableOpacity`
 `
 
 export const Main = styled.View`
-    flex:1; 
+    flex:1;
+    
 `
 
 export const CarrousselContainer = styled.ScrollView`
