@@ -67,8 +67,6 @@ const Login = () => {
 
 
     function handleLogin() {
-
-
         auth.signInWithEmailAndPassword(email, password)
             .then(userCredentials => {
                 autoLogin()

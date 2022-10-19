@@ -106,7 +106,7 @@ const SignUp = () => {
                             <EyeContainer
                                 onPress={() => toggleShowPassword()}
                             >
-                                <Entypo name={iconEyeName} size={24} color={theme.colors.light} />
+                                <Entypo name={iconEyeName} size={24} color={theme.colors.green} />
                             </EyeContainer>
                         </EyeInputContainer>
                         <Input

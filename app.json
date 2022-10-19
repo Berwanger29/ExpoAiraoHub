@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "ExpoAiraoHub",
+    "name": "AiraoHub",
     "slug": "ExpoAiraoHub",
-    "version": "2.0.0",
+    "version": "2.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -26,11 +26,22 @@
         "backgroundColor": "#fafafa"
       },
       "package": "com.berwanger29.AiraoHub",
+      "versionCode": 5,
       "permissions": [],
+      "blockedPermissions": [
+        "android.permissions.ACCESS_FINE_LOCATION",
+        "android.permissions.ACCESS_BACKGROUND_LOCATION",
+        "android.permissions.ACCESS_COARSE_LOCATION"
+      ],
       "softwareKeyboardLayoutMode": "pan"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4993788e-3263-4ecd-a1d8-68690ac31225"
+      }
     }
   }
 }

@@ -341,7 +341,7 @@ export default [
             address: "Av. João Paulo, Centro N°53",
             addressLink: 'https://goo.gl/maps/mXqA7xAEgUEJWxxj9',
             type: ["bar"],
-            offering: ["Cartão", "Pix", "Internet"],
+            offering: ["Internet"],
             duration: "",
             profile: ["adventure", "soft", "calm"]
         },
@@ -375,8 +375,8 @@ export default [
             description: "Variedades de Espetinhos, com o melhor atendimento.",
             image: require('./exceptionalImage/toEat/espetosDoRafinha.png'),
             social: {
-                instagram: 'https://www.instagram.com/cantinho_caseiro_novoairao/',
-                facebook: 'https://www.facebook.com/Cantinho-Caseiro-NOVO-AIR%C3%83O-2339386406344365',
+                instagram: '',
+                facebook: '',
                 site: ''
             },
             contacts: "tel://+5592994730833",
@@ -403,7 +403,7 @@ export default [
             address: "Rua Francisca Cardoso",
             addressLink: 'https://goo.gl/maps/Cju7M3Qsz92L1iGq7',
             type: ["Lanchonete"],
-            offering: ["Pix", "Cartão", "Internet"],
+            offering: ["Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -423,7 +423,7 @@ export default [
             address: "Av. Ajuricaba, N° 31",
             addressLink: 'https://goo.gl/maps/K8fdcQpEyyRDo34C6',
             type: ["Café regional"],
-            offering: ["Pix", "Cartão", "Internet"],
+            offering: ["Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -463,7 +463,7 @@ export default [
             address: "Rua Ivo de Almeida N° 11, bairro Remanso, por trás da quadra municipal",
             addressLink: 'https://goo.gl/maps/Jf4ih8wFPTpoamp69',
             type: ["Restaurante"],
-            offering: ["Pix", "Débito", "Internet"],
+            offering: ["Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -483,7 +483,7 @@ export default [
             address: "Comunidade do Sobrado, igarapé do Curuçá",
             addressLink: '',
             type: ["Restaurante"],
-            offering: ["Pix", "Internet"],
+            offering: ["Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -503,7 +503,7 @@ export default [
             address: "",
             addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
             type: ["Lanchonete"],
-            offering: ["Pix"],
+            offering: [],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -523,7 +523,7 @@ export default [
             address: "Rua ademar de barros",
             addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
             type: ["Lanchonete", "Bar"],
-            offering: ["Pix", "Cartão", "Internet"],
+            offering: ["Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -543,7 +543,7 @@ export default [
             address: "Avenida Ajuricaba, S/N. Centro.",
             addressLink: 'https://goo.gl/maps/mmPVtywjhjA7gBYs8',
             type: ["Restaurante"],
-            offering: ["Pix", "Cartão", "Internet"],
+            offering: ["Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -563,7 +563,7 @@ export default [
             address: "Av. Santos Dumont,SN quiosque 03 centro ",
             addressLink: 'https://goo.gl/maps/ttzQBDfEiPxrYf7k7',
             type: ["Lanchonete"],
-            offering: ["Pix", "Cartão", "Internet"],
+            offering: ["Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -583,7 +583,7 @@ export default [
             address: "",
             addressLink: "https://goo.gl/maps/ttzQBDfEiPxrYf7k7",
             type: ["Açaíteria"],
-            offering: ["Pix", "Cartão", "Internet"],
+            offering: ["Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -610,7 +610,7 @@ export default [
     {
         type: "toEat",
         id: 5015,
-        title: "Cafe Regional De Bubuia",
+        title: "Café Regional De Bubuia",
         content: {
             description: "Estabelecimento familiar com ambiente aconchegante, oferecemos um cardápio com  tapiocas variadas e outros produtos regionais. ",
             image: require('./exceptionalImage/toEat/deBubuia.jpg'),
@@ -623,7 +623,7 @@ export default [
             address: "",
             addressLink: "https://goo.gl/maps/DCfw6dzL9AMK6Ueu6",
             type: ["Café regional"],
-            offering: ["Pix", "Estacionamento"],
+            offering: ["Estacionamento"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -663,7 +663,7 @@ export default [
             address: "Av.Presidente Castelo Branco N51 A",
             addressLink: 'https://goo.gl/maps/Ja6erfz6M9AzJRhr5',
             type: ["Lanchonete"],
-            offering: ["Pix", "Cartão"],
+            offering: ["Ambiente ao ar livre"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -683,70 +683,134 @@ export default [
             address: "Rua Pedro Bezerra, 18, bairro jardim primavera",
             addressLink: 'https://goo.gl/maps/2BjFvZV97f5Bkw9w8',
             type: ["Restaurante"],
-            offering: ["Pix", "Cartão", "Delivery"],
+            offering: ["Oferecemos delivery"],
             profile: ["adventure", "soft", "calm"]
         },
     },
+    // {
+    //     type: "toEat",
+    //     id: 5019,
+    //     title: "Conveniência Lanchonete Natureza",
+    //     content: {
+    //         description: "Lanchonete ou conveniência -bar é um estabelecimento comercial popular especializado em pequenas refeições rápidas, tais como petiscos, lanches e sanduíches mesmo fora do horário normal das refeições.",
+    //         image: require('./exceptionalImage/toEat/postoJau.jpeg'),
+    //         social: {
+    //             instagram: 'https://www.instagram.com/posto_jau/',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592994664501",
+    //         address: "Avenida Ajuricaba, n59 , Centro",
+    //         addressLink: 'https://goo.gl/maps/sWHZWbJ2u8DvSxVx8',
+    //         type: ["Bar", "Lanchonete"],
+    //         offering: ["Cartão", "Internet"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "toEat",
+    //     id: 5020,
+    //     title: "Kikão da praça",
+    //     content: {
+    //         description: "",
+    //         image: require('./exceptionalImage/toEat/kikaoDaPraca.jpg'),
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592984366995",
+    //         address: "",
+    //         addressLink: 'https://goo.gl/maps/ddrhx3ZuDJiEgyTT7',
+    //         type: ["Lanchonete"],
+    //         offering: ["Cartão"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "toEat",
+    //     id: 5021,
+    //     title: "Editar",
+    //     content: {
+    //         description: "",
+    //         image: require('./exceptionalImage/toEat/cafeDaPreta.jpeg'),
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+55",
+    //         address: "",
+    //         addressLink: '',
+    //         type: [""],
+    //         offering: ["Internet"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "toEat",
-        id: 5019,
-        title: "Conveniência Lanchonete Natureza",
+        id: 5022,
+        title: "Matupá bar",
         content: {
-            description: "Lanchonete ou conveniência -bar é um estabelecimento comercial popular especializado em pequenas refeições rápidas, tais como petiscos, lanches e sanduíches mesmo fora do horário normal das refeições.",
-            image: require('./exceptionalImage/toEat/postoJau.jpeg'),
+            description: "O Matupá é um bar exclusivo da cervejaria Sarapó, uma  microcervejaria, aqui do município de Novo Airão. Utilizando-se de maltes e lúpulos importados, não pasteurizada e sem aditivos. Conta com um catálogo de 8 estilos de cervejas especiais. Dispomos de 2 estilos por vez, conforme disponibilidade.",
+            image: require('./exceptionalImage/toEat/matupaBar.jpg'),
             social: {
-                instagram: 'https://www.instagram.com/posto_jau/',
+                instagram: 'https://www.instagram.com/matupa_bar/',
                 facebook: '',
-                site: ''
+                site: 'https://www.cervejariasarapo.com/'
             },
-            contacts: "tel://+5592994664501",
-            address: "Avenida Ajuricaba, n59 , Centro",
-            addressLink: 'https://goo.gl/maps/sWHZWbJ2u8DvSxVx8',
-            type: ["Bar", "Lanchonete"],
-            offering: ["Cartão", "Internet"],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "toEat",
-        id: 5020,
-        title: "Kikão da praça",
-        content: {
-            description: "",
-            image: require('./exceptionalImage/toEat/kikaoDaPraca.jpg'),
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "tel://+5592984366995",
+            contacts: "tel://+5592991507405",
             address: "",
-            addressLink: 'https://goo.gl/maps/ddrhx3ZuDJiEgyTT7',
-            type: ["Lanchonete"],
-            offering: ["Pix", "Cartão"],
+            addressLink: 'https://goo.gl/maps/7VZ4ZXcnvMfnn9oPA',
+            type: [""],
+            offering: ["Chopp artesanal"],
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "toEat",
-        id: 5021,
-        title: "Editar",
+        id: 5023,
+        title: "Zefa refeições",
         content: {
-            description: "",
-            image: require('./exceptionalImage/toEat/cafeDaPreta.jpeg'),
+            description: "Com o melhor sabor caseiro; com pratos típicos da cidade! E com o cardápio recheado de coisas boas.",
+            image: require('./exceptionalImage/toEat/zefaRefeicoes.jpg'),
             social: {
                 instagram: '',
                 facebook: '',
                 site: ''
             },
-            contacts: "tel://+55",
+            contacts: "tel://+5592984025117",
             address: "",
             addressLink: '',
             type: [""],
-            offering: ["Pix", "Cartão", "Internet"],
+            offering: [],
             profile: ["adventure", "soft", "calm"]
         },
     },
+    {
+        type: "toEat",
+        id: 5024,
+        title: "Taberna conveniência",
+        content: {
+            description: "Nosso estabelecimento tem como diferencial é o atendimento e as bebidas mais geledas da cidade com petiscos tradicionais e o melhor preço da cidade.",
+            image: require('./exceptionalImage/toEat/taberna.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/taberna_n.a/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984569273",
+            address: "",
+            addressLink: '',
+            type: [""],
+            offering: ["Cerveja gelada", "Ambiente externo"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+
+
+
+    //Hoteis
     {
         type: "hotels",
         id: 6000,
@@ -754,7 +818,7 @@ export default [
         content: {
             description: "A Pousada Novo Airão apresenta acomodações aconchegantes, ofertando aos seus clientes um maravilhoso café da manhã, piscina e até campo de futebol. Propício para quem procura conciliar lazer, privacidade e descanso em meio a uma bela paisagem.",
             image: require('./exceptionalImage/hotels/pousadaNovoAirao.png'),
-            contacts: "tel://+5592984689749",
+            contacts: "tel://+5592991339884",
             social: {
                 instagram: 'https://www.instagram.com/pousadanovoairao/',
                 facebook: '',
@@ -954,7 +1018,7 @@ export default [
             social: {
                 instagram: 'https://www.instagram.com/anavilhanaslodge/',
                 facebook: '',
-                site: ''
+                site: 'https://www.anavilhanaslodge.com/'
             },
             offering: ["Internet", "estacionamento", "Restaurante", "Passeios guiados", "Loja de artesanatos", "Transfer"],
             address: "",
@@ -982,6 +1046,27 @@ export default [
         },
     },
     {
+        type: "hotels",
+        id: 6012,
+        title: "Pousada Barão do Rio Negro",
+        content: {
+            description: "",
+            image: require('./exceptionalImage/hotels/baraoDoRioNegro.jpg'),
+            contacts: "tel://+5592991035856",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Internet", "Estacionamento", "Vista para o rio", "Café da manhã"],
+            address: "",
+            addressLink: "https://goo.gl/maps/qcztmKkC4UANdpQT7",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+
+    //Tourism
+    {
         type: "tourism",
         id: 7000,
         title: "Arborismo",
@@ -995,11 +1080,16 @@ export default [
                 facebook: '',
                 site: ''
             },
-            activities: {
-                height: 27,
-                distance: 1970,
-                duration: 180,
-                effort: "Difícil"
+            infoActivities: {
+                activities: {
+                    height: 27,
+                    distance: 1970,
+                    duration: 180,
+                    effort: "Difícil"
+                },
+                contactList: [
+                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                ],
             },
             address: "Rua Antenor Carlos Francisco",
             type: "pessoa",
@@ -1042,11 +1132,16 @@ export default [
                 facebook: '',
                 site: ''
             },
-            activities: {
-                height: 0,
-                distance: 1100,
-                duration: 60,
-                effort: "Difícil"
+            infoActivities: {
+                activities: {
+                    height: 0,
+                    distance: 1100,
+                    duration: 60,
+                    effort: "Difícil"
+                },
+                contactList: [
+                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                ],
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
@@ -1069,11 +1164,16 @@ export default [
                 facebook: '',
                 site: ''
             },
-            activities: {
-                height: 18,
-                distance: 1800,
-                duration: 90,
-                effort: "Médio"
+            infoActivities: {
+                activities: {
+                    height: 18,
+                    distance: 1800,
+                    duration: 90,
+                    effort: "Médio"
+                },
+                contactList: [
+                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                ],
             },
             contacts: "tel://",
             address: "Rua Antenor Carlos Francisco",
@@ -1093,16 +1193,20 @@ export default [
                 facebook: '',
                 site: ''
             },
-            activities: {
-                height: 0,
-                distance: 3000,
-                duration: 120,
-                effort: "médio"
+            infoActivities: {
+                activities: {
+                    height: 0,
+                    distance: 3000,
+                    duration: 120,
+                    effort: "médio"
+                },
+                contactList: [
+                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                ],
             },
             contacts: '',
             address: "Rua Antenor Carlos Francisco",
             addressLink: '',
-            type: "pessoa",
             offering: [],
             profile: ["adventure", "soft", "calm"]
         },
@@ -1121,12 +1225,18 @@ export default [
                 facebook: '',
                 site: ''
             },
-            activities: {
-                height: 20,
-                distance: 1930,
-                duration: 60,
-                effort: "médio"
+            infoActivities: {
+                activities: {
+                    height: 20,
+                    distance: 1930,
+                    duration: 60,
+                    effort: "médio"
+                },
+                contactList: [
+                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                ],
             },
+
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
             type: "pessoa",
@@ -1149,11 +1259,16 @@ export default [
                 facebook: '',
                 site: ''
             },
-            activities: {
-                height: 20,
-                distance: 1930,
-                duration: 240,
-                effort: "médio"
+            infoActivities: {
+                activities: {
+                    height: 15,
+                    distance: 1930,
+                    duration: 240,
+                    effort: "médio"
+                },
+                contactList: [
+                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                ],
             },
             contacts: "92912345678",
             address: "Rua Antenor Carlos Francisco",
@@ -1173,11 +1288,11 @@ export default [
             image: require("./exceptionalImage/bathhouse/matoGrosso.jpg"),
             contacts: "tel://+5592993073131",
             social: {
-                instagram: 'https://www.instagram.com/hotel_jandira/',
+                instagram: '',
                 facebook: '',
                 site: ''
             },
-            offering: ["Alimentos e bebidas", "Estacionamento", "Cartão", "Pix"],
+            offering: ["Alimentos", "bebidas", "Estacionamento"],
             address: "",
             addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
             type: 'diária',
@@ -1198,12 +1313,11 @@ export default [
                 facebook: 'https://www.facebook.com/arnaldo.lima.94651774',
                 site: ''
             },
-            offering: ["Alimentos", "Cartão", "Pix"],
+            offering: ["Alimentos", "Pesque pague", "Hospedagem"],
             address: "",
             addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
-            prices: '1317',
         },
     },
     {
@@ -1221,7 +1335,7 @@ export default [
             },
             offering: ["Interação com botos"],
             address: "",
-            addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
+            addressLink: "https://goo.gl/maps/766qYmiMmL7qtixt8",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
             prices: '1317',
@@ -1240,7 +1354,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Balneário", ""],
+            offering: ["Balneário"],
             address: "",
             addressLink: "",
             profile: ["adventure", "soft", "calm"],
@@ -1278,7 +1392,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Pix"],
+            offering: [],
             address: "Comunidade Indígena maku Ita",
             addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
             profile: ["adventure", "soft", "calm"],
@@ -1297,7 +1411,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Pix"],
+            offering: [""],
             address: "Comunidade Indígena maku Ita",
             addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
             profile: ["adventure", "soft", "calm"],
@@ -1316,7 +1430,7 @@ export default [
                 facebook: 'https://www.facebook.com/profile.php?id=100069638858086',
                 site: ''
             },
-            offering: ["Pix"],
+            offering: [],
             address: "Comunidade Indígena maku Ita",
             addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
             profile: ["adventure", "soft", "calm"],
@@ -1354,7 +1468,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Cartão", "Pix"],
+            offering: [],
             address: "Rua Presidente Vargas, 14, centro ",
             addressLink: "https://goo.gl/maps/RjWCUYVMJkUpRvuT8",
             profile: ["adventure", "soft", "calm"],
@@ -1451,7 +1565,7 @@ export default [
             },
             offering: ["Trilha", "Grutas do Madadá", "Airão Velho", "Focagem noturna", "Observação de pássaros", "pesca esportiva", "Jaú", "Anavilhanas"],
             address: "Avenida rui barbosa n 59",
-            addressLink: "https://goo.gl/maps/znZZ3bJRpUUVFgJh6",
+            addressLink: "https://goo.gl/maps/GVFZeqJnHnK8zkYVA",
             profile: ["adventure", "soft", "calm"],
         },
     },
@@ -1460,17 +1574,17 @@ export default [
         id: 11003,
         title: "Associação Anavilhanas de transporte Aquaviário de Novo Airão",
         content: {
-            description: "AATRA. E uma associação de transporte Aquaviário, pronto a atender o público que queira conhecer as nossas belezas naturais, no parque nacional de anavilhanas e Jaú em Novo Airão.",
-            image: require('./exceptionalImage/agencies/eulerAATRA.jpg'),
-            contacts: "tel://+5592991314469",
+            description: "A AATRA tem como objetivo o transportes aquaviário nas áreas do município de Novo Airão",
+            image: require('./exceptionalImage/agencies/aatra.jpg'),
+            contacts: "tel://+5592991006437",
             social: {
-                instagram: '',
+                instagram: 'https://www.instagram.com/aatra.turismo/',
                 facebook: '',
                 site: ''
             },
-            offering: ["Anavilhanas", "Jaú"],
-            address: "Rua Josefa savedra 92",
-            addressLink: "https://goo.gl/maps/Pfa1X2R2TJ2SN8vUA",
+            offering: ["Observação de aves", " Focagem noturna", "Trilhas aquáticas", "Trilhas terrestres", "Visitas às comunidades", "Acampamento em barraca", "Banho em praia"],
+            address: "",
+            addressLink: "https://goo.gl/maps/4uAbcgXPbD8VZrGV9",
             profile: ["adventure", "soft", "calm"],
         },
     },
@@ -1481,7 +1595,7 @@ export default [
         content: {
             description: "Meu trabalho é levar o conhecimento, mostrando aos meus clientes as belezas naturais do arquipélago Anavilhanas, do nosso município Novo Airão e etc.",
             image: require('./exceptionalImage/agencies/jailtonMelo.jpeg'),
-            contacts: "tel://+5592993721155",
+            contacts: "tel://+5592991815089",
             social: {
                 instagram: 'https://www.instagram.com/jailton_melo_turismo/',
                 facebook: 'https://www.facebook.com/jailton.melo.7127',
@@ -1489,7 +1603,7 @@ export default [
             },
             offering: ["Trilhas aquáticas", "Árvore gigante", "Comunidades do Tiririca", "Comunidades do Santo Antônio", "Grutas do Madadá", "Airão vVelho"],
             address: "Rua  Almerinda Malaquias n123, Bairro Santo Elias",
-            addressLink: "https://goo.gl/maps/znZZ3bJRpUUVFgJh6",
+            addressLink: "",
             profile: ["adventure", "soft", "calm"],
         },
     },
@@ -1531,7 +1645,25 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
-
+    {
+        type: "agencies",
+        id: 11007,
+        title: "Sandventure Turismo e Aventura",
+        content: {
+            description: "Empresa e Agência de Turismo com foco em turismo de sobrevivência e turismo de aventura. Juntando atividades ao ar livre com cultura, história, geografia e aventura. ",
+            image: require('./exceptionalImage/agencies/sandventure.jpg'),
+            contacts: "tel://+5592984482028",
+            social: {
+                instagram: 'https://www.instagram.com/sandventure.san/',
+                facebook: '',
+                site: 'www.turismodeaventura.tur.br'
+            },
+            offering: ["Criação de grupo de atividades de turismo de aventura e ecoturismo para familias e amigos."],
+            address: "",
+            addressLink: "https://goo.gl/maps/CfGXFwuvgvkjRQXL7",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
     {
         type: "public",
         id: 12000,
