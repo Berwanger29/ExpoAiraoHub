@@ -19,6 +19,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'
 import theme from '../../../global/styles/theme'
 import { ActivityIndicator } from 'react-native'
+import CardExternalPlatform from '../../../components/_Screens/Accommodation/CardExternalPlatform'
 
 
 const IndividualList = ({ route }) => {
@@ -97,6 +98,9 @@ const IndividualList = ({ route }) => {
             </Header>
             {searchInput == '' &&
                 <Main>
+                    { title === 'Hospedagem' &&
+                        <CardExternalPlatform />
+                    }
                     <List
                         data={data}
                         keyExtractor={item => item.id}

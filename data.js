@@ -342,7 +342,6 @@ export default [
             addressLink: 'https://goo.gl/maps/mXqA7xAEgUEJWxxj9',
             type: ["bar"],
             offering: ["Internet"],
-            duration: "",
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -363,7 +362,6 @@ export default [
             addressLink: '',
             type: ["Soparia", "Doceria"],
             offering: ["Entrega grátis"],
-            duration: "",
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -996,7 +994,7 @@ export default [
             image: require('./exceptionalImage/hotels/pousadaLanna.png'),
             contacts: "tel://+5592991600526",
             social: {
-                instagram: 'https://www.instagram.com/hotel_jandira/',
+                instagram: '',
                 facebook: '',
                 site: ''
             },
