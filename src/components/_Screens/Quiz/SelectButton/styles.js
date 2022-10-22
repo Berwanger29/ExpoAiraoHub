@@ -4,7 +4,7 @@ import styled from "styled-components/native";
 
 export const Container = styled.TouchableOpacity`
     background-color: ${(props) => props.theme.colors.green};
-    width: 60%;
+    width: 90%;
     height: ${RFValue(50)}px;
 
     border-radius: 5px;

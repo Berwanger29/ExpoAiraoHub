@@ -1079,6 +1079,7 @@ export default [
                 site: ''
             },
             infoActivities: {
+                local: ["Estrada"],
                 activities: {
                     height: 27,
                     distance: 1970,
@@ -1086,7 +1087,8 @@ export default [
                     effort: "Difícil"
                 },
                 contactList: [
-                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                    { name: 'Pessoa 1', link: 'tel://+5592912345678' },
+                    { name: 'Tauá tour', link: '11000' }, // Tauá tour,
                 ],
             },
             address: "Rua Antenor Carlos Francisco",
@@ -1095,169 +1097,54 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    // {
-    //     type: "tourism",
-    //     id: 7001,
-    //     title: "Bike aquática",
-    //     content: {
-    //         title: "Bike aquática",
-    //         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    //         image: require("./exceptionalImage/adventure/BikeAquatica.png"),
-    //         prices: '150',
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "92912345678",
-    //         address: "Rua Antenor Carlos Francisco",
-    //         type: "pessoa",
-    //         offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-    //         duration: "",
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
     {
         type: "tourism",
-        id: 7002,
-        title: "SUP",
+        id: 7007,
+        title: "Flutuante dos Botos",
         content: {
-            title: "SUP",
-            description: "Todas as pessoas podem praticar esse esporte, incluindo homens, mulheres e crianças. É um esporte para todas as idades e níveis, indo do mais iniciante aos avançados em surf e outros esportes aquáticos com prancha.",
-            image: require("./exceptionalImage/adventure/SUP.jpg"),
+            description: "O Flutuante dos Botos, onde se realiza todos os dias um ritual da natureza, ganhou tanta importância para o turismo do Amazonas.",
+            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            contacts: "tel://+5592984370540",
             social: {
-                instagram: '',
-                facebook: '',
+                instagram: 'https://www.instagram.com/flutuantedosbotos/',
+                facebook: 'https://www.facebook.com/pages/Flutuante-Dos-Botos/174584819340050',
                 site: ''
             },
             infoActivities: {
+                local: ["Cidade"],
                 activities: {
-                    height: 0,
-                    distance: 1100,
-                    duration: 60,
-                    effort: "Difícil"
+                    height: 1,
+                    distance: 0,
+                    duration: 50,
+                    effort: "leve"
                 },
                 contactList: [
-                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                    { name: 'Marilda', tel: 'tel://+5592984370540' }
                 ],
             },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
+            offering: ["Interação com botos"],
+            address: "",
+            addressLink: "https://goo.gl/maps/766qYmiMmL7qtixt8",
+            type: 'diária',
+            profile: ["adventure", "soft", "calm"],
+            prices: '1317',
         },
     },
     {
         type: "tourism",
-        id: 7003,
-        title: "Trilha do Apuaú",
+        id: 7008,
+        title: "Sítio providência de Deus",
         content: {
-            title: "Trilha",
-            description: "A trilha do Apuaú apresenta dificuldade moderada, devido à extensão e declividade em alguns trechos, embora seja possível percorrer trajetos mais curtos, se o visitante assim desejar. Localiza-se na base 2 do ICMBio, que serve de posto de vigilância na confluência dos rios Negro e Apuaú, que faz limite com o parque. A área é acessível somente de barco, o ano todo.",
-            image: require("./exceptionalImage/adventure/trilha.jpg"),
+            description: "Centro de reabilitação de animais silvestre,mantenedouro de animais silvestre e suas biografias.",
+            image: require("./exceptionalImage/attractions/maluco.jpg"),
+            contacts: "tel://+5592992931203",
             social: {
-                instagram: '',
+                instagram: 'https://www.instagram.com/sitio_providencia_de_deus/',
                 facebook: '',
                 site: ''
             },
             infoActivities: {
-                activities: {
-                    height: 18,
-                    distance: 1800,
-                    duration: 90,
-                    effort: "Médio"
-                },
-                contactList: [
-                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
-                ],
-            },
-            contacts: "tel://",
-            address: "Rua Antenor Carlos Francisco",
-            offering: [],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "tourism",
-        id: 7004,
-        title: "Praia do Camaleão",
-        content: {
-            description: "No meio do arquipélago das Anavilhanas e cercada por uma floresta a perder de vista, a extensa faixa de areia contrasta com as águas escuras do rio Negro. Sem nenhuma infraestrutura, a praia é pouco frequentada. Se tiver sorte, será só você e as aves que gorjeiam num dos cantos da praia.",
-            image: require("./exceptionalImage/adventure/praiaDoCamaleao.jpg"),
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            infoActivities: {
-                activities: {
-                    height: 0,
-                    distance: 3000,
-                    duration: 120,
-                    effort: "médio"
-                },
-                contactList: [
-                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
-                ],
-            },
-            contacts: '',
-            address: "Rua Antenor Carlos Francisco",
-            addressLink: '',
-            offering: [],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "tourism",
-        id: 7005,
-        title: "Velho Airão",
-        content: {
-            title: "Trilha",
-            description: "Airão Velho ou Velho Airão, antiga sede do município de Novo Airão, no Amazonas, é uma vila que foi abandonada no meio da floresta amazônica e que, aparentemente, ficou assim após um ataque de formigas de fogo.",
-            image: require("./exceptionalImage/adventure/velhoAirao.jpg"),
-            prices: '150',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            infoActivities: {
-                activities: {
-                    height: 20,
-                    distance: 1930,
-                    duration: 60,
-                    effort: "médio"
-                },
-                contactList: [
-                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
-                ],
-            },
-
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "tourism",
-        id: 7006,
-        title: "Cachoeira Mirapinima",
-        content: {
-            title: "Trilha",
-            description: "O passeio pela cachoeira Mirapinima está disponível durante todo o ano e é preciso atravessar uma trilha incrível pela Floresta Amazônica para chegar. O banho é refrescante recompensador.",
-            image: require("./exceptionalImage/adventure/cahoeiraMirapinima.jpg"),
-            prices: '150',
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            infoActivities: {
+                local: ["Estrada"],
                 activities: {
                     height: 15,
                     distance: 1930,
@@ -1268,18 +1155,15 @@ export default [
                     { name: 'Pessoa', tel: 'tel://+5592912345678' }
                 ],
             },
-            contacts: "92912345678",
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: ["7 quartos", "1 refeitório", "1 piscina", "1 deck"],
-            duration: "",
-            profile: ["adventure", "soft", "calm"]
+            offering: ["Balneário"],
+            address: "",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
         },
     },
-
     {
         type: "bathhouse",
-        id: 8000,
+        id: 7009,
         title: "Balneário mato grosso",
         content: {
             description: "Funcionando todos os dias , entrada carro R$10 reais moto R$5 reais, pedestre R$2 reais.\nKm 22 - AM 352",
@@ -1289,6 +1173,18 @@ export default [
                 instagram: '',
                 facebook: '',
                 site: ''
+            },
+            infoActivities: {
+                local: ["Estrada"],
+                activities: {
+                    height: 15,
+                    distance: 1930,
+                    duration: 240,
+                    effort: "médio"
+                },
+                contactList: [
+                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                ],
             },
             offering: ["Alimentos", "bebidas", "Estacionamento"],
             address: "",
@@ -1300,7 +1196,7 @@ export default [
     },
     {
         type: "bathhouse",
-        id: 8001,
+        id: 7010,
         title: "Psicultura anavilhanas",
         content: {
             description: "Atividades rurais, com hospedagem, pesque pague e restaurante \nkm 8 - AM 352 ",
@@ -1311,6 +1207,18 @@ export default [
                 facebook: 'https://www.facebook.com/arnaldo.lima.94651774',
                 site: ''
             },
+            infoActivities: {
+                local: ["Estrada"],
+                activities: {
+                    height: 15,
+                    distance: 1930,
+                    duration: 240,
+                    effort: "médio"
+                },
+                contactList: [
+                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                ],
+            },
             offering: ["Alimentos", "Pesque pague", "Hospedagem"],
             address: "",
             addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
@@ -1318,46 +1226,9 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
-    {
-        type: "attractions",
-        id: 9000,
-        title: "Flutuante dos Botos",
-        content: {
-            description: "O Flutuante dos Botos, onde se realiza todos os dias um ritual da natureza, ganhou tanta importância para o turismo do Amazonas.",
-            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
-            contacts: "tel://+5592984370540",
-            social: {
-                instagram: 'https://www.instagram.com/flutuantedosbotos/',
-                facebook: 'https://www.facebook.com/pages/Flutuante-Dos-Botos/174584819340050',
-                site: ''
-            },
-            offering: ["Interação com botos"],
-            address: "",
-            addressLink: "https://goo.gl/maps/766qYmiMmL7qtixt8",
-            type: 'diária',
-            profile: ["adventure", "soft", "calm"],
-            prices: '1317',
-        },
-    },
-    {
-        type: "attractions",
-        id: 9001,
-        title: "Sítio providência de Deus",
-        content: {
-            description: "Centro de reabilitação de animais silvestre,mantenedouro de animais silvestre e suas biografias.",
-            image: require("./exceptionalImage/attractions/maluco.jpg"),
-            contacts: "tel://+5592992931203",
-            social: {
-                instagram: 'https://www.instagram.com/sitio_providencia_de_deus/',
-                facebook: '',
-                site: ''
-            },
-            offering: ["Balneário"],
-            address: "",
-            addressLink: "",
-            profile: ["adventure", "soft", "calm"],
-        },
-    },
+
+
+
     {
         type: "craftsmanship",
         id: 10000,
@@ -1682,4 +1553,3 @@ export default [
         },
     },
 ]
-

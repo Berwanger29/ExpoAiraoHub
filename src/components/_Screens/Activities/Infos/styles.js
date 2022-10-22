@@ -4,6 +4,20 @@ export const Container = styled.View`
     width: 100%;
     align-items: center;
 `
+export const LocalGroup = styled.View`
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+`
+
+export const LocalLabel = styled.View`
+
+`
+
+export const ButtonAlert = styled.TouchableOpacity`
+
+`
 
 export const DetailsGroup = styled.View`
     align-items: center;

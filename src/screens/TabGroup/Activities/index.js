@@ -75,7 +75,7 @@ const Activities = () => {
                     <UserButton />
                 </UserButtonContainer>
                 <TextSubTitle
-                    text="Atividades"
+                    text="O que fazer"
                     color={theme.colors.darkGreen}
                 />
                 <ContainerSearch

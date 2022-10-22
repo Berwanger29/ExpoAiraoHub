@@ -55,7 +55,6 @@ const ItemSelected = ({ route }) => {
                     <Image
                         source={itemData.content.image}
                     />
-
                     <ContainerBackButton>
                         <BackButton />
                     </ContainerBackButton>
@@ -65,11 +64,15 @@ const ItemSelected = ({ route }) => {
                     <TextSubTitle
                         text={itemData.title}
                     />
+
                     <Line />
+
                     <MainText>
                         {itemData.content.description}
                     </MainText>
+
                     <Line />
+
                     {
                         itemData.type == 'tourism' ?
                             (
@@ -94,28 +97,34 @@ const ItemSelected = ({ route }) => {
                                             })
                                         }
                                     </OptionalsContainer>
+
                                     <Line />
+                                    
                                     <ContainerLinks>
 
-                                        {instagramLink !== '' &&
+                                        {
+                                            instagramLink !== '' &&
                                             <ButtonLink
                                                 onPress={() => handleLinkURL(instagramLink)}
                                                 nameIcon={"instagram-with-circle"}
                                             />
                                         }
-                                        {facebookLink !== '' &&
+                                        {
+                                            facebookLink !== '' &&
                                             <ButtonLink
                                                 onPress={() => handleLinkURL(facebookLink)}
                                                 nameIcon={"facebook-with-circle"}
                                             />
                                         }
-                                        {siteLink !== '' &&
+                                        {
+                                            siteLink !== '' &&
                                             <ButtonLink
                                                 onPress={() => handleLinkURL(siteLink)}
                                                 nameIcon="globe"
                                             />
                                         }
-                                        {itemData.content.contacts !== '' &&
+                                        {
+                                            itemData.content.contacts !== '' &&
                                             <ButtonLink
                                                 onPress={() => handleLinkURL(itemData.content?.contacts)}
                                                 nameIcon="phone"

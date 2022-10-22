@@ -7,7 +7,8 @@ export default {
         darkGreen: "#0B3B39",
 
         black: "#4A4B4D",
-        gray: "#CACACA"
+        gray: "#CACACA",
+        yellow: "#fdd835"
     },
     fonts: {
         black: 'ExtraBold',

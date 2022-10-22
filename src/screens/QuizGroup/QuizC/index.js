@@ -57,7 +57,6 @@ const QuizC = () => {
             setChangeColorC(false)
 
             setTemp(param)
-            console.log(quizCount)
         }
         if (isFocused && param == 20) {
             setChangeColorB(true)
@@ -65,7 +64,6 @@ const QuizC = () => {
             setChangeColorC(false)
 
             setTemp(param)
-            console.log(quizCount)
         }
         if (isFocused && param == 10) {
             setChangeColorC(true)
@@ -73,7 +71,6 @@ const QuizC = () => {
             setChangeColorB(false)
 
             setTemp(param)
-            console.log(quizCount)
         }
     }
 

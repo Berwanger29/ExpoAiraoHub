@@ -115,20 +115,12 @@ const Home = () => {
                     <CarrousselContainer
                         showsVerticalScrollIndicator={false}
                     >
-                        {/* <Carroussel
-                            title="Dentro da cidade"
-                            data={inCityData}
-                        /> */}
 
                         {/* <Carroussel
                             title="Artesanato"
                             data={craftsmanship}
                         /> */}
 
-                        <Carroussel
-                            title='Atrações'
-                            data={attractions}
-                        />
 
                         {/* <Carroussel
                             title="Pelo Anavilhanas"
@@ -140,18 +132,13 @@ const Home = () => {
                         /> */}
 
                         <Carroussel
-                            title="Pacotes e passeios"
+                            title="Agências"
                             data={agenciesData}
                         />
 
                         <Carroussel
                             title="Gastronomia"
                             data={toEatData}
-                        />
-
-                        <Carroussel
-                            title="Balneário"
-                            data={bathhouse}
                         />
 
                         <Carroussel

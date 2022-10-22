@@ -1,19 +1,26 @@
-import { useEffect } from "react";
 import {
     ContactsGroup,
     Container,
     DetailsGroup,
     InfoContainer,
-    IconCircle
+    IconCircle,
+    LocalGroup,
+    LocalLabel,
+    ButtonAlert
 } from "./styles"
 
-import { TextThin } from "../../../Texts";
+import { TextRegular, TextThin } from "../../../Texts";
 
-import { FontAwesome } from '@expo/vector-icons';
-import { Octicons } from '@expo/vector-icons';
-import { FontAwesome5 } from '@expo/vector-icons';
+import {
+    FontAwesome,
+    Octicons,
+    FontAwesome5,
+    Ionicons
+} from '@expo/vector-icons';
 import Contact from "../Contact";
 import Line from "../../../Line";
+import theme from "../../../../global/styles/theme";
+import { Alert } from "react-native";
 
 
 const Infos = ({ data }) => {
@@ -22,6 +29,21 @@ const Infos = ({ data }) => {
 
     return (
         <Container>
+            <LocalGroup>
+                <LocalLabel>
+                    <TextRegular
+                        text={`Local : ${data.local[0]}`}
+                    />
+                </LocalLabel>
+                <ButtonAlert
+                    onPress={() => Alert.alert('Aviso', 'O parna Anavilhanas trata-se de um parque ecológico e por isso, contamos com a colaboração de todos para a preservação do mesmo.')}
+                >
+                    <Ionicons name="alert-circle-outline" size={29} color={theme.colors.yellow} />
+                </ButtonAlert>
+            </LocalGroup>
+
+            <Line />
+
             <DetailsGroup>
                 <InfoContainer>
                     <IconCircle>
@@ -66,7 +88,7 @@ const Infos = ({ data }) => {
                         <Contact
                             key={index}
                             name={e.name}
-                            tel={e.tel}
+                            link={e.link}
                         />
                     )
                 }
