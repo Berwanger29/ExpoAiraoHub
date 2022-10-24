@@ -6,7 +6,6 @@ import {
     Container,
     Input,
     FormContainer,
-    TitleContainer,
     EyeInputContainer,
     EyeContainer,
     ButtonContainer,
@@ -25,13 +24,14 @@ import LoginAreaButton from '../../../components/LoginAreaButton'
 import InvisibleButton from '../../../components/InvisibleButton'
 import BackButton from '../../../components/BackButton'
 import Keyboard from '../../../components/KeyBoard'
-import { TextTitle, TextRegular } from '../../../components/Texts'
+import { TextRegular } from '../../../components/Texts'
 
 import { Entypo, MaterialIcons, EvilIcons } from '@expo/vector-icons';
 
 import { auth } from '../../../../firebase'
 import theme from '../../../global/styles/theme'
 import { privacyText } from '../../../../privacyPolicy'
+import Logo from '../../../components/Logo'
 
 
 const SignUp = () => {
@@ -89,9 +89,7 @@ const SignUp = () => {
     }
 
     function toogleAcceptPrivacyTerms() {
-        console.log('---------')
         setConfirmationPrivacy(!confirmationPrivacy)
-        console.log(confirmationPrivacy)
     }
 
     return (
@@ -100,11 +98,7 @@ const SignUp = () => {
                 source={require('../../../../assets/images/plantBackground.jpg')}
             >
                 <Container>
-                    <TitleContainer>
-                        <TextTitle
-                            text='Airão Hub'
-                        />
-                    </TitleContainer>
+                    <Logo />
                     <BackButtonContainer>
                         <BackButton />
                     </BackButtonContainer>

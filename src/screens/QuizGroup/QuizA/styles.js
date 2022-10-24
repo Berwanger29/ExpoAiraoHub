@@ -11,16 +11,17 @@ export const Container = styled.View`
 
 export const Header = styled.View`
     width: 110%;
-    flex: 1;
+    flex: 0.5;
+    align-items: center;
 
     background-color: #76CFE5;
-    align-items: center;
     padding-left: ${RFPercentage(5)}px;
     margin-left: -5%;
 `
 
 export const Main = styled.View`
-    
+    flex: 1;
+    width: 100%;
 `
 
 export const TextContainer = styled.View`
@@ -33,17 +34,19 @@ export const ButtonsContainer = styled.View`
     margin-top: ${RFValue(35)}px;
 `
 
+
 export const Button = styled.TouchableOpacity`
     background-color: ${props => props.theme.colors.semiLight};
-
-    align-self: center;
     align-items: center;
     justify-content: center;
 
-    margin-top: 20px;
-
     width:${RFValue(50)}px;
     height: ${RFValue(50)}px;
-
     border-radius: 5px;
+    
+    position: absolute;
+    
+    bottom: 0px;
+    
+    align-self: center;
 `

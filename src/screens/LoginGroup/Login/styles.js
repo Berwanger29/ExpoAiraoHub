@@ -14,19 +14,6 @@ export const Container = styled.View`
     
 `
 
-export const LogoContainer = styled.View`
-    height: 30%;
-    width: 100%;
-
-    align-items: center;
-    justify-content: center;
-`
-
-export const Logo = styled.Image`
-    width: 100%;
-    height: 100%;
-`
-
 export const LabelContainer = styled.View`
     align-self: flex-start;
     margin-bottom: 10px;

@@ -7,10 +7,6 @@ import {
 
 const SelectButton = ({ text, onPress, changeColor }) => {
 
-    useEffect(() => {
-        console.log(changeColor)
-    }, [])
-
     return (
         <Container
             activeOpacity={0.7}
@@ -18,7 +14,7 @@ const SelectButton = ({ text, onPress, changeColor }) => {
             isFocused={changeColor}
         >
             <TextRegular
-                color={theme.colors.light}
+                color={changeColor ? theme.colors.green : theme.colors.light}
                 text={text}
             />
         </Container>

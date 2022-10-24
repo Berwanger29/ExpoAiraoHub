@@ -105,18 +105,19 @@ const QuizA = () => {
                         changeColor={changeColorC}
                     />
                 </ButtonsContainer>
+                <Button
+                    style={{
+                        elevation: 2
+                    }}
+                    onPress={() => {
+                        setQuizCount(quizCount + temp)
+                        navigation.navigate('QuizB')
+                    }}
+                >
+                    <Entypo name="chevron-right" size={24} color={theme.colors.green} />
+                </Button>
             </Main>
-            <Button
-                style={{
-                    elevation: 2
-                }}
-                onPress={() => {
-                    setQuizCount(quizCount + temp)
-                    navigation.navigate('QuizB')
-                }}
-            >
-                <Entypo name="chevron-right" size={24} color={theme.colors.green} />
-            </Button>
+
         </Container>
     )
 }

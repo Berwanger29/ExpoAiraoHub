@@ -69,23 +69,22 @@ const QuizB = () => {
                 style='auto'
             />
             <Header>
-                <AnimationContainer>
-                    <Lottie
-                        autoPlay
-                        loop
-                        source={drink}
-                        style={{
-                            width: '100%',
-                            height: '100%'
-                        }}
-                    />
-                </AnimationContainer>
+                {/* <AnimationContainer> */}
+                <Lottie
+                    autoPlay
+                    loop
+                    source={drink}
+                    style={{
+                        width: '100%',
+                        height: '100%'
+                    }}
+                />
+                {/* </AnimationContainer> */}
                 <ButtonBackContainer>
                     <BackButton />
                 </ButtonBackContainer>
             </Header>
             <Main>
-
                 <TextContainer>
                     <SpaceText>
                         <TextThin

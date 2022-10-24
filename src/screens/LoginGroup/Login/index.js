@@ -11,8 +11,6 @@ import {
     LoadingContainer,
     EyeContainer,
     EyeInputContainer,
-    LogoContainer,
-    Logo,
     ImageContainer,
 } from './styles'
 
@@ -26,6 +24,7 @@ import Keyboard from '../../../components/KeyBoard';
 import { Entypo } from '@expo/vector-icons';
 
 import { TextSubTitle, TextThin } from '../../../components/Texts';
+import Logo from '../../../components/Logo';
 
 
 const Login = () => {
@@ -131,13 +130,7 @@ const Login = () => {
                                 translucent
                             />
                             <Container>
-                                <LogoContainer>
-                                    <Logo
-                                        source={require('../../../../assets/icons/LogoHomeScreen.png')}
-                                        resizeMode='contain'
-                                    />
-                                </LogoContainer>
-
+                                <Logo />
                                 <InputContainer>
                                     <LabelContainer>
                                         <TextSubTitle

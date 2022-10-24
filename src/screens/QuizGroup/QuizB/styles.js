@@ -10,22 +10,26 @@ export const Container = styled.View`
 `
 
 export const Header = styled.View`
-    width: 100%;    
+    width: 100%;
+    flex: 0.7;
     align-self: center;
+    align-items: center;
+    justify-content: center;
 `
 
 export const ButtonBackContainer = styled.View`
     position: absolute;
-    `
+    top: 10px;
+    left: 5px;
+`
 
 export const AnimationContainer = styled.View`
-    height: ${RFValue(300)}px;
     align-items: center;
-    
+    background-color: green;
 `
 
 export const Main = styled.View`
-    
+    flex: 1;
 `
 
 export const TextContainer = styled.View`

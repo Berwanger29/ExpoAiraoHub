@@ -12,19 +12,20 @@ export const Container = styled.View`
 export const ButtonBackContainer = styled.View`
     position: absolute;
     left: ${RFValue(15)}px;
+    top: 5px;
 `
 
 
 export const Header = styled.View`
-    width: 110%;
-
-    background-color: #76CFE5;
-    padding-left: ${RFPercentage(5)}px;
-    margin-left: -5%;
+    width: 100%;
+    flex: 0.7;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
 `
 
 export const Main = styled.View`
-    
+    flex: 1;
 `
 
 export const TextContainer = styled.View`
@@ -40,12 +41,14 @@ export const ButtonsContainer = styled.View`
 export const Button = styled.TouchableOpacity`
     background-color: ${props => props.theme.colors.semiLight};
 
-    align-self: center;
-    align-items: center;
-    justify-content: center;
+align-self: center;
+align-items: center;
+justify-content: center;
 
-    width:${RFValue(50)}px;
-    height: ${RFValue(50)}px;
+margin-top: 20px;
 
-    border-radius: 5px;
+width:${RFValue(50)}px;
+height: ${RFValue(50)}px;
+
+border-radius: 5px;
 `

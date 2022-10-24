@@ -12,12 +12,6 @@ export const Container = styled.View`
 export const ImageContainer = styled.ImageBackground`
     flex: 1;
 `
-export const TitleContainer = styled.View`
-    align-items: center;
-    width: 100%;
-    padding-top: 80px;
-    margin-bottom: 30px;
-`
 
 export const BackButtonContainer = styled.View`
     position: absolute;

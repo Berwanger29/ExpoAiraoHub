@@ -77,22 +77,22 @@ const QuizC = () => {
     return (
         <Container>
             <StatusBar
-                backgroundColor='#76CFE5'
+                backgroundColor='transparent'
                 style='auto'
             />
             <Header>
-
+                <ButtonBackContainer>
+                    <BackButton />
+                </ButtonBackContainer>
                 <Lottie
                     autoPlay
                     loop
                     source={duet}
                     style={{
-                        width: RFPercentage(50)
+                        height: '100%',
                     }}
                 />
-                <ButtonBackContainer>
-                    <BackButton />
-                </ButtonBackContainer>
+
             </Header>
             <Main>
 
@@ -124,6 +124,7 @@ const QuizC = () => {
                         changeColor={changeColorC}
                     />
                 </ButtonsContainer>
+
             </Main>
             <Button
                 style={{
