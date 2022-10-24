@@ -27,7 +27,6 @@ export const BackButtonContainer = styled.View`
 
 export const FormContainer = styled.View`
     width: 100%;
-    height: 50%;
 `
 export const Input = styled.TextInput`
     background-color: ${(props) => props.theme.colors.light};
@@ -41,13 +40,13 @@ export const Input = styled.TextInput`
 `
 export const EyeInputContainer = styled.View`
     width: 100%;
+    flex-direction: row;
 `
 export const EyeContainer = styled.TouchableOpacity`
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 7px;
 
-    height: 40px;
+    height: 80%;
     width: 30px;
     align-items: center;
     justify-content: center;
@@ -57,4 +56,57 @@ export const ButtonContainer = styled.View`
     bottom: 30px;
     left: 20px;
     right: 20px;
+`
+export const PrivacyContainer = styled.View`
+    width: 100%;
+    padding: 2px;
+    flex-direction: row;
+    align-items: center;
+`
+
+export const CheckBox = styled.TouchableOpacity`
+    background-color: ${(props) => props.isConfirmed ? 'blue' : 'white'};
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    border-radius: 3px;
+    border: 1px solid ${(props) => { props.theme.colors.black }};
+`
+
+export const Modal = styled.Modal`
+
+`
+
+export const ModalContainer = styled.View`
+    flex: 1;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+`
+
+export const ModalHeader = styled.View`
+    width: 100%;
+    flex-direction: row-reverse;
+    padding: 10px;
+`
+export const CloseModalButton = styled.TouchableOpacity`
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+`
+
+export const ModalContent = styled.View`
+    height: 90%;
+    width: 95%;
+    background-color: ${props => props.theme.colors.light};
+    border-radius: 15px;
+    align-items: center;
+`
+export const PrivacyText = styled.ScrollView`
+    margin: 5px 0px; 
+    padding: 0px 10px;
+    width: 100%;
 `

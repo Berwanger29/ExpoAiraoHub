@@ -3,24 +3,30 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 
 export const Title = styled.Text`
-    font-family: ${(props) => props.theme.fonts.black};
-    font-size: ${RFValue(30)}px;
     color: ${(props) => props.color ? props.color : 'black'};
+    font-family: ${(props) => props.theme.fonts.black};
+    font-size: 30px;
+    text-align: ${(props) => props.format ? props.format : 'left'};
+    text-decoration: ${(props) => props.textDecoration ? props.textDecoration : 'none'};
 `
 export const SubTitle = styled.Text`
-    font-family: ${(props) => props.theme.fonts.bold};
-    font-size: ${RFValue(26)}px;
     color: ${(props) => props.color ? props.color : 'black'};
+    font-family: ${(props) => props.theme.fonts.bold};
+    font-size: 26px;
+    text-align: ${(props) => props.format ? props.format : 'left'};
+    text-decoration: ${(props) => props.textDecoration ? props.textDecoration : 'none'};
 `
 export const Regular = styled.Text`
-    font-family: ${(props) => props.theme.fonts.regular};
-    font-size: ${RFValue(18)}px;
-    text-align: ${(props) => props.format ? props.format : 'left'};
     color: ${(props) => props.color ? props.color : 'black'};
+    font-family: ${(props) => props.theme.fonts.regular};
+    font-size: 18px;
+    text-align: ${(props) => props.format ? props.format : 'left'};
+    text-decoration: ${(props) => props.textDecoration ? props.textDecoration : 'none'};
 `
 export const Thin = styled.Text`
-    font-family: ${(props) => props.theme.fonts.light};
-    font-size: ${RFValue(14)}px;
     color: ${(props) => props.color ? props.color : 'black'};
-    
+    font-family: ${(props) => props.theme.fonts.light};
+    font-size: 14px;
+    text-align: ${(props) => props.format ? props.format : 'left'};
+    text-decoration: ${(props) => props.textDecoration ? props.textDecoration : 'none'};
 `

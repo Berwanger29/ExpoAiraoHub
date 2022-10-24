@@ -177,6 +177,7 @@ const Login = () => {
                                             <TextThin
                                                 color={theme.colors.green}
                                                 text=' Cadastre-se'
+                                                textDecoration='underline'
                                             />
                                         </ButtonText>
                                     </RecoveryContainer>
@@ -204,6 +205,7 @@ const Login = () => {
                                         <TextThin
                                             color={theme.colors.green}
                                             text=' Recuperar'
+                                            textDecoration='underline'
                                         />
                                     </ButtonText>
                                 </SignUpContainer>

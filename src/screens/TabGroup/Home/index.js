@@ -75,9 +75,8 @@ const Home = () => {
                 arr.push(item)
             }
         })
-        setArrSearch(arr)
+        setArrSearch(arr.toUpperCase())
     }
-
 
     return (
         <Container>

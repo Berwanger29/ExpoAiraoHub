@@ -10,17 +10,28 @@ import {
     EyeInputContainer,
     EyeContainer,
     ButtonContainer,
-    ImageContainer
+    ImageContainer,
+    PrivacyContainer,
+    CheckBox,
+    Modal,
+    ModalContainer,
+    ModalContent,
+    ModalHeader,
+    PrivacyText,
+    CloseModalButton
 } from './styles'
 
 import LoginAreaButton from '../../../components/LoginAreaButton'
+import InvisibleButton from '../../../components/InvisibleButton'
 import BackButton from '../../../components/BackButton'
+import Keyboard from '../../../components/KeyBoard'
+import { TextTitle, TextRegular } from '../../../components/Texts'
+
+import { Entypo, MaterialIcons, EvilIcons } from '@expo/vector-icons';
 
 import { auth } from '../../../../firebase'
-import Keyboard from '../../../components/KeyBoard'
-import { Entypo } from '@expo/vector-icons';
 import theme from '../../../global/styles/theme'
-import { TextTitle, TextRegular } from '../../../components/Texts'
+import { privacyText } from '../../../../privacyPolicy'
 
 
 const SignUp = () => {
@@ -30,29 +41,39 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('')
     const [showPassword, setShowPassword] = useState(true)
     const [iconEyeName, setIconEyeName] = useState('eye-with-line')
+    const [confirmationPrivacy, setConfirmationPrivacy] = useState(false)
+    const [modalVisible, setModalVisible] = useState(false);
+
 
     function handleSignUp() {
-        if (password === confirmPassword) {
-            auth.createUserWithEmailAndPassword(email, password)
-                .then(userCredentials => {
-                    const user = userCredentials.user
-                })
-                .catch(e => {
-                    Alert.alert(
-                        "Erro",
-                        e.message,
-                        [
-                            { text: 'OK', onPress: () => { } }
-                        ]
-                    )
-                })
+        if (confirmationPrivacy) {
+            if (password === confirmPassword) {
+                auth.createUserWithEmailAndPassword(email, password)
+                    .then(userCredentials => {
+                        const user = userCredentials.user
+                    })
+                    .catch(e => {
+                        Alert.alert(
+                            "Erro",
+                            e.message,
+                            [
+                                { text: 'OK', onPress: () => { } }
+                            ]
+                        )
+                    })
+            } else {
+                Alert.alert(
+                    "Erro",
+                    "Senhas não conferem. Por favor, digite senha novamente.",
+                    [
+                        { text: 'OK', onPress: () => { } }
+                    ]
+                )
+            }
         } else {
             Alert.alert(
-                "Erro",
-                "Senhas não conferem. Por favor, digite senha novamente.",
-                [
-                    { text: 'OK', onPress: () => { } }
-                ]
+                "Privacidade",
+                "Se deseja criar sua conta, aceite os termos da nossa política de privacidade"
             )
         }
     }
@@ -67,15 +88,19 @@ const SignUp = () => {
         }
     }
 
+    function toogleAcceptPrivacyTerms() {
+        console.log('---------')
+        setConfirmationPrivacy(!confirmationPrivacy)
+        console.log(confirmationPrivacy)
+    }
+
     return (
         <Keyboard>
             <ImageContainer
                 source={require('../../../../assets/images/plantBackground.jpg')}
             >
                 <Container>
-
                     <TitleContainer>
-
                         <TextTitle
                             text='Airão Hub'
                         />
@@ -123,6 +148,45 @@ const SignUp = () => {
                             onPress={handleSignUp}
                         />
                     </ButtonContainer>
+                    <PrivacyContainer>
+                        <CheckBox
+                            onPress={() => toogleAcceptPrivacyTerms()}
+                            isConfirmed={confirmationPrivacy}
+                        >
+                            <MaterialIcons name="done" size={20} color={theme.colors.light} />
+                        </CheckBox>
+                        <InvisibleButton
+                            onPress={() => setModalVisible(true)}
+                        >
+                            <TextRegular
+                                text='Aceito os termos da política de privacidade'
+                                textDecoration='underline'
+                            />
+                        </InvisibleButton>
+                    </PrivacyContainer>
+
+                    <Modal
+                        transparent={true}
+                        visible={modalVisible}
+                    >
+                        <ModalContainer>
+                            <ModalContent>
+                                <PrivacyText>
+                                    <ModalHeader>
+                                        <CloseModalButton
+                                            onPress={() => setModalVisible(false)}
+                                        >
+                                            <EvilIcons name="close" size={30} color="black" />
+                                        </CloseModalButton>
+                                    </ModalHeader>
+                                    <TextRegular
+                                        text={privacyText}
+                                        format='justify'
+                                    />
+                                </PrivacyText>
+                            </ModalContent>
+                        </ModalContainer>
+                    </Modal>
                 </Container>
             </ImageContainer>
         </Keyboard>

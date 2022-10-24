@@ -53,14 +53,14 @@ export const UserInput = styled.TextInput`
 `
 export const EyeInputContainer = styled.View`
     width: 100%;
+    flex-direction: row;
 `
 
 export const EyeContainer = styled.TouchableOpacity`
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 7px;
 
-    height: 40px;
+    height: 60%;
     width: 30px;
     align-items: center;
     justify-content: center;
