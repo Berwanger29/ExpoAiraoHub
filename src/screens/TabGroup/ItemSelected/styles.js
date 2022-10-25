@@ -53,7 +53,6 @@ export const OptionalsContainer = styled.View`
 
 export const ContainerLinks = styled.View`
     flex-direction: row;
-    padding-bottom: 20px;
 `
 
 export const LinkButton = styled.View`

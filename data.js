@@ -1394,6 +1394,11 @@ export default [
                 facebook: 'https://www.facebook.com/tauatour.amazonia/',
                 site: ''
             },
+            showActivities: {
+                activitiesList: [
+                    { name: 'Arborismo', link: '7000' },
+                ],
+            },
             offering: ["passeios de canoa", "trilhas", "safaris fotografia"],
             address: "Avenida Presidente Vargas n°107",
             addressLink: '',
@@ -1412,6 +1417,11 @@ export default [
                 instagram: 'https://www.instagram.com/recoturismo_46/',
                 facebook: 'https://www.facebook.com/reco.nunes.9',
                 site: ''
+            },
+            showActivities: {
+                activitiesList: [
+                    { name: 'Flutuante dos botos', link: '7007' },
+                ],
             },
             offering: ["Anavilhanas", "Jaú", "Comunidades"],
             address: "Avenida Presidente Vargas n°107",
@@ -1432,6 +1442,11 @@ export default [
                 facebook: '',
                 site: ''
             },
+            showActivities: {
+                activitiesList: [
+                    { name: 'Arborismo', link: '7000' },
+                ],
+            },
             offering: ["Trilha", "Grutas do Madadá", "Airão Velho", "Focagem noturna", "Observação de pássaros", "pesca esportiva", "Jaú", "Anavilhanas"],
             address: "Avenida rui barbosa n 59",
             addressLink: "https://goo.gl/maps/GVFZeqJnHnK8zkYVA",
@@ -1450,6 +1465,11 @@ export default [
                 instagram: 'https://www.instagram.com/aatra.turismo/',
                 facebook: '',
                 site: ''
+            },
+            showActivities: {
+                activitiesList: [
+                    { name: 'Arborismo', link: '7000' },
+                ],
             },
             offering: ["Observação de aves", " Focagem noturna", "Trilhas aquáticas", "Trilhas terrestres", "Visitas às comunidades", "Acampamento em barraca", "Banho em praia"],
             address: "",
@@ -1470,6 +1490,11 @@ export default [
                 facebook: 'https://www.facebook.com/jailton.melo.7127',
                 site: ''
             },
+            showActivities: {
+                activitiesList: [
+                    { name: 'Arborismo', link: '7000' },
+                ],
+            },
             offering: ["Trilhas aquáticas", "Árvore gigante", "Comunidades do Tiririca", "Comunidades do Santo Antônio", "Grutas do Madadá", "Airão vVelho"],
             address: "Rua  Almerinda Malaquias n123, Bairro Santo Elias",
             addressLink: "",
@@ -1488,6 +1513,11 @@ export default [
                 instagram: 'https://www.instagram.com/em.cantos.da.amazonia/',
                 facebook: 'https://www.facebook.com/emcantosdaamazonia',
                 site: 'https://pousada-belavista.com/'
+            },
+            showActivities: {
+                activitiesList: [
+                    { name: 'Arborismo', link: '7000' },
+                ],
             },
             offering: ["Passeios na Anavilhanas e Jaú"],
             address: "",
@@ -1508,6 +1538,11 @@ export default [
                 facebook: '',
                 site: ''
             },
+            showActivities: {
+                activitiesList: [
+                    { name: 'Arborismo', link: '7000' },
+                ],
+            },
             offering: ["Serviços de Transporte e Agenciamento de ecoturismo nos Parques Nacionais de Anavilhanas e Jaú."],
             address: "Rua Francisco Bezerra N 113 Santo Elias",
             addressLink: "https://goo.gl/maps/UBUZFEP6WVDCfPYf6",
@@ -1526,6 +1561,11 @@ export default [
                 instagram: 'https://www.instagram.com/sandventure.san/',
                 facebook: '',
                 site: 'www.turismodeaventura.tur.br'
+            },
+            showActivities: {
+                activitiesList: [
+                    { name: 'Arborismo', link: '7000' },
+                ],
             },
             offering: ["Criação de grupo de atividades de turismo de aventura e ecoturismo para familias e amigos."],
             address: "",

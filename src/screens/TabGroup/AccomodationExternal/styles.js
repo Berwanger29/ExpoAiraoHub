@@ -2,17 +2,20 @@ import styled from "styled-components/native";
 import { StatusBar } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 
-export const Container = styled.View`
+
+export const Scroll = styled.View`
+
+`
+export const Container = styled.ScrollView`
     flex: 1;
-    background-color: ${(props) => props.theme.colors.light};
     padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
 `
+
 export const Header = styled.View`
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 15%;
-    padding-bottom: 10px;
+    height: 120px;
 `
 
 export const ContainerBackButton = styled.View`
@@ -27,21 +30,26 @@ export const TextContainer = styled.View`
 `
 
 export const Main = styled.View`
-    
-    flex: 1;
+    padding-bottom: 50px;
+    padding: 5px 5px 40px 5px;
 `
 export const IconsContainer = styled.View`
-    flex: 0.6;
+    align-items: center;
+    
 `
 
 export const IconButton = styled.TouchableOpacity`
-    border-radius: 5px;
+    background-color: white;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    padding:20px;
+    border: 1px solid ${props => props.theme.colors.black};
+    border-radius: 5px;
     margin-bottom: 15px;
 `
 export const ImageIcon = styled.Image`
-    width: 80%;
+    width: 100%;
     height: 70px;
     padding: 50px;
     
