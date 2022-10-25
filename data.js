@@ -1088,7 +1088,7 @@ export default [
                 },
                 contactList: [
                     { name: 'Pessoa 1', link: 'tel://+5592912345678' },
-                    { name: 'Tauá tour', link: '11000' }, // Tauá tour,
+                    { name: 'Tauá tour', link: '11000' },
                 ],
             },
             address: "Rua Antenor Carlos Francisco",

@@ -18,9 +18,10 @@ export const Header = styled.View`
 export const ContainerBackButton = styled.View`
     position: absolute;
     left: 1px;
-    top: 15px;
+    top: 10px;
 `
 export const Main = styled.View`
     margin-top: 30px;
     flex: 0.83;
+    width: 100%;
 `

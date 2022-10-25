@@ -16,7 +16,6 @@ const UserInfo = () => {
 
     const [infoProfile, setInfoProfile] = useState('')
 
-
     async function getData() {
         try {
             const jsonValue = await AsyncStorage.getItem('@airaoHub_infoProfile')
@@ -64,6 +63,7 @@ const UserInfo = () => {
                     <TextRegular
                         text={`Você tem um perfil: ${infoProfile}`}
                     />
+
                 </Main>
             </Container>
         </BackgroundImage>

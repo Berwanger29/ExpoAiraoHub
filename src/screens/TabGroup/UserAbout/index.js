@@ -14,6 +14,7 @@ const UserAbout = () => {
     return (
         <BackgroundImage
             filter={1}
+            image={require('../../../../assets/images/plantBackground.jpg')}
         >
             <Container>
                 <ContainerBackButton>

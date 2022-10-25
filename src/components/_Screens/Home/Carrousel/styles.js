@@ -18,6 +18,7 @@ export const NewListButton = styled.TouchableOpacity`
     flex-direction: row;
     justify-content: space-between;
     margin-right: 5px;
+    align-items: center;
 `
 
 export const HorizontalView = styled.FlatList`
