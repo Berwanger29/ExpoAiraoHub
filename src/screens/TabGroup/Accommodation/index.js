@@ -22,6 +22,7 @@ import { useNavigation } from '@react-navigation/native'
 import CardExternalPlatform from '../../../components/_Screens/Accommodation/CardExternalPlatform'
 import { TextSubTitle } from '../../../components/Texts'
 import theme from '../../../global/styles/theme'
+import HeroContainer from '../../../components/HeroContainer'
 
 const Accommodation = () => {
 
@@ -72,11 +73,12 @@ const Accommodation = () => {
                 <UserButtonContainer>
                     <UserButton />
                 </UserButtonContainer>
-
-                <TextSubTitle
-                    text='Hospedagem'
-                    color={theme.colors.darkGreen}
-                />
+                <HeroContainer>
+                    <TextSubTitle
+                        text='Hospedagem'
+                        color={theme.colors.darkGreen}
+                    />
+                </HeroContainer>
                 <SearchConatainer
                     style={{
                         elevation: 5
@@ -90,7 +92,7 @@ const Accommodation = () => {
                     <SearchButton
                         activeOpacity={0.6}
                     >
-                        <AntDesign name="search1" size={RFValue(21)} color={'rgba(44, 44, 44, 0.38)'} />
+                        <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
                     </SearchButton>
                 </SearchConatainer>
             </Header>

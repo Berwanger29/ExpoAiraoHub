@@ -470,7 +470,7 @@ export default [
         id: 5008,
         title: "Maranata restaurante",
         content: {
-            description: "Temos a melhor comida regional",
+            description: "Estamos localizados na comunidade do Sobrado e temos a melhor comida regional",
             image: require('./exceptionalImage/toEat/maranata.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/maranata.restaurante0/',
@@ -1067,6 +1067,7 @@ export default [
     {
         type: "tourism",
         id: 7000,
+        categorie: "arborismo",
         title: "Arborismo",
         content: {
             title: "Arborismo",
@@ -1100,6 +1101,7 @@ export default [
     {
         type: "tourism",
         id: 7007,
+        categorie: "flutuante",
         title: "Flutuante dos Botos",
         content: {
             description: "O Flutuante dos Botos, onde se realiza todos os dias um ritual da natureza, ganhou tanta importância para o turismo do Amazonas.",
@@ -1119,7 +1121,7 @@ export default [
                     effort: "leve"
                 },
                 contactList: [
-                    { name: 'Marilda', tel: 'tel://+5592984370540' }
+                    { name: 'Marilda', link: 'tel://+5592984370540' }
                 ],
             },
             offering: ["Interação com botos"],
@@ -1133,6 +1135,7 @@ export default [
     {
         type: "tourism",
         id: 7008,
+        categorie: "sítio",
         title: "Sítio providência de Deus",
         content: {
             description: "Centro de reabilitação de animais silvestre,mantenedouro de animais silvestre e suas biografias.",
@@ -1152,7 +1155,7 @@ export default [
                     effort: "médio"
                 },
                 contactList: [
-                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
+                    { name: 'Pessoa', link: 'tel://+5592912345678' }
                 ],
             },
             offering: ["Balneário"],

@@ -21,6 +21,7 @@ export const MapLinkContainer = styled.TouchableOpacity`
     padding: 15px 30px ;
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 20px;
 `
 
 export const MapButton = styled.TouchableOpacity`

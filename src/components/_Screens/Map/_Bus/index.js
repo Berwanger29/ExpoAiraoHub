@@ -1,5 +1,6 @@
 import TitleMap from "../TitleMap";
 import { TextRegular } from "../../../Texts";
+import LinkButton from "../LinkButton";
 
 const _Bus = () => {
     return (
@@ -13,6 +14,11 @@ const _Bus = () => {
                  localizado na avenida Djalma Batista. A viagem de ônibus passa por Manacapuru e tem uma duração média de três horas e meia
                  até chegar em Novo Airão.'
                 format='justify'
+            />
+            <LinkButton
+                label='Marcar destino'
+                link={'https://goo.gl/maps/bqqSGqUdK8qpUVgG9'}
+                type='gps'
             />
         </>
     )

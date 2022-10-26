@@ -35,7 +35,7 @@ export const SearchButton = styled.TouchableOpacity`
 
 export const Main = styled.View`
     flex:1;
-    
+    padding-right: ${RFValue(15)}px;
 `
 
 export const CarrousselContainer = styled.ScrollView`

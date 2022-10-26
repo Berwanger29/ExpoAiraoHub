@@ -20,6 +20,7 @@ import Carroussel from '../../../components/_Screens/Home/Carrousel'
 import data from '../../../../data'
 import HomeSearchCard from '../../../components/_Screens/Home/HomeSearchCard';
 import { TextTitle } from '../../../components/Texts';
+import HeroContainer from '../../../components/HeroContainer';
 
 
 
@@ -75,7 +76,7 @@ const Home = () => {
                 arr.push(item)
             }
         })
-        setArrSearch(arr.toUpperCase())
+        setArrSearch(arr)
     }
 
     return (
@@ -88,9 +89,11 @@ const Home = () => {
                 <UserButtonContainer>
                     <UserButton />
                 </UserButtonContainer>
-                <TextTitle
-                    text='Olá'
-                />
+                <HeroContainer>
+                    <TextTitle
+                        text='Olá'
+                    />
+                </HeroContainer>
                 <SearchConatainer
                     style={{
                         elevation: 5

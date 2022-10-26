@@ -106,7 +106,6 @@ const Map = () => {
                 {isFocused && (name === 'carro') &&
                     <_Car />
                 }
-
                 {isFocused && (name === 'taxi') &&
                     <_Taxi />
                 }

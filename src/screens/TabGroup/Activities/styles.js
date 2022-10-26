@@ -12,6 +12,17 @@ export const Header = styled.View`
 
 `
 
+export const HeroContainer = styled.View`
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+`
+
+export const FIlterButton = styled.TouchableOpacity`
+    margin-right: 10px;
+`
+
 export const Main = styled.View`
     flex: 1;
     padding-top: 10px;
@@ -47,4 +58,45 @@ export const SearchList = styled.FlatList`
 
 export const MainList = styled.FlatList`
     flex: 1;
+`
+
+export const Modal = styled.Modal`
+
+`
+export const ModalContiner = styled.View`
+    flex: 1;
+    background-color: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+`
+export const FilterContainer = styled.View`
+    background-color: ${props => props.theme.colors.light};
+    flex: 0.8;
+    width: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+`
+
+export const FilterHeader = styled.View`
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+`
+export const CloseModalButton = styled.TouchableOpacity`
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+`
+export const Details = styled.View`
+    margin-top: 15px;
+`
+export const FilterOptions = styled.View`
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-around;
 `
