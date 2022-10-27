@@ -102,6 +102,7 @@ const Activities = () => {
     function handleFilter(e) {
         setDisplayPrimary('none')
         setDisplaySecondary('flex')
+        setIsSelected(true)
         setFilter(e)
 
         let arrFilter = activitiesData.filter((item) => {
@@ -109,6 +110,10 @@ const Activities = () => {
                 return item
             }
         })
+
+        if (e) {
+
+        }
         setCategorieFiltered(arrFilter)
     }
 
@@ -224,19 +229,25 @@ const Activities = () => {
                                 onPress={() => {
                                     setDisplayPrimary('flex')
                                     setDisplaySecondary('none')
+                                    setFilter('')
                                 }}
+                                isSelected={filter == '' ? true : false}
                             >
                                 <TextRegular
                                     text='Todos'
+                                    color={filter === '' ? theme.colors.light : theme.colors.black}
                                 />
                             </FilterButton>
                             {
+
                                 dataCategories.map((item) =>
                                     <FilterButton
-                                        onPress={() => { handleFilter(item.categorie) }}
+                                        onPress={() => handleFilter(item.categorie)}
+                                        isSelected={isSelected && (item.categorie == filter) ? true : false}
                                     >
                                         <TextRegular
                                             text={item.categorie}
+                                            color={isSelected && (item.categorie == filter) ? theme.colors.light : false}
                                         />
                                     </FilterButton>
                                 )

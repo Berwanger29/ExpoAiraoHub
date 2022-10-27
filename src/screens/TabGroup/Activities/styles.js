@@ -111,5 +111,5 @@ export const FilterButton = styled.TouchableOpacity`
     justify-content: center;
     border-radius: 15px;
     border: 1px solid ${props => props.theme.colors.green};
-    background-color: ${props => props.isSelected ? theme.colors.darkGreen : theme.colors.yellow};
+    background-color: ${props => props.isSelected ? theme.colors.darkGreen : theme.colors.light};
 `
