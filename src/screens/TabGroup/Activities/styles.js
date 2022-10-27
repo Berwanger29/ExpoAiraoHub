@@ -1,6 +1,7 @@
 import styled from 'styled-components/native'
 import { RFValue } from 'react-native-responsive-fontsize'
 import { StatusBar } from 'react-native'
+import theme from '../../../global/styles/theme'
 
 export const Container = styled.View`
     flex: 1;
@@ -54,6 +55,7 @@ export const SearchButton = styled.View`
 
 export const SearchList = styled.FlatList`
     flex: 1;
+
 `
 
 export const MainList = styled.FlatList`
@@ -99,4 +101,15 @@ export const FilterOptions = styled.View`
     flex-wrap: wrap;
     height: 100%;
     justify-content: space-around;
+`
+
+export const FilterButton = styled.TouchableOpacity`
+    width: 110px;
+    height: 50px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 1px solid ${props => props.theme.colors.green};
+    background-color: ${props => props.isSelected ? theme.colors.darkGreen : theme.colors.yellow};
 `

@@ -15,6 +15,7 @@ import {
     CloseModalButton,
     Details,
     FilterOptions,
+    FilterButton,
 } from './styles'
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
@@ -26,7 +27,6 @@ import Card from '../../../components/_Screens/Activities/Card';
 import HeroContainer from '../../../components/HeroContainer';
 import { EvilIcons } from '@expo/vector-icons';
 import Line from '../../../components/Line'
-import FilterButton from '../../../components/_Screens/Activities/FilterButton';
 
 import ActivitiesAdventure from '../ActivitiesAdventure'
 import ActivitiesTour from '../ActivitiesTour';
@@ -65,21 +65,23 @@ const Activities = () => {
     const [input, setInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
     const [modalVisible, setModalVisible] = useState(false)
-    const [filterOption, setFilterOption] = useState(false)
-    const [changeColor, setChangeColor] = useState(0)
+
+    const [filter, setFilter] = useState('')
+    const [isSelected, setIsSelected] = useState(false)
+    const [categorieFiltered, setCategorieFiltered] = useState([])
+    const [displayPrimary, setDisplayPrimary] = useState('flex')
+    const [displaySecondary, setDisplaySecondary] = useState('none')
+
 
     let activitiesData = data.filter((item) => {
         return item.type == 'tourism'
     })
-
 
     let dataCategories = data.filter((item) => {
         if (item.type == 'tourism') {
             return item.categorie
         }
     })
-
-
 
 
     function handleInput(e) {
@@ -97,13 +99,17 @@ const Activities = () => {
         setModalVisible(!modalVisible)
     }
 
-    function handleFilter(categorie, index) {
+    function handleFilter(e) {
+        setDisplayPrimary('none')
+        setDisplaySecondary('flex')
+        setFilter(e)
 
-        setChangeColor(index)
-        console.log('-------------')
-        console.log(changeColor)
-        console.log(index)
-
+        let arrFilter = activitiesData.filter((item) => {
+            if (item.categorie == e) {
+                return item
+            }
+        })
+        setCategorieFiltered(arrFilter)
     }
 
     return (
@@ -139,8 +145,11 @@ const Activities = () => {
                     </SearchButton>
                 </ContainerSearch>
             </Header>
-            {input === '' &&
-                <Main>
+            {
+                input === '' &&
+                <Main
+                    style={{ display: displayPrimary }}
+                >
                     <MainList
                         data={activitiesData}
                         showsVerticalScrollIndicator={false}
@@ -156,10 +165,27 @@ const Activities = () => {
             }
 
             {
-                input !== '' &&
+                (input !== '') &&
                 <Main>
                     <SearchList
                         data={arrSearch}
+                        renderItem={({ item }) => (
+                            <Card
+                                id={item.id}
+                                title={item.title}
+                                image={item.content.image}
+                            />
+                        )}
+                    />
+                </Main>
+            }
+            {
+                filter !== '' &&
+                <Main
+                    style={{ display: displaySecondary }}
+                >
+                    <SearchList
+                        data={categorieFiltered}
                         renderItem={({ item }) => (
                             <Card
                                 id={item.id}
@@ -194,14 +220,25 @@ const Activities = () => {
                         </Details>
                         <Line />
                         <FilterOptions>
+                            <FilterButton
+                                onPress={() => {
+                                    setDisplayPrimary('flex')
+                                    setDisplaySecondary('none')
+                                }}
+                            >
+                                <TextRegular
+                                    text='Todos'
+                                />
+                            </FilterButton>
                             {
-                                dataCategories.map((item, index) =>
+                                dataCategories.map((item) =>
                                     <FilterButton
-                                        label={item.categorie}
-                                        onPress={() => handleFilter(item.categorie, index)}
-                                        index={index}
-                                        changeColor={changeColor}
-                                    />
+                                        onPress={() => { handleFilter(item.categorie) }}
+                                    >
+                                        <TextRegular
+                                            text={item.categorie}
+                                        />
+                                    </FilterButton>
                                 )
                             }
                         </FilterOptions>

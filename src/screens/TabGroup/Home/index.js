@@ -134,7 +134,7 @@ const Home = () => {
                         /> */}
 
                         <Carroussel
-                            title="Agências"
+                            title="Agência/Operador"
                             data={agenciesData}
                         />
 
