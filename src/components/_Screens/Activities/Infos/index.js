@@ -21,6 +21,7 @@ import Contact from "../Contact";
 import Line from "../../../Line";
 import theme from "../../../../global/styles/theme";
 import { Alert } from "react-native";
+import advices from "../../../../../advices";
 
 
 const Infos = ({ data }) => {
@@ -36,7 +37,7 @@ const Infos = ({ data }) => {
                     />
                 </LocalLabel>
                 <ButtonAlert
-                    onPress={() => Alert.alert('Aviso', 'O parna Anavilhanas trata-se de um parque ecológico e por isso, contamos com a colaboração de todos para a preservação do mesmo.')}
+                    onPress={() => Alert.alert('Aviso', advices.anavilhanas)}
                 >
                     <Ionicons name="alert-circle-outline" size={29} color={theme.colors.yellow} />
                 </ButtonAlert>
@@ -44,34 +45,63 @@ const Infos = ({ data }) => {
 
             <Line />
 
-            <DetailsGroup>
+            <DetailsGroup justifyContent={((data?.activities.height) | (data?.activities.distance) | (data?.activities.duration)) > 0 ? 'space-evenly' : 'center'}>
                 <InfoContainer>
-                    <IconCircle>
-                        <FontAwesome name="arrows-v" size={40} color="black" />
-                    </IconCircle>
-                    <TextThin
-                        text={`${data?.activities.height}m`}
-                    />
+                    {
+                        data?.activities.height > 0 ?
+                            (
+                                <>
+                                    <IconCircle>
+                                        <FontAwesome name="arrows-v" size={40} color="black" />
+                                    </IconCircle>
+                                    <TextThin
+                                        text={`${data?.activities.height}m`}
+                                    />
+                                </>
+                            )
+                            :
+                            (
+                                null
+                            )
+                    }
                 </InfoContainer>
 
                 <InfoContainer>
-                    <IconCircle>
-                        <FontAwesome name="arrows-h" size={40} color="black" />
-                    </IconCircle>
-                    <TextThin
-                        text={`${data?.activities.distance}m`}
-                    />
+                    {data?.activities.distance > 0 ?
+                        (
+                            <>
+                                <IconCircle>
+                                    <FontAwesome name="arrows-h" size={40} color="black" />
+                                </IconCircle>
+                                <TextThin
+                                    text={`${data?.activities.distance}m`}
+                                />
+                            </>
+                        )
+                        : (
+                            null
+                        )
+                    }
                 </InfoContainer>
 
                 <InfoContainer>
-                    <IconCircle>
-                        <Octicons name="stopwatch" size={40} color="black" />
-                    </IconCircle>
-                    <TextThin
-                        text={`${data?.activities.duration}m`}
-                    />
+                    {data?.activities.duration > 0 ?
+                        (
+                            <>
+                                <IconCircle>
+                                    <Octicons name="stopwatch" size={40} color="black" />
+                                </IconCircle>
+                                <TextThin
+                                    text={`${data?.activities.duration}m`}
+                                />
+                            </>
+                        )
+                        :
+                        (
+                            null
+                        )
+                    }
                 </InfoContainer>
-
                 <InfoContainer>
                     <IconCircle>
                         <FontAwesome5 name="hiking" size={40} color="black" />
@@ -93,7 +123,7 @@ const Infos = ({ data }) => {
                     )
                 }
             </ContactsGroup>
-        </Container>
+        </Container >
     )
 }
 

@@ -103,7 +103,7 @@ const User = () => {
                             nameIcon='information-variant'
                             onPress={() => navigation.navigate('UserAbout')}
                         />
-                        
+
 
                     </OptionsContainer>
                 </Main>

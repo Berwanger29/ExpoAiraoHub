@@ -118,10 +118,10 @@ const Home = () => {
                         showsVerticalScrollIndicator={false}
                     >
 
-                        {/* <Carroussel
+                        <Carroussel
                             title="Artesanato"
                             data={craftsmanship}
-                        /> */}
+                        />
 
 
                         {/* <Carroussel

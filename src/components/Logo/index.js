@@ -7,7 +7,7 @@ const Logo = () => {
     return (
         <LogoContainer>
             <LogoImage
-                source={require('../../../assets/images/LogoHomeScreen.png')}
+                source={require('../../../assets/images/LogoA.png')}
                 resizeMode='contain'
             />
         </LogoContainer>

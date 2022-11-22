@@ -34,6 +34,7 @@ import User from "../screens/TabGroup/User";
 import UserAbout from "../screens/TabGroup/UserAbout";
 import UserPrivacy from "../screens/TabGroup/UserPrivacy";
 import UserInfo from "../screens/TabGroup/UserInfo";
+import ScriptList from "../components/_Screens/Scripts/ScriptList";
 
 
 
@@ -65,7 +66,7 @@ function TabNavigator() {
                     }
                 }}
             />
-            {/* <Tab.Screen
+            <Tab.Screen
                 name="Scripts"
                 component={Scripts}
                 options={{
@@ -79,7 +80,7 @@ function TabNavigator() {
                         )
                     }
                 }}
-            /> */}
+            />
             <Tab.Screen
                 name="Accommodation"
                 component={Accommodation}
@@ -221,6 +222,11 @@ const Navigation = () => {
                 <Stack.Screen
                     name="UserInfo"
                     component={UserInfo}
+                />
+
+                <Stack.Screen
+                    name="ScriptList"
+                    component={ScriptList}
                 />
             </Stack.Navigator>
         </NavigationContainer>

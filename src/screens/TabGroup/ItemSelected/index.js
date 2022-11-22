@@ -66,19 +66,29 @@ const ItemSelected = ({ route }) => {
                     <TextSubTitle
                         text={itemData.title}
                     />
+                    {/* <Line /> */}
+                    {
+                        itemData.content.description != '' ?
+                            (
+                                <>
 
-                    <Line />
+                                    <MainText>
+                                        {itemData.content.description}
+                                    </MainText>
+                                    <Line />
+                                </>
+                            ) :
+                            (null)
+                    }
 
-                    <MainText>
-                        {itemData.content.description}
-                    </MainText>
 
-                    <Line />
+
 
                     {
                         itemData.type == 'tourism' &&
                         (
                             <>
+                                <Line />
                                 <Infos
                                     data={infoActivities}
                                 />
@@ -102,7 +112,6 @@ const ItemSelected = ({ route }) => {
                                 }
                             </OptionalsContainer>
 
-                            <Line />
 
                             <ContainerLinks>
 

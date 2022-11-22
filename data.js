@@ -869,7 +869,7 @@ export default [
     {
         type: "hotels",
         id: 6003,
-        title: "Pousada Cabloca",
+        title: "Pousada Cabocla",
         content: {
             description: "A Pousada Cabocla, é uma pousada que concilia simplicidade e chame rústico em um único lugar, localizada no centro da cidade de Novo Airão, disponibiliza acomodações confortáveis, com acesso Wi-fi e estacionamento privado. Comtempla uma área ampla, agradável, e a tranquilidade que você procura para seus dias de férias.",
             image: require('./exceptionalImage/hotels/pousadaCabocla.jpg'),
@@ -1100,6 +1100,40 @@ export default [
     },
     {
         type: "tourism",
+        id: 7001,
+        categorie: "arborismo",
+        title: "Arborismo",
+        content: {
+            title: "Arborismo",
+            description: "O arborismo é uma experiência de aventura ao ar livre inigualável. Cheia de adrenalina, leva as pessoas para fora da sua zona de conforto e é uma ótima atividade outdoor para pequenos e grandes aventureiros.",
+            image: require("./exceptionalImage/adventure/arborismo.jpg"),
+            contacts: "92912345678",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ["Estrada"],
+                activities: {
+                    height: 27,
+                    distance: 1970,
+                    duration: 180,
+                    effort: "Difícil"
+                },
+                contactList: [
+                    { name: 'Pessoa 1', link: 'tel://+5592912345678' },
+                    { name: 'Tauá tour', link: '11000' },
+                ],
+            },
+            address: "Rua Antenor Carlos Francisco",
+            type: "pessoa",
+            offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "tourism",
         id: 7007,
         categorie: "flutuante",
         title: "Flutuante dos Botos",
@@ -1159,6 +1193,135 @@ export default [
                 ],
             },
             offering: ["Balneário"],
+            address: "",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "tourism",
+        id: 7009,
+        categorie: "comunidade",
+        title: "Tiririca",
+        content: {
+            description: "Localizada às margens do rio Negro, cerca de 30 minutos da cidade de Novo Airão, lá você pode contemplar a fauna e flora local, visitar o Centro de Artesanato Comunitário, prestigiar o roteiro denominado comunitour, dentre outros atrativos que a comunidade possui. \n Para a realização destes passeios, consulte os nossos operadores de turismo.",
+            image: require("./exceptionalImage/attractions/tiririca.jpg"),
+            contacts: "",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ["Margem do Rio Negro"],
+                activities: {
+                    height: 0,
+                    distance: 0,
+                    duration: 0,
+                    effort: "fácil"
+                },
+                contactList: [
+                    { name: 'Reco Turismo', link: '11001' },
+                    { name: 'AATRA', link: '11003' },
+                ],
+            },
+            offering: [""],
+            address: "",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "tourism",
+        id: 7010,
+        categorie: "comunidade",
+        title: "Santo Antônio",
+        content: {
+            description: "Uma comunidade encantadora, que dispõe de um roteiro sobre o modo de vida dos comunitários, com visita a Casa de Farinha, medicina natural, casa de artesanato, trilhas e um mirante que permite a contemplação do belo Rio Negro, dentre outros atrativos.\n Para a realização destes passeios, consulte os nossos operadores de turismo.",
+            image: require("./exceptionalImage/attractions/santoAntonio.jpeg"),
+            contacts: "",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ["Margem do Rio Negro"],
+                activities: {
+                    height: 0,
+                    distance: 0,
+                    duration: 0,
+                    effort: "fácil"
+                },
+                contactList: [
+                    { name: 'Pessoa', link: 'tel://+5592912345678' }
+                ],
+            },
+            offering: [""],
+            address: "",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "tourism",
+        id: 7011,
+        categorie: "comunidade",
+        title: "Sobrado",
+        content: {
+            description: "A comunidade do Sobrado fica distante cerca de 40 minutos de lancha de pequeno porte. A trilha conduzida pelos comunitários é simplesmente incrível, são inúmeros atrativos da fauna e flora local, com destaque para a árvore gigante sumaúma. Não deixe de prestigiar a gastronomia regional local, é irresistível. \n Para a realização destes passeios, consulte os nossos operadores de turismo.",
+            image: require("./exceptionalImage/attractions/sobrado.jpeg"),
+            contacts: "tel: 92 9232-3111//",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ["Margem do Rio Negro"],
+                activities: {
+                    height: 0,
+                    distance: 0,
+                    duration: 0,
+                    effort: "fácil"
+                },
+                contactList: [
+                    { name: 'AATRA', link: '11003' }
+                ],
+            },
+            offering: [""],
+            address: "",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "tourism",
+        id: 7012,
+        categorie: "comunidade",
+        title: "Mirituba",
+        content: {
+            description: "A comunidade indígena do Mirituba é uma oportunidade de intercâmbio cultural única, formada por um povo simples, trabalhador e detentor do vasto conhecimento da flora e fauna amazônica. Vale a pena visitar os comunitários, a casa de artesanato local, dentre outros atrativos.\n Para a realização destes passeios, consulte os nossos operadores de turismo.",
+            image: require("./exceptionalImage/attractions/mirituba.jpg"),
+            contacts: "",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ["Margem do Rio Negro"],
+                activities: {
+                    height: 0,
+                    distance: 0,
+                    duration: 0,
+                    effort: "fácil"
+                },
+                contactList: [
+                    { name: 'AATRA', link: '11003' }
+                ],
+            },
+            offering: [""],
             address: "",
             addressLink: "",
             profile: ["adventure", "soft", "calm"],
@@ -1229,15 +1392,12 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
-
-
-
     {
         type: "craftsmanship",
         id: 10000,
         title: "Associação dos artesãos de Novo Airão",
         content: {
-            description: "Uma central de artesanato, sem fins lucrativo onde se trabalha 22 familias sendo a maioria mulhres.",
+            description: "Temos por objetivo resgatar e divulgar a arte popular, apoiar a produção e comercialização de artesanatos com fibras vegetais para manter viva a herança cultural.",
             image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
             contacts: "tel://+5592984591290",
             social: {
@@ -1245,75 +1405,75 @@ export default [
                 facebook: 'https://www.facebook.com/profile.php?id=100069638858086',
                 site: ''
             },
-            offering: ["Cartão"],
+            offering: ["Tapeçaria"],
             address: "Av.ajuricaba N 55 centro ",
             addressLink: "https://goo.gl/maps/TGwtVKZNREGDNsjZA",
             profile: ["adventure", "soft", "calm"],
         },
     },
-    {
-        type: "craftsmanship",
-        id: 10001,
-        title: "Francivalda Barreto Costa",
-        content: {
-            description: "Fica em frente ao município, atravessando o rio, cerca de 5 minutos.",
-            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
-            contacts: "tel://+5592986196983",
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            offering: [],
-            address: "Comunidade Indígena maku Ita",
-            addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
-            profile: ["adventure", "soft", "calm"],
-        },
-    },
-    {
-        type: "craftsmanship",
-        id: 10002,
-        title: "Adriane Santos",
-        content: {
-            description: "Comunidade indígena makuita. Temos chirinbado,trilha terrestre e trilha aquática.",
-            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
-            contacts: "tel://+5592985978810",
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            offering: [""],
-            address: "Comunidade Indígena maku Ita",
-            addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
-            profile: ["adventure", "soft", "calm"],
-        },
-    },
-    {
-        type: "craftsmanship",
-        id: 10003,
-        title: "Artesanato da Eliane",
-        content: {
-            description: "Aqui você pode conhecer artesanato de diversas variedades, todos feitos com obra-prima da natureza.",
-            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
-            contacts: "tel://+5592985854641",
-            social: {
-                instagram: 'https://www.instagram.com/aana_associacao_dos_artesaos_/',
-                facebook: 'https://www.facebook.com/profile.php?id=100069638858086',
-                site: ''
-            },
-            offering: [],
-            address: "Comunidade Indígena maku Ita",
-            addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
-            profile: ["adventure", "soft", "calm"],
-        },
-    },
+    // {
+    //     type: "craftsmanship",
+    //     id: 10001,
+    //     title: "Francivalda Barreto Costa",
+    //     content: {
+    //         description: "Fica em frente ao município, atravessando o rio, cerca de 5 minutos.",
+    //         image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+    //         contacts: "tel://+5592986196983",
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         offering: [],
+    //         address: "Comunidade Indígena maku Ita",
+    //         addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
+    //         profile: ["adventure", "soft", "calm"],
+    //     },
+    // },
+    // {
+    //     type: "craftsmanship",
+    //     id: 10002,
+    //     title: "Adriane Santos",
+    //     content: {
+    //         description: "Comunidade indígena makuita. Temos chirinbado,trilha terrestre e trilha aquática.",
+    //         image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+    //         contacts: "tel://+5592985978810",
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         offering: [""],
+    //         address: "Comunidade Indígena maku Ita",
+    //         addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
+    //         profile: ["adventure", "soft", "calm"],
+    //     },
+    // },
+    // {
+    //     type: "craftsmanship",
+    //     id: 10003,
+    //     title: "Artesanato da Eliane",
+    //     content: {
+    //         description: "Aqui você pode conhecer artesanato de diversas variedades, todos feitos com obra-prima da natureza.",
+    //         image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+    //         contacts: "tel://+5592985854641",
+    //         social: {
+    //             instagram: 'https://www.instagram.com/aana_associacao_dos_artesaos_/',
+    //             facebook: 'https://www.facebook.com/profile.php?id=100069638858086',
+    //             site: ''
+    //         },
+    //         offering: [],
+    //         address: "Comunidade Indígena maku Ita",
+    //         addressLink: "https://goo.gl/maps/ikxvSneg9wPXTNjc8",
+    //         profile: ["adventure", "soft", "calm"],
+    //     },
+    // },
     {
         type: "craftsmanship",
         id: 10004,
         title: "Lili Encantos",
         content: {
-            description: "Trabalho com artesanatos em geral, madeira, acessórios com penas e  etc",
+            description: "Somos Encantos e magia, nosso artesanato detém essência da cultura da terra, dos nossos ancestrais. Trabalhamos com madeira, acessórios com penas, sempre respeitando a biodiversidade existente na floresta.",
             image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
             contacts: "tel://+5592984810171",
             social: {
@@ -1340,47 +1500,66 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: [],
+            offering: ["Venda de produtos originais"],
             address: "Rua Presidente Vargas, 14, centro ",
             addressLink: "https://goo.gl/maps/RjWCUYVMJkUpRvuT8",
             profile: ["adventure", "soft", "calm"],
         },
     },
+    // {
+    //     type: "craftsmanship",
+    //     id: 10006,
+    //     title: "Lojinha da Eliane Lili",
+    //     content: {
+    //         description: "Uma central de artesanato, sem fins lucrativo onde se trabalha 22 familias sendo a maioria mulhres.",
+    //         image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+    //         contacts: "tel://+5592985854641",
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         offering: ["Dinheiro"],
+    //         address: "Comunidade Indígena maku Ita",
+    //         addressLink: "",
+    //         profile: ["adventure", "soft", "calm"],
+    //     },
+    // },
     {
         type: "craftsmanship",
-        id: 10006,
-        title: "Lojinha da Eliane Lili",
+        id: 10007,
+        title: "Fundação Almerinda Malaquias",
         content: {
-            description: "Uma central de artesanato, sem fins lucrativo onde se trabalha 22 familias sendo a maioria mulhres.",
+            description: "A Fundação Almerinda Malaquias é uma Organização da Sociedade Civil (OSC), instituição privada e sem fins lucrativos, que há 22 anos, atua no município de Novo Airão – Amazonas, com ênfase na educação e na transformação social, comprometida em promover geração de renda, educação ambiental.",
             image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
-            contacts: "tel://+5592985854641",
+            contacts: "tel://+5592984549837",
             social: {
-                instagram: '',
-                facebook: '',
-                site: ''
+                instagram: 'https://www.instagram.com/fundacaoalmerindamalaquias/',
+                facebook: 'https://pt-br.facebook.com/FAMFundacaoAlmerindaMalaquias/',
+                site: 'https://fundacaoalmerindamalaquias.org/'
             },
-            offering: ["Dinheiro"],
-            address: "Comunidade Indígena maku Ita",
-            addressLink: "",
+            offering: ["Loja climatizada", "Área arborizada", "Internet"],
+            address: "Av.ajuricaba N 55 centro ",
+            addressLink: "https://goo.gl/maps/11331kQ6iRFLwV8v5",
             profile: ["adventure", "soft", "calm"],
         },
     },
     {
         type: "craftsmanship",
-        id: 10007,
-        title: "",
+        id: 10008,
+        title: "Waimiri Atroari",
         content: {
             description: "",
-            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
-            contacts: "tel://+5592984591290",
+            image: require("./exceptionalImage/attractions/waimiri.jpeg"),
+            contacts: "tel://",
             social: {
                 instagram: '',
                 facebook: '',
                 site: ''
             },
-            offering: [""],
-            address: "Av.ajuricaba N 55 centro ",
-            addressLink: "",
+            offering: [],
+            address: "",
+            addressLink: "https://www.google.com/maps/@-2.623205,-60.9445768,3a,75y,204.24h,89.05t/data=!3m6!1e1!3m4!1sHf0vEV-lKLTqvvDZVbhqmA!2e0!7i13312!8i6656",
             profile: ["adventure", "soft", "calm"],
         },
     },
@@ -1424,6 +1603,7 @@ export default [
             showActivities: {
                 activitiesList: [
                     { name: 'Flutuante dos botos', link: '7007' },
+                    { name: 'Comunidade do Tiririca', link: '7009' },
                 ],
             },
             offering: ["Anavilhanas", "Jaú", "Comunidades"],
@@ -1471,7 +1651,7 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7000' },
+                    { name: 'Comunidade do Miriuba', link: '7012' },
                 ],
             },
             offering: ["Observação de aves", " Focagem noturna", "Trilhas aquáticas", "Trilhas terrestres", "Visitas às comunidades", "Acampamento em barraca", "Banho em praia"],
@@ -1577,6 +1757,34 @@ export default [
         },
     },
     {
+        type: "agencies",
+        id: 11008,
+        title: "Guias de turismo",
+        content: {
+            description: "",
+            image: require('./exceptionalImage/agencies/sandventure.jpg'),
+            contacts: "",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            showActivities: {
+                activitiesList: [
+                    { name: 'Lucas Rodrigues Barbosa', link: 'tel://+559298432-9192' },
+                    { name: 'Ednaldo Souza Nunes', link: 'tel://+5592994253016' },
+                    { name: 'Marcos Paulo Martins dos Santos', link: 'tel://+5592984809669' },
+                    { name: 'Milena Vinhorts Marinho', link: 'tel://+5592993807183' },
+                    { name: 'Noarh da Costa Brito Meier', link: 'tel://+5592992954974' },
+                ],
+            },
+            offering: [],
+            address: "",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
         type: "public",
         id: 12000,
         title: "Hospital",
@@ -1594,5 +1802,11 @@ export default [
             addressLink: "",
             profile: [],
         },
+    },
+    {
+        type: 'script',
+        title: 'Apenas um dia',
+        image: 'https://images.unsplash.com/photo-1491961713439-c6a3e7368eff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        script: [11003, 11004, 11005]
     },
 ]

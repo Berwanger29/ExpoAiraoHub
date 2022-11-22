@@ -85,11 +85,14 @@ export const FilterHeader = styled.View`
     align-items: center;
     justify-content: space-between;
 `
+
 export const CloseModalButton = styled.TouchableOpacity`
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
+    /* height: 50px;
+    width: 50px; */
+    background-color: ${props => props.theme.colors.green};
     border: 1px solid black;
+    padding: 5px 7px;
+    border-radius: 25px;
     align-items: center;
     justify-content: center;
 `

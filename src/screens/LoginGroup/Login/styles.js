@@ -14,6 +14,11 @@ export const Container = styled.View`
     
 `
 
+export const LogoContainer = styled.View`
+    width: 100%;
+    
+`
+
 export const LabelContainer = styled.View`
     align-self: flex-start;
     margin-bottom: 10px;

@@ -1,8 +1,10 @@
+import { TextRegular } from "../../../Texts"
 import {
     Container,
     ImageButton,
     Label
 } from "./styles"
+import theme from '../../../../global/styles/theme'
 
 
 
@@ -16,9 +18,10 @@ const ScriptCard = ({ onPress, label, image }) => {
                 source={image}
                 imageStyle={{ borderRadius: 5 }}
             >
-                <Label>
-                    {label}
-                </Label>
+                <TextRegular
+                    text={label}
+                    color={theme.colors.light}
+                />
             </ImageButton>
         </Container>
     )

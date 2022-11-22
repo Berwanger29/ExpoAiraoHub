@@ -1,6 +1,6 @@
 import {
     Background,
-    Filter
+    Filter,
 } from "./styles"
 
 
@@ -12,7 +12,8 @@ const BackgroundImage = ({ children, image, filter }) => {
             <Filter
                 filter={filter}
             >
-                {children}
+                    {children}
+             
             </Filter>
         </Background>
     )

@@ -77,11 +77,24 @@ const Activities = () => {
         return item.type == 'tourism'
     })
 
-    let dataCategories = data.filter((item) => {
+    let categories = data.filter((item) => {
         if (item.type == 'tourism') {
+        }
+
+    })
+
+    let categoriesFiltered = categories.filter((item, index) => {
+        console.log('-----------------')
+        console.log(categories.indexOf(item))
+        console.log(index)
+        console.log(categories.indexOf(item) === index)
+        if (categories.indexOf(item) === index) {
+            console.log(item.categorie)
             return item.categorie
         }
-    })
+    }
+    );
+
 
 
     function handleInput(e) {
@@ -215,7 +228,10 @@ const Activities = () => {
                             <CloseModalButton
                                 onPress={handleModal}
                             >
-                                <EvilIcons name="close" size={30} color="black" />
+                                <TextRegular
+                                    text='filtrar'
+                                    color={theme.colors.light}
+                                />
                             </CloseModalButton>
                         </FilterHeader>
                         <Details>
@@ -240,7 +256,7 @@ const Activities = () => {
                             </FilterButton>
                             {
 
-                                dataCategories.map((item) =>
+                                categoriesFiltered.map((item) => (
                                     <FilterButton
                                         onPress={() => handleFilter(item.categorie)}
                                         isSelected={isSelected && (item.categorie == filter) ? true : false}
@@ -250,7 +266,7 @@ const Activities = () => {
                                             color={isSelected && (item.categorie == filter) ? theme.colors.light : false}
                                         />
                                     </FilterButton>
-                                )
+                                ))
                             }
                         </FilterOptions>
                     </FilterContainer>

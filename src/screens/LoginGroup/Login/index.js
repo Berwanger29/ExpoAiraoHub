@@ -12,6 +12,7 @@ import {
     EyeContainer,
     EyeInputContainer,
     ImageContainer,
+    LogoContainer,
 } from './styles'
 
 import { auth } from '../../../../firebase'
@@ -25,6 +26,7 @@ import { Entypo } from '@expo/vector-icons';
 
 import { TextSubTitle, TextThin } from '../../../components/Texts';
 import Logo from '../../../components/Logo';
+import LogoSVG from '../../../components/LogoSVG';
 
 
 const Login = () => {
@@ -131,6 +133,11 @@ const Login = () => {
                             />
                             <Container>
                                 <Logo />
+                                {/* <LogoContainer>
+                                    <LogoSVG
+
+                                    />
+                                </LogoContainer> */}
                                 <InputContainer>
                                     <LabelContainer>
                                         <TextSubTitle
