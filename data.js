@@ -1329,40 +1329,8 @@ export default [
     },
     {
         type: "bathhouse",
-        id: 7009,
-        title: "Balneário mato grosso",
-        content: {
-            description: "Funcionando todos os dias , entrada carro R$10 reais moto R$5 reais, pedestre R$2 reais.\nKm 22 - AM 352",
-            image: require("./exceptionalImage/bathhouse/matoGrosso.jpg"),
-            contacts: "tel://+5592993073131",
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            infoActivities: {
-                local: ["Estrada"],
-                activities: {
-                    height: 15,
-                    distance: 1930,
-                    duration: 240,
-                    effort: "médio"
-                },
-                contactList: [
-                    { name: 'Pessoa', tel: 'tel://+5592912345678' }
-                ],
-            },
-            offering: ["Alimentos", "bebidas", "Estacionamento"],
-            address: "",
-            addressLink: "https://goo.gl/maps/C6zpnyy2kDa1Pn1s9",
-            type: 'diária',
-            profile: ["adventure", "soft", "calm"],
-            prices: '1317',
-        },
-    },
-    {
-        type: "bathhouse",
-        id: 7010,
+        id: 7013,
+        categorie:"",
         title: "Psicultura anavilhanas",
         content: {
             description: "Atividades rurais, com hospedagem, pesque pague e restaurante \nkm 8 - AM 352 ",
@@ -1392,6 +1360,73 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
+    {
+        type: "tourism",
+        id: 7014,
+        categorie:"Anavilhanas",
+        title: "Parque Nacional de Anavilhanas",
+        content: {
+            description: "O Parque Nacional de Anavilhanas está aberto o ano todo. Na seca (setembro a fevereiro) é possível desfrutar das belas praias de areias brancas que emergem por todo o arquipélago. Na cheia (março a agosto) o vislumbre fica por conta das trilhas aquáticas de igapó, isto é, passeios de barco por dentro das florestas alagadas",
+            image: require("./exceptionalImage/tour/anavilhanas.jpeg"),
+            contacts: "",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ["Anavilhanas"],
+                activities: {
+                    height: 0,
+                    distance: 0,
+                    duration: 0,
+                    effort: "fácil"
+                },
+                contactList: [
+                    { name: '', tel: '' }
+                ],
+            },
+            offering: [],
+            address: "",
+            addressLink: "",
+            type: '',
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "tourism",
+        id: 7015,
+        categorie:"Anavilhanas",
+        title: "Praias de Anavilhanas",
+        content: {
+            description: "Geralmente ocorre de Setembro a Fevereiro. No Parque Nacional de Anavilhanas, durante a seca, emergem praias na Orla de Novo Airão e ao longo das margens do rio Negro e ilhas do arquipélago das Anavilhanas, onde o contraste das areias brancas com as águas negras do rio Negro criam cenários de incrível beleza. As praias mais visitadas são: praia da Orla, Aracari, Bararoá, Camaleão, Folharal/Canauirí, Iluminado, Meio, Sobrado e Tiririca. Com exceção da praia da Orla, acessível por terra, todas as outras somente são acessíveis pelo rio.",
+            image: require("./exceptionalImage/tour/praiasAnavilhanas.jpeg"),
+            contacts: "",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ["Anavilhanas"],
+                activities: {
+                    height: 0,
+                    distance: 0,
+                    duration: 0,
+                    effort: "fácil"
+                },
+                contactList: [
+                    { name: '', tel: '' }
+                ],
+            },
+            offering: [],
+            address: "",
+            addressLink: "",
+            type: '',
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    
     {
         type: "craftsmanship",
         id: 10000,
