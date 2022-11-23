@@ -1393,17 +1393,24 @@ export default [
     //     },
     // },
     {
+        type: "bathhouse",
+        id: 7013,
+        categorie:"",
+        title: "Psicultura anavilhanas",
         type: "tourism",
         id: 7013,
         categorie: "park",
         title: "Parque Nacional de Anavilhanas",
         content: {
+            description: "Atividades rurais, com hospedagem, pesque pague e restaurante \nkm 8 - AM 352 ",
+            image: require("./exceptionalImage/bathhouse/psiculturaAnavilhanas.jpg"),
+            contacts: "tel://+5592984055269",
             description: "O Parque Nacional de Anavilhanas está aberto o ano todo. Na seca (setembro a fevereiro) é possível desfrutar das belas praias de areias brancas que emergem por todo o arquipélago. Na cheia (março a agosto) o vislumbre fica por conta das trilhas aquáticas de igapó, isto é, passeios de barco por dentro das florestas alagadas",
             image: require("./exceptionalImage/tour/anavilhanas.jpg"),
             contacts: "",
             social: {
-                instagram: '',
-                facebook: '',
+                instagram: 'https://www.instagram.com/arnaldolimada.s/',
+                facebook: 'https://www.facebook.com/arnaldo.lima.94651774',
                 site: ''
             },
             infoActivities: {
