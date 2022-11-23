@@ -20,7 +20,7 @@ const ActivitiesOfferts = ({ dataActivities }) => {
                 />
             </Header>
             <Main>
-            {
+                {
                     activities.map((e, index) =>
                         <Contact
                             key={index}

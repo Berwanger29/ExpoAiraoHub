@@ -1,4 +1,5 @@
-import { Linking, StatusBar } from "react-native";
+import { useEffect } from "react";
+import { Linking, StatusBar, TouchableOpacity } from "react-native";
 import {
     Container,
     Image,
@@ -9,23 +10,30 @@ import {
     ContainerLinks,
     ScrollContainer,
     OptionalsContainer,
+    FontButton,
 } from "./styles"
 
 import Line from '../../../components/Line'
 import BackButton from "../../../components/BackButton";
 import ButtonLink from "../../../components/_Screens/ItemSelected/ButtonLink";
 import OptionalText from "../../../components/_Screens/ItemSelected/OptionalText";
-
-
-import data from "../../../../data";
-import { TextSubTitle } from "../../../components/Texts";
+import { TextRegular, TextSubTitle } from "../../../components/Texts";
 import Infos from "../../../components/_Screens/Activities/Infos";
 import ActivitiesOfferts from "../../../components/_Screens/ItemSelected/ActivitiesOfferts";
+
+import data from "../../../../data";
+
+import { useNavigation } from "@react-navigation/native";
 
 
 const ItemSelected = ({ route }) => {
 
     const { itemId } = route.params;
+    const navigation = useNavigation()
+
+    let agenciesData = data.filter((item) => {
+        return item.type == 'agencies'
+    })
 
     let arrayData = data.filter((item) => {
         return item.id == itemId
@@ -66,7 +74,7 @@ const ItemSelected = ({ route }) => {
                     <TextSubTitle
                         text={itemData.title}
                     />
-                    {/* <Line /> */}
+                    <Line />
                     {
                         itemData.content.description != '' ?
                             (
@@ -75,6 +83,33 @@ const ItemSelected = ({ route }) => {
                                     <MainText>
                                         {itemData.content.description}
                                     </MainText>
+                                    {
+                                        itemData.categorie == 'park' ?
+                                            (
+                                                <>
+                                                    <FontButton
+                                                        onPress={() => handleLinkURL('https://www.gov.br/icmbio/pt-br')}
+
+                                                    >
+                                                        <TextRegular
+                                                            text='Fonte: ICMBIO'
+                                                        />
+                                                    </FontButton>
+
+                                                    <FontButton
+                                                        style={{ borderBottomWidth: 0, alignSelf: 'center', marginTop: 20 }}
+                                                        onPress={() => navigation.navigate('IndividualList', {
+                                                            title: 'Agência/Operador',
+                                                            data: agenciesData
+                                                        })}
+                                                    >
+                                                        <TextRegular
+                                                            text='Explorar agências e operadores'
+                                                        />
+                                                    </FontButton>
+                                                </>
+                                            ) : (null)
+                                    }
                                     <Line />
                                 </>
                             ) :
@@ -84,11 +119,11 @@ const ItemSelected = ({ route }) => {
 
 
 
+
                     {
                         itemData.type == 'tourism' &&
                         (
                             <>
-                                <Line />
                                 <Infos
                                     data={infoActivities}
                                 />
@@ -151,6 +186,7 @@ const ItemSelected = ({ route }) => {
                                     />
                                 }
                             </ContainerLinks>
+                            <Line />
                         </>
                     }
 
@@ -158,8 +194,8 @@ const ItemSelected = ({ route }) => {
                         itemData.type == 'agencies' &&
                         (
                             <>
-                                <Line />
                                 <ActivitiesOfferts dataActivities={dataActivities} />
+                                <Line />
                             </>
                         )
                     }

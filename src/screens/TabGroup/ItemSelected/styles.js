@@ -59,3 +59,10 @@ export const LinkButton = styled.View`
     width: ${RFValue(50)}px;
     height: ${RFValue(50)}px;
 `
+export const FontButton = styled.TouchableOpacity`
+    margin-top: 10px;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    align-self: flex-start;
+`

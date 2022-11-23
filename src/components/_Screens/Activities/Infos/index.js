@@ -22,11 +22,45 @@ import Line from "../../../Line";
 import theme from "../../../../global/styles/theme";
 import { Alert } from "react-native";
 import advices from "../../../../../advices";
+import { useEffect, useState } from "react";
 
 
 const Infos = ({ data }) => {
 
     let contactList = data.contactList
+    let hasContact = 0
+
+    const [showContacts, setShowContacts] = useState(true)
+
+    function verifyContact() {
+        contactList.map(e => {
+            if (e.name !== '') {
+                hasContact += 1
+                setShowContacts(true)
+            } else {
+                setShowContacts(false)
+            }
+        })
+    }
+
+
+    function correctAdvice(e) {
+        switch (e) {
+            case 'Anavilhanas':
+                return advices.anavilhanas
+            case 'Jaú':
+                return advices.jau
+            case 'Rio':
+                return advices.rio
+            default:
+                return advices.default
+        }
+    }
+
+
+    useEffect(() => {
+        verifyContact()
+    }, [])
 
     return (
         <Container>
@@ -37,7 +71,7 @@ const Infos = ({ data }) => {
                     />
                 </LocalLabel>
                 <ButtonAlert
-                    onPress={() => Alert.alert('Aviso', advices.anavilhanas)}
+                    onPress={() => Alert.alert('Aviso', correctAdvice(data.local[0]))}
                 >
                     <Ionicons name="alert-circle-outline" size={29} color={theme.colors.yellow} />
                 </ButtonAlert>
@@ -65,7 +99,6 @@ const Infos = ({ data }) => {
                             )
                     }
                 </InfoContainer>
-
                 <InfoContainer>
                     {data?.activities.distance > 0 ?
                         (
@@ -83,7 +116,6 @@ const Infos = ({ data }) => {
                         )
                     }
                 </InfoContainer>
-
                 <InfoContainer>
                     {data?.activities.duration > 0 ?
                         (
@@ -103,24 +135,43 @@ const Infos = ({ data }) => {
                     }
                 </InfoContainer>
                 <InfoContainer>
-                    <IconCircle>
-                        <FontAwesome5 name="hiking" size={40} color="black" />
-                    </IconCircle>
-                    <TextThin
-                        text={`${data.activities.effort}`}
-                    />
+                    {
+                        data.activities.effort !== '' ?
+                            (
+                                <>
+                                    <IconCircle>
+                                        <FontAwesome5 name="hiking" size={40} color="black" />
+                                    </IconCircle>
+                                    <TextThin
+                                        text={`${data.activities.effort}`}
+                                    />
+                                </>
+                            )
+                            :
+                            (
+                                null
+                            )
+
+                    }
                 </InfoContainer>
             </DetailsGroup>
             <Line />
             <ContactsGroup>
                 {
-                    contactList.map((e, index) =>
-                        <Contact
-                            key={index}
-                            name={e.name}
-                            link={e.link}
-                        />
-                    )
+                    showContacts ?
+                        (
+                            contactList.map((e, index) =>
+                                <Contact
+                                    key={index}
+                                    name={e.name}
+                                    link={e.link}
+                                />
+                            )
+                        )
+                        :
+                        (null)
+
+
                 }
             </ContactsGroup>
         </Container >

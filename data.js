@@ -1064,83 +1064,83 @@ export default [
     },
 
     //Tourism
-    {
-        type: "tourism",
-        id: 7000,
-        categorie: "arborismo",
-        title: "Arborismo",
-        content: {
-            title: "Arborismo",
-            description: "O arborismo é uma experiência de aventura ao ar livre inigualável. Cheia de adrenalina, leva as pessoas para fora da sua zona de conforto e é uma ótima atividade outdoor para pequenos e grandes aventureiros.",
-            image: require("./exceptionalImage/adventure/arborismo.jpg"),
-            contacts: "92912345678",
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            infoActivities: {
-                local: ["Estrada"],
-                activities: {
-                    height: 27,
-                    distance: 1970,
-                    duration: 180,
-                    effort: "Difícil"
-                },
-                contactList: [
-                    { name: 'Pessoa 1', link: 'tel://+5592912345678' },
-                    { name: 'Tauá tour', link: '11000' },
-                ],
-            },
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: [],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "tourism",
-        id: 7001,
-        categorie: "arborismo",
-        title: "Arborismo",
-        content: {
-            title: "Arborismo",
-            description: "O arborismo é uma experiência de aventura ao ar livre inigualável. Cheia de adrenalina, leva as pessoas para fora da sua zona de conforto e é uma ótima atividade outdoor para pequenos e grandes aventureiros.",
-            image: require("./exceptionalImage/adventure/arborismo.jpg"),
-            contacts: "92912345678",
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            infoActivities: {
-                local: ["Estrada"],
-                activities: {
-                    height: 27,
-                    distance: 1970,
-                    duration: 180,
-                    effort: "Difícil"
-                },
-                contactList: [
-                    { name: 'Pessoa 1', link: 'tel://+5592912345678' },
-                    { name: 'Tauá tour', link: '11000' },
-                ],
-            },
-            address: "Rua Antenor Carlos Francisco",
-            type: "pessoa",
-            offering: [],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "tourism",
+    //     id: 7000,
+    //     categorie: "arborismo",
+    //     title: "Arborismo",
+    //     content: {
+    //         title: "Arborismo",
+    //         description: "O arborismo é uma experiência de aventura ao ar livre inigualável. Cheia de adrenalina, leva as pessoas para fora da sua zona de conforto e é uma ótima atividade outdoor para pequenos e grandes aventureiros.",
+    //         image: require("./exceptionalImage/adventure/arborismo.jpg"),
+    //         contacts: "92912345678",
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         infoActivities: {
+    //             local: ["Estrada"],
+    //             activities: {
+    //                 height: 27,
+    //                 distance: 1970,
+    //                 duration: 180,
+    //                 effort: "Difícil"
+    //             },
+    //             contactList: [
+    //                 { name: 'Pessoa 1', link: 'tel://+5592912345678' },
+    //                 { name: 'Tauá tour', link: '11000' },
+    //             ],
+    //         },
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: "pessoa",
+    //         offering: [],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "tourism",
+    //     id: 7001,
+    //     categorie: "arborismo",
+    //     title: "Arborismo",
+    //     content: {
+    //         title: "Arborismo",
+    //         description: "O arborismo é uma experiência de aventura ao ar livre inigualável. Cheia de adrenalina, leva as pessoas para fora da sua zona de conforto e é uma ótima atividade outdoor para pequenos e grandes aventureiros.",
+    //         image: require("./exceptionalImage/adventure/arborismo.jpg"),
+    //         contacts: "92912345678",
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         infoActivities: {
+    //             local: ["Estrada"],
+    //             activities: {
+    //                 height: 27,
+    //                 distance: 1970,
+    //                 duration: 180,
+    //                 effort: "Difícil"
+    //             },
+    //             contactList: [
+    //                 { name: 'Pessoa 1', link: 'tel://+5592912345678' },
+    //                 { name: 'Tauá tour', link: '11000' },
+    //             ],
+    //         },
+    //         address: "Rua Antenor Carlos Francisco",
+    //         type: "pessoa",
+    //         offering: [],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "tourism",
         id: 7007,
         categorie: "flutuante",
         title: "Flutuante dos Botos",
         content: {
-            description: "O Flutuante dos Botos, onde se realiza todos os dias um ritual da natureza, ganhou tanta importância para o turismo do Amazonas.",
+            description: "O Boto cor-de-rosa é o principal atrativo do município e o mesmo poderá ser apreciado pelos visitantes na sede de Novo Airão. Existe um flutuante “Beira Rio” onde o visitante pode interagir com a espécie. Vale lembrar que o visitante paga apenas uma taxa cobrada pelo alimento para se dar ao boto",
             image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
-            contacts: "tel://+5592984370540",
+            contacts: "tel://+5592992359155",
             social: {
                 instagram: 'https://www.instagram.com/flutuantedosbotos/',
                 facebook: 'https://www.facebook.com/pages/Flutuante-Dos-Botos/174584819340050',
@@ -1149,13 +1149,13 @@ export default [
             infoActivities: {
                 local: ["Cidade"],
                 activities: {
-                    height: 1,
+                    height: 0,
                     distance: 0,
                     duration: 50,
                     effort: "leve"
                 },
                 contactList: [
-                    { name: 'Marilda', link: 'tel://+5592984370540' }
+                    { name: 'Marilda', link: 'tel://+5592992359155' }
                 ],
             },
             offering: ["Interação com botos"],
@@ -1183,13 +1183,13 @@ export default [
             infoActivities: {
                 local: ["Estrada"],
                 activities: {
-                    height: 15,
-                    distance: 1930,
-                    duration: 240,
-                    effort: "médio"
+                    height: 0,
+                    distance: 0,
+                    duration: 0,
+                    effort: "fácil"
                 },
                 contactList: [
-                    { name: 'Pessoa', link: 'tel://+5592912345678' }
+                    { name: 'Pessoa', link: 'tel://+5592992931203' }
                 ],
             },
             offering: ["Balneário"],
@@ -1395,7 +1395,7 @@ export default [
     {
         type: "bathhouse",
         id: 7013,
-        categorie:"",
+        categorie: "",
         title: "Psicultura anavilhanas",
         type: "tourism",
         id: 7013,
@@ -2169,7 +2169,7 @@ export default [
         id: 10004,
         title: "Lili Encantos",
         content: {
-            description: "Somos Encantos e magia, nosso artesanato detém essência da cultura da terra, dos nossos ancestrais. Trabalhamos com madeira, acessórios com penas, sempre respeitando a biodiversidade existente na floresta.",
+            description: "Nosso artesanato detém essência da cultura da terra, dos nossos ancestrais. Trabalhamos com madeira, acessórios com penas, sempre respeitando a biodiversidade existente na floresta.",
             image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
             contacts: "tel://+5592984810171",
             social: {
@@ -2247,7 +2247,7 @@ export default [
         content: {
             description: "",
             image: require("./exceptionalImage/tour/waimiri.jpeg"),
-            contacts: "tel://",
+            contacts: "tel://+5592992346528",
             social: {
                 instagram: '',
                 facebook: '',
