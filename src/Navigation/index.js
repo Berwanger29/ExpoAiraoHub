@@ -66,7 +66,7 @@ function TabNavigator() {
                     }
                 }}
             />
-            <Tab.Screen
+            {/* <Tab.Screen
                 name="Scripts"
                 component={Scripts}
                 options={{
@@ -80,7 +80,7 @@ function TabNavigator() {
                         )
                     }
                 }}
-            />
+            /> */}
             <Tab.Screen
                 name="Accommodation"
                 component={Accommodation}
@@ -224,10 +224,10 @@ const Navigation = () => {
                     component={UserInfo}
                 />
 
-                <Stack.Screen
+                {/* <Stack.Screen
                     name="ScriptList"
                     component={ScriptList}
-                />
+                /> */}
             </Stack.Navigator>
         </NavigationContainer>
     )
