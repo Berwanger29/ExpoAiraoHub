@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ActivityIndicator, Alert, StatusBar, Animated } from 'react-native';
+import { ActivityIndicator, Alert, StatusBar, View } from 'react-native';
 import {
     Container,
     InputContainer,
@@ -24,7 +24,7 @@ import LoginAreaButton from '../../../components/LoginAreaButton';
 import Keyboard from '../../../components/KeyBoard';
 import { Entypo } from '@expo/vector-icons';
 
-import { TextSubTitle, TextThin } from '../../../components/Texts';
+import { TextRegular, TextSubTitle, TextThin } from '../../../components/Texts';
 import Logo from '../../../components/Logo';
 import LogoSVG from '../../../components/LogoSVG';
 
@@ -186,13 +186,27 @@ const Login = () => {
                                         label='Entrar'
                                         onPress={() => handleLogin()}
                                     />
-                                    <LoginAreaButton
+                                    <View style={{ marginBottom: 10 }}>
+                                        <TextThin
+                                            text='ou'
+                                        />
+                                    </View>
+                                    <ButtonText
+                                        onPress={() => navigation.navigate('QuizStack')}
+                                    >
+                                        <TextRegular
+                                            color={theme.colors.green}
+                                            text='Login anônimo'
+                                            textDecoration='underline'
+                                        />
+                                    </ButtonText>
+                                    {/* <LoginAreaButton
                                         label='Login anônimo'
                                         onPress={() => {
-                                            console.log('login anonimo')
                                             navigation.navigate('QuizStack')
                                         }}
-                                    />
+
+                                    /> */}
                                 </InputContainer>
 
                                 <SignUpContainer>

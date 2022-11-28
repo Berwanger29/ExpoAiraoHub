@@ -10,8 +10,9 @@ import {
 import { TextRegular, TextSubTitle } from '../../../components/Texts'
 import BackgroundImage from "../../../components/BackgroundImage";
 import CardText from "../../../components/_Screens/User/CardText";
+import LinkButton from "../../../components/_Screens/Map/LinkButton";
 
-const UserAbout = () => {
+const UserContact = () => {
     return (
         <BackgroundImage
             filter={1}
@@ -23,7 +24,7 @@ const UserAbout = () => {
                 </ContainerBackButton>
                 <Header>
                     <TextSubTitle
-                        text='Sobre'
+                        text='Contato'
                     />
                 </Header>
                 <Main>
@@ -31,9 +32,14 @@ const UserAbout = () => {
                         <CardText>
                             <TextRegular
                                 format='justify'
-                                text='Este aplicativo foi desenvolvido pela Secretaria Municipal de Infraestutura Empreendedorismo e Turismo de Novo Airão (SEMINTUR) com seus direitos inteclectuais pertencnetes à mesma. Atualmente este aplicativo encontra-se em fase de teste aberto ao público e portanto, é possível que sejam econtradas falhas neste momento de testes.'
+                                text='Inserir informações de contatos para identificação de melhorias no aplicativo ou sugestões. Email da secretaria. “ Para melhorias ou sugestões no aplicativo nos contactar no emailXXXXXx”'
                             />
                         </CardText>
+                        <LinkButton
+                            label='Enviar e-mail'
+                            link={'mailto:vibersou@gmail.com'}
+                            type='mail'
+                        />
                     </Scroll>
                 </Main>
             </Container>
@@ -41,4 +47,4 @@ const UserAbout = () => {
     )
 }
 
-export default UserAbout
+export default UserContact

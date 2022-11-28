@@ -99,10 +99,16 @@ const User = () => {
                             onPress={() => navigation.navigate('UserPrivacy')}
                         />
                         <Options
+                            text='Contato'
+                            nameIcon='email'
+                            onPress={() => navigation.navigate('UserContact')}
+                        />
+                        <Options
                             text='Sobre'
                             nameIcon='information-variant'
                             onPress={() => navigation.navigate('UserAbout')}
                         />
+
 
 
                     </OptionsContainer>

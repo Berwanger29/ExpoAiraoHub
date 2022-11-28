@@ -19,12 +19,13 @@ const _Taxi = () => {
             <LinkButton
                 label='Ligar'
                 link='tel://+5592994280595'
+                type='phone'
             />
 
             <LinkButton
                 label='Marcar destino'
                 link={'https://goo.gl/maps/ynfMUrttkmQcF9vMA'}
-                type='gps'
+                type='navigation-2'
             />
         </>
     )

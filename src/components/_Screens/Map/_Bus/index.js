@@ -18,7 +18,7 @@ const _Bus = () => {
             <LinkButton
                 label='Marcar destino'
                 link={'https://goo.gl/maps/bqqSGqUdK8qpUVgG9'}
-                type='gps'
+                type='navigation-2'
             />
         </>
     )

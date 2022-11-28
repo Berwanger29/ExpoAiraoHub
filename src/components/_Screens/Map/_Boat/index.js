@@ -15,8 +15,8 @@ const _Boat = () => {
             />
             <LinkButton
                 label='Marcar destino'
-                type={'gps'}
                 link='https://goo.gl/maps/opctdNKb8z1PuYHn8'
+                type='navigation-2'
             />
         </>
     )

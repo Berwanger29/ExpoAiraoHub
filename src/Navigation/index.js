@@ -34,6 +34,7 @@ import User from "../screens/TabGroup/User";
 import UserAbout from "../screens/TabGroup/UserAbout";
 import UserPrivacy from "../screens/TabGroup/UserPrivacy";
 import UserInfo from "../screens/TabGroup/UserInfo";
+import UserContact from "../screens/TabGroup/UserContact";
 import ScriptList from "../components/_Screens/Scripts/ScriptList";
 
 
@@ -213,12 +214,14 @@ const Navigation = () => {
                     name='UserAbout'
                     component={UserAbout}
                 />
-
+                <Stack.Screen
+                    name='UserContact'
+                    component={UserContact}
+                />
                 <Stack.Screen
                     name='UserPrivacy'
                     component={UserPrivacy}
                 />
-
                 <Stack.Screen
                     name="UserInfo"
                     component={UserInfo}

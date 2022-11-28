@@ -10,6 +10,7 @@ import theme from "../../../../global/styles/theme"
 
 const LinkButton = ({ type, label, link }) => {
 
+
     return (
         <MapLinkContainer
             onPress={() => Linking.openURL(link)}
@@ -18,7 +19,7 @@ const LinkButton = ({ type, label, link }) => {
                 text={label}
                 color={theme.colors.light}
             />
-            <Feather name={type === 'gps' ? 'navigation-2' : 'phone'} size={30} color={theme.colors.light} />
+            <Feather name={type} size={30} color={theme.colors.light} />
         </MapLinkContainer>
     )
 }

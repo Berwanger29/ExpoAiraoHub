@@ -814,7 +814,7 @@ export default [
         id: 6000,
         title: "Pousada Novo Airão",
         content: {
-            description: "A Pousada Novo Airão apresenta acomodações aconchegantes, ofertando aos seus clientes um maravilhoso café da manhã, piscina e até campo de futebol. Propício para quem procura conciliar lazer, privacidade e descanso em meio a uma bela paisagem.",
+            description: "A Pousada Novo Airão oferta aos seus clientes acomodações aconchegantes com um maravilhoso café da manhã, piscina e até campo de futebol. Propício para quem procura conciliar lazer, privacidade e descanso em meio a uma bela paisagem.",
             image: require('./exceptionalImage/hotels/pousadaNovoAirao.png'),
             contacts: "tel://+5592991339884",
             social: {
@@ -833,7 +833,7 @@ export default [
         id: 6001,
         title: "Pousada Paraíso",
         content: {
-            description: "A Pousada Paraíso possui uma ótima localização, que permite a visitação a vários atrativos da cidade, por meio de uma caminhada. Disponibiliza aos seus clientes, quartos climatizados, acesso Wi-Fi gratuito e garagem privativa. Seu diferencial está num ambiente especial para se conectar com a natureza, trata-se de uma estufa de reprodução de belas flores que se adaptam muito bem ao clima amazônico, uma das mais apreciadas pelos visitantes e a espécie arbórea rosa do deserto.",
+            description: "Com uma ótima localização, possibilitamos a nossos clientes uma saudável caminhada, com visitação a vários atrativos turísticos próximos. Além de quartos climatizados, acesso Wi-Fi gratuito e garagem privativa, também dispomos de um ambiente especial para se conectar com a natureza, trata-se de uma estufa de reprodução de belas flores que se adaptam muito bem ao clima amazônico, uma das mais apreciadas pelos visitantes é a espécie Arbórea Rosa do Deserto.",
             image: require('./exceptionalImage/hotels/pousadaParaiso.jpeg'),
             contacts: "tel://+5592984121122",
             social: {
@@ -852,7 +852,7 @@ export default [
         id: 6002,
         title: "Pousada Bela Vista Lodge & Ecotours",
         content: {
-            description: "A Pousada Bela Vista está localizada em uma área privilegiada do município de Novo Airão, no centro da Cidade e de frente para o Parque Nacional de Anavilhanas. O local é perfeito para viagens em família, pois dispõe de um belo café da manhã, playground, wi-fi, estacionamento, bar, piscina, sala de convenções, redário, restaurante, jardim, acesso particular ao rio (com deck), pequena academia, aluguel de prancha para a prática de SUP e caiaque. Na Pousada, é comum avistar nas copas das árvores as famosas iguanas, que desperta a curiosidade dos visitantes sobre a forma de vida desta espécie da fauna amazônica.",
+            description: "A Pousada Bela Vista está localizada em uma área privilegiada do município de Novo Airão, no centro da Cidade e de frente para o Parque Nacional de Anavilhanas. O local é perfeito para o lazer em família, pois dispõe de um belo café da manhã, playground, wi-fi, estacionamento, bar, piscina, sala de convenções, redário, restaurante, jardim, acesso particular ao rio (com deck), pequena academia, aluguel de prancha para a prática de SUP e caiaque. Na Pousada é comum avistar, nas copas das árvores, as famosas iguanas, que despertam a curiosidade dos visitantes sobre a forma de vida desta espécie da fauna amazônica.",
             image: require('./exceptionalImage/hotels/belaVista.png'),
             contacts: "tel://+559233651023",
             social: {
@@ -871,7 +871,7 @@ export default [
         id: 6003,
         title: "Pousada Cabocla",
         content: {
-            description: "A Pousada Cabocla, é uma pousada que concilia simplicidade e chame rústico em um único lugar, localizada no centro da cidade de Novo Airão, disponibiliza acomodações confortáveis, com acesso Wi-fi e estacionamento privado. Comtempla uma área ampla, agradável, e a tranquilidade que você procura para seus dias de férias.",
+            description: "Somos um meio de hospedagem que concilia simplicidade e charme rústico em um único lugar. Localizada no Centro da cidade, disponibilizamos acomodações confortáveis, com Wi-Fi e estacionamento privado. O ambiente contempla uma área ampla, agradável e a tranquilidade que você procura para seus dias de férias.",
             image: require('./exceptionalImage/hotels/pousadaCabocla.jpg'),
             contacts: "tel://+5592992357141",
             social: {
@@ -890,7 +890,7 @@ export default [
         id: 6004,
         title: "Lodge Mirante do Gavião",
         content: {
-            description: "O Mirante do Gavião faz parte do roteiro de charme da Amazônia, localizado no município de Novo Airão, de frente para o Parque Nacional de Anavilhanas, o lodge se destaca pelos seus serviços de alta qualidade, requinte, design e imponência, baseada nas técnicas amazônicas da construção naval. O Hotel disponibiliza aos seus clientes, a imersão de saberes sobre o modo de vida das nossas comunidades tradicionais, promovendo experiências integradas à selva e aos seus povos. Os pacotes do hotel atendem a diferentes viajantes, proporcionando conforto, segurança e aventura na medida certa.",
+            description: "O Mirante do Gavião integra o roteiro de charme da Amazônia, localizado no município de Novo Airão, de frente para o Parque Nacional de Anavilhanas. O Lodge se destaca pelos seus serviços de alta qualidade, requinte, design e imponência, baseados nas técnicas amazônicas da construção naval. O Hotel disponibiliza aos seus clientes, a imersão de saberes sobre o modo de vida das nossas comunidades tradicionais, promovendo experiências integradas à selva e aos seus povos. Os pacotes do hotel atendem a diferentes perfis de viajantes, proporcionando conforto, segurança e aventura na medida certa.",
             image: require('./exceptionalImage/hotels/mirante.jpg'),
             contacts: "tel://+5592991146038",
             social: {
@@ -909,7 +909,7 @@ export default [
         id: 6005,
         title: "Amazônia Park Suítes",
         content: {
-            description: " Somos uma pousada de charme  situada no município de Novo Airão, à 2h30 de Manaus. A estrutura dispõe de 20 apartamentos com vista panorâmica, restaurante com pratos regionais, área para eventos, piscina e trilha, além de uma vasta área verde, cenário perfeito para quem visita à região.",
+            description: "Somos uma pousada de charme  situada no município de Novo Airão, à 2h30 de Manaus. A estrutura dispõe de 20 apartamentos com vista panorâmica, restaurante com pratos regionais, área para eventos, piscina e trilha, além de uma vasta área verde, cenário perfeito para quem visita à região.",
             image: require('./exceptionalImage/hotels/amazonParkSuite.jpg'),
             contacts: "tel://+5592991591082",
             social: {
@@ -930,7 +930,7 @@ export default [
         id: 6006,
         title: "Hotel Josély",
         content: {
-            description: "O hotel Josely está localizado no centro da cidade de Novo Airão, o que facilita o fácil deslocamento para os atrativos turísticos da cidade. Disponibiliza aos seus clientes acomodações climatizadas com acesso a Wi-fi e estacionamento. Dispõe de ambiente familiar com 22 unidades habitacionais e pacotes com refeições (sob a consulta prévia com os proprietários). ",
+            description: "Localizado no Centro da cidade de Novo Airão, possibilita o fácil deslocamento para vários atrativos turísticos da cidade. Disponibiliza aos seus clientes acomodações climatizadas, com acesso a Wi-fi e estacionamento. Dispõe de ambiente familiar e pacotes com refeições (sob a consulta prévia com os proprietários).",
             image: require('./exceptionalImage/hotels/hotelJosely.jpg'),
             contacts: "tel://+5592992268191",
             social: {
@@ -950,7 +950,7 @@ export default [
         id: 6007,
         title: "Recanto da Naza",
         content: {
-            description: "A Pousada da Naza está localizada próxima ao Centro de Atendimento ao Turista. Conhecida por ser um ambiente familiar e aconchegante, disponibiliza aos seus clientes acomodações climatizadas, estacionamento privado, acesso a Wi-fi, além de uma cozinha compartilhada.",
+            description: "Conhecida por ser um ambiente familiar e aconchegante, disponibiliza aos seus clientes acomodações climatizadas, estacionamento privado, acesso a Wi-fi, além de uma cozinha compartilhada.",
             image: require('./exceptionalImage/hotels/pousadaNaza.png'),
             contacts: "tel://+5592991308787",
             social: {
@@ -969,7 +969,7 @@ export default [
         id: 6008,
         title: "Hotel Jandira",
         content: {
-            description: "A Pousada Jandira, localizada no centro da cidade de Novo Airão, disponibiliza acomodações climatizadas, aconchegantes com acesso a Wi-fi gratuito e estacionamento. Comtempla uma área ampla e um cantinho denominado pelos visitantes de cantinho do sossego. Apresenta 25 unidades habitacionais.",
+            description: "Nossa Pousada disponibiliza acomodações climatizadas, aconchegantes, com acesso a Wi-fi gratuito e estacionamento. Contempla uma área ampla e um cantinho denominado pelos visitantes de “cantinho do sossego”",
             image: require('./exceptionalImage/hotels/hotelJandira.jpg'),
             contacts: "tel://+5592992040315",
             social: {
@@ -990,7 +990,7 @@ export default [
         id: 6009,
         title: "Lanna Pousada",
         content: {
-            description: "Uma pousada simples mais  bem aconchegante.",
+            description: "Uma pousada simples, mas bem aconchegante.",
             image: require('./exceptionalImage/hotels/pousadaLanna.png'),
             contacts: "tel://+5592991600526",
             social: {
@@ -1010,7 +1010,7 @@ export default [
         id: 6010,
         title: "Anavilhanas Jungle Lodge",
         content: {
-            description: "O Anavilhanas Jungle Lodge tem como missão oferecer, com excelência, experiências únicas e inesquecíveis que conectem pessoas com a Amazônia, como forma de valorizar e sensibilizar a importância da floresta em pé. Desde 2006 na região amazônica, o hotel atua para promover vivências profundas que estimulem o desenvolvimento local sustentável e uma relação de impacto positivo com as comunidades do entorno.",
+            description: "O Anavilhanas Jungle Lodge tem como missão oferecer, com excelência, experiências únicas e inesquecíveis que conectem pessoas com a Amazônia, como forma de valorizar e sensibilizar a importância da floresta em pé. Desde 2006, na região amazônica, o Hotel atua para promover vivências profundas que estimulem o desenvolvimento sustentável local e uma relação de impacto positivo com as comunidades do entorno.",
             image: require('./exceptionalImage/hotels/anavihanasJungleLodge.jpg'),
             contacts: "tel://+5592988331947",
             social: {
@@ -1029,7 +1029,7 @@ export default [
         id: 6011,
         title: "Pousada Fortaleza",
         content: {
-            description: "A Pousada Fortaleza, localizada nas proximidades da entrada de Novo Airão, disponibiliza acomodações climatizadas e estacionamento gratuito. Uma pousada simples, mas que investe na limpeza e no bem-estar dos seus clientes. ",
+            description: "A Pousada Fortaleza, localizada nas proximidades da entrada de Novo Airão, disponibiliza acomodações climatizadas e estacionamento gratuito. Uma pousada simples, mas que investe para garantir o bem-estar dos seus clientes.",
             image: require('./exceptionalImage/hotels/pousadaFortaleza.jpg'),
             contacts: "",
             social: {
@@ -1048,7 +1048,7 @@ export default [
         id: 6012,
         title: "Pousada Barão do Rio Negro",
         content: {
-            description: "",
+            description: "Um recanto de plantas e árvores, de frente para o Parque Nacional de Anavilhanas, com o privilégio da contemplação diária do nascer do sol, com o espetáculo de seus raios de luz refletindo no Rio Negro, oferecemos aos nossos clientes apartamentos aconchegantes, alguns com decoração rústica, estacionamento interno, privacidade e segurança.",
             image: require('./exceptionalImage/hotels/baraoDoRioNegro.jpg'),
             contacts: "tel://+5592991035856",
             social: {
@@ -1186,7 +1186,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: 'Pessoa', link: 'tel://+5592992931203' }
@@ -1218,7 +1218,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: 'Reco Turismo', link: '11001' },
@@ -1251,7 +1251,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: 'Pessoa', link: 'tel://+5592912345678' }
@@ -1270,7 +1270,7 @@ export default [
         title: "Sobrado",
         content: {
             description: "A comunidade do Sobrado fica distante cerca de 40 minutos de lancha de pequeno porte. A trilha conduzida pelos comunitários é simplesmente incrível, são inúmeros atrativos da fauna e flora local, com destaque para a árvore gigante sumaúma. Não deixe de prestigiar a gastronomia regional local, é irresistível. \n Para a realização destes passeios, consulte os nossos operadores de turismo.",
-            image: require("./exceptionalImage/attractions/sobrado.jpeg"),
+            image: require("./exceptionalImage/attractions/sobrado.png"),
             contacts: "tel: 92 9232-3111//",
             social: {
                 instagram: '',
@@ -1283,7 +1283,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: 'AATRA', link: '11003' }
@@ -1315,7 +1315,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: 'AATRA', link: '11003' }
@@ -1393,45 +1393,6 @@ export default [
     //     },
     // },
     {
-        type: "bathhouse",
-        id: 7013,
-        categorie: "",
-        title: "Psicultura anavilhanas",
-        type: "tourism",
-        id: 7013,
-        categorie: "park",
-        title: "Parque Nacional de Anavilhanas",
-        content: {
-            description: "Atividades rurais, com hospedagem, pesque pague e restaurante \nkm 8 - AM 352 ",
-            image: require("./exceptionalImage/bathhouse/psiculturaAnavilhanas.jpg"),
-            contacts: "tel://+5592984055269",
-            description: "O Parque Nacional de Anavilhanas está aberto o ano todo. Na seca (setembro a fevereiro) é possível desfrutar das belas praias de areias brancas que emergem por todo o arquipélago. Na cheia (março a agosto) o vislumbre fica por conta das trilhas aquáticas de igapó, isto é, passeios de barco por dentro das florestas alagadas",
-            image: require("./exceptionalImage/tour/anavilhanas.jpg"),
-            contacts: "",
-            social: {
-                instagram: 'https://www.instagram.com/arnaldolimada.s/',
-                facebook: 'https://www.facebook.com/arnaldo.lima.94651774',
-                site: ''
-            },
-            infoActivities: {
-                local: ["Anavilhanas"],
-                activities: {
-                    height: 0,
-                    distance: 0,
-                    duration: 0,
-                    effort: "fácil"
-                },
-                contactList: [
-                    { name: '', link: '' }
-                ],
-            },
-            offering: [""],
-            address: "",
-            addressLink: "",
-            profile: ["adventure", "soft", "calm"],
-        },
-    },
-    {
         type: "tourism",
         id: 7014,
         categorie: "park",
@@ -1451,7 +1412,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1515,7 +1476,7 @@ export default [
     //                 height: 0,
     //                 distance: 0,
     //                 duration: 0,
-    //                 effort: "fácil"
+    //                 effort: ""
     //             },
     //             contactList: [
     //                 { name: '', link: '' }
@@ -1547,7 +1508,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1579,7 +1540,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1611,7 +1572,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1643,7 +1604,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1675,7 +1636,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1707,7 +1668,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1771,7 +1732,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: ""
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -2093,7 +2054,7 @@ export default [
         id: 10000,
         title: "Associação dos artesãos de Novo Airão",
         content: {
-            description: "Temos por objetivo resgatar e divulgar a arte popular, apoiar a produção e comercialização de artesanatos com fibras vegetais para manter viva a herança cultural.",
+            description: "A Loja AANA (Associação dos Artesãos de Novo Airão)  que é também local de trabalho dos artesãos, encontram-se peças feitas de fibras regionais (arumã –Ischnosiphon sp, cipó ambé – Philodendron sp e tucumã – Astrocaryum tucumã). Os objetos são basicamente utilitários: cestas, tapetes, peneiras e jogos americanos. A loja é bem organizada e os artesãos fazem uma espécie de revezamento para atendimento aos clientes.",
             image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
             contacts: "tel://+5592984591290",
             social: {
@@ -2169,7 +2130,7 @@ export default [
         id: 10004,
         title: "Lili Encantos",
         content: {
-            description: "Nosso artesanato detém essência da cultura da terra, dos nossos ancestrais. Trabalhamos com madeira, acessórios com penas, sempre respeitando a biodiversidade existente na floresta.",
+            description: "O artesanato detém essência da cultura da terra, dos nossos ancestrais. Trabalhamos com madeira, acessórios com penas, sempre respeitando a biodiversidade existente na floresta.",
             image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
             contacts: "tel://+5592984810171",
             social: {
@@ -2226,9 +2187,9 @@ export default [
         id: 10007,
         title: "Fundação Almerinda Malaquias",
         content: {
-            description: "A Fundação Almerinda Malaquias é uma Organização da Sociedade Civil (OSC), instituição privada e sem fins lucrativos, que há 22 anos, atua no município de Novo Airão – Amazonas, com ênfase na educação e na transformação social, comprometida em promover geração de renda, educação ambiental.",
+            description: "A Loja Nov’Arte da FAM, encontra-se objetos de madeira com um novo design. A loja, esta bem organizada e apresenta uma produção classificada em vários tipos de lembranças como decorativas e educativas.",
             image: require("./exceptionalImage/tour/fam.jpeg"),
-            contacts: "tel://+5592984549837",
+            contacts: "tel://+5592993986331",
             social: {
                 instagram: 'https://www.instagram.com/fundacaoalmerindamalaquias/',
                 facebook: 'https://pt-br.facebook.com/FAMFundacaoAlmerindaMalaquias/',
@@ -2245,7 +2206,7 @@ export default [
         id: 10008,
         title: "Waimiri Atroari",
         content: {
-            description: "",
+            description: "Artesanato Indígena da cultura Waimiri é rico em mito e ritos, destacam-se produtos das cestarias masculinas, com grandes variedades de formas, objetos utilitários e decorativos inspirados nos elementos da natureza e em seu universo místico. Também se destacam os arcos e as flechas de ponta de madeira, osso ou ferro.",
             image: require("./exceptionalImage/tour/waimiri.jpeg"),
             contacts: "tel://+5592992346528",
             social: {
@@ -2264,7 +2225,7 @@ export default [
         id: 11000,
         title: "Tauá tour",
         content: {
-            description: "A proposta da Tauá Tour é uma imersão profunda nos ambientes do rio Negro com passeios fluviais num barco regional confortável. O foco importante para a Tauá Tour é explicar todos os aspectos e desafios de desenvolvimento sócio – econômicos da região alinhado com a preservação do meio ambiente.",
+            description: "A proposta da Tauá Tour é uma imersão profunda nos ambientes do Rio Negro, com passeios fluviais num barco regional confortável. O foco importante para a Tauá Tour é explicar todos os aspectos e desafios de desenvolvimento socioeconômico da região, alinhado com a preservação do meio ambiente.",
             image: require('./exceptionalImage/agencies/karugua.jpg'),
             contacts: "tel://+5592992591548",
             social: {
@@ -2288,7 +2249,7 @@ export default [
         id: 11001,
         title: "Reco turismo",
         content: {
-            description: "Fazemos viagens fluviais, com conforto e segurança. Capacidade de 15 pessoas.",
+            description: "Passeios turísticos aos roteiros fluviais pelo Rio Negro, com conforto e segurança. Capacidade de 15 pessoas.",
             image: require('./exceptionalImage/agencies/reco.jpg'),
             contacts: "tel://+5592991599272",
             social: {
@@ -2313,7 +2274,7 @@ export default [
         id: 11002,
         title: "RM turismo",
         content: {
-            description: "Trabalhamos com passeios no Jaú e no Anavilhanas. Fazemos trilhas, observação de pássaros, passeios de barco e muito mais.",
+            description: "Trabalhamos com passeios turísticos fluviais pelos Parques Nacionais do Jaú e de Anavilhanas. Fazemos trilhas, observação de pássaros, passeios de barco, focagem de jacarés e muito mais.",
             image: require('./exceptionalImage/agencies/rmTurismo.jpeg'),
             contacts: "tel://+5592993721155",
             social: {
@@ -2337,7 +2298,7 @@ export default [
         id: 11003,
         title: "Associação Anavilhanas de transporte Aquaviário de Novo Airão",
         content: {
-            description: "A AATRA tem como objetivo o transportes aquaviário nas áreas do município de Novo Airão",
+            description: "A AATRA tem como objetivo dispor de transportes aquaviários, nas áreas do município de Novo Airão, para passeios turísticos, excursões de trabalho, pesquisa e produção de material publicitário sobre os pontos turísticos e belezas naturais de Novo Airão e outros.",
             image: require('./exceptionalImage/agencies/aatra.jpg'),
             contacts: "tel://+5592991006437",
             social: {
@@ -2361,7 +2322,7 @@ export default [
         id: 11004,
         title: "Jailton Melo Turismo",
         content: {
-            description: "Meu trabalho é levar o conhecimento, mostrando aos meus clientes as belezas naturais do arquipélago Anavilhanas, do nosso município Novo Airão e etc.",
+            description: "Meu trabalho é levar o conhecimento de nossa cultura amazônica, mostrando aos clientes as belezas naturais do Parque Nacional de Anavilhanas, proporcionando intercâmbio cultural com nosso povo ribeirinho e todo o potencial turístico de nosso Município.",
             image: require('./exceptionalImage/agencies/jailtonMelo.jpeg'),
             contacts: "tel://+5592991815089",
             social: {
@@ -2385,7 +2346,7 @@ export default [
         id: 11005,
         title: "Em cantos da Amazônia",
         content: {
-            description: "Somos uma agência de passeios na qual oferecemos diversos tipos de passeios, conforto e segurança para nossos clientes, nossas lanchas são todas equipadas com GPS, e equipagem de segurança, temos dois barcos de passeios para família que querem mais comodidade.",
+            description: "Somos uma agência de passeios que oferece diversos tipos de roteiros, com conforto e segurança, para nossos clientes. Nossas lanchas são todas equipadas com GPS, e equipagem de segurança e temos dois barcos regionais de passeio, para as famílias que preferem mais comodidade.",
             image: require('./exceptionalImage/agencies/emCantosDaAmazonia.jpg'),
             contacts: "tel://+5592992296667",
             social: {
@@ -2409,7 +2370,7 @@ export default [
         id: 11006,
         title: "Ayraotaxitur",
         content: {
-            description: "A Ayraotaxitur está localizado no município de Novo Airão AM, atuando a 10 anos com transporte turístico e a 7 anos com passeios e expedições nos principais pontos dos Parques Nacionais de Anavilhanas e Jaú,  cuidamos de tudo desde sua chegada a Manaus.",
+            description: "A Ayrãotaxitur atua há 10 anos com transporte turístico, e há 7 anos com passeios e expedições nos principais pontos dos Parques Nacionais de Anavilhanas e Jaú. Cuidamos de tudo desde a sua chegada à Manaus.",
             image: require('./exceptionalImage/agencies/ayraoTaxiTur.png'),
             contacts: "tel://+5592995088436",
             social: {
@@ -2433,7 +2394,7 @@ export default [
         id: 11007,
         title: "Sandventure Turismo e Aventura",
         content: {
-            description: "Empresa e Agência de Turismo com foco em turismo de sobrevivência e turismo de aventura. Juntando atividades ao ar livre com cultura, história, geografia e aventura. ",
+            description: "Empresa e Agência de Turismo com foco em turismo de sobrevivência e turismo de aventura. Juntando atividades ao ar livre com cultura, história, geografia e aventura.",
             image: require('./exceptionalImage/agencies/sandventure.jpg'),
             contacts: "tel://+5592984482028",
             social: {
