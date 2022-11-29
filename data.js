@@ -329,7 +329,7 @@ export default [
         id: 5000,
         title: "Taperebar",
         content: {
-            description: "Bar Temático com estilo Musical: Rock Pop, Reggae, SpeedBack e outros. Servimos Hambúrguer e Chopp Artesanal, Petiscos e Refeições.",
+            description: "Bar Temático de estilo musical (Rock Pop, Reggae, SpeedBack e outros). Servimos Hambúrguer e Chopp Artesanais, Petiscos e Refeições.",
             image: require('./exceptionalImage/toEat/taperebar.jpg'),
             prices: '',
             social: {
@@ -350,7 +350,7 @@ export default [
         id: 5001,
         title: "Cantinho Caseiro",
         content: {
-            description: "Especialista em sopas e doces preparado com o gostinho de casa, usamos produtos de primeira linha",
+            description: "Especialista em sopas e doces, preparados com o gostinho de casa.",
             image: require('./exceptionalImage/toEat/cantinhoCaseiro.png'),
             social: {
                 instagram: 'https://www.instagram.com/cantinho_caseiro_novoairao/',
@@ -370,7 +370,7 @@ export default [
         id: 5002,
         title: "Espetos do Rafinha",
         content: {
-            description: "Variedades de Espetinhos, com o melhor atendimento.",
+            description: "Churrasquinhos variados para degustar no fim da tarde, junto com os amigos e o melhor atendimento.",
             image: require('./exceptionalImage/toEat/espetosDoRafinha.png'),
             social: {
                 instagram: '',
@@ -390,7 +390,7 @@ export default [
         id: 5003,
         title: "JC Lanche e Pizzaria",
         content: {
-            description: "Nós trabalhamos no período da tarde com merendas, e a noite com pizzas, salgados, lanches, bebidas, em um local próprio e apto para o nosso serviço, localizado em nossa propriedade.",
+            description: "Fast-food tarde e noite. Sem tempo para comer? Venha se saciar com nosso cardápio de lanches e bebidas.",
             image: require('./exceptionalImage/toEat/JCLancheEPizzaria.png'),
             social: {
                 instagram: '',
@@ -410,7 +410,7 @@ export default [
         id: 5004,
         title: "Café da Preta",
         content: {
-            description: "Funcionamos de terça-feira a domingo, com o melhor café regional da Região.",
+            description: "Funcionamos de terça-feira à domingo, com o melhor café regional da Cidade.",
             image: require('./exceptionalImage/toEat/cafeDaPreta.jpeg'),
             social: {
                 instagram: 'https://www.instagram.com/caferegionaldapreta/',
@@ -430,7 +430,7 @@ export default [
         id: 5006,
         title: "Flor do luar Peixaria",
         content: {
-            description: "Restaurantes flutuante servimos variedades de peixes e carnes, temos variados drinks regionais, temos espaço de banho no Rio Negro, sendo que a família poderão ficar a tarde toda aproveitando a natureza e degustando dos nossos drinks e petiscos deliciosos.",
+            description: "Restaurante Flutuante. Servimos variedade de peixes e carnes, bebidas diversas, drinks regionais e petiscos deliciosos. Dispomos de espaço para banho no Rio Negro, proporcionando à sua família uma tarde de lazer no paraiso que é a natureza.",
             image: require('./exceptionalImage/toEat/florDoLuar.png'),
             social: {
                 instagram: 'https://www.instagram.com/flutuanteflordoluar/',
@@ -450,7 +450,7 @@ export default [
         id: 5007,
         title: "Ponto da Comida Caseira",
         content: {
-            description: "Local simples e acolhedor com uma maravilhosa vista panorâmica para o Rio Negro. Fornecemos o famoso PF prato feito, de sabor caseiro, feito no fogão do barro.",
+            description: "Local simples e acolhedor com uma maravilhosa vista panorâmica para o Rio Negro. Fornecemos o famoso Prato Feito, de sabor caseiro, preparado no fogão de barro.",
             image: require('./exceptionalImage/toEat/pontoDaComidaCaseira.jpeg'),
             social: {
                 instagram: 'https://www.instagram.com/comidacaseiraremanso/',
@@ -470,7 +470,7 @@ export default [
         id: 5008,
         title: "Maranata restaurante",
         content: {
-            description: "Estamos localizados na comunidade do Sobrado e temos a melhor comida regional",
+            description: "EUma experiência de comida regional inesquecível, na Comunidade Sobrado, coração da natureza. A aventura começa na sua escolha.",
             image: require('./exceptionalImage/toEat/maranata.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/maranata.restaurante0/',
@@ -530,7 +530,7 @@ export default [
         id: 5011,
         title: "Kaká Refeições",
         content: {
-            description: "Restaurante self-service, localizado em frente à praça municipal. Funcionamos para almoço e jantar.",
+            description: "Restaurante self-service, com dois ambientes, aberto e fechado. Funcionamos para almoço e jantar. Com um valor fixo, você come à vontade, mas se estragar, paga mais.",
             image: require('./exceptionalImage/toEat/kakaRefeicoes.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/kakarefeicoesairao/',
@@ -610,7 +610,7 @@ export default [
         id: 5015,
         title: "Café Regional De Bubuia",
         content: {
-            description: "Estabelecimento familiar com ambiente aconchegante, oferecemos um cardápio com  tapiocas variadas e outros produtos regionais. ",
+            description: "Estabelecimento familiar com ambiente aconchegante, oferecemos um cardápio com tapiocas variadas e outros produtos regionais.",
             image: require('./exceptionalImage/toEat/deBubuia.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/debubuia2022/',
@@ -630,7 +630,7 @@ export default [
         id: 5016,
         title: "Restaurante Pousada Bela Vista",
         content: {
-            description: "Nossa pousada é localizada ao centro do município de Novo Airão nas margens do Rio Negro, com uma vista privilegiada, temos uma piscina, um auditório para reuniões, um deck e uma flutuante com serviço de bar e restaurante e um redário para descansar.",
+            description: "Nossa Pousada é localizada às margens do Rio Negro, com uma vista privilegiada em total harmonia com a natureza. Dispomos de restaurante, piscina, auditório para reuniões, um deck, um flutuante com serviço de bar e um redário para descansar.",
             image: require('./exceptionalImage/toEat/belaVistaRestaurante.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/belavistalodge/',
@@ -650,7 +650,7 @@ export default [
         id: 5017,
         title: "Dino's Pizzaria e Restaurante",
         content: {
-            description: "Trabalhamos com diversos sabores de pizza, da brotinho à família, uma diversidade de sanduíches e um pouco mais.",
+            description: "Diversidade é conosco! Convide sua família, seus amigos e venha conhecer nossa variedade de sabores e tamanhos de pizzas, sanduíches e outras opções em nosso cardápio.",
             image: require('./exceptionalImage/toEat/dinosLanchePizzaria.jpg'),
             social: {
                 instagram: '',
@@ -670,7 +670,7 @@ export default [
         id: 5018,
         title: "Restaurante Marupiara",
         content: {
-            description: "O restaurante marupiara é um estabelecimento novo no município de novo Airão, e presa sempre pelo bem estar do cliente, trabalhamos com agilidade temos um salão receptivo e com ótimo atendimento, nosso tempero é de paladar caseiro regional.",
+            description: "O Restaurante Marupiara preza sempre pelo bem estar do cliente, trabalhamos com agilidade, dispomos de um salão receptivo e com ótimo atendimento. Saboreie nosso tempero e se delicie com o paladar caseiro regional.",
             image: require('./exceptionalImage/toEat/marupiara.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/marupiara_restaurant/',
@@ -690,7 +690,7 @@ export default [
     //     id: 5019,
     //     title: "Conveniência Lanchonete Natureza",
     //     content: {
-    //         description: "Lanchonete ou conveniência -bar é um estabelecimento comercial popular especializado em pequenas refeições rápidas, tais como petiscos, lanches e sanduíches mesmo fora do horário normal das refeições.",
+    //         description: "Lanchonete e conveniência-bar que dispõe de um ambiente regional rústico, aberto, oferecendo a nossos clientes e visitantes refeições de preparo rápido, lanches e sanduíches, petiscos, sucos naturais e diversas bebidas, mesmo fora do horário normal das refeições.",
     //         image: require('./exceptionalImage/toEat/postoJau.jpeg'),
     //         social: {
     //             instagram: 'https://www.instagram.com/posto_jau/',
@@ -750,7 +750,7 @@ export default [
         id: 5022,
         title: "Matupá bar",
         content: {
-            description: "O Matupá é um bar exclusivo da cervejaria Sarapó, uma  microcervejaria, aqui do município de Novo Airão. Utilizando-se de maltes e lúpulos importados, não pasteurizada e sem aditivos. Conta com um catálogo de 8 estilos de cervejas especiais. Dispomos de 2 estilos por vez, conforme disponibilidade.",
+            description: "Bar exclusivo da Cervejaria Sarapó, uma microcervejaria de Novo Airão. Utilizando-se de maltes e lúpulos importados, não pasteurizada e sem aditivos. Conta com um catálogo de oito estilos de cervejas especiais, no entanto, dispomos de dois estilos por vez, conforme disponibilidade. Venha degustar dessa nova experiência de sabor da Cerveja Sarapó",
             image: require('./exceptionalImage/toEat/matupaBar.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/matupa_bar/',
@@ -770,7 +770,7 @@ export default [
         id: 5023,
         title: "Zefa refeições",
         content: {
-            description: "Com o melhor sabor caseiro; com pratos típicos da cidade! E com o cardápio recheado de coisas boas.",
+            description: "A simplicidade de uma culinária com pratos típicos da cidade e com o melhor sabor caseiro! Dispomos de um cardápio recheado de coisas boas, preparadas com muito carinho.",
             image: require('./exceptionalImage/toEat/zefaRefeicoes.jpg'),
             social: {
                 instagram: '',
@@ -790,7 +790,7 @@ export default [
         id: 5024,
         title: "Taberna conveniência",
         content: {
-            description: "Nosso estabelecimento tem como diferencial é o atendimento e as bebidas mais geledas da cidade com petiscos tradicionais e o melhor preço da cidade.",
+            description: "Bar com ambiente aberto rústico que oferece aos nossos clientes as bebidas mais geladas, acompanhadas de petiscos tradicionais e o melhor preço da cidade.",
             image: require('./exceptionalImage/toEat/taberna.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/taberna_n.a/',
@@ -800,6 +800,66 @@ export default [
             contacts: "tel://+5592984569273",
             address: "",
             addressLink: '',
+            type: [""],
+            offering: ["Cerveja gelada", "Ambiente externo"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5025,
+        title: "Restaurante Sabor do Sul",
+        content: {
+            description: "É do gaúcho, mas o cardápio é de Novo Airão! Serviço à la carte e prato feito, com qualidade e um cardápio cheio de comidas típicas da região, como caldeirada de peixe, peixe à escabeche, frito, assado, galinha caipira, carnes, a tradicional carne na chapa dentre outros.",
+            image: require('./exceptionalImage/toEat/taberna.jpg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+55",
+            address: "",
+            addressLink: 'https://goo.gl/maps/u42AJ8xeU2PtDKmG7',
+            type: [""],
+            offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5026,
+        title: "Restaurante Sabor Na Brasa",
+        content: {
+            description: "Restaurante com atendimento de self-service e delivery. Cardápio variado com assados, fritos, guisados, com opções em carne, peixe, frango, fígado e outros.",
+            image: require('./exceptionalImage/toEat/taberna.jpg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+55",
+            address: "",
+            addressLink: 'https://goo.gl/maps/a471TmGpqSPxAgLa6',
+            type: [""],
+            offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5027,
+        title: "Saloon Ajuricaba Bar do Alex",
+        content: {
+            description: "Bar e Restaurante com ambiente rústico e sofisticado, dispõe aos nossos clientes uma culinária diferenciada e única na cidade, um serviço de bar com bebidas do simples ao requintado. Fazemos reservas para eventos e comemorações particulares.",
+            image: require('./exceptionalImage/toEat/taberna.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/alex.saloonajuricaba/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984365812",
+            address: "",
+            addressLink: 'https://goo.gl/maps/oQFMNb9q9ywWcVsk7',
             type: [""],
             offering: ["Cerveja gelada", "Ambiente externo"],
             profile: ["adventure", "soft", "calm"]
@@ -1059,6 +1119,25 @@ export default [
             offering: ["Internet", "Estacionamento", "Vista para o rio", "Café da manhã"],
             address: "",
             addressLink: "https://goo.gl/maps/qcztmKkC4UANdpQT7",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "hotels",
+        id: 6013,
+        title: "Pousada Oliveira",
+        content: {
+            description: "Localizada à margem do Rio Negro, a Pousada Oliveira traz um novo conceito de hospedagem, com atendimento exclusivo e uma experiência cabocla.",
+            image: require('./exceptionalImage/hotels/pousadaOliveira.jpg'),
+            contacts: "tel://+5511948276528",
+            social: {
+                instagram: 'https://www.instagram.com/oliveirapousada_oficial/',
+                facebook: '',
+                site: ''
+            },
+            offering: ["Wi-fi", "Restaurante"],
+            address: "",
+            addressLink: "",
             profile: ["adventure", "soft", "calm"],
         },
     },
@@ -2150,7 +2229,7 @@ export default [
         title: "Amanã Art's",
         content: {
             description: "Trabalho com artesanato regional diretamente das comunidades de Novo Airão.",
-            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            image: require("./exceptionalImage/craftsmanship/amana.jpeg"),
             contacts: "tel://+5592991130538",
             social: {
                 instagram: '',
