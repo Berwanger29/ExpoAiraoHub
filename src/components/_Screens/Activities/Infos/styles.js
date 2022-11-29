@@ -21,7 +21,7 @@ export const ButtonAlert = styled.TouchableOpacity`
 
 export const DetailsGroup = styled.View`
     align-items: center;
-    justify-content: ${(props)=> props.justifyContent};
+    justify-content: ${(props) => props.justifyContent};
     flex-direction: row;
     width: 100%;
 `

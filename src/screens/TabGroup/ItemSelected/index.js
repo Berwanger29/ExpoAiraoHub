@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { Linking, StatusBar, TouchableOpacity } from "react-native";
+import { useEffect, useState } from "react";
+import { Linking, StatusBar } from "react-native";
 import {
     Container,
     Image,
@@ -26,10 +26,13 @@ import data from "../../../../data";
 import { useNavigation } from "@react-navigation/native";
 
 
+
 const ItemSelected = ({ route }) => {
 
     const { itemId } = route.params;
     const navigation = useNavigation()
+
+    const [linksCounter, setLinksCounter] = useState(0)
 
     let agenciesData = data.filter((item) => {
         return item.type == 'agencies'
@@ -51,6 +54,16 @@ const ItemSelected = ({ route }) => {
     function handleLinkURL(link) {
         Linking.openURL(link)
     }
+
+    function countLinks() {
+        setLinksCounter(linksCounter + 1)
+    }
+
+    useEffect(() => {
+        console.log(linksCounter)
+    }, [])
+
+
 
     return (
         <Container>
@@ -117,9 +130,6 @@ const ItemSelected = ({ route }) => {
                     }
 
 
-
-
-
                     {
                         itemData.type == 'tourism' &&
                         (
@@ -134,28 +144,34 @@ const ItemSelected = ({ route }) => {
                     {
                         itemData.type !== 'tourism' &&
                         <>
-                            <OptionalsContainer>
-                                {
-                                    optionals.map((e, id) => {
-                                        return (
-                                            <OptionalText
-                                                key={id}
-                                                text={e}
-                                            />
-                                        )
-                                    })
-                                }
-                            </OptionalsContainer>
+                            {optionals.length != 0 &&
+                                <OptionalsContainer>
+                                    {
+                                        optionals.map((e, id) => {
+                                            return (
+                                                <OptionalText
+                                                    key={id}
+                                                    text={e}
+                                                />
+                                            )
+                                        })
+                                    }
+                                    <Line />
+                                </OptionalsContainer>
+                            }
 
 
                             <ContainerLinks>
-
                                 {
                                     instagramLink !== '' &&
-                                    <ButtonLink
-                                        onPress={() => handleLinkURL(instagramLink)}
-                                        nameIcon={"instagram-with-circle"}
-                                    />
+                                    <>
+                                        {countLinks}
+                                        <ButtonLink
+                                            onPress={() => handleLinkURL(instagramLink)}
+                                            nameIcon={"instagram-with-circle"}
+                                        />
+                                    </>
+
                                 }
                                 {
                                     facebookLink !== '' &&
@@ -186,6 +202,7 @@ const ItemSelected = ({ route }) => {
                                     />
                                 }
                             </ContainerLinks>
+
                             <Line />
                         </>
                     }

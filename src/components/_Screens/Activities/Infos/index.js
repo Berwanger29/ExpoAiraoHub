@@ -20,7 +20,7 @@ import {
 import Contact from "../Contact";
 import Line from "../../../Line";
 import theme from "../../../../global/styles/theme";
-import { Alert } from "react-native";
+import { Alert, View } from "react-native";
 import advices from "../../../../../advices";
 import { useEffect, useState } from "react";
 
@@ -155,7 +155,6 @@ const Infos = ({ data }) => {
                     }
                 </InfoContainer>
             </DetailsGroup>
-            <Line />
             <ContactsGroup>
                 {
                     showContacts ?

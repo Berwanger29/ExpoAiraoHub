@@ -485,46 +485,46 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    {
-        type: "toEat",
-        id: 5009,
-        title: "Pastel do Paulo Cintura",
-        content: {
-            description: "Nosso estabelecimento fica localizado na Praça Municipal, ambiente ventilado e bem acolhedor, temos uma equipe de excelência com bom atendimento !",
-            image: require('./exceptionalImage/toEat/pastelDoPauloCintura.jpeg'),
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "tel://+5592991555552",
-            address: "",
-            addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
-            type: ["Lanchonete"],
-            offering: [],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "toEat",
-        id: 5010,
-        title: "Pizzaria e Boteco do Lucas",
-        content: {
-            description: "Nosso espaço é o melhor lugar pra assistir jogo de futebol em algumas ocasiões com 2 TVs. Cerveja bem gelada e várias marcas de cerveja e vários petiscos.",
-            image: require('./exceptionalImage/toEat/pizzariaEBotecoDoLucas.jpg'),
-            social: {
-                instagram: 'https://www.instagram.com/pizzaria_e_boteco_do_lucas/',
-                facebook: '',
-                site: ''
-            },
-            contacts: "tel://+5592992330843",
-            address: "Rua ademar de barros",
-            addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
-            type: ["Lanchonete", "Bar"],
-            offering: ["Internet"],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "toEat",
+    //     id: 5009,
+    //     title: "Pastel do Paulo Cintura",
+    //     content: {
+    //         description: "Nosso estabelecimento fica localizado na Praça Municipal, ambiente ventilado e bem acolhedor, temos uma equipe de excelência com bom atendimento !",
+    //         image: require('./exceptionalImage/toEat/pastelDoPauloCintura.jpeg'),
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592991555552",
+    //         address: "",
+    //         addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
+    //         type: ["Lanchonete"],
+    //         offering: [],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "toEat",
+    //     id: 5010,
+    //     title: "Pizzaria e Boteco do Lucas",
+    //     content: {
+    //         description: "Nosso espaço é o melhor lugar pra assistir jogo de futebol em algumas ocasiões com 2 TVs. Cerveja bem gelada e várias marcas de cerveja e vários petiscos.",
+    //         image: require('./exceptionalImage/toEat/pizzariaEBotecoDoLucas.jpg'),
+    //         social: {
+    //             instagram: 'https://www.instagram.com/pizzaria_e_boteco_do_lucas/',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592992330843",
+    //         address: "Rua ademar de barros",
+    //         addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
+    //         type: ["Lanchonete", "Bar"],
+    //         offering: ["Internet"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "toEat",
         id: 5011,
@@ -545,66 +545,66 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    {
-        type: "toEat",
-        id: 5012,
-        title: "Lanche Tira Larica",
-        content: {
-            description: "Lanche tradicional do município há 5 anos trabalhando sempre em busca de novidades e novos sabores e conforto pra nossos clientes",
-            image: require('./exceptionalImage/toEat/tiraLarica.jpg'),
-            social: {
-                instagram: 'https://www.instagram.com/bar_lanche_refeicoes_larica/',
-                facebook: 'https://www.facebook.com/Bar-Lanche-e-refei%C3%A7%C3%A3o-tira-lar%C3%ADca-886063928218191',
-                site: ''
-            },
-            contacts: "tel://+5592993077380",
-            address: "Av. Santos Dumont,SN quiosque 03 centro ",
-            addressLink: 'https://goo.gl/maps/ttzQBDfEiPxrYf7k7',
-            type: ["Lanchonete"],
-            offering: ["Internet"],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "toEat",
-        id: 5013,
-        title: "Ponto Do Açaí Frozen",
-        content: {
-            description: "Trabalhamos com venda de açaí frozen, com variedades de acompanhamentos.",
-            image: require('./exceptionalImage/toEat/pontoDoAcai.jpg'),
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "tel://+5592984126957",
-            address: "",
-            addressLink: "https://goo.gl/maps/ttzQBDfEiPxrYf7k7",
-            type: ["Açaíteria"],
-            offering: ["Internet"],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
-    {
-        type: "toEat",
-        id: 5014,
-        title: "Sorvete da praça",
-        content: {
-            description: "Trabalhamos com sorvete expresso, casquinha , cascāo ,  sundae  é  + de 30 sabores de milk shake, guaraná tradicional da Amazônia,  também servimos sorvete Glacial.",
-            image: require('./exceptionalImage/toEat/sorveteriaDaPraca.jpg'),
-            social: {
-                instagram: 'https://www.instagram.com/sorveteda_praca/',
-                facebook: '',
-                site: ''
-            },
-            contacts: "tel://+5592993934602",
-            address: "",
-            addressLink: 'https://goo.gl/maps/2vrY4p2veLgH7bDj9',
-            type: ["Sorveteria"],
-            offering: ["Cartão"],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "toEat",
+    //     id: 5012,
+    //     title: "Lanche Tira Larica",
+    //     content: {
+    //         description: "Lanche tradicional do município há 5 anos trabalhando sempre em busca de novidades e novos sabores e conforto pra nossos clientes",
+    //         image: require('./exceptionalImage/toEat/tiraLarica.jpg'),
+    //         social: {
+    //             instagram: 'https://www.instagram.com/bar_lanche_refeicoes_larica/',
+    //             facebook: 'https://www.facebook.com/Bar-Lanche-e-refei%C3%A7%C3%A3o-tira-lar%C3%ADca-886063928218191',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592993077380",
+    //         address: "Av. Santos Dumont,SN quiosque 03 centro ",
+    //         addressLink: 'https://goo.gl/maps/ttzQBDfEiPxrYf7k7',
+    //         type: ["Lanchonete"],
+    //         offering: ["Internet"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "toEat",
+    //     id: 5013,
+    //     title: "Ponto Do Açaí Frozen",
+    //     content: {
+    //         description: "Trabalhamos com venda de açaí frozen, com variedades de acompanhamentos.",
+    //         image: require('./exceptionalImage/toEat/pontoDoAcai.jpg'),
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592984126957",
+    //         address: "",
+    //         addressLink: "https://goo.gl/maps/ttzQBDfEiPxrYf7k7",
+    //         type: ["Açaíteria"],
+    //         offering: ["Internet"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    // {
+    //     type: "toEat",
+    //     id: 5014,
+    //     title: "Sorvete da praça",
+    //     content: {
+    //         description: "Trabalhamos com sorvete expresso, casquinha , cascāo ,  sundae  é  + de 30 sabores de milk shake, guaraná tradicional da Amazônia,  também servimos sorvete Glacial.",
+    //         image: require('./exceptionalImage/toEat/sorveteriaDaPraca.jpg'),
+    //         social: {
+    //             instagram: 'https://www.instagram.com/sorveteda_praca/',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592993934602",
+    //         address: "",
+    //         addressLink: 'https://goo.gl/maps/2vrY4p2veLgH7bDj9',
+    //         type: ["Sorveteria"],
+    //         offering: ["Cartão"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "toEat",
         id: 5015,
@@ -862,6 +862,26 @@ export default [
             addressLink: 'https://goo.gl/maps/oQFMNb9q9ywWcVsk7',
             type: [""],
             offering: ["Cerveja gelada", "Ambiente externo"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5028,
+        title: "Praça Municipal Hugo C. Frederico",
+        content: {
+            description: "Praça de Alimentação com várias opções para se desfrutar da gastronomia local com a diversidade dos cardápios, em ambiente propício para a Família, com Pontos Turísticos, área de playground e Wi-Fi grátis. Tudo em uma localidade só!",
+            image: require('./exceptionalImage/toEat/pracaMunicipal.jpeg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "",
+            address: "",
+            addressLink: '',
+            type: [""],
+            offering: [],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -1268,7 +1288,7 @@ export default [
                     effort: ""
                 },
                 contactList: [
-                    { name: 'Pessoa', link: 'tel://+5592992931203' }
+                    { name: 'Audenor', link: 'tel://+5592992931203' }
                 ],
             },
             offering: ["Balneário"],
@@ -2134,7 +2154,7 @@ export default [
         title: "Associação dos artesãos de Novo Airão",
         content: {
             description: "A Loja AANA (Associação dos Artesãos de Novo Airão)  que é também local de trabalho dos artesãos, encontram-se peças feitas de fibras regionais (arumã –Ischnosiphon sp, cipó ambé – Philodendron sp e tucumã – Astrocaryum tucumã). Os objetos são basicamente utilitários: cestas, tapetes, peneiras e jogos americanos. A loja é bem organizada e os artesãos fazem uma espécie de revezamento para atendimento aos clientes.",
-            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            image: require("./exceptionalImage/attractions/AANA.jpeg"),
             contacts: "tel://+5592984591290",
             social: {
                 instagram: 'https://www.instagram.com/aana_associacao_dos_artesaos_/',
@@ -2210,7 +2230,7 @@ export default [
         title: "Lili Encantos",
         content: {
             description: "O artesanato detém essência da cultura da terra, dos nossos ancestrais. Trabalhamos com madeira, acessórios com penas, sempre respeitando a biodiversidade existente na floresta.",
-            image: require("./exceptionalImage/attractions/flutuanteDosBotos.jpg"),
+            image: require("./exceptionalImage/attractions/liliEncantos.png"),
             contacts: "tel://+5592984810171",
             social: {
                 instagram: '',
@@ -2286,7 +2306,7 @@ export default [
         title: "Waimiri Atroari",
         content: {
             description: "Artesanato Indígena da cultura Waimiri é rico em mito e ritos, destacam-se produtos das cestarias masculinas, com grandes variedades de formas, objetos utilitários e decorativos inspirados nos elementos da natureza e em seu universo místico. Também se destacam os arcos e as flechas de ponta de madeira, osso ou ferro.",
-            image: require("./exceptionalImage/tour/waimiri.jpeg"),
+            image: require("./exceptionalImage/attractions/waimiri.jpeg"),
             contacts: "tel://+5592992346528",
             social: {
                 instagram: '',
