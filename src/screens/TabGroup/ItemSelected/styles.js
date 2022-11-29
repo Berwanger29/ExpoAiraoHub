@@ -66,3 +66,8 @@ export const FontButton = styled.TouchableOpacity`
     border-bottom-style: solid;
     align-self: flex-start;
 `
+export const NavigateButton = styled.View`
+    padding: 10px;
+    background-color: ${props => props.theme.colors.green};
+    border-radius: 15px;
+`

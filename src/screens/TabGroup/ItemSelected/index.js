@@ -11,6 +11,7 @@ import {
     ScrollContainer,
     OptionalsContainer,
     FontButton,
+    NavigateButton,
 } from "./styles"
 
 import Line from '../../../components/Line'
@@ -24,6 +25,7 @@ import ActivitiesOfferts from "../../../components/_Screens/ItemSelected/Activit
 import data from "../../../../data";
 
 import { useNavigation } from "@react-navigation/native";
+import theme from "../../../global/styles/theme";
 
 
 
@@ -32,7 +34,7 @@ const ItemSelected = ({ route }) => {
     const { itemId } = route.params;
     const navigation = useNavigation()
 
-    const [linksCounter, setLinksCounter] = useState(0)
+    const [links, setLinks] = useState(false)
 
     let agenciesData = data.filter((item) => {
         return item.type == 'agencies'
@@ -44,9 +46,12 @@ const ItemSelected = ({ route }) => {
     let itemData = arrayData[0]
 
     let optionals = itemData.content.offering
+
     let instagramLink = itemData.content.social?.instagram
     let facebookLink = itemData.content.social?.facebook
     let siteLink = itemData.content.social?.site
+    let contacts = itemData.content.contacts
+    let addressLink = itemData.content.addressLink
 
     let infoActivities = itemData.content.infoActivities
     let dataActivities = itemData.content.showActivities
@@ -55,12 +60,11 @@ const ItemSelected = ({ route }) => {
         Linking.openURL(link)
     }
 
-    function countLinks() {
-        setLinksCounter(linksCounter + 1)
-    }
 
     useEffect(() => {
-        console.log(linksCounter)
+        if (instagramLink || facebookLink || siteLink || contacts || addressLink) {
+            setLinks(true)
+        }
     }, [])
 
 
@@ -116,9 +120,12 @@ const ItemSelected = ({ route }) => {
                                                             data: agenciesData
                                                         })}
                                                     >
-                                                        <TextRegular
-                                                            text='Explorar agências e operadores'
-                                                        />
+                                                        <NavigateButton>
+                                                            <TextRegular
+                                                                text='Explorar agências e operadores'
+                                                                color={theme.colors.light}
+                                                            />
+                                                        </NavigateButton>
                                                     </FontButton>
                                                 </>
                                             ) : (null)
@@ -160,50 +167,49 @@ const ItemSelected = ({ route }) => {
                                 </OptionalsContainer>
                             }
 
+                            {links &&
+                                <>
+                                    <ContainerLinks>
+                                        {
+                                            instagramLink !== '' &&
+                                            <ButtonLink
+                                                onPress={() => handleLinkURL(instagramLink)}
+                                                nameIcon={"instagram-with-circle"}
+                                            />
+                                        }
+                                        {
+                                            facebookLink !== '' &&
+                                            <ButtonLink
+                                                onPress={() => handleLinkURL(facebookLink)}
+                                                nameIcon={"facebook-with-circle"}
+                                            />
+                                        }
+                                        {
+                                            siteLink !== '' &&
+                                            <ButtonLink
+                                                onPress={() => handleLinkURL(siteLink)}
+                                                nameIcon="globe"
+                                            />
+                                        }
+                                        {
+                                            contacts !== '' &&
+                                            <ButtonLink
+                                                onPress={() => handleLinkURL(itemData.content?.contacts)}
+                                                nameIcon="phone"
+                                            />
+                                        }
+                                        {
+                                            addressLink !== '' &&
+                                            <ButtonLink
+                                                onPress={() => handleLinkURL(itemData.content?.addressLink)}
+                                                nameIcon="map"
+                                            />
+                                        }
+                                    </ContainerLinks>
 
-                            <ContainerLinks>
-                                {
-                                    instagramLink !== '' &&
-                                    <>
-                                        {countLinks}
-                                        <ButtonLink
-                                            onPress={() => handleLinkURL(instagramLink)}
-                                            nameIcon={"instagram-with-circle"}
-                                        />
-                                    </>
-
-                                }
-                                {
-                                    facebookLink !== '' &&
-                                    <ButtonLink
-                                        onPress={() => handleLinkURL(facebookLink)}
-                                        nameIcon={"facebook-with-circle"}
-                                    />
-                                }
-                                {
-                                    siteLink !== '' &&
-                                    <ButtonLink
-                                        onPress={() => handleLinkURL(siteLink)}
-                                        nameIcon="globe"
-                                    />
-                                }
-                                {
-                                    itemData.content.contacts !== '' &&
-                                    <ButtonLink
-                                        onPress={() => handleLinkURL(itemData.content?.contacts)}
-                                        nameIcon="phone"
-                                    />
-                                }
-                                {
-                                    itemData.content.addressLink !== '' &&
-                                    <ButtonLink
-                                        onPress={() => handleLinkURL(itemData.content?.addressLink)}
-                                        nameIcon="map"
-                                    />
-                                }
-                            </ContainerLinks>
-
-                            <Line />
+                                    <Line />
+                                </>
+                            }
                         </>
                     }
 
