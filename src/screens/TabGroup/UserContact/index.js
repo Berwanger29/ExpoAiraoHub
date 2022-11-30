@@ -37,7 +37,7 @@ const UserContact = () => {
                         </CardText>
                         <LinkButton
                             label='Enviar e-mail'
-                            link={'mailto:vibersou@gmail.com'}
+                            link={'mailto:seminturna15@gmail.com'}
                             type='mail'
                         />
                     </Scroll>

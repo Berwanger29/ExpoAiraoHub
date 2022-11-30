@@ -817,7 +817,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            contacts: "tel://+55",
+            contacts: "tel://+5592984794591",
             address: "",
             addressLink: 'https://goo.gl/maps/u42AJ8xeU2PtDKmG7',
             type: [""],
@@ -880,6 +880,46 @@ export default [
             contacts: "",
             address: "",
             addressLink: '',
+            type: [""],
+            offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5029,
+        title: "Tapiri Coffee & Dinner",
+        content: {
+            description: "Somos o Tapiri Coffee & Dinner, um ambiente acolhedor e tranquilo, para tomar um café e conversar! Nosso ambiente é climatizado e aconchegante!",
+            image: require('./exceptionalImage/toEat/tapiri.jpeg'),
+            social: {
+                instagram: 'https://www.instagram.com/tapiri.coffeedinner/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984197527",
+            address: "",
+            addressLink: 'https://goo.gl/maps/4ggUbk4dw4vSo3Lz7',
+            type: [""],
+            offering: ["Ambiente climatizado", "Delivery"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5030,
+        title: "Nosso café",
+        content: {
+            description: "Funcionamos pela manhã, tarde e durante a noite. Servimos  café regioanl, lanches e refeições",
+            image: require('./exceptionalImage/toEat/nossoCafe.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/nossocafe5/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984447089",
+            address: "",
+            addressLink: 'https://goo.gl/maps/cE4URLZz7FuJrUA5A',
             type: [""],
             offering: [],
             profile: ["adventure", "soft", "calm"]
@@ -2151,9 +2191,9 @@ export default [
     {
         type: "craftsmanship",
         id: 10000,
-        title: "Associação dos artesãos de Novo Airão",
+        title: "Associação dos Artesãos de Novo Airão",
         content: {
-            description: "A Loja AANA (Associação dos Artesãos de Novo Airão)  que é também local de trabalho dos artesãos, encontram-se peças feitas de fibras regionais (arumã –Ischnosiphon sp, cipó ambé – Philodendron sp e tucumã – Astrocaryum tucumã). Os objetos são basicamente utilitários: cestas, tapetes, peneiras e jogos americanos. A loja é bem organizada e os artesãos fazem uma espécie de revezamento para atendimento aos clientes.",
+            description: "Temos por objetivo resgatar e divulgar a arte popular, apoiar a produção e comercialização de artesanatos com fibras naturais para manter viva a herança cultural de nosso povo.",
             image: require("./exceptionalImage/attractions/AANA.jpeg"),
             contacts: "tel://+5592984591290",
             social: {
@@ -2229,7 +2269,7 @@ export default [
         id: 10004,
         title: "Lili Encantos",
         content: {
-            description: "O artesanato detém essência da cultura da terra, dos nossos ancestrais. Trabalhamos com madeira, acessórios com penas, sempre respeitando a biodiversidade existente na floresta.",
+            description: "Nosso artesanato detém a essência da cultura da terra, dos nossos ancestrais. Trabalhamos com a confecção de adereços e lembranças em madeira, acessórios com penas, sempre respeitando a biodiversidade existente na floresta.",
             image: require("./exceptionalImage/attractions/liliEncantos.png"),
             contacts: "tel://+5592984810171",
             social: {
@@ -2248,7 +2288,7 @@ export default [
         id: 10005,
         title: "Amanã Art's",
         content: {
-            description: "Trabalho com artesanato regional diretamente das comunidades de Novo Airão.",
+            description: "Artesanato regional diretamente de artesãos moradores das Comunidades de Novo Airão.",
             image: require("./exceptionalImage/craftsmanship/amana.jpeg"),
             contacts: "tel://+5592991130538",
             social: {
@@ -2286,7 +2326,7 @@ export default [
         id: 10007,
         title: "Fundação Almerinda Malaquias",
         content: {
-            description: "A Loja Nov’Arte da FAM, encontra-se objetos de madeira com um novo design. A loja, esta bem organizada e apresenta uma produção classificada em vários tipos de lembranças como decorativas e educativas.",
+            description: "A Fundação Almerinda Malaquias é uma instituição privada e sem fins lucrativos, que há 22 anos atua com ênfase na educação e na transformação social, comprometida em promover geração de renda e educação ambiental, através do projeto de marcenaria de pequenos objetos e marchetaria que ensina, a jovens e pais de família, a oportunidade de aprender uma profissão e com isso garantir sua renda.",
             image: require("./exceptionalImage/tour/fam.jpeg"),
             contacts: "tel://+5592993986331",
             social: {
@@ -2305,7 +2345,7 @@ export default [
         id: 10008,
         title: "Waimiri Atroari",
         content: {
-            description: "Artesanato Indígena da cultura Waimiri é rico em mito e ritos, destacam-se produtos das cestarias masculinas, com grandes variedades de formas, objetos utilitários e decorativos inspirados nos elementos da natureza e em seu universo místico. Também se destacam os arcos e as flechas de ponta de madeira, osso ou ferro.",
+            description: "Os índios Waimiri Atroari produzem artefatos indígenas como arco, flechas, brincos, pulseiras, cestarias, rede de tucum e buriti. Sua matéria-prima é fibra de arumã e cipó ambé. Estes são confeccionados pelo próprio povo indígena e são comercializados na casa de apoio sede Novo Airão.",
             image: require("./exceptionalImage/attractions/waimiri.jpeg"),
             contacts: "tel://+5592992346528",
             social: {
