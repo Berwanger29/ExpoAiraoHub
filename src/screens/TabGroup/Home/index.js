@@ -32,25 +32,25 @@ const Home = () => {
     const [arrSearch, setArrSearch] = useState([])
 
 
-    let inCityData = data.filter((item) => {
-        return item.type == 'inCity'
-    })
+    // let inCityData = data.filter((item) => {
+    //     return item.type == 'inCity'
+    // })
 
-    let attractions = data.filter((item) => {
-        return item.type == 'attractions'
-    })
+    // let attractions = data.filter((item) => {
+    //     return item.type == 'attractions'
+    // })
 
     let craftsmanship = data.filter((item) => {
         return item.type == 'craftsmanship'
     })
 
-    let anavilhanasData = data.filter((item) => {
-        return item.type == 'anavilhanas'
-    })
+    // let anavilhanasData = data.filter((item) => {
+    //     return item.type == 'anavilhanas'
+    // })
 
-    let jauData = data.filter((item) => {
-        return item.type == 'jau'
-    })
+    // let jauData = data.filter((item) => {
+    //     return item.type == 'jau'
+    // })
 
     let agenciesData = data.filter((item) => {
         return item.type == 'agencies'
@@ -60,9 +60,9 @@ const Home = () => {
         return item.type == 'toEat'
     })
 
-    let bathhouse = data.filter((item) => {
-        return item.type == 'bathhouse'
-    })
+    // let bathhouse = data.filter((item) => {
+    //     return item.type == 'bathhouse'
+    // })
 
     let hotelsData = data.filter((item) => {
         return item.type == 'hotels'
@@ -78,19 +78,6 @@ const Home = () => {
         text = text.replace(new RegExp('[Ç]', 'gi'), 'c');
         return text;
     }
-
-    // function handleInput(e) {
-    //     setInput(e)
-    //     let text = removeAcento(input)
-    //     let arr = []
-    //     data.filter((item) => {
-    //         let dataItem = removeAcento(item.title)
-    //         if (dataItem.includes(text)) {
-    //             arr.push(item)
-    //         }
-    //     })
-    //     setArrSearch(arr)
-    // }
 
     function getSearched(e) {
         let text = removeAcento(e)

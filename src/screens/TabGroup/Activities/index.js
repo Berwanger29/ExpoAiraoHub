@@ -25,7 +25,6 @@ import UserButton from '../../../components/UserButton'
 import UserButtonContainer from '../../../components/UserButtonContiner'
 import Card from '../../../components/_Screens/Activities/Card';
 import HeroContainer from '../../../components/HeroContainer';
-import { EvilIcons } from '@expo/vector-icons';
 import Line from '../../../components/Line'
 
 import ActivitiesAdventure from '../ActivitiesAdventure'
@@ -84,29 +83,40 @@ const Activities = () => {
     })
 
     let categoriesFiltered = categories.filter((item, index) => {
-        console.log('-----------------')
-        console.log(categories.indexOf(item))
-        console.log(index)
-        console.log(categories.indexOf(item) === index)
         if (categories.indexOf(item) === index) {
             console.log(item.categorie)
             return item.categorie
         }
+    });
+
+
+
+    function removeAcento(text) {
+        text = text.toLowerCase();
+        text = text.replace(new RegExp('[ÁÀÂÃ]', 'gi'), 'a');
+        text = text.replace(new RegExp('[ÉÈÊ]', 'gi'), 'e');
+        text = text.replace(new RegExp('[ÍÌÎ]', 'gi'), 'i');
+        text = text.replace(new RegExp('[ÓÒÔÕ]', 'gi'), 'o');
+        text = text.replace(new RegExp('[ÚÙÛ]', 'gi'), 'u');
+        text = text.replace(new RegExp('[Ç]', 'gi'), 'c');
+        return text;
     }
-    );
 
-
-
-    function handleInput(e) {
-        setInput(e)
+    function getSearched(e) {
+        let text = removeAcento(e)
         let arr = []
         activitiesData.filter((item) => {
-            if (item.title.includes(e)) {
+            let dataItem = removeAcento(item.title)
+            if (dataItem.includes(text)) {
                 arr.push(item)
             }
         })
         setArrSearch(arr)
     }
+
+    useEffect(() => {
+        getSearched(input)
+    }, [input])
 
     function handleModal() {
         setModalVisible(!modalVisible)
@@ -156,7 +166,7 @@ const Activities = () => {
                     <Input
                         placeholder="Procure uma atividade"
                         value={input}
-                        onChangeText={(e) => handleInput(e)}
+                        onChangeText={(e) => setInput(e)}
                     />
                     <SearchButton>
                         <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
@@ -255,7 +265,6 @@ const Activities = () => {
                                 />
                             </FilterButton>
                             {
-
                                 categoriesFiltered.map((item) => (
                                     <FilterButton
                                         onPress={() => handleFilter(item.categorie)}

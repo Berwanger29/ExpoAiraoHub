@@ -29,7 +29,8 @@ const Accommodation = () => {
     const navigation = useNavigation()
 
     const [hotel, setHotel] = useState('')
-    const [input, setInput] = useState([])
+    const [input, setInput] = useState('')
+    const [arrSearch, setArrSearch] = useState([])
     const [hotelsData, setHotelsData] = useState([])
 
     const accommodationData = data.filter((item) => {
@@ -43,16 +44,32 @@ const Accommodation = () => {
         })
     }
 
-    function handleInput(e) {
-        setHotel(e)
+    function removeAcento(text) {
+        text = text.toLowerCase();
+        text = text.replace(new RegExp('[ÁÀÂÃ]', 'gi'), 'a');
+        text = text.replace(new RegExp('[ÉÈÊ]', 'gi'), 'e');
+        text = text.replace(new RegExp('[ÍÌÎ]', 'gi'), 'i');
+        text = text.replace(new RegExp('[ÓÒÔÕ]', 'gi'), 'o');
+        text = text.replace(new RegExp('[ÚÙÛ]', 'gi'), 'u');
+        text = text.replace(new RegExp('[Ç]', 'gi'), 'c');
+        return text;
+    }
+
+    function getSearched(e) {
+        let text = removeAcento(e)
         let arr = []
         accommodationData.filter((item) => {
-            if (item.title.includes(e)) {
+            let dataItem = removeAcento(item.title)
+            if (dataItem.includes(text)) {
                 arr.push(item)
             }
         })
-        setInput(arr)
+        setArrSearch(arr)
     }
+
+    useEffect(() => {
+        getSearched(input)
+    }, [input])
 
     useEffect(() => {
         function shuffle(array) {
@@ -86,8 +103,8 @@ const Accommodation = () => {
                 >
                     <Input
                         placeholder="Procure um local de hospedagem"
-                        value={hotel}
-                        onChangeText={(e) => handleInput(e)}
+                        value={input}
+                        onChangeText={(e) => setInput(e)}
                     />
                     <SearchButton
                         activeOpacity={0.6}
@@ -96,7 +113,7 @@ const Accommodation = () => {
                     </SearchButton>
                 </SearchConatainer>
             </Header>
-            {hotel == '' &&
+            {input == '' &&
 
                 <Main>
                     <CardExternalPlatform />
@@ -121,11 +138,11 @@ const Accommodation = () => {
             }
 
             {
-                hotel !== '' &&
+                input !== '' &&
                 <Main>
                     <List
                         showsVerticalScrollIndicator={false}
-                        data={input}
+                        data={arrSearch}
                         keyExtractor={item => item.id}
                         renderItem={({ item }) =>
                         (
