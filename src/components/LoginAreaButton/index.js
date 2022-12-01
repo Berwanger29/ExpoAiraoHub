@@ -8,11 +8,7 @@ import {
 const LoginAreaButton = ({ label, onPress }) => {
     return (
         <Container
-            onPress={onPress}
-            style={{
-                elevation: 5
-            }}
-        >
+            onPress={onPress}>
 
             <TextRegular
                 color={theme.colors.light}

@@ -12,7 +12,6 @@ import {
     EyeContainer,
     EyeInputContainer,
     ImageContainer,
-    LogoContainer,
 } from './styles'
 
 import { auth } from '../../../../firebase'
@@ -200,13 +199,6 @@ const Login = () => {
                                             textDecoration='underline'
                                         />
                                     </ButtonText>
-                                    {/* <LoginAreaButton
-                                        label='Login anônimo'
-                                        onPress={() => {
-                                            navigation.navigate('QuizStack')
-                                        }}
-
-                                    /> */}
                                 </InputContainer>
 
                                 <SignUpContainer>

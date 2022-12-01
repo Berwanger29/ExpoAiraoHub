@@ -11,10 +11,9 @@ export const Container = styled.View`
 
 export const ButtonBackContainer = styled.View`
     position: absolute;
-    left: ${RFValue(15)}px;
-    top: 5px;
+    top: 10px;
+    left: 5px;
 `
-
 
 export const Header = styled.View`
     width: 100%;

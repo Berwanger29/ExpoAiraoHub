@@ -69,7 +69,6 @@ const QuizB = () => {
                 style='auto'
             />
             <Header>
-                {/* <AnimationContainer> */}
                 <Lottie
                     autoPlay
                     loop
@@ -79,7 +78,6 @@ const QuizB = () => {
                         height: '100%'
                     }}
                 />
-                {/* </AnimationContainer> */}
                 <ButtonBackContainer>
                     <BackButton />
                 </ButtonBackContainer>

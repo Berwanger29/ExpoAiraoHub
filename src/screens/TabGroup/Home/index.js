@@ -68,16 +68,46 @@ const Home = () => {
         return item.type == 'hotels'
     })
 
-    function handleInput(e) {
-        setInput(e)
+    function removeAcento(text) {
+        text = text.toLowerCase();
+        text = text.replace(new RegExp('[ÁÀÂÃ]', 'gi'), 'a');
+        text = text.replace(new RegExp('[ÉÈÊ]', 'gi'), 'e');
+        text = text.replace(new RegExp('[ÍÌÎ]', 'gi'), 'i');
+        text = text.replace(new RegExp('[ÓÒÔÕ]', 'gi'), 'o');
+        text = text.replace(new RegExp('[ÚÙÛ]', 'gi'), 'u');
+        text = text.replace(new RegExp('[Ç]', 'gi'), 'c');
+        return text;
+    }
+
+    // function handleInput(e) {
+    //     setInput(e)
+    //     let text = removeAcento(input)
+    //     let arr = []
+    //     data.filter((item) => {
+    //         let dataItem = removeAcento(item.title)
+    //         if (dataItem.includes(text)) {
+    //             arr.push(item)
+    //         }
+    //     })
+    //     setArrSearch(arr)
+    // }
+
+    function getSearched(e) {
+        let text = removeAcento(e)
         let arr = []
         data.filter((item) => {
-            if (item.title.includes(e)) {
+            let dataItem = removeAcento(item.title)
+            if (dataItem.includes(text)) {
                 arr.push(item)
             }
         })
         setArrSearch(arr)
     }
+
+    useEffect(() => { 
+        getSearched(input)
+    }, [input])
+
 
     return (
         <Container>
@@ -102,7 +132,7 @@ const Home = () => {
                     <Input
                         placeholder="Digite alguma coisa"
                         value={input}
-                        onChangeText={(e) => handleInput(e)}
+                        onChangeText={(e) => setInput(e)}
                     />
                     <SearchButton
                         activeOpacity={0.6}
@@ -122,16 +152,6 @@ const Home = () => {
                             title="Artesanato"
                             data={craftsmanship}
                         />
-
-
-                        {/* <Carroussel
-                            title="Pelo Anavilhanas"
-                            data={anavilhanasData}
-                        />
-                        <Carroussel
-                            title="Pelo Jaú"
-                            data={jauData}
-                        /> */}
 
                         <Carroussel
                             title="Agência/Operador"

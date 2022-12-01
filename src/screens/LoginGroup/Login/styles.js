@@ -14,11 +14,6 @@ export const Container = styled.View`
     
 `
 
-export const LogoContainer = styled.View`
-    width: 100%;
-    
-`
-
 export const LabelContainer = styled.View`
     align-self: flex-start;
     margin-bottom: 10px;
@@ -27,35 +22,35 @@ export const InputContainer = styled.View`
     width: 100%;
     height: 50%;
     align-items: center;
+
 `
 
 export const UserInput = styled.TextInput`
     background-color: ${props => props.theme.colors.light};
     color: ${(props) => props.theme.colors.darkGreen};
 
-    border: 1px solid ${props => props.theme.darkGreen};
+    border: 2px solid ${props => props.theme.colors.green};
 
     width: 100%;
     height: ${RFValue(50)}px;
-    
-    margin-bottom: 20px;
-    padding-left: 10px;
-    border-radius: 5px;
+    padding-left: 20px;
+    border-radius: 8px;
 
 `
 export const EyeInputContainer = styled.View`
     width: 100%;
     flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: ${RFValue(50)}px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 `
 
 export const EyeContainer = styled.TouchableOpacity`
     position: absolute;
-    right: 7px;
-
-    height: 60%;
-    width: 30px;
-    align-items: center;
-    justify-content: center;
+    right: 0px;
+    margin-right: 12px;
 `
 
 export const RecoveryContainer = styled.View`

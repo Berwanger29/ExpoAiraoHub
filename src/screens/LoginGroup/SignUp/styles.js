@@ -25,12 +25,12 @@ export const FormContainer = styled.View`
 export const Input = styled.TextInput`
     background-color: ${(props) => props.theme.colors.light};
     color: ${(props) => props.theme.colors.darkGreen};
-    border: 1px solid ${props => props.theme.darkGreen};
+    border: 2px solid ${props => props.theme.colors.green};
+    border-radius: 8px;
     width: 100%;
     height: ${RFValue(50)}px;
     margin-bottom: 10px;
-    padding-left: 10px;
-    border-radius: 5px;
+    padding-left: 20px;
 `
 export const EyeInputContainer = styled.View`
     width: 100%;

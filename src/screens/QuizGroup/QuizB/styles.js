@@ -23,11 +23,6 @@ export const ButtonBackContainer = styled.View`
     left: 5px;
 `
 
-export const AnimationContainer = styled.View`
-    align-items: center;
-    background-color: green;
-`
-
 export const Main = styled.View`
     flex: 1;
 `

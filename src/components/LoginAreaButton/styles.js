@@ -3,7 +3,6 @@ import { RFValue } from 'react-native-responsive-fontsize'
 
 
 export const Container = styled.TouchableOpacity`
-
     margin-bottom: 10px;
 
     background-color: ${(props) => props.theme.colors.green};
@@ -13,6 +12,6 @@ export const Container = styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
 
-    border-radius: 5px;
+    border-radius: 8px;
     align-self: center;
 `

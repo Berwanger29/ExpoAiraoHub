@@ -24,7 +24,7 @@ import LoginAreaButton from '../../../components/LoginAreaButton'
 import InvisibleButton from '../../../components/InvisibleButton'
 import BackButton from '../../../components/BackButton'
 import Keyboard from '../../../components/KeyBoard'
-import { TextRegular } from '../../../components/Texts'
+import { TextRegular, TextThin } from '../../../components/Texts'
 
 import { Entypo, MaterialIcons, EvilIcons } from '@expo/vector-icons';
 
@@ -107,7 +107,7 @@ const SignUp = () => {
                             text='Crie uma conta com e-mail e senha.'
                         />
                         <Input
-                            placeholder='e-mail'
+                            placeholder='E-mail'
                             placeholderTextColor={theme.colors.darkGreen}
                             onChangeText={(e) => setEmail(e)}
                             returnKeyType='done'
@@ -116,7 +116,7 @@ const SignUp = () => {
                         />
                         <EyeInputContainer>
                             <Input
-                                placeholder='senha'
+                                placeholder='Senha'
                                 placeholderTextColor={theme.colors.darkGreen}
                                 onChangeText={(e) => setPassword(e)}
                                 returnKeyType='done'
@@ -129,7 +129,7 @@ const SignUp = () => {
                             </EyeContainer>
                         </EyeInputContainer>
                         <Input
-                            placeholder='confirme sua senha'
+                            placeholder='Confirme sua senha'
                             placeholderTextColor={theme.colors.darkGreen}
                             onChangeText={(e) => setConfirmPassword(e)}
                             returnKeyType='done'
@@ -152,7 +152,7 @@ const SignUp = () => {
                         <InvisibleButton
                             onPress={() => setModalVisible(true)}
                         >
-                            <TextRegular
+                            <TextThin
                                 text='Aceito os termos da política de privacidade'
                                 textDecoration='underline'
                             />

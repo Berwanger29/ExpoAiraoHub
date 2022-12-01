@@ -20,7 +20,6 @@ import Lottie from 'lottie-react-native';
 import theme from '../../../global/styles/theme'
 import duet from '../../../../assets/animations/duet.json'
 
-import { RFPercentage } from 'react-native-responsive-fontsize';
 import { StackActions, useNavigation } from '@react-navigation/native';
 import { QuizContext } from '../../../contexts/QuizContext';
 import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
@@ -81,9 +80,6 @@ const QuizC = () => {
                 style='auto'
             />
             <Header>
-                <ButtonBackContainer>
-                    <BackButton />
-                </ButtonBackContainer>
                 <Lottie
                     autoPlay
                     loop
@@ -92,10 +88,11 @@ const QuizC = () => {
                         height: '100%',
                     }}
                 />
-
+                <ButtonBackContainer>
+                    <BackButton />
+                </ButtonBackContainer>
             </Header>
             <Main>
-
                 <TextContainer>
                     <SpaceText>
                         <TextThin
