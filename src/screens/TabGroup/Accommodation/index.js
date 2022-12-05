@@ -12,17 +12,16 @@ import {
 import UserButton from '../../../components/UserButton'
 import UserButtonContainer from '../../../components/UserButtonContiner'
 import Card from '../../../components/_Screens/Accommodation/Card'
+import CardExternalPlatform from '../../../components/_Screens/Accommodation/CardExternalPlatform'
+import HeroContainer from '../../../components/HeroContainer'
+
 import { AntDesign } from '@expo/vector-icons';
+import { TextSubTitle } from '../../../components/Texts'
 
-
-import { RFValue } from 'react-native-responsive-fontsize';
+import theme from '../../../global/styles/theme'
 import data from '../../../../data'
 
 import { useNavigation } from '@react-navigation/native'
-import CardExternalPlatform from '../../../components/_Screens/Accommodation/CardExternalPlatform'
-import { TextSubTitle } from '../../../components/Texts'
-import theme from '../../../global/styles/theme'
-import HeroContainer from '../../../components/HeroContainer'
 
 const Accommodation = () => {
 
