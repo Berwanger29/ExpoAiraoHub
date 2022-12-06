@@ -811,10 +811,10 @@ export default [
         title: "Restaurante Sabor do Sul",
         content: {
             description: "É do gaúcho, mas o cardápio é de Novo Airão! Serviço à la carte e prato feito, com qualidade e um cardápio cheio de comidas típicas da região, como caldeirada de peixe, peixe à escabeche, frito, assado, galinha caipira, carnes, a tradicional carne na chapa dentre outros.",
-            image: require('./exceptionalImage/toEat/taberna.jpg'),
+            image: require('./exceptionalImage/toEat/saborDoSul.jpeg'),
             social: {
                 instagram: '',
-                facebook: '',
+                facebook: 'https://www.facebook.com/RestauranteSaborDoSul',
                 site: ''
             },
             contacts: "tel://+5592984794591",

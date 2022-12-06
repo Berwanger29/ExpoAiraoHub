@@ -16,6 +16,7 @@ import {
     Details,
     FilterOptions,
     FilterButton,
+    Scroll,
 } from './styles'
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
@@ -68,6 +69,7 @@ const Activities = () => {
     const [filter, setFilter] = useState('')
     const [isSelected, setIsSelected] = useState(false)
     const [categorieFiltered, setCategorieFiltered] = useState([])
+    const [categories, setCategories] = useState([])
     const [displayPrimary, setDisplayPrimary] = useState('flex')
     const [displaySecondary, setDisplaySecondary] = useState('none')
 
@@ -76,20 +78,23 @@ const Activities = () => {
         return item.type == 'tourism'
     })
 
-    let categories = data.filter((item) => {
-        if (item.type == 'tourism') {
-        }
-
-    })
-
-    let categoriesFiltered = categories.filter((item, index) => {
-        if (categories.indexOf(item) === index) {
-            console.log(item.categorie)
-            return item.categorie
-        }
+    let categoriesFiltered = activitiesData.filter((item, index) => {
+        return item.categorie
     });
+    const setFiltered = new Set(categoriesFiltered);
+    const arrFiltered = [...setFiltered];
 
+    function createArrOfCategories() {
+        let allCategories = []
+        categoriesFiltered.filter((item) => {
+            allCategories.push(item.categorie)
+            return item.categorie
+        })
+        const setUnico = new Set(allCategories);
+        const devoltaArray = [...setUnico];
 
+        setCategories(devoltaArray)
+    }
 
     function removeAcento(text) {
         text = text.toLowerCase();
@@ -120,6 +125,8 @@ const Activities = () => {
 
     function handleModal() {
         setModalVisible(!modalVisible)
+
+        createArrOfCategories()
     }
 
     function handleFilter(e) {
@@ -128,15 +135,13 @@ const Activities = () => {
         setIsSelected(true)
         setFilter(e)
 
+        console.log(e)
+
         let arrFilter = activitiesData.filter((item) => {
             if (item.categorie == e) {
                 return item
             }
         })
-
-        if (e) {
-
-        }
         setCategorieFiltered(arrFilter)
     }
 
@@ -250,39 +255,41 @@ const Activities = () => {
                             />
                         </Details>
                         <Line />
-                        <FilterOptions>
-                            <FilterButton
-                                onPress={() => {
-                                    setDisplayPrimary('flex')
-                                    setDisplaySecondary('none')
-                                    setFilter('')
-                                }}
-                                isSelected={filter == '' ? true : false}
-                            >
-                                <TextRegular
-                                    text='Todos'
-                                    color={filter === '' ? theme.colors.light : theme.colors.black}
-                                />
-                            </FilterButton>
-                            {
-                                categoriesFiltered.map((item) => (
-                                    <FilterButton
-                                        onPress={() => handleFilter(item.categorie)}
-                                        isSelected={isSelected && (item.categorie == filter) ? true : false}
-                                    >
-                                        <TextRegular
-                                            text={item.categorie}
-                                            color={isSelected && (item.categorie == filter) ? theme.colors.light : false}
-                                        />
-                                    </FilterButton>
-                                ))
-                            }
-                        </FilterOptions>
+                        <Scroll>
+                            <FilterOptions>
+                                <FilterButton
+                                    onPress={() => {
+                                        setDisplayPrimary('flex')
+                                        setDisplaySecondary('none')
+                                        setFilter('')
+                                    }}
+                                    isSelected={filter == '' ? true : false}
+                                >
+                                    <TextRegular
+                                        text='Todos'
+                                        color={filter === '' ? theme.colors.light : theme.colors.black}
+                                    />
+                                </FilterButton>
+                                {
+                                    categories.map((item) => (
+                                        <FilterButton
+                                            onPress={() => handleFilter(item)}
+                                            isSelected={isSelected && (item == filter) ? true : false}
+                                        >
+                                            <TextRegular
+                                                text={item}
+                                                color={isSelected && (item == filter) ? theme.colors.light : false}
+                                            />
+                                        </FilterButton>
+                                    ))
+                                }
+                            </FilterOptions>
+                        </Scroll>
                     </FilterContainer>
                 </ModalContiner>
             </Modal>
 
-        </Container>
+        </Container >
     )
 }
 

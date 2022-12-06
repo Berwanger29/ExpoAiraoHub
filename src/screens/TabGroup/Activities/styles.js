@@ -105,6 +105,9 @@ export const FilterOptions = styled.View`
     height: 100%;
     justify-content: space-around;
 `
+export const Scroll = styled.ScrollView`
+    
+`
 
 export const FilterButton = styled.TouchableOpacity`
     width: 110px;

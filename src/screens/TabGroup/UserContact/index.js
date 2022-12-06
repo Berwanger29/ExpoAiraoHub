@@ -32,11 +32,11 @@ const UserContact = () => {
                         <CardText>
                             <TextRegular
                                 format='justify'
-                                text='Inserir informações de contatos para identificação de melhorias no aplicativo ou sugestões. Email da secretaria. “ Para melhorias ou sugestões no aplicativo nos contactar no emailXXXXXx”'
+                                text='Para melhorias ou sugestões no aplicativo, deixe seu feedback clicando no botão abaixo para nos enviar um e-mail.'
                             />
                         </CardText>
                         <LinkButton
-                            label='Enviar e-mail'
+                            label='Enviar e-mail' 
                             link={'mailto:seminturna15@gmail.com'}
                             type='mail'
                         />
