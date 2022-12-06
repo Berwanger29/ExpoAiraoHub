@@ -1534,7 +1534,7 @@ export default [
     {
         type: "tourism",
         id: 7014,
-        categorie: "park",
+        categorie: "parque",
         title: "Praias de Anavilhanas",
         content: {
             description: "Geralmente ocorre de Setembro a Fevereiro . No Parque Nacional de Anavilhanas, durante a seca, emergem praias na Orla de Novo Airão e ao longo das margens do rio Negro e ilhas do arquipélago das Anavilhanas, onde o contraste das areias brancas com as águas negras do rio Negro criam cenários de incrível beleza. As praias mais visitadas são: praia da Orla, Aracari, Bararoá, Camaleão, Folharal/Canauirí, Iluminado, Meio, Sobrado e Tiririca. Com exceção da praia da Orla, acessível por terra, todas as outras somente são acessíveis pelo rio.",
@@ -1566,7 +1566,7 @@ export default [
     {
         type: "tourism",
         id: 7015,
-        categorie: "park",
+        categorie: "parque",
         title: "Trilhas aquáticas de igapó em Anavilhanas",
         content: {
             description: "Geralmente ocorre de Março a Agosto.São passeios embarcados que adentram as florestas de igapós, alagadas durante a cheia, também conhecidas como florestas encantadas. As trilhas aquáticas são permitidas em todo o arquipélago. Somente são acessíveis pelo rio, utilizando-se embarcações de pequeno porte. Ao longo dos anos há pequenas variações na duração do período da seca e da cheia. Geralmente as trilhas aquáticas de igapó são acessíveis a partir de abril.",
@@ -1598,7 +1598,7 @@ export default [
     // {
     //     type: "tourism",
     //     id: 7016,
-    //     categorie: "park",
+    //     categorie: "parque",
     //     title: "Trilhas terrestres em Anavilhanas",
     //     content: {
     //         description: "É possível percorrer trilhas na floresta de igapó, durante a seca, ou na floresta de terra firme, o ano todo. Nelas é possível conhecer e desfrutar de ecossistemas característicos do Bioma Amazônico. Deve-se sempre consultar previamente, além das regras, as condições de manejo antes de percorrê-las. As trilhas terrestres de igapó são encontradas no arquipélago das Anavilhanas: Andorinha e Miritipuca. São trilhas curtas e de fácil acesso e percurso, próximas à cidade de Novo Airão. As trilhas de terra firme abertas à visitação são: Trilha do Bariaú e Trilha do Apuaú (base 2 do ICMbio).",
@@ -1630,7 +1630,7 @@ export default [
     {
         type: "tourism",
         id: 7017,
-        categorie: "park",
+        categorie: "parque",
         title: "Observação de flora, fauna e paisagem em Anavilhanas ",
         content: {
             description: "Possível de ser apreciado em todos os passeios, diurnos, noturnos, embarcados e panorâmicos. Destacam-se as árvores de grande porte, como os macucus gigantes, e a rica avifauna. Passeios para birdwacthing também são disponibilizados por operadores especializados.",
@@ -1662,7 +1662,7 @@ export default [
     {
         type: "tourism",
         id: 7018,
-        categorie: "park",
+        categorie: "parque",
         title: "Parque Nacional do Jaú",
         content: {
             description: "O Parque Nacional do Jaú é uma unidade de conservação federal de 2.272.000 hectares de área, localizada entre os municípios de Novo Airão e Barcelos, no Baixo Rio Negro, Amazonas. Ele protege uma das maiores extensões de florestas tropicais úmidas contínuas do mundo. Destaca-se por ser o único parque do Brasil que protege praticamente a totalidade da bacia hidrográfica de um rio de águas pretas, o rio Jaú. Os seus limites são demarcados pela bacia hidrográfica do rio Jaú e estendem-se até as águas do rio Carabinani, ao sul, e as dos rios Unini e Paunini, ao norte. O rio Negro forma o limite leste do parque.",
@@ -1694,7 +1694,7 @@ export default [
     {
         type: "tourism",
         id: 7019,
-        categorie: "park",
+        categorie: "parque",
         title: "Árvores grandiosas do Jáu",
         content: {
             description: "O Parque Nacional do Jaú abriga árvores que testemunharam muitas histórias: Sumaúma (ou samaúma), macacarecuias, macucus gigantes",
@@ -1726,7 +1726,7 @@ export default [
     {
         type: "tourism",
         id: 7020,
-        categorie: "park",
+        categorie: "parque",
         title: "Rios Espelhados no Jaú",
         content: {
             description: "O Rio Jaú e seus afluentes, com águas negras, são atrativos à parte, encantando os visitantes com o espelhamento perfeito das paisagens compostas pela floresta e o céu incrivelmente azul, ou das estrelas à noite.",
@@ -1758,7 +1758,7 @@ export default [
     {
         type: "tourism",
         id: 7021,
-        categorie: "park",
+        categorie: "parque",
         title: "Praias do Rio Negro no Jaú",
         content: {
             description: "Durante a seca, várias praias surgem no Parque Nacional do Jaú, na área do Rio Negro, sendo a Praia da Maquipana a maior delas. Destaca-se também a Praia da Velha, do Boi e da Enseada. O contraste entre o negro da água e o branco da areia torna as praias uma das maravilhas do parque, que convidam os visitantes para banhar-se e relaxar em suas águas quentes",
@@ -1790,7 +1790,7 @@ export default [
     {
         type: "tourism",
         id: 7022,
-        categorie: "park",
+        categorie: "parque",
         title: "Banho e contemplação da natureza nos Rios Carabinani e Jaú",
         content: {
             description: "O Rio Carabinani é o atrativo mais visitado do Parque Nacional do Jaú e sua beleza justifica a procura. Durante a seca, são formadas corredeiras e pequenas cachoeiras de grande beleza cênica, propícias para a contemplação da natureza, banho, meditação, esportes aquáticos, dentre outras atividades. A cachoeira do Rio Jaú também oferece essas possibilidades ao visitante, estando a uma distância um pouco maior.",
@@ -1822,7 +1822,7 @@ export default [
     // {
     //     type: "tourism",
     //     id: 7023,
-    //     categorie: "park",
+    //     categorie: "parque",
     //     title: "Canoagem e outras atividades esportivas em águas no Jaú ",
     //     content: {
     //         description: "Os rios Carabinani e Jaú, com suas corredeiras, apresentam grande beleza cênica e a possibilidade de realização de atividades esportivas, como canoagem, boia-cross e rafting. Esse último mais com objetivo contemplativo que de aventura, já que somente uma das corredeiras, a Guariba, apresentam grau de dificuldade maior. Então o operador deverá ter a estrutura de apoio e segurança para atuaçao na área",
@@ -1854,7 +1854,7 @@ export default [
     {
         type: "tourism",
         id: 7024,
-        categorie: "park",
+        categorie: "parque",
         title: "Trilhas Terrestres no Jaú",
         content: {
             description: "De trilhas curtas a longo curso é possível adentrar a floresta amazônica e apreciar a beleza de cada detalhe, na ansiedade de avistar animais, encontrar árvores gigantes e de mergulhar nas águas de pequenas cachoeiras. O parque possui um sistema de trilhas que busca atender as expectativas dos diferentes perfis de visitantes. Esse sistema integra o Caminho do Rio Negro, que está em estruturação para ligar as unidades de conservação do Baixo Rio Negro.",
@@ -1886,7 +1886,7 @@ export default [
     {
         type: "tourism",
         id: 7025,
-        categorie: "park",
+        categorie: "parque",
         title: "Trilha do Itaubal no Jaú ",
         content: {
             description: "A mais procurada, com 3,5 km de extensão em formato circular, oferecendo como experiência um contato íntimo com a natureza, com possibilidade de avistamento de diversas espécies da flora e da fauna nativa e banho na cachoeira do Itaubal.",
@@ -1918,7 +1918,7 @@ export default [
     {
         type: "tourism",
         id: 7026,
-        categorie: "park",
+        categorie: "parque",
         title: "Trilha do Pesquisador no Jaú",
         content: {
             description: "Com extensão de 5 km em formato linear, passa por ambientes como a mata alagada de igapó, capoeira, mata de terra firme, campinarana alta e baixa e campina, com grande potencial para observação de aves.",
@@ -1950,7 +1950,7 @@ export default [
     {
         type: "tourism",
         id: 7027,
-        categorie: "park",
+        categorie: "parque",
         title: "Trilha dos Igapós do Carabinane no Jaú",
         content: {
             description: "Possui aproximadamente 3 km de extensão em formato linear, e em sua grande parte margeia o rio Carabinani, facilitando o acesso às corredeiras localizadas em áreas inacessíveis a embarcações.",
@@ -1982,7 +1982,7 @@ export default [
     // {
     //     type: "tourism",
     //     id: 7028,
-    //     categorie: "park",
+    //     categorie: "parque",
     //     title: "Trilhas da Sumaúma da Enseada e Sumaúmas da Base no Jaú",
     //     content: {
     //         description: "",
@@ -2014,7 +2014,7 @@ export default [
     {
         type: "tourism",
         id: 7029,
-        categorie: "park",
+        categorie: "parque",
         title: "Trilhas Aquáticas/Excursões de canoas",
         content: {
             description: "No período de cheia, as trilhas aquáticas são uma excelente oportunidade para o visitante percorrer de barco entre as árvores das ilhas inundadas do Rio Negro ou das margens do Rio Jaú. Destaca-se o Lago Santo Antônio, o Furo do Sabino, Igarapé do Gavião, Furo da Enseada, Igarapé Preto, que fica no entorno, mas com acesso pelo parque, e o Circuito Aquático da Cachoeira do Jaú, onde é possível o avistamento de grupos de macacos bicós (uacari, cacajao malanocephalus) e outras espécies nativas.",
@@ -2046,7 +2046,7 @@ export default [
     {
         type: "tourism",
         id: 7030,
-        categorie: "park",
+        categorie: "parque",
         title: "Observações de Aves no Jaú",
         content: {
             description: "A observação de aves é um segmento do turismo que tem bastante espaço no Parque Nacional do Jaú, podendo ser realizado nas trilhas terrestres, aquáticas, ilhas e praias. O inventário da avifauna do parque catalogou a presença de 445 espécies, sendo que esse número deve ser maior, pois os estudos se concentraram em algumas áreas da unidade. A heterogeneidade de hábitats encontrados no parque, que incluem matas de terra firme, matas de igapó, campinaranas, entre outros, explica em parte a alta diversidade de espécies de aves. Trilhas, como a do Pesquisador, tem um potencial grande para a atividade, com seus diferentes ambientes, indo de mata de igapó à campina.",
@@ -2078,7 +2078,7 @@ export default [
     {
         type: "tourism",
         id: 7031,
-        categorie: "park",
+        categorie: "parque",
         title: "Observações dos Petróglifos",
         content: {
             description: "O Parna do Jaú possui um rico patrimônio arqueológico, principalmente nas proximidades da boca do Rio Jaú, tanto no Rio Jaú como no Negro. Também é possível encontrar uma área com vários registros no entorno imediato do parque. A observação dos Petróglifos é uma atividade sazonal, na época da seca, com acessibilidade somente via fluvial com canoas. Por ser um patrimônio frágil, os visitantes devem tomar cuidado para não bater com as embarcações nas gravuras nem as tocar. É possível percorrer os sítios de petróglifos numa trilha aquática de 31 km, passando ainda por áreas de praias e no meio de ilhas.",
@@ -2110,7 +2110,7 @@ export default [
     {
         type: "tourism",
         id: 7032,
-        categorie: "park",
+        categorie: "parque",
         title: "Grutas do Madadá e Pedra Sanduíche no Rio Negro",
         content: {
             description: "Este passeio dura cerca de 1 hora e meia de ida navegando pelo Parque Nacional de Anavilhanas. O ideal é fazer este passeio combinado com o passeio até Airão Velho, no caminho contempla-se algumas formações rochosas, com destaque para a Pedra Sanduiche. Localizado na margem esquerda do rio Negro, a 40 km do Município de Novo Airão, localiza-se no caminho de acesso para o Parque Nacional do Jaú. Essas formações rochosas são próximas ao outro atrativo que são as Grutas do Madadá. Realiza-se uma caminhada de cerca de 50 min, já a “Pedra Sanduíche” encontra-se junto às margens do rio Negro, outros atrativos nas proximidades são: trilhas e igarapés com corredeiras",
@@ -2142,7 +2142,7 @@ export default [
     {
         type: "tourism",
         id: 7033,
-        categorie: "park",
+        categorie: "parque",
         title: "Ruínas de Airão Velho ",
         content: {
             description: "O principal atrativo turístico do Parque Estadual do Rio Negro - Setor Norte são as ruínas de Airão Velho: Foi uma das vilas mais importantes no médio Rio Negro desde a época dos colonizadores portugueses até a Segunda Guerra Mundial. Airão concentrava toda a produção de borracha do alto rio Negro, do rio Jaú e seus afluentes e do rio Branco, trazendo a produção de vilarejos próximos à Boa Vista (Roraima). Após alguns acontecimentos a cidade foi abandonada, hoje sendo chamada de Airão Velho.",
