@@ -2,14 +2,14 @@
   "expo": {
     "name": "AiraoHub",
     "slug": "ExpoAiraoHub",
-    "version": "2.0.3",
+    "version": "2.0.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#fafafa"
+      "backgroundColor": "#81A683"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -26,7 +26,7 @@
         "backgroundColor": "#fafafa"
       },
       "package": "com.berwanger29.AiraoHub",
-      "versionCode": 5,
+      "versionCode": 7,
       "permissions": [],
       "blockedPermissions": [
         "android.permissions.ACCESS_FINE_LOCATION",

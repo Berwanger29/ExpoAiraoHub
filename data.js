@@ -825,33 +825,33 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    {
-        type: "toEat",
-        id: 5026,
-        title: "Restaurante Sabor Na Brasa",
-        content: {
-            description: "Restaurante com atendimento de self-service e delivery. Cardápio variado com assados, fritos, guisados, com opções em carne, peixe, frango, fígado e outros.",
-            image: require('./exceptionalImage/toEat/taberna.jpg'),
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "tel://+55",
-            address: "",
-            addressLink: 'https://goo.gl/maps/a471TmGpqSPxAgLa6',
-            type: [""],
-            offering: [],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "toEat",
+    //     id: 5026,
+    //     title: "Restaurante Sabor Na Brasa",
+    //     content: {
+    //         description: "Restaurante com atendimento de self-service e delivery. Cardápio variado com assados, fritos, guisados, com opções em carne, peixe, frango, fígado e outros.",
+    //         image: require('./exceptionalImage/toEat/taberna.jpg'),
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+55",
+    //         address: "",
+    //         addressLink: 'https://goo.gl/maps/a471TmGpqSPxAgLa6',
+    //         type: [""],
+    //         offering: [],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "toEat",
         id: 5027,
         title: "Saloon Ajuricaba Bar do Alex",
         content: {
             description: "Bar e Restaurante com ambiente rústico e sofisticado, dispõe aos nossos clientes uma culinária diferenciada e única na cidade, um serviço de bar com bebidas do simples ao requintado. Fazemos reservas para eventos e comemorações particulares.",
-            image: require('./exceptionalImage/toEat/taberna.jpg'),
+            image: require('./exceptionalImage/toEat/alex.png'),
             social: {
                 instagram: 'https://www.instagram.com/alex.saloonajuricaba/',
                 facebook: '',
@@ -1237,40 +1237,40 @@ export default [
     //         profile: ["adventure", "soft", "calm"]
     //     },
     // },
-    // {
-    //     type: "tourism",
-    //     id: 7001,
-    //     categorie: "arborismo",
-    //     title: "Arborismo",
-    //     content: {
-    //         title: "Arborismo",
-    //         description: "O arborismo é uma experiência de aventura ao ar livre inigualável. Cheia de adrenalina, leva as pessoas para fora da sua zona de conforto e é uma ótima atividade outdoor para pequenos e grandes aventureiros.",
-    //         image: require("./exceptionalImage/adventure/arborismo.jpg"),
-    //         contacts: "92912345678",
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         infoActivities: {
-    //             local: ["Estrada"],
-    //             activities: {
-    //                 height: 27,
-    //                 distance: 1970,
-    //                 duration: 180,
-    //                 effort: "Difícil"
-    //             },
-    //             contactList: [
-    //                 { name: 'Pessoa 1', link: 'tel://+5592912345678' },
-    //                 { name: 'Tauá tour', link: '11000' },
-    //             ],
-    //         },
-    //         address: "Rua Antenor Carlos Francisco",
-    //         type: "pessoa",
-    //         offering: [],
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
+    {
+        type: "tourism",
+        id: 7001,
+        categorie: "arborismo",
+        title: "Arborismo",
+        content: {
+            title: "Arborismo",
+            description: "Subida em árvore gigante de mais de 20m com equipamentos de rapel e com toda segurança Grupos de 4 pessoas com atuação nos finais de semana. Incluso rádios comunicadores, refeição tipo lanche, água mineral",
+            image: require("./exceptionalImage/adventure/arborismo.jpg"),
+            contacts: "92912345678",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ["Estrada"],
+                activities: {
+                    height: 20,
+                    distance: 0,
+                    duration: 120,
+                    effort: "Difícil"
+                },
+                contactList: [
+                    { name: 'Sandventure', link: '11007' },
+                    { name: 'Tauá tour', link: '11000' },
+                ],
+            },
+            address: "Rua Antenor Carlos Francisco",
+            type: "pessoa",
+            offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
     {
         type: "tourism",
         id: 7007,
@@ -2171,6 +2171,71 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
+    {
+        type: "tourism",
+        id: 7034,
+        categorie: "aventura",
+        title: "Travessia Por do Sol Bike Aquática em Anavilhanas",
+        content: {
+            description: "Saída de Bike Aquática no Rio Negro em direção a subida do Rio Negro para visualização do por do sol, passando pela frente da cidade de Novo Airão, conhecendo a história da cidade, parte da natureza existente na região como as grandes árvores como a Macucu gigante ( usada para arborismo na região).",
+            image: require("./exceptionalImage/tour/bikeAquaticaSunset.png"),
+            contacts: "",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ['Anavilhanas'],
+                activities: {
+                    height: 0,
+                    distance: 3000,
+                    duration: 120,
+                    effort: "Médio"
+                },
+                contactList: [
+                    { name: 'Sandventure', link: '11007' }
+                ],
+            },
+            offering: [""],
+            address: "",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "tourism",
+        id: 7035,
+        categorie: "aventura",
+        title: "Aurora no Rio Negro de Stand Up Paddle ( nascer do sol)",
+        content: {
+            description: "Saída  de pranchas de Stand UP Paddle para principiantes ( mais largas e mais estáveis) no Rio Negro em direção a descida do do Rio Negro para visualização do nascer do sol, passando pelo meio do Rio Negro na correnteza onde habita alguns botos rosas em com a possibilidade de ser presenteado com imagens lindissimas e paz plena em meio ao Rio Negro.",
+            image: require("./exceptionalImage/tour/bikeAquatica.jpg"),
+            contacts: "",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            infoActivities: {
+                local: ['Anavilhanas'],
+                activities: {
+                    height: 0,
+                    distance: 0,
+                    duration: 120,
+                    effort: "Médio"
+                },
+                contactList: [
+                    { name: 'Sandventure', link: '11007' }
+                ],
+            },
+            offering: [""],
+            address: "",
+            addressLink: "",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+
 
 
 
@@ -2374,7 +2439,7 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7000' },
+                    { name: 'Arborismo', link: '7001' },
                 ],
             },
             offering: ["passeios de canoa", "trilhas", "safaris fotografia"],
@@ -2423,7 +2488,7 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7000' },
+                    { name: 'Arborismo', link: '7001' },
                 ],
             },
             offering: ["Trilha", "Grutas do Madadá", "Airão Velho", "Focagem noturna", "Observação de pássaros", "pesca esportiva", "Jaú", "Anavilhanas"],
@@ -2447,7 +2512,7 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Comunidade do Miriuba', link: '7012' },
+                    { name: 'Comunidade do Mirituba', link: '7012' },
                 ],
             },
             offering: ["Observação de aves", " Focagem noturna", "Trilhas aquáticas", "Trilhas terrestres", "Visitas às comunidades", "Acampamento em barraca", "Banho em praia"],
@@ -2471,7 +2536,7 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7000' },
+                    { name: 'Arborismo', link: '7001' },
                 ],
             },
             offering: ["Trilhas aquáticas", "Árvore gigante", "Comunidades do Tiririca", "Comunidades do Santo Antônio", "Grutas do Madadá", "Airão vVelho"],
@@ -2495,7 +2560,7 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7000' },
+                    { name: 'Arborismo', link: '7001' },
                 ],
             },
             offering: ["Passeios na Anavilhanas e Jaú"],
@@ -2519,7 +2584,7 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7000' },
+                    { name: 'Arborismo', link: '7001' },
                 ],
             },
             offering: ["Serviços de Transporte e Agenciamento de ecoturismo nos Parques Nacionais de Anavilhanas e Jaú."],
@@ -2543,7 +2608,9 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7000' },
+                    { name: 'Arborismo', link: '7001' },
+                    { name: 'Bike aquatica', link: '7034' },
+                    { name: 'Aurora do Rio Negro SUP', link: '7035' },
                 ],
             },
             offering: ["Criação de grupo de atividades de turismo de aventura e ecoturismo para familias e amigos."],
@@ -2552,6 +2619,19 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
         type: "public",
         id: 12000,

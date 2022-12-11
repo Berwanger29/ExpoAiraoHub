@@ -101,7 +101,7 @@ const ItemSelected = ({ route }) => {
                                         {itemData.content.description}
                                     </MainText>
                                     {
-                                        itemData.categorie == 'park' ?
+                                        itemData.categorie == 'parque' ?
                                             (
                                                 <>
                                                     <FontButton
