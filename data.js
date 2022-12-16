@@ -370,7 +370,7 @@ export default [
         id: 5002,
         title: "Espetos do Rafinha",
         content: {
-            description: "Churrasquinhos variados para degustar no fim da tarde, junto com os amigos e o melhor atendimento.",
+            description: "Churrasquinhos variados para degustar no fim da tarde, com os amigos e o melhor atendimento.",
             image: require('./exceptionalImage/toEat/espetosDoRafinha.png'),
             social: {
                 instagram: '',
@@ -410,7 +410,7 @@ export default [
         id: 5004,
         title: "Café da Preta",
         content: {
-            description: "Funcionamos de terça-feira à domingo, com o melhor café regional da Cidade.",
+            description: "Funcionamos de terça-feira a domingo, com o melhor café regional da Cidade.",
             image: require('./exceptionalImage/toEat/cafeDaPreta.jpeg'),
             social: {
                 instagram: 'https://www.instagram.com/caferegionaldapreta/',
@@ -430,7 +430,7 @@ export default [
         id: 5006,
         title: "Flor do luar Peixaria",
         content: {
-            description: "Restaurante Flutuante. Servimos variedade de peixes e carnes, bebidas diversas, drinks regionais e petiscos deliciosos. Dispomos de espaço para banho no Rio Negro, proporcionando à sua família uma tarde de lazer no paraiso que é a natureza.",
+            description: "Restaurante Flutuante. Servimos variedade de peixes e carnes, bebidas diversas, drinks regionais e petiscos deliciosos. Dispomos de espaço para banho no Rio Negro, proporcionando à sua família uma tarde de lazer no paraíso que é a natureza.",
             image: require('./exceptionalImage/toEat/florDoLuar.png'),
             social: {
                 instagram: 'https://www.instagram.com/flutuanteflordoluar/',
@@ -470,7 +470,7 @@ export default [
         id: 5008,
         title: "Maranata restaurante",
         content: {
-            description: "EUma experiência de comida regional inesquecível, na Comunidade Sobrado, coração da natureza. A aventura começa na sua escolha.",
+            description: "Uma experiência de comida regional inesquecível, na Comunidade Sobrado, coração da natureza. A aventura começa na sua escolha.",
             image: require('./exceptionalImage/toEat/maranata.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/maranata.restaurante0/',
@@ -485,46 +485,6 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    // {
-    //     type: "toEat",
-    //     id: 5009,
-    //     title: "Pastel do Paulo Cintura",
-    //     content: {
-    //         description: "Nosso estabelecimento fica localizado na Praça Municipal, ambiente ventilado e bem acolhedor, temos uma equipe de excelência com bom atendimento !",
-    //         image: require('./exceptionalImage/toEat/pastelDoPauloCintura.jpeg'),
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "tel://+5592991555552",
-    //         address: "",
-    //         addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
-    //         type: ["Lanchonete"],
-    //         offering: [],
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
-    // {
-    //     type: "toEat",
-    //     id: 5010,
-    //     title: "Pizzaria e Boteco do Lucas",
-    //     content: {
-    //         description: "Nosso espaço é o melhor lugar pra assistir jogo de futebol em algumas ocasiões com 2 TVs. Cerveja bem gelada e várias marcas de cerveja e vários petiscos.",
-    //         image: require('./exceptionalImage/toEat/pizzariaEBotecoDoLucas.jpg'),
-    //         social: {
-    //             instagram: 'https://www.instagram.com/pizzaria_e_boteco_do_lucas/',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "tel://+5592992330843",
-    //         address: "Rua ademar de barros",
-    //         addressLink: 'https://goo.gl/maps/REvfYTo876MTFub48',
-    //         type: ["Lanchonete", "Bar"],
-    //         offering: ["Internet"],
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
     {
         type: "toEat",
         id: 5011,
@@ -910,7 +870,7 @@ export default [
         id: 5030,
         title: "Nosso café",
         content: {
-            description: "Funcionamos pela manhã, tarde e durante a noite. Servimos  café regioanl, lanches e refeições",
+            description: "Funcionamos pela manhã, tarde e durante a noite. Servimos  café regional, lanches e refeições",
             image: require('./exceptionalImage/toEat/nossoCafe.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/nossocafe5/',
@@ -922,6 +882,26 @@ export default [
             addressLink: 'https://goo.gl/maps/cE4URLZz7FuJrUA5A',
             type: [""],
             offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5031,
+        title: "Flutuante awa",
+        content: {
+            description: "Somos um flutuante bar a perto de Novo Airão. Aqui você pode trazer seus amigos e aproveitar um lindo pôr do sol no meio do rio.Oferecemos comidas regionais e também presamos pela sua segurança.",
+            image: require('./exceptionalImage/toEat/flutuanteAwa.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/flutuanteawa/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592986451231",
+            address: "",
+            addressLink: '',
+            type: [""],
+            offering: ["Flutuante"],
             profile: ["adventure", "soft", "calm"]
         },
     },

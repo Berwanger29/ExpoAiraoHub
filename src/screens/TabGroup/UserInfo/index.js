@@ -10,6 +10,7 @@ import {
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { TextRegular, TextSubTitle } from '../../../components/Texts'
 import BackgroundImage from '../../../components/BackgroundImage'
+import CardText from '../../../components/_Screens/User/CardText'
 
 
 const UserInfo = () => {
@@ -60,10 +61,11 @@ const UserInfo = () => {
                     />
                 </Header>
                 <Main>
-                    <TextRegular
-                        text={`Você tem um perfil: ${infoProfile}`}
-                    />
-
+                    <CardText>
+                        <TextRegular
+                            text={`Você tem um perfil: ${infoProfile}`}
+                        />
+                    </CardText>
                 </Main>
             </Container>
         </BackgroundImage>

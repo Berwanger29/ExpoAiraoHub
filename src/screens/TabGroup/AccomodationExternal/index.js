@@ -11,6 +11,7 @@ import {
 } from "./styles"
 
 import BackgroundImage from '../../../components/BackgroundImage'
+import CardText from "../../../components/_Screens/User/CardText";
 import BackButton from "../../../components/BackButton"
 import * as Linking from 'expo-linking'
 import { TextRegular, TextSubTitle } from "../../../components/Texts"
@@ -37,10 +38,12 @@ const AccomodationExternal = () => {
                 </Header>
                 <Main>
                     <TextContainer>
-                        <TextRegular
-                            text='As casas de temporada em Novo Airão estão disponíveis por meio de plataformas especializadas neste tipo de serviço.'
-                            format='justify'
-                        />
+                        <CardText>
+                            <TextRegular
+                                text='As casas de temporada em Novo Airão estão disponíveis por meio de plataformas especializadas neste tipo de serviço.'
+                                format='justify'
+                            />
+                        </CardText>
                     </TextContainer>
                     <IconsContainer>
                         <IconButton
