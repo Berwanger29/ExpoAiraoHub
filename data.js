@@ -905,6 +905,26 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
+    {
+        type: "toEat",
+        id: 5032,
+        title: "Aritú passeios & Drinks",
+        content: {
+            description: "É uma embarcação em formato plataforma que proporciona aos passageiros o conforto de um flutuante e o prazer de navegar por lugares paradisíacos. Equipada com um motor 40HP, a Aritú oferece navegabilidade de até 8km/h, o suficiente para um passeio agradável e relaxante. Possuímos a bordo uma pequena cozinha, chuveiro, espaço de convivência, energia elétrica e sistema de som. Vai um Drink Aí? Já imaginou experimentar drinks incríveis enquanto navega por um lugar paradisíaco?",
+            image: require('./exceptionalImage/toEat/aritu.png'),
+            social: {
+                instagram: 'https://www.instagram.com/aritufloat/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984351033",
+            address: "",
+            addressLink: '',
+            type: [""],
+            offering: ["Flutuante", "12 passageiros", "8 km/h"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
 
 
 
@@ -1181,6 +1201,28 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
+    {
+        type: "hotels",
+        id: 6014,
+        title: "Pousada e Piscicultura Anavilhanas",
+        content: {
+            description: "Venha participar desse momento único pesque e pague: Piscicultura Anavilhanas, sua área possui lago particular que possibilita pescar pirarucu e Matrinxã, com infraestrutura dotada de 06 chalés com conforto e qualidade. Temos a melhor gastronomia, galinha caipira, peixes regionais e peixes vivos a pronta entrega",
+            image: require('./exceptionalImage/hotels/psiculturaAnavilhanas.png'),
+            contacts: "tel://+5592984055269",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            offering: [],
+            address: "",
+            addressLink: "https://goo.gl/maps/qh4MJCYxyE2Amrde6",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+
+
+
 
     //Tourism
     // {
