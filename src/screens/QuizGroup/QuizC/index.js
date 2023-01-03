@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import {
     Container,
     Header,
@@ -25,7 +25,31 @@ import { QuizContext } from '../../../contexts/QuizContext';
 import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
 import { TextRegular, TextThin } from '../../../components/Texts';
 
+
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
+
+
 const QuizC = () => {
+
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+    useEffect(() => {
+        handleLanguage()
+    }, [])
+
 
     const navigation = useNavigation()
 
@@ -96,27 +120,27 @@ const QuizC = () => {
                 <TextContainer>
                     <SpaceText>
                         <TextThin
-                            text='Questão 3 de 3'
+                            text={language.quiz.C.count}
                         />
                     </SpaceText>
                     <TextRegular
-                        text='Última pergunta, qual estilo de música você prefere ?'
+                        text={language.quiz.C.text}
                     />
                 </TextContainer>
 
                 <ButtonsContainer>
                     <SelectButton
-                        text="Rock"
+                        text={language.quiz.C.q1}
                         onPress={() => handleSelected(30)}
                         changeColor={changeColorA}
                     />
                     <SelectButton
-                        text="Nacionais"
+                        text={language.quiz.C.q2}
                         onPress={() => handleSelected(20)}
                         changeColor={changeColorB}
                     />
                     <SelectButton
-                        text="Silêncio"
+                        text={language.quiz.C.q3}
                         onPress={() => handleSelected(10)}
                         changeColor={changeColorC}
                     />

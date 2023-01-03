@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Alert } from 'react-native'
+
+
 
 import {
     BackButtonContainer,
@@ -33,8 +35,28 @@ import theme from '../../../global/styles/theme'
 import { privacyText } from '../../../../privacyPolicy'
 import Logo from '../../../components/Logo'
 
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
 
 const SignUp = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('en')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+
+    useEffect(() => {
+        handleLanguage()
+    }, [])
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -43,6 +65,7 @@ const SignUp = () => {
     const [iconEyeName, setIconEyeName] = useState('eye-with-line')
     const [confirmationPrivacy, setConfirmationPrivacy] = useState(false)
     const [modalVisible, setModalVisible] = useState(false);
+
 
 
     function handleSignUp() {
@@ -104,10 +127,10 @@ const SignUp = () => {
                     </BackButtonContainer>
                     <FormContainer>
                         <TextRegular
-                            text='Crie uma conta com e-mail e senha.'
+                            text={language.signIn.createAccount}
                         />
                         <Input
-                            placeholder='E-mail'
+                            placeholder={language.signIn.email}
                             placeholderTextColor={theme.colors.darkGreen}
                             onChangeText={(e) => setEmail(e)}
                             returnKeyType='done'
@@ -116,7 +139,7 @@ const SignUp = () => {
                         />
                         <EyeInputContainer>
                             <Input
-                                placeholder='Senha'
+                                placeholder={language.signIn.password}
                                 placeholderTextColor={theme.colors.darkGreen}
                                 onChangeText={(e) => setPassword(e)}
                                 returnKeyType='done'
@@ -129,7 +152,7 @@ const SignUp = () => {
                             </EyeContainer>
                         </EyeInputContainer>
                         <Input
-                            placeholder='Confirme sua senha'
+                            placeholder={language.signIn.confirmPassword}
                             placeholderTextColor={theme.colors.darkGreen}
                             onChangeText={(e) => setConfirmPassword(e)}
                             returnKeyType='done'
@@ -138,7 +161,7 @@ const SignUp = () => {
                     </FormContainer>
                     <ButtonContainer>
                         <LoginAreaButton
-                            label='Criar conta'
+                            label={language.signIn.buttonCreate}
                             onPress={handleSignUp}
                         />
                     </ButtonContainer>
@@ -153,7 +176,7 @@ const SignUp = () => {
                             onPress={() => setModalVisible(true)}
                         >
                             <TextThin
-                                text='Aceito os termos da política de privacidade'
+                                text={language.signIn.acceptTerms}
                                 textDecoration='underline'
                             />
                         </InvisibleButton>

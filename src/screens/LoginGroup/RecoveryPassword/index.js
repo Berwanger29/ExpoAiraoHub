@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import {
     Container,
     Header,
@@ -18,8 +19,28 @@ import { Alert } from "react-native"
 import { TextRegular, TextSubTitle } from "../../../components/Texts"
 import theme from "../../../global/styles/theme"
 
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
 
 const RecoveryPassword = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('en')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+
+    useEffect(() => {
+        handleLanguage()
+    }, [])
 
     const [email, setResetEmail] = useState('')
 
@@ -46,7 +67,7 @@ const RecoveryPassword = () => {
                 <Header>
                     <TitleContainer>
                         <TextSubTitle
-                            text='Recuperar senha'
+                            text={language.recoverPassword.recover}
                         />
                     </TitleContainer>
                     <BackButtonContainer>
@@ -56,10 +77,10 @@ const RecoveryPassword = () => {
 
                 <FormContainer>
                     <TextRegular
-                        text='Digite o e-mail de recuperação de senha:'
+                        text={language.recoverPassword.text}
                     />
                     <Input
-                        placeholder='e-mail'
+                        placeholder={language.recoverPassword.email}
                         placeholderTextColor={theme.colors.darkGreen}
                         value={email}
                         onChangeText={(e) => setResetEmail(e)}
@@ -67,7 +88,7 @@ const RecoveryPassword = () => {
                 </FormContainer>
                 <ButtonContainer>
                     <LoginAreaButton
-                        label='Enviar email'
+                        label={language.recoverPassword.button}
                         onPress={handleResetEmail}
                     />
                 </ButtonContainer>

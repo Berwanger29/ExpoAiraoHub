@@ -15,9 +15,22 @@ export const Container = styled.View`
 `
 
 export const LabelContainer = styled.View`
+    flex-direction: row;
     align-self: flex-start;
+    justify-content: space-between;
     margin-bottom: 10px;
+    width: 100%;
 `
+export const ButtonLanguage = styled.TouchableOpacity`
+    padding: 5px;
+    background-color: ${(props) => props.theme.colors.light};
+    border: 1px solid ${(props) => props.theme.colors.green};
+    border-radius: 5px;
+`
+export const CountryFlag = styled.Text`
+
+`
+
 export const InputContainer = styled.View`
     width: 100%;
     height: 50%;

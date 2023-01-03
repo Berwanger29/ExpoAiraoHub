@@ -12,12 +12,13 @@ import {
     EyeContainer,
     EyeInputContainer,
     ImageContainer,
+    ButtonLanguage,
+    CountryFlag,
 } from './styles'
 
 import { auth } from '../../../../firebase'
-import theme from '../../../global/styles/theme'
-import { StackActions, useNavigation } from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { StackActions, useNavigation } from '@react-navigation/native';
 
 import LoginAreaButton from '../../../components/LoginAreaButton';
 import Keyboard from '../../../components/KeyBoard';
@@ -25,10 +26,20 @@ import { Entypo } from '@expo/vector-icons';
 
 import { TextRegular, TextSubTitle, TextThin } from '../../../components/Texts';
 import Logo from '../../../components/Logo';
-import LogoSVG from '../../../components/LogoSVG';
+import theme from '../../../global/styles/theme'
 
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
+import { selectLanguage } from '../../../utils/languageSelector';
 
 const Login = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
 
     const navigation = useNavigation()
 
@@ -37,6 +48,14 @@ const Login = () => {
     const [password, setPassword] = useState('')
     const [showPassword, setShowPassword] = useState(true)
     const [iconEyeName, setIconEyeName] = useState('eye-with-line')
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
 
     function autoLogin() {
         const unsubscribe = auth.onAuthStateChanged(user => {
@@ -64,7 +83,6 @@ const Login = () => {
         })
         return unsubscribe
     }
-
 
     function handleLogin() {
         auth.signInWithEmailAndPassword(email, password)
@@ -108,6 +126,7 @@ const Login = () => {
 
     useEffect(() => {
         autoLogin()
+        handleLanguage()
     }, [])
 
 
@@ -140,12 +159,20 @@ const Login = () => {
                                 <InputContainer>
                                     <LabelContainer>
                                         <TextSubTitle
-                                            text='Login'
+                                            text={language.login.login}
                                         />
+
+                                        <ButtonLanguage
+                                            onPress={() => handleLanguage()}
+                                        >
+                                            <CountryFlag>
+                                                BR
+                                            </CountryFlag>
+                                        </ButtonLanguage>
                                     </LabelContainer>
 
                                     <UserInput
-                                        placeholder='Email'
+                                        placeholder={language.login.email}
                                         placeholderTextColor={theme.colors.gray}
                                         onChangeText={(e) => setEmail(e)}
                                         keyboardType='email-address'
@@ -154,7 +181,7 @@ const Login = () => {
 
                                     <EyeInputContainer>
                                         <UserInput
-                                            placeholder='Senha'
+                                            placeholder={language.login.password}
                                             placeholderTextColor={theme.colors.gray}
                                             onChangeText={(e) => setPassword(e)}
                                             secureTextEntry={showPassword}
@@ -168,26 +195,26 @@ const Login = () => {
 
                                     <RecoveryContainer>
                                         <TextThin
-                                            text='É novo no aplicativo ?'
+                                            text={language.login.new}
                                         />
                                         <ButtonText
                                             onPress={() => moveToSignUp()}
                                         >
                                             <TextThin
                                                 color={theme.colors.green}
-                                                text=' Cadastre-se'
+                                                text={language.login.newContinue}
                                                 textDecoration='underline'
                                             />
                                         </ButtonText>
                                     </RecoveryContainer>
 
                                     <LoginAreaButton
-                                        label='Entrar'
+                                        label={language.login.button}
                                         onPress={() => handleLogin()}
                                     />
                                     <View style={{ marginBottom: 10 }}>
                                         <TextThin
-                                            text='ou'
+                                            text={language.login.or}
                                         />
                                     </View>
                                     <ButtonText
@@ -195,7 +222,7 @@ const Login = () => {
                                     >
                                         <TextRegular
                                             color={theme.colors.green}
-                                            text='Login anônimo'
+                                            text={language.login.anonimousLogin}
                                             textDecoration='underline'
                                         />
                                     </ButtonText>
@@ -203,14 +230,14 @@ const Login = () => {
 
                                 <SignUpContainer>
                                     <TextThin
-                                        text='Esqueceu sua senha ?'
+                                        text={language.login.forgot}
                                     />
                                     <ButtonText
                                         onPress={() => moveToRecovery()}
                                     >
                                         <TextThin
                                             color={theme.colors.green}
-                                            text=' Recuperar'
+                                            text={language.login.retrieve}
                                             textDecoration='underline'
                                         />
                                     </ButtonText>

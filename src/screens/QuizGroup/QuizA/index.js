@@ -20,10 +20,30 @@ import boating from '../../../../assets/animations/boating.json'
 
 
 import { useNavigation } from '@react-navigation/native';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { QuizContext } from '../../../contexts/QuizContext';
 
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
 const QuizA = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('en')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+
+    useEffect(() => {
+        handleLanguage()
+    }, [])
 
     const navigation = useNavigation()
     const { quizCount, setQuizCount } = useContext(QuizContext)
@@ -80,27 +100,27 @@ const QuizA = () => {
                 <TextContainer>
                     <SpaceText>
                         <TextThin
-                            text='Questão 1 de 3'
+                            text={language.quiz.A.count}
                         />
                     </SpaceText>
                     <TextRegular
-                        text='Qual das atividades abaixo você tem mais interesse ?'
+                        text={language.quiz.A.text}
                     />
                 </TextContainer>
 
                 <ButtonsContainer>
                     <SelectButton
-                        text="Caiaque"
+                        text={language.quiz.A.q1}
                         onPress={() => handleSelected(30)}
                         changeColor={changeColorA}
                     />
                     <SelectButton
-                        text="Passeio de barco"
+                        text={language.quiz.A.q2}
                         onPress={() => handleSelected(20)}
                         changeColor={changeColorB}
                     />
                     <SelectButton
-                        text="Passeio na praça"
+                        text={language.quiz.A.q3}
                         onPress={() => handleSelected(10)}
                         changeColor={changeColorC}
                     />
