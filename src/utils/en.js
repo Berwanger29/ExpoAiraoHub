@@ -2724,7 +2724,28 @@ export const labels = {
     map: {
 
     },
-    info: {
-
+    account: {
+        account: {
+            text: 'Account configurations'
+        },
+        profile: {
+            profile: 'Profile',
+            text: 'You have the following kind of profile :',
+            infoProfile_1: 'adventurous',
+            infoProfile_2: 'moderate',
+            infoProfile_3: 'normal'
+        },
+        privacy: {
+            privacy: 'Privacy'
+        },
+        contact: {
+            contact: 'Contact',
+            text: 'For improvements or suggestions, give us your feedback by clicking on the button below and sending us an email',
+            button: 'Send email'
+        },
+        about: {
+            about: 'About',
+            text:'This app was developed by the Municipal Secretary of Airão (SEMINTUR) with its intellectual rights belonging to itself. At the present time this app is on a trial run to the public and, therefore, may contain temporary flaws.'
+        }
     }
 }

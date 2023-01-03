@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import BackButton from "../../../components/BackButton";
 import {
     Container,
@@ -12,7 +13,28 @@ import BackgroundImage from "../../../components/BackgroundImage";
 import CardText from "../../../components/_Screens/User/CardText";
 import LinkButton from "../../../components/_Screens/Map/LinkButton";
 
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
+
 const UserContact = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+    useEffect(() => {
+        handleLanguage()
+    }, [])
+
     return (
         <BackgroundImage
             filter={1}
@@ -24,7 +46,7 @@ const UserContact = () => {
                 </ContainerBackButton>
                 <Header>
                     <TextSubTitle
-                        text='Contato'
+                        text={language.account.contact.contact}
                     />
                 </Header>
                 <Main>
@@ -32,11 +54,11 @@ const UserContact = () => {
                         <CardText>
                             <TextRegular
                                 format='justify'
-                                text='Para melhorias ou sugestões no aplicativo, deixe seu feedback clicando no botão abaixo para nos enviar um e-mail.'
+                                text={language.account.contact.text}
                             />
                         </CardText>
                         <LinkButton
-                            label='Enviar e-mail' 
+                            label={language.account.contact.button}
                             link={'mailto:seminturna15@gmail.com'}
                             type='mail'
                         />

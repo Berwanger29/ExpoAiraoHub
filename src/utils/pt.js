@@ -2724,7 +2724,28 @@ export const labels = {
     map: {
 
     },
-    info: {
-
+    account: {
+        account: {
+            text: 'Configuraçoes da conta'
+        },
+        profile: {
+            profile: 'Perfil',
+            text: 'Você tem um perfil :',
+            infoProfile_1: 'aventureiro',
+            infoProfile_2: 'moderado',
+            infoProfile_3: 'normal'
+        },
+        privacy: {
+            privacy: 'Privacidade',
+        },
+        contact: {
+            contact: 'Contato',
+            text: 'Para melhorias ou sugestões no aplicativo, deixe seu feedback clicando no botão abaixo para nos enviar um e-mail.',
+            button: 'Enviar e-mail'
+        },
+        about: {
+            about: 'Sobre',
+            text: 'Este aplicativo foi desenvolvido pela Secretaria Municipal de Infraestutura Empreendedorismo e Turismo de Novo Airão (SEMINTUR) com seus direitos inteclectuais pertencnetes à mesma. Atualmente este aplicativo encontra-se em fase de teste aberto ao público e portanto, é possível que sejam econtradas falhas neste momento de testes.'
+        }
     }
 }

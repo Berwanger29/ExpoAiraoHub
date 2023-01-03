@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
 import {
     Container,
@@ -24,8 +25,27 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextSubTitle } from '../../../components/Texts';
 import theme from '../../../global/styles/theme';
 
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
 
 const User = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+    useEffect(() => {
+        handleLanguage()
+    }, [])
 
     const navigation = useNavigation()
 
@@ -82,29 +102,29 @@ const User = () => {
                         />
                     </UserIcon>
                     <TextSubTitle
-                        text="Configurações da conta"
+                        text={language.account.account.text}
                         color={theme.colors.darkGreen}
                     />
                 </Header>
                 <Main>
                     <OptionsContainer>
                         <Options
-                            text='Perfil'
+                            text={language.account.profile.profile}
                             nameIcon="account-outline"
                             onPress={() => navigation.navigate('UserInfo')}
                         />
                         <Options
-                            text='Privacidade'
+                            text={language.account.privacy.privacy}
                             nameIcon='shield-account-outline'
                             onPress={() => navigation.navigate('UserPrivacy')}
                         />
                         <Options
-                            text='Contato'
+                            text={language.account.contact.contact}
                             nameIcon='email'
                             onPress={() => navigation.navigate('UserContact')}
                         />
                         <Options
-                            text='Sobre'
+                            text={language.account.about.about}
                             nameIcon='information-variant'
                             onPress={() => navigation.navigate('UserAbout')}
                         />
