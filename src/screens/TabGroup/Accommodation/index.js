@@ -23,11 +23,30 @@ import data from '../../../../data'
 
 import { useNavigation } from '@react-navigation/native'
 
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
 const Accommodation = () => {
+
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+    useEffect(() => {
+        handleLanguage()
+    }, [])
 
     const navigation = useNavigation()
 
-    const [hotel, setHotel] = useState('')
     const [input, setInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
     const [hotelsData, setHotelsData] = useState([])
@@ -91,7 +110,7 @@ const Accommodation = () => {
                 </UserButtonContainer>
                 <HeroContainer>
                     <TextSubTitle
-                        text='Hospedagem'
+                        text={language.accomodation.title}
                         color={theme.colors.darkGreen}
                     />
                 </HeroContainer>
@@ -101,7 +120,7 @@ const Accommodation = () => {
                     }}
                 >
                     <Input
-                        placeholder="Procure um local de hospedagem"
+                        placeholder={language.accomodation.search}
                         value={input}
                         onChangeText={(e) => setInput(e)}
                     />

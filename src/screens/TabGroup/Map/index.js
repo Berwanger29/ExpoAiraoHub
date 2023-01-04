@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import {
     ButtonsContainer,
     Container,
@@ -27,8 +27,28 @@ import _Bus from "../../../components/_Screens/Map/_Bus"
 import _Airplane from "../../../components/_Screens/Map/_Airplane"
 import _Boat from "../../../components/_Screens/Map/_Boat"
 
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
+
 
 const Map = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+    useEffect(() => {
+        handleLanguage()
+    }, [])
 
     const [isFocused, setIsFocused] = useState(true)
     const [name, setName] = useState('carro')
@@ -44,7 +64,7 @@ const Map = () => {
                     <UserButton />
                 </UserButtonContainer>
                 <TextSubTitle
-                    text='Como chegar'
+                    text={language.map.title}
                     color={theme.colors.darkGreen}
                 />
             </Header>

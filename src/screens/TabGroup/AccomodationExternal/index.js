@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
     Container,
     ContainerBackButton,
@@ -6,7 +7,6 @@ import {
     IconsContainer,
     ImageIcon,
     Main,
-    Scroll,
     TextContainer,
 } from "./styles"
 
@@ -18,7 +18,29 @@ import { TextRegular, TextSubTitle } from "../../../components/Texts"
 
 import theme from "../../../global/styles/theme"
 
+
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
+
+
 const AccomodationExternal = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+    useEffect(() => {
+        handleLanguage()
+    }, [])
+
     return (
         <BackgroundImage
             image={require('../../../../assets/images/plantBackground.jpg')}
@@ -32,7 +54,7 @@ const AccomodationExternal = () => {
                     </ContainerBackButton>
 
                     <TextSubTitle
-                        text='Casas de temporada'
+                        text={language.accomodation.casas.title}
                         color={theme.colors.darkGreen}
                     />
                 </Header>
@@ -40,7 +62,7 @@ const AccomodationExternal = () => {
                     <TextContainer>
                         <CardText>
                             <TextRegular
-                                text='As casas de temporada em Novo Airão estão disponíveis por meio de plataformas especializadas neste tipo de serviço.'
+                                text={language.accomodation.casas.text}
                                 format='justify'
                             />
                         </CardText>

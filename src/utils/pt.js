@@ -2713,16 +2713,47 @@ export const labels = {
         }
     },
     home: {
-
+        header: 'Olá',
+        search: 'Digite alguma coisa',
+        mais: 'veja mais',
+        artesanato: 'Artesanato',
+        agencia: 'Agência/Operador',
+        gastronomia: 'Gastronomia',
+        hospedagem: 'Hospedagem',
     },
     accomodation: {
-
+        title: 'Hospedagem',
+        search: 'Procure um local de hospedagem',
+        casas: {
+            title: 'Casas de temporada',
+            text: 'As casas de temporada em Novo Airão estão disponíveis por meio de plataformas especializadas neste tipo de serviço.'
+        }
     },
     activities: {
 
     },
     map: {
-
+        title: 'Como chegar',
+        ligar: 'Ligar',
+        mapa: 'Marcar destino',
+        meio: {
+            pessoal: {
+                title: 'Veículo pessoal',
+                text: 'Para chegar em Novo Airão é necessário pegar rodovia AM-070, que passa pela ponte do Rio Negro e após passar pelo banho do Miriti, entrar na primeira saída para a AM-352 e seguir até o final. A viagem tem uma duração média de duas horas e meia.'
+            },
+            taxi: {
+                title: 'Lotação',
+                text: 'É possível chegar em Novo Airão por meio de taxistas que realizam este trajeto. Para reservar uma vaga num carro, basta ligar clicando no bot"ao abaixo. Também é possível ir ao ponto dos taxistas perto da ponte marcando o destino clicando no botão "marcar destino".'
+            },
+            onibus: {
+                title: 'Ônibus',
+                text: 'Para chegar em Novo Airão por meio de ônibus, é necessário comprar um bilhete no terminal rodoviário de Manaus localizado na avenida Djalma Batista. A viagem de ônibus passa por Manacapuru e tem uma duração média de três horas e meia até chegar em Novo Airão.'
+            },
+            barco: {
+                title: 'Barco',
+                text: 'Para chegar em Novo Airão de barco, é necessário ir até o porto na rua Sagrado Coração de Jesus no bairro São Raimundo. A viagem começa à noite e a chegada em Novo Airão é no dia seguinte pela manhã.'
+            }
+        }
     },
     account: {
         account: {

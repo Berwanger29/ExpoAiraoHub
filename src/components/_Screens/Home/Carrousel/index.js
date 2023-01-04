@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import {
     Container,
     HorizontalView,
@@ -16,7 +17,27 @@ import { useNavigation } from '@react-navigation/native'
 import { TextSubTitle, TextThin } from "../../../Texts";
 import theme from "../../../../global/styles/theme";
 
+import * as pt from "../../../../utils/pt";
+import * as en from "../../../../utils/en";
+
+
 export const Carroussel = ({ title, data }) => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+    useEffect(() => {
+        handleLanguage()
+    }, [])
 
     const navigation = useNavigation()
 
@@ -38,7 +59,7 @@ export const Carroussel = ({ title, data }) => {
                     })}
                 >
                     <TextThin
-                        text='ver mais'
+                        text={language.home.mais}
                     />
                     <MaterialCommunityIcons name="arrow-right-thin" size={RFValue(18)} color="black" />
                 </NewListButton>

@@ -2713,16 +2713,47 @@ export const labels = {
         }
     },
     home: {
-
+        header: 'Hello',
+        mais: 'see more',
+        search: 'Say something',
+        artesanato: 'Handcraft',
+        agencia: 'Agency/Operator',
+        gastronomia: 'Gastronomy',
+        hospedagem: 'Lodging',
     },
     accomodation: {
-
+        title: 'Lodging',
+        search:'Search for a place to stay',
+        casas: {
+            title: 'Holiday homes',
+            text: 'The Holiday homes in Novo Airão are available through specialized platforms for this kind of service.'
+        }
     },
     activities: {
 
     },
     map: {
-
+        title: 'How to get there',
+        ligar: 'Call',
+        mapa: 'Set destination',
+        meio: {
+            pessoal: {
+                title: 'Personal vehicle',
+                text: "To get to Novo Airão, it's necessary to take the highway AM-070, that crosses the Negro River bridge and, after passing by Miriti's bathing area, take the first exit to AM-352 and go all the way. The trip takes about two hours and a half."
+            },
+            taxi: {
+                title: 'Commuter car',
+                text: "It's possible to get to Novo Airão by using taxi drivers that take this route. To reserve a spot in a car, just make a call by clicking on the button below. It's also possible to go to the nearest taxi drivers' station near the bridge setting the destination by clicking on the button 'set destination'"
+            },
+            onibus: {
+                title: 'Bus',
+                text: "To get to Novo Airão by bus, it's necessary to purchase a bus ticket in the Bus station of Manaus located in Djalma Batista Avenue. The bus trip passes by Manacapuru and it takes about three and a half hours until arriving in Novo Airão."
+            },
+            barco: {
+                title: 'Boat',
+                text: "To get to Novo Airão by boat, it's necessary to go to the harbor on Sagrado Coração de Jesus Street in São Raimundo district. The trip begins at night and the arrival in Novo Airão is in the following morning."
+            }
+        }
     },
     account: {
         account: {
@@ -2745,7 +2776,7 @@ export const labels = {
         },
         about: {
             about: 'About',
-            text:'This app was developed by the Municipal Secretary of Airão (SEMINTUR) with its intellectual rights belonging to itself. At the present time this app is on a trial run to the public and, therefore, may contain temporary flaws.'
+            text: 'This app was developed by the Municipal Secretary of Airão (SEMINTUR) with its intellectual rights belonging to itself. At the present time this app is on a trial run to the public and, therefore, may contain temporary flaws.'
         }
     }
 }

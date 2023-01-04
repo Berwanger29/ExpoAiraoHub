@@ -23,10 +23,28 @@ import { TextTitle } from '../../../components/Texts';
 import HeroContainer from '../../../components/HeroContainer';
 
 
+import * as pt from '../../../utils/pt'
+import * as en from '../../../utils/en'
 
 
 
 const Home = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+    useEffect(() => {
+        handleLanguage()
+    }, [])
 
     const [input, setInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
@@ -91,7 +109,7 @@ const Home = () => {
         setArrSearch(arr)
     }
 
-    useEffect(() => { 
+    useEffect(() => {
         getSearched(input)
     }, [input])
 
@@ -108,7 +126,7 @@ const Home = () => {
                 </UserButtonContainer>
                 <HeroContainer>
                     <TextTitle
-                        text='Olá'
+                        text={language.home.header}
                     />
                 </HeroContainer>
                 <SearchConatainer
@@ -117,7 +135,7 @@ const Home = () => {
                     }}
                 >
                     <Input
-                        placeholder="Digite alguma coisa"
+                        placeholder={language.home.search}
                         value={input}
                         onChangeText={(e) => setInput(e)}
                     />
@@ -136,22 +154,22 @@ const Home = () => {
                     >
 
                         <Carroussel
-                            title="Artesanato"
+                            title={language.home.artesanato}
                             data={craftsmanship}
                         />
 
                         <Carroussel
-                            title="Agência/Operador"
+                            title={language.home.agencia}
                             data={agenciesData}
                         />
 
                         <Carroussel
-                            title="Gastronomia"
+                            title={language.home.gastronomia}
                             data={toEatData}
                         />
 
                         <Carroussel
-                            title="Hospedagem"
+                            title={language.home.hospedagem}
                             data={hotelsData}
                         />
                     </CarrousselContainer>

@@ -1,31 +1,42 @@
-import * as Linking from 'expo-linking'
-
-import {
-    MapLinkContainer,
-    TextContent
-} from './styles'
-
+import { useState, useEffect } from "react";
 import TitleMap from "../TitleMap";
-import { Feather } from '@expo/vector-icons';
-import theme from '../../../../global/styles/theme';
+
 import { TextRegular } from '../../../Texts';
 import LinkButton from '../LinkButton';
 
+import * as pt from '../../../../utils/pt'
+import * as en from '../../../../utils/en'
 
 const _Car = () => {
+
+    const portuguese = pt.labels
+    const english = en.labels
+    const [selectedLanguage, setSelectedLanguage] = useState('pt')
+    const [language, setLanguage] = useState(portuguese)
+
+    function handleLanguage() {
+        if (selectedLanguage === 'pt') {
+            setLanguage(portuguese)
+        } else if (selectedLanguage === 'en') {
+            setLanguage(english)
+        }
+    }
+    useEffect(() => {
+        handleLanguage()
+    }, [])
 
     return (
         <>
             <TitleMap
-                title={'Veículo pessoal'}
+                title={language.map.meio.pessoal.title}
             />
 
             <TextRegular
-                text='Para chegar em Novo Airão é necessário pegar rodovia AM-070, que passa pela ponte do Rio Negro e após passar pelo banho do Miriti, entrar na primeira saída para a AM-352 e seguir até o final. A viagem tem uma duração média de duas horas e meia.'
+                text={language.map.meio.pessoal.text}
             />
 
             <LinkButton
-                label='Marcar destino'
+                label={language.map.mapa}
                 link={'https://goo.gl/maps/zUddL19ymU1gCYgf9'}
                 type='navigation-2'
             />
