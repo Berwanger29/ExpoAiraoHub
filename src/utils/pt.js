@@ -2730,7 +2730,14 @@ export const labels = {
         }
     },
     activities: {
-
+        title: 'O que fazer',
+        search: 'Procure uma atividade',
+        filter: {
+            title: 'Filtro',
+            button: 'Filtrar',
+            text: 'Escolha abaixo uma das opções de filtro',
+            preset:'Todos'
+        }
     },
     map: {
         title: 'Como chegar',

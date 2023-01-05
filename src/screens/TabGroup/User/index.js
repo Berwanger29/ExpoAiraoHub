@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useContext } from 'react';
 import { Alert } from 'react-native';
 import {
     Container,
@@ -25,27 +25,11 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { TextSubTitle } from '../../../components/Texts';
 import theme from '../../../global/styles/theme';
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
-
+import LanguageSelector from '../../../utils/LanguageSelector';
 
 const User = () => {
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('pt')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-    useEffect(() => {
-        handleLanguage()
-    }, [])
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
     const navigation = useNavigation()
 

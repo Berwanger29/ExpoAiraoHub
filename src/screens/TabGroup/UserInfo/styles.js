@@ -24,4 +24,17 @@ export const Main = styled.View`
     margin-top: 30px;
     flex: 0.83;
     width: 100%;
+
+`
+export const ButtonLanguage = styled.TouchableOpacity`
+    border-radius: 5px;
+    width: 40px;
+    height: 30px;
+
+    align-self: center;
+    margin-top: 30px;
+`
+export const CountryFlag = styled.Image`
+    width: 100%;
+    height: 100%;
 `

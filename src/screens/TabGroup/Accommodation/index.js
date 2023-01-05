@@ -23,27 +23,13 @@ import data from '../../../../data'
 
 import { useNavigation } from '@react-navigation/native'
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
+import { useContext } from "react";
+import LanguageSelector from "../../../utils/LanguageSelector"
 
 const Accommodation = () => {
 
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('pt')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-    useEffect(() => {
-        handleLanguage()
-    }, [])
 
     const navigation = useNavigation()
 
@@ -54,7 +40,6 @@ const Accommodation = () => {
     const accommodationData = data.filter((item) => {
         return item.type == 'hotels'
     })
-
 
     function navigateToSelected(id) {
         navigation.navigate('ItemSelected', {

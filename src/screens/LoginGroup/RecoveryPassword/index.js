@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useState } from "react"
 import {
     Container,
     Header,
@@ -10,7 +10,6 @@ import {
     ImageContainer
 } from "./styles"
 
-import { useState } from "react"
 import BackButton from "../../../components/BackButton"
 import LoginAreaButton from "../../../components/LoginAreaButton"
 
@@ -19,28 +18,12 @@ import { Alert } from "react-native"
 import { TextRegular, TextSubTitle } from "../../../components/Texts"
 import theme from "../../../global/styles/theme"
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
-
+import { useContext } from "react";
+import LanguageSelector from "../../../utils/LanguageSelector"
 
 const RecoveryPassword = () => {
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('en')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-
-    useEffect(() => {
-        handleLanguage()
-    }, [])
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
     const [email, setResetEmail] = useState('')
 

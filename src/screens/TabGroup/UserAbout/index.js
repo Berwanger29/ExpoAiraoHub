@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useContext } from "react";
 import BackButton from "../../../components/BackButton";
 import {
     Container,
@@ -12,27 +12,12 @@ import { TextRegular, TextSubTitle } from '../../../components/Texts'
 import BackgroundImage from "../../../components/BackgroundImage";
 import CardText from "../../../components/_Screens/User/CardText";
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
+import LanguageSelector from "../../../utils/LanguageSelector";
 
 const UserAbout = () => {
 
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('pt')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-    useEffect(() => {
-        handleLanguage()
-    }, [])
     return (
         <BackgroundImage
             filter={1}

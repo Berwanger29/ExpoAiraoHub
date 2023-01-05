@@ -10,6 +10,7 @@ import AuthProvider from './src/contexts/auth';
 import { LogBox } from 'react-native';
 import QuizProvider from './src/contexts/QuizContext';
 
+import { LanguageProvider } from "./src/utils/LanguageSelector";
 
 LogBox.ignoreAllLogs()
 
@@ -29,12 +30,14 @@ export default function App() {
   }
 
   return (
-    <AuthProvider>
-      <QuizProvider>
-        <ThemeProvider theme={theme}>
-          <Navigation />
-        </ThemeProvider>
-      </QuizProvider>
-    </AuthProvider>
+    <LanguageProvider>
+      <AuthProvider>
+        <QuizProvider>
+          <ThemeProvider theme={theme}>
+            <Navigation />
+          </ThemeProvider>
+        </QuizProvider>
+      </AuthProvider>
+    </LanguageProvider>
   );
 }

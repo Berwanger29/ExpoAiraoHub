@@ -28,18 +28,15 @@ import { TextRegular, TextSubTitle, TextThin } from '../../../components/Texts';
 import Logo from '../../../components/Logo';
 import theme from '../../../global/styles/theme'
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
+import { useContext } from "react";
+import LanguageSelector from "../../../utils/LanguageSelector"
 
-import { selectLanguage } from '../../../utils/languageSelector';
+
 
 const Login = () => {
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('pt')
-    const [language, setLanguage] = useState(portuguese)
-
+    const { portuguese, english, language, flag } = useContext(LanguageSelector);
+    const { handleLanguage } = useContext(LanguageSelector);
 
     const navigation = useNavigation()
 
@@ -49,13 +46,6 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(true)
     const [iconEyeName, setIconEyeName] = useState('eye-with-line')
 
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
 
     function autoLogin() {
         const unsubscribe = auth.onAuthStateChanged(user => {
@@ -126,7 +116,6 @@ const Login = () => {
 
     useEffect(() => {
         autoLogin()
-        handleLanguage()
     }, [])
 
 
@@ -151,11 +140,6 @@ const Login = () => {
                             />
                             <Container>
                                 <Logo />
-                                {/* <LogoContainer>
-                                    <LogoSVG
-
-                                    />
-                                </LogoContainer> */}
                                 <InputContainer>
                                     <LabelContainer>
                                         <TextSubTitle
@@ -165,9 +149,9 @@ const Login = () => {
                                         <ButtonLanguage
                                             onPress={() => handleLanguage()}
                                         >
-                                            <CountryFlag>
-                                                BR
-                                            </CountryFlag>
+                                            <CountryFlag
+                                                source={flag}
+                                            />
                                         </ButtonLanguage>
                                     </LabelContainer>
 

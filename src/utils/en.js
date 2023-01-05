@@ -329,7 +329,7 @@ export default [
         id: 5000,
         title: "Taperebar",
         content: {
-            description: "Bar Temático de estilo musical (Rock Pop, Reggae, SpeedBack e outros). Servimos Hambúrguer e Chopp Artesanais, Petiscos e Refeições.",
+            description: "Theme bar of musical style (Rock, Reggae, Speedback, among others). We serve handmade hamburgers and Chopp, tidbits and meals.",
             image: require('../../exceptionalImage/toEat/taperebar.jpg'),
             prices: '',
             social: {
@@ -348,9 +348,9 @@ export default [
     {
         type: "toEat",
         id: 5001,
-        title: "Cantinho Caseiro",
+        title: "Home food's little corner",
         content: {
-            description: "Especialista em sopas e doces, preparados com o gostinho de casa.",
+            description: "Expert in soups and sweets, made with that special home taste. ",
             image: require('../../exceptionalImage/toEat/cantinhoCaseiro.png'),
             social: {
                 instagram: 'https://www.instagram.com/cantinho_caseiro_novoairao/',
@@ -361,16 +361,16 @@ export default [
             address: "Rua Luís Carlos de Mattos Areosa n° 17, Nova Esperança",
             addressLink: '',
             type: ["Soparia", "Doceria"],
-            offering: ["Entrega grátis"],
+            offering: ["Free delivery"],
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "toEat",
         id: 5002,
-        title: "Espetos do Rafinha",
+        title: "Rafinha's skewers",
         content: {
-            description: "Churrasquinhos variados para degustar no fim da tarde, com os amigos e o melhor atendimento.",
+            description: "Various skewer barbecues to savor at the end of the afternoon with friends and the best service in town.",
             image: require('../../exceptionalImage/toEat/espetosDoRafinha.png'),
             social: {
                 instagram: '',
@@ -381,16 +381,16 @@ export default [
             address: "Av. João Paulo II, N. °29, Centro",
             addressLink: 'https://goo.gl/maps/fS8abtJi25TrDeZ77',
             type: ["Restaurante"],
-            offering: ["Cartão", "Internet"],
+            offering: ["Card", "Internet"],
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "toEat",
         id: 5003,
-        title: "JC Lanche e Pizzaria",
+        title: "JC Snack Place and Pizzaria",
         content: {
-            description: "Fast-food tarde e noite. Sem tempo para comer? Venha se saciar com nosso cardápio de lanches e bebidas.",
+            description: "Fast food in afternoons and evenings. No time to eat? Come and enjoy our menu of snacks and drinks.",
             image: require('../../exceptionalImage/toEat/JCLancheEPizzaria.png'),
             social: {
                 instagram: '',
@@ -408,9 +408,9 @@ export default [
     {
         type: "toEat",
         id: 5004,
-        title: "Café da Preta",
+        title: "Preta's breakfast",
         content: {
-            description: "Funcionamos de terça-feira a domingo, com o melhor café regional da Cidade.",
+            description: "We work Tuesdays through Sundays with the best regional breakfast in town. ",
             image: require('../../exceptionalImage/toEat/cafeDaPreta.jpeg'),
             social: {
                 instagram: 'https://www.instagram.com/caferegionaldapreta/',
@@ -428,9 +428,9 @@ export default [
     {
         type: "toEat",
         id: 5006,
-        title: "Flor do luar Peixaria",
+        title: "Moonlight flower fish restaurant",
         content: {
-            description: "Restaurante Flutuante. Servimos variedade de peixes e carnes, bebidas diversas, drinks regionais e petiscos deliciosos. Dispomos de espaço para banho no Rio Negro, proporcionando à sua família uma tarde de lazer no paraíso que é a natureza.",
+            description: "Houseboat restaurant. We serve a variety of steaks and fishes, various drinks, regional drinks and delicious tidbits. We have an area for bathing in the river, providing you and your family with an afternoon of leisure in the paradise called nature.",
             image: require('../../exceptionalImage/toEat/florDoLuar.png'),
             social: {
                 instagram: 'https://www.instagram.com/flutuanteflordoluar/',
@@ -448,9 +448,9 @@ export default [
     {
         type: "toEat",
         id: 5007,
-        title: "Ponto da Comida Caseira",
+        title: "Home food spot",
         content: {
-            description: "Local simples e acolhedor com uma maravilhosa vista panorâmica para o Rio Negro. Fornecemos o famoso Prato Feito, de sabor caseiro, preparado no fogão de barro.",
+            description: "A simple welcoming place with a wonderful panoramic view of the Negro River. We provide the famous 'prato feito' (set meal), with homemade taste, prepared in a clay oven",
             image: require('../../exceptionalImage/toEat/pontoDaComidaCaseira.jpeg'),
             social: {
                 instagram: 'https://www.instagram.com/comidacaseiraremanso/',
@@ -468,9 +468,9 @@ export default [
     {
         type: "toEat",
         id: 5008,
-        title: "Maranata restaurante",
+        title: "Maranata restaurant",
         content: {
-            description: "Uma experiência de comida regional inesquecível, na Comunidade Sobrado, coração da natureza. A aventura começa na sua escolha.",
+            description: "An unforgettable experience with regional food in the community of Sobrado, in the heart of nature. The adventure begins with your choice.",
             image: require('../../exceptionalImage/toEat/maranata.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/maranata.restaurante0/',
@@ -488,9 +488,9 @@ export default [
     {
         type: "toEat",
         id: 5011,
-        title: "Kaká Refeições",
+        title: "Kaká meals",
         content: {
-            description: "Restaurante self-service, com dois ambientes, aberto e fechado. Funcionamos para almoço e jantar. Com um valor fixo, você come à vontade, mas se estragar, paga mais.",
+            description: "Self-service restaurant with two environments: outdoors and indoors. We serve lunch and dinner. By paying a predetermined price, you can eat as much as you want. You only pay more if you waste food.",
             image: require('../../exceptionalImage/toEat/kakaRefeicoes.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/kakarefeicoesairao/',
@@ -570,7 +570,7 @@ export default [
         id: 5015,
         title: "Café Regional De Bubuia",
         content: {
-            description: "Estabelecimento familiar com ambiente aconchegante, oferecemos um cardápio com tapiocas variadas e outros produtos regionais.",
+            description: "'De bubuia' ('relaxed') local breakfastFamily establishment with a cozy environment. We offer a menu with various tapiocas and other regional products.",
             image: require('../../exceptionalImage/toEat/deBubuia.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/debubuia2022/',
@@ -581,16 +581,16 @@ export default [
             address: "",
             addressLink: "https://goo.gl/maps/DCfw6dzL9AMK6Ueu6",
             type: ["Café regional"],
-            offering: ["Estacionamento"],
+            offering: ["Parking lot"],
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "toEat",
         id: 5016,
-        title: "Restaurante Pousada Bela Vista",
+        title: "Bela Vista Inn Restaurant",
         content: {
-            description: "Nossa Pousada é localizada às margens do Rio Negro, com uma vista privilegiada em total harmonia com a natureza. Dispomos de restaurante, piscina, auditório para reuniões, um deck, um flutuante com serviço de bar e um redário para descansar.",
+            description: "Our Inn is located by the Negro River bank, with a privileged view in total harmony with nature. We have available a restaurant, swimming pool, meeting auditorium, a deck, a houseboat with a bar and a section with hammocks for relaxation. ",
             image: require('../../exceptionalImage/toEat/belaVistaRestaurante.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/belavistalodge/',
@@ -608,9 +608,9 @@ export default [
     {
         type: "toEat",
         id: 5017,
-        title: "Dino's Pizzaria e Restaurante",
+        title: "Dino's Pizzaria e Restaurant",
         content: {
-            description: "Diversidade é conosco! Convide sua família, seus amigos e venha conhecer nossa variedade de sabores e tamanhos de pizzas, sanduíches e outras opções em nosso cardápio.",
+            description: "Diversity is with us! Invite your family, your friends, and come see our great variety of flavors and sizes of pizza. Sandwiches and other options from our menu.",
             image: require('../../exceptionalImage/toEat/dinosLanchePizzaria.jpg'),
             social: {
                 instagram: '',
@@ -621,16 +621,16 @@ export default [
             address: "Av.Presidente Castelo Branco N51 A",
             addressLink: 'https://goo.gl/maps/Ja6erfz6M9AzJRhr5',
             type: ["Lanchonete"],
-            offering: ["Ambiente ao ar livre"],
+            offering: ["Outdoor place"],
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "toEat",
         id: 5018,
-        title: "Restaurante Marupiara",
+        title: "Marupiara Restaurant",
         content: {
-            description: "O Restaurante Marupiara preza sempre pelo bem estar do cliente, trabalhamos com agilidade, dispomos de um salão receptivo e com ótimo atendimento. Saboreie nosso tempero e se delicie com o paladar caseiro regional.",
+            description: "Marupiara restaurant cares a lot about the well-being of its clients. We work swiftly, we have a very welcoming hall and we also have a great service. Savor our spices and condiments and enjoy our regional cuisine.",
             image: require('../../exceptionalImage/toEat/marupiara.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/marupiara_restaurant/',
@@ -641,7 +641,7 @@ export default [
             address: "Rua Pedro Bezerra, 18, bairro jardim primavera",
             addressLink: 'https://goo.gl/maps/2BjFvZV97f5Bkw9w8',
             type: ["Restaurante"],
-            offering: ["Oferecemos delivery"],
+            offering: ["Delivery"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -710,7 +710,7 @@ export default [
         id: 5022,
         title: "Matupá bar",
         content: {
-            description: "Bar exclusivo da Cervejaria Sarapó, uma microcervejaria de Novo Airão. Utilizando-se de maltes e lúpulos importados, não pasteurizada e sem aditivos. Conta com um catálogo de oito estilos de cervejas especiais, no entanto, dispomos de dois estilos por vez, conforme disponibilidade. Venha degustar dessa nova experiência de sabor da Cerveja Sarapó",
+            description: "Exclusive bar of the brewery Sarapó: a micro brewery in Novo Airão. Making use of imported malt and hops. Non pasteurized and no additives. The bar's got a catalog of 8 styles of special beers, however, we only have two styles at a time, depending on availability. Come savor this new flavor experience with Sarapó  beer.",
             image: require('../../exceptionalImage/toEat/matupaBar.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/matupa_bar/',
@@ -721,16 +721,16 @@ export default [
             address: "",
             addressLink: 'https://goo.gl/maps/7VZ4ZXcnvMfnn9oPA',
             type: [""],
-            offering: ["Chopp artesanal"],
+            offering: ["Handmade  Chopp"],
             profile: ["adventure", "soft", "calm"]
         },
     },
     {
         type: "toEat",
         id: 5023,
-        title: "Zefa refeições",
+        title: "Zefa meals",
         content: {
-            description: "A simplicidade de uma culinária com pratos típicos da cidade e com o melhor sabor caseiro! Dispomos de um cardápio recheado de coisas boas, preparadas com muito carinho.",
+            description: "The simplicity of a cuisine with regional dishes and the best homemade flavor. We have got a menu filled with delicious things made with care and tenderness.",
             image: require('../../exceptionalImage/toEat/zefaRefeicoes.jpg'),
             social: {
                 instagram: '',
@@ -748,9 +748,9 @@ export default [
     {
         type: "toEat",
         id: 5024,
-        title: "Taberna conveniência",
+        title: "Convenience tavern",
         content: {
-            description: "Bar com ambiente aberto rústico que oferece aos nossos clientes as bebidas mais geladas, acompanhadas de petiscos tradicionais e o melhor preço da cidade.",
+            description: "Bar with an rustic open concept that offers our clients nice cold drinks, accompanied by traditional tidbits and the best price in town.",
             image: require('../../exceptionalImage/toEat/taberna.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/taberna_n.a/',
@@ -761,7 +761,7 @@ export default [
             address: "",
             addressLink: '',
             type: [""],
-            offering: ["Cerveja gelada", "Ambiente externo"],
+            offering: ["cold drinks ", "outdoor place"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -770,7 +770,7 @@ export default [
         id: 5025,
         title: "Restaurante Sabor do Sul",
         content: {
-            description: "É do gaúcho, mas o cardápio é de Novo Airão! Serviço à la carte e prato feito, com qualidade e um cardápio cheio de comidas típicas da região, como caldeirada de peixe, peixe à escabeche, frito, assado, galinha caipira, carnes, a tradicional carne na chapa dentre outros.",
+            description: "It's from a Gaucho (person born in Rio Grande do Sul), but the menu is from Novo Airão. We serve à la cart or a set meal with good quality and a menu filled with local dishes from the region such as fish stew, fish a la escabeche, fried, roasted, free range chicken, steaks, the traditional 'meat on a plate', among others.",
             image: require('../../exceptionalImage/toEat/saborDoSul.jpeg'),
             social: {
                 instagram: '',
@@ -810,7 +810,7 @@ export default [
         id: 5027,
         title: "Saloon Ajuricaba Bar do Alex",
         content: {
-            description: "Bar e Restaurante com ambiente rústico e sofisticado, dispõe aos nossos clientes uma culinária diferenciada e única na cidade, um serviço de bar com bebidas do simples ao requintado. Fazemos reservas para eventos e comemorações particulares.",
+            description: "Bar and restaurant with a rustic a sophisticated environment. We provide our clients with a unique and unusual cuisine in town. A bar service that offers simple and sophisticated drinks. We make reservations for events and private celebrations.ar e Restaurante com ambiente rústico e sofisticado, dispõe aos nossos clientes uma culinária diferenciada e única na cidade, um serviço de bar com bebidas do simples ao requintado. Fazemos reservas para eventos e comemorações particulares.",
             image: require('../../exceptionalImage/toEat/alex.png'),
             social: {
                 instagram: 'https://www.instagram.com/alex.saloonajuricaba/',
@@ -828,9 +828,9 @@ export default [
     {
         type: "toEat",
         id: 5028,
-        title: "Praça Municipal Hugo C. Frederico",
+        title: "Hugo C. Frederico town square",
         content: {
-            description: "Praça de Alimentação com várias opções para se desfrutar da gastronomia local com a diversidade dos cardápios, em ambiente propício para a Família, com Pontos Turísticos, área de playground e Wi-Fi grátis. Tudo em uma localidade só!",
+            description: "Food court with many options to enjoy the local gastronomy with the diversity of menus, in a family friendly environment. With touristic spots, playground area and free Wi-Fi. All in one place.",
             image: require('../../exceptionalImage/toEat/pracaMunicipal.jpeg'),
             social: {
                 instagram: '',
@@ -850,7 +850,7 @@ export default [
         id: 5029,
         title: "Tapiri Coffee & Dinner",
         content: {
-            description: "Somos o Tapiri Coffee & Dinner, um ambiente acolhedor e tranquilo, para tomar um café e conversar! Nosso ambiente é climatizado e aconchegante!",
+            description: "We are Taperi Coffee and Dinner. A welcoming and peaceful environment to have some coffee and hang out. The place has air conditioner and is very cozy.",
             image: require('../../exceptionalImage/toEat/tapiri.jpeg'),
             social: {
                 instagram: 'https://www.instagram.com/tapiri.coffeedinner/',
@@ -861,7 +861,7 @@ export default [
             address: "",
             addressLink: 'https://goo.gl/maps/4ggUbk4dw4vSo3Lz7',
             type: [""],
-            offering: ["Ambiente climatizado", "Delivery"],
+            offering: ["air conditioner", "Delivery"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -870,7 +870,7 @@ export default [
         id: 5030,
         title: "Nosso café",
         content: {
-            description: "Funcionamos pela manhã, tarde e durante a noite. Servimos  café regional, lanches e refeições",
+            description: "We are open in the morning, afternoon and evening. We serve regional breakfast, snacks and meals.",
             image: require('../../exceptionalImage/toEat/nossoCafe.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/nossocafe5/',
@@ -888,9 +888,9 @@ export default [
     {
         type: "toEat",
         id: 5031,
-        title: "Flutuante awa",
+        title: "Awa houseboat",
         content: {
-            description: "Somos um flutuante bar a perto de Novo Airão. Aqui você pode trazer seus amigos e aproveitar um lindo pôr do sol no meio do rio.Oferecemos comidas regionais e também presamos pela sua segurança.",
+            description: "We are a houseboat bar near Novo Airão. Here you can bring your friends and enjoy a beautiful sunset in the middle of the river. We offer regional foods and we also value your safety.",
             image: require('../../exceptionalImage/toEat/flutuanteAwa.jpg'),
             social: {
                 instagram: 'https://www.instagram.com/flutuanteawa/',
@@ -901,7 +901,7 @@ export default [
             address: "",
             addressLink: '',
             type: [""],
-            offering: ["Flutuante"],
+            offering: ["houseboat"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -910,7 +910,7 @@ export default [
         id: 5032,
         title: "Aritú passeios & Drinks",
         content: {
-            description: "É uma embarcação em formato plataforma que proporciona aos passageiros o conforto de um flutuante e o prazer de navegar por lugares paradisíacos. Equipada com um motor 40HP, a Aritú oferece navegabilidade de até 8km/h, o suficiente para um passeio agradável e relaxante. Possuímos a bordo uma pequena cozinha, chuveiro, espaço de convivência, energia elétrica e sistema de som. Vai um Drink Aí? Já imaginou experimentar drinks incríveis enquanto navega por um lugar paradisíaco?",
+            description: "It is a platform-shaped vessel that provides passengers with the comfort of a floating boat and the pleasure of sailing through paradisiacal places. Equipped with a 40HP engine, the Aritú offers navigability of up to 8km/h, enough for a pleasant and relaxing ride. We have on board a small kitchen, shower, living space, electricity and sound system. Is there a drink there? Can you imagine trying incredible drinks while sailing through a paradisiacal place ?",
             image: require('../../exceptionalImage/toEat/aritu.png'),
             social: {
                 instagram: 'https://www.instagram.com/aritufloat/',
@@ -921,7 +921,7 @@ export default [
             address: "",
             addressLink: '',
             type: [""],
-            offering: ["Flutuante", "12 passageiros", "8 km/h"],
+            offering: ["Houseboat", "12 passengers", "8 km/h"],
             profile: ["adventure", "soft", "calm"]
         },
     },
@@ -934,7 +934,7 @@ export default [
         id: 6000,
         title: "Pousada Novo Airão",
         content: {
-            description: "A Pousada Novo Airão oferta aos seus clientes acomodações aconchegantes com um maravilhoso café da manhã, piscina e até campo de futebol. Propício para quem procura conciliar lazer, privacidade e descanso em meio a uma bela paisagem.",
+            description: "Novo Airão Inn offers its clients cozy accommodations with a wonderful breakfast, swimming pool and even a soccer field. It's proper for those who what to put together leisure, privacy, and rest while enjoying a beautiful landscape.",
             image: require('../../exceptionalImage/hotels/pousadaNovoAirao.png'),
             contacts: "tel://+5592991339884",
             social: {
@@ -942,7 +942,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Internet", "Estacionamento", "Piscina", "Café da Manhã", "Churrasqueira"],
+            offering: ["Internet", "parking lot", "swimming pool", "breakfast", "barbecue grill"],
             address: "R. Naíde Batista, 35, Horizonte",
             addressLink: "https://goo.gl/maps/xF8pWwFFsTi4mtSH6",
             profile: ["adventure", "soft", "calm"],
@@ -953,7 +953,7 @@ export default [
         id: 6001,
         title: "Pousada Paraíso",
         content: {
-            description: "Com uma ótima localização, possibilitamos a nossos clientes uma saudável caminhada, com visitação a vários atrativos turísticos próximos. Além de quartos climatizados, acesso Wi-Fi gratuito e garagem privativa, também dispomos de um ambiente especial para se conectar com a natureza, trata-se de uma estufa de reprodução de belas flores que se adaptam muito bem ao clima amazônico, uma das mais apreciadas pelos visitantes é a espécie Arbórea Rosa do Deserto.",
+            description: "In a great location, we provide our clients with a healthy walk, with visitation to many touristic attractions nearby. Besides having rooms with air conditioners, access to free Wi-Fi and private garage, we also have a special place to connect with nature: it's a green house for the reproduction of beautiful flowers, which adapt themselves very well to the climate of the Amazon. One of the most admired flowers by the visitors is the species Arboreal Desert Rose.",
             image: require('../../exceptionalImage/hotels/pousadaParaiso.jpeg'),
             contacts: "tel://+5592984121122",
             social: {
@@ -961,7 +961,7 @@ export default [
                 facebook: '',
                 site: "https://website--1236236308606472178244-inn.negocio.site/?utm_source=gmb&utm_medium=referral",
             },
-            offering: ["Internet", "Estacionamento"],
+            offering: ["Internet", "parking lot"],
             address: "",
             addressLink: "https://goo.gl/maps/MMoy9RruEdax8uBaA",
             profile: ["adventure", "soft", "calm"],
@@ -972,7 +972,7 @@ export default [
         id: 6002,
         title: "Pousada Bela Vista Lodge & Ecotours",
         content: {
-            description: "A Pousada Bela Vista está localizada em uma área privilegiada do município de Novo Airão, no centro da Cidade e de frente para o Parque Nacional de Anavilhanas. O local é perfeito para o lazer em família, pois dispõe de um belo café da manhã, playground, wi-fi, estacionamento, bar, piscina, sala de convenções, redário, restaurante, jardim, acesso particular ao rio (com deck), pequena academia, aluguel de prancha para a prática de SUP e caiaque. Na Pousada é comum avistar, nas copas das árvores, as famosas iguanas, que despertam a curiosidade dos visitantes sobre a forma de vida desta espécie da fauna amazônica.",
+            description: "Bela Vista Inn is located in a privileged area in Novo Airão town. It's downtown and facing Anavilhanas National Park. The place is perfect for family leisure because it has a very nice breakfast, playground, Wi-Fi, parking, bar, swimming pool, convention room, hammock room, restaurant, garden, private access to the river (with a deck), small gym, rental of boards for the practice of SUP and Kayaking. At the Inn it is common to see at the tree tops the famous Iguanas that make the guests curious about the way of life of this species of the Amazon fauna.",
             image: require('../../exceptionalImage/hotels/belaVista.png'),
             contacts: "tel://+559233651023",
             social: {
@@ -980,7 +980,7 @@ export default [
                 facebook: 'https://www.facebook.com/pousada.belavista.amazonas',
                 site: "https://www.pousada-belavista.com"
             },
-            offering: ["internet", "vista para o rio", "estacionamento", "piscina", "café da manhã", "flutuante", "deck com acesso ao rio", "passeios e expedições", "casas de temporada", "restaurante", "bar", "área de lazer."],
+            offering: ["Internet", "view to the river", "parking lot", "swimming pool", "breakfast", "houseboat", "deck with access to the river", "rides and expeditions", "holiday homes", "restaurant", "bar", "recreation area"],
             address: "",
             addressLink: "https://goo.gl/maps/xbCDvQHBsnwCwYxx9",
             profile: ["adventure", "soft", "calm"],
@@ -991,7 +991,7 @@ export default [
         id: 6003,
         title: "Pousada Cabocla",
         content: {
-            description: "Somos um meio de hospedagem que concilia simplicidade e charme rústico em um único lugar. Localizada no Centro da cidade, disponibilizamos acomodações confortáveis, com Wi-Fi e estacionamento privado. O ambiente contempla uma área ampla, agradável e a tranquilidade que você procura para seus dias de férias.",
+            description: "We have a form of lodging that brings together simplicity and a rustic charm in one place. Located downtown, we provide comfortable accommodations, with Wi-Fi and private parking. The environment contains a wide, pleasant area, and the tranquility your seek for your vacation days.",
             image: require('../../exceptionalImage/hotels/pousadaCabocla.jpg'),
             contacts: "tel://+5592992357141",
             social: {
@@ -999,7 +999,7 @@ export default [
                 facebook: 'https://web.facebook.com/caboclapousada',
                 site: ''
             },
-            offering: ["Internet", "estacionamento."],
+            offering: ["Internet", "parking lot."],
             address: "",
             addressLink: 'https://goo.gl/maps/Gzf3uxVo69P9Tcpc9',
             profile: ["adventure", "soft", "calm"],
@@ -1010,7 +1010,7 @@ export default [
         id: 6004,
         title: "Lodge Mirante do Gavião",
         content: {
-            description: "O Mirante do Gavião integra o roteiro de charme da Amazônia, localizado no município de Novo Airão, de frente para o Parque Nacional de Anavilhanas. O Lodge se destaca pelos seus serviços de alta qualidade, requinte, design e imponência, baseados nas técnicas amazônicas da construção naval. O Hotel disponibiliza aos seus clientes, a imersão de saberes sobre o modo de vida das nossas comunidades tradicionais, promovendo experiências integradas à selva e aos seus povos. Os pacotes do hotel atendem a diferentes perfis de viajantes, proporcionando conforto, segurança e aventura na medida certa.",
+            description: "Mirante do Galvão integrates the charm of the Amazon. Located in Novo Airão town, facing Anavilhanas National Park. The lodge is outstanding for its high quality services, refinement, design and magnificence, based on the Amazon techniques of naval construction. The hotel makes available to its clients the immersion into the knowledges of the way of life of our traditional communities, promoting experiences integrated to the jungle and its people. The packages of the hotel serve different travelers profiles, providing comfort, safety and adventure in the right amount.",
             image: require('../../exceptionalImage/hotels/mirante.jpg'),
             contacts: "tel://+5592991146038",
             social: {
@@ -1018,7 +1018,7 @@ export default [
                 facebook: "https://www.facebook.com/mirantedogaviao/",
                 site: "https://mirantedogaviao.com.br/br/"
             },
-            offering: ["Internet", "Estacionamento", "Café da manhã", "Piscina", "Transfer", "Restaurante", "SUP", "Ponto de recarga para carros elétricos"],
+            offering: ["Internet", "parking lot", "breakfast", "swimmig pool", "Transfer", "Restaurant", "SUP", "Spot for recharging electric cars)"],
             address: "",
             addressLink: "https://goo.gl/maps/6t3VA1UFCgWb5DdZ8",
             profile: ["adventure", "soft", "calm"],
@@ -1029,7 +1029,7 @@ export default [
         id: 6005,
         title: "Amazônia Park Suítes",
         content: {
-            description: "Somos uma pousada de charme  situada no município de Novo Airão, à 2h30 de Manaus. A estrutura dispõe de 20 apartamentos com vista panorâmica, restaurante com pratos regionais, área para eventos, piscina e trilha, além de uma vasta área verde, cenário perfeito para quem visita à região.",
+            description: "We are a charming Inn situated in Novo Airão town, 2 hours and 30 minutes away from Manaus. The structure contains 20 apartments with panoramic view, restaurants with regional dishes, areas for events, pool and trail. Also a vast wooded area. The perfect scenery for those who visit the region.",
             image: require('../../exceptionalImage/hotels/amazonParkSuite.jpg'),
             contacts: "tel://+5592991591082",
             social: {
@@ -1037,7 +1037,7 @@ export default [
                 facebook: '',
                 site: "https://amazoniaparksuites.com.br/"
             },
-            offering: ["internet", "vista para o rio", "estacionamento", "piscina", "café da manhã", "passeios"],
+            offering: ["Internet", "view to the river ", "parking lot", "swimmming pool", "breakfast", "rides"],
             address: "",
             addressLink: "",
             type: 'diária',
@@ -1050,7 +1050,7 @@ export default [
         id: 6006,
         title: "Hotel Josély",
         content: {
-            description: "Localizado no Centro da cidade de Novo Airão, possibilita o fácil deslocamento para vários atrativos turísticos da cidade. Disponibiliza aos seus clientes acomodações climatizadas, com acesso a Wi-fi e estacionamento. Dispõe de ambiente familiar e pacotes com refeições (sob a consulta prévia com os proprietários).",
+            description: "Located downtown in Novo Airão, it enables the translocation to many tourist spots in town. It provides the clients with accommodations with air conditioners, Wi-Fi access and parking. It has a family environment and meal packages (under the previous consultation with the proprietors).",
             image: require('../../exceptionalImage/hotels/hotelJosely.jpg'),
             contacts: "tel://+5592992268191",
             social: {
@@ -1058,7 +1058,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Internet", "estacionamento", "pacotes com refeições"],
+            offering: ["Internet", "parking lot", "meal packages"],
             address: "",
             addressLink: "https://goo.gl/maps/gT2c5rNvZt3fTj5j6",
             profile: ["adventure", "soft", "calm"],
@@ -1070,7 +1070,7 @@ export default [
         id: 6007,
         title: "Recanto da Naza",
         content: {
-            description: "Conhecida por ser um ambiente familiar e aconchegante, disponibiliza aos seus clientes acomodações climatizadas, estacionamento privado, acesso a Wi-fi, além de uma cozinha compartilhada.",
+            description: "Known for being a family and cozy environment, it provides the clients with air- conditioned accommodations, private parking, Wi-Fi access and also a shared kitchen.",
             image: require('../../exceptionalImage/hotels/pousadaNaza.png'),
             contacts: "tel://+5592991308787",
             social: {
@@ -1078,7 +1078,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Internet", "estacionamento"],
+            offering: ["Internet", "parking lot"],
             address: "",
             addressLink: "https://goo.gl/maps/4R6AhxTNdZN5UZkt9",
             profile: ["adventure", "soft", "calm"],
@@ -1089,7 +1089,7 @@ export default [
         id: 6008,
         title: "Hotel Jandira",
         content: {
-            description: "Nossa Pousada disponibiliza acomodações climatizadas, aconchegantes, com acesso a Wi-fi gratuito e estacionamento. Contempla uma área ampla e um cantinho denominado pelos visitantes de “cantinho do sossego”",
+            description: "Our Inn contains cozy, air conditioned accommodations with free Wi-Fi access and Parking. It has a large area and a small corner, which the visitors call 'the peaceful little corner'.",
             image: require('../../exceptionalImage/hotels/hotelJandira.jpg'),
             contacts: "tel://+5592992040315",
             social: {
@@ -1097,7 +1097,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Internet", "estacionamento"],
+            offering: ["Internet", "parking lot"],
             address: "",
             addressLink: "https://goo.gl/maps/cyDSJcYhAY1xY3xN9",
             type: 'diária',
@@ -1110,7 +1110,7 @@ export default [
         id: 6009,
         title: "Lanna Pousada",
         content: {
-            description: "Uma pousada simples, mas bem aconchegante.",
+            description: "A simple, but very cozy Inn.",
             image: require('../../exceptionalImage/hotels/pousadaLanna.png'),
             contacts: "tel://+5592991600526",
             social: {
@@ -1118,7 +1118,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Internet", "estacionamento"],
+            offering: ["Internet", "parking lot"],
             address: "",
             addressLink: "https://goo.gl/maps/ctSrKB19BQC5k18f8",
             type: 'diária',
@@ -1130,7 +1130,7 @@ export default [
         id: 6010,
         title: "Anavilhanas Jungle Lodge",
         content: {
-            description: "O Anavilhanas Jungle Lodge tem como missão oferecer, com excelência, experiências únicas e inesquecíveis que conectem pessoas com a Amazônia, como forma de valorizar e sensibilizar a importância da floresta em pé. Desde 2006, na região amazônica, o Hotel atua para promover vivências profundas que estimulem o desenvolvimento sustentável local e uma relação de impacto positivo com as comunidades do entorno.",
+            description: "The Anavilhanas Jungle Lodge has the mission of offering, with excellence, unforgettable and unique experiences that can connect people to the Amazon, as a way of sensitizing people about the value of the standing forest. Since 2006, in the Amazon region, the hotel takes action to promote deep experiences that can stimulate the local sustainable development and a positive impact with the surrounding communities.",
             image: require('../../exceptionalImage/hotels/anavihanasJungleLodge.jpg'),
             contacts: "tel://+5592988331947",
             social: {
@@ -1138,7 +1138,7 @@ export default [
                 facebook: '',
                 site: 'https://www.anavilhanaslodge.com/'
             },
-            offering: ["Internet", "estacionamento", "Restaurante", "Passeios guiados", "Loja de artesanatos", "Transfer"],
+            offering: ["Internet", "Parking lot", "Restaurant", "Guided tours", "Handcraft store", "Transfer"],
             address: "",
             addressLink: "https://goo.gl/maps/aGr4M43x8oqgHPbH7",
             profile: ["adventure", "soft", "calm"],
@@ -1149,7 +1149,7 @@ export default [
         id: 6011,
         title: "Pousada Fortaleza",
         content: {
-            description: "A Pousada Fortaleza, localizada nas proximidades da entrada de Novo Airão, disponibiliza acomodações climatizadas e estacionamento gratuito. Uma pousada simples, mas que investe para garantir o bem-estar dos seus clientes.",
+            description: "The Fortaleza Inn, located near the entrance to Novo Airão, provides air conditioned accommodations and free parking. A simple Inn, but one that invests to guarantee the well-being of its clients.",
             image: require('../../exceptionalImage/hotels/pousadaFortaleza.jpg'),
             contacts: "",
             social: {
@@ -1157,7 +1157,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Internet", "estacionamento"],
+            offering: ["Internet", "parking lot"],
             address: "",
             addressLink: "https://goo.gl/maps/qcztmKkC4UANdpQT7",
             profile: ["adventure", "soft", "calm"],
@@ -1168,7 +1168,7 @@ export default [
         id: 6012,
         title: "Pousada Barão do Rio Negro",
         content: {
-            description: "Um recanto de plantas e árvores, de frente para o Parque Nacional de Anavilhanas, com o privilégio da contemplação diária do nascer do sol, com o espetáculo de seus raios de luz refletindo no Rio Negro, oferecemos aos nossos clientes apartamentos aconchegantes, alguns com decoração rústica, estacionamento interno, privacidade e segurança.",
+            description: "Barão do Rio Negro Inn A nook of plants and trees, facing the Anavilhanas National Park, with the privilege of daily contemplation of the sunrise with the spectacle of its rays of light reflecting on the Negro River. We offer our clients cozy apartments, some with rustic decorations, internal parking, privacy and safety.",
             image: require('../../exceptionalImage/hotels/baraoDoRioNegro.jpg'),
             contacts: "tel://+5592991035856",
             social: {
@@ -1176,7 +1176,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Internet", "Estacionamento", "Vista para o rio", "Café da manhã"],
+            offering: ["Internet", "Parking lot", "View to the river", "Breakfast"],
             address: "",
             addressLink: "https://goo.gl/maps/qcztmKkC4UANdpQT7",
             profile: ["adventure", "soft", "calm"],
@@ -1187,7 +1187,7 @@ export default [
         id: 6013,
         title: "Pousada Oliveira",
         content: {
-            description: "Localizada à margem do Rio Negro, a Pousada Oliveira traz um novo conceito de hospedagem, com atendimento exclusivo e uma experiência cabocla.",
+            description: "Oliveira Inn Located in the Negro River bank, Oliveira Inn brings a new concept of lodging, with exclusive service and a backwoodsman experience.",
             image: require('../../exceptionalImage/hotels/pousadaOliveira.jpg'),
             contacts: "tel://+5511948276528",
             social: {
@@ -1195,7 +1195,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Wi-fi", "Restaurante"],
+            offering: ["Wi-fi", "Restaurant"],
             address: "",
             addressLink: "",
             profile: ["adventure", "soft", "calm"],
@@ -1206,7 +1206,7 @@ export default [
         id: 6014,
         title: "Pousada e Piscicultura Anavilhanas",
         content: {
-            description: "Venha participar desse momento único pesque e pague: Piscicultura Anavilhanas, sua área possui lago particular que possibilita pescar pirarucu e Matrinxã, com infraestrutura dotada de 06 chalés com conforto e qualidade. Temos a melhor gastronomia, galinha caipira, peixes regionais e peixes vivos a pronta entrega",
+            description: "Come and participate in this unique fish and pay moment: Piscicultura Anavilhanas, its area has a private lake that allows fishing for pirarucu and Matrinxã, with an infrastructure equipped with 06 chalets with comfort and quality. We have the best cuisine, country chicken, regional fish and live fish for immediate delivery.",
             image: require('../../exceptionalImage/hotels/psiculturaAnavilhanas.png'),
             contacts: "tel://+5592984055269",
             social: {
@@ -1262,11 +1262,11 @@ export default [
     {
         type: "tourism",
         id: 7001,
-        categorie: "arborismo",
+        categorie: "arborism",
         title: "Arborismo",
         content: {
             title: "Arborismo",
-            description: "Subida em árvore gigante de mais de 20m com equipamentos de rapel e com toda segurança Grupos de 4 pessoas com atuação nos finais de semana. Incluso rádios comunicadores, refeição tipo lanche, água mineral",
+            description: "Climbing an over-20-meter-tall giant tree using abseiling equipments with all proper safety measures. Groups of 4 people on weekends. It includes radio communicators, snacks and mineral water.",
             image: require("../../exceptionalImage/adventure/arborismo.jpg"),
             contacts: "92912345678",
             social: {
@@ -1275,12 +1275,12 @@ export default [
                 site: ''
             },
             infoActivities: {
-                local: ["Estrada"],
+                local: ["Road"],
                 activities: {
                     height: 20,
                     distance: 0,
                     duration: 120,
-                    effort: "Difícil"
+                    effort: "Hard"
                 },
                 contactList: [
                     { name: 'Sandventure', link: '11007' },
@@ -1297,9 +1297,9 @@ export default [
         type: "tourism",
         id: 7007,
         categorie: "flutuante",
-        title: "Flutuante dos Botos",
+        title: "Houseboat of the dolphins",
         content: {
-            description: "O Boto cor-de-rosa é o principal atrativo do município e o mesmo poderá ser apreciado pelos visitantes na sede de Novo Airão. Existe um flutuante “Beira Rio” onde o visitante pode interagir com a espécie. Vale lembrar que o visitante paga apenas uma taxa cobrada pelo alimento para se dar ao boto",
+            description: `The pink dolphin is the main perk of the town and they can be taking in by the visitors in the headquarters of Novo Airão. There's a houseboat called "Beira Rio" where the visitors can interact with the species. It's worth mentioning that the visitor only pays a fee meant to buy the dolphins' food.`,
             image: require("../../exceptionalImage/attractions/flutuanteDosBotos.jpg"),
             contacts: "tel://+5592992359155",
             social: {
@@ -1308,23 +1308,22 @@ export default [
                 site: ''
             },
             infoActivities: {
-                local: ["Cidade"],
+                local: ["City"],
                 activities: {
                     height: 0,
                     distance: 0,
                     duration: 50,
-                    effort: "leve"
+                    effort: "Easy"
                 },
                 contactList: [
                     { name: 'Marilda', link: 'tel://+5592992359155' }
                 ],
             },
-            offering: ["Interação com botos"],
+            offering: ["Interaction with the dolphins"],
             address: "",
             addressLink: "https://goo.gl/maps/766qYmiMmL7qtixt8",
             type: 'diária',
             profile: ["adventure", "soft", "calm"],
-            prices: '1317',
         },
     },
     {
@@ -1333,7 +1332,7 @@ export default [
         categorie: "sítio",
         title: "Sítio providência de Deus",
         content: {
-            description: "Centro de reabilitação de animais silvestre,mantenedouro de animais silvestre e suas biografias.",
+            description: "Rehabilitation center for animals, wild animals' keep and their biographies.",
             image: require("../../exceptionalImage/attractions/maluco.jpg"),
             contacts: "tel://+5592992931203",
             social: {
@@ -1342,7 +1341,7 @@ export default [
                 site: ''
             },
             infoActivities: {
-                local: ["Estrada"],
+                local: ["Road"],
                 activities: {
                     height: 0,
                     distance: 0,
@@ -1362,10 +1361,10 @@ export default [
     {
         type: "tourism",
         id: 7009,
-        categorie: "comunidade",
+        categorie: "communitie",
         title: "Tiririca",
         content: {
-            description: "Localizada às margens do rio Negro, cerca de 30 minutos da cidade de Novo Airão, lá você pode contemplar a fauna e flora local, visitar o Centro de Artesanato Comunitário, prestigiar o roteiro denominado comunitour, dentre outros atrativos que a comunidade possui. \n Para a realização destes passeios, consulte os nossos operadores de turismo.",
+            description: "Located at the river bank, about 30 minutes away from Novo Airão Town. There you can contemplate the local fauna and flora; visit the community handcraft center; see the itinerary called Comunitour among other perks that the community has. To take part in one of these tours, contact our tourism operators.",
             image: require("../../exceptionalImage/attractions/tiririca.jpg"),
             contacts: "",
             social: {
@@ -1374,7 +1373,7 @@ export default [
                 site: ''
             },
             infoActivities: {
-                local: ["Margem do Rio Negro"],
+                local: ["Negro river bank"],
                 activities: {
                     height: 0,
                     distance: 0,
@@ -1395,10 +1394,10 @@ export default [
     {
         type: "tourism",
         id: 7010,
-        categorie: "comunidade",
+        categorie: "communitie",
         title: "Santo Antônio",
         content: {
-            description: "Uma comunidade encantadora, que dispõe de um roteiro sobre o modo de vida dos comunitários, com visita a Casa de Farinha, medicina natural, casa de artesanato, trilhas e um mirante que permite a contemplação do belo Rio Negro, dentre outros atrativos.\n Para a realização destes passeios, consulte os nossos operadores de turismo.",
+            description: "A charming community that has an itinerary about the way of life of the community dwellers, with visitation to the Flour House, natural medicine, handcraft house, trails and a gazebo that allows the contemplation of the beautiful Negro River among other perks. To take part in one of these tours, consult our tourism operators.",
             image: require("../../exceptionalImage/attractions/santoAntonio.jpeg"),
             contacts: "",
             social: {
@@ -1407,7 +1406,7 @@ export default [
                 site: ''
             },
             infoActivities: {
-                local: ["Margem do Rio Negro"],
+                local: ["Negro river bank"],
                 activities: {
                     height: 0,
                     distance: 0,
@@ -1415,7 +1414,7 @@ export default [
                     effort: ""
                 },
                 contactList: [
-                    { name: 'Pessoa', link: 'tel://+5592912345678' }
+
                 ],
             },
             offering: [""],
@@ -1427,10 +1426,10 @@ export default [
     {
         type: "tourism",
         id: 7011,
-        categorie: "comunidade",
+        categorie: "communitie",
         title: "Sobrado",
         content: {
-            description: "A comunidade do Sobrado fica distante cerca de 40 minutos de lancha de pequeno porte. A trilha conduzida pelos comunitários é simplesmente incrível, são inúmeros atrativos da fauna e flora local, com destaque para a árvore gigante sumaúma. Não deixe de prestigiar a gastronomia regional local, é irresistível. \n Para a realização destes passeios, consulte os nossos operadores de turismo.",
+            description: "Sobrado community is about 40 minutes away by fast boat. The trail conducted by the locals is simply incredible. There are numerous perks of the local flora and fauna. A noteworthy perk is the giant tree Sumaúma. Don't miss out on the local gastronomy. It's irresistible. To take part in one of these tours, contact our tourism operators.",
             image: require("../../exceptionalImage/attractions/sobrado.png"),
             contacts: "tel: 92 9232-3111//",
             social: {
@@ -1439,7 +1438,7 @@ export default [
                 site: ''
             },
             infoActivities: {
-                local: ["Margem do Rio Negro"],
+                local: ["Negro river bank"],
                 activities: {
                     height: 0,
                     distance: 0,
@@ -1459,10 +1458,10 @@ export default [
     {
         type: "tourism",
         id: 7012,
-        categorie: "comunidade",
+        categorie: "communitie",
         title: "Mirituba",
         content: {
-            description: "A comunidade indígena do Mirituba é uma oportunidade de intercâmbio cultural única, formada por um povo simples, trabalhador e detentor do vasto conhecimento da flora e fauna amazônica. Vale a pena visitar os comunitários, a casa de artesanato local, dentre outros atrativos.\n Para a realização destes passeios, consulte os nossos operadores de turismo.",
+            description: "The indigenous community of Mirituba is a unique opportunity for cultural interchange. Formed by a people that is simple, hardworking, and possessing of a vast knowledge of the Amazon flora and fauna. It's worth visiting the people from the community, the local handcraft house, among other perks. To take part in one of these tours, consult our tourism operators.",
             image: require("../../exceptionalImage/attractions/mirituba.jpg"),
             contacts: "",
             social: {
@@ -1471,7 +1470,7 @@ export default [
                 site: ''
             },
             infoActivities: {
-                local: ["Margem do Rio Negro"],
+                local: ["Negro river bank"],
                 activities: {
                     height: 0,
                     distance: 0,
@@ -1556,10 +1555,10 @@ export default [
     {
         type: "tourism",
         id: 7014,
-        categorie: "parque",
-        title: "Praias de Anavilhanas",
+        categorie: "park",
+        title: "Anavilhanas beachs",
         content: {
-            description: "Geralmente ocorre de Setembro a Fevereiro . No Parque Nacional de Anavilhanas, durante a seca, emergem praias na Orla de Novo Airão e ao longo das margens do rio Negro e ilhas do arquipélago das Anavilhanas, onde o contraste das areias brancas com as águas negras do rio Negro criam cenários de incrível beleza. As praias mais visitadas são: praia da Orla, Aracari, Bararoá, Camaleão, Folharal/Canauirí, Iluminado, Meio, Sobrado e Tiririca. Com exceção da praia da Orla, acessível por terra, todas as outras somente são acessíveis pelo rio.",
+            description: "They usually appear from September to February. In Anavilhanas National Park, during the drought, beaches emerge in Novo Airão's waterfront and alongside Negro River bank and islands of the archipelago of Anavilhanas where the contrast of the white sand and the dark waters of the Negro River generate a scenery of amazing beauty. The most frequently visited beaches are: Orla beach, Aracari, Bararoá, Camalão, Folharal, Canauirí, Iluminado, Meio, Sobrado and Tiririca. With the exception of Orla beach, all the other beaches can only be reached by river.",
             image: require("../../exceptionalImage/tour/praia.jpg"),
             contacts: "",
             social: {
@@ -1588,10 +1587,10 @@ export default [
     {
         type: "tourism",
         id: 7015,
-        categorie: "parque",
-        title: "Trilhas aquáticas de igapó em Anavilhanas",
+        categorie: "park",
+        title: "Waterborne trails of Igapo in Anavilhanas",
         content: {
-            description: "Geralmente ocorre de Março a Agosto.São passeios embarcados que adentram as florestas de igapós, alagadas durante a cheia, também conhecidas como florestas encantadas. As trilhas aquáticas são permitidas em todo o arquipélago. Somente são acessíveis pelo rio, utilizando-se embarcações de pequeno porte. Ao longo dos anos há pequenas variações na duração do período da seca e da cheia. Geralmente as trilhas aquáticas de igapó são acessíveis a partir de abril.",
+            description: "They usually occur from March to August. These are boat rides that enter the Igapo's forest, flooded because of the river season. Also known as enchanted forests. The waterborne trails are allowed in all the archipelago. They are only reachable by the river using small boats. Along the year there are small variations in the duration of the drought and the flooding. The aquatic Igapo trails are usually accessible from the month of April.",
             image: require("../../exceptionalImage/tour/trilhaAqua.jpg"),
             contacts: "",
             social: {
@@ -1605,7 +1604,7 @@ export default [
                     height: 0,
                     distance: 0,
                     duration: 0,
-                    effort: "fácil"
+                    effort: "Easy"
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1652,10 +1651,10 @@ export default [
     {
         type: "tourism",
         id: 7017,
-        categorie: "parque",
-        title: "Observação de flora, fauna e paisagem em Anavilhanas ",
+        categorie: "park",
+        title: "Observation of flora, fauna and landscape in Anavilhanas",
         content: {
-            description: "Possível de ser apreciado em todos os passeios, diurnos, noturnos, embarcados e panorâmicos. Destacam-se as árvores de grande porte, como os macucus gigantes, e a rica avifauna. Passeios para birdwacthing também são disponibilizados por operadores especializados.",
+            description: "This observation can be enjoyed in all the tours, daily and nightly, on boats or panoramic. It's worth mentioning the tall trees, such as the giant Macucus an the rich avifauna. Tours for birdwatching are made available by specialized operators.",
             image: require("../../exceptionalImage/tour/passaro.jpg"),
             contacts: "",
             social: {
@@ -1684,10 +1683,10 @@ export default [
     {
         type: "tourism",
         id: 7018,
-        categorie: "parque",
-        title: "Parque Nacional do Jaú",
+        categorie: "park",
+        title: "Jaú National Park",
         content: {
-            description: "O Parque Nacional do Jaú é uma unidade de conservação federal de 2.272.000 hectares de área, localizada entre os municípios de Novo Airão e Barcelos, no Baixo Rio Negro, Amazonas. Ele protege uma das maiores extensões de florestas tropicais úmidas contínuas do mundo. Destaca-se por ser o único parque do Brasil que protege praticamente a totalidade da bacia hidrográfica de um rio de águas pretas, o rio Jaú. Os seus limites são demarcados pela bacia hidrográfica do rio Jaú e estendem-se até as águas do rio Carabinani, ao sul, e as dos rios Unini e Paunini, ao norte. O rio Negro forma o limite leste do parque.",
+            description: "Jaú National Park is a Federal Preservation Unit of 2,272,00 hectares of land. Located between the towns of Novo Airão and Barcelos. In the low tide section of the Negro River, Amazonas. It guards one of the largest extensions of continuous rainforest of the world. It stands out for being the only Park in Brazil that protects practically the complete water basin of a dark water river: Jaú River. Its boundaries are demarcated by the water basin of Jaú River and extend to the waters of Carabinani River, to the south, and to the waters of the Unini River and Paunini River, to the north. The Negro River forms the east boundary of the Park.",
             image: require("../../exceptionalImage/tour/jau.jpeg"),
             contacts: "",
             social: {
@@ -1716,10 +1715,10 @@ export default [
     {
         type: "tourism",
         id: 7019,
-        categorie: "parque",
-        title: "Árvores grandiosas do Jáu",
+        categorie: "park",
+        title: "Great trees of Jaú",
         content: {
-            description: "O Parque Nacional do Jaú abriga árvores que testemunharam muitas histórias: Sumaúma (ou samaúma), macacarecuias, macucus gigantes",
+            description: "Jaú National Park houses trees that have witnessed many histories: Sumaúma (or Samaúma), macacarecuias, giant macucus.",
             image: require("../../exceptionalImage/tour/sumauma.jpg"),
             contacts: "",
             social: {
@@ -1748,10 +1747,10 @@ export default [
     {
         type: "tourism",
         id: 7020,
-        categorie: "parque",
-        title: "Rios Espelhados no Jaú",
+        categorie: "park",
+        title: "Mirrored rivers in Jaú",
         content: {
-            description: "O Rio Jaú e seus afluentes, com águas negras, são atrativos à parte, encantando os visitantes com o espelhamento perfeito das paisagens compostas pela floresta e o céu incrivelmente azul, ou das estrelas à noite.",
+            description: "The Jaú River and its branches, with dark waters, are an extra perk, delighting the visitors with the perfect reflection of the landscape made possible by the forest and the incredibly blue sky, or the starry sky at night.",
             image: require("../../exceptionalImage/tour/rioEspelhado.png"),
             contacts: "",
             social: {
@@ -1780,10 +1779,10 @@ export default [
     {
         type: "tourism",
         id: 7021,
-        categorie: "parque",
-        title: "Praias do Rio Negro no Jaú",
+        categorie: "park",
+        title: "Negro River's beaches in Jaú",
         content: {
-            description: "Durante a seca, várias praias surgem no Parque Nacional do Jaú, na área do Rio Negro, sendo a Praia da Maquipana a maior delas. Destaca-se também a Praia da Velha, do Boi e da Enseada. O contraste entre o negro da água e o branco da areia torna as praias uma das maravilhas do parque, que convidam os visitantes para banhar-se e relaxar em suas águas quentes",
+            description: "During the drought, many beaches emerge in Jaú National Park, in the Negro River area. Maquipana beach being the largest of them. Da Velha beach, Boi beach and Enseada beach also stand out. The contrast between the dark water and the white sand makes the beach one of the wonders of the Park, that invites the visitors to take a bath and relax in its warm waters.",
             image: require("../../exceptionalImage/tour/praiaJau.jpg"),
             contacts: "",
             social: {
@@ -1812,10 +1811,10 @@ export default [
     {
         type: "tourism",
         id: 7022,
-        categorie: "parque",
-        title: "Banho e contemplação da natureza nos Rios Carabinani e Jaú",
+        categorie: "park",
+        title: "Bathing and contemplation of nature in the rivers Carabinani and Jaú",
         content: {
-            description: "O Rio Carabinani é o atrativo mais visitado do Parque Nacional do Jaú e sua beleza justifica a procura. Durante a seca, são formadas corredeiras e pequenas cachoeiras de grande beleza cênica, propícias para a contemplação da natureza, banho, meditação, esportes aquáticos, dentre outras atividades. A cachoeira do Rio Jaú também oferece essas possibilidades ao visitante, estando a uma distância um pouco maior.",
+            description: "The Carabinani River is the most visited attraction in Jaú National Park and its beauty is the reason why. During the drought, small waterfalls and streams are formed of great scenic beauty, proper for the contemplation of nature, bathing, meditation, water sports, among other activities. The waterfall of Jaú River also offers these possibilities to the visitors, being a little farther away.",
             image: require("../../exceptionalImage/tour/carabinani.jpg"),
             contacts: "",
             social: {
@@ -1876,10 +1875,10 @@ export default [
     {
         type: "tourism",
         id: 7024,
-        categorie: "parque",
-        title: "Trilhas Terrestres no Jaú",
+        categorie: "park",
+        title: "Land trails in Jaú",
         content: {
-            description: "De trilhas curtas a longo curso é possível adentrar a floresta amazônica e apreciar a beleza de cada detalhe, na ansiedade de avistar animais, encontrar árvores gigantes e de mergulhar nas águas de pequenas cachoeiras. O parque possui um sistema de trilhas que busca atender as expectativas dos diferentes perfis de visitantes. Esse sistema integra o Caminho do Rio Negro, que está em estruturação para ligar as unidades de conservação do Baixo Rio Negro.",
+            description: "From short trails to long courses it's possible to enter the Amazon forest and enjoy the beauty in every detail, longing to spot animals, finding giant trees, and diving into the waters of small waterfalls. The Park possesses a system of trails that aims to fulfill the expectations of different kinds of visitors. This system integrates the Negro River path, that is being structured to connect the preservation units of the low section of the Negro River.",
             image: require("../../exceptionalImage/tour/trilhaJau.png"),
             contacts: "",
             social: {
@@ -1908,10 +1907,10 @@ export default [
     {
         type: "tourism",
         id: 7025,
-        categorie: "parque",
-        title: "Trilha do Itaubal no Jaú ",
+        categorie: "park",
+        title: "Trail of Itaubal in Jaú",
         content: {
-            description: "A mais procurada, com 3,5 km de extensão em formato circular, oferecendo como experiência um contato íntimo com a natureza, com possibilidade de avistamento de diversas espécies da flora e da fauna nativa e banho na cachoeira do Itaubal.",
+            description: "The most popular, with 3.5 km of extension in circular shape, offering the experience of an intimate contact with nature, with the possibility of spotting various species of native flora and fauna and bathing in Itaubal waterfall.",
             image: require("../../exceptionalImage/tour/itaubau.jpg"),
             contacts: "",
             social: {
@@ -1925,7 +1924,7 @@ export default [
                     height: 0,
                     distance: 3500,
                     duration: 0,
-                    effort: "Médio"
+                    effort: "Medium"
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1940,10 +1939,10 @@ export default [
     {
         type: "tourism",
         id: 7026,
-        categorie: "parque",
-        title: "Trilha do Pesquisador no Jaú",
+        categorie: "park",
+        title: "Researcher's trail in Jaú",
         content: {
-            description: "Com extensão de 5 km em formato linear, passa por ambientes como a mata alagada de igapó, capoeira, mata de terra firme, campinarana alta e baixa e campina, com grande potencial para observação de aves.",
+            description: "With the extension of 5 km in linear shape, it goes through environments such as the flooded wood of Igapo, capoeira, dry land woods, low and high and campinarana, with a great potential for bird watching.",
             image: require("../../exceptionalImage/tour/trilhaPesquisador.jpg"),
             contacts: "",
             social: {
@@ -1957,7 +1956,7 @@ export default [
                     height: 0,
                     distance: 5000,
                     duration: 0,
-                    effort: "Médio"
+                    effort: "Medium"
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -1972,10 +1971,10 @@ export default [
     {
         type: "tourism",
         id: 7027,
-        categorie: "parque",
-        title: "Trilha dos Igapós do Carabinane no Jaú",
+        categorie: "park",
+        title: "Trail of Igapos of Carabinani in Jaú",
         content: {
-            description: "Possui aproximadamente 3 km de extensão em formato linear, e em sua grande parte margeia o rio Carabinani, facilitando o acesso às corredeiras localizadas em áreas inacessíveis a embarcações.",
+            description: "It has approximately 3 km of extension in linear shape, and great part of it borders the Carabinani River, facilitating the access to the rapids located in areas inaccessible by boats.",
             image: require("../../exceptionalImage/tour/trilhaTerrestre.jpg"),
             contacts: "",
             social: {
@@ -1989,7 +1988,7 @@ export default [
                     height: 0,
                     distance: 3000,
                     duration: 0,
-                    effort: "Médio"
+                    effort: "Medium"
                 },
                 contactList: [
                     { name: '', link: '' }
@@ -2036,10 +2035,10 @@ export default [
     {
         type: "tourism",
         id: 7029,
-        categorie: "parque",
-        title: "Trilhas Aquáticas/Excursões de canoas",
+        categorie: "park",
+        title: "Aquatic trails/Excursions in canoes",
         content: {
-            description: "No período de cheia, as trilhas aquáticas são uma excelente oportunidade para o visitante percorrer de barco entre as árvores das ilhas inundadas do Rio Negro ou das margens do Rio Jaú. Destaca-se o Lago Santo Antônio, o Furo do Sabino, Igarapé do Gavião, Furo da Enseada, Igarapé Preto, que fica no entorno, mas com acesso pelo parque, e o Circuito Aquático da Cachoeira do Jaú, onde é possível o avistamento de grupos de macacos bicós (uacari, cacajao malanocephalus) e outras espécies nativas.",
+            description: "During the flooding period, the aquatic trails are an excellent opportunity for the visitor to pass by boat through the trees of the flooded islands in the Negro River or the margins of the Jaú River. Santo Antônio lake stands out as well as Furo do Sabino and Gaviao Creek, Furo da Enseada, Black Creek, which surrounds the area, but with access by the Park and the Aquatic Circuit ofJaú waterfall where it is possible to see a group of bicó monkeys (uacari, cacajao, malanocephalus) and other native species.",
             image: require("../../exceptionalImage/tour/trilhaAquaticaJau.jpeg"),
             contacts: "",
             social: {
@@ -2068,10 +2067,10 @@ export default [
     {
         type: "tourism",
         id: 7030,
-        categorie: "parque",
-        title: "Observações de Aves no Jaú",
+        categorie: "park",
+        title: "Bird watching in Jaú",
         content: {
-            description: "A observação de aves é um segmento do turismo que tem bastante espaço no Parque Nacional do Jaú, podendo ser realizado nas trilhas terrestres, aquáticas, ilhas e praias. O inventário da avifauna do parque catalogou a presença de 445 espécies, sendo que esse número deve ser maior, pois os estudos se concentraram em algumas áreas da unidade. A heterogeneidade de hábitats encontrados no parque, que incluem matas de terra firme, matas de igapó, campinaranas, entre outros, explica em parte a alta diversidade de espécies de aves. Trilhas, como a do Pesquisador, tem um potencial grande para a atividade, com seus diferentes ambientes, indo de mata de igapó à campina.",
+            description: "Birdwatching is a segment of tourism that has a lot of space in Jaú National Park. Being able to happen on the land trails, water trails, islands and beaches. The inventory of the avifauna of the Park has catalogued the presence of 445 species, but this number is probably higher because the studies were restricted to some areas of the unit. The heterogeneity of habitats found in the Park that include dry land woods, igapo woods, meadows, among others, partially explains the great diversity of bird species. Trails, such as the Researcher's, have a great potential for the activity, with their different environments. From Igapo woods to meadows.",
             image: require("../../exceptionalImage/tour/passaroJau.jpeg"),
             contacts: "",
             social: {
@@ -2100,10 +2099,10 @@ export default [
     {
         type: "tourism",
         id: 7031,
-        categorie: "parque",
-        title: "Observações dos Petróglifos",
+        categorie: "park",
+        title: "Petroglyph observation",
         content: {
-            description: "O Parna do Jaú possui um rico patrimônio arqueológico, principalmente nas proximidades da boca do Rio Jaú, tanto no Rio Jaú como no Negro. Também é possível encontrar uma área com vários registros no entorno imediato do parque. A observação dos Petróglifos é uma atividade sazonal, na época da seca, com acessibilidade somente via fluvial com canoas. Por ser um patrimônio frágil, os visitantes devem tomar cuidado para não bater com as embarcações nas gravuras nem as tocar. É possível percorrer os sítios de petróglifos numa trilha aquática de 31 km, passando ainda por áreas de praias e no meio de ilhas.",
+            description: "The Parna of Jaú possesses a rich archeological patrimony. Especially near Jau River Boca. As well as in Jau River and Negro River. It's also possible to find an area with many registers in the immediate surrounding areas of the park. The observation of Petroglyphs is a seasonal activity, during the drought, with access only by canoes. For being a fragile patrimony, visitors must be careful not to hit with their boats on the drawings. They can't even touch them. It's possible to go through the petroglyph sites in an aquatic trail of 31 km, also passing by beach areas and in the middle of islands.",
             image: require("../../exceptionalImage/tour/petroglifo.jpeg"),
             contacts: "",
             social: {
@@ -2132,10 +2131,10 @@ export default [
     {
         type: "tourism",
         id: 7032,
-        categorie: "parque",
-        title: "Grutas do Madadá e Pedra Sanduíche no Rio Negro",
+        categorie: "park",
+        title: "Madadá's grottoes and the Sandwich Stone in the Negro River",
         content: {
-            description: "Este passeio dura cerca de 1 hora e meia de ida navegando pelo Parque Nacional de Anavilhanas. O ideal é fazer este passeio combinado com o passeio até Airão Velho, no caminho contempla-se algumas formações rochosas, com destaque para a Pedra Sanduiche. Localizado na margem esquerda do rio Negro, a 40 km do Município de Novo Airão, localiza-se no caminho de acesso para o Parque Nacional do Jaú. Essas formações rochosas são próximas ao outro atrativo que são as Grutas do Madadá. Realiza-se uma caminhada de cerca de 50 min, já a “Pedra Sanduíche” encontra-se junto às margens do rio Negro, outros atrativos nas proximidades são: trilhas e igarapés com corredeiras",
+            description: "This tour takes about an hour and a half navigating through the Anavilhanas National Park. The ideal is to take this tour combined with the tour to Airao Velho. On the way it's possible to contemplate some rock formations, such as the outstanding Sandwich Stone. Located in the left margin of the Negro River, 40 km away from Novo Airão town, it's the access route to Jaú National Park. These rock formations are next to another perk: the Madadá grottoes. It is taken a hike of about 50 minutes. On the other hand, the Sandwich Stone is located close to the margins of the Negro River. Other interesting activities are trails and creeks with rapids.",
             image: require("../../exceptionalImage/tour/pedraSanduiche.jpg"),
             contacts: "",
             social: {
@@ -2164,10 +2163,10 @@ export default [
     {
         type: "tourism",
         id: 7033,
-        categorie: "parque",
-        title: "Ruínas de Airão Velho ",
+        categorie: "park",
+        title: "Airão Velho's Ruins",
         content: {
-            description: "O principal atrativo turístico do Parque Estadual do Rio Negro - Setor Norte são as ruínas de Airão Velho: Foi uma das vilas mais importantes no médio Rio Negro desde a época dos colonizadores portugueses até a Segunda Guerra Mundial. Airão concentrava toda a produção de borracha do alto rio Negro, do rio Jaú e seus afluentes e do rio Branco, trazendo a produção de vilarejos próximos à Boa Vista (Roraima). Após alguns acontecimentos a cidade foi abandonada, hoje sendo chamada de Airão Velho.",
+            description: "The main touristic perk of the Negro River State Park-North sector are Airão Velho's ruins.It was one of the most important villages in the middle Negro River since the time of the Portuguese colonizers until World War 2. Airão used to concentrate all rubber production of the upper Negro River, of Jaú River and its affluents and Branco River, bringing the production of small villages near Boa Vista city (Roraima State). After some events, the city was abandoned, nowadays being known as Airão Velho (Old Airão).",
             image: require("../../exceptionalImage/tour/airaoVelho.jpg"),
             contacts: "",
             social: {
@@ -2199,7 +2198,7 @@ export default [
         categorie: "aventura",
         title: "Travessia Por do Sol Bike Aquática em Anavilhanas",
         content: {
-            description: "Saída de Bike Aquática no Rio Negro em direção a subida do Rio Negro para visualização do por do sol, passando pela frente da cidade de Novo Airão, conhecendo a história da cidade, parte da natureza existente na região como as grandes árvores como a Macucu gigante ( usada para arborismo na região).",
+            description: "Departure by Water Bike on the Rio Negro towards the ascent of the Rio Negro to view the sunset, passing in front of the city of Novo Airão, listening to the stories of the city, part of the existing nature in the region such as the large trees such as the giant Macucu (Used for arborism in the region).",
             image: require("../../exceptionalImage/tour/bikeAquaticaSunset.png"),
             contacts: "",
             social: {
@@ -2229,9 +2228,9 @@ export default [
         type: "tourism",
         id: 7035,
         categorie: "aventura",
-        title: "Aurora no Rio Negro de Stand Up Paddle ( nascer do sol)",
+        title: "Aurora no Rio Negro de Stand Up Paddle (nascer do sol)",
         content: {
-            description: "Saída  de pranchas de Stand UP Paddle para principiantes ( mais largas e mais estáveis) no Rio Negro em direção a descida do do Rio Negro para visualização do nascer do sol, passando pelo meio do Rio Negro na correnteza onde habita alguns botos rosas em com a possibilidade de ser presenteado com imagens lindissimas e paz plena em meio ao Rio Negro.",
+            description: "Departure by Stand Up Paddle boards for beginners (wider and more stable) on Rio Negro towards the descent of the Rio Negro to view the sunrise, passing through the middle of Rio Negro current where some pink dolphins live in with the possibility of being presented with beautiful landscapes and complete peace in the middle of the river.",
             image: require("../../exceptionalImage/tour/bikeAquatica.jpg"),
             contacts: "",
             social: {
@@ -2278,9 +2277,9 @@ export default [
     {
         type: "craftsmanship",
         id: 10000,
-        title: "Associação dos Artesãos de Novo Airão",
+        title: "Novo Airão's Handcrafters Association",
         content: {
-            description: "Temos por objetivo resgatar e divulgar a arte popular, apoiar a produção e comercialização de artesanatos com fibras naturais para manter viva a herança cultural de nosso povo.",
+            description: "We have as a goal to rescue and promote the popular art, support the production and the trading of handcrafts of natural fibers and keep alive the cultural heritage of our people.",
             image: require("../../exceptionalImage/attractions/AANA.jpeg"),
             contacts: "tel://+5592984591290",
             social: {
@@ -2288,7 +2287,7 @@ export default [
                 facebook: 'https://www.facebook.com/profile.php?id=100069638858086',
                 site: ''
             },
-            offering: ["Tapeçaria"],
+            offering: ["Tapestry"],
             address: "Av.ajuricaba N 55 centro ",
             addressLink: "https://goo.gl/maps/TGwtVKZNREGDNsjZA",
             profile: ["adventure", "soft", "calm"],
@@ -2354,9 +2353,9 @@ export default [
     {
         type: "craftsmanship",
         id: 10004,
-        title: "Lili Encantos",
+        title: "Lili Enchantments",
         content: {
-            description: "Nosso artesanato detém a essência da cultura da terra, dos nossos ancestrais. Trabalhamos com a confecção de adereços e lembranças em madeira, acessórios com penas, sempre respeitando a biodiversidade existente na floresta.",
+            description: "Our handcraft has within it the essence of the land culture. The essence of our ancestors. We work with the making of ornaments and souvenirs made of wood. Accessories with feathers. Always respecting the existing biodiversity in the forest.",
             image: require("../../exceptionalImage/attractions/liliEncantos.png"),
             contacts: "tel://+5592984810171",
             social: {
@@ -2364,7 +2363,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Cartão", "Internet"],
+            offering: ["Card", "Internet"],
             address: "Travessa José Bonifácio",
             addressLink: "https://goo.gl/maps/Q7RbLuGau7FU8A829",
             profile: ["adventure", "soft", "calm"],
@@ -2375,7 +2374,7 @@ export default [
         id: 10005,
         title: "Amanã Art's",
         content: {
-            description: "Artesanato regional diretamente de artesãos moradores das Comunidades de Novo Airão.",
+            description: "Regional handcrafts coming straight from the dwellers of the communities in Novo Airão",
             image: require("../../exceptionalImage/craftsmanship/amana.jpeg"),
             contacts: "tel://+5592991130538",
             social: {
@@ -2383,7 +2382,7 @@ export default [
                 facebook: '',
                 site: ''
             },
-            offering: ["Venda de produtos originais"],
+            offering: ["Selling of original products"],
             address: "Rua Presidente Vargas, 14, centro ",
             addressLink: "https://goo.gl/maps/RjWCUYVMJkUpRvuT8",
             profile: ["adventure", "soft", "calm"],
@@ -2411,9 +2410,9 @@ export default [
     {
         type: "craftsmanship",
         id: 10007,
-        title: "Fundação Almerinda Malaquias",
+        title: "Almerinda Malaquias Foundation",
         content: {
-            description: "A Fundação Almerinda Malaquias é uma instituição privada e sem fins lucrativos, que há 22 anos atua com ênfase na educação e na transformação social, comprometida em promover geração de renda e educação ambiental, através do projeto de marcenaria de pequenos objetos e marchetaria que ensina, a jovens e pais de família, a oportunidade de aprender uma profissão e com isso garantir sua renda.",
+            description: "The Almerinda Malaquias Foundation is a non-profit private institution that for 22 years has been acting with emphasis on education and social transformation, committed to promoting generation of income and environmental education through the project of woodwork of small objects and marquetry that gives young people and family leaders the opportunity to learn a profession and guarantee their income.",
             image: require("../../exceptionalImage/tour/fam.jpeg"),
             contacts: "tel://+5592993986331",
             social: {
@@ -2421,7 +2420,7 @@ export default [
                 facebook: 'https://pt-br.facebook.com/FAMFundacaoAlmerindaMalaquias/',
                 site: 'https://fundacaoalmerindamalaquias.org/'
             },
-            offering: ["Loja climatizada", "Área arborizada", "Internet"],
+            offering: ["store with air conditioner", "wooded area", "Internet"],
             address: "Av.ajuricaba N 55 centro ",
             addressLink: "https://goo.gl/maps/11331kQ6iRFLwV8v5",
             profile: ["adventure", "soft", "calm"],
@@ -2432,7 +2431,7 @@ export default [
         id: 10008,
         title: "Waimiri Atroari",
         content: {
-            description: "Os índios Waimiri Atroari produzem artefatos indígenas como arco, flechas, brincos, pulseiras, cestarias, rede de tucum e buriti. Sua matéria-prima é fibra de arumã e cipó ambé. Estes são confeccionados pelo próprio povo indígena e são comercializados na casa de apoio sede Novo Airão.",
+            description: "The Waimiri Atroari indians produce indigenous artifacts such as bows, arrows, earrings, baskets, buriti and tucum hammocks. Their raw material is Arumã fiber and Ambé vine. These materials are manufactured by the indigenous people themselves and they are traded in the headquarters of the house of support Novo Airão.",
             image: require("../../exceptionalImage/attractions/waimiri.jpeg"),
             contacts: "tel://+5592992346528",
             social: {
@@ -2451,7 +2450,7 @@ export default [
         id: 11000,
         title: "Tauá tour",
         content: {
-            description: "A proposta da Tauá Tour é uma imersão profunda nos ambientes do Rio Negro, com passeios fluviais num barco regional confortável. O foco importante para a Tauá Tour é explicar todos os aspectos e desafios de desenvolvimento socioeconômico da região, alinhado com a preservação do meio ambiente.",
+            description: "Tauá Tour aims to provide a deep immersion into the environments of Negro River through a river ride on a comfortable regional boat. The important focus of Tauá Tour is to explain all the aspects and challenges of the socioeconomic development of the region, aligned with the preservation of the environment.",
             image: require('../../exceptionalImage/agencies/karugua.jpg'),
             contacts: "tel://+5592992591548",
             social: {
@@ -2461,10 +2460,10 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7001' },
+                    { name: 'Arborism', link: '7001' },
                 ],
             },
-            offering: ["passeios de canoa", "trilhas", "safaris fotografia"],
+            offering: ["Canoe rides", "trails ", "safaris photography"],
             address: "Avenida Presidente Vargas n°107",
             addressLink: '',
             profile: ["adventure", "soft", "calm"],
@@ -2475,7 +2474,7 @@ export default [
         id: 11001,
         title: "Reco turismo",
         content: {
-            description: "Passeios turísticos aos roteiros fluviais pelo Rio Negro, com conforto e segurança. Capacidade de 15 pessoas.",
+            description: "Touristic rides to the waterway routes in the Negro River, with comfort and safety. Up to 15 people.",
             image: require('../../exceptionalImage/agencies/reco.jpg'),
             contacts: "tel://+5592991599272",
             social: {
@@ -2485,11 +2484,11 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Flutuante dos botos', link: '7007' },
-                    { name: 'Comunidade do Tiririca', link: '7009' },
+                    { name: 'Houseboat of the Dolphins', link: '7007' },
+                    { name: 'Tiririca Community', link: '7009' },
                 ],
             },
-            offering: ["Anavilhanas", "Jaú", "Comunidades"],
+            offering: ["Anavilhanas", "Jaú", "Communities"],
             address: "Avenida Presidente Vargas n°107",
             addressLink: '',
             profile: ["adventure", "soft", "calm"],
@@ -2500,7 +2499,7 @@ export default [
         id: 11002,
         title: "RM turismo",
         content: {
-            description: "Trabalhamos com passeios turísticos fluviais pelos Parques Nacionais do Jaú e de Anavilhanas. Fazemos trilhas, observação de pássaros, passeios de barco, focagem de jacarés e muito mais.",
+            description: "We work with waterborne touristic rides through the national parks of Anavilhanas and Jaú. We promote trails, bird watching, alligator spotting and much more.",
             image: require('../../exceptionalImage/agencies/rmTurismo.jpeg'),
             contacts: "tel://+5592993721155",
             social: {
@@ -2513,7 +2512,7 @@ export default [
                     { name: 'Arborismo', link: '7001' },
                 ],
             },
-            offering: ["Trilha", "Grutas do Madadá", "Airão Velho", "Focagem noturna", "Observação de pássaros", "pesca esportiva", "Jaú", "Anavilhanas"],
+            offering: ["Trails", "Madadá grotto", "Nocturnal spotting", "bird watching", "sport fishing", "Jaú", "Anavilhanas"],
             address: "Avenida rui barbosa n 59",
             addressLink: "https://goo.gl/maps/GVFZeqJnHnK8zkYVA",
             profile: ["adventure", "soft", "calm"],
@@ -2524,7 +2523,7 @@ export default [
         id: 11003,
         title: "Associação Anavilhanas de transporte Aquaviário de Novo Airão",
         content: {
-            description: "A AATRA tem como objetivo dispor de transportes aquaviários, nas áreas do município de Novo Airão, para passeios turísticos, excursões de trabalho, pesquisa e produção de material publicitário sobre os pontos turísticos e belezas naturais de Novo Airão e outros.",
+            description: "The AATRA has the goal of making waterborne transports available in the areas of Novo Airão Town for touristic rides, work excursions, research and the production of advertising material about the touristic sites and natural beauty in Novo Airão and other locations.",
             image: require('../../exceptionalImage/agencies/aatra.jpg'),
             contacts: "tel://+5592991006437",
             social: {
@@ -2534,10 +2533,10 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Comunidade do Mirituba', link: '7012' },
+                    { name: 'Mirituba Community', link: '7012' },
                 ],
             },
-            offering: ["Observação de aves", " Focagem noturna", "Trilhas aquáticas", "Trilhas terrestres", "Visitas às comunidades", "Acampamento em barraca", "Banho em praia"],
+            offering: ["Bird watching", "nocturnal spotting", "aquatic trails ", "land trails", "visits to the communities", "tent camping", "beach bathing"],
             address: "",
             addressLink: "https://goo.gl/maps/4uAbcgXPbD8VZrGV9",
             profile: ["adventure", "soft", "calm"],
@@ -2548,7 +2547,7 @@ export default [
         id: 11004,
         title: "Jailton Melo Turismo",
         content: {
-            description: "Meu trabalho é levar o conhecimento de nossa cultura amazônica, mostrando aos clientes as belezas naturais do Parque Nacional de Anavilhanas, proporcionando intercâmbio cultural com nosso povo ribeirinho e todo o potencial turístico de nosso Município.",
+            description: "My job is to bring the knowledge of our Amazon culture, showing our clients the natural beauties of the Anavilhanas National Park, providing cultural interchange with our river people and all the touristic potential of our town.",
             image: require('../../exceptionalImage/agencies/jailtonMelo.jpeg'),
             contacts: "tel://+5592991815089",
             social: {
@@ -2561,7 +2560,7 @@ export default [
                     { name: 'Arborismo', link: '7001' },
                 ],
             },
-            offering: ["Trilhas aquáticas", "Árvore gigante", "Comunidades do Tiririca", "Comunidades do Santo Antônio", "Grutas do Madadá", "Airão vVelho"],
+            offering: ["Aquatic trails", "giant tree", "Tiririca communities", "Santo Antônio communities", "Madadá grotto", "Airão Velho"],
             address: "Rua  Almerinda Malaquias n123, Bairro Santo Elias",
             addressLink: "",
             profile: ["adventure", "soft", "calm"],
@@ -2570,9 +2569,9 @@ export default [
     {
         type: "agencies",
         id: 11005,
-        title: "Em cantos da Amazônia",
+        title: "Enchantments of the Amazon",
         content: {
-            description: "Somos uma agência de passeios que oferece diversos tipos de roteiros, com conforto e segurança, para nossos clientes. Nossas lanchas são todas equipadas com GPS, e equipagem de segurança e temos dois barcos regionais de passeio, para as famílias que preferem mais comodidade.",
+            description: "We are an agency of rides that offers many different kinds of itineraries, with comfort and safety to our clients. Our fast boats are all equipped with GPS and safety gears and we have two regional boats for rides for families that prefer more comfort.",
             image: require('../../exceptionalImage/agencies/emCantosDaAmazonia.jpg'),
             contacts: "tel://+5592992296667",
             social: {
@@ -2582,10 +2581,10 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7001' },
+                    { name: 'Arborism', link: '7001' },
                 ],
             },
-            offering: ["Passeios na Anavilhanas e Jaú"],
+            offering: ["Tours in Anavilhanas and Jaú"],
             address: "",
             addressLink: "https://goo.gl/maps/Uk5Tk7Dtw8amiLKn9",
             profile: ["adventure", "soft", "calm"],
@@ -2596,7 +2595,7 @@ export default [
         id: 11006,
         title: "Ayraotaxitur",
         content: {
-            description: "A Ayrãotaxitur atua há 10 anos com transporte turístico, e há 7 anos com passeios e expedições nos principais pontos dos Parques Nacionais de Anavilhanas e Jaú. Cuidamos de tudo desde a sua chegada à Manaus.",
+            description: "Ayraotaxitur has been in business for 10 years working with touristic transportation, and for 7 years working with tours and expeditions in the main areas of the National Parks of Anavilhanas and Jaú. We take care of everything from the moment you arrive in Manaus.",
             image: require('../../exceptionalImage/agencies/ayraoTaxiTur.png'),
             contacts: "tel://+5592995088436",
             social: {
@@ -2606,10 +2605,10 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7001' },
+                    { name: 'Arborism', link: '7001' },
                 ],
             },
-            offering: ["Serviços de Transporte e Agenciamento de ecoturismo nos Parques Nacionais de Anavilhanas e Jaú."],
+            offering: ["Services of transportation and agencying of ecotourism in the parks of Anavilhanas and Jaú"],
             address: "Rua Francisco Bezerra N 113 Santo Elias",
             addressLink: "https://goo.gl/maps/UBUZFEP6WVDCfPYf6",
             profile: ["adventure", "soft", "calm"],
@@ -2618,9 +2617,9 @@ export default [
     {
         type: "agencies",
         id: 11007,
-        title: "Sandventure Turismo e Aventura",
+        title: "Sandventure Tourism and Adventure",
         content: {
-            description: "Empresa e Agência de Turismo com foco em turismo de sobrevivência e turismo de aventura. Juntando atividades ao ar livre com cultura, história, geografia e aventura.",
+            description: "Company and agency of tourism with focus on survival tourism and adventure tourism. Combining outdoor activities with culture, history, geography and adventure.",
             image: require('../../exceptionalImage/agencies/sandventure.jpg'),
             contacts: "tel://+5592984482028",
             social: {
@@ -2630,12 +2629,12 @@ export default [
             },
             showActivities: {
                 activitiesList: [
-                    { name: 'Arborismo', link: '7001' },
+                    { name: 'Arborism', link: '7001' },
                     { name: 'Bike aquatica', link: '7034' },
-                    { name: 'Aurora do Rio Negro SUP', link: '7035' },
+                    { name: 'Sunset crossing', link: '7035' },
                 ],
             },
-            offering: ["Criação de grupo de atividades de turismo de aventura e ecoturismo para familias e amigos."],
+            offering: ["Creation of group of adventure tourism activities and ecotourism for family and friends"],
             address: "",
             addressLink: "https://goo.gl/maps/CfGXFwuvgvkjRQXL7",
             profile: ["adventure", "soft", "calm"],
@@ -2715,7 +2714,7 @@ export const labels = {
     home: {
         header: 'Hello',
         mais: 'see more',
-        search: 'Say something',
+        search: 'Search something',
         artesanato: 'Handcraft',
         agencia: 'Agency/Operator',
         gastronomia: 'Gastronomy',
@@ -2723,14 +2722,21 @@ export const labels = {
     },
     accomodation: {
         title: 'Lodging',
-        search:'Search for a place to stay',
+        search: 'Search for a place to stay',
         casas: {
             title: 'Holiday homes',
             text: 'The Holiday homes in Novo Airão are available through specialized platforms for this kind of service.'
         }
     },
     activities: {
-
+        title: 'Activities',
+        search: 'Search an activity',
+        filter: {
+            title: 'Sort by',
+            button: 'Sort',
+            text: 'Choose one of the categories below',
+            preset: 'All'
+        }
     },
     map: {
         title: 'How to get there',

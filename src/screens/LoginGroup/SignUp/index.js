@@ -35,28 +35,13 @@ import theme from '../../../global/styles/theme'
 import { privacyText } from '../../../../privacyPolicy'
 import Logo from '../../../components/Logo'
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
-
+import { useContext } from "react";
+import LanguageSelector from "../../../utils/LanguageSelector"
 
 const SignUp = () => {
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('en')
-    const [language, setLanguage] = useState(portuguese)
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-
-    useEffect(() => {
-        handleLanguage()
-    }, [])
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')

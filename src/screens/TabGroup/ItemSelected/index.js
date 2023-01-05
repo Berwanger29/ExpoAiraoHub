@@ -27,20 +27,37 @@ import data from "../../../../data";
 import { useNavigation } from "@react-navigation/native";
 import theme from "../../../global/styles/theme";
 
+import { useContext } from "react";
+import LanguageSelector from "../../../utils/LanguageSelector"
+import * as ptData from "../../../utils/pt";
+import * as enData from "../../../utils/en";
 
 
 const ItemSelected = ({ route }) => {
+
+
+    const { portuguese, english, language, flag } = useContext(LanguageSelector);
+    const [languageData, setLanguageData] = useState(ptData.default)
+
+    useEffect(() => {
+        if (language == portuguese) {
+            setLanguageData(ptData.default)
+        } else if (language == english) {
+            setLanguageData(enData.default)
+        }
+    }, [language])
+
 
     const { itemId } = route.params;
     const navigation = useNavigation()
 
     const [links, setLinks] = useState(false)
 
-    let agenciesData = data.filter((item) => {
+    let agenciesData = languageData.filter((item) => {
         return item.type == 'agencies'
     })
 
-    let arrayData = data.filter((item) => {
+    let arrayData = languageData.filter((item) => {
         return item.id == itemId
     })
     let itemData = arrayData[0]

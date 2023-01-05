@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useContext } from "react"
 import {
     ButtonsContainer,
     Container,
@@ -27,28 +27,11 @@ import _Bus from "../../../components/_Screens/Map/_Bus"
 import _Airplane from "../../../components/_Screens/Map/_Airplane"
 import _Boat from "../../../components/_Screens/Map/_Boat"
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
-
-
+import LanguageSelector from "../../../utils/LanguageSelector"
 
 const Map = () => {
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('pt')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-    useEffect(() => {
-        handleLanguage()
-    }, [])
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
     const [isFocused, setIsFocused] = useState(true)
     const [name, setName] = useState('carro')

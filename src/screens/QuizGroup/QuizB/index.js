@@ -1,4 +1,4 @@
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext } from 'react';
 import {
     Container,
     Header,
@@ -7,7 +7,6 @@ import {
     Button,
     ButtonsContainer,
     ButtonBackContainer,
-    AnimationContainer
 } from './styles';
 
 import SelectButton from '../../../components/_Screens/Quiz/SelectButton';
@@ -25,28 +24,11 @@ import { QuizContext } from '../../../contexts/QuizContext';
 import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
 import { TextRegular, TextThin } from '../../../components/Texts';
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
 
-
+import LanguageSelector from "../../../utils/LanguageSelector"
 
 const QuizB = () => {
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('pt')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-    useEffect(() => {
-        handleLanguage()
-    }, [])
-
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
 
     const navigation = useNavigation()

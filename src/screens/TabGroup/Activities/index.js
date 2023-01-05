@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import {
     Container,
     Header,
@@ -36,6 +37,8 @@ import { useEffect, useState } from 'react';
 import data from '../../../../data';
 import theme from '../../../global/styles/theme';
 
+import LanguageSelector from '../../../utils/LanguageSelector';
+
 const TopTab = createMaterialTopTabNavigator()
 
 function ActivitiesTopTabs() {
@@ -61,6 +64,8 @@ function ActivitiesTopTabs() {
 }
 
 const Activities = () => {
+
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
     const [input, setInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
@@ -154,7 +159,7 @@ const Activities = () => {
 
                 <HeroContainer>
                     <TextSubTitle
-                        text="O que fazer"
+                        text={language.activities.title}
                         color={theme.colors.darkGreen}
                     />
                     <FIlterButton
@@ -169,7 +174,7 @@ const Activities = () => {
                     }}
                 >
                     <Input
-                        placeholder="Procure uma atividade"
+                        placeholder={language.activities.search}
                         value={input}
                         onChangeText={(e) => setInput(e)}
                     />
@@ -238,20 +243,20 @@ const Activities = () => {
                     <FilterContainer>
                         <FilterHeader>
                             <TextSubTitle
-                                text='Filtro'
+                                text={language.activities.filter.title}
                             />
                             <CloseModalButton
                                 onPress={handleModal}
                             >
                                 <TextRegular
-                                    text='filtrar'
+                                    text={language.activities.filter.button}
                                     color={theme.colors.light}
                                 />
                             </CloseModalButton>
                         </FilterHeader>
                         <Details>
                             <TextRegular
-                                text='Escolha abaixo uma das opções de filtro '
+                                text={language.activities.filter.text}
                             />
                         </Details>
                         <Line />

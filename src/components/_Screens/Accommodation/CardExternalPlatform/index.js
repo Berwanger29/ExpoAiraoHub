@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
     Container,
 } from "./styles"
@@ -6,8 +7,11 @@ import { useNavigation } from '@react-navigation/native';
 import { TextRegular } from "../../../Texts";
 import theme from "../../../../global/styles/theme";
 
+import LanguageSelector from "../../../../utils/LanguageSelector";
+
 const CardExternalPlatform = () => {
 
+    const { portuguese, english, language } = useContext(LanguageSelector);
     const navigation = useNavigation()
 
     return (
@@ -19,7 +23,7 @@ const CardExternalPlatform = () => {
             }}
         >
             <TextRegular
-                text='Casas de temporada'
+                text={language.accomodation.casas.title}
                 color={theme.colors.darkGreen}
                 format='justify'
             />

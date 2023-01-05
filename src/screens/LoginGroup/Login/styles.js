@@ -22,13 +22,14 @@ export const LabelContainer = styled.View`
     width: 100%;
 `
 export const ButtonLanguage = styled.TouchableOpacity`
-    padding: 5px;
-    background-color: ${(props) => props.theme.colors.light};
-    border: 1px solid ${(props) => props.theme.colors.green};
+    
     border-radius: 5px;
+    width: 40px;
+    height: 30px;
 `
-export const CountryFlag = styled.Text`
-
+export const CountryFlag = styled.Image`
+    width: 100%;
+    height: 100%;
 `
 
 export const InputContainer = styled.View`

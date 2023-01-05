@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useContext } from "react";
 import {
     Container,
     HorizontalView,
@@ -17,27 +17,11 @@ import { useNavigation } from '@react-navigation/native'
 import { TextSubTitle, TextThin } from "../../../Texts";
 import theme from "../../../../global/styles/theme";
 
-import * as pt from "../../../../utils/pt";
-import * as en from "../../../../utils/en";
-
+import LanguageSelector from "../../../../utils/LanguageSelector";
 
 export const Carroussel = ({ title, data }) => {
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('pt')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-    useEffect(() => {
-        handleLanguage()
-    }, [])
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
     const navigation = useNavigation()
 

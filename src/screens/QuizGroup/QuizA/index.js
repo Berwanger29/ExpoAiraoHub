@@ -20,30 +20,14 @@ import boating from '../../../../assets/animations/boating.json'
 
 
 import { useNavigation } from '@react-navigation/native';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import { QuizContext } from '../../../contexts/QuizContext';
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
+import LanguageSelector from "../../../utils/LanguageSelector"
 
 const QuizA = () => {
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('en')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-
-    useEffect(() => {
-        handleLanguage()
-    }, [])
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
     const navigation = useNavigation()
     const { quizCount, setQuizCount } = useContext(QuizContext)

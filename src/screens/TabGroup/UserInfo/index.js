@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import BackButton from '../../../components/BackButton'
 import {
     Container,
     ContainerBackButton,
     Header,
     Main,
+    ButtonLanguage,
+    CountryFlag
 } from './styles'
 
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -12,28 +14,15 @@ import { TextRegular, TextSubTitle } from '../../../components/Texts'
 import BackgroundImage from '../../../components/BackgroundImage'
 import CardText from '../../../components/_Screens/User/CardText'
 
+import LanguageSelector from '../../../utils/LanguageSelector'
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
+
 
 
 const UserInfo = () => {
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('pt')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-    useEffect(() => {
-        handleLanguage()
-    }, [])
+    const { portuguese, english, language, flag } = useContext(LanguageSelector);
+    const { handleLanguage } = useContext(LanguageSelector);
 
     const [infoProfile, setInfoProfile] = useState('')
 
@@ -77,7 +66,7 @@ const UserInfo = () => {
                         <BackButton />
                     </ContainerBackButton>
                     <TextSubTitle
-                        text='Perfil'
+                        text={language.account.profile.profile}
                     />
                 </Header>
                 <Main>
@@ -86,6 +75,13 @@ const UserInfo = () => {
                             text={`${language.account.profile.text} ${infoProfile}`}
                         />
                     </CardText>
+                    <ButtonLanguage
+                        onPress={() => handleLanguage()}
+                    >
+                        <CountryFlag
+                            source={flag}
+                        />
+                    </ButtonLanguage>
                 </Main>
             </Container>
         </BackgroundImage>

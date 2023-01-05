@@ -17,37 +17,34 @@ import UserButton from '../../../components/UserButton'
 import UserButtonContainer from '../../../components/UserButtonContiner'
 import Carroussel from '../../../components/_Screens/Home/Carrousel'
 
-import data from '../../../../data'
+//import data from '../../../../data'
+
 import HomeSearchCard from '../../../components/_Screens/Home/HomeSearchCard';
 import { TextTitle } from '../../../components/Texts';
 import HeroContainer from '../../../components/HeroContainer';
 
 
-import * as pt from '../../../utils/pt'
-import * as en from '../../../utils/en'
-
+import { useContext } from "react";
+import LanguageSelector from "../../../utils/LanguageSelector"
+import * as ptData from '../../../utils/pt';
+import * as enData from '../../../utils/en';
 
 
 const Home = () => {
 
-    const portuguese = pt.labels
-    const english = en.labels
-    const [selectedLanguage, setSelectedLanguage] = useState('pt')
-    const [language, setLanguage] = useState(portuguese)
-
-    function handleLanguage() {
-        if (selectedLanguage === 'pt') {
-            setLanguage(portuguese)
-        } else if (selectedLanguage === 'en') {
-            setLanguage(english)
-        }
-    }
-    useEffect(() => {
-        handleLanguage()
-    }, [])
+    const { portuguese, english, language } = useContext(LanguageSelector);
 
     const [input, setInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
+    const [languageData, setLanguageData] = useState(ptData.default)
+
+    useEffect(() => {
+        if (language == portuguese) {
+            setLanguageData(ptData.default)
+        } else if (language == english) {
+            setLanguageData(enData.default)
+        }
+    }, [language])
 
 
     // let inCityData = data.filter((item) => {
@@ -58,7 +55,7 @@ const Home = () => {
     //     return item.type == 'attractions'
     // })
 
-    let craftsmanship = data.filter((item) => {
+    let craftsmanship = languageData.filter((item) => {
         return item.type == 'craftsmanship'
     })
 
@@ -70,11 +67,11 @@ const Home = () => {
     //     return item.type == 'jau'
     // })
 
-    let agenciesData = data.filter((item) => {
+    let agenciesData = languageData.filter((item) => {
         return item.type == 'agencies'
     })
 
-    let toEatData = data.filter((item) => {
+    let toEatData = languageData.filter((item) => {
         return item.type == 'toEat'
     })
 
@@ -82,7 +79,7 @@ const Home = () => {
     //     return item.type == 'bathhouse'
     // })
 
-    let hotelsData = data.filter((item) => {
+    let hotelsData = languageData.filter((item) => {
         return item.type == 'hotels'
     })
 
@@ -100,7 +97,7 @@ const Home = () => {
     function getSearched(e) {
         let text = removeAcento(e)
         let arr = []
-        data.filter((item) => {
+        languageData.filter((item) => {
             let dataItem = removeAcento(item.title)
             if (dataItem.includes(text)) {
                 arr.push(item)
