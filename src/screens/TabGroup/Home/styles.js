@@ -2,15 +2,14 @@ import styled from "styled-components/native";
 import { StatusBar } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 
-export const Container = styled.View`
+export const Container = styled.SafeAreaView`
     flex: 1;
     background-color: ${(props) => props.theme.colors.light};
-    padding-top: ${StatusBar.currentHeight}px;
-    padding-left: ${RFValue(15)}px;
+    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 0}px 0px 0 0px;
 `
 export const Header = styled.View`
     margin-bottom: 20px;
-    padding-right: ${RFValue(15)}px;
+    padding: 0px 15px;
 `
 export const SearchConatainer = styled.View`
     flex-direction: row;
@@ -35,11 +34,12 @@ export const SearchButton = styled.TouchableOpacity`
 
 export const Main = styled.View`
     flex:1;
-    padding-right: ${RFValue(15)}px;
+    padding-left: 15px;
+    
 `
 
 export const CarrousselContainer = styled.ScrollView`
-    margin-bottom: ${RFValue(10)}px;
+    
 `
 
 export const HomeList = styled.FlatList`

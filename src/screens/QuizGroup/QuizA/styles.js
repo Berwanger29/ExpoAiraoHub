@@ -1,11 +1,11 @@
 import styled from "styled-components/native";
-import { StatusBar } from "react-native";
+import { Platform, StatusBar } from "react-native";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
 
 export const Container = styled.View`
     flex: 1;
-    padding: ${StatusBar.currentHeight}px 15px 20px 15px;
+    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 0}px 15px;
     background-color: ${props => props.theme.colors.light};
 `
 
@@ -39,14 +39,12 @@ export const Button = styled.TouchableOpacity`
     background-color: ${props => props.theme.colors.semiLight};
     align-items: center;
     justify-content: center;
+    align-self: center;
 
     width:${RFValue(50)}px;
     height: ${RFValue(50)}px;
     border-radius: 5px;
     
     position: absolute;
-    
-    bottom: 0px;
-    
-    align-self: center;
+    bottom: ${Platform.OS === 'android'? 0 : 20}px;
 `

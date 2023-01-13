@@ -5,7 +5,7 @@ import { StatusBar } from "react-native";
 export const Container = styled.View`
     flex: 1;
     background-color: rgba(255,255,255,0.6);
-    padding: ${StatusBar.currentHeight + 5}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 10}px 15px;
     align-items: center;
 `
 
@@ -13,9 +13,9 @@ export const ImageContainer = styled.ImageBackground`
     flex: 1;
 `
 
-export const BackButtonContainer = styled.View`
+export const BackButtonContainer = styled.SafeAreaView`
     position: absolute;
-    top: ${StatusBar.currentHeight + 10}px;
+    top: ${StatusBar.currentHeight + 1}px;
     left: 15px;
 `
 

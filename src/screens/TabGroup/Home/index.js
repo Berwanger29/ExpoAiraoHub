@@ -17,7 +17,6 @@ import UserButton from '../../../components/UserButton'
 import UserButtonContainer from '../../../components/UserButtonContiner'
 import Carroussel from '../../../components/_Screens/Home/Carrousel'
 
-//import data from '../../../../data'
 
 import HomeSearchCard from '../../../components/_Screens/Home/HomeSearchCard';
 import { TextTitle } from '../../../components/Texts';
@@ -128,7 +127,11 @@ const Home = () => {
                 </HeroContainer>
                 <SearchConatainer
                     style={{
-                        elevation: 5
+                        elevation: 5,
+                        shadowColor: '#171717',
+                        shadowOffset: { width: -2, height: 2 },
+                        shadowOpacity: 0.2,
+                        shadowRadius: 3,
                     }}
                 >
                     <Input

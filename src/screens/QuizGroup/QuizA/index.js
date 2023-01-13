@@ -71,11 +71,12 @@ const QuizA = () => {
             />
             <Header>
                 <Lottie
-                    autoPlay
-                    loop
-                    source={boating}
+                    autoPlay={true}
+                    loop={true}
+                    source={require('../../../../assets/animations/boating.json')}
                     style={{
-                        width: '100%'
+                        width: '80%',
+                        alignSelf:'flex-end'
                     }}
                 />
             </Header>

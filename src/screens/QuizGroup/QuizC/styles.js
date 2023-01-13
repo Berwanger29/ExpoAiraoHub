@@ -1,23 +1,23 @@
 import styled from "styled-components/native";
 import { StatusBar } from "react-native";
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import {  RFValue } from "react-native-responsive-fontsize";
 
 
 export const Container = styled.View`
     flex: 1;
-    padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 0}px 15px;
     background-color: ${props => props.theme.colors.light};
 `
 
 export const ButtonBackContainer = styled.View`
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 5px;
 `
 
-export const Header = styled.View`
+export const Header = styled.SafeAreaView`
     width: 100%;
-    flex: 0.7;
+    flex: 0.5;
     align-self: center;
     align-items: center;
     justify-content: center;
@@ -39,15 +39,14 @@ export const ButtonsContainer = styled.View`
 
 export const Button = styled.TouchableOpacity`
     background-color: ${props => props.theme.colors.semiLight};
+    align-items: center;
+    justify-content: center;
+    align-self: center;
 
-align-self: center;
-align-items: center;
-justify-content: center;
-
-margin-top: 20px;
-
-width:${RFValue(50)}px;
-height: ${RFValue(50)}px;
-
-border-radius: 5px;
+    width:${RFValue(50)}px;
+    height: ${RFValue(50)}px;
+    border-radius: 5px;
+    
+    position: absolute;
+    bottom: 20px;
 `

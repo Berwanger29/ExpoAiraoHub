@@ -5,19 +5,19 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
     flex: 1;
-    padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 0}px 15px;
     background-color: ${props => props.theme.colors.light};
 `
 
 export const Header = styled.View`
     width: 100%;
-    flex: 0.7;
+    flex: 0.5;
     align-self: center;
     align-items: center;
     justify-content: center;
 `
 
-export const ButtonBackContainer = styled.View`
+export const ButtonBackContainer = styled.SafeAreaView`
     position: absolute;
     top: 10px;
     left: 5px;
@@ -38,15 +38,14 @@ export const ButtonsContainer = styled.View`
 
 export const Button = styled.TouchableOpacity`
     background-color: ${props => props.theme.colors.semiLight};
-
-    align-self: center;
     align-items: center;
     justify-content: center;
-
-    margin-top: 20px;
+    align-self: center;
 
     width:${RFValue(50)}px;
     height: ${RFValue(50)}px;
-
     border-radius: 5px;
+    
+    position: absolute;
+    bottom: 20px;
 `
