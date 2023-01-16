@@ -4,7 +4,8 @@ import { RFValue } from "react-native-responsive-fontsize"
 export const ButtonContainer = styled.TouchableOpacity`
     width: ${RFValue(270)}px;
     height: ${RFValue(208)}px;
-    margin-right: 20px;
+    margin: 0px 10px;
+
 `
 
 export const ImageCard = styled.ImageBackground`

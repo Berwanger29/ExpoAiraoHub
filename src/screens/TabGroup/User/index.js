@@ -10,6 +10,7 @@ import {
     LogOutText,
     OptionsContainer,
     ContainerBackButton,
+    SafeContainer,
 } from './styles'
 
 import BackgroundImage from '../../../components/BackgroundImage';
@@ -73,61 +74,61 @@ const User = () => {
             image={require('../../../../assets/images/plantBackground.jpg')}
             filter
         >
-            <Container>
-                <Header>
-                    <ContainerBackButton>
-                        <BackButton />
-                    </ContainerBackButton>
-                    <UserIcon>
-                        <FontAwesome5
-                            name="user-alt"
-                            size={RFValue(38)}
-                            color="black"
+            <SafeContainer>
+                <Container>
+                    <Header>
+                        <ContainerBackButton>
+                            <BackButton />
+                        </ContainerBackButton>
+                        <UserIcon>
+                            <FontAwesome5
+                                name="user-alt"
+                                size={RFValue(38)}
+                                color="black"
+                            />
+                        </UserIcon>
+                        <TextSubTitle
+                            text={language.account.account.text}
+                            color={theme.colors.darkGreen}
                         />
-                    </UserIcon>
-                    <TextSubTitle
-                        text={language.account.account.text}
-                        color={theme.colors.darkGreen}
-                    />
-                </Header>
-                <Main>
-                    <OptionsContainer>
-                        <Options
-                            text={language.account.profile.profile}
-                            nameIcon="account-outline"
-                            onPress={() => navigation.navigate('UserInfo')}
-                        />
-                        <Options
-                            text={language.account.privacy.privacy}
-                            nameIcon='shield-account-outline'
-                            onPress={() => navigation.navigate('UserPrivacy')}
-                        />
-                        <Options
-                            text={language.account.contact.contact}
-                            nameIcon='email'
-                            onPress={() => navigation.navigate('UserContact')}
-                        />
-                        <Options
-                            text={language.account.about.about}
-                            nameIcon='information-variant'
-                            onPress={() => navigation.navigate('UserAbout')}
-                        />
+                    </Header>
+                    <Main>
+                        <OptionsContainer>
+                            <Options
+                                text={language.account.profile.profile}
+                                nameIcon="account-outline"
+                                onPress={() => navigation.navigate('UserInfo')}
+                            />
+                            <Options
+                                text={language.account.privacy.privacy}
+                                nameIcon='shield-account-outline'
+                                onPress={() => navigation.navigate('UserPrivacy')}
+                            />
+                            <Options
+                                text={language.account.contact.contact}
+                                nameIcon='email'
+                                onPress={() => navigation.navigate('UserContact')}
+                            />
+                            <Options
+                                text={language.account.about.about}
+                                nameIcon='information-variant'
+                                onPress={() => navigation.navigate('UserAbout')}
+                            />
 
+                        </OptionsContainer>
+                    </Main>
 
-
-                    </OptionsContainer>
-                </Main>
-
-                <Footer>
-                    <LogoutButton
-                        onPress={() => handleLogOut()}
-                    >
-                        <LogOutText>
-                            Logout
-                        </LogOutText>
-                    </LogoutButton>
-                </Footer>
-            </Container>
+                    <Footer>
+                        <LogoutButton
+                            onPress={() => handleLogOut()}
+                        >
+                            <LogOutText>
+                                Logout
+                            </LogOutText>
+                        </LogoutButton>
+                    </Footer>
+                </Container>
+            </SafeContainer>
         </BackgroundImage>
     )
 }

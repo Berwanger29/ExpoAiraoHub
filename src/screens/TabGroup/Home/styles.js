@@ -5,7 +5,8 @@ import { RFValue } from "react-native-responsive-fontsize";
 export const Container = styled.SafeAreaView`
     flex: 1;
     background-color: ${(props) => props.theme.colors.light};
-    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 0}px 0px 0 0px;
+    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 0}px 0px 0px 0px;
+    
 `
 export const Header = styled.View`
     margin-bottom: 20px;
@@ -34,8 +35,6 @@ export const SearchButton = styled.TouchableOpacity`
 
 export const Main = styled.View`
     flex:1;
-    padding-left: 15px;
-    
 `
 
 export const CarrousselContainer = styled.ScrollView`

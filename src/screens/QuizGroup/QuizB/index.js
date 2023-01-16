@@ -77,8 +77,8 @@ const QuizB = () => {
                     loop
                     source={drink}
                     style={{
-                        width: '100%',
-                        height: '100%'
+                        height: '95%',
+                        alignSelf:'center'
                     }}
                 />
                 <ButtonBackContainer>
@@ -114,8 +114,7 @@ const QuizB = () => {
                         changeColor={changeColorC}
                     />
                 </ButtonsContainer>
-            </Main>
-            <Button
+                <Button
                 style={{
                     elevation: 2
                 }}
@@ -126,6 +125,8 @@ const QuizB = () => {
             >
                 <Entypo name="chevron-right" size={24} color={theme.colors.green} />
             </Button>
+            </Main>
+            
         </Container>
     )
 }

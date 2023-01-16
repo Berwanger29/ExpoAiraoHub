@@ -1,10 +1,13 @@
 import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
-import { StatusBar } from "react-native";
+import { StatusBar, Platform } from "react-native";
 
 export const Container = styled.View`
     flex: 1;
-    padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 0}px 15px;
+`
+export const SafeContainer = styled.SafeAreaView`
+    flex: 1;
 `
 
 export const Header = styled.View`

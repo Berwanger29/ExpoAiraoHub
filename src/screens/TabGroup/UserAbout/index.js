@@ -5,6 +5,7 @@ import {
     ContainerBackButton,
     Header,
     Main,
+    SafeContainer,
     Scroll,
 } from "./styles";
 
@@ -23,26 +24,26 @@ const UserAbout = () => {
             filter={1}
             image={require('../../../../assets/images/plantBackground.jpg')}
         >
-            <Container>
-                <ContainerBackButton>
-                    <BackButton />
-                </ContainerBackButton>
-                <Header>
-                    <TextSubTitle
-                        text={language.account.about.about}
-                    />
-                </Header>
-                <Main>
-                    <Scroll>
+            <SafeContainer>
+                <Container>
+                    <Header>
+                        <TextSubTitle
+                            text={language.account.about.about}
+                        />
+                        <ContainerBackButton>
+                            <BackButton />
+                        </ContainerBackButton>
+                    </Header>
+                    <Main>
                         <CardText>
                             <TextRegular
                                 format='justify'
                                 text={language.account.about.text}
                             />
                         </CardText>
-                    </Scroll>
-                </Main>
-            </Container>
+                    </Main>
+                </Container>
+            </SafeContainer>
         </BackgroundImage>
     )
 }

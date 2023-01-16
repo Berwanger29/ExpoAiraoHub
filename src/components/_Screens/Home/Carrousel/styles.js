@@ -13,6 +13,7 @@ export const TopContainer = styled.View`
 
 export const TitleContainer = styled.Text`
     padding-bottom: 10px;
+    padding-left: 15px;
 `
 export const NewListButton = styled.TouchableOpacity`
     flex-direction: row;

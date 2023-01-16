@@ -13,9 +13,8 @@ export const Header = styled.View`
     width: 110%;
     flex: 0.5;
     align-items: center;
-
+    justify-content: center;
     background-color: #76CFE5;
-    padding-left: ${RFPercentage(5)}px;
     margin-left: -5%;
 `
 
@@ -46,5 +45,5 @@ export const Button = styled.TouchableOpacity`
     border-radius: 5px;
     
     position: absolute;
-    bottom: ${Platform.OS === 'android'? 0 : 20}px;
+    bottom: ${Platform.OS === 'android'? 0 : 30}px;
 `

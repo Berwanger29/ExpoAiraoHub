@@ -16,7 +16,11 @@ const BackButton = () => {
         <Container
             onPress={() => navigation.goBack()}
             style={{
-                elevation: 5
+                elevation: 5,
+                shadowColor: '#171717',
+                shadowOffset: { width: -2, height: 2 },
+                shadowOpacity: 0.2,
+                shadowRadius: 3,
             }}
         >
             <MaterialCommunityIcons name="arrow-left-top" size={RFValue(24)} color={theme.colors.black} />

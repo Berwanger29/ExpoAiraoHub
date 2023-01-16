@@ -90,7 +90,9 @@ const QuizC = () => {
                     loop
                     source={duet}
                     style={{
-                        height: '100%',
+                        width: '100%',
+                        height: '90%',
+                        alignSelf:'center'
                     }}
                 />
                 <ButtonBackContainer>
@@ -127,20 +129,21 @@ const QuizC = () => {
                     />
                 </ButtonsContainer>
 
+
+                <Button
+                    style={{
+                        elevation: 2
+                    }}
+                    onPress={() => {
+                        storeData(quizCount + temp)
+                        navigation.dispatch(
+                            StackActions.replace('TabNavigator')
+                        )
+                    }}
+                >
+                    <Entypo name="chevron-right" size={24} color={theme.colors.green} />
+                </Button>
             </Main>
-            <Button
-                style={{
-                    elevation: 2
-                }}
-                onPress={() => {
-                    storeData(quizCount + temp)
-                    navigation.dispatch(
-                        StackActions.replace('TabNavigator')
-                    )
-                }}
-            >
-                <Entypo name="chevron-right" size={24} color={theme.colors.green} />
-            </Button>
         </Container>
     )
 }

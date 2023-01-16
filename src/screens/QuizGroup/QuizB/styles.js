@@ -10,9 +10,9 @@ export const Container = styled.View`
 `
 
 export const Header = styled.View`
-    width: 100%;
     flex: 0.5;
-    align-self: center;
+    width: 100%;
+    padding-top: 20px;
     align-items: center;
     justify-content: center;
 `
@@ -47,5 +47,5 @@ export const Button = styled.TouchableOpacity`
     border-radius: 5px;
     
     position: absolute;
-    bottom: 20px;
+    bottom: ${Platform.OS === 'android'? 0 : 30}px;
 `
