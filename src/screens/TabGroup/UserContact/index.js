@@ -5,6 +5,7 @@ import {
     ContainerBackButton,
     Header,
     Main,
+    SafeContainer,
     Scroll,
 } from "./styles";
 
@@ -24,31 +25,33 @@ const UserContact = () => {
             filter={1}
             image={require('../../../../assets/images/plantBackground.jpg')}
         >
-            <Container>
-                <ContainerBackButton>
-                    <BackButton />
-                </ContainerBackButton>
-                <Header>
-                    <TextSubTitle
-                        text={language.account.contact.contact}
-                    />
-                </Header>
-                <Main>
-                    <Scroll>
-                        <CardText>
-                            <TextRegular
-                                format='justify'
-                                text={language.account.contact.text}
-                            />
-                        </CardText>
-                        <LinkButton
-                            label={language.account.contact.button}
-                            link={'mailto:seminturna15@gmail.com'}
-                            type='mail'
+            <SafeContainer>
+                <Container>
+                    <Header>
+                        <TextSubTitle
+                            text={language.account.contact.contact}
                         />
-                    </Scroll>
-                </Main>
-            </Container>
+                        <ContainerBackButton>
+                            <BackButton />
+                        </ContainerBackButton>
+                    </Header>
+                    <Main>
+                        <Scroll>
+                            <CardText>
+                                <TextRegular
+                                    format='justify'
+                                    text={language.account.contact.text}
+                                />
+                            </CardText>
+                            <LinkButton
+                                label={language.account.contact.button}
+                                link={'mailto:seminturna15@gmail.com'}
+                                type='mail'
+                            />
+                        </Scroll>
+                    </Main>
+                </Container>
+            </SafeContainer>
         </BackgroundImage>
     )
 }

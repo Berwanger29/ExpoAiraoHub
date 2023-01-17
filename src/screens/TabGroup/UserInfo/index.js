@@ -6,7 +6,8 @@ import {
     Header,
     Main,
     ButtonLanguage,
-    CountryFlag
+    CountryFlag,
+    SafeContainer
 } from './styles'
 
 import AsyncStorage from '@react-native-async-storage/async-storage'
@@ -60,30 +61,32 @@ const UserInfo = () => {
             image={require('../../../../assets/images/plantBackground.jpg')}
             filter
         >
-            <Container>
-                <Header>
-                    <ContainerBackButton>
-                        <BackButton />
-                    </ContainerBackButton>
-                    <TextSubTitle
-                        text={language.account.profile.profile}
-                    />
-                </Header>
-                <Main>
-                    <CardText>
-                        <TextRegular
-                            text={`${language.account.profile.text} ${infoProfile}`}
+            <SafeContainer>
+                <Container>
+                    <Header>
+                        <TextSubTitle
+                            text={language.account.profile.profile}
                         />
-                    </CardText>
-                    <ButtonLanguage
-                        onPress={() => handleLanguage()}
-                    >
-                        <CountryFlag
-                            source={flag}
-                        />
-                    </ButtonLanguage>
-                </Main>
-            </Container>
+                                                <ContainerBackButton>
+                            <BackButton />
+                        </ContainerBackButton>
+                    </Header>
+                    <Main>
+                        <CardText>
+                            <TextRegular
+                                text={`${language.account.profile.text} ${infoProfile}`}
+                            />
+                        </CardText>
+                        <ButtonLanguage
+                            onPress={() => handleLanguage()}
+                        >
+                            <CountryFlag
+                                source={flag}
+                            />
+                        </ButtonLanguage>
+                    </Main>
+                </Container>
+            </SafeContainer>
         </BackgroundImage>
     )
 }

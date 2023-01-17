@@ -4,6 +4,7 @@ import {
     Container,
     Header,
     Main,
+    SafeContainer,
     Scroll,
     TitleContainer,
 } from "./styles";
@@ -13,26 +14,28 @@ import { privacyText } from '../../../../privacyPolicy'
 
 const UserPrivacy = () => {
     return (
-        <Container>
-            <Header>
+        <SafeContainer>
+            <Container>
+                <Header>
 
-                <BackButton />
+                    <BackButton />
 
-                <TitleContainer>
-                    <TextSubTitle
-                        text='Privacidade'
-                    />
-                </TitleContainer>
-            </Header>
-            <Main>
-                <Scroll>
-                    <TextRegular
-                        format='justify'
-                        text={privacyText}
-                    />
-                </Scroll>
-            </Main>
-        </Container>
+                    <TitleContainer>
+                        <TextSubTitle
+                            text='Privacidade'
+                        />
+                    </TitleContainer>
+                </Header>
+                <Main>
+                    <Scroll>
+                        <TextRegular
+                            format='justify'
+                            text={privacyText}
+                        />
+                    </Scroll>
+                </Main>
+            </Container>
+        </SafeContainer>
     )
 }
 
