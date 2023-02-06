@@ -20,7 +20,6 @@ export const ImageContainer = styled.View`
 
 export const ContainerBackButton = styled.View`
     position: absolute;
-    top: ${StatusBar.currentHeight + 1}px;
     left: 15px;
 `
 

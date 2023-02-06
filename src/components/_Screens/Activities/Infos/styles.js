@@ -28,7 +28,6 @@ export const DetailsGroup = styled.View`
 
 export const ContactsGroup = styled.View`
     width: 100%;
-    padding: 1px 1px;
 `
 export const IconCircle = styled.View`
     height: 70px;
@@ -44,4 +43,5 @@ export const IconCircle = styled.View`
 export const InfoContainer = styled.View`
     flex-direction: column;
     align-items: center;
+    margin: 0px 10px;
 `

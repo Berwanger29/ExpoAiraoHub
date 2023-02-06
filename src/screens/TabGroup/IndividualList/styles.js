@@ -5,16 +5,14 @@ import { RFValue } from "react-native-responsive-fontsize";
 export const Container = styled.View`
     flex: 1;
     background-color: ${(props) => props.theme.colors.light};
-    padding: ${StatusBar.currentHeight}px 15px 20px 15px;
+    padding: 10px 15px;
 `
 
 export const ContainerBackButton = styled.View`
-    position: absolute;
-    top: 45px;
-    left: 15px;
+    
 `
 export const Header = styled.View`
-    padding-top: 70px;
+    padding-top: 20px;
 `
 export const Title = styled.Text`
     font-family: ${(props) => props.theme.fonts.black};

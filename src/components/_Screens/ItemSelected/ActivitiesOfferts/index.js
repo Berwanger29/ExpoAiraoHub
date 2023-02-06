@@ -5,7 +5,6 @@ import {
 } from "./styles"
 
 import { TextSubTitle } from "../../../Texts"
-import { useEffect } from "react"
 import Contact from "../../Activities/Contact"
 
 const ActivitiesOfferts = ({ dataActivities }) => {

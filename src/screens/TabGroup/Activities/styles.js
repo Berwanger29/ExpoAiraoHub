@@ -1,11 +1,10 @@
 import styled from 'styled-components/native'
 import { RFValue } from 'react-native-responsive-fontsize'
-import { StatusBar } from 'react-native'
 import theme from '../../../global/styles/theme'
 
 export const Container = styled.View`
     flex: 1;
-    padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    padding: 10px 15px 0 15px;
     background-color: ${props => props.theme.colors.light};
 `
 
@@ -19,16 +18,6 @@ export const HeroContainer = styled.View`
     justify-content: space-between;
     margin-top: 15px;
 `
-
-export const FIlterButton = styled.TouchableOpacity`
-    margin-right: 10px;
-`
-
-export const Main = styled.View`
-    flex: 1;
-    padding-top: 10px;
-`
-
 export const ContainerSearch = styled.View`
     flex-direction: row;
     height: ${RFValue(40)}px;
@@ -52,6 +41,16 @@ export const SearchButton = styled.View`
     align-items: center;
     justify-content: center;
 `
+
+export const FIlterButton = styled.TouchableOpacity`
+    margin-right: 10px;
+`
+
+export const Main = styled.View`
+    flex: 1;
+    padding-top: 10px;
+`
+
 
 export const SearchList = styled.FlatList`
     flex: 1;

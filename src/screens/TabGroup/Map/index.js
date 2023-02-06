@@ -4,6 +4,7 @@ import {
     Container,
     Header,
     Main,
+    SafeContainer,
 } from "./styles"
 
 import UserButton from "../../../components/UserButton"
@@ -41,47 +42,48 @@ const Map = () => {
     }
 
     return (
-        <Container>
-            <Header>
-                <UserButtonContainer>
-                    <UserButton />
-                </UserButtonContainer>
-                <TextSubTitle
-                    text={language.map.title}
-                    color={theme.colors.darkGreen}
-                />
-            </Header>
+        <SafeContainer>
+            <Container>
+                <Header>
+                    <UserButtonContainer>
+                        <UserButton />
+                    </UserButtonContainer>
+                    <TextSubTitle
+                        text={language.map.title}
+                        color={theme.colors.darkGreen}
+                    />
+                </Header>
 
 
-            <ButtonsContainer>
-                <Buttons
-                    onPress={() => handleFocuesd('carro')}
-                >
-                    <MaterialCommunityIcons
-                        name="car-hatchback"
-                        size={RFValue(28)}
-                        color={isFocused && name === 'carro' ? theme.colors.light : theme.colors.semiLight}
-                    />
-                </Buttons>
-                <Buttons
-                    onPress={() => handleFocuesd('taxi')}
-                >
-                    <MaterialCommunityIcons
-                        name="taxi"
-                        size={RFValue(28)}
-                        color={isFocused && name === 'taxi' ? theme.colors.light : theme.colors.semiLight}
-                    />
-                </Buttons>
-                <Buttons
-                    onPress={() => handleFocuesd('onibus')}
-                >
-                    <MaterialCommunityIcons
-                        name="bus"
-                        size={RFValue(28)}
-                        color={isFocused && name === 'onibus' ? theme.colors.light : theme.colors.semiLight}
-                    />
-                </Buttons>
-                {/* <Buttons
+                <ButtonsContainer>
+                    <Buttons
+                        onPress={() => handleFocuesd('carro')}
+                    >
+                        <MaterialCommunityIcons
+                            name="car-hatchback"
+                            size={RFValue(28)}
+                            color={isFocused && name === 'carro' ? theme.colors.light : theme.colors.semiLight}
+                        />
+                    </Buttons>
+                    <Buttons
+                        onPress={() => handleFocuesd('taxi')}
+                    >
+                        <MaterialCommunityIcons
+                            name="taxi"
+                            size={RFValue(28)}
+                            color={isFocused && name === 'taxi' ? theme.colors.light : theme.colors.semiLight}
+                        />
+                    </Buttons>
+                    <Buttons
+                        onPress={() => handleFocuesd('onibus')}
+                    >
+                        <MaterialCommunityIcons
+                            name="bus"
+                            size={RFValue(28)}
+                            color={isFocused && name === 'onibus' ? theme.colors.light : theme.colors.semiLight}
+                        />
+                    </Buttons>
+                    {/* <Buttons
                     onPress={() => handleFocuesd('aviao')}
                 >
                     <MaterialCommunityIcons
@@ -90,39 +92,40 @@ const Map = () => {
                         color={isFocused && name === 'aviao' ? theme.colors.light : theme.colors.semiLight}
                     />
                 </Buttons> */}
-                <Buttons
-                    onPress={() => handleFocuesd('barco')}
+                    <Buttons
+                        onPress={() => handleFocuesd('barco')}
+                    >
+                        <Ionicons
+                            name="boat"
+                            size={RFValue(26)}
+                            color={isFocused && name === 'barco' ? theme.colors.light : theme.colors.semiLight}
+                        />
+                    </Buttons>
+
+                </ButtonsContainer>
+
+
+                <Main
+                    showsVerticalScrollIndicator={false}
                 >
-                    <Ionicons
-                        name="boat"
-                        size={RFValue(26)}
-                        color={isFocused && name === 'barco' ? theme.colors.light : theme.colors.semiLight}
-                    />
-                </Buttons>
-
-            </ButtonsContainer>
-
-
-            <Main
-                showsVerticalScrollIndicator={false}
-            >
-                {isFocused && (name === 'carro') &&
-                    <_Car />
-                }
-                {isFocused && (name === 'taxi') &&
-                    <_Taxi />
-                }
-                {isFocused && (name === 'onibus') &&
-                    <_Bus />
-                }
-                {isFocused && (name === 'aviao') &&
-                    <_Airplane />
-                }
-                {isFocused && (name === 'barco') &&
-                    <_Boat />
-                }
-            </Main>
-        </Container>
+                    {isFocused && (name === 'carro') &&
+                        <_Car />
+                    }
+                    {isFocused && (name === 'taxi') &&
+                        <_Taxi />
+                    }
+                    {isFocused && (name === 'onibus') &&
+                        <_Bus />
+                    }
+                    {isFocused && (name === 'aviao') &&
+                        <_Airplane />
+                    }
+                    {isFocused && (name === 'barco') &&
+                        <_Boat />
+                    }
+                </Main>
+            </Container>
+        </SafeContainer>
     )
 }
 

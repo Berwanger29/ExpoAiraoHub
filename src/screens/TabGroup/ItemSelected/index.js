@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Linking, StatusBar } from "react-native";
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
     Container,
     Image,
@@ -35,6 +36,7 @@ import * as enData from "../../../utils/en";
 
 const ItemSelected = ({ route }) => {
 
+    const insets = useSafeAreaInsets()
 
     const { portuguese, english, language, flag } = useContext(LanguageSelector);
     const [languageData, setLanguageData] = useState(ptData.default)
@@ -87,6 +89,7 @@ const ItemSelected = ({ route }) => {
 
 
     return (
+
         <Container>
             <StatusBar
                 backgroundColor='transparent'
@@ -99,7 +102,15 @@ const ItemSelected = ({ route }) => {
                     <Image
                         source={itemData.content.image}
                     />
-                    <ContainerBackButton>
+                    <ContainerBackButton
+                        style={{
+                            paddingTop: insets.top,
+                            shadowColor: '#171717',
+                            shadowOffset: { width: -2, height: 2 },
+                            shadowOpacity: 0.2,
+                            shadowRadius: 3,
+                        }}
+                    >
                         <BackButton />
                     </ContainerBackButton>
                 </ImageContainer>

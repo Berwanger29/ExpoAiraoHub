@@ -20,6 +20,7 @@ import { useNavigation } from '@react-navigation/native'
 import theme from '../../../global/styles/theme'
 import { ActivityIndicator } from 'react-native'
 import CardExternalPlatform from '../../../components/_Screens/Accommodation/CardExternalPlatform'
+import { SafeContainer } from '../../../components/SafeContainer'
 
 
 const IndividualList = ({ route }) => {
@@ -70,95 +71,97 @@ const IndividualList = ({ route }) => {
     }
 
     return (
-        <Container>
-            <ContainerBackButton>
-                <BackButton />
-            </ContainerBackButton>
-            <Header>
-                <TextTitle
-                    text={title}
-                    color={theme.colors.darkGreen}
-                />
-                <SearchContainer
-                    style={{
-                        elevation: 5
-                    }}
-                >
-                    <Input
-                        placeholder="Dentro da cidade"
-                        value={searchInput}
-                        onChangeText={(e) => handleInput(e)}
+        <SafeContainer>
+            <Container>
+                <ContainerBackButton>
+                    <BackButton />
+                </ContainerBackButton>
+                <Header>
+                    <TextTitle
+                        text={title}
+                        color={theme.colors.darkGreen}
                     />
-                    <SearchButton
-                        activeOpacity={0.6}
+                    <SearchContainer
+                        style={{
+                            elevation: 5
+                        }}
                     >
-                        <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
-                    </SearchButton>
-                </SearchContainer>
-            </Header>
-            {searchInput == '' &&
-                <Main>
-                    { title === 'Hospedagem' &&
-                        <CardExternalPlatform />
-                    }
-                    <List
-                        data={data}
-                        keyExtractor={item => item.id}
-                        showsVerticalScrollIndicator={false}
-                        removeCLippedSubviews={true}
-                        maxToRenderPerBatch={6}
-                        renderItem={({ item }) =>
-                        (
-                            <Card
-                                title={item.title}
-                                value={item.content.prices}
-                                image={item.content.image}
-                                type={item.content.type}
-                                onPress={() => navigateToSelected(item.id)}
-                            />
-                        )
+                        <Input
+                            placeholder="Dentro da cidade"
+                            value={searchInput}
+                            onChangeText={(e) => handleInput(e)}
+                        />
+                        <SearchButton
+                            activeOpacity={0.6}
+                        >
+                            <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
+                        </SearchButton>
+                    </SearchContainer>
+                </Header>
+                {searchInput == '' &&
+                    <Main>
+                        {title === 'Hospedagem' &&
+                            <CardExternalPlatform />
                         }
-                    />
-                </Main>
-            }
-
-            {
-                searchInput !== '' &&
-                <Main>
-                    {
-                        dataLoaded ?
+                        <List
+                            data={data}
+                            keyExtractor={item => item.id}
+                            showsVerticalScrollIndicator={false}
+                            removeCLippedSubviews={true}
+                            maxToRenderPerBatch={6}
+                            renderItem={({ item }) =>
                             (
-                                <List
-                                    data={arrSearch}
-                                    showsVerticalScrollIndicator={false}
-                                    keyExtractor={item => item.id}
-                                    renderItem={({ item }) =>
-                                    (
-                                        <Card
-                                            title={item.title}
-                                            image={item.content.image}
-                                            onPress={() => navigateToSelected(item.id)}
-                                        />
-                                    )}
+                                <Card
+                                    title={item.title}
+                                    value={item.content.prices}
+                                    image={item.content.image}
+                                    type={item.content.type}
+                                    onPress={() => navigateToSelected(item.id)}
                                 />
                             )
-                            :
-                            (
+                            }
+                        />
+                    </Main>
+                }
 
-                                dataLoaded &&
-                                <ActivityIndicator
-                                    size='large'
-                                    color={theme.colors.green}
-                                />
+                {
+                    searchInput !== '' &&
+                    <Main>
+                        {
+                            dataLoaded ?
+                                (
+                                    <List
+                                        data={arrSearch}
+                                        showsVerticalScrollIndicator={false}
+                                        keyExtractor={item => item.id}
+                                        renderItem={({ item }) =>
+                                        (
+                                            <Card
+                                                title={item.title}
+                                                image={item.content.image}
+                                                onPress={() => navigateToSelected(item.id)}
+                                            />
+                                        )}
+                                    />
+                                )
+                                :
+                                (
 
-                            )
-                    }
+                                    dataLoaded &&
+                                    <ActivityIndicator
+                                        size='large'
+                                        color={theme.colors.green}
+                                    />
 
-                </Main>
-            }
+                                )
+                        }
+
+                    </Main>
+                }
 
 
-        </Container>
+            </Container>
+        </SafeContainer>
     )
 }
 

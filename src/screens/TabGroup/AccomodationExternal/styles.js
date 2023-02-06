@@ -1,14 +1,9 @@
 import styled from "styled-components/native";
-import { StatusBar } from "react-native";
-import { RFValue } from "react-native-responsive-fontsize";
 
 
-export const Scroll = styled.View`
-
-`
 export const Container = styled.ScrollView`
     flex: 1;
-    padding: ${StatusBar.currentHeight}px ${RFValue(15)}px ${RFValue(20)}px ${RFValue(15)}px;
+    padding: 10px 15px;
 `
 
 export const Header = styled.View`

@@ -1415,7 +1415,7 @@ export default [
                     effort: ""
                 },
                 contactList: [
-                    { name: 'Pessoa', link: 'tel://+5592912345678' }
+                    
                 ],
             },
             offering: [""],

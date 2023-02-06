@@ -25,6 +25,7 @@ import { useNavigation } from '@react-navigation/native'
 
 import { useContext } from "react";
 import LanguageSelector from "../../../utils/LanguageSelector"
+import { SafeContainer } from '../../../components/SafeContainer'
 
 const Accommodation = () => {
 
@@ -88,80 +89,86 @@ const Accommodation = () => {
     }, [])
 
     return (
-        <Container>
-            <Header>
-                <UserButtonContainer>
-                    <UserButton />
-                </UserButtonContainer>
-                <HeroContainer>
-                    <TextSubTitle
-                        text={language.accomodation.title}
-                        color={theme.colors.darkGreen}
-                    />
-                </HeroContainer>
-                <SearchConatainer
-                    style={{
-                        elevation: 5
-                    }}
-                >
-                    <Input
-                        placeholder={language.accomodation.search}
-                        value={input}
-                        onChangeText={(e) => setInput(e)}
-                    />
-                    <SearchButton
-                        activeOpacity={0.6}
+        <SafeContainer>
+            <Container>
+                <Header>
+                    <UserButtonContainer>
+                        <UserButton />
+                    </UserButtonContainer>
+                    <HeroContainer>
+                        <TextSubTitle
+                            text={language.accomodation.title}
+                            color={theme.colors.darkGreen}
+                        />
+                    </HeroContainer>
+                    <SearchConatainer
+                        style={{
+                            elevation: 5,
+                            shadowColor: '#171717',
+                            shadowOffset: { width: -2, height: 2 },
+                            shadowOpacity: 0.2,
+                            shadowRadius: 3,
+                        }}
                     >
-                        <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
-                    </SearchButton>
-                </SearchConatainer>
-            </Header>
-            {input == '' &&
+                        <Input
+                            placeholder={language.accomodation.search}
+                            value={input}
+                            onChangeText={(e) => setInput(e)}
+                        />
+                        <SearchButton
+                            activeOpacity={0.6}
+                        >
+                            <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
+                        </SearchButton>
+                    </SearchConatainer>
+                </Header>
+                {input == '' &&
 
-                <Main>
-                    <CardExternalPlatform />
-                    <List
-                        showsVerticalScrollIndicator={false}
-                        data={hotelsData}
-                        keyExtractor={item => item.id}
-                        renderItem={({ item }) =>
-                        (
-                            <Card
-                                title={item.title}
-                                value={item.content.prices}
-                                image={item.content.image}
-                                type={item.content.type}
-                                onPress={() => navigateToSelected(item.id)}
-                            />
-                        )
-                        }
-                    >
-                    </List>
-                </Main>
-            }
+                    <Main>
+                        <CardExternalPlatform />
+                        <List
+                            showsVerticalScrollIndicator={false}
+                            data={hotelsData}
+                            keyExtractor={item => item.id}
+                            renderItem={({ item }) =>
+                            (
+                                <Card
+                                    title={item.title}
+                                    value={item.content.prices}
+                                    image={item.content.image}
+                                    type={item.content.type}
+                                    onPress={() => navigateToSelected(item.id)}
+                                />
+                            )
+                            }
+                        >
+                        </List>
+                    </Main>
+                }
 
-            {
-                input !== '' &&
-                <Main>
-                    <List
-                        showsVerticalScrollIndicator={false}
-                        data={arrSearch}
-                        keyExtractor={item => item.id}
-                        renderItem={({ item }) =>
-                        (
-                            <Card
-                                title={item.title}
-                                value={item.content.prices}
-                                image={item.content.image}
-                                type={item.content.type}
-                                onPress={() => navigateToSelected(item.id)}
-                            />
-                        )
-                        }
-                    />
-                </Main>
-            }
-        </Container>
+                {
+                    input !== '' &&
+                    <Main>
+                        <List
+                            showsVerticalScrollIndicator={false}
+                            data={arrSearch}
+                            keyExtractor={item => item.id}
+                            renderItem={({ item }) =>
+                            (
+                                <Card
+                                    title={item.title}
+                                    value={item.content.prices}
+                                    image={item.content.image}
+                                    type={item.content.type}
+                                    onPress={() => navigateToSelected(item.id)}
+                                />
+                            )
+                            }
+                        />
+                    </Main>
+                }
+            </Container>
+        </SafeContainer>
     )
 }
 

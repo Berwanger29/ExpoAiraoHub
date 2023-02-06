@@ -18,74 +18,76 @@ import { TextRegular, TextSubTitle } from "../../../components/Texts"
 
 import theme from "../../../global/styles/theme"
 import LanguageSelector from "../../../utils/LanguageSelector";
+import { SafeContainer } from "../../../components/SafeContainer";
 
 
 const AccomodationExternal = () => {
 
     const { portuguese, english, language } = useContext(LanguageSelector);
-    
+
     return (
         <BackgroundImage
             image={require('../../../../assets/images/plantBackground.jpg')}
             filter={0.6}
         >
+            <SafeContainer>
+                <Container>
+                    <Header>
+                        <ContainerBackButton>
+                            <BackButton />
+                        </ContainerBackButton>
 
-            <Container>
-                <Header>
-                    <ContainerBackButton>
-                        <BackButton />
-                    </ContainerBackButton>
-
-                    <TextSubTitle
-                        text={language.accomodation.casas.title}
-                        color={theme.colors.darkGreen}
-                    />
-                </Header>
-                <Main>
-                    <TextContainer>
-                        <CardText>
-                            <TextRegular
-                                text={language.accomodation.casas.text}
-                                format='justify'
-                            />
-                        </CardText>
-                    </TextContainer>
-                    <IconsContainer>
-                        <IconButton
-                            onPress={() => {
-                                Linking.openURL('https://www.airbnb.com.br/novo-airao-brazil/stays')
-                            }}
-                            style={{
-                                backgroundColor: '#E21A5F',
-                            }}
-                        >
-                            <ImageIcon
-                                resizeMode='contain'
-                                source={require('../../../../assets/icons/airbnb.png')}
+                        <TextSubTitle
+                            text={language.accomodation.casas.title}
+                            color={theme.colors.darkGreen}
+                        />
+                    </Header>
+                    <Main>
+                        <TextContainer>
+                            <CardText>
+                                <TextRegular
+                                    text={language.accomodation.casas.text}
+                                    format='justify'
+                                />
+                            </CardText>
+                        </TextContainer>
+                        <IconsContainer>
+                            <IconButton
+                                onPress={() => {
+                                    Linking.openURL('https://www.airbnb.com.br/novo-airao-brazil/stays')
+                                }}
                                 style={{
                                     backgroundColor: '#E21A5F',
-                                    borderRadius: 5,
                                 }}
-                            />
-                        </IconButton>
+                            >
+                                <ImageIcon
+                                    resizeMode='contain'
+                                    source={require('../../../../assets/icons/airbnb.png')}
+                                    style={{
+                                        backgroundColor: '#E21A5F',
+                                        borderRadius: 5,
+                                    }}
+                                />
+                            </IconButton>
 
-                        <IconButton
-                            onPress={() => {
-                                console.log('funciona')
-                                Linking.openURL('https://www.booking.com/city/br/novo-airao.pt-br.html')
-                            }}
-                        >
-                            <ImageIcon
-                                resizeMode='contain'
-                                source={require('../../../../assets/icons/booking.png')}
-                                style={{
-
+                            <IconButton
+                                onPress={() => {
+                                    console.log('funciona')
+                                    Linking.openURL('https://www.booking.com/city/br/novo-airao.pt-br.html')
                                 }}
-                            />
-                        </IconButton>
-                    </IconsContainer>
-                </Main>
-            </Container>
+                            >
+                                <ImageIcon
+                                    resizeMode='contain'
+                                    source={require('../../../../assets/icons/booking.png')}
+                                    style={{
+
+                                    }}
+                                />
+                            </IconButton>
+                        </IconsContainer>
+                    </Main>
+                </Container>
+            </SafeContainer>
 
         </BackgroundImage>
     )

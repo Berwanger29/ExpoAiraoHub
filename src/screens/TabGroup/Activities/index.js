@@ -38,6 +38,7 @@ import data from '../../../../data';
 import theme from '../../../global/styles/theme';
 
 import LanguageSelector from '../../../utils/LanguageSelector';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const TopTab = createMaterialTopTabNavigator()
 
@@ -65,6 +66,7 @@ function ActivitiesTopTabs() {
 
 const Activities = () => {
 
+    const insets = useSafeAreaInsets()
     const { portuguese, english, language } = useContext(LanguageSelector);
 
     const [input, setInput] = useState('')
@@ -151,150 +153,158 @@ const Activities = () => {
     }
 
     return (
-        <Container>
-            <Header>
-                <UserButtonContainer>
-                    <UserButton />
-                </UserButtonContainer>
-
-                <HeroContainer>
-                    <TextSubTitle
-                        text={language.activities.title}
-                        color={theme.colors.darkGreen}
-                    />
-                    <FIlterButton
-                        onPress={handleModal}
-                    >
-                        <Ionicons name="filter" size={26} color={theme.colors.darkGreen} />
-                    </FIlterButton>
-                </HeroContainer>
-                <ContainerSearch
-                    style={{
-                        elevation: 5
-                    }}
-                >
-                    <Input
-                        placeholder={language.activities.search}
-                        value={input}
-                        onChangeText={(e) => setInput(e)}
-                    />
-                    <SearchButton>
-                        <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
-                    </SearchButton>
-                </ContainerSearch>
-            </Header>
-            {
-                input === '' &&
-                <Main
-                    style={{ display: displayPrimary }}
-                >
-                    <MainList
-                        data={activitiesData}
-                        showsVerticalScrollIndicator={false}
-                        renderItem={({ item }) => (
-                            <Card
-                                id={item.id}
-                                image={item.content.image}
-                                title={item.title}
-                            />
-                        )}
-                    />
-                </Main>
-            }
-
-            {
-                (input !== '') &&
-                <Main>
-                    <SearchList
-                        data={arrSearch}
-                        renderItem={({ item }) => (
-                            <Card
-                                id={item.id}
-                                title={item.title}
-                                image={item.content.image}
-                            />
-                        )}
-                    />
-                </Main>
-            }
-            {
-                filter !== '' &&
-                <Main
-                    style={{ display: displaySecondary }}
-                >
-                    <SearchList
-                        data={categorieFiltered}
-                        renderItem={({ item }) => (
-                            <Card
-                                id={item.id}
-                                title={item.title}
-                                image={item.content.image}
-                            />
-                        )}
-                    />
-                </Main>
-            }
-            <Modal
-                animationType='fade'
-                visible={modalVisible}
-                transparent
+        
+            <Container
+                style={{paddingTop: insets.top}}
             >
-                <ModalContiner>
-                    <FilterContainer>
-                        <FilterHeader>
-                            <TextSubTitle
-                                text={language.activities.filter.title}
-                            />
-                            <CloseModalButton
-                                onPress={handleModal}
-                            >
-                                <TextRegular
-                                    text={language.activities.filter.button}
-                                    color={theme.colors.light}
+                <Header>
+                    <UserButtonContainer>
+                        <UserButton />
+                    </UserButtonContainer>
+
+                    <HeroContainer>
+                        <TextSubTitle
+                            text={language.activities.title}
+                            color={theme.colors.darkGreen}
+                        />
+                        <FIlterButton
+                            onPress={handleModal}
+                        >
+                            <Ionicons name="filter" size={26} color={theme.colors.darkGreen} />
+                        </FIlterButton>
+                    </HeroContainer>
+                    <ContainerSearch
+                        style={{
+                            elevation: 5,
+                            shadowColor: '#171717',
+                            shadowOffset: { width: -2, height: 2 },
+                            shadowOpacity: 0.2,
+                            shadowRadius: 3,
+                        }}
+                    >
+                        <Input
+                            placeholder={language.activities.search}
+                            value={input}
+                            onChangeText={(e) => setInput(e)}
+                        />
+                        <SearchButton>
+                            <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
+                        </SearchButton>
+                    </ContainerSearch>
+                </Header>
+                {
+                    input === '' &&
+                    <Main
+                        style={{ display: displayPrimary}}
+                    >
+                        <MainList
+                            data={activitiesData}
+                            showsVerticalScrollIndicator={false}
+                            renderItem={({ item }) => (
+                                <Card
+                                    id={item.id}
+                                    image={item.content.image}
+                                    title={item.title}
                                 />
-                            </CloseModalButton>
-                        </FilterHeader>
-                        <Details>
-                            <TextRegular
-                                text={language.activities.filter.text}
-                            />
-                        </Details>
-                        <Line />
-                        <Scroll>
-                            <FilterOptions>
-                                <FilterButton
-                                    onPress={() => {
-                                        setDisplayPrimary('flex')
-                                        setDisplaySecondary('none')
-                                        setFilter('')
-                                    }}
-                                    isSelected={filter == '' ? true : false}
+                            )}
+                        />
+                    </Main>
+                }
+
+                {
+                    (input !== '') &&
+                    <Main>
+                        <SearchList
+                            data={arrSearch}
+                            renderItem={({ item }) => (
+                                <Card
+                                    id={item.id}
+                                    title={item.title}
+                                    image={item.content.image}
+                                />
+                            )}
+                        />
+                    </Main>
+                }
+                {
+                    filter !== '' && (input === '') &&
+                    <Main
+                        style={{ display: displaySecondary }}
+                    >
+                        <SearchList
+                            data={categorieFiltered}
+                            renderItem={({ item }) => (
+                                <Card
+                                    id={item.id}
+                                    title={item.title}
+                                    image={item.content.image}
+                                />
+                            )}
+                        />
+                    </Main>
+                }
+                <Modal
+                    animationType='fade'
+                    visible={modalVisible}
+                    transparent
+                >
+                    <ModalContiner>
+                        <FilterContainer>
+                            <FilterHeader>
+                                <TextSubTitle
+                                    text={language.activities.filter.title}
+                                />
+                                <CloseModalButton
+                                    onPress={handleModal}
                                 >
                                     <TextRegular
-                                        text='Todos'
-                                        color={filter === '' ? theme.colors.light : theme.colors.black}
+                                        text={language.activities.filter.button}
+                                        color={theme.colors.light}
                                     />
-                                </FilterButton>
-                                {
-                                    categories.map((item) => (
-                                        <FilterButton
-                                            onPress={() => handleFilter(item)}
-                                            isSelected={isSelected && (item == filter) ? true : false}
-                                        >
-                                            <TextRegular
-                                                text={item}
-                                                color={isSelected && (item == filter) ? theme.colors.light : false}
-                                            />
-                                        </FilterButton>
-                                    ))
-                                }
-                            </FilterOptions>
-                        </Scroll>
-                    </FilterContainer>
-                </ModalContiner>
-            </Modal>
+                                </CloseModalButton>
+                            </FilterHeader>
+                            <Details>
+                                <TextRegular
+                                    text={language.activities.filter.text}
+                                />
+                            </Details>
+                            <Line />
+                            <Scroll>
+                                <FilterOptions>
+                                    <FilterButton
+                                        onPress={() => {
+                                            setDisplayPrimary('flex')
+                                            setDisplaySecondary('none')
+                                            setFilter('')
+                                        }}
+                                        isSelected={filter == '' ? true : false}
+                                    >
+                                        <TextRegular
+                                            text='Todos'
+                                            color={filter === '' ? theme.colors.light : theme.colors.black}
+                                        />
+                                    </FilterButton>
+                                    {
+                                        categories.map((item) => (
+                                            <FilterButton
+                                                onPress={() => handleFilter(item)}
+                                                isSelected={isSelected && (item == filter) ? true : false}
+                                            >
+                                                <TextRegular
+                                                    text={item}
+                                                    color={isSelected && (item == filter) ? theme.colors.light : false}
+                                                />
+                                            </FilterButton>
+                                        ))
+                                    }
+                                </FilterOptions>
+                            </Scroll>
+                        </FilterContainer>
+                    </ModalContiner>
+                </Modal>
 
-        </Container >
+            </Container >
+        
     )
 }
 

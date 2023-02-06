@@ -20,7 +20,7 @@ import {
 import Contact from "../Contact";
 import Line from "../../../Line";
 import theme from "../../../../global/styles/theme";
-import { Alert, View } from "react-native";
+import { Alert } from "react-native";
 import advices from "../../../../../advices";
 import { useEffect, useState } from "react";
 
@@ -79,10 +79,10 @@ const Infos = ({ data }) => {
 
             <Line />
 
-            <DetailsGroup justifyContent={((data?.activities.height) | (data?.activities.distance) | (data?.activities.duration)) > 0 ? 'space-evenly' : 'center'}>
-                <InfoContainer>
-                    {
-                        data?.activities.height > 0 ?
+            <DetailsGroup justifyContent='center'>
+                {data?.activities.height > 0 &&
+                    <InfoContainer>
+                        {data?.activities.height > 0 ?
                             (
                                 <>
                                     <IconCircle>
@@ -97,53 +97,39 @@ const Infos = ({ data }) => {
                             (
                                 null
                             )
-                    }
-                </InfoContainer>
-                <InfoContainer>
-                    {data?.activities.distance > 0 ?
-                        (
-                            <>
-                                <IconCircle>
-                                    <FontAwesome name="arrows-h" size={40} color="black" />
-                                </IconCircle>
-                                <TextThin
-                                    text={`${data?.activities.distance}m`}
-                                />
-                            </>
-                        )
-                        : (
-                            null
-                        )
-                    }
-                </InfoContainer>
-                <InfoContainer>
-                    {data?.activities.duration > 0 ?
-                        (
-                            <>
-                                <IconCircle>
-                                    <Octicons name="stopwatch" size={40} color="black" />
-                                </IconCircle>
-                                <TextThin
-                                    text={`${data?.activities.duration}m`}
-                                />
-                            </>
-                        )
-                        :
-                        (
-                            null
-                        )
-                    }
-                </InfoContainer>
-                <InfoContainer>
-                    {
-                        data.activities.effort !== '' ?
+                        }
+                    </InfoContainer>
+                }
+
+                {data?.activities.distance > 0 &&
+                    <InfoContainer>
+                        {data?.activities.distance > 0 ?
                             (
                                 <>
                                     <IconCircle>
-                                        <FontAwesome5 name="hiking" size={40} color="black" />
+                                        <FontAwesome name="arrows-h" size={40} color="black" />
                                     </IconCircle>
                                     <TextThin
-                                        text={`${data.activities.effort}`}
+                                        text={`${data?.activities.distance}m`}
+                                    />
+                                </>
+                            )
+                            : (
+                                null
+                            )
+                        }
+                    </InfoContainer>
+                }
+                {data?.activities.duration > 0 &&
+                    <InfoContainer>
+                        {data?.activities.duration > 0 ?
+                            (
+                                <>
+                                    <IconCircle>
+                                        <Octicons name="stopwatch" size={40} color="black" />
+                                    </IconCircle>
+                                    <TextThin
+                                        text={`${data?.activities.duration}m`}
                                     />
                                 </>
                             )
@@ -151,10 +137,36 @@ const Infos = ({ data }) => {
                             (
                                 null
                             )
+                        }
+                    </InfoContainer>
+                }
 
-                    }
-                </InfoContainer>
+                {data.activities.effort !== '' &&
+                    <InfoContainer>
+                        {
+                            data.activities.effort !== '' ?
+                                (
+                                    <>
+                                        <IconCircle>
+                                            <FontAwesome5 name="hiking" size={40} color="black" />
+                                        </IconCircle>
+                                        <TextThin
+                                            text={`${data.activities.effort}`}
+                                        />
+                                    </>
+                                )
+                                :
+                                (
+                                    null
+                                )
+
+                        }
+                    </InfoContainer>
+                }
             </DetailsGroup>
+
+            <Line />
+
             <ContactsGroup>
                 {
                     showContacts ?
