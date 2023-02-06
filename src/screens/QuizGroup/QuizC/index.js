@@ -21,6 +21,7 @@ import theme from '../../../global/styles/theme'
 import duet from '../../../../assets/animations/duet.json'
 
 import { StackActions, useNavigation } from '@react-navigation/native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { QuizContext } from '../../../contexts/QuizContext';
 import SpaceText from '../../../components/_Screens/Quiz/SpaceText';
 import { TextRegular, TextThin } from '../../../components/Texts';
@@ -29,10 +30,12 @@ import LanguageSelector from "../../../utils/LanguageSelector"
 
 const QuizC = () => {
 
+
+    const navigation = useNavigation()
+    const insets = useSafeAreaInsets()
     const { portuguese, english, language } = useContext(LanguageSelector);
 
 
-    const navigation = useNavigation()
 
     async function storeData(value) {
         try {
@@ -79,72 +82,76 @@ const QuizC = () => {
     }
 
     return (
-        <Container>
-            <StatusBar
-                backgroundColor='transparent'
-                style='auto'
-            />
-            <Header>
-                <Lottie
-                    autoPlay
-                    loop
-                    source={duet}
-                    style={{
-                        width: '100%',
-                        height: '90%',
-                        alignSelf:'center'
-                    }}
+            <Container
+            style={{
+                paddingTop: insets.top
+            }}
+            >
+                <StatusBar
+                    backgroundColor='transparent'
+                    style='auto'
                 />
-                <ButtonBackContainer>
-                    <BackButton />
-                </ButtonBackContainer>
-            </Header>
-            <Main>
-                <TextContainer>
-                    <SpaceText>
-                        <TextThin
-                            text={language.quiz.C.count}
+                <Header>
+                    <Lottie
+                        autoPlay
+                        loop
+                        source={duet}
+                        style={{
+                            width: '100%',
+                            height: '90%',
+                            alignSelf: 'center'
+                        }}
+                    />
+                    <ButtonBackContainer>
+                        <BackButton />
+                    </ButtonBackContainer>
+                </Header>
+                <Main>
+                    <TextContainer>
+                        <SpaceText>
+                            <TextThin
+                                text={language.quiz.C.count}
+                            />
+                        </SpaceText>
+                        <TextRegular
+                            text={language.quiz.C.text}
                         />
-                    </SpaceText>
-                    <TextRegular
-                        text={language.quiz.C.text}
-                    />
-                </TextContainer>
+                    </TextContainer>
 
-                <ButtonsContainer>
-                    <SelectButton
-                        text={language.quiz.C.q1}
-                        onPress={() => handleSelected(30)}
-                        changeColor={changeColorA}
-                    />
-                    <SelectButton
-                        text={language.quiz.C.q2}
-                        onPress={() => handleSelected(20)}
-                        changeColor={changeColorB}
-                    />
-                    <SelectButton
-                        text={language.quiz.C.q3}
-                        onPress={() => handleSelected(10)}
-                        changeColor={changeColorC}
-                    />
-                </ButtonsContainer>
+                    <ButtonsContainer>
+                        <SelectButton
+                            text={language.quiz.C.q1}
+                            onPress={() => handleSelected(30)}
+                            changeColor={changeColorA}
+                        />
+                        <SelectButton
+                            text={language.quiz.C.q2}
+                            onPress={() => handleSelected(20)}
+                            changeColor={changeColorB}
+                        />
+                        <SelectButton
+                            text={language.quiz.C.q3}
+                            onPress={() => handleSelected(10)}
+                            changeColor={changeColorC}
+                        />
+                    </ButtonsContainer>
 
 
-                <Button
-                    style={{
-                        elevation: 2
-                    }}
-                    onPress={() => {
-                        storeData(quizCount + temp)
-                        navigation.dispatch(
-                            StackActions.replace('TabNavigator')
-                        )
-                    }}
-                >
-                    <Entypo name="chevron-right" size={24} color={theme.colors.green} />
-                </Button>
-            </Main>
-        </Container>
+                    <Button
+                        style={{
+                            elevation: 2
+                        }}
+                        onPress={() => {
+                            storeData(quizCount + temp)
+                            navigation.dispatch(
+                                StackActions.replace('TabNavigator')
+                            )
+                        }}
+                    >
+                        <Entypo name="chevron-right" size={24} color={theme.colors.green} />
+                    </Button>
+                </Main>
+            </Container>
     )
 }
 

@@ -15,6 +15,7 @@ import BackButton from '../../../components/BackButton';
 import { Entypo } from '@expo/vector-icons';
 import Lottie from 'lottie-react-native';
 import { StatusBar } from 'expo-status-bar';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import theme from '../../../global/styles/theme'
 import drink from '../../../../assets/animations/drink.json'
@@ -28,6 +29,7 @@ import { TextRegular, TextThin } from '../../../components/Texts';
 import LanguageSelector from "../../../utils/LanguageSelector"
 
 const QuizB = () => {
+    const insets = useSafeAreaInsets()
     const { portuguese, english, language } = useContext(LanguageSelector);
 
 
@@ -67,67 +69,73 @@ const QuizB = () => {
     }
 
     return (
-        <Container>
-            <StatusBar
-                style='auto'
-            />
-            <Header>
-                <Lottie
-                    autoPlay
-                    loop
-                    source={drink}
-                    style={{
-                        height: '95%',
-                        alignSelf:'center'
-                    }}
-                />
-                <ButtonBackContainer>
-                    <BackButton />
-                </ButtonBackContainer>
-            </Header>
-            <Main>
-                <TextContainer>
-                    <SpaceText>
-                        <TextThin
-                            text={language.quiz.B.count}
-                        />
-                    </SpaceText>
-                    <TextRegular
-                        text={language.quiz.B.text}
-                    />
-                </TextContainer>
-
-                <ButtonsContainer>
-                    <SelectButton
-                        text={language.quiz.B.q1}
-                        onPress={() => handleSelected(30)}
-                        changeColor={changeColorA}
-                    />
-                    <SelectButton
-                        text={language.quiz.B.q2}
-                        onPress={() => handleSelected(20)}
-                        changeColor={changeColorB}
-                    />
-                    <SelectButton
-                        text={language.quiz.B.q3}
-                        onPress={() => handleSelected(10)}
-                        changeColor={changeColorC}
-                    />
-                </ButtonsContainer>
-                <Button
+        
+            <Container 
                 style={{
-                    elevation: 2
-                }}
-                onPress={() => {
-                    setQuizCount(quizCount + temp)
-                    navigation.navigate('QuizC')
+                    paddingTop: insets.top
                 }}
             >
-                <Entypo name="chevron-right" size={24} color={theme.colors.green} />
-            </Button>
-            </Main>
-            
-        </Container>
+                <StatusBar
+                    style='auto'
+                />
+                <Header>
+                    <Lottie
+                        autoPlay
+                        loop
+                        source={drink}
+                        style={{
+                            height: '95%',
+                            alignSelf: 'center'
+                        }}
+                    />
+                    <ButtonBackContainer
+
+                    >
+                        <BackButton />
+                    </ButtonBackContainer>
+                </Header>
+                <Main>
+                    <TextContainer>
+                        <SpaceText>
+                            <TextThin
+                                text={language.quiz.B.count}
+                            />
+                        </SpaceText>
+                        <TextRegular
+                            text={language.quiz.B.text}
+                        />
+                    </TextContainer>
+
+                    <ButtonsContainer>
+                        <SelectButton
+                            text={language.quiz.B.q1}
+                            onPress={() => handleSelected(30)}
+                            changeColor={changeColorA}
+                        />
+                        <SelectButton
+                            text={language.quiz.B.q2}
+                            onPress={() => handleSelected(20)}
+                            changeColor={changeColorB}
+                        />
+                        <SelectButton
+                            text={language.quiz.B.q3}
+                            onPress={() => handleSelected(10)}
+                            changeColor={changeColorC}
+                        />
+                    </ButtonsContainer>
+                    <Button
+                        style={{
+                            elevation: 2
+                        }}
+                        onPress={() => {
+                            setQuizCount(quizCount + temp)
+                            navigation.navigate('QuizC')
+                        }}
+                    >
+                        <Entypo name="chevron-right" size={24} color={theme.colors.green} />
+                    </Button>
+                </Main>
+            </Container>
     )
 }
 

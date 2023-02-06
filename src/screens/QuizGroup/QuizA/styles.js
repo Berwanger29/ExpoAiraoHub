@@ -1,11 +1,10 @@
 import styled from "styled-components/native";
-import { Platform, StatusBar } from "react-native";
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { RFValue } from "react-native-responsive-fontsize";
 
 
 export const Container = styled.View`
     flex: 1;
-    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 0}px 15px;
+    padding: 0 15px;
     background-color: ${props => props.theme.colors.light};
 `
 
@@ -45,5 +44,5 @@ export const Button = styled.TouchableOpacity`
     border-radius: 5px;
     
     position: absolute;
-    bottom: ${Platform.OS === 'android'? 0 : 30}px;
+    bottom: 40px;
 `

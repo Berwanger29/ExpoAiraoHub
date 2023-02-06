@@ -122,7 +122,6 @@ const QuizA = () => {
                     <Entypo name="chevron-right" size={24} color={theme.colors.green} />
                 </Button>
             </Main>
-
         </Container>
     )
 }

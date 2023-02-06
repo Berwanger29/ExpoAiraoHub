@@ -1,11 +1,10 @@
 import styled from "styled-components/native";
-import { StatusBar } from "react-native";
 import { RFValue } from "react-native-responsive-fontsize";
 
 
 export const Container = styled.View`
     flex: 1;
-    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight : 0}px 15px;
+    padding: 10px 15px;
     background-color: ${props => props.theme.colors.light};
 `
 export const Header = styled.SafeAreaView`
@@ -17,8 +16,9 @@ export const Header = styled.SafeAreaView`
 `
 
 export const ButtonBackContainer = styled.View`
-    align-self: flex-start;
-    margin-top: 15px;
+    position: absolute;
+    left: 5px;
+    top: 0;
 `
 
 
@@ -47,5 +47,5 @@ export const Button = styled.TouchableOpacity`
     border-radius: 5px;
     
     position: absolute;
-    bottom: ${Platform.OS === 'android' ? 0 : 30}px;
+    bottom: 40px;
 `
