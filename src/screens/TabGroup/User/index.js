@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Alert } from 'react-native';
+import { Alert, Platform } from 'react-native';
 import {
     Container,
     Header,
@@ -118,15 +118,24 @@ const User = () => {
                         </OptionsContainer>
                     </Main>
 
-                    <Footer>
-                        <LogoutButton
-                            onPress={() => handleLogOut()}
-                        >
-                            <LogOutText>
-                                Logout
-                            </LogOutText>
-                        </LogoutButton>
-                    </Footer>
+                    {
+                        Platform.OS === 'android' ?
+                            (
+                                <Footer>
+                                    <LogoutButton
+                                        onPress={() => handleLogOut()}
+                                    >
+                                        <LogOutText>
+                                            Logout
+                                        </LogOutText>
+                                    </LogoutButton>
+                                </Footer>
+                            )
+                            :
+                            (
+                                null
+                            )
+                    }
                 </Container>
             </SafeContainer>
         </BackgroundImage>

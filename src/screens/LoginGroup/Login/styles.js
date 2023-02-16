@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
-import { StatusBar, Platform} from "react-native";
+import { StatusBar, Platform } from "react-native";
 
 export const ImageContainer = styled.ImageBackground`
     flex: 1;
@@ -10,7 +10,7 @@ export const Container = styled.View`
     flex: 1;
     background-color: rgba(255,255,255,0.6);
     align-items: center;
-    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight: 0}px 15px;
+    padding: ${Platform.OS === 'android' ? StatusBar.currentHeight : 0}px 15px;
 `
 
 export const LabelContainer = styled.View`
@@ -85,4 +85,11 @@ export const LoadingContainer = styled.View`
     flex: 1;
     align-items: center;
     justify-content: center;
+`
+
+export const IOSContainer = styled.View`
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.6);
 `

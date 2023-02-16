@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ActivityIndicator, Alert, StatusBar, View } from 'react-native';
+import { ActivityIndicator, Alert, Platform, StatusBar, View } from 'react-native';
 import {
     Container,
     InputContainer,
@@ -14,6 +14,7 @@ import {
     ImageContainer,
     ButtonLanguage,
     CountryFlag,
+    IOSContainer,
 } from './styles'
 
 import { auth } from '../../../../firebase'
@@ -30,6 +31,7 @@ import theme from '../../../global/styles/theme'
 
 import { useContext } from "react";
 import LanguageSelector from "../../../utils/LanguageSelector"
+import { RFValue } from 'react-native-responsive-fontsize';
 
 
 
@@ -114,8 +116,28 @@ const Login = () => {
         }
     }
 
+    function iosLogin() {
+        async function getData() {
+            try {
+                const jsonValue = await AsyncStorage.getItem('@airaoHub_infoProfile')
+                if (jsonValue !== null) {
+                    navigation.dispatch(
+                        StackActions.replace('TabNavigator')
+                        )
+                        setLoading(false)
+
+                } else {
+                    navigation.navigate('QuizStack')
+                }
+            } catch (e) {
+                console.log(e)
+            }
+        }
+        getData()
+        
+    }
     useEffect(() => {
-        autoLogin()
+        Platform.OS === 'android' ? autoLogin() : iosLogin()
     }, [])
 
 
@@ -138,95 +160,120 @@ const Login = () => {
                                 backgroundColor="transparent"
                                 translucent
                             />
-                            <Container>
-                                <Logo />
-                                <InputContainer>
-                                    <LabelContainer>
-                                        <TextSubTitle
-                                            text={language.login.login}
-                                        />
+                            {
+                                Platform.OS === 'android' ?
+                                    (
+                                        <Container>
+                                            <Logo />
 
-                                        <ButtonLanguage
-                                            onPress={() => handleLanguage()}
-                                        >
-                                            <CountryFlag
-                                                source={flag}
+                                            <InputContainer>
+                                                <LabelContainer>
+                                                    <TextSubTitle
+                                                        text={language.login.login}
+                                                    />
+                                                    <ButtonLanguage
+                                                        onPress={() => handleLanguage()}
+                                                    >
+                                                        <CountryFlag
+                                                            source={flag}
+                                                        />
+                                                    </ButtonLanguage>
+                                                </LabelContainer>
+                                                <UserInput
+                                                    placeholder={language.login.email}
+                                                    placeholderTextColor={theme.colors.gray}
+                                                    onChangeText={(e) => setEmail(e)}
+                                                    keyboardType='email-address'
+                                                />
+                                                <EyeInputContainer>
+                                                    <UserInput
+                                                        placeholder={language.login.password}
+                                                        placeholderTextColor={theme.colors.gray}
+                                                        onChangeText={(e) => setPassword(e)}
+                                                        secureTextEntry={showPassword}
+                                                    />
+                                                    <EyeContainer
+                                                        onPress={() => toggleShowPassword()}
+                                                    >
+                                                        <Entypo name={iconEyeName} size={24} color={theme.colors.darkGreen} />
+                                                    </EyeContainer>
+                                                </EyeInputContainer>
+
+                                                <RecoveryContainer>
+                                                    <TextThin
+                                                        text={language.login.new}
+                                                    />
+                                                    <ButtonText
+                                                        onPress={() => moveToSignUp()}
+                                                    >
+                                                        <TextThin
+                                                            color={theme.colors.green}
+                                                            text={language.login.newContinue}
+                                                            textDecoration='underline'
+                                                        />
+                                                    </ButtonText>
+                                                </RecoveryContainer>
+                                                <LoginAreaButton
+                                                    label={language.login.button}
+                                                    onPress={() => handleLogin()}
+                                                />
+                                                <View style={{ marginBottom: 10 }}>
+                                                    <TextThin
+                                                        text={language.login.or}
+                                                    />
+                                                </View>
+                                                <ButtonText
+                                                    onPress={() => navigation.navigate('QuizStack')}
+                                                >
+                                                    <TextRegular
+                                                        color={theme.colors.green}
+                                                        text={language.login.anonimousLogin}
+                                                        textDecoration='underline'
+                                                    />
+                                                </ButtonText>
+                                            </InputContainer>
+                                            <SignUpContainer>
+                                                <TextThin
+                                                    text={language.login.forgot}
+                                                />
+                                                <ButtonText
+                                                    onPress={() => moveToRecovery()}
+                                                >
+                                                    <TextThin
+                                                        color={theme.colors.green}
+                                                        text={language.login.retrieve}
+                                                        textDecoration='underline'
+                                                    />
+                                                </ButtonText>
+                                            </SignUpContainer>
+                                        </Container>
+                                    )
+                                    :
+                                    (
+                                        <IOSContainer>
+                                            <Logo />
+
+                                            <LabelContainer
+                                                style={{
+                                                    flexDirection: 'row-reverse',
+                                                    paddingHorizontal: RFValue(15)
+                                                }}
+                                            >
+                                                <ButtonLanguage
+                                                    onPress={() => handleLanguage()}
+                                                >
+                                                    <CountryFlag
+                                                        source={flag}
+                                                    />
+                                                </ButtonLanguage>
+                                            </LabelContainer>
+                                            <LoginAreaButton
+                                                label={language.login.button}
+                                                onPress={() => navigation.navigate('QuizStack')}
                                             />
-                                        </ButtonLanguage>
-                                    </LabelContainer>
-
-                                    <UserInput
-                                        placeholder={language.login.email}
-                                        placeholderTextColor={theme.colors.gray}
-                                        onChangeText={(e) => setEmail(e)}
-                                        keyboardType='email-address'
-                                    />
-
-
-                                    <EyeInputContainer>
-                                        <UserInput
-                                            placeholder={language.login.password}
-                                            placeholderTextColor={theme.colors.gray}
-                                            onChangeText={(e) => setPassword(e)}
-                                            secureTextEntry={showPassword}
-                                        />
-                                        <EyeContainer
-                                            onPress={() => toggleShowPassword()}
-                                        >
-                                            <Entypo name={iconEyeName} size={24} color={theme.colors.darkGreen} />
-                                        </EyeContainer>
-                                    </EyeInputContainer>
-
-                                    <RecoveryContainer>
-                                        <TextThin
-                                            text={language.login.new}
-                                        />
-                                        <ButtonText
-                                            onPress={() => moveToSignUp()}
-                                        >
-                                            <TextThin
-                                                color={theme.colors.green}
-                                                text={language.login.newContinue}
-                                                textDecoration='underline'
-                                            />
-                                        </ButtonText>
-                                    </RecoveryContainer>
-
-                                    <LoginAreaButton
-                                        label={language.login.button}
-                                        onPress={() => handleLogin()}
-                                    />
-                                    <View style={{ marginBottom: 10 }}>
-                                        <TextThin
-                                            text={language.login.or}
-                                        />
-                                    </View>
-                                    <ButtonText
-                                        onPress={() => navigation.navigate('QuizStack')}
-                                    >
-                                        <TextRegular
-                                            color={theme.colors.green}
-                                            text={language.login.anonimousLogin}
-                                            textDecoration='underline'
-                                        />
-                                    </ButtonText>
-                                </InputContainer>
-
-                                <SignUpContainer>
-                                    <TextThin
-                                        text={language.login.forgot}
-                                    />
-                                    <ButtonText
-                                        onPress={() => moveToRecovery()}
-                                    >
-                                        <TextThin
-                                            color={theme.colors.green}
-                                            text={language.login.retrieve}
-                                            textDecoration='underline'
-                                        />
-                                    </ButtonText>
-                                </SignUpContainer>
-                            </Container>
+                                        </IOSContainer>
+                                    )
+                            }
                         </ImageContainer>
                     </Keyboard>
             }
