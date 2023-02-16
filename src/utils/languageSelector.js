@@ -34,7 +34,7 @@ export function LanguageProvider({ children }) {
         storeData();
     }
 
-    function initLanguage(lingua){
+    function initLanguage(lingua) {
         if (lingua === 'en') {
             //recebe ao contrario de pt
             setLanguage(portuguese);
@@ -59,10 +59,10 @@ export function LanguageProvider({ children }) {
     async function getData() {
         try {
             const value = await AsyncStorage.getItem('@airaoHub_Language')
-            if(value !== null) {
+            if (value !== null) {
                 initLanguage(value);
-              }
-            
+            }
+
         } catch (e) {
         }
     }
@@ -80,36 +80,3 @@ export function LanguageProvider({ children }) {
 }
 
 export default LanguageSelector;
-
-
-
-
-
-
-
-
-
-
-// const portuguese = pt.labels
-// const english = en.labels
-
-// export const selectLanguage = async (value) => {
-
-//     // let language = null
-
-//     const [language, setLanguage] = useState()
-
-//     if (value === 'pt') {
-//         setLanguage(portuguese)
-//     } else if (value === 'en') {
-//         setLanguage(english)
-//     }
-
-//     // try {
-//     //     await AsyncStorage.setItem('@airaoHub_language', value)
-//     // } catch (e) {
-//     //     alert('An error ocurred')
-//     // }
-
-//     return language
-// }

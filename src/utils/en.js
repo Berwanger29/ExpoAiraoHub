@@ -565,26 +565,26 @@ export default [
     //         profile: ["adventure", "soft", "calm"]
     //     },
     // },
-    {
-        type: "toEat",
-        id: 5015,
-        title: "Café Regional De Bubuia",
-        content: {
-            description: "'De bubuia' ('relaxed') local breakfastFamily establishment with a cozy environment. We offer a menu with various tapiocas and other regional products.",
-            image: require('../../exceptionalImage/toEat/deBubuia.jpg'),
-            social: {
-                instagram: 'https://www.instagram.com/debubuia2022/',
-                facebook: '',
-                site: ''
-            },
-            contacts: "tel://+5592992282394",
-            address: "",
-            addressLink: "https://goo.gl/maps/DCfw6dzL9AMK6Ueu6",
-            type: ["Café regional"],
-            offering: ["Parking lot"],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "toEat",
+    //     id: 5015,
+    //     title: "Café Regional De Bubuia",
+    //     content: {
+    //         description: "'De bubuia' ('relaxed') local breakfastFamily establishment with a cozy environment. We offer a menu with various tapiocas and other regional products.",
+    //         image: require('../../exceptionalImage/toEat/deBubuia.jpg'),
+    //         social: {
+    //             instagram: 'https://www.instagram.com/debubuia2022/',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592992282394",
+    //         address: "",
+    //         addressLink: "https://goo.gl/maps/DCfw6dzL9AMK6Ueu6",
+    //         type: ["Café regional"],
+    //         offering: ["Parking lot"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "toEat",
         id: 5016,
