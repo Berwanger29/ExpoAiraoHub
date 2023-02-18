@@ -473,7 +473,7 @@ export default [
             description: "An unforgettable experience with regional food in the community of Sobrado, in the heart of nature. The adventure begins with your choice.",
             image: require('../../exceptionalImage/toEat/maranata.jpg'),
             social: {
-                instagram: 'https://www.instagram.com/maranata.restaurante0/',
+                instagram: 'https://www.instagram.com/maranata.restaurante0_/',
                 facebook: '',
                 site: ''
             },

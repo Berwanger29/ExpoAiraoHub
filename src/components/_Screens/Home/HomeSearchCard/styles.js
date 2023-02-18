@@ -2,9 +2,9 @@ import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize"
 
 export const ButtonContainer = styled.TouchableOpacity`
-    width: 100%;
+    width: 96%;
     height: 270px;
-
+    align-self: center;
     margin-top: 20px;
     margin-bottom: 20px;    
 `
