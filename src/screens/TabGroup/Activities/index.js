@@ -153,158 +153,162 @@ const Activities = () => {
     }
 
     return (
-        
-            <Container
-                style={{paddingTop: insets.top}}
-            >
-                <Header>
-                    <UserButtonContainer>
-                        <UserButton />
-                    </UserButtonContainer>
 
-                    <HeroContainer>
-                        <TextSubTitle
-                            text={language.activities.title}
-                            color={theme.colors.darkGreen}
-                        />
-                        <FIlterButton
-                            onPress={handleModal}
-                        >
-                            <Ionicons name="filter" size={26} color={theme.colors.darkGreen} />
-                        </FIlterButton>
-                    </HeroContainer>
-                    <ContainerSearch
-                        style={{
-                            elevation: 5,
-                            shadowColor: '#171717',
-                            shadowOffset: { width: -2, height: 2 },
-                            shadowOpacity: 0.2,
-                            shadowRadius: 3,
-                        }}
-                    >
-                        <Input
-                            placeholder={language.activities.search}
-                            value={input}
-                            onChangeText={(e) => setInput(e)}
-                        />
-                        <SearchButton>
-                            <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
-                        </SearchButton>
-                    </ContainerSearch>
-                </Header>
-                {
-                    input === '' &&
-                    <Main
-                        style={{ display: displayPrimary}}
-                    >
-                        <MainList
-                            data={activitiesData}
-                            showsVerticalScrollIndicator={false}
-                            renderItem={({ item }) => (
-                                <Card
-                                    id={item.id}
-                                    image={item.content.image}
-                                    title={item.title}
-                                />
-                            )}
-                        />
-                    </Main>
-                }
+        <Container
+            style={{ paddingTop: insets.top }}
+        >
+            <Header>
+                <UserButtonContainer>
+                    <UserButton />
+                </UserButtonContainer>
 
-                {
-                    (input !== '') &&
-                    <Main>
-                        <SearchList
-                            data={arrSearch}
-                            renderItem={({ item }) => (
-                                <Card
-                                    id={item.id}
-                                    title={item.title}
-                                    image={item.content.image}
-                                />
-                            )}
-                        />
-                    </Main>
-                }
-                {
-                    filter !== '' && (input === '') &&
-                    <Main
-                        style={{ display: displaySecondary }}
+                <HeroContainer>
+                    <TextSubTitle
+                        text={language.activities.title}
+                        color={theme.colors.darkGreen}
+                    />
+                    <FIlterButton
+                        onPress={handleModal}
                     >
-                        <SearchList
-                            data={categorieFiltered}
-                            renderItem={({ item }) => (
-                                <Card
-                                    id={item.id}
-                                    title={item.title}
-                                    image={item.content.image}
-                                />
-                            )}
-                        />
-                    </Main>
-                }
-                <Modal
-                    animationType='fade'
-                    visible={modalVisible}
-                    transparent
+                        <Ionicons name="filter" size={26} color={theme.colors.darkGreen} />
+                    </FIlterButton>
+                </HeroContainer>
+                <ContainerSearch
+                    style={{
+                        elevation: 5,
+                        shadowColor: '#171717',
+                        shadowOffset: { width: -2, height: 2 },
+                        shadowOpacity: 0.2,
+                        shadowRadius: 3,
+                    }}
                 >
-                    <ModalContiner>
-                        <FilterContainer>
-                            <FilterHeader>
-                                <TextSubTitle
-                                    text={language.activities.filter.title}
+                    <Input
+                        placeholder={language.activities.search}
+                        value={input}
+                        onChangeText={(e) => setInput(e)}
+                    />
+                    <SearchButton>
+                        <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
+                    </SearchButton>
+                </ContainerSearch>
+            </Header>
+            {
+                input === '' &&
+                <Main
+                    style={{ display: displayPrimary }}
+                >
+                    <MainList
+                        data={activitiesData}
+                        showsVerticalScrollIndicator={false}
+                        keyExtractor={item => Number(item.id)}
+                        renderItem={({ item }) => (
+                            <Card
+                                id={item.id}
+                                image={item.content.image}
+                                title={item.title}
+                            />
+                        )}
+                    />
+                </Main>
+            }
+
+            {
+                (input !== '') &&
+                <Main>
+                    <SearchList
+                        showsVerticalScrollIndicator={false}
+                        data={arrSearch}
+                        renderItem={({ item }) => (
+                            <Card
+                                id={item.id}
+                                title={item.title}
+                                image={item.content.image}
+                            />
+                        )}
+                    />
+                </Main>
+            }
+
+            {
+                filter !== '' && (input === '') &&
+                <Main
+                    style={{ display: displaySecondary }}
+                >
+                    <SearchList
+                        showsVerticalScrollIndicator={false}
+                        data={categorieFiltered}
+                        renderItem={({ item }) => (
+                            <Card
+                                id={item.id}
+                                title={item.title}
+                                image={item.content.image}
+                            />
+                        )}
+                    />
+                </Main>
+            }
+            <Modal
+                animationType='fade'
+                visible={modalVisible}
+                transparent
+            >
+                <ModalContiner>
+                    <FilterContainer>
+                        <FilterHeader>
+                            <TextSubTitle
+                                text={language.activities.filter.title}
+                            />
+                            <CloseModalButton
+                                onPress={handleModal}
+                            >
+                                <TextRegular
+                                    text={language.activities.filter.button}
+                                    color={theme.colors.light}
                                 />
-                                <CloseModalButton
-                                    onPress={handleModal}
+                            </CloseModalButton>
+                        </FilterHeader>
+                        <Details>
+                            <TextRegular
+                                text={language.activities.filter.text}
+                            />
+                        </Details>
+                        <Line />
+                        <Scroll>
+                            <FilterOptions>
+                                <FilterButton
+                                    onPress={() => {
+                                        setDisplayPrimary('flex')
+                                        setDisplaySecondary('none')
+                                        setFilter('')
+                                    }}
+                                    isSelected={filter == '' ? true : false}
                                 >
                                     <TextRegular
-                                        text={language.activities.filter.button}
-                                        color={theme.colors.light}
+                                        text='Todos'
+                                        color={filter === '' ? theme.colors.light : theme.colors.black}
                                     />
-                                </CloseModalButton>
-                            </FilterHeader>
-                            <Details>
-                                <TextRegular
-                                    text={language.activities.filter.text}
-                                />
-                            </Details>
-                            <Line />
-                            <Scroll>
-                                <FilterOptions>
-                                    <FilterButton
-                                        onPress={() => {
-                                            setDisplayPrimary('flex')
-                                            setDisplaySecondary('none')
-                                            setFilter('')
-                                        }}
-                                        isSelected={filter == '' ? true : false}
-                                    >
-                                        <TextRegular
-                                            text='Todos'
-                                            color={filter === '' ? theme.colors.light : theme.colors.black}
-                                        />
-                                    </FilterButton>
-                                    {
-                                        categories.map((item) => (
-                                            <FilterButton
-                                                onPress={() => handleFilter(item)}
-                                                isSelected={isSelected && (item == filter) ? true : false}
-                                            >
-                                                <TextRegular
-                                                    text={item}
-                                                    color={isSelected && (item == filter) ? theme.colors.light : false}
-                                                />
-                                            </FilterButton>
-                                        ))
-                                    }
-                                </FilterOptions>
-                            </Scroll>
-                        </FilterContainer>
-                    </ModalContiner>
-                </Modal>
+                                </FilterButton>
+                                {
+                                    categories.map((item) => (
+                                        <FilterButton
+                                            onPress={() => handleFilter(item)}
+                                            isSelected={isSelected && (item == filter) ? true : false}
+                                        >
+                                            <TextRegular
+                                                text={item}
+                                                color={isSelected && (item == filter) ? theme.colors.light : false}
+                                            />
+                                        </FilterButton>
+                                    ))
+                                }
+                            </FilterOptions>
+                        </Scroll>
+                    </FilterContainer>
+                </ModalContiner>
+            </Modal>
 
-            </Container >
-        
+        </Container >
+
     )
 }
 

@@ -59,7 +59,6 @@ const Login = () => {
                             navigation.dispatch(
                                 StackActions.replace('TabNavigator')
                             )
-
                         } else {
                             navigation.navigate('QuizStack')
                         }
