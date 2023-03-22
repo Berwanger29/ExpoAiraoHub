@@ -15,6 +15,7 @@ import { LanguageProvider } from "./src/utils/LanguageSelector";
 LogBox.ignoreAllLogs()
 
 
+//Bare Workflow
 export default function App() {
 
   let [fontsLoaded, error] = useFonts({
