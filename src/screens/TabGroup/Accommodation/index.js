@@ -22,10 +22,10 @@ import theme from '../../../global/styles/theme'
 import data from '../../../../data'
 
 import { useNavigation } from '@react-navigation/native'
-
 import { useContext } from "react";
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
+
 import LanguageSelector from "../../../utils/LanguageSelector"
-import { SafeContainer } from '../../../components/SafeContainer'
 
 const Accommodation = () => {
 
@@ -33,6 +33,7 @@ const Accommodation = () => {
 
 
     const navigation = useNavigation()
+    const insets = useSafeAreaInsets()
 
     const [input, setInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
@@ -89,8 +90,11 @@ const Accommodation = () => {
     }, [])
 
     return (
-        <SafeContainer> 
-            <Container>
+            <Container
+                style={{
+                    paddingTop: insets.top
+                }}
+            >
                 <Header>
                     <UserButtonContainer>
                         <UserButton />
@@ -167,7 +171,7 @@ const Accommodation = () => {
                     </Main>
                 }
             </Container>
-        </SafeContainer>
+        
     )
 }
 

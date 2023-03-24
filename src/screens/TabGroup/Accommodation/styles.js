@@ -3,12 +3,12 @@ import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
     flex: 1;
-    padding: 0px 15px;
-    background-color: ${props => props.theme.colors.light};
+    padding-left: 15px;
+    padding-right: 15px;
 `
 
 export const Header = styled.View`
-
+    
 `
 
 export const SearchConatainer = styled.View`
@@ -37,7 +37,7 @@ export const SearchButton = styled.TouchableOpacity`
 
 export const Main = styled.View`
     flex: 1;
-    margin-top: ${RFValue(20)}px;
+    margin-top: 15px;
 `
 
 export const List = styled.FlatList`
