@@ -89,7 +89,7 @@ const Accommodation = () => {
     }, [])
 
     return (
-        <SafeContainer>
+        <SafeContainer> 
             <Container>
                 <Header>
                     <UserButtonContainer>
@@ -123,7 +123,6 @@ const Accommodation = () => {
                     </SearchConatainer>
                 </Header>
                 {input == '' &&
-
                     <Main>
                         <CardExternalPlatform />
                         <List
