@@ -39,6 +39,7 @@ import theme from '../../../global/styles/theme';
 
 import LanguageSelector from '../../../utils/LanguageSelector';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { NotFound } from '../../../components/NotFound';
 
 const TopTab = createMaterialTopTabNavigator()
 
@@ -125,7 +126,7 @@ const Activities = () => {
                 arr.push(item)
             }
         })
-        if(arr.toString() === arrBoolean.toString()){
+        if (arr.toString() === arrBoolean.toString()) {
             setWasFound(false)
         }
         setArrSearch(arr)
@@ -197,41 +198,56 @@ const Activities = () => {
                     </SearchButton>
                 </ContainerSearch>
             </Header>
-            {
-                input === '' &&
-                <Main
-                    style={{ display: displayPrimary }}
-                >
-                    <MainList
-                        data={activitiesData}
-                        showsVerticalScrollIndicator={false}
-                        keyExtractor={item => Number(item.id)}
-                        renderItem={({ item }) => (
-                            <Card
-                                id={item.id}
-                                image={item.content.image}
-                                title={item.title}
-                            />
-                        )}
-                    />
-                </Main>
-            }
 
             {
-                (input !== '') &&
-                <Main>
-                    <SearchList
-                        showsVerticalScrollIndicator={false}
-                        data={arrSearch}
-                        renderItem={({ item }) => (
-                            <Card
-                                id={item.id}
-                                title={item.title}
-                                image={item.content.image}
+                input === '' ?
+                    (
+                        <Main
+                            style={{ display: displayPrimary }}
+                        >
+                            <MainList
+                                data={activitiesData}
+                                showsVerticalScrollIndicator={false}
+                                keyExtractor={item => Number(item.id)}
+                                renderItem={({ item }) => (
+                                    <Card
+                                        id={item.id}
+                                        image={item.content.image}
+                                        title={item.title}
+                                    />
+                                )}
                             />
-                        )}
-                    />
-                </Main>
+                        </Main>
+                    )
+                    :
+                    (
+                        <Main>
+                            {
+                                wasFound === true ?
+                                    (
+                                        <SearchList
+                                            showsVerticalScrollIndicator={false}
+                                            data={arrSearch}
+                                            renderItem={({ item }) => (
+                                                <Card
+                                                    id={item.id}
+                                                    title={item.title}
+                                                    image={item.content.image}
+                                                />
+                                            )}
+                                        />
+                                    )
+                                    :
+                                    (
+                                        <NotFound
+                                            label={language.notFound.text}
+                                        />
+                                    )
+                            }
+
+                        </Main>
+                    )
+
             }
 
             {
@@ -252,6 +268,8 @@ const Activities = () => {
                     />
                 </Main>
             }
+
+
             <Modal
                 animationType='fade'
                 visible={modalVisible}

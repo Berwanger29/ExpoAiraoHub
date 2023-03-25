@@ -1,0 +1,478 @@
+[33mcommit 810525380706d06838bf24ce8fe81593087c488d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 1e817f2 bb9080c
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Fri Mar 24 15:05:27 2023 -0400
+
+    Merge pull request #1 from Berwanger29/exposdk46
+    
+    Exposdk46
+
+[33mcommit bb9080cb84b32586d592b40ce0c9ebaa3e250306[m[33m ([m[1;31morigin/update[m[33m, [m[1;31morigin/exposdk46[m[33m, [m[1;32mexposdk46[m[33m)[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Fri Mar 24 11:29:36 2023 -0400
+
+    UPDATE - sdk updated to expo sdk 47
+
+[33mcommit bf3ff8a587be732d89a25c2a5bf0c3c6d659b6bd[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Wed Mar 22 11:21:16 2023 -0400
+
+    pre update
+
+[33mcommit fdc650b5c4a2b5efc9c89dfe21cfff336eba03ce[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Thu Mar 2 18:06:12 2023 -0400
+
+    Expo SDK update 45 to 46
+
+[33mcommit 1e817f23fdb96567a0ec604bf271d2f10f1f05d0[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Thu Feb 23 10:10:42 2023 -0400
+
+    list updated
+
+[33mcommit ae26725af8c51194ab6407d58011b62e25dfbb0c[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Sat Feb 18 12:19:47 2023 -0400
+
+    maranata instagram link fixed
+
+[33mcommit 2a928ec53efba9e538df03d6946f6661dd36b030[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Thu Feb 16 14:07:20 2023 -0400
+
+    adapted to IOS
+
+[33mcommit 37c4243376cea15769eb94490f68503a6a7b6dc3[m
+Author: Vinicius <viniciusberwangers@gmail.com>
+Date:   Thu Feb 16 10:26:23 2023 -0400
+
+    Debubuia removed
+
+[33mcommit ff662b0f1d912be71d39d3d3994575e8c4c24803[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Mon Feb 6 11:41:28 2023 -0400
+
+    Quiz Screens working
+
+[33mcommit 695e62dc95a445b3af86cd4afa1a9bb747ca63fe[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Mon Feb 6 11:20:26 2023 -0400
+
+    TabGroup working with SafeAreaView
+
+[33mcommit 031384057e231ad9335c9d07b0cf6df50992de1e[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Mon Feb 6 10:12:48 2023 -0400
+
+    User Screen with SafeAreaView
+
+[33mcommit 80ac6aac85c74f6d503cb675f5d4fc95f65a8975[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Tue Jan 17 14:40:33 2023 -0400
+
+    'User' screens fixed for iphone
+
+[33mcommit 9c67dee759d795674d5608450ee61beae78ee63c[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Mon Jan 16 15:38:07 2023 -0400
+
+    QuizGroup and interface upgraded
+
+[33mcommit 1f1e1e3319ce7fd5edb6557cad73ac8bcd6f8e15[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Fri Jan 13 17:57:10 2023 -0400
+
+    LoginGroup and QuizGroup interfaces working on iOS
+
+[33mcommit 1188102e79d74f4258c342edf17bd840e9ca77c3[m
+Author: Berwanger29 <viniciusberwangers@gmail.com>
+Date:   Tue Jan 10 09:18:44 2023 -0400
+
+    LanguageSelector import adjusted
+
+[33mcommit c1c5be739be107c75ab7726788a12c1373ce2cfe[m
+Author: Vinicius <viniciusberwangers@gmail.com>
+Date:   Thu Jan 5 00:01:11 2023 -0400
+
+    english function working
+
+[33mcommit 200aef14c4e63fabae7bc992d15bcc3af6cb89a4[m
+Author: Vinicius <viniciusberwangers@gmail.com>
+Date:   Tue Jan 3 20:57:49 2023 -0400
+
+    holiday homes in english
+
+[33mcommit b0c2346e44c8d274af79774dc9ea186498c86e67[m
+Author: Vinicius <viniciusberwangers@gmail.com>
+Date:   Tue Jan 3 19:29:02 2023 -0400
+
+    Account settings group working in english
+
+[33mcommit 881d8ea021932776b54296ac05cc9fc586a0e453[m
+Author: Vinicius <viniciusberwangers@gmail.com>
+Date:   Tue Jan 3 18:38:03 2023 -0400
+
+    groups login and quiz are working in 2 languages
+
+[33mcommit 148c4003895e59c42808c88d6dcf6ecbd1f51489[m
+Author: Vinicius <viniciusberwangers@gmail.com>
+Date:   Wed Dec 28 16:10:25 2022 -0400
+
+    aritu and piscicultura anavilhanas added
+
+[33mcommit 21da3274294a55a47039be1b325de9fddd6e2a97[m
+Author: Vinicius <viniciusberwangers@gmail.com>
+Date:   Fri Dec 16 09:43:26 2022 -0400
+
+    spelling corrections
+
+[33mcommit b05f40d0b00a56265ae507740e912cc5aa01fd08[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Sun Dec 11 10:50:30 2022 -0400
+
+    updating to github
+
+[33mcommit 0b2124473d67c9f1272ffeeac56e857b0534111f[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Mon Dec 5 21:13:43 2022 -0400
+
+    changed the tourism category 'park' to 'parque'
+
+[33mcommit 064a4be32cc07c9b6627cee5316aa19096ba4c52[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Mon Dec 5 21:09:01 2022 -0400
+
+    activities filter working
+
+[33mcommit bee2b1e700dc8e5e5bfeef712dde591c86ee6414[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Mon Dec 5 15:26:48 2022 -0400
+
+    Text advices added
+
+[33mcommit 3800a274feede9d2b21543210f70a15d2f0e7f37[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Dec 1 14:02:06 2022 -0400
+
+    fixed input search on Activities and Accomodation screens
+
+[33mcommit 583261bc3aa147f2cbffa2174c943a15e6def407[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Dec 1 11:02:29 2022 -0400
+
+    fixed input search
+
+[33mcommit b7f5e076b5cfe5114df83bbd82f1bada728f77d1[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Nov 30 09:46:56 2022 -0400
+
+    Itens added in type toEat
+
+[33mcommit bfe3657dfe9975d6962798734f0295280b63e1e4[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Nov 29 10:21:31 2022 -0400
+
+    Line comoponent rendering conditionaly
+
+[33mcommit 5254114be6a4d6af7888a1f751d3c4acda66643c[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Nov 29 10:01:22 2022 -0400
+
+    images added in some craftsmanships itens
+
+[33mcommit 02f2f3492423053588d25fc0f5aa84f920d756e3[m
+Merge: 6638a72 6ca379f
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Nov 29 08:32:12 2022 -0400
+
+    privacyPolicy modified
+
+[33mcommit 6638a72d90955ce23ba30b15ef23ad01d95b9001[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Sun Nov 27 21:55:15 2022 -0400
+
+    Craftsmanship text adjusted, Anonimous login button refatoctored and contact option added
+
+[33mcommit 6ca379f4506d997a276f146da39ec50e2edf0da7[m
+Author: Vinicius Berwanger <bwg@Air-de-Vinicius.clickip>
+Date:   Fri Nov 25 17:26:22 2022 -0400
+
+    texts of restaurants remake
+
+[33mcommit ed7ab0665af4df261604ca6fa37f0f6811212d9c[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Nov 23 18:53:41 2022 -0400
+
+    Link to ICMBIO website created and button to agencies list
+
+[33mcommit 65a09dbbf7ca652b82c1ff2151d9154da592f651[m
+Merge: 1503e0b 53bebbe
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Nov 23 16:10:53 2022 -0400
+
+    merging alterations
+
+[33mcommit 1503e0b801dc5d64b1b1b62ec5fc8c558cbdf4d8[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Nov 23 16:05:32 2022 -0400
+
+    park activities added
+
+[33mcommit 53bebbe5551c3f78992d807de16eff02f157e812[m
+Author: Vinicius Berwanger <bwg@Air-de-Vinicius.clickip>
+Date:   Wed Nov 23 10:46:23 2022 -0400
+
+    anavilhanas data added
+
+[33mcommit 8d08209b0e66ab439e03b47b1f2b086bbf27ecf6[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Nov 22 18:51:58 2022 -0400
+
+    Guides added
+
+[33mcommit 28cebade5d42b4cefb8f0432a1d76bf7886c39c8[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Oct 27 12:20:59 2022 -0400
+
+    activities filter working properly
+
+[33mcommit a18de1a0804ce41f8698a720fc5208c18d9b15b6[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Oct 27 11:10:30 2022 -0400
+
+    Filtering options based on personalized buttona
+
+[33mcommit a73ccd19850c2fadd8fe7218e833da48ce2b2293[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Oct 26 16:17:22 2022 -0400
+
+    implementing modal filter logic
+
+[33mcommit c35578fe17fbddaefdf124454a5aec9749add1be[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Oct 25 11:39:23 2022 -0400
+
+    AccommodationExternal UI improved
+
+[33mcommit acd5261b0afa34198daba5fda528a5199bce4074[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Oct 25 09:06:36 2022 -0400
+
+    PrivacyPolicy added for the logged user
+
+[33mcommit f8a43d32d417245e25d6a0c87c4499462bc4075d[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Mon Oct 24 13:24:40 2022 -0400
+
+    Improvements maded on the UI  of the QuizGroup
+
+[33mcommit 22ec98bf1f66d8a42f5b48f2a5135cda4ec577ea[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Mon Oct 24 12:16:48 2022 -0400
+
+    Modal added with privacy policy and some improvements in the responsvity of the UI
+
+[33mcommit 6bdc757c1ae7f28d58df05edacb02ccec6538995[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Sat Oct 22 10:07:51 2022 -0400
+
+    Activities linking to Telephone App and agencie screen inside the app
+
+[33mcommit d6f0680d6f69b3564e15202ca26ecc73bf882205[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Fri Oct 21 09:58:07 2022 -0400
+
+    CardExternalPlatform rendering just accommodations lists
+
+[33mcommit f023bb3431f2e49b95dd230d065b2f5b85aa359c[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Oct 19 12:50:13 2022 -0400
+
+    activities has links to external contacts
+
+[33mcommit 3267d8550e23521f9023b0a0e85ad351216aba88[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Fri Oct 7 10:05:24 2022 -0400
+
+    app modified to SEBRAE presentation
+
+[33mcommit adba64a605cb844c76bbdb33387a31e7d2e97e46[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Oct 6 19:29:04 2022 -0400
+
+    adventure screen sctructure simplified
+
+[33mcommit ab74cfcabd44e5ef49a890b1449b1885afaa2752[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Oct 5 14:14:55 2022 -0400
+
+    Expo URL updated
+
+[33mcommit 5aaacb98399e5ea6552bae99849b3b6eddcbf6ef[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Oct 4 12:51:09 2022 -0400
+
+    Added assets
+
+[33mcommit 45851760394482d25118c0c4cc908135ceee4cd7[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Mon Oct 3 09:50:42 2022 -0400
+
+    firebase service running on airaohub@gmail.com account
+
+[33mcommit fdd9c625930d27861cd2982b100d851b8ee5d453[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Fri Sep 30 13:55:52 2022 -0400
+
+    ItemSelected component updated and cards with bigger border-radius
+
+[33mcommit ab44ed6d0fbaa4c86f895e88463c06092417d6a1[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Sep 29 15:01:39 2022 -0400
+
+    IndividualList rendering junt once and sorting elements
+
+[33mcommit 90641dc873dedfff9fdc3c35e0bf3e6decd8357c[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Sep 29 13:21:36 2022 -0400
+
+    lists displaying itens randomly
+
+[33mcommit 628d4d09cecabdc4cff9b19a317a60f72d1ad026[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Sep 28 15:41:45 2022 -0400
+
+    Design upgraded
+
+[33mcommit 226a729eaa8f379ac6238bb602836b0ef185b06c[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Sep 27 11:26:27 2022 -0400
+
+    Texts Maps fonts standadizeds
+
+[33mcommit c70aab790c25cf24e4f5f7e927fe9e3ee753e548[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Sep 27 09:46:38 2022 -0400
+
+    Map links for hotels added
+
+[33mcommit e284da5990ab535ae02e12e30aa9f47cb5c5b0bf[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Mon Sep 26 15:16:31 2022 -0400
+
+    HomeScreen fonts standardizeds
+
+[33mcommit 7972e760acb2440d069e3012a56dbb8fc9796def[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Mon Sep 26 14:55:56 2022 -0400
+
+    AirBnb and Booking Links working, LoginGroup and QuizGroup with standardized fonts
+
+[33mcommit 17d5a3c958d65936f9a771b70838492f60f7602e[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Sep 21 10:46:09 2022 -0400
+
+    Added places and toggleShowPassword function
+
+[33mcommit 4ceab66a9bf462946dc4c6045deb9de4070eabab[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Fri Sep 16 09:18:41 2022 -0400
+
+    Search funtion added to IndividualList screen
+
+[33mcommit 980b4dfa719ed8f3daac3a9e5753f02b1b1a1add[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Sep 1 21:36:15 2022 -0400
+
+    Individual list working
+
+[33mcommit f68fe697191a0cfef956f7d9b37641efc58a0701[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Aug 31 19:22:57 2022 -0400
+
+    AsyncStorage and Quiz buttons working
+
+[33mcommit b5fe223f5889cc143fc80b5c58ccb1fa4222a8ab[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Tue Aug 23 19:00:05 2022 -0400
+
+    search bar working
+
+[33mcommit d49dc4d3d051e506fd0456d0444e05c064766c10[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Aug 18 10:22:17 2022 -0400
+
+    conditional rendering Map screen working
+
+[33mcommit 21b35c2ac1eec8cf0db34027e0d2ffafa3716183[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Aug 17 16:18:27 2022 -0400
+
+    Avoid keyboard component and phone icon added
+
+[33mcommit 5bfb1c118e6aa77abfc58194c3e38f86a132fb46[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Aug 11 18:33:03 2022 -0400
+
+    informations about hotel are being listed
+
+[33mcommit 040a48a12ba111be529e9fff75245b5cf31b5170[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Sat Aug 6 10:31:58 2022 -0400
+
+    links update
+
+[33mcommit 224e11d1afe139716534f05a31b947523dc8864a[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Aug 4 21:19:12 2022 -0400
+
+    Accommodation and Activities screens refactoed
+
+[33mcommit 3e1e11fd45a578c580241f1307c5c2d7429ae352[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Aug 4 19:34:36 2022 -0400
+
+    homeScreen refactored
+
+[33mcommit c3593077653dbb3676b7c637eb39e64ffd4a1f9c[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Aug 4 10:26:31 2022 -0400
+
+    screen pastes organized
+
+[33mcommit a35f7295050ce3429cdf0546ca18edb3b4e9cdda[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Mon Aug 1 11:16:28 2022 -0400
+
+    data organized to be accessible
+
+[33mcommit 9f94417441bfc3c2c97a3595ae5f91f2b9e7913f[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Sat Jul 30 10:55:51 2022 -0400
+
+    navigation to selected item working
+
+[33mcommit c808df669beda5b16f866d824f763cb0331d11bf[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Fri Jul 29 20:43:55 2022 -0400
+
+    Home Screen with data
+
+[33mcommit c475e23b01ad02831b23d14a4b4ca26a5593723f[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Fri Jul 29 16:38:12 2022 -0400
+
+    navigation on Activities screen working
+
+[33mcommit 440a4cf3196789bd67a226268e83af25cdd1e188[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Thu Jul 28 22:21:31 2022 -0400
+
+    initial loading working
+
+[33mcommit 2755f2ff98a71ce8d4db55b6d8de6e1007cda54d[m
+Author: Vinicius Berwanger <71450428+Berwanger29@users.noreply.github.com>
+Date:   Wed Jul 27 18:14:47 2022 -0400
+
+    Tabar bar added and quiz screen is being created
