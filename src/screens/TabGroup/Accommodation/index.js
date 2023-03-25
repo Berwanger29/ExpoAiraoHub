@@ -26,6 +26,7 @@ import { useContext } from "react";
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import LanguageSelector from "../../../utils/LanguageSelector"
+import { NotFound } from '../../../components/NotFound'
 
 const Accommodation = () => {
 
@@ -36,6 +37,7 @@ const Accommodation = () => {
     const insets = useSafeAreaInsets()
 
     const [input, setInput] = useState('')
+    const [wasFound, setWasFound] = useState(true)
     const [arrSearch, setArrSearch] = useState([])
     const [hotelsData, setHotelsData] = useState([])
 
@@ -63,6 +65,7 @@ const Accommodation = () => {
     function getSearched(e) {
         let text = removeAcento(e)
         let arr = []
+        let arrBoolean = []
         accommodationData.filter((item) => {
             let dataItem = removeAcento(item.title)
             if (dataItem.includes(text)) {
@@ -70,6 +73,9 @@ const Accommodation = () => {
             }
         })
         setArrSearch(arr)
+        if (arr.toString() === arrBoolean.toString()) {
+            setWasFound(false)
+        }
     }
 
     useEffect(() => {
@@ -90,43 +96,45 @@ const Accommodation = () => {
     }, [])
 
     return (
-            <Container
-                style={{
-                    paddingTop: insets.top
-                }}
-            >
-                <Header>
-                    <UserButtonContainer>
-                        <UserButton />
-                    </UserButtonContainer>
-                    <HeroContainer>
-                        <TextSubTitle
-                            text={language.accomodation.title}
-                            color={theme.colors.darkGreen}
-                        />
-                    </HeroContainer>
-                    <SearchConatainer
-                        style={{
-                            elevation: 5,
-                            shadowColor: '#171717',
-                            shadowOffset: { width: -2, height: 2 },
-                            shadowOpacity: 0.2,
-                            shadowRadius: 3,
-                        }}
+        <Container
+            style={{
+                paddingTop: insets.top
+            }}
+        >
+            <Header>
+                <UserButtonContainer>
+                    <UserButton />
+                </UserButtonContainer>
+                <HeroContainer>
+                    <TextSubTitle
+                        text={language.accomodation.title}
+                        color={theme.colors.darkGreen}
+                    />
+                </HeroContainer>
+                <SearchConatainer
+                    style={{
+                        elevation: 5,
+                        shadowColor: '#171717',
+                        shadowOffset: { width: -2, height: 2 },
+                        shadowOpacity: 0.2,
+                        shadowRadius: 3,
+                    }}
+                >
+                    <Input
+                        placeholder={language.accomodation.search}
+                        value={input}
+                        onChangeText={(e) => setInput(e)}
+                    />
+                    <SearchButton
+                        activeOpacity={0.6}
                     >
-                        <Input
-                            placeholder={language.accomodation.search}
-                            value={input}
-                            onChangeText={(e) => setInput(e)}
-                        />
-                        <SearchButton
-                            activeOpacity={0.6}
-                        >
-                            <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
-                        </SearchButton>
-                    </SearchConatainer>
-                </Header>
-                {input == '' &&
+                        <AntDesign name="search1" size={21} color={'rgba(44, 44, 44, 0.38)'} />
+                    </SearchButton>
+                </SearchConatainer>
+            </Header>
+
+            {input === '' ?
+                (
                     <Main>
                         <CardExternalPlatform />
                         <List
@@ -147,31 +155,96 @@ const Accommodation = () => {
                         >
                         </List>
                     </Main>
-                }
-
-                {
-                    input !== '' &&
+                )
+                :
+                (
                     <Main>
-                        <List
-                            showsVerticalScrollIndicator={false}
-                            data={arrSearch}
-                            keyExtractor={item => item.id}
-                            renderItem={({ item }) =>
-                            (
-                                <Card
-                                    title={item.title}
-                                    value={item.content.prices}
-                                    image={item.content.image}
-                                    type={item.content.type}
-                                    onPress={() => navigateToSelected(item.id)}
-                                />
-                            )
-                            }
-                        />
+                        {
+                            wasFound ?
+                                (
+                                    <List
+                                        showsVerticalScrollIndicator={false}
+                                        data={arrSearch}
+                                        keyExtractor={item => item.id}
+                                        renderItem={({ item }) =>
+                                        (
+                                            <Card
+                                                title={item.title}
+                                                value={item.content.prices}
+                                                image={item.content.image}
+                                                type={item.content.type}
+                                                onPress={() => navigateToSelected(item.id)}
+                                            />
+                                        )
+                                        }
+                                    />
+                                )
+                                :
+                                (
+                                    <NotFound />
+                                )
+                        }
+
                     </Main>
-                }
-            </Container>
-        
+                )
+            }
+
+            {/* {input === '' &&
+                <Main
+                    style={{
+                        backgroundColor: 'blue'
+                    }}
+                >
+                    <CardExternalPlatform />
+                    <List
+                        showsVerticalScrollIndicator={false}
+                        data={hotelsData}
+                        keyExtractor={item => item.id}
+                        renderItem={({ item }) =>
+                        (
+                            <Card
+                                title={item.title}
+                                value={item.content.prices}
+                                image={item.content.image}
+                                type={item.content.type}
+                                onPress={() => navigateToSelected(item.id)}
+                            />
+                        )
+                        }
+                    >
+                    </List>
+                </Main>
+            } */}
+
+            {/* {
+                (input !== '') && (hasFound === true) ?
+                    (
+                        <Main>
+                            <List
+                                showsVerticalScrollIndicator={false}
+                                data={arrSearch}
+                                keyExtractor={item => item.id}
+                                renderItem={({ item }) =>
+                                (
+                                    <Card
+                                        title={item.title}
+                                        value={item.content.prices}
+                                        image={item.content.image}
+                                        type={item.content.type}
+                                        onPress={() => navigateToSelected(item.id)}
+                                    />
+                                )
+                                }
+                            />
+                        </Main>
+                    )
+                    :
+                    (
+                        <NotFound />
+                    )
+            } */}
+        </Container>
+
     )
 }
 

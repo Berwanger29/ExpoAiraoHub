@@ -70,6 +70,7 @@ const Activities = () => {
     const { portuguese, english, language } = useContext(LanguageSelector);
 
     const [input, setInput] = useState('')
+    const [wasFound, setWasFound] = useState(true)
     const [arrSearch, setArrSearch] = useState([])
     const [modalVisible, setModalVisible] = useState(false)
 
@@ -117,12 +118,16 @@ const Activities = () => {
     function getSearched(e) {
         let text = removeAcento(e)
         let arr = []
+        let arrBoolean = []
         activitiesData.filter((item) => {
             let dataItem = removeAcento(item.title)
             if (dataItem.includes(text)) {
                 arr.push(item)
             }
         })
+        if(arr.toString() === arrBoolean.toString()){
+            setWasFound(false)
+        }
         setArrSearch(arr)
     }
 

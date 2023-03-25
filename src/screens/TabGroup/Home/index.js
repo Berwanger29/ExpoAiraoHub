@@ -27,6 +27,7 @@ import { useContext } from "react";
 import LanguageSelector from "../../../utils/LanguageSelector"
 import * as ptData from '../../../utils/pt';
 import * as enData from '../../../utils/en';
+import { NotFound } from '../../../components/NotFound';
 
 
 const Home = () => {
@@ -35,6 +36,7 @@ const Home = () => {
 
     const [input, setInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
+    const [wasFound, setWasFound] = useState(true)
     const [languageData, setLanguageData] = useState(ptData.default)
 
     useEffect(() => {
@@ -96,12 +98,17 @@ const Home = () => {
     function getSearched(e) {
         let text = removeAcento(e)
         let arr = []
+        let arrBoolean = []
         languageData.filter((item) => {
             let dataItem = removeAcento(item.title)
             if (dataItem.includes(text)) {
                 arr.push(item)
             }
         })
+        if(arr.toString() === arrBoolean.toString()){
+            console.log(arr)
+            setWasFound(false)
+        }
         setArrSearch(arr)
     }
 
@@ -147,52 +154,62 @@ const Home = () => {
                 </SearchConatainer>
             </Header>
 
-            {input === '' &&
-                <Main>
-                    <CarrousselContainer
-                        showsVerticalScrollIndicator={false}
-                    >
-
-                        <Carroussel
-                            title={language.home.artesanato}
-                            data={craftsmanship}
-                        />
-
-                        <Carroussel
-                            title={language.home.agencia}
-                            data={agenciesData}
-                        />
-
-                        <Carroussel
-                            title={language.home.gastronomia}
-                            data={toEatData}
-                        />
-
-                        <Carroussel
-                            title={language.home.hospedagem}
-                            data={hotelsData}
-                        />
-                    </CarrousselContainer>
-                </Main>
-            }
-
-            {input !== '' &&
-                <Main>
-                    <CarrousselContainer>
-                        <HomeList
-                            data={arrSearch}
-                            renderItem={({ item }) => (
-                                <HomeSearchCard
-                                    id={item.id}
-                                    title={item.title}
-                                    image={item.content.image}
+            {
+                input === '' ?
+                    (
+                        <Main>
+                            <CarrousselContainer
+                                showsVerticalScrollIndicator={false}
+                            >
+                                <Carroussel
+                                    title={language.home.artesanato}
+                                    data={craftsmanship}
                                 />
-                            )}
-                        />
-                    </CarrousselContainer>
-                </Main>
+
+                                <Carroussel
+                                    title={language.home.agencia}
+                                    data={agenciesData}
+                                />
+
+                                <Carroussel
+                                    title={language.home.gastronomia}
+                                    data={toEatData}
+                                />
+
+                                <Carroussel
+                                    title={language.home.hospedagem}
+                                    data={hotelsData}
+                                />
+                            </CarrousselContainer>
+                        </Main>
+                    )
+                    :
+                    (
+                        <Main>
+                            {wasFound === true?
+                                (
+                                    <CarrousselContainer>
+                                        <HomeList
+                                            data={arrSearch}
+                                            renderItem={({ item }) => (
+                                                <HomeSearchCard
+                                                    id={item.id}
+                                                    title={item.title}
+                                                    image={item.content.image}
+                                                />
+                                            )}
+                                        />
+                                    </CarrousselContainer>
+                                )
+                                :
+                                (
+                                    <NotFound />
+                                )
+                            }
+                        </Main>
+                    )
             }
-        </Container>
+        </Container >
     )
 }
 
