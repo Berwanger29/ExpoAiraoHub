@@ -2,7 +2,7 @@
   "expo": {
     "name": "AiraoHub",
     "slug": "ExpoAiraoHub",
-    "version": "2.0.4",
+    "version": "2.1.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

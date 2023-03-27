@@ -13,6 +13,12 @@
     "production": {}
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios":{
+        "appleId":"seminturna15@gmail.com",
+        "ascAppId":"6446804782",
+        "appleTeamId":"44AY8WUXU2"
+      }
+    }
   }
 }

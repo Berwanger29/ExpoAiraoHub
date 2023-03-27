@@ -12,6 +12,7 @@ web-build/
 android/
 
 
+
 # macOS
 .DS_Store
 
@@ -73,5 +74,7 @@ buck-out/
 .expo/
 web-build/
 dist/
+
+
 
 # @end expo-cli
