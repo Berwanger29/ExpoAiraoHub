@@ -1415,7 +1415,7 @@ export default [
                     effort: ""
                 },
                 contactList: [
-                    
+
                 ],
             },
             offering: [""],
@@ -2736,7 +2736,7 @@ export const labels = {
             title: 'Filtro',
             button: 'Filtrar',
             text: 'Escolha abaixo uma das opções de filtro',
-            preset:'Todos'
+            preset: 'Todos'
         }
     },
     map: {
@@ -2784,6 +2784,9 @@ export const labels = {
         about: {
             about: 'Sobre',
             text: 'Este aplicativo foi desenvolvido pela Secretaria Municipal de Infraestutura Empreendedorismo e Turismo de Novo Airão (SEMINTUR) com seus direitos inteclectuais pertencnetes à mesma. Atualmente este aplicativo encontra-se em fase de teste aberto ao público e portanto, é possível que sejam econtradas falhas neste momento de testes.'
-        }
+        },
+    },
+    notFound: {
+        text: 'Nada encontrado...'
     }
 }

@@ -181,7 +181,9 @@ const Accommodation = () => {
                                 )
                                 :
                                 (
-                                    <NotFound />
+                                    <NotFound
+                                        label={language.notFound.text}
+                                    />
                                 )
                         }
 

@@ -7,7 +7,7 @@ import animation from '../../../assets/animations/notFound.json'
 import theme from "../../global/styles/theme";
 
 
-export function NotFound() {
+export function NotFound({ label }) {
     return (
         <Container>
             <AnimatedLottieView
@@ -15,11 +15,11 @@ export function NotFound() {
                 loop={true}
                 autoPlay={true}
                 style={{
-                    width:'90%'
+                    width: '90%'
                 }}
             />
-            <TextRegular 
-                text={'Nada encontrado...'}
+            <TextRegular
+                text={label}
                 color={theme.colors.black}
             />
         </Container>

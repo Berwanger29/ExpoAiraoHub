@@ -203,7 +203,9 @@ const Home = () => {
                                 )
                                 :
                                 (
-                                    <NotFound />
+                                    <NotFound
+                                        label={language.notFound.text}
+                                    />
                                 )
                             }
                         </Main>

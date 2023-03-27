@@ -2784,5 +2784,8 @@ export const labels = {
             about: 'About',
             text: 'This app was developed by the Municipal Secretary of Airão (SEMINTUR) with its intellectual rights belonging to itself. At the present time this app is on a trial run to the public and, therefore, may contain temporary flaws.'
         }
+    },
+    notFound: {
+        text: 'Nothing found...'
     }
 }
