@@ -83,7 +83,11 @@ const IndividualList = ({ route }) => {
                     />
                     <SearchContainer
                         style={{
-                            elevation: 5
+                            elevation: 5,
+                            shadowColor: '#171717',
+                            shadowOffset: { width: -2, height: 2 },
+                            shadowOpacity: 0.2,
+                            shadowRadius: 3,
                         }}
                     >
                         <Input
