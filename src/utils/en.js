@@ -1326,38 +1326,38 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
-    {
-        type: "tourism",
-        id: 7008,
-        categorie: "sítio",
-        title: "Sítio providência de Deus",
-        content: {
-            description: "Rehabilitation center for animals, wild animals' keep and their biographies.",
-            image: require("../../exceptionalImage/attractions/maluco.jpg"),
-            contacts: "tel://+5592992931203",
-            social: {
-                instagram: 'https://www.instagram.com/sitio_providencia_de_deus/',
-                facebook: '',
-                site: ''
-            },
-            infoActivities: {
-                local: ["Road"],
-                activities: {
-                    height: 0,
-                    distance: 0,
-                    duration: 0,
-                    effort: ""
-                },
-                contactList: [
-                    { name: 'Audenor', link: 'tel://+5592992931203' }
-                ],
-            },
-            offering: ["Balneário"],
-            address: "",
-            addressLink: "",
-            profile: ["adventure", "soft", "calm"],
-        },
-    },
+    // {
+    //     type: "tourism",
+    //     id: 7008,
+    //     categorie: "sítio",
+    //     title: "Sítio providência de Deus",
+    //     content: {
+    //         description: "Rehabilitation center for animals, wild animals' keep and their biographies.",
+    //         image: require("../../exceptionalImage/attractions/maluco.jpg"),
+    //         contacts: "tel://+5592992931203",
+    //         social: {
+    //             instagram: 'https://www.instagram.com/sitio_providencia_de_deus/',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         infoActivities: {
+    //             local: ["Road"],
+    //             activities: {
+    //                 height: 0,
+    //                 distance: 0,
+    //                 duration: 0,
+    //                 effort: ""
+    //             },
+    //             contactList: [
+    //                 { name: 'Audenor', link: 'tel://+5592992931203' }
+    //             ],
+    //         },
+    //         offering: ["Balneário"],
+    //         address: "",
+    //         addressLink: "",
+    //         profile: ["adventure", "soft", "calm"],
+    //     },
+    // },
     {
         type: "tourism",
         id: 7009,

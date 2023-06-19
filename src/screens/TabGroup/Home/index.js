@@ -105,7 +105,7 @@ const Home = () => {
                 arr.push(item)
             }
         })
-        if(arr.toString() === arrBoolean.toString()){
+        if (arr.toString() === arrBoolean.toString()) {
             console.log(arr)
             setWasFound(false)
         }
@@ -186,7 +186,7 @@ const Home = () => {
                     :
                     (
                         <Main>
-                            {wasFound === true?
+                            {input !== '' && true ?
                                 (
                                     <CarrousselContainer>
                                         <HomeList

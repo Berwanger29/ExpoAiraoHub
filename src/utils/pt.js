@@ -925,6 +925,108 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
+    // {
+    //     type: "toEat",
+    //     id: 5033,
+    //     title: "Doce Doçuras",
+    //     content: {
+    //         description: "Trabalhamos apenas com delivery",
+    //         image: require('../../exceptionalImage/toEat/'),
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592984171314",
+    //         address: "",
+    //         addressLink: '',
+    //         type: [""],
+    //         offering: [],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+    {
+        type: "toEat",
+        id: 5034,
+        title: "Murupy Refeições",
+        content: {
+            description: "Aquela culinária regional, com o gostinho de comida caseira.",
+            image: require('../../exceptionalImage/toEat/murupy.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/murupy_ref/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984504418",
+            address: "",
+            addressLink: 'https://goo.gl/maps/UyuNsujJWyhsLtuS6',
+            type: [""],
+            offering: ["Wi-fi"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5035,
+        title: "Maloca's Café e Restaurante ",
+        content: {
+            description: "Somos um café da manhã e restaurante.Funcionamos pela manhã e a tarde por meio de reservas. Servimos comidas regionais e somos um mbiente totalmente familiar e seguro!",
+            image: require('../../exceptionalImage/toEat/malocas.png'),
+            social: {
+                instagram: 'https://www.instagram.com/malocascafe/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592985043058",
+            address: "",
+            addressLink: '',
+            type: [""],
+            offering: [],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+
+    // {
+    //     type: "toEat",
+    //     id: 5036,
+    //     title: "Café da Elza",
+    //     content: {
+    //         description: "Sua melhor escolha em Café Regional em Novo Airão. Ambiente aconchegante com muitas plantas e conforto para você ter uma experiência única. Delicie-se com nosso cardápio regional.",
+    //         image: require('../../exceptionalImage/toEat/'),
+    //         social: {
+    //             instagram: 'https://www.instagram.com/cafedaelza_/',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+559294211961",
+    //         address: "",
+    //         addressLink: '',
+    //         type: ["Café Regional"],
+    //         offering: ["Wi-fi", "Reservas para eventos"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
+
+    // {
+    //     type: "toEat",
+    //     id: 5037,
+    //     title: "Big Lanches",
+    //     content: {
+    //         description: "Trabalhamos com lanches da melhor qualidade. Funcionamos das 6:00 até 23:59 de segunda à domingo. OBS: Não funcionamos em Sexta-feira. Fazemos entregas em toda a cidade.",
+    //         image: require('../../exceptionalImage/toEat/'),
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592984031948",
+    //         address: "",
+    //         addressLink: '',
+    //         type: ["Wi-fi", "Música ambiente"],
+    //         offering: ["Sucos naturais", "Delivery"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
 
 
 
@@ -1327,38 +1429,38 @@ export default [
             prices: '1317',
         },
     },
-    {
-        type: "tourism",
-        id: 7008,
-        categorie: "sítio",
-        title: "Sítio providência de Deus",
-        content: {
-            description: "Centro de reabilitação de animais silvestre,mantenedouro de animais silvestre e suas biografias.",
-            image: require("../../exceptionalImage/attractions/maluco.jpg"),
-            contacts: "tel://+5592992931203",
-            social: {
-                instagram: 'https://www.instagram.com/sitio_providencia_de_deus/',
-                facebook: '',
-                site: ''
-            },
-            infoActivities: {
-                local: ["Estrada"],
-                activities: {
-                    height: 0,
-                    distance: 0,
-                    duration: 0,
-                    effort: ""
-                },
-                contactList: [
-                    { name: 'Audenor', link: 'tel://+5592992931203' }
-                ],
-            },
-            offering: ["Balneário"],
-            address: "",
-            addressLink: "",
-            profile: ["adventure", "soft", "calm"],
-        },
-    },
+    // {
+    //     type: "tourism",
+    //     id: 7008,
+    //     categorie: "sítio",
+    //     title: "Sítio providência de Deus",
+    //     content: {
+    //         description: "Centro de reabilitação de animais silvestre,mantenedouro de animais silvestre e suas biografias.",
+    //         image: require("../../exceptionalImage/attractions/maluco.jpg"),
+    //         contacts: "tel://+5592992931203",
+    //         social: {
+    //             instagram: 'https://www.instagram.com/sitio_providencia_de_deus/',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         infoActivities: {
+    //             local: ["Estrada"],
+    //             activities: {
+    //                 height: 0,
+    //                 distance: 0,
+    //                 duration: 0,
+    //                 effort: ""
+    //             },
+    //             contactList: [
+    //                 { name: 'Audenor', link: 'tel://+5592992931203' }
+    //             ],
+    //         },
+    //         offering: ["Balneário"],
+    //         address: "",
+    //         addressLink: "",
+    //         profile: ["adventure", "soft", "calm"],
+    //     },
+    // },
     {
         type: "tourism",
         id: 7009,
