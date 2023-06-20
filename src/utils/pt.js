@@ -731,7 +731,7 @@ export default [
         title: "Zefa refeições",
         content: {
             description: "A simplicidade de uma culinária com pratos típicos da cidade e com o melhor sabor caseiro! Dispomos de um cardápio recheado de coisas boas, preparadas com muito carinho.",
-            image: require('../../exceptionalImage/toEat/zefaRefeicoes.jpg'),
+            image: require('../../exceptionalImage/toEat/zefa.jpeg'),
             social: {
                 instagram: '',
                 facebook: '',
@@ -739,7 +739,7 @@ export default [
             },
             contacts: "tel://+5592984025117",
             address: "",
-            addressLink: '',
+            addressLink: 'https://goo.gl/maps/C2aTZhnuX1XvUTrp8',
             type: [""],
             offering: [],
             profile: ["adventure", "soft", "calm"]

@@ -728,10 +728,10 @@ export default [
     {
         type: "toEat",
         id: 5023,
-        title: "Zefa meals",
+        title: "Zefa refeições",
         content: {
             description: "The simplicity of a cuisine with regional dishes and the best homemade flavor. We have got a menu filled with delicious things made with care and tenderness.",
-            image: require('../../exceptionalImage/toEat/zefaRefeicoes.jpg'),
+            image: require('../../exceptionalImage/toEat/zefa.jpeg'),
             social: {
                 instagram: '',
                 facebook: '',
@@ -739,7 +739,7 @@ export default [
             },
             contacts: "tel://+5592984025117",
             address: "",
-            addressLink: '',
+            addressLink: 'https://goo.gl/maps/C2aTZhnuX1XvUTrp8',
             type: [""],
             offering: [],
             profile: ["adventure", "soft", "calm"]
