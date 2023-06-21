@@ -36,7 +36,7 @@ const Home = () => {
 
     const [input, setInput] = useState('')
     const [arrSearch, setArrSearch] = useState([])
-    const [wasFound, setWasFound] = useState(true)
+    const [wasFound, setWasFound] = useState(false)
     const [languageData, setLanguageData] = useState(ptData.default)
 
     useEffect(() => {
@@ -98,18 +98,23 @@ const Home = () => {
     function getSearched(e) {
         let text = removeAcento(e)
         let arr = []
-        let arrBoolean = []
+        // let arrBoolean = []
         languageData.filter((item) => {
             let dataItem = removeAcento(item.title)
             if (dataItem.includes(text)) {
                 arr.push(item)
             }
         })
-        if (arr.toString() === arrBoolean.toString()) {
-            console.log(arr)
-            setWasFound(false)
+
+        console.log(arr.length)
+        if (arr.length === 0){
+            setWasFound(true)
         }
-        setArrSearch(arr)
+
+            // if (arr.toString() === arrBoolean.toString()) {
+            //     setWasFound(false)
+            // }
+            setArrSearch(arr)
     }
 
     useEffect(() => {
@@ -186,7 +191,7 @@ const Home = () => {
                     :
                     (
                         <Main>
-                            {input !== '' && true ?
+                            {wasFound !== '' && true ?
                                 (
                                     <CarrousselContainer>
                                         <HomeList
