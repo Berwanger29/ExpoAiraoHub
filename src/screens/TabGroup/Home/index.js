@@ -98,17 +98,22 @@ const Home = () => {
     function getSearched(e) {
         let text = removeAcento(e)
         let arr = []
-        let arrBoolean = []
         languageData.filter((item) => {
             let dataItem = removeAcento(item.title)
             if (dataItem.includes(text)) {
                 arr.push(item)
             }
         })
-        if (arr.toString() === arrBoolean.toString()) {
-            console.log(arr)
+
+        console.log(arr.length)
+        if (arr.length === 0) {
             setWasFound(false)
+        } else {
+            setWasFound(true)
         }
+        // if (arr.toString() === arrBoolean.toString()) {
+        //     setWasFound(false)
+        // }
         setArrSearch(arr)
     }
 
@@ -186,7 +191,7 @@ const Home = () => {
                     :
                     (
                         <Main>
-                            {input !== '' && true ?
+                            {wasFound && true ?
                                 (
                                     <CarrousselContainer>
                                         <HomeList
