@@ -992,7 +992,7 @@ export default [
         title: "Pousada Cabocla",
         content: {
             description: "Somos um meio de hospedagem que concilia simplicidade e charme rústico em um único lugar. Localizada no Centro da cidade, disponibilizamos acomodações confortáveis, com Wi-Fi e estacionamento privado. O ambiente contempla uma área ampla, agradável e a tranquilidade que você procura para seus dias de férias.",
-            image: require('./exceptionalImage/hotels/pousadaCabocla.jpg'),
+            image: require('./exceptionalImage/hotels/localHostel.jpg'),
             contacts: "tel://+5592992357141",
             social: {
                 instagram: '',

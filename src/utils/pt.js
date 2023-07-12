@@ -345,26 +345,26 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    {
-        type: "toEat",
-        id: 5001,
-        title: "Cantinho Caseiro",
-        content: {
-            description: "Especialista em sopas e doces, preparados com o gostinho de casa.",
-            image: require('../../exceptionalImage/toEat/cantinhoCaseiro.png'),
-            social: {
-                instagram: 'https://www.instagram.com/cantinho_caseiro_novoairao/',
-                facebook: 'https://www.facebook.com/Cantinho-Caseiro-NOVO-AIR%C3%83O-2339386406344365',
-                site: ''
-            },
-            contacts: "tel://+5592982751578",
-            address: "Rua Luís Carlos de Mattos Areosa n° 17, Nova Esperança",
-            addressLink: '',
-            type: ["Soparia", "Doceria"],
-            offering: ["Entrega grátis"],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "toEat",
+    //     id: 5001,
+    //     title: "Cantinho Caseiro",
+    //     content: {
+    //         description: "Especialista em sopas e doces, preparados com o gostinho de casa.",
+    //         image: require('../../exceptionalImage/toEat/cantinhoCaseiro.png'),
+    //         social: {
+    //             instagram: 'https://www.instagram.com/cantinho_caseiro_novoairao/',
+    //             facebook: 'https://www.facebook.com/Cantinho-Caseiro-NOVO-AIR%C3%83O-2339386406344365',
+    //             site: ''
+    //         },
+    //         contacts: "tel://+5592982751578",
+    //         address: "Rua Luís Carlos de Mattos Areosa n° 17, Nova Esperança",
+    //         addressLink: '',
+    //         type: ["Soparia", "Doceria"],
+    //         offering: ["Entrega grátis"],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "toEat",
         id: 5002,
@@ -505,66 +505,66 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    // {
-    //     type: "toEat",
-    //     id: 5012,
-    //     title: "Lanche Tira Larica",
-    //     content: {
-    //         description: "Lanche tradicional do município há 5 anos trabalhando sempre em busca de novidades e novos sabores e conforto pra nossos clientes",
-    //         image: require('../../exceptionalImage/toEat/tiraLarica.jpg'),
-    //         social: {
-    //             instagram: 'https://www.instagram.com/bar_lanche_refeicoes_larica/',
-    //             facebook: 'https://www.facebook.com/Bar-Lanche-e-refei%C3%A7%C3%A3o-tira-lar%C3%ADca-886063928218191',
-    //             site: ''
-    //         },
-    //         contacts: "tel://+5592993077380",
-    //         address: "Av. Santos Dumont,SN quiosque 03 centro ",
-    //         addressLink: 'https://goo.gl/maps/ttzQBDfEiPxrYf7k7',
-    //         type: ["Lanchonete"],
-    //         offering: ["Internet"],
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
-    // {
-    //     type: "toEat",
-    //     id: 5013,
-    //     title: "Ponto Do Açaí Frozen",
-    //     content: {
-    //         description: "Trabalhamos com venda de açaí frozen, com variedades de acompanhamentos.",
-    //         image: require('../../exceptionalImage/toEat/pontoDoAcai.jpg'),
-    //         social: {
-    //             instagram: '',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "tel://+5592984126957",
-    //         address: "",
-    //         addressLink: "https://goo.gl/maps/ttzQBDfEiPxrYf7k7",
-    //         type: ["Açaíteria"],
-    //         offering: ["Internet"],
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
-    // {
-    //     type: "toEat",
-    //     id: 5014,
-    //     title: "Sorvete da praça",
-    //     content: {
-    //         description: "Trabalhamos com sorvete expresso, casquinha , cascāo ,  sundae  é  + de 30 sabores de milk shake, guaraná tradicional da Amazônia,  também servimos sorvete Glacial.",
-    //         image: require('../../exceptionalImage/toEat/sorveteriaDaPraca.jpg'),
-    //         social: {
-    //             instagram: 'https://www.instagram.com/sorveteda_praca/',
-    //             facebook: '',
-    //             site: ''
-    //         },
-    //         contacts: "tel://+5592993934602",
-    //         address: "",
-    //         addressLink: 'https://goo.gl/maps/2vrY4p2veLgH7bDj9',
-    //         type: ["Sorveteria"],
-    //         offering: ["Cartão"],
-    //         profile: ["adventure", "soft", "calm"]
-    //     },
-    // },
+    {
+        type: "toEat",
+        id: 5012,
+        title: "Lanche Tira Larica",
+        content: {
+            description: "Lanche tradicional do município há 5 anos trabalhando sempre em busca de novidades e novos sabores e conforto pra nossos clientes",
+            image: require('../../exceptionalImage/toEat/tiraLarica.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/bar_lanche_refeicoes_larica/',
+                facebook: 'https://www.facebook.com/Bar-Lanche-e-refei%C3%A7%C3%A3o-tira-lar%C3%ADca-886063928218191',
+                site: ''
+            },
+            contacts: "tel://+5592993077380",
+            address: "Av. Santos Dumont,SN quiosque 03 centro ",
+            addressLink: 'https://goo.gl/maps/ttzQBDfEiPxrYf7k7',
+            type: ["Lanchonete"],
+            offering: ["Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5013,
+        title: "Ponto Do Açaí Frozen",
+        content: {
+            description: "Trabalhamos com venda de açaí frozen, com variedades de acompanhamentos.",
+            image: require('../../exceptionalImage/toEat/pontoDoAcai.jpg'),
+            social: {
+                instagram: '',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592984126957",
+            address: "",
+            addressLink: "https://goo.gl/maps/ttzQBDfEiPxrYf7k7",
+            type: ["Açaíteria"],
+            offering: ["Internet"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
+    {
+        type: "toEat",
+        id: 5014,
+        title: "Sorvete da praça",
+        content: {
+            description: "Trabalhamos com sorvete expresso, casquinha , cascāo ,  sundae  é  + de 30 sabores de milk shake, guaraná tradicional da Amazônia,  também servimos sorvete Glacial.",
+            image: require('../../exceptionalImage/toEat/sorveteriaDaPraca.jpg'),
+            social: {
+                instagram: 'https://www.instagram.com/sorveteda_praca/',
+                facebook: '',
+                site: ''
+            },
+            contacts: "tel://+5592993934602",
+            address: "",
+            addressLink: 'https://goo.gl/maps/2vrY4p2veLgH7bDj9',
+            type: ["Sorveteria"],
+            offering: ["Cartão"],
+            profile: ["adventure", "soft", "calm"]
+        },
+    },
     // {
     //     type: "toEat",
     //     id: 5015,
@@ -825,26 +825,26 @@ export default [
             profile: ["adventure", "soft", "calm"]
         },
     },
-    {
-        type: "toEat",
-        id: 5028,
-        title: "Praça Municipal Hugo C. Frederico",
-        content: {
-            description: "Praça de Alimentação com várias opções para se desfrutar da gastronomia local com a diversidade dos cardápios, em ambiente propício para a Família, com Pontos Turísticos, área de playground e Wi-Fi grátis. Tudo em uma localidade só!",
-            image: require('../../exceptionalImage/toEat/pracaMunicipal.jpeg'),
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            contacts: "",
-            address: "",
-            addressLink: '',
-            type: [""],
-            offering: [],
-            profile: ["adventure", "soft", "calm"]
-        },
-    },
+    // {
+    //     type: "toEat",
+    //     id: 5028,
+    //     title: "Praça Municipal Hugo C. Frederico",
+    //     content: {
+    //         description: "Praça de Alimentação com várias opções para se desfrutar da gastronomia local com a diversidade dos cardápios, em ambiente propício para a Família, com Pontos Turísticos, área de playground e Wi-Fi grátis. Tudo em uma localidade só!",
+    //         image: require('../../exceptionalImage/toEat/pracaMunicipal.jpeg'),
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         contacts: "",
+    //         address: "",
+    //         addressLink: '',
+    //         type: [""],
+    //         offering: [],
+    //         profile: ["adventure", "soft", "calm"]
+    //     },
+    // },
     {
         type: "toEat",
         id: 5029,
@@ -1091,17 +1091,17 @@ export default [
     {
         type: "hotels",
         id: 6003,
-        title: "Pousada Cabocla",
+        title: "Local Hostel",
         content: {
-            description: "Somos um meio de hospedagem que concilia simplicidade e charme rústico em um único lugar. Localizada no Centro da cidade, disponibilizamos acomodações confortáveis, com Wi-Fi e estacionamento privado. O ambiente contempla uma área ampla, agradável e a tranquilidade que você procura para seus dias de férias.",
-            image: require('../../exceptionalImage/hotels/pousadaCabocla.jpg'),
-            contacts: "tel://+5592992357141",
+            description: "O hostel é perfeito para quem busca uma hospedagem acolhedora, sustentável e cheia de atividades incríveis! Garantimos que aqui as acomodações são todas aconchegantes. E não pense que só temos quartos compartilhados, Temos opções individuais para quem prefere mais privacidade.",
+            image: require('../../exceptionalImage/hotels/localHostel.jpg'),
+            contacts: "tel://+5592984590307",
             social: {
-                instagram: '',
-                facebook: 'https://web.facebook.com/caboclapousada',
-                site: ''
+                instagram: 'https://www.instagram.com/localhostel/',
+                facebook: 'https://www.facebook.com/localhostelmanaus',
+                site: 'https://www.localhostel.com.br/'
             },
-            offering: ["Internet", "estacionamento."],
+            offering: ["Internet", "Estacionamento", "Piscina", "Café da manhã"],
             address: "",
             addressLink: 'https://goo.gl/maps/Gzf3uxVo69P9Tcpc9',
             profile: ["adventure", "soft", "calm"],
@@ -2663,7 +2663,7 @@ export default [
                     { name: 'Arborismo', link: '7001' },
                 ],
             },
-            offering: ["Trilhas aquáticas", "Árvore gigante", "Comunidades do Tiririca", "Comunidades do Santo Antônio", "Grutas do Madadá", "Airão vVelho"],
+            offering: ["Trilhas aquáticas", "Árvore gigante", "Comunidades do Tiririca", "Comunidades do Santo Antônio", "Grutas do Madadá", "Airão Velho"],
             address: "Rua  Almerinda Malaquias n123, Bairro Santo Elias",
             addressLink: "",
             profile: ["adventure", "soft", "calm"],
@@ -2740,6 +2740,32 @@ export default [
             offering: ["Criação de grupo de atividades de turismo de aventura e ecoturismo para familias e amigos."],
             address: "",
             addressLink: "https://goo.gl/maps/CfGXFwuvgvkjRQXL7",
+            profile: ["adventure", "soft", "calm"],
+        },
+    },
+    {
+        type: "agencies",
+        id: 11008,
+        title: "City Tour",
+        content: {
+            description: "Com o objetivo de divulgar, sensibilizar e conscientizar sobre a importância da atividade turística e os atrativos da cidade, o City Tour em Novo Airão realizará roteiros  levando turistas e moradores para conhecer os principais atrativos da cidade.",
+            image: require('../../exceptionalImage/agencies/cityTour.jpg'),
+            contacts: "tel://+5592984683869",
+            social: {
+                instagram: '',
+                facebook: '',
+                site: 'http://guiamento.com.br'
+            },
+            showActivities: {
+                activitiesList: [
+                    // { name: 'Arborismo', link: '7001' },
+                    // { name: 'Bike aquatica', link: '7034' },
+                    // { name: 'Aurora do Rio Negro SUP', link: '7035' },
+                ],
+            },
+            offering: ["Acompanhameto em grupo", "Acompanhamento individual", "Apresentação de atrativos", "Guia na cidade e em viagens"],
+            address: "",
+            addressLink: "",
             profile: ["adventure", "soft", "calm"],
         },
     },
