@@ -12,14 +12,16 @@
       "backgroundColor": "#81A683"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/4993788e-3263-4ecd-a1d8-68690ac31225"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.berwanger29.AiraoHub"
+      "bundleIdentifier": "com.berwanger29.AiraoHub",
+      "runtimeVersion": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
@@ -27,14 +29,17 @@
         "backgroundColor": "#fafafa"
       },
       "package": "com.berwanger29.AiraoHub",
-      "versionCode": 7,
+      "versionCode": 8,
       "permissions": [],
       "blockedPermissions": [
         "android.permissions.ACCESS_FINE_LOCATION",
         "android.permissions.ACCESS_BACKGROUND_LOCATION",
         "android.permissions.ACCESS_COARSE_LOCATION"
       ],
-      "softwareKeyboardLayoutMode": "pan"
+      "softwareKeyboardLayoutMode": "pan",
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"

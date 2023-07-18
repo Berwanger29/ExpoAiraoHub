@@ -2769,25 +2769,25 @@ export default [
             profile: ["adventure", "soft", "calm"],
         },
     },
-    {
-        type: "public",
-        id: 12000,
-        title: "Hospital",
-        content: {
-            description: "",
-            image: require('../../exceptionalImage/agencies/ayraoTaxiTur.png'),
-            contacts: "tel://+55",
-            social: {
-                instagram: '',
-                facebook: '',
-                site: ''
-            },
-            offering: [],
-            address: "",
-            addressLink: "",
-            profile: [],
-        },
-    },
+    // {
+    //     type: "public",
+    //     id: 12000,
+    //     title: "Hospital",
+    //     content: {
+    //         description: "",
+    //         image: require('../../exceptionalImage/agencies/ayraoTaxiTur.png'),
+    //         contacts: "tel://+55",
+    //         social: {
+    //             instagram: '',
+    //             facebook: '',
+    //             site: ''
+    //         },
+    //         offering: [],
+    //         address: "",
+    //         addressLink: "",
+    //         profile: [],
+    //     },
+    // },
 ]
 
 export const labels = {
