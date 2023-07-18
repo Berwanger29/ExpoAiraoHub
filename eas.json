@@ -5,19 +5,23 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "channel": "development"
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "channel": "preview"
     },
-    "production": {}
+    "production": {
+      "channel": "production"
+    }
   },
   "submit": {
     "production": {
-      "ios":{
-        "appleId":"seminturna15@gmail.com",
-        "ascAppId":"6446804782",
-        "appleTeamId":"44AY8WUXU2"
+      "ios": {
+        "appleId": "seminturna15@gmail.com",
+        "ascAppId": "6446804782",
+        "appleTeamId": "44AY8WUXU2"
       }
     }
   }

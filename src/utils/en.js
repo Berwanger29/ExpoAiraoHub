@@ -1091,7 +1091,7 @@ export default [
     {
         type: "hotels",
         id: 6003,
-        title: "Pousada Cabocla",
+        title: "Local Hostel",
         content: {
             description: "We have a form of lodging that brings together simplicity and a rustic charm in one place. Located downtown, we provide comfortable accommodations, with Wi-Fi and private parking. The environment contains a wide, pleasant area, and the tranquility your seek for your vacation days.",
             image: require('../../exceptionalImage/hotels/localHostel.jpg'),
