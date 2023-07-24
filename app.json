@@ -2,7 +2,7 @@
   "expo": {
     "name": "AiraoHub",
     "slug": "ExpoAiraoHub",
-    "version": "2.1.4",
+    "version": "2.1.5",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,8 +15,7 @@
       "fallbackToCacheTimeout": 0,
       "url": "https://u.expo.dev/4993788e-3263-4ecd-a1d8-68690ac31225",
       "enabled": true,
-      "checkAutomatically": "ON_LOAD",
-      "useClassicUpdates": true
+      "checkAutomatically": "ON_LOAD"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -24,7 +23,8 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.berwanger29.AiraoHub",
-      "runtimeVersion": "1.0.0"
+      "runtimeVersion": "1.0.0",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
@@ -32,7 +32,7 @@
         "backgroundColor": "#fafafa"
       },
       "package": "com.berwanger29.AiraoHub",
-      "versionCode": 8,
+      "versionCode": 10,
       "permissions": [],
       "blockedPermissions": [
         "android.permissions.ACCESS_FINE_LOCATION",

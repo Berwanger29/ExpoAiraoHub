@@ -2386,7 +2386,7 @@ export default [
             image: require("../../exceptionalImage/attractions/AANA.jpeg"),
             contacts: "tel://+5592984591290",
             social: {
-                instagram: 'https://www.instagram.com/aana_associacao_dos_artesaos_/',
+                instagram: 'https://www.instagram.com/central_de_artesanato_aana/',
                 facebook: 'https://www.facebook.com/profile.php?id=100069638858086',
                 site: ''
             },
